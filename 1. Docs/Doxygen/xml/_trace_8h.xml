@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_trace_8h" kind="file" language="C++">
+    <compoundname>Trace.h</compoundname>
+    <includes local="no">unistd.h</includes>
+    <includedby refid="main_8cpp" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</includedby>
+    <includedby refid="exception__handlers_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/exception_handlers.c</includedby>
+    <includedby refid="__cxx_8cpp" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp</includedby>
+    <includedby refid="__exit_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_exit.c</includedby>
+    <includedby refid="assert_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/assert.c</includedby>
+    <incdepgraph>
+      <node id="493">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h</label>
+        <link refid="_trace_8h"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
+      <node id="494">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="495">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h</label>
+        <link refid="_trace_8h"/>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp</label>
+        <link refid="__cxx_8cpp"/>
+      </node>
+      <node id="499">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_exit.c</label>
+        <link refid="__exit_8c"/>
+      </node>
+      <node id="500">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/assert.c</label>
+        <link refid="assert_8c"/>
+      </node>
+      <node id="496">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="497">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/exception_handlers.c</label>
+        <link refid="exception__handlers_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_trace_8h_1a3a06d8d6b7fb09eb75de348b3f0d79a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void trace_initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>trace_initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1aa2655a13c6dda50cae59472ffffcd1ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t trace_write</definition>
+        <argsstring>(const char *buf, size_t nbyte)</argsstring>
+        <name>trace_write</name>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="81" column="1"/>
+        <referencedby refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" compoundref="_trace_8h" startline="100" endline="103">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int trace_printf</definition>
+        <argsstring>(const char *format,...)</argsstring>
+        <name>trace_printf</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="84" column="1"/>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+        <referencedby refid="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" compoundref="_trace_8h" startline="109" endline="112">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int trace_puts</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>trace_puts</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="87" column="1"/>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+        <referencedby refid="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" compoundref="_trace_8h" startline="109" endline="112">__attribute__</referencedby>
+        <referencedby refid="namespace____gnu__cxx_1af51888cedbc669a114cd79e39e0cd9be" compoundref="__cxx_8cpp" startline="26" endline="30">__gnu_cxx::__verbose_terminate_handler</referencedby>
+        <referencedby refid="__cxx_8cpp_1a6be7d9ce80c86f5178635fa86c2dd5e7" compoundref="__cxx_8cpp" startline="42" endline="46">__cxa_pure_virtual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1a0a58d8674f578e4f8fa90ee7c3ebb071" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int trace_putchar</definition>
+        <argsstring>(int c)</argsstring>
+        <name>trace_putchar</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="90" column="1"/>
+        <referencedby refid="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" compoundref="_trace_8h" startline="109" endline="112">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1a54406dbae553f77eebddb84da4a960d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void trace_dump_args</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>trace_dump_args</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="93" column="1"/>
+        <referencedby refid="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" compoundref="_trace_8h" startline="109" endline="112">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void __attribute__</definition>
+        <argsstring>((always_inline)) trace_initialize(void)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="100" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" bodystart="100" bodyend="103"/>
+        <references refid="_trace_8h_1aa2655a13c6dda50cae59472ffffcd1ff">trace_write</references>
+        <referencedby refid="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" compoundref="_trace_8h" startline="109" endline="112">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t size_t nbyte</type>
+        <definition>ssize_t size_t nbyte __attribute__</definition>
+        <argsstring>((unused)))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(unused)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" line="109" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" bodystart="109" bodyend="112"/>
+        <references refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" compoundref="_trace_8h" startline="100" endline="103">__attribute__</references>
+        <references refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37">trace_printf</references>
+        <references refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974">trace_puts</references>
+        <references refid="_trace_8h_1a0a58d8674f578e4f8fa90ee7c3ebb071">trace_putchar</references>
+        <references refid="_trace_8h_1a54406dbae553f77eebddb84da4a960d5">trace_dump_args</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DIAG_TRACE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_TRACE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>trace<sp/>device<sp/>is<sp/>an<sp/>independent<sp/>output<sp/>channel,<sp/>intended<sp/>for<sp/>debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>purposes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>API<sp/>is<sp/>simple,<sp/>and<sp/>mimics<sp/>the<sp/>standard<sp/>output<sp/>calls:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>trace_printf()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>trace_puts()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>trace_putchar();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>implementation<sp/>is<sp/>done<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>trace_write()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Trace<sp/>support<sp/>is<sp/>enabled<sp/>by<sp/>adding<sp/>the<sp/>TRACE<sp/>definition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>By<sp/>default<sp/>the<sp/>trace<sp/>messages<sp/>are<sp/>forwarded<sp/>to<sp/>the<sp/>ITM<sp/>output,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>can<sp/>be<sp/>rerouted<sp/>via<sp/>any<sp/>device<sp/>or<sp/>completely<sp/>suppressed<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>changing<sp/>the<sp/>definitions<sp/>required<sp/>in<sp/>system/src/diag/trace_impl.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(currently<sp/>OS_USE_TRACE_ITM,<sp/>OS_USE_TRACE_SEMIHOSTING_DEBUG/_STDOUT).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>When<sp/>TRACE<sp/>is<sp/>not<sp/>defined,<sp/>all<sp/>functions<sp/>are<sp/>inlined<sp/>to<sp/>empty<sp/>bodies.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>has<sp/>the<sp/>advantage<sp/>that<sp/>the<sp/>trace<sp/>call<sp/>do<sp/>not<sp/>need<sp/>to<sp/>be<sp/>conditionally</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compiled<sp/>with<sp/>#ifdef<sp/>TRACE/#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRACE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a3a06d8d6b7fb09eb75de348b3f0d79a6" kindref="member">trace_initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Implementation<sp/>dependent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>ssize_t</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1aa2655a13c6dda50cae59472ffffcd1ff" kindref="member">trace_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbyte);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----<sp/>Portable<sp/>-----</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>format,<sp/>...);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" kindref="member">trace_puts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a0a58d8674f578e4f8fa90ee7c3ebb071" kindref="member">trace_putchar</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a54406dbae553f77eebddb84da4a960d5" kindref="member">trace_dump_args</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>!defined(TRACE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a3a06d8d6b7fb09eb75de348b3f0d79a6" kindref="member">trace_initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Implementation<sp/>dependent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ssize_t</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1aa2655a13c6dda50cae59472ffffcd1ff" kindref="member">trace_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbyte);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>format,<sp/>...);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" kindref="member">trace_puts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a0a58d8674f578e4f8fa90ee7c3ebb071" kindref="member">trace_putchar</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a54406dbae553f77eebddb84da4a960d5" kindref="member">trace_dump_args</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" refkind="member"><highlight class="normal"><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="_trace_8h_1a3a06d8d6b7fb09eb75de348b3f0d79a6" kindref="member">trace_initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Empty<sp/>definitions<sp/>when<sp/>trace<sp/>is<sp/>not<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ssize_t</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="_trace_8h_1aa2655a13c6dda50cae59472ffffcd1ff" kindref="member">trace_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf<sp/><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((unused)),</highlight></codeline>
+<codeline lineno="109" refid="_trace_8h_1a66d8b9a8f1c0fa751b73b3b0f8a43ae7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbyte<sp/><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((unused)))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>format<sp/><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((unused)),<sp/>...)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><ref refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" kindref="member">trace_puts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s<sp/><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((unused)))</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><ref refid="_trace_8h_1a0a58d8674f578e4f8fa90ee7c3ebb071" kindref="member">trace_putchar</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><ref refid="_trace_8h_1a54406dbae553f77eebddb84da4a960d5" kindref="member">trace_dump_args</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc<sp/><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((unused)),</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]<sp/><ref refid="_trace_8h_1a38082d387059c1128dce3f83d4c4e695" kindref="member">__attribute__</ref>((unused)))</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>defined(TRACE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DIAG_TRACE_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___one___pulse___mode" kind="group">
+    <compoundname>TIM_One_Pulse_Mode</compoundname>
+    <title>TIM_One_Pulse_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___one___pulse___mode_1ga99d934fdbc54ea4ee2cf5c86860f9227" prot="public" static="no">
+        <name>TIM_OPMode_Single</name>
+        <initializer>((uint16_t)0x0008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="322" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___one___pulse___mode_1gad921d739c86bf48dca12442a81ad68ad" prot="public" static="no">
+        <name>TIM_OPMode_Repetitive</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="323" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___one___pulse___mode_1ga3f4a4305b4feacb4322eb4a358e54637" prot="public" static="no">
+        <name>IS_TIM_OPM_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___t_i_m___one___pulse___mode_1ga99d934fdbc54ea4ee2cf5c86860f9227" kindref="member">TIM_OPMode_Single</ref>) || \
+                               ((MODE) == <ref refid="group___t_i_m___one___pulse___mode_1gad921d739c86bf48dca12442a81ad68ad" kindref="member">TIM_OPMode_Repetitive</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="324" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

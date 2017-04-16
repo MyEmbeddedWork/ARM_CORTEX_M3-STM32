@@ -1,0 +1,187 @@
+.TH "EXTI_Lines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Lines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEXTI_Line0\fP   ((uint32_t)0x00001)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line1\fP   ((uint32_t)0x00002)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line2\fP   ((uint32_t)0x00004)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line3\fP   ((uint32_t)0x00008)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line4\fP   ((uint32_t)0x00010)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line5\fP   ((uint32_t)0x00020)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line6\fP   ((uint32_t)0x00040)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line7\fP   ((uint32_t)0x00080)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line8\fP   ((uint32_t)0x00100)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line9\fP   ((uint32_t)0x00200)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line10\fP   ((uint32_t)0x00400)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line11\fP   ((uint32_t)0x00800)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line12\fP   ((uint32_t)0x01000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line13\fP   ((uint32_t)0x02000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line14\fP   ((uint32_t)0x04000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line15\fP   ((uint32_t)0x08000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line16\fP   ((uint32_t)0x10000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line17\fP   ((uint32_t)0x20000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line18\fP   ((uint32_t)0x40000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_Line19\fP   ((uint32_t)0x80000)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_LINE\fP(LINE)   ((((LINE) & (uint32_t)0xFFF00000) == 0x00) && ((LINE) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_GET_EXTI_LINE\fP(LINE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define EXTI_Line0   ((uint32_t)0x00001)"
+External interrupt line 0 
+.PP
+Definition at line 109 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line1   ((uint32_t)0x00002)"
+External interrupt line 1 
+.PP
+Definition at line 110 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line10   ((uint32_t)0x00400)"
+External interrupt line 10 
+.PP
+Definition at line 119 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line11   ((uint32_t)0x00800)"
+External interrupt line 11 
+.PP
+Definition at line 120 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line12   ((uint32_t)0x01000)"
+External interrupt line 12 
+.PP
+Definition at line 121 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line13   ((uint32_t)0x02000)"
+External interrupt line 13 
+.PP
+Definition at line 122 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line14   ((uint32_t)0x04000)"
+External interrupt line 14 
+.PP
+Definition at line 123 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line15   ((uint32_t)0x08000)"
+External interrupt line 15 
+.PP
+Definition at line 124 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line16   ((uint32_t)0x10000)"
+External interrupt line 16 Connected to the PVD Output 
+.PP
+Definition at line 125 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line17   ((uint32_t)0x20000)"
+External interrupt line 17 Connected to the RTC Alarm event 
+.PP
+Definition at line 126 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line18   ((uint32_t)0x40000)"
+External interrupt line 18 Connected to the USB Device/USB OTG FS Wakeup from suspend event 
+.PP
+Definition at line 127 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line19   ((uint32_t)0x80000)"
+External interrupt line 19 Connected to the Ethernet Wakeup event 
+.PP
+Definition at line 130 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line2   ((uint32_t)0x00004)"
+External interrupt line 2 
+.PP
+Definition at line 111 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line3   ((uint32_t)0x00008)"
+External interrupt line 3 
+.PP
+Definition at line 112 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line4   ((uint32_t)0x00010)"
+External interrupt line 4 
+.PP
+Definition at line 113 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line5   ((uint32_t)0x00020)"
+External interrupt line 5 
+.PP
+Definition at line 114 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line6   ((uint32_t)0x00040)"
+External interrupt line 6 
+.PP
+Definition at line 115 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line7   ((uint32_t)0x00080)"
+External interrupt line 7 
+.PP
+Definition at line 116 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line8   ((uint32_t)0x00100)"
+External interrupt line 8 
+.PP
+Definition at line 117 of file stm32f10x_exti\&.h\&.
+.SS "#define EXTI_Line9   ((uint32_t)0x00200)"
+External interrupt line 9 
+.PP
+Definition at line 118 of file stm32f10x_exti\&.h\&.
+.SS "#define IS_EXTI_LINE(LINE)   ((((LINE) & (uint32_t)0xFFF00000) == 0x00) && ((LINE) != (uint16_t)0x00))"
+
+.PP
+Definition at line 132 of file stm32f10x_exti\&.h\&.
+.SS "#define IS_GET_EXTI_LINE(LINE)"
+\fBValue:\fP
+.PP
+.nf
+(((LINE) == EXTI_Line0) || ((LINE) == EXTI_Line1) || \
+                            ((LINE) == EXTI_Line2) || ((LINE) == EXTI_Line3) || \
+                            ((LINE) == EXTI_Line4) || ((LINE) == EXTI_Line5) || \
+                            ((LINE) == EXTI_Line6) || ((LINE) == EXTI_Line7) || \
+                            ((LINE) == EXTI_Line8) || ((LINE) == EXTI_Line9) || \
+                            ((LINE) == EXTI_Line10) || ((LINE) == EXTI_Line11) || \
+                            ((LINE) == EXTI_Line12) || ((LINE) == EXTI_Line13) || \
+                            ((LINE) == EXTI_Line14) || ((LINE) == EXTI_Line15) || \
+                            ((LINE) == EXTI_Line16) || ((LINE) == EXTI_Line17) || \
+                            ((LINE) == EXTI_Line18) || ((LINE) == EXTI_Line19))
+.fi
+.PP
+Definition at line 133 of file stm32f10x_exti\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

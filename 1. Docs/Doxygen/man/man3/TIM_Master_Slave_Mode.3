@@ -1,0 +1,46 @@
+.TH "TIM_Master_Slave_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Master_Slave_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_MasterSlaveMode_Enable\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBTIM_MasterSlaveMode_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_MSM_STATE\fP(STATE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_MSM_STATE(STATE)"
+\fBValue:\fP
+.PP
+.nf
+(((STATE) == TIM_MasterSlaveMode_Enable) || \
+                                 ((STATE) == TIM_MasterSlaveMode_Disable))
+.fi
+.PP
+Definition at line 963 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_MasterSlaveMode_Disable   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 962 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_MasterSlaveMode_Enable   ((uint16_t)0x0080)"
+
+.PP
+Definition at line 961 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,28 @@
+.TH "clarke" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+clarke
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Forward Clarke transform converts the instantaneous stator phases into a two-coordinate time invariant vector\&. Generally the Clarke transform uses three-phase currents \fCIa, Ib and Ic\fP to calculate currents in the two-phase orthogonal stator axis \fCIalpha\fP and \fCIbeta\fP\&. When \fCIalpha\fP is superposed with \fCIa\fP as shown in the figure below Stator current space vector and its components in (a,b)\&. and \fCIa + Ib + Ic = 0\fP, in this condition \fCIalpha\fP and \fCIbeta\fP can be calculated using only \fCIa\fP and \fCIb\fP\&.
+.PP
+The function operates on a single sample of data and each call to the function returns the processed output\&. The library provides separate functions for Q31 and floating-point data types\&. 
+.PP
+\fBAlgorithm\fP
+.RS 4
+ where \fCIa\fP and \fCIb\fP are the instantaneous stator phases and \fCpIalpha\fP and \fCpIbeta\fP are the two coordinates of time invariant vector\&. 
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the Q31 version of the Clarke transform\&. In particular, the overflow and saturation behavior of the accumulator used must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

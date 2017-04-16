@@ -1,0 +1,46 @@
+.TH "SDIO_Clock_Edge" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Clock_Edge
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_ClockEdge_Rising\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ClockEdge_Falling\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLOCK_EDGE\fP(EDGE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SDIO_CLOCK_EDGE(EDGE)"
+\fBValue:\fP
+.PP
+.nf
+(((EDGE) == SDIO_ClockEdge_Rising) || \
+                                  ((EDGE) == SDIO_ClockEdge_Falling))
+.fi
+.PP
+Definition at line 131 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_ClockEdge_Falling   ((uint32_t)0x00002000)"
+
+.PP
+Definition at line 130 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_ClockEdge_Rising   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 129 of file stm32f10x_sdio\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

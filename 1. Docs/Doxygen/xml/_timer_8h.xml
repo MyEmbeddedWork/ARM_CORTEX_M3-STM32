@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_timer_8h" kind="file" language="C++">
+    <compoundname>Timer.h</compoundname>
+    <includes refid="cmsis__device_8h" local="yes">cmsis_device.h</includes>
+    <includedby refid="main_8cpp" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</includedby>
+    <includedby refid="_timer_8cpp" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/src/Timer.cpp</includedby>
+    <incdepgraph>
+      <node id="48">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="45">
+        <label>stdint.h</label>
+      </node>
+      <node id="44">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="41">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h</label>
+        <link refid="_timer_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>cmsis_device.h</label>
+        <link refid="cmsis__device_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="43">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="49">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h</label>
+        <link refid="_timer_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/Timer.cpp</label>
+        <link refid="_timer_8cpp"/>
+      </node>
+      <node id="50">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_timer" prot="public">Timer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>GNU<sp/>ARM<sp/>Eclipse<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TIMER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmsis__device_8h" kindref="compound">cmsis_device.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_timer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_timer" kindref="compound">Timer</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="class_timer_1af064c6652d9c7424aa2a69091077371d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="class_timer_1af064c6652d9c7424aa2a69091077371d" kindref="member">ticks_t</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_timer_1afb0566d18137755123193fc239593daa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>ticks_t<sp/><ref refid="class_timer_1afb0566d18137755123193fc239593daa" kindref="member">FREQUENCY_HZ</ref><sp/>=<sp/>1000u;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>ticks_t<sp/>ms_delayCount;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="class_timer_1a8ed3c5e074223900c0c9a74376471209" kindref="member">Timer</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" kindref="member">start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>SysTick<sp/>as<sp/>reference<sp/>for<sp/>the<sp/>delay<sp/>loops.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___core___sys_tick_functions_1gae4e8f0238527c69f522029b93c8e5b78" kindref="member">SysTick_Config</ref>(<ref refid="group___s_t_m32_f10x___system___exported__types_1gaa3cd3e43291e81e795d642b79b6088e6" kindref="member">SystemCoreClock</ref><sp/>/<sp/>FREQUENCY_HZ);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="class_timer_1ad946179cf9404a33927ec3d33ed270d7" kindref="member">sleep</ref>(ticks_t<sp/>ticks);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_timer_1afba5678215b6aa1983edf2c08241c99b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_timer_1afba5678215b6aa1983edf2c08241c99b" kindref="member">tick</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decrement<sp/>to<sp/>zero<sp/>the<sp/>counter<sp/>used<sp/>by<sp/>the<sp/>delay<sp/>routine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ms_delayCount<sp/>!=<sp/>0u)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--ms_delayCount;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TIMER_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h"/>
+  </compounddef>
+</doxygen>

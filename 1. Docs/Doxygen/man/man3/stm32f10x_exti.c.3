@@ -1,0 +1,89 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c \- This file provides all the EXTI firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_exti\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEXTI_LINENONE\fP   ((uint32_t)0x00000)  /* No interrupt selected */"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBEXTI_DeInit\fP (void)"
+.br
+.RI "Deinitializes the EXTI peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBEXTI_Init\fP (\fBEXTI_InitTypeDef\fP *EXTI_InitStruct)"
+.br
+.RI "Initializes the EXTI peripheral according to the specified parameters in the EXTI_InitStruct\&. "
+.ti -1c
+.RI "void \fBEXTI_StructInit\fP (\fBEXTI_InitTypeDef\fP *EXTI_InitStruct)"
+.br
+.RI "Fills each EXTI_InitStruct member with its reset value\&. "
+.ti -1c
+.RI "void \fBEXTI_GenerateSWInterrupt\fP (uint32_t EXTI_Line)"
+.br
+.RI "Generates a Software interrupt\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBEXTI_GetFlagStatus\fP (uint32_t EXTI_Line)"
+.br
+.RI "Checks whether the specified EXTI line flag is set or not\&. "
+.ti -1c
+.RI "void \fBEXTI_ClearFlag\fP (uint32_t EXTI_Line)"
+.br
+.RI "Clears the EXTI's line pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBEXTI_GetITStatus\fP (uint32_t EXTI_Line)"
+.br
+.RI "Checks whether the specified EXTI line is asserted or not\&. "
+.ti -1c
+.RI "void \fBEXTI_ClearITPendingBit\fP (uint32_t EXTI_Line)"
+.br
+.RI "Clears the EXTI's line pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the EXTI firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_exti\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

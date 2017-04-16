@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___r_t_c__interrupts__define" kind="group">
+    <compoundname>RTC_interrupts_define</compoundname>
+    <title>RTC_interrupts_define</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_t_c__interrupts__define_1gabcfefb2f22cb8ca65113c2c13d0e0640" prot="public" static="no">
+        <name>RTC_IT_OW</name>
+        <initializer>((uint16_t)0x0004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overflow interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__define_1ga92f0316a3c69aefc2b20c3392843d3da" prot="public" static="no">
+        <name>RTC_IT_ALR</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alarm interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__define_1ga960bccbc10da872549cf52c03dd342f1" prot="public" static="no">
+        <name>RTC_IT_SEC</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Second interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__define_1ga5c941995b804ce4c7ef62e28e0133a83" prot="public" static="no">
+        <name>IS_RTC_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint16_t)0xFFF8) == 0x00) &amp;&amp; ((IT) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__define_1ga2e10d8ccb2aa398ac14bde526f98dbc9" prot="public" static="no">
+        <name>IS_RTC_GET_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___r_t_c__interrupts__define_1gabcfefb2f22cb8ca65113c2c13d0e0640" kindref="member">RTC_IT_OW</ref>) || ((IT) == <ref refid="group___r_t_c__interrupts__define_1ga92f0316a3c69aefc2b20c3392843d3da" kindref="member">RTC_IT_ALR</ref>) || \
+                           ((IT) == <ref refid="group___r_t_c__interrupts__define_1ga960bccbc10da872549cf52c03dd342f1" kindref="member">RTC_IT_SEC</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

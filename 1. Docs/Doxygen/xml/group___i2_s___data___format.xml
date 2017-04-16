@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_s___data___format" kind="group">
+    <compoundname>I2S_Data_Format</compoundname>
+    <title>I2S_Data_Format</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_s___data___format_1gabcd7cb799b68346a735709cc135bd414" prot="public" static="no">
+        <name>I2S_DataFormat_16b</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="280" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___data___format_1gae44b9704c9e393d5abec9bf4fcfe1116" prot="public" static="no">
+        <name>I2S_DataFormat_16bextended</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="281" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___data___format_1ga5a959486671cf00c5a734f1df205581b" prot="public" static="no">
+        <name>I2S_DataFormat_24b</name>
+        <initializer>((uint16_t)0x0003)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="282" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___data___format_1ga6be3bdcc713cb92a9ad247de013a5e37" prot="public" static="no">
+        <name>I2S_DataFormat_32b</name>
+        <initializer>((uint16_t)0x0005)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="283" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___data___format_1gac467da829eca4a5c4ce41a6abd2d8e81" prot="public" static="no">
+        <name>IS_I2S_DATA_FORMAT</name>
+        <param><defname>FORMAT</defname></param>
+        <initializer>(((FORMAT) == <ref refid="group___i2_s___data___format_1gabcd7cb799b68346a735709cc135bd414" kindref="member">I2S_DataFormat_16b</ref>) || \
+                                    ((FORMAT) == <ref refid="group___i2_s___data___format_1gae44b9704c9e393d5abec9bf4fcfe1116" kindref="member">I2S_DataFormat_16bextended</ref>) || \
+                                    ((FORMAT) == <ref refid="group___i2_s___data___format_1ga5a959486671cf00c5a734f1df205581b" kindref="member">I2S_DataFormat_24b</ref>) || \
+                                    ((FORMAT) == <ref refid="group___i2_s___data___format_1ga6be3bdcc713cb92a9ad247de013a5e37" kindref="member">I2S_DataFormat_32b</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="284" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

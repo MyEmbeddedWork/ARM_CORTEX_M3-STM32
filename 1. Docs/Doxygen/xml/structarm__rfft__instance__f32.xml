@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__rfft__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_rfft_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1a4219d4669699e4efdcb150ed7a0d9a57" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arm_rfft_instance_f32::fftLenReal</definition>
+        <argsstring></argsstring>
+        <name>fftLenReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the real FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2210" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1a075076e07ebb8521d8e3b49a31db6c57" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_rfft_instance_f32::fftLenBy2</definition>
+        <argsstring></argsstring>
+        <name>fftLenBy2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the complex FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2211" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1a5ee6d10a934ab4b666e0bb286c3d633f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_rfft_instance_f32::ifftFlagR</definition>
+        <argsstring></argsstring>
+        <name>ifftFlagR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that selects forward (ifftFlagR=0) or inverse (ifftFlagR=1) transform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2212" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1ac342f3248157cbbd2f04a3c8ec9fc9eb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_rfft_instance_f32::bitReverseFlagR</definition>
+        <argsstring></argsstring>
+        <name>bitReverseFlagR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that enables (bitReverseFlagR=1) or disables (bitReverseFlagR=0) bit reversal of output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2213" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1aede85350fb5ae6baa1b3e8bfa15b18d6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arm_rfft_instance_f32::twidCoefRModifier</definition>
+        <argsstring></argsstring>
+        <name>twidCoefRModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2214" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1a534cc7e6e9b3e3dd022fad611c762142" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_rfft_instance_f32::pTwiddleAReal</definition>
+        <argsstring></argsstring>
+        <name>pTwiddleAReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the real twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2215" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1a23543ecfd027fea2477fe1eea23c3c4d" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_rfft_instance_f32::pTwiddleBReal</definition>
+        <argsstring></argsstring>
+        <name>pTwiddleBReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the imag twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2216" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__f32_1a9f47ba9f50c81e4445ae3827b981bc05" prot="public" static="no" mutable="no">
+        <type><ref refid="structarm__cfft__radix4__instance__f32" kindref="compound">arm_cfft_radix4_instance_f32</ref> *</type>
+        <definition>arm_cfft_radix4_instance_f32* arm_rfft_instance_f32::pCfft</definition>
+        <argsstring></argsstring>
+        <name>pCfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the complex FFT instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2217" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point RFFT/RIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="134">
+        <label>arm_rfft_instance_f32</label>
+        <link refid="structarm__rfft__instance__f32"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>pCfft</edgelabel>
+        </childnode>
+      </node>
+      <node id="135">
+        <label>arm_cfft_radix4_instance_f32</label>
+        <link refid="structarm__cfft__radix4__instance__f32"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2209" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2208" bodyend="2218"/>
+    <listofallmembers>
+      <member refid="structarm__rfft__instance__f32_1ac342f3248157cbbd2f04a3c8ec9fc9eb" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>bitReverseFlagR</name></member>
+      <member refid="structarm__rfft__instance__f32_1a075076e07ebb8521d8e3b49a31db6c57" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>fftLenBy2</name></member>
+      <member refid="structarm__rfft__instance__f32_1a4219d4669699e4efdcb150ed7a0d9a57" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>fftLenReal</name></member>
+      <member refid="structarm__rfft__instance__f32_1a5ee6d10a934ab4b666e0bb286c3d633f" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>ifftFlagR</name></member>
+      <member refid="structarm__rfft__instance__f32_1a9f47ba9f50c81e4445ae3827b981bc05" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>pCfft</name></member>
+      <member refid="structarm__rfft__instance__f32_1a534cc7e6e9b3e3dd022fad611c762142" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>pTwiddleAReal</name></member>
+      <member refid="structarm__rfft__instance__f32_1a23543ecfd027fea2477fe1eea23c3c4d" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>pTwiddleBReal</name></member>
+      <member refid="structarm__rfft__instance__f32_1aede85350fb5ae6baa1b3e8bfa15b18d6" prot="public" virt="non-virtual"><scope>arm_rfft_instance_f32</scope><name>twidCoefRModifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

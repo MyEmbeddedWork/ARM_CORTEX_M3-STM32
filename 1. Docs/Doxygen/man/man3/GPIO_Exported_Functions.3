@@ -1,0 +1,550 @@
+.TH "GPIO_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGPIO_DeInit\fP (\fBGPIO_TypeDef\fP *GPIOx)"
+.br
+.RI "Deinitializes the GPIOx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBGPIO_AFIODeInit\fP (void)"
+.br
+.RI "Deinitializes the Alternate Functions (remap, event control and EXTI configuration) registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBGPIO_Init\fP (\fBGPIO_TypeDef\fP *GPIOx, \fBGPIO_InitTypeDef\fP *GPIO_InitStruct)"
+.br
+.RI "Initializes the GPIOx peripheral according to the specified parameters in the GPIO_InitStruct\&. "
+.ti -1c
+.RI "void \fBGPIO_StructInit\fP (\fBGPIO_InitTypeDef\fP *GPIO_InitStruct)"
+.br
+.RI "Fills each GPIO_InitStruct member with its default value\&. "
+.ti -1c
+.RI "uint8_t \fBGPIO_ReadInputDataBit\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Reads the specified input port pin\&. "
+.ti -1c
+.RI "uint16_t \fBGPIO_ReadInputData\fP (\fBGPIO_TypeDef\fP *GPIOx)"
+.br
+.RI "Reads the specified GPIO input data port\&. "
+.ti -1c
+.RI "uint8_t \fBGPIO_ReadOutputDataBit\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Reads the specified output data port bit\&. "
+.ti -1c
+.RI "uint16_t \fBGPIO_ReadOutputData\fP (\fBGPIO_TypeDef\fP *GPIOx)"
+.br
+.RI "Reads the specified GPIO output data port\&. "
+.ti -1c
+.RI "void \fBGPIO_SetBits\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Sets the selected data port bits\&. "
+.ti -1c
+.RI "void \fBGPIO_ResetBits\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Clears the selected data port bits\&. "
+.ti -1c
+.RI "void \fBGPIO_WriteBit\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin, \fBBitAction\fP BitVal)"
+.br
+.RI "Sets or clears the selected data port bit\&. "
+.ti -1c
+.RI "void \fBGPIO_Write\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t PortVal)"
+.br
+.RI "Writes data to the specified GPIO data port\&. "
+.ti -1c
+.RI "void \fBGPIO_PinLockConfig\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Locks GPIO Pins configuration registers\&. "
+.ti -1c
+.RI "void \fBGPIO_EventOutputConfig\fP (uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)"
+.br
+.RI "Selects the GPIO pin used as Event output\&. "
+.ti -1c
+.RI "void \fBGPIO_EventOutputCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Event Output\&. "
+.ti -1c
+.RI "void \fBGPIO_PinRemapConfig\fP (uint32_t GPIO_Remap, \fBFunctionalState\fP NewState)"
+.br
+.RI "Changes the mapping of the specified pin\&. "
+.ti -1c
+.RI "void \fBGPIO_EXTILineConfig\fP (uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)"
+.br
+.RI "Selects the GPIO pin used as EXTI Line\&. "
+.ti -1c
+.RI "void \fBGPIO_ETH_MediaInterfaceConfig\fP (uint32_t GPIO_ETH_MediaInterface)"
+.br
+.RI "Selects the Ethernet media interface\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void GPIO_AFIODeInit (void)"
+
+.PP
+Deinitializes the Alternate Functions (remap, event control and EXTI configuration) registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 159 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_DeInit (\fBGPIO_TypeDef\fP * GPIOx)"
+
+.PP
+Deinitializes the GPIOx peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_ETH_MediaInterfaceConfig (uint32_t GPIO_ETH_MediaInterface)"
+
+.PP
+Selects the Ethernet media interface\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function applies only to STM32 Connectivity line devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIO_ETH_MediaInterface\fP specifies the Media Interface mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+GPIO_ETH_MediaInterface_MII: MII mode 
+.IP "\(bu" 2
+GPIO_ETH_MediaInterface_RMII: RMII mode 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 630 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_EventOutputCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Event Output\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Event output\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 483 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_EventOutputConfig (uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)"
+
+.PP
+Selects the GPIO pin used as Event output\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIO_PortSource\fP selects the GPIO port to be used as source for Event output\&. This parameter can be GPIO_PortSourceGPIOx where x can be (A\&.\&.E)\&. 
+.br
+\fIGPIO_PinSource\fP specifies the pin for the Event output\&. This parameter can be GPIO_PinSourcex where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 462 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_EXTILineConfig (uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)"
+
+.PP
+Selects the GPIO pin used as EXTI Line\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIO_PortSource\fP selects the GPIO port to be used as source for EXTI lines\&. This parameter can be GPIO_PortSourceGPIOx where x can be (A\&.\&.G)\&. 
+.br
+\fIGPIO_PinSource\fP specifies the EXTI line to be configured\&. This parameter can be GPIO_PinSourcex where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 609 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_Init (\fBGPIO_TypeDef\fP * GPIOx, \fBGPIO_InitTypeDef\fP * GPIO_InitStruct)"
+
+.PP
+Initializes the GPIOx peripheral according to the specified parameters in the GPIO_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_InitStruct\fP pointer to a \fBGPIO_InitTypeDef\fP structure that contains the configuration information for the specified GPIO peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 173 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_PinLockConfig (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.PP
+Locks GPIO Pins configuration registers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_Pin\fP specifies the port bit to be written\&. This parameter can be any combination of GPIO_Pin_x where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 432 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_PinRemapConfig (uint32_t GPIO_Remap, \fBFunctionalState\fP NewState)"
+
+.PP
+Changes the mapping of the specified pin\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIO_Remap\fP selects the pin to remap\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+GPIO_Remap_SPI1 : SPI1 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap_I2C1 : I2C1 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap_USART1 : USART1 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap_USART2 : USART2 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_PartialRemap_USART3 : USART3 Partial Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_FullRemap_USART3 : USART3 Full Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_PartialRemap_TIM1 : TIM1 Partial Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_FullRemap_TIM1 : TIM1 Full Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_PartialRemap1_TIM2 : TIM2 Partial1 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_PartialRemap2_TIM2 : TIM2 Partial2 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_FullRemap_TIM2 : TIM2 Full Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_PartialRemap_TIM3 : TIM3 Partial Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_FullRemap_TIM3 : TIM3 Full Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap_TIM4 : TIM4 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap1_CAN1 : CAN1 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap2_CAN1 : CAN1 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap_PD01 : PD01 Alternate Function mapping 
+.IP "\(bu" 2
+GPIO_Remap_TIM5CH4_LSI : LSI connected to TIM5 Channel4 input capture for calibration 
+.IP "\(bu" 2
+GPIO_Remap_ADC1_ETRGINJ : ADC1 External Trigger Injected Conversion remapping 
+.IP "\(bu" 2
+GPIO_Remap_ADC1_ETRGREG : ADC1 External Trigger Regular Conversion remapping 
+.IP "\(bu" 2
+GPIO_Remap_ADC2_ETRGINJ : ADC2 External Trigger Injected Conversion remapping 
+.IP "\(bu" 2
+GPIO_Remap_ADC2_ETRGREG : ADC2 External Trigger Regular Conversion remapping 
+.IP "\(bu" 2
+GPIO_Remap_ETH : Ethernet remapping (only for Connectivity line devices) 
+.IP "\(bu" 2
+GPIO_Remap_CAN2 : CAN2 remapping (only for Connectivity line devices) 
+.IP "\(bu" 2
+GPIO_Remap_SWJ_NoJTRST : Full SWJ Enabled (JTAG-DP + SW-DP) but without JTRST 
+.IP "\(bu" 2
+GPIO_Remap_SWJ_JTAGDisable : JTAG-DP Disabled and SW-DP Enabled 
+.IP "\(bu" 2
+GPIO_Remap_SWJ_Disable : Full SWJ Disabled (JTAG-DP + SW-DP) 
+.IP "\(bu" 2
+GPIO_Remap_SPI3 : SPI3/I2S3 Alternate Function mapping (only for Connectivity line devices) When the SPI3/I2S3 is remapped using this function, the SWJ is configured to Full SWJ Enabled (JTAG-DP + SW-DP) but without JTRST\&. 
+.IP "\(bu" 2
+GPIO_Remap_TIM2ITR1_PTP_SOF : Ethernet PTP output or USB OTG SOF (Start of Frame) connected to TIM2 Internal Trigger 1 for calibration (only for Connectivity line devices) If the GPIO_Remap_TIM2ITR1_PTP_SOF is enabled the TIM2 ITR1 is connected to Ethernet PTP output\&. When Reset TIM2 ITR1 is connected to USB OTG SOF output\&. 
+.IP "\(bu" 2
+GPIO_Remap_PTP_PPS : Ethernet MAC PPS_PTS output on PB05 (only for Connectivity line devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM15 : TIM15 Alternate Function mapping (only for Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM16 : TIM16 Alternate Function mapping (only for Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM17 : TIM17 Alternate Function mapping (only for Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_CEC : CEC Alternate Function mapping (only for Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM1_DMA : TIM1 DMA requests mapping (only for Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM9 : TIM9 Alternate Function mapping (only for XL-density devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM10 : TIM10 Alternate Function mapping (only for XL-density devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM11 : TIM11 Alternate Function mapping (only for XL-density devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM13 : TIM13 Alternate Function mapping (only for High density Value line and XL-density devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM14 : TIM14 Alternate Function mapping (only for High density Value line and XL-density devices) 
+.IP "\(bu" 2
+GPIO_Remap_FSMC_NADV : FSMC_NADV Alternate Function mapping (only for High density Value line and XL-density devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM67_DAC_DMA : TIM6/TIM7 and DAC DMA requests remapping (only for High density Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_TIM12 : TIM12 Alternate Function mapping (only for High density Value line devices) 
+.IP "\(bu" 2
+GPIO_Remap_MISC : Miscellaneous Remap (DMA2 Channel5 Position and DAC Trigger remapping, only for High density Value line devices) 
+.PP
+.br
+\fINewState\fP new state of the port pin remapping\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 549 of file stm32f10x_gpio\&.c\&.
+.SS "uint16_t GPIO_ReadInputData (\fBGPIO_TypeDef\fP * GPIOx)"
+
+.PP
+Reads the specified GPIO input data port\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIGPIO\fP input data port value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 305 of file stm32f10x_gpio\&.c\&.
+.SS "uint8_t GPIO_ReadInputDataBit (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.PP
+Reads the specified input port pin\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_Pin\fP specifies the port bit to read\&. This parameter can be GPIO_Pin_x where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP input port pin value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 281 of file stm32f10x_gpio\&.c\&.
+.SS "uint16_t GPIO_ReadOutputData (\fBGPIO_TypeDef\fP * GPIOx)"
+
+.PP
+Reads the specified GPIO output data port\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIGPIO\fP output data port value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 343 of file stm32f10x_gpio\&.c\&.
+.SS "uint8_t GPIO_ReadOutputDataBit (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.PP
+Reads the specified output data port bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_Pin\fP specifies the port bit to read\&. This parameter can be GPIO_Pin_x where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP output port pin value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 320 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_ResetBits (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.PP
+Clears the selected data port bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_Pin\fP specifies the port bits to be written\&. This parameter can be any combination of GPIO_Pin_x where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 374 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_SetBits (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.PP
+Sets the selected data port bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_Pin\fP specifies the port bits to be written\&. This parameter can be any combination of GPIO_Pin_x where x can be (0\&.\&.15)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 358 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_StructInit (\fBGPIO_InitTypeDef\fP * GPIO_InitStruct)"
+
+.PP
+Fills each GPIO_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIO_InitStruct\fP : pointer to a \fBGPIO_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 266 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_Write (\fBGPIO_TypeDef\fP * GPIOx, uint16_t PortVal)"
+
+.PP
+Writes data to the specified GPIO data port\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIPortVal\fP specifies the value to be written to the port output data register\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 417 of file stm32f10x_gpio\&.c\&.
+.SS "void GPIO_WriteBit (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin, \fBBitAction\fP BitVal)"
+
+.PP
+Sets or clears the selected data port bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIGPIOx\fP where x can be (A\&.\&.G) to select the GPIO peripheral\&. 
+.br
+\fIGPIO_Pin\fP specifies the port bit to be written\&. This parameter can be one of GPIO_Pin_x where x can be (0\&.\&.15)\&. 
+.br
+\fIBitVal\fP specifies the value to be written to the selected bit\&. This parameter can be one of the BitAction enum values: 
+.PD 0
+
+.IP "\(bu" 2
+Bit_RESET: to clear the port pin 
+.IP "\(bu" 2
+Bit_SET: to set the port pin 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 394 of file stm32f10x_gpio\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

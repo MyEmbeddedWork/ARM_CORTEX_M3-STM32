@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_c_a_n___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>CAN_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::MCR</definition>
+        <argsstring></argsstring>
+        <name>MCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="705" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="705" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga9023c35a9ab931ad4513fc5d19b4bd6c" compoundref="stm32f10x__can_8c" startline="154" endline="282">CAN_Init</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1gac0e2d33e08caf49d1f1251f0dcc20213" compoundref="stm32f10x__can_8c" startline="451" endline="467">CAN_DBGFreeze</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga94740177bab153ca5b102d122f9a8cca" compoundref="stm32f10x__can_8c" startline="481" endline="506">CAN_TTComModeCmd</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1gab2a3630e9e3024114eb117d14e514208" compoundref="stm32f10x__can_8c" startline="784" endline="858">CAN_OperatingModeRequest</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga640215e38765759d7eceb8a039046667" compoundref="stm32f10x__can_8c" startline="866" endline="884">CAN_Sleep</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga78cdfbf1884b9e33c552bcbca15bed10" compoundref="stm32f10x__can_8c" startline="892" endline="915">CAN_WakeUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::MSR</definition>
+        <argsstring></argsstring>
+        <name>MSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="706" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="706" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga9023c35a9ab931ad4513fc5d19b4bd6c" compoundref="stm32f10x__can_8c" startline="154" endline="282">CAN_Init</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1gab2a3630e9e3024114eb117d14e514208" compoundref="stm32f10x__can_8c" startline="784" endline="858">CAN_OperatingModeRequest</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga640215e38765759d7eceb8a039046667" compoundref="stm32f10x__can_8c" startline="866" endline="884">CAN_Sleep</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga78cdfbf1884b9e33c552bcbca15bed10" compoundref="stm32f10x__can_8c" startline="892" endline="915">CAN_WakeUp</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2faad96caf823ef463cc5b5b25c480bb" compoundref="stm32f10x__can_8c" startline="1053" endline="1134">CAN_GetFlagStatus</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2c01646d5d3a2d7045e8dd71f58f8742" compoundref="stm32f10x__can_8c" startline="1153" endline="1190">CAN_ClearFlag</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a" compoundref="stm32f10x__can_8c" startline="1316" endline="1387">CAN_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::TSR</definition>
+        <argsstring></argsstring>
+        <name>TSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="707" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="707" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga68ab05a0a6cdfcc2b6f6b6b2c10848e2" compoundref="stm32f10x__can_8c" startline="589" endline="635">CAN_TransmitStatus</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga81106cdf5395a1947bfc87ec1685829e" compoundref="stm32f10x__can_8c" startline="643" endline="660">CAN_CancelTransmit</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2faad96caf823ef463cc5b5b25c480bb" compoundref="stm32f10x__can_8c" startline="1053" endline="1134">CAN_GetFlagStatus</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2c01646d5d3a2d7045e8dd71f58f8742" compoundref="stm32f10x__can_8c" startline="1153" endline="1190">CAN_ClearFlag</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a" compoundref="stm32f10x__can_8c" startline="1316" endline="1387">CAN_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::RF0R</definition>
+        <argsstring></argsstring>
+        <name>RF0R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="708" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="708" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga1bc3b39471e579b4101624c33d27918b" compoundref="stm32f10x__can_8c" startline="730" endline="745">CAN_FIFORelease</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga7100459a95ce1b3cfe8ab15e112029fe" compoundref="stm32f10x__can_8c" startline="753" endline="772">CAN_MessagePending</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2faad96caf823ef463cc5b5b25c480bb" compoundref="stm32f10x__can_8c" startline="1053" endline="1134">CAN_GetFlagStatus</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2c01646d5d3a2d7045e8dd71f58f8742" compoundref="stm32f10x__can_8c" startline="1153" endline="1190">CAN_ClearFlag</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a" compoundref="stm32f10x__can_8c" startline="1316" endline="1387">CAN_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::RF1R</definition>
+        <argsstring></argsstring>
+        <name>RF1R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="709" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="709" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga1bc3b39471e579b4101624c33d27918b" compoundref="stm32f10x__can_8c" startline="730" endline="745">CAN_FIFORelease</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga7100459a95ce1b3cfe8ab15e112029fe" compoundref="stm32f10x__can_8c" startline="753" endline="772">CAN_MessagePending</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2faad96caf823ef463cc5b5b25c480bb" compoundref="stm32f10x__can_8c" startline="1053" endline="1134">CAN_GetFlagStatus</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2c01646d5d3a2d7045e8dd71f58f8742" compoundref="stm32f10x__can_8c" startline="1153" endline="1190">CAN_ClearFlag</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a" compoundref="stm32f10x__can_8c" startline="1316" endline="1387">CAN_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a530babbc4b9584c93a1bf87d6ce8b8dc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::IER</definition>
+        <argsstring></argsstring>
+        <name>IER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="710" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="710" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gad1a8b2499a780b5bfa4accb3597b02f4" compoundref="stm32f10x__can_8c" startline="1013" endline="1030">CAN_ITConfig</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga9aca05b3013e1b3438f3559f80b33c82" compoundref="stm32f10x__can_8c" startline="1213" endline="1296">CAN_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::ESR</definition>
+        <argsstring></argsstring>
+        <name>ESR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="711" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="711" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaaee721a392b6b21bfd15dc160aeb6924" compoundref="stm32f10x__can_8c" startline="932" endline="944">CAN_GetLastErrorCode</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga6903eecbec40eb1361d915ddde9a3274" compoundref="stm32f10x__can_8c" startline="956" endline="968">CAN_GetReceiveErrorCounter</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga85ee0c35bf7ca15d4e4c862eef534843" compoundref="stm32f10x__can_8c" startline="976" endline="988">CAN_GetLSBTransmitErrorCounter</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2faad96caf823ef463cc5b5b25c480bb" compoundref="stm32f10x__can_8c" startline="1053" endline="1134">CAN_GetFlagStatus</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga2c01646d5d3a2d7045e8dd71f58f8742" compoundref="stm32f10x__can_8c" startline="1153" endline="1190">CAN_ClearFlag</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a" compoundref="stm32f10x__can_8c" startline="1316" endline="1387">CAN_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1accad1e4155459a13369f5ad0e7c6da29" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::BTR</definition>
+        <argsstring></argsstring>
+        <name>BTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="712" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="712" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga9023c35a9ab931ad4513fc5d19b4bd6c" compoundref="stm32f10x__can_8c" startline="154" endline="282">CAN_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ad0cc7fb26376c435bbf148e962739337" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_TypeDef::RESERVED0[88]</definition>
+        <argsstring>[88]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="713" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a328925e230f68a775f6f4ad1076c27ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_a_n___tx_mail_box___type_def" kindref="compound">CAN_TxMailBox_TypeDef</ref></type>
+        <definition>CAN_TxMailBox_TypeDef CAN_TypeDef::sTxMailBox[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>sTxMailBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="714" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="714" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga94740177bab153ca5b102d122f9a8cca" compoundref="stm32f10x__can_8c" startline="481" endline="506">CAN_TTComModeCmd</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1aa6053bc607535d9ecf7a3d887c0cc053" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_a_n___f_i_f_o_mail_box___type_def" kindref="compound">CAN_FIFOMailBox_TypeDef</ref></type>
+        <definition>CAN_FIFOMailBox_TypeDef CAN_TypeDef::sFIFOMailBox[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>sFIFOMailBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="715" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="715" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a046ef464378aaaaafaf999c23a4dc55e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_TypeDef::RESERVED1[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="716" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a1a6a0f78ca703a63bb0a6b6f231f612f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::FMR</definition>
+        <argsstring></argsstring>
+        <name>FMR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="717" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1aefe6a26ee25947b7eb5be9d485f4d3b0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::FM1R</definition>
+        <argsstring></argsstring>
+        <name>FM1R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="718" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ab29069c9fd10eeec47414abd8d06822f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_TypeDef::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="719" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ac6296402924b37966c67ccf14a381976" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::FS1R</definition>
+        <argsstring></argsstring>
+        <name>FS1R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="720" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1af730af32307f845895465e8ead57d20c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_TypeDef::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="721" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ae2decd14b26f851e00a31b42d15293ce" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::FFA1R</definition>
+        <argsstring></argsstring>
+        <name>FFA1R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="722" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1a51c408c7c352b8080f0c6d42bf811d43" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_TypeDef::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="723" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ab57a3a6c337a8c6c7cb39d0cefc2459a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TypeDef::FA1R</definition>
+        <argsstring></argsstring>
+        <name>FA1R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="724" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ad4339975b6064cfe2aaeb642f916d6e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_TypeDef::RESERVED5[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="725" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___type_def_1ab8ad52d839d4bcea4ce3502a4d279ff1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_a_n___filter_register___type_def" kindref="compound">CAN_FilterRegister_TypeDef</ref></type>
+        <definition>CAN_FilterRegister_TypeDef CAN_TypeDef::sFilterRegister[14]</definition>
+        <argsstring>[14]</argsstring>
+        <name>sFilterRegister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="727" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Controller Area Network. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="157">
+        <label>CAN_TypeDef</label>
+        <link refid="struct_c_a_n___type_def"/>
+        <childnode refid="158" relation="usage">
+          <edgelabel>sFilterRegister</edgelabel>
+        </childnode>
+        <childnode refid="159" relation="usage">
+          <edgelabel>sTxMailBox</edgelabel>
+        </childnode>
+        <childnode refid="160" relation="usage">
+          <edgelabel>sFIFOMailBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="158">
+        <label>CAN_FilterRegister_TypeDef</label>
+        <link refid="struct_c_a_n___filter_register___type_def"/>
+      </node>
+      <node id="160">
+        <label>CAN_FIFOMailBox_TypeDef</label>
+        <link refid="struct_c_a_n___f_i_f_o_mail_box___type_def"/>
+      </node>
+      <node id="159">
+        <label>CAN_TxMailBox_TypeDef</label>
+        <link refid="struct_c_a_n___tx_mail_box___type_def"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="704" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="703" bodyend="731"/>
+    <listofallmembers>
+      <member refid="struct_c_a_n___type_def_1accad1e4155459a13369f5ad0e7c6da29" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>BTR</name></member>
+      <member refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>ESR</name></member>
+      <member refid="struct_c_a_n___type_def_1ab57a3a6c337a8c6c7cb39d0cefc2459a" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>FA1R</name></member>
+      <member refid="struct_c_a_n___type_def_1ae2decd14b26f851e00a31b42d15293ce" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>FFA1R</name></member>
+      <member refid="struct_c_a_n___type_def_1aefe6a26ee25947b7eb5be9d485f4d3b0" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>FM1R</name></member>
+      <member refid="struct_c_a_n___type_def_1a1a6a0f78ca703a63bb0a6b6f231f612f" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>FMR</name></member>
+      <member refid="struct_c_a_n___type_def_1ac6296402924b37966c67ccf14a381976" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>FS1R</name></member>
+      <member refid="struct_c_a_n___type_def_1a530babbc4b9584c93a1bf87d6ce8b8dc" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>IER</name></member>
+      <member refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>MCR</name></member>
+      <member refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>MSR</name></member>
+      <member refid="struct_c_a_n___type_def_1ad0cc7fb26376c435bbf148e962739337" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_c_a_n___type_def_1a046ef464378aaaaafaf999c23a4dc55e" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_c_a_n___type_def_1ab29069c9fd10eeec47414abd8d06822f" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_c_a_n___type_def_1af730af32307f845895465e8ead57d20c" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_c_a_n___type_def_1a51c408c7c352b8080f0c6d42bf811d43" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_c_a_n___type_def_1ad4339975b6064cfe2aaeb642f916d6e0" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RESERVED5</name></member>
+      <member refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RF0R</name></member>
+      <member refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>RF1R</name></member>
+      <member refid="struct_c_a_n___type_def_1aa6053bc607535d9ecf7a3d887c0cc053" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>sFIFOMailBox</name></member>
+      <member refid="struct_c_a_n___type_def_1ab8ad52d839d4bcea4ce3502a4d279ff1" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>sFilterRegister</name></member>
+      <member refid="struct_c_a_n___type_def_1a328925e230f68a775f6f4ad1076c27ce" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>sTxMailBox</name></member>
+      <member refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" prot="public" virt="non-virtual"><scope>CAN_TypeDef</scope><name>TSR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

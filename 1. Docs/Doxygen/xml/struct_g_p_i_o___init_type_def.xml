@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_g_p_i_o___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>GPIO_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__gpio_8h" local="no">stm32f10x_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_p_i_o___init_type_def_1a35fc26fc58226126c5b99478a472e5e9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t GPIO_InitTypeDef::GPIO_Pin</definition>
+        <argsstring></argsstring>
+        <name>GPIO_Pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the GPIO pins to be configured. This parameter can be any value of <ref refid="group___g_p_i_o__pins__define" kindref="compound">GPIO_pins_define</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="93" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" compoundref="_blink_led_8cpp" startline="11" endline="26">BlinkLed::powerUp</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1gab28de41278e7f8c63d0851e2733b10df" compoundref="stm32f10x__gpio_8c" startline="266" endline="272">GPIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___init_type_def_1ac05832cacebc861a9acf5294d702c16b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___g_p_i_o___exported___types_1ga062ad92b67b4a1f301c161022cf3ba8e" kindref="member">GPIOSpeed_TypeDef</ref></type>
+        <definition>GPIOSpeed_TypeDef GPIO_InitTypeDef::GPIO_Speed</definition>
+        <argsstring></argsstring>
+        <name>GPIO_Speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the speed for the selected pins. This parameter can be a value of <ref refid="group___g_p_i_o___exported___types_1ga062ad92b67b4a1f301c161022cf3ba8e" kindref="member">GPIOSpeed_TypeDef</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="96" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" compoundref="_blink_led_8cpp" startline="11" endline="26">BlinkLed::powerUp</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1gab28de41278e7f8c63d0851e2733b10df" compoundref="stm32f10x__gpio_8c" startline="266" endline="272">GPIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___init_type_def_1a55bd77e335c2bfeec9caa5dc922b791b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___g_p_i_o___exported___types_1ga1347339e1c84a196fabbb31205eec5d4" kindref="member">GPIOMode_TypeDef</ref></type>
+        <definition>GPIOMode_TypeDef GPIO_InitTypeDef::GPIO_Mode</definition>
+        <argsstring></argsstring>
+        <name>GPIO_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the operating mode for the selected pins. This parameter can be a value of <ref refid="group___g_p_i_o___exported___types_1ga1347339e1c84a196fabbb31205eec5d4" kindref="member">GPIOMode_TypeDef</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="99" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" compoundref="_blink_led_8cpp" startline="11" endline="26">BlinkLed::powerUp</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1gab28de41278e7f8c63d0851e2733b10df" compoundref="stm32f10x__gpio_8c" startline="266" endline="272">GPIO_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GPIO Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="92" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="91" bodyend="101"/>
+    <listofallmembers>
+      <member refid="struct_g_p_i_o___init_type_def_1a55bd77e335c2bfeec9caa5dc922b791b" prot="public" virt="non-virtual"><scope>GPIO_InitTypeDef</scope><name>GPIO_Mode</name></member>
+      <member refid="struct_g_p_i_o___init_type_def_1a35fc26fc58226126c5b99478a472e5e9" prot="public" virt="non-virtual"><scope>GPIO_InitTypeDef</scope><name>GPIO_Pin</name></member>
+      <member refid="struct_g_p_i_o___init_type_def_1ac05832cacebc861a9acf5294d702c16b" prot="public" virt="non-virtual"><scope>GPIO_InitTypeDef</scope><name>GPIO_Speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

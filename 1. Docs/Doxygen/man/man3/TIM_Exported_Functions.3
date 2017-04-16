@@ -1,0 +1,2825 @@
+.TH "TIM_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTIM_DeInit\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Deinitializes the TIMx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBTIM_TimeBaseInit\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_TimeBaseInitTypeDef\fP *TIM_TimeBaseInitStruct)"
+.br
+.RI "Initializes the TIMx Time Base Unit peripheral according to the specified parameters in the TIM_TimeBaseInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC1Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel1 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC2Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel2 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC3Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel3 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC4Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel4 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_ICInit\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Initializes the TIM peripheral according to the specified parameters in the TIM_ICInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_PWMIConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Configures the TIM peripheral according to the specified parameters in the TIM_ICInitStruct to measure an external PWM signal\&. "
+.ti -1c
+.RI "void \fBTIM_BDTRConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_BDTRInitTypeDef\fP *TIM_BDTRInitStruct)"
+.br
+.RI "Configures the: Break feature, dead time, Lock level, the OSSI, the OSSR State and the AOE(automatic output enable)\&. "
+.ti -1c
+.RI "void \fBTIM_TimeBaseStructInit\fP (\fBTIM_TimeBaseInitTypeDef\fP *TIM_TimeBaseInitStruct)"
+.br
+.RI "Fills each TIM_TimeBaseInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_OCStructInit\fP (\fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Fills each TIM_OCInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_ICStructInit\fP (\fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Fills each TIM_ICInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_BDTRStructInit\fP (\fBTIM_BDTRInitTypeDef\fP *TIM_BDTRInitStruct)"
+.br
+.RI "Fills each TIM_BDTRInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_Cmd\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified TIM peripheral\&. "
+.ti -1c
+.RI "void \fBTIM_CtrlPWMOutputs\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIM peripheral Main Outputs\&. "
+.ti -1c
+.RI "void \fBTIM_ITConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified TIM interrupts\&. "
+.ti -1c
+.RI "void \fBTIM_GenerateEvent\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_EventSource)"
+.br
+.RI "Configures the TIMx event to be generate by software\&. "
+.ti -1c
+.RI "void \fBTIM_DMAConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)"
+.br
+.RI "Configures the TIMx's DMA interface\&. "
+.ti -1c
+.RI "void \fBTIM_DMACmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_DMASource, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIMx's DMA Requests\&. "
+.ti -1c
+.RI "void \fBTIM_InternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Configures the TIMx internal Clock\&. "
+.ti -1c
+.RI "void \fBTIM_ITRxExternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_InputTriggerSource)"
+.br
+.RI "Configures the TIMx Internal Trigger as External Clock\&. "
+.ti -1c
+.RI "void \fBTIM_TIxExternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_TIxExternalCLKSource, uint16_t TIM_ICPolarity, uint16_t ICFilter)"
+.br
+.RI "Configures the TIMx Trigger as External Clock\&. "
+.ti -1c
+.RI "void \fBTIM_ETRClockMode1Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the External clock Mode1\&. "
+.ti -1c
+.RI "void \fBTIM_ETRClockMode2Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the External clock Mode2\&. "
+.ti -1c
+.RI "void \fBTIM_ETRConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the TIMx External Trigger (ETR)\&. "
+.ti -1c
+.RI "void \fBTIM_PrescalerConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)"
+.br
+.RI "Configures the TIMx Prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_CounterModeConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_CounterMode)"
+.br
+.RI "Specifies the TIMx Counter Mode to be used\&. "
+.ti -1c
+.RI "void \fBTIM_SelectInputTrigger\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_InputTriggerSource)"
+.br
+.RI "Selects the Input Trigger source\&. "
+.ti -1c
+.RI "void \fBTIM_EncoderInterfaceConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)"
+.br
+.RI "Configures the TIMx Encoder Interface\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC1Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 1 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC2Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 2 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC3Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 3 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC4Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 4 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ARRPreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables TIMx peripheral Preload register on ARR\&. "
+.ti -1c
+.RI "void \fBTIM_SelectCOM\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the TIM peripheral Commutation event\&. "
+.ti -1c
+.RI "void \fBTIM_SelectCCDMA\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the TIMx peripheral Capture Compare DMA source\&. "
+.ti -1c
+.RI "void \fBTIM_CCPreloadControl\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Sets or Resets the TIM peripheral Capture Compare Preload Control bit\&. "
+.ti -1c
+.RI "void \fBTIM_OC1PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR1\&. "
+.ti -1c
+.RI "void \fBTIM_OC2PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR2\&. "
+.ti -1c
+.RI "void \fBTIM_OC3PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR3\&. "
+.ti -1c
+.RI "void \fBTIM_OC4PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR4\&. "
+.ti -1c
+.RI "void \fBTIM_OC1FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 1 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC2FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 2 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC3FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 3 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC4FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 4 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC1Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF1 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC2Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF2 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC3Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF3 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC4Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF4 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_OC1PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 1 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC1NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 1N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC2PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 2 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC2NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 2N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC3PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 3 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC3NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 3N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC4PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 4 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_CCxCmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)"
+.br
+.RI "Enables or disables the TIM Capture Compare Channel x\&. "
+.ti -1c
+.RI "void \fBTIM_CCxNCmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)"
+.br
+.RI "Enables or disables the TIM Capture Compare Channel xN\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOCxM\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)"
+.br
+.RI "Selects the TIM Output Compare Mode\&. "
+.ti -1c
+.RI "void \fBTIM_UpdateDisableConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or Disables the TIMx Update event\&. "
+.ti -1c
+.RI "void \fBTIM_UpdateRequestConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_UpdateSource)"
+.br
+.RI "Configures the TIMx Update Request Interrupt source\&. "
+.ti -1c
+.RI "void \fBTIM_SelectHallSensor\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIMx's Hall sensor interface\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOnePulseMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OPMode)"
+.br
+.RI "Selects the TIMx's One Pulse Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOutputTrigger\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_TRGOSource)"
+.br
+.RI "Selects the TIMx Trigger Output Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectSlaveMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_SlaveMode)"
+.br
+.RI "Selects the TIMx Slave Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectMasterSlaveMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_MasterSlaveMode)"
+.br
+.RI "Sets or Resets the TIMx Master/Slave Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SetCounter\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Counter)"
+.br
+.RI "Sets the TIMx Counter Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetAutoreload\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Autoreload)"
+.br
+.RI "Sets the TIMx Autoreload Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare1\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare1)"
+.br
+.RI "Sets the TIMx Capture Compare1 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare2\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare2)"
+.br
+.RI "Sets the TIMx Capture Compare2 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare3\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare3)"
+.br
+.RI "Sets the TIMx Capture Compare3 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare4\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare4)"
+.br
+.RI "Sets the TIMx Capture Compare4 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC1Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 1 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC2Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 2 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC3Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 3 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC4Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 4 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetClockDivision\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_CKD)"
+.br
+.RI "Sets the TIMx Clock Division value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture1\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 1 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture2\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 2 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture3\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 3 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture4\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 4 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCounter\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Counter value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetPrescaler\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Prescaler value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBTIM_GetFlagStatus\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_FLAG)"
+.br
+.RI "Checks whether the specified TIM flag is set or not\&. "
+.ti -1c
+.RI "void \fBTIM_ClearFlag\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_FLAG)"
+.br
+.RI "Clears the TIMx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBTIM_GetITStatus\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT)"
+.br
+.RI "Checks whether the TIM interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBTIM_ClearITPendingBit\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT)"
+.br
+.RI "Clears the TIMx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void TIM_ARRPreloadConfig (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables TIMx peripheral Preload register on ARR\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fINewState\fP new state of the TIMx peripheral Preload register This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1409 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_BDTRConfig (\fBTIM_TypeDef\fP * TIMx, \fBTIM_BDTRInitTypeDef\fP * TIM_BDTRInitStruct)"
+
+.PP
+Configures the: Break feature, dead time, Lock level, the OSSI, the OSSR State and the AOE(automatic output enable)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 or 8 to select the TIM 
+.br
+\fITIM_BDTRInitStruct\fP pointer to a \fBTIM_BDTRInitTypeDef\fP structure that contains the BDTR Register configuration information for the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 712 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_BDTRStructInit (\fBTIM_BDTRInitTypeDef\fP * TIM_BDTRInitStruct)"
+
+.PP
+Fills each TIM_BDTRInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIM_BDTRInitStruct\fP pointer to a \fBTIM_BDTRInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 787 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_CCPreloadControl (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Sets or Resets the TIM peripheral Capture Compare Preload Control bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8 or 15 to select the TIMx peripheral 
+.br
+\fINewState\fP new state of the Capture Compare Preload Control bit This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1483 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_CCxCmd (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)"
+
+.PP
+Enables or disables the TIM Capture Compare Channel x\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_Channel\fP specifies the TIM Channel This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_Channel_1: TIM Channel 1 
+.IP "\(bu" 2
+TIM_Channel_2: TIM Channel 2 
+.IP "\(bu" 2
+TIM_Channel_3: TIM Channel 3 
+.IP "\(bu" 2
+TIM_Channel_4: TIM Channel 4 
+.PP
+.br
+\fITIM_CCx\fP specifies the TIM Channel CCxE bit new state\&. This parameter can be: TIM_CCx_Enable or TIM_CCx_Disable\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1980 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_CCxNCmd (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)"
+
+.PP
+Enables or disables the TIM Capture Compare Channel xN\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 8, 15, 16 or 17 to select the TIM peripheral\&. 
+.br
+\fITIM_Channel\fP specifies the TIM Channel This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_Channel_1: TIM Channel 1 
+.IP "\(bu" 2
+TIM_Channel_2: TIM Channel 2 
+.IP "\(bu" 2
+TIM_Channel_3: TIM Channel 3 
+.PP
+.br
+\fITIM_CCxN\fP specifies the TIM Channel CCxNE bit new state\&. This parameter can be: TIM_CCxN_Enable or TIM_CCxN_Disable\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2010 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ClearFlag (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_FLAG)"
+
+.PP
+Clears the TIMx's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_FLAG\fP specifies the flag bit to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_FLAG_Update: TIM update Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC1: TIM Capture Compare 1 Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC2: TIM Capture Compare 2 Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC3: TIM Capture Compare 3 Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC4: TIM Capture Compare 4 Flag 
+.IP "\(bu" 2
+TIM_FLAG_COM: TIM Commutation Flag 
+.IP "\(bu" 2
+TIM_FLAG_Trigger: TIM Trigger Flag 
+.IP "\(bu" 2
+TIM_FLAG_Break: TIM Break Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC1OF: TIM Capture Compare 1 overcapture Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC2OF: TIM Capture Compare 2 overcapture Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC3OF: TIM Capture Compare 3 overcapture Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC4OF: TIM Capture Compare 4 overcapture Flag 
+.PP
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+TIM6 and TIM7 can have only one update flag\&.
+.IP "\(bu" 2
+TIM9, TIM12 and TIM15 can have only TIM_FLAG_Update, TIM_FLAG_CC1, TIM_FLAG_CC2 or TIM_FLAG_Trigger\&.
+.IP "\(bu" 2
+TIM10, TIM11, TIM13, TIM14, TIM16 and TIM17 can have TIM_FLAG_Update or TIM_FLAG_CC1\&.
+.IP "\(bu" 2
+TIM_FLAG_Break is used only with TIM1, TIM8 and TIM15\&.
+.IP "\(bu" 2
+TIM_FLAG_COM is used only with TIM1, TIM8, TIM15, TIM16 and TIM17\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2611 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ClearITPendingBit (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_IT)"
+
+.PP
+Clears the TIMx's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_IT\fP specifies the pending bit to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_IT_Update: TIM1 update Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC1: TIM Capture Compare 1 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC2: TIM Capture Compare 2 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC3: TIM Capture Compare 3 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC4: TIM Capture Compare 4 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_COM: TIM Commutation Interrupt source 
+.IP "\(bu" 2
+TIM_IT_Trigger: TIM Trigger Interrupt source 
+.IP "\(bu" 2
+TIM_IT_Break: TIM Break Interrupt source 
+.PP
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+TIM6 and TIM7 can generate only an update interrupt\&.
+.IP "\(bu" 2
+TIM9, TIM12 and TIM15 can have only TIM_IT_Update, TIM_IT_CC1, TIM_IT_CC2 or TIM_IT_Trigger\&.
+.IP "\(bu" 2
+TIM10, TIM11, TIM13, TIM14, TIM16 and TIM17 can have TIM_IT_Update or TIM_IT_CC1\&.
+.IP "\(bu" 2
+TIM_IT_Break is used only with TIM1, TIM8 and TIM15\&.
+.IP "\(bu" 2
+TIM_IT_COM is used only with TIM1, TIM8, TIM15, TIM16 and TIM17\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2687 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ClearOC1Ref (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCClear)"
+
+.PP
+Clears or safeguards the OCREF1 signal on an external event\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCClear\fP new state of the Output Compare Clear Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCClear_Enable: TIM Output clear enable 
+.IP "\(bu" 2
+TIM_OCClear_Disable: TIM Output clear disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1707 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ClearOC2Ref (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCClear)"
+
+.PP
+Clears or safeguards the OCREF2 signal on an external event\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCClear\fP new state of the Output Compare Clear Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCClear_Enable: TIM Output clear enable 
+.IP "\(bu" 2
+TIM_OCClear_Disable: TIM Output clear disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1733 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ClearOC3Ref (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCClear)"
+
+.PP
+Clears or safeguards the OCREF3 signal on an external event\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCClear\fP new state of the Output Compare Clear Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCClear_Enable: TIM Output clear enable 
+.IP "\(bu" 2
+TIM_OCClear_Disable: TIM Output clear disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1757 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ClearOC4Ref (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCClear)"
+
+.PP
+Clears or safeguards the OCREF4 signal on an external event\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCClear\fP new state of the Output Compare Clear Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCClear_Enable: TIM Output clear enable 
+.IP "\(bu" 2
+TIM_OCClear_Disable: TIM Output clear disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1781 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_Cmd (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified TIM peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIMx peripheral\&. 
+.br
+\fINewState\fP new state of the TIMx peripheral\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 806 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_CounterModeConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_CounterMode)"
+
+.PP
+Specifies the TIMx Counter Mode to be used\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_CounterMode\fP specifies the Counter Mode to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_CounterMode_Up: TIM Up Counting Mode 
+.IP "\(bu" 2
+TIM_CounterMode_Down: TIM Down Counting Mode 
+.IP "\(bu" 2
+TIM_CounterMode_CenterAligned1: TIM Center Aligned Mode1 
+.IP "\(bu" 2
+TIM_CounterMode_CenterAligned2: TIM Center Aligned Mode2 
+.IP "\(bu" 2
+TIM_CounterMode_CenterAligned3: TIM Center Aligned Mode3 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1199 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_CtrlPWMOutputs (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the TIM peripheral Main Outputs\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 8, 15, 16 or 17 to select the TIMx peripheral\&. 
+.br
+\fINewState\fP new state of the TIM peripheral Main Outputs\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 831 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_DeInit (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Deinitializes the TIMx peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 122 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_DMACmd (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_DMASource, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the TIMx's DMA Requests\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 6, 7, 8, 15, 16 or 17 to select the TIM peripheral\&. 
+.br
+\fITIM_DMASource\fP specifies the DMA Request sources\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_DMA_Update: TIM update Interrupt source 
+.IP "\(bu" 2
+TIM_DMA_CC1: TIM Capture Compare 1 DMA source 
+.IP "\(bu" 2
+TIM_DMA_CC2: TIM Capture Compare 2 DMA source 
+.IP "\(bu" 2
+TIM_DMA_CC3: TIM Capture Compare 3 DMA source 
+.IP "\(bu" 2
+TIM_DMA_CC4: TIM Capture Compare 4 DMA source 
+.IP "\(bu" 2
+TIM_DMA_COM: TIM Commutation DMA source 
+.IP "\(bu" 2
+TIM_DMA_Trigger: TIM Trigger DMA source 
+.PP
+.br
+\fINewState\fP new state of the DMA Request sources\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 964 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_DMAConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)"
+
+.PP
+Configures the TIMx's DMA interface\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 15, 16 or 17 to select the TIM peripheral\&. 
+.br
+\fITIM_DMABase\fP DMA Base address\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_DMABase_CR, TIM_DMABase_CR2, TIM_DMABase_SMCR, TIM_DMABase_DIER, TIM1_DMABase_SR, TIM_DMABase_EGR, TIM_DMABase_CCMR1, TIM_DMABase_CCMR2, TIM_DMABase_CCER, TIM_DMABase_CNT, TIM_DMABase_PSC, TIM_DMABase_ARR, TIM_DMABase_RCR, TIM_DMABase_CCR1, TIM_DMABase_CCR2, TIM_DMABase_CCR3, TIM_DMABase_CCR4, TIM_DMABase_BDTR, TIM_DMABase_DCR\&. 
+.PP
+.br
+\fITIM_DMABurstLength\fP DMA Burst length\&. This parameter can be one value between: TIM_DMABurstLength_1Transfer and TIM_DMABurstLength_18Transfers\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 937 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_EncoderInterfaceConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)"
+
+.PP
+Configures the TIMx Encoder Interface\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_EncoderMode\fP specifies the TIMx Encoder Mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_EncoderMode_TI1: Counter counts on TI1FP1 edge depending on TI2FP2 level\&. 
+.IP "\(bu" 2
+TIM_EncoderMode_TI2: Counter counts on TI2FP2 edge depending on TI1FP1 level\&. 
+.IP "\(bu" 2
+TIM_EncoderMode_TI12: Counter counts on both TI1FP1 and TI2FP2 edges depending on the level of the other input\&. 
+.PP
+.br
+\fITIM_IC1Polarity\fP specifies the IC1 Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPolarity_Falling: IC Falling edge\&. 
+.IP "\(bu" 2
+TIM_ICPolarity_Rising: IC Rising edge\&. 
+.PP
+.br
+\fITIM_IC2Polarity\fP specifies the IC2 Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPolarity_Falling: IC Falling edge\&. 
+.IP "\(bu" 2
+TIM_ICPolarity_Rising: IC Rising edge\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1264 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ETRClockMode1Config (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+
+.PP
+Configures the External clock Mode1\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ExtTRGPrescaler\fP The external Trigger Prescaler\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ExtTRGPSC_OFF: ETRP Prescaler OFF\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV2: ETRP frequency divided by 2\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV4: ETRP frequency divided by 4\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV8: ETRP frequency divided by 8\&. 
+.PP
+.br
+\fITIM_ExtTRGPolarity\fP The external Trigger Polarity\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ExtTRGPolarity_Inverted: active low or falling edge active\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPolarity_NonInverted: active high or rising edge active\&. 
+.PP
+.br
+\fIExtTRGFilter\fP External Trigger Filter\&. This parameter must be a value between 0x00 and 0x0F 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1075 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ETRClockMode2Config (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+
+.PP
+Configures the External clock Mode2\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ExtTRGPrescaler\fP The external Trigger Prescaler\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ExtTRGPSC_OFF: ETRP Prescaler OFF\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV2: ETRP frequency divided by 2\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV4: ETRP frequency divided by 4\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV8: ETRP frequency divided by 8\&. 
+.PP
+.br
+\fITIM_ExtTRGPolarity\fP The external Trigger Polarity\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ExtTRGPolarity_Inverted: active low or falling edge active\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPolarity_NonInverted: active high or rising edge active\&. 
+.PP
+.br
+\fIExtTRGFilter\fP External Trigger Filter\&. This parameter must be a value between 0x00 and 0x0F 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1117 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ETRConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+
+.PP
+Configures the TIMx External Trigger (ETR)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ExtTRGPrescaler\fP The external Trigger Prescaler\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ExtTRGPSC_OFF: ETRP Prescaler OFF\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV2: ETRP frequency divided by 2\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV4: ETRP frequency divided by 4\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPSC_DIV8: ETRP frequency divided by 8\&. 
+.PP
+.br
+\fITIM_ExtTRGPolarity\fP The external Trigger Polarity\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ExtTRGPolarity_Inverted: active low or falling edge active\&. 
+.IP "\(bu" 2
+TIM_ExtTRGPolarity_NonInverted: active high or rising edge active\&. 
+.PP
+.br
+\fIExtTRGFilter\fP External Trigger Filter\&. This parameter must be a value between 0x00 and 0x0F 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1148 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ForcedOC1Config (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ForcedAction)"
+
+.PP
+Forces the TIMx output 1 waveform to active or inactive level\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_ForcedAction\fP specifies the forced Action to be set to the output waveform\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ForcedAction_Active: Force active level on OC1REF 
+.IP "\(bu" 2
+TIM_ForcedAction_InActive: Force inactive level on OC1REF\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1315 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ForcedOC2Config (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ForcedAction)"
+
+.PP
+Forces the TIMx output 2 waveform to active or inactive level\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_ForcedAction\fP specifies the forced Action to be set to the output waveform\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ForcedAction_Active: Force active level on OC2REF 
+.IP "\(bu" 2
+TIM_ForcedAction_InActive: Force inactive level on OC2REF\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1339 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ForcedOC3Config (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ForcedAction)"
+
+.PP
+Forces the TIMx output 3 waveform to active or inactive level\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ForcedAction\fP specifies the forced Action to be set to the output waveform\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ForcedAction_Active: Force active level on OC3REF 
+.IP "\(bu" 2
+TIM_ForcedAction_InActive: Force inactive level on OC3REF\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1363 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ForcedOC4Config (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ForcedAction)"
+
+.PP
+Forces the TIMx output 4 waveform to active or inactive level\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ForcedAction\fP specifies the forced Action to be set to the output waveform\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ForcedAction_Active: Force active level on OC4REF 
+.IP "\(bu" 2
+TIM_ForcedAction_InActive: Force inactive level on OC4REF\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1387 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_GenerateEvent (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_EventSource)"
+
+.PP
+Configures the TIMx event to be generate by software\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_EventSource\fP specifies the event source\&. This parameter can be one or more of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_EventSource_Update: \fBTimer\fP update Event source 
+.IP "\(bu" 2
+TIM_EventSource_CC1: \fBTimer\fP Capture Compare 1 Event source 
+.IP "\(bu" 2
+TIM_EventSource_CC2: \fBTimer\fP Capture Compare 2 Event source 
+.IP "\(bu" 2
+TIM_EventSource_CC3: \fBTimer\fP Capture Compare 3 Event source 
+.IP "\(bu" 2
+TIM_EventSource_CC4: \fBTimer\fP Capture Compare 4 Event source 
+.IP "\(bu" 2
+TIM_EventSource_COM: \fBTimer\fP COM event source 
+.IP "\(bu" 2
+TIM_EventSource_Trigger: \fBTimer\fP Trigger Event source 
+.IP "\(bu" 2
+TIM_EventSource_Break: \fBTimer\fP Break event source 
+.PP
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+TIM6 and TIM7 can only generate an update event\&.
+.IP "\(bu" 2
+TIM_EventSource_COM and TIM_EventSource_Break are used only with TIM1 and TIM8\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 909 of file stm32f10x_tim\&.c\&.
+.SS "uint16_t TIM_GetCapture1 (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Gets the TIMx Input Capture 1 value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICapture\fP Compare 1 Register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2468 of file stm32f10x_tim\&.c\&.
+.SS "uint16_t TIM_GetCapture2 (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Gets the TIMx Input Capture 2 value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICapture\fP Compare 2 Register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2481 of file stm32f10x_tim\&.c\&.
+.SS "uint16_t TIM_GetCapture3 (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Gets the TIMx Input Capture 3 value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICapture\fP Compare 3 Register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2494 of file stm32f10x_tim\&.c\&.
+.SS "uint16_t TIM_GetCapture4 (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Gets the TIMx Input Capture 4 value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICapture\fP Compare 4 Register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2507 of file stm32f10x_tim\&.c\&.
+.SS "uint16_t TIM_GetCounter (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Gets the TIMx Counter value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICounter\fP Register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2520 of file stm32f10x_tim\&.c\&.
+.SS "\fBFlagStatus\fP TIM_GetFlagStatus (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_FLAG)"
+
+.PP
+Checks whether the specified TIM flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_FLAG\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_FLAG_Update: TIM update Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC1: TIM Capture Compare 1 Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC2: TIM Capture Compare 2 Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC3: TIM Capture Compare 3 Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC4: TIM Capture Compare 4 Flag 
+.IP "\(bu" 2
+TIM_FLAG_COM: TIM Commutation Flag 
+.IP "\(bu" 2
+TIM_FLAG_Trigger: TIM Trigger Flag 
+.IP "\(bu" 2
+TIM_FLAG_Break: TIM Break Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC1OF: TIM Capture Compare 1 overcapture Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC2OF: TIM Capture Compare 2 overcapture Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC3OF: TIM Capture Compare 3 overcapture Flag 
+.IP "\(bu" 2
+TIM_FLAG_CC4OF: TIM Capture Compare 4 overcapture Flag 
+.PP
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+TIM6 and TIM7 can have only one update flag\&.
+.IP "\(bu" 2
+TIM9, TIM12 and TIM15 can have only TIM_FLAG_Update, TIM_FLAG_CC1, TIM_FLAG_CC2 or TIM_FLAG_Trigger\&.
+.IP "\(bu" 2
+TIM10, TIM11, TIM13, TIM14, TIM16 and TIM17 can have TIM_FLAG_Update or TIM_FLAG_CC1\&.
+.IP "\(bu" 2
+TIM_FLAG_Break is used only with TIM1, TIM8 and TIM15\&.
+.IP "\(bu" 2
+TIM_FLAG_COM is used only with TIM1, TIM8, TIM15, TIM16 and TIM17\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of TIM_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2567 of file stm32f10x_tim\&.c\&.
+.SS "\fBITStatus\fP TIM_GetITStatus (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_IT)"
+
+.PP
+Checks whether the TIM interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_IT\fP specifies the TIM interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_IT_Update: TIM update Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC1: TIM Capture Compare 1 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC2: TIM Capture Compare 2 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC3: TIM Capture Compare 3 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC4: TIM Capture Compare 4 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_COM: TIM Commutation Interrupt source 
+.IP "\(bu" 2
+TIM_IT_Trigger: TIM Trigger Interrupt source 
+.IP "\(bu" 2
+TIM_IT_Break: TIM Break Interrupt source 
+.PP
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+TIM6 and TIM7 can generate only an update interrupt\&.
+.IP "\(bu" 2
+TIM9, TIM12 and TIM15 can have only TIM_IT_Update, TIM_IT_CC1, TIM_IT_CC2 or TIM_IT_Trigger\&.
+.IP "\(bu" 2
+TIM10, TIM11, TIM13, TIM14, TIM16 and TIM17 can have TIM_IT_Update or TIM_IT_CC1\&.
+.IP "\(bu" 2
+TIM_IT_Break is used only with TIM1, TIM8 and TIM15\&.
+.IP "\(bu" 2
+TIM_IT_COM is used only with TIM1, TIM8, TIM15, TIM16 and TIM17\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of the TIM_IT(SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2643 of file stm32f10x_tim\&.c\&.
+.SS "uint16_t TIM_GetPrescaler (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Gets the TIMx Prescaler value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIPrescaler\fP Register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2533 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ICInit (\fBTIM_TypeDef\fP * TIMx, \fBTIM_ICInitTypeDef\fP * TIM_ICInitStruct)"
+
+.PP
+Initializes the TIM peripheral according to the specified parameters in the TIM_ICInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_ICInitStruct\fP pointer to a \fBTIM_ICInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 587 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ICStructInit (\fBTIM_ICInitTypeDef\fP * TIM_ICInitStruct)"
+
+.PP
+Fills each TIM_ICInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIM_ICInitStruct\fP pointer to a \fBTIM_ICInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 771 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_InternalClockConfig (\fBTIM_TypeDef\fP * TIMx)"
+
+.PP
+Configures the TIMx internal Clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 989 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ITConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified TIM interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIMx peripheral\&. 
+.br
+\fITIM_IT\fP specifies the TIM interrupts sources to be enabled or disabled\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_IT_Update: TIM update Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC1: TIM Capture Compare 1 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC2: TIM Capture Compare 2 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC3: TIM Capture Compare 3 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_CC4: TIM Capture Compare 4 Interrupt source 
+.IP "\(bu" 2
+TIM_IT_COM: TIM Commutation Interrupt source 
+.IP "\(bu" 2
+TIM_IT_Trigger: TIM Trigger Interrupt source 
+.IP "\(bu" 2
+TIM_IT_Break: TIM Break Interrupt source 
+.PP
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+TIM6 and TIM7 can only generate an update interrupt\&.
+.IP "\(bu" 2
+TIM9, TIM12 and TIM15 can have only TIM_IT_Update, TIM_IT_CC1, TIM_IT_CC2 or TIM_IT_Trigger\&.
+.IP "\(bu" 2
+TIM10, TIM11, TIM13, TIM14, TIM16 and TIM17 can have TIM_IT_Update or TIM_IT_CC1\&.
+.IP "\(bu" 2
+TIM_IT_Break is used only with TIM1, TIM8 and TIM15\&.
+.IP "\(bu" 2
+TIM_IT_COM is used only with TIM1, TIM8, TIM15, TIM16 and TIM17\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the TIM interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 872 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_ITRxExternalClockConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_InputTriggerSource)"
+
+.PP
+Configures the TIMx Internal Trigger as External Clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_ITRSource\fP Trigger source\&. This parameter can be one of the following values: 
+.br
+\fITIM_TS_ITR0\fP Internal Trigger 0 
+.br
+\fITIM_TS_ITR1\fP Internal Trigger 1 
+.br
+\fITIM_TS_ITR2\fP Internal Trigger 2 
+.br
+\fITIM_TS_ITR3\fP Internal Trigger 3 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1008 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC1FastConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCFast)"
+
+.PP
+Configures the TIMx Output Compare 1 Fast feature\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_OCFast\fP new state of the Output Compare Fast Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCFast_Enable: TIM output compare fast enable 
+.IP "\(bu" 2
+TIM_OCFast_Disable: TIM output compare fast disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1606 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC1Init (\fBTIM_TypeDef\fP * TIMx, \fBTIM_OCInitTypeDef\fP * TIM_OCInitStruct)"
+
+.PP
+Initializes the TIMx Channel1 according to the specified parameters in the TIM_OCInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_OCInitStruct\fP pointer to a \fBTIM_OCInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 279 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC1NPolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCNPolarity)"
+
+.PP
+Configures the TIMx Channel 1N polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 8, 15, 16 or 17 to select the TIM peripheral\&. 
+.br
+\fITIM_OCNPolarity\fP specifies the OC1N Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCNPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCNPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1828 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC1PolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPolarity)"
+
+.PP
+Configures the TIMx channel 1 polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPolarity\fP specifies the OC1 Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1805 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC1PreloadConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPreload)"
+
+.PP
+Enables or disables the TIMx peripheral Preload register on CCR1\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPreload\fP new state of the TIMx peripheral Preload register This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPreload_Enable 
+.IP "\(bu" 2
+TIM_OCPreload_Disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1509 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC2FastConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCFast)"
+
+.PP
+Configures the TIMx Output Compare 2 Fast feature\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_OCFast\fP new state of the Output Compare Fast Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCFast_Enable: TIM output compare fast enable 
+.IP "\(bu" 2
+TIM_OCFast_Disable: TIM output compare fast disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1632 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC2Init (\fBTIM_TypeDef\fP * TIMx, \fBTIM_OCInitTypeDef\fP * TIM_OCInitStruct)"
+
+.PP
+Initializes the TIMx Channel2 according to the specified parameters in the TIM_OCInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_OCInitStruct\fP pointer to a \fBTIM_OCInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 362 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC2NPolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCNPolarity)"
+
+.PP
+Configures the TIMx Channel 2N polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCNPolarity\fP specifies the OC2N Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCNPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCNPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1875 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC2PolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPolarity)"
+
+.PP
+Configures the TIMx channel 2 polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPolarity\fP specifies the OC2 Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1852 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC2PreloadConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPreload)"
+
+.PP
+Enables or disables the TIMx peripheral Preload register on CCR2\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPreload\fP new state of the TIMx peripheral Preload register This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPreload_Enable 
+.IP "\(bu" 2
+TIM_OCPreload_Disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1534 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC3FastConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCFast)"
+
+.PP
+Configures the TIMx Output Compare 3 Fast feature\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCFast\fP new state of the Output Compare Fast Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCFast_Enable: TIM output compare fast enable 
+.IP "\(bu" 2
+TIM_OCFast_Disable: TIM output compare fast disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1657 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC3Init (\fBTIM_TypeDef\fP * TIMx, \fBTIM_OCInitTypeDef\fP * TIM_OCInitStruct)"
+
+.PP
+Initializes the TIMx Channel3 according to the specified parameters in the TIM_OCInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCInitStruct\fP pointer to a \fBTIM_OCInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 444 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC3NPolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCNPolarity)"
+
+.PP
+Configures the TIMx Channel 3N polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCNPolarity\fP specifies the OC3N Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCNPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCNPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1922 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC3PolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPolarity)"
+
+.PP
+Configures the TIMx channel 3 polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPolarity\fP specifies the OC3 Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1899 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC3PreloadConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPreload)"
+
+.PP
+Enables or disables the TIMx peripheral Preload register on CCR3\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPreload\fP new state of the TIMx peripheral Preload register This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPreload_Enable 
+.IP "\(bu" 2
+TIM_OCPreload_Disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1558 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC4FastConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCFast)"
+
+.PP
+Configures the TIMx Output Compare 4 Fast feature\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCFast\fP new state of the Output Compare Fast Enable Bit\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCFast_Enable: TIM output compare fast enable 
+.IP "\(bu" 2
+TIM_OCFast_Disable: TIM output compare fast disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1682 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC4Init (\fBTIM_TypeDef\fP * TIMx, \fBTIM_OCInitTypeDef\fP * TIM_OCInitStruct)"
+
+.PP
+Initializes the TIMx Channel4 according to the specified parameters in the TIM_OCInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCInitStruct\fP pointer to a \fBTIM_OCInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 523 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC4PolarityConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPolarity)"
+
+.PP
+Configures the TIMx channel 4 polarity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPolarity\fP specifies the OC4 Polarity This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPolarity_High: Output Compare active high 
+.IP "\(bu" 2
+TIM_OCPolarity_Low: Output Compare active low 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1947 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OC4PreloadConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OCPreload)"
+
+.PP
+Enables or disables the TIMx peripheral Preload register on CCR4\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_OCPreload\fP new state of the TIMx peripheral Preload register This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCPreload_Enable 
+.IP "\(bu" 2
+TIM_OCPreload_Disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1582 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_OCStructInit (\fBTIM_OCInitTypeDef\fP * TIM_OCInitStruct)"
+
+.PP
+Fills each TIM_OCInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIM_OCInitStruct\fP : pointer to a \fBTIM_OCInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 752 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_PrescalerConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)"
+
+.PP
+Configures the TIMx Prescaler\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fIPrescaler\fP specifies the Prescaler Register value 
+.br
+\fITIM_PSCReloadMode\fP specifies the TIM Prescaler Reload mode This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_PSCReloadMode_Update: The Prescaler is loaded at the update event\&. 
+.IP "\(bu" 2
+TIM_PSCReloadMode_Immediate: The Prescaler is loaded immediately\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1176 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_PWMIConfig (\fBTIM_TypeDef\fP * TIMx, \fBTIM_ICInitTypeDef\fP * TIM_ICInitStruct)"
+
+.PP
+Configures the TIM peripheral according to the specified parameters in the TIM_ICInitStruct to measure an external PWM signal\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_ICInitStruct\fP pointer to a \fBTIM_ICInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 654 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectCCDMA (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Selects the TIMx peripheral Capture Compare DMA source\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 15, 16 or 17 to select the TIM peripheral\&. 
+.br
+\fINewState\fP new state of the Capture Compare DMA source This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1458 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectCOM (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Selects the TIM peripheral Commutation event\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 8, 15, 16 or 17 to select the TIMx peripheral 
+.br
+\fINewState\fP new state of the Commutation event\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1433 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectHallSensor (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the TIMx's Hall sensor interface\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fINewState\fP new state of the TIMx Hall sensor interface\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2155 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectInputTrigger (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_InputTriggerSource)"
+
+.PP
+Selects the Input Trigger source\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_InputTriggerSource\fP The Input Trigger source\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_TS_ITR0: Internal Trigger 0 
+.IP "\(bu" 2
+TIM_TS_ITR1: Internal Trigger 1 
+.IP "\(bu" 2
+TIM_TS_ITR2: Internal Trigger 2 
+.IP "\(bu" 2
+TIM_TS_ITR3: Internal Trigger 3 
+.IP "\(bu" 2
+TIM_TS_TI1F_ED: TI1 Edge Detector 
+.IP "\(bu" 2
+TIM_TS_TI1FP1: Filtered \fBTimer\fP Input 1 
+.IP "\(bu" 2
+TIM_TS_TI2FP2: Filtered \fBTimer\fP Input 2 
+.IP "\(bu" 2
+TIM_TS_ETRF: External Trigger input 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1229 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectMasterSlaveMode (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_MasterSlaveMode)"
+
+.PP
+Sets or Resets the TIMx Master/Slave Mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_MasterSlaveMode\fP specifies the \fBTimer\fP Master Slave Mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_MasterSlaveMode_Enable: synchronization between the current timer and its slaves (through TRGO)\&. 
+.IP "\(bu" 2
+TIM_MasterSlaveMode_Disable: No action 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2257 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectOCxM (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)"
+
+.PP
+Selects the TIM Output Compare Mode\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function disables the selected channel before changing the Output Compare Mode\&. User has to enable this channel using TIM_CCxCmd and TIM_CCxNCmd functions\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_Channel\fP specifies the TIM Channel This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_Channel_1: TIM Channel 1 
+.IP "\(bu" 2
+TIM_Channel_2: TIM Channel 2 
+.IP "\(bu" 2
+TIM_Channel_3: TIM Channel 3 
+.IP "\(bu" 2
+TIM_Channel_4: TIM Channel 4 
+.PP
+.br
+\fITIM_OCMode\fP specifies the TIM Output Compare Mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OCMode_Timing 
+.IP "\(bu" 2
+TIM_OCMode_Active 
+.IP "\(bu" 2
+TIM_OCMode_Toggle 
+.IP "\(bu" 2
+TIM_OCMode_PWM1 
+.IP "\(bu" 2
+TIM_OCMode_PWM2 
+.IP "\(bu" 2
+TIM_ForcedAction_Active 
+.IP "\(bu" 2
+TIM_ForcedAction_InActive 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2051 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectOnePulseMode (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_OPMode)"
+
+.PP
+Selects the TIMx's One Pulse Mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_OPMode\fP specifies the OPM Mode to be used\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_OPMode_Single 
+.IP "\(bu" 2
+TIM_OPMode_Repetitive 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2181 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectOutputTrigger (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_TRGOSource)"
+
+.PP
+Selects the TIMx Trigger Output Mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 6, 7, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_TRGOSource\fP specifies the Trigger Output source\&. This paramter can be one of the following values:
+.RE
+.PP
+.IP "\(bu" 2
+For all TIMx 
+.PD 0
+
+.IP "  \(bu" 4
+TIM_TRGOSource_Reset: The UG bit in the TIM_EGR register is used as the trigger output (TRGO)\&. 
+.IP "  \(bu" 4
+TIM_TRGOSource_Enable: The Counter Enable CEN is used as the trigger output (TRGO)\&. 
+.IP "  \(bu" 4
+TIM_TRGOSource_Update: The update event is selected as the trigger output (TRGO)\&.
+.PP
+
+.IP "\(bu" 2
+For all TIMx except TIM6 and TIM7 
+.PD 0
+
+.IP "  \(bu" 4
+TIM_TRGOSource_OC1: The trigger output sends a positive pulse when the CC1IF flag is to be set, as soon as a capture or compare match occurs (TRGO)\&. 
+.IP "  \(bu" 4
+TIM_TRGOSource_OC1Ref: OC1REF signal is used as the trigger output (TRGO)\&. 
+.IP "  \(bu" 4
+TIM_TRGOSource_OC2Ref: OC2REF signal is used as the trigger output (TRGO)\&. 
+.IP "  \(bu" 4
+TIM_TRGOSource_OC3Ref: OC3REF signal is used as the trigger output (TRGO)\&. 
+.IP "  \(bu" 4
+TIM_TRGOSource_OC4Ref: OC4REF signal is used as the trigger output (TRGO)\&.
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Definition at line 2213 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SelectSlaveMode (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_SlaveMode)"
+
+.PP
+Selects the TIMx Slave Mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_SlaveMode\fP specifies the \fBTimer\fP Slave Mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_SlaveMode_Reset: Rising edge of the selected trigger signal (TRGI) re-initializes the counter and triggers an update of the registers\&. 
+.IP "\(bu" 2
+TIM_SlaveMode_Gated: The counter clock is enabled when the trigger signal (TRGI) is high\&. 
+.IP "\(bu" 2
+TIM_SlaveMode_Trigger: The counter starts at a rising edge of the trigger TRGI\&. 
+.IP "\(bu" 2
+TIM_SlaveMode_External1: Rising edges of the selected trigger (TRGI) clock the counter\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2236 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetAutoreload (\fBTIM_TypeDef\fP * TIMx, uint16_t Autoreload)"
+
+.PP
+Sets the TIMx Autoreload Register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fIAutoreload\fP specifies the Autoreload register new value\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2289 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetClockDivision (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_CKD)"
+
+.PP
+Sets the TIMx Clock Division value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_CKD\fP specifies the clock division value\&. This parameter can be one of the following value: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_CKD_DIV1: TDTS = Tck_tim 
+.IP "\(bu" 2
+TIM_CKD_DIV2: TDTS = 2*Tck_tim 
+.IP "\(bu" 2
+TIM_CKD_DIV4: TDTS = 4*Tck_tim 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2452 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetCompare1 (\fBTIM_TypeDef\fP * TIMx, uint16_t Compare1)"
+
+.PP
+Sets the TIMx Capture Compare1 Register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fICompare1\fP specifies the Capture Compare1 register new value\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2303 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetCompare2 (\fBTIM_TypeDef\fP * TIMx, uint16_t Compare2)"
+
+.PP
+Sets the TIMx Capture Compare2 Register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fICompare2\fP specifies the Capture Compare2 register new value\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2317 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetCompare3 (\fBTIM_TypeDef\fP * TIMx, uint16_t Compare3)"
+
+.PP
+Sets the TIMx Capture Compare3 Register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fICompare3\fP specifies the Capture Compare3 register new value\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2331 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetCompare4 (\fBTIM_TypeDef\fP * TIMx, uint16_t Compare4)"
+
+.PP
+Sets the TIMx Capture Compare4 Register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fICompare4\fP specifies the Capture Compare4 register new value\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2345 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetCounter (\fBTIM_TypeDef\fP * TIMx, uint16_t Counter)"
+
+.PP
+Sets the TIMx Counter Register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fICounter\fP specifies the Counter register new value\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2275 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetIC1Prescaler (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ICPSC)"
+
+.PP
+Sets the TIMx Input Capture 1 prescaler\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 except 6 and 7 to select the TIM peripheral\&. 
+.br
+\fITIM_ICPSC\fP specifies the Input Capture1 prescaler new value\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPSC_DIV1: no prescaler 
+.IP "\(bu" 2
+TIM_ICPSC_DIV2: capture is done once every 2 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV4: capture is done once every 4 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV8: capture is done once every 8 events 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2364 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetIC2Prescaler (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ICPSC)"
+
+.PP
+Sets the TIMx Input Capture 2 prescaler\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 8, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_ICPSC\fP specifies the Input Capture2 prescaler new value\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPSC_DIV1: no prescaler 
+.IP "\(bu" 2
+TIM_ICPSC_DIV2: capture is done once every 2 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV4: capture is done once every 4 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV8: capture is done once every 8 events 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2386 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetIC3Prescaler (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ICPSC)"
+
+.PP
+Sets the TIMx Input Capture 3 prescaler\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ICPSC\fP specifies the Input Capture3 prescaler new value\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPSC_DIV1: no prescaler 
+.IP "\(bu" 2
+TIM_ICPSC_DIV2: capture is done once every 2 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV4: capture is done once every 4 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV8: capture is done once every 8 events 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2408 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_SetIC4Prescaler (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_ICPSC)"
+
+.PP
+Sets the TIMx Input Capture 4 prescaler\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral\&. 
+.br
+\fITIM_ICPSC\fP specifies the Input Capture4 prescaler new value\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPSC_DIV1: no prescaler 
+.IP "\(bu" 2
+TIM_ICPSC_DIV2: capture is done once every 2 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV4: capture is done once every 4 events 
+.IP "\(bu" 2
+TIM_ICPSC_DIV8: capture is done once every 8 events 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2430 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_TimeBaseInit (\fBTIM_TypeDef\fP * TIMx, \fBTIM_TimeBaseInitTypeDef\fP * TIM_TimeBaseInitStruct)"
+
+.PP
+Initializes the TIMx Time Base Unit peripheral according to the specified parameters in the TIM_TimeBaseInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_TimeBaseInitStruct\fP pointer to a \fBTIM_TimeBaseInitTypeDef\fP structure that contains the configuration information for the specified TIM peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 226 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_TimeBaseStructInit (\fBTIM_TimeBaseInitTypeDef\fP * TIM_TimeBaseInitStruct)"
+
+.PP
+Fills each TIM_TimeBaseInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIM_TimeBaseInitStruct\fP : pointer to a \fBTIM_TimeBaseInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 736 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_TIxExternalClockConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_TIxExternalCLKSource, uint16_t TIM_ICPolarity, uint16_t ICFilter)"
+
+.PP
+Configures the TIMx Trigger as External Clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1, 2, 3, 4, 5, 9, 12 or 15 to select the TIM peripheral\&. 
+.br
+\fITIM_TIxExternalCLKSource\fP Trigger source\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_TIxExternalCLK1Source_TI1ED: TI1 Edge Detector 
+.IP "\(bu" 2
+TIM_TIxExternalCLK1Source_TI1: Filtered \fBTimer\fP Input 1 
+.IP "\(bu" 2
+TIM_TIxExternalCLK1Source_TI2: Filtered \fBTimer\fP Input 2 
+.PP
+.br
+\fITIM_ICPolarity\fP specifies the TIx Polarity\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_ICPolarity_Rising 
+.IP "\(bu" 2
+TIM_ICPolarity_Falling 
+.PP
+.br
+\fIICFilter\fP : specifies the filter value\&. This parameter must be a value between 0x0 and 0xF\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1035 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_UpdateDisableConfig (\fBTIM_TypeDef\fP * TIMx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or Disables the TIMx Update event\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fINewState\fP new state of the TIMx UDIS bit This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2103 of file stm32f10x_tim\&.c\&.
+.SS "void TIM_UpdateRequestConfig (\fBTIM_TypeDef\fP * TIMx, uint16_t TIM_UpdateSource)"
+
+.PP
+Configures the TIMx Update Request Interrupt source\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITIMx\fP where x can be 1 to 17 to select the TIM peripheral\&. 
+.br
+\fITIM_UpdateSource\fP specifies the Update source\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+TIM_UpdateSource_Regular: Source of update is the counter overflow/underflow or the setting of UG bit, or an update generation through the slave mode controller\&. 
+.IP "\(bu" 2
+TIM_UpdateSource_Global: Source of update is counter overflow/underflow\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 2131 of file stm32f10x_tim\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

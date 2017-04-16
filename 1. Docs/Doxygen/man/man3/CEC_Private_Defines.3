@@ -1,0 +1,111 @@
+.TH "CEC_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEC_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCEC_OFFSET\fP   (\fBCEC_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_OFFSET\fP   (\fBCEC_OFFSET\fP + 0x00)"
+.br
+.ti -1c
+.RI "#define \fBPE_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBPE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBIE_BitNumber\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCFGR_IE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBIE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSR_OFFSET\fP   (\fBCEC_OFFSET\fP + 0x10)"
+.br
+.ti -1c
+.RI "#define \fBTSOM_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCSR_TSOM_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTSOM_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTEOM_BitNumber\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCSR_TEOM_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTEOM_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCFGR_CLEAR_Mask\fP   (uint8_t)(0xF3)        /* CFGR register Mask */"
+.br
+.ti -1c
+.RI "#define \fBFLAG_Mask\fP   ((uint32_t)0x00FFFFFF) /* CEC FLAG mask */"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CEC_OFFSET   (\fBCEC_BASE\fP \- \fBPERIPH_BASE\fP)"
+
+.PP
+Definition at line 49 of file stm32f10x_cec\&.c\&.
+.SS "#define CFGR_CLEAR_Mask   (uint8_t)(0xF3)        /* CFGR register Mask */"
+
+.PP
+Definition at line 73 of file stm32f10x_cec\&.c\&.
+.SS "#define CFGR_IE_BB   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBIE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 60 of file stm32f10x_cec\&.c\&.
+.SS "#define CFGR_OFFSET   (\fBCEC_OFFSET\fP + 0x00)"
+
+.PP
+Definition at line 54 of file stm32f10x_cec\&.c\&.
+.SS "#define CFGR_PE_BB   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBPE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 56 of file stm32f10x_cec\&.c\&.
+.SS "#define CSR_OFFSET   (\fBCEC_OFFSET\fP + 0x10)"
+
+.PP
+Definition at line 65 of file stm32f10x_cec\&.c\&.
+.SS "#define CSR_TEOM_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTEOM_BitNumber\fP * 4))"
+
+.PP
+Definition at line 71 of file stm32f10x_cec\&.c\&.
+.SS "#define CSR_TSOM_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTSOM_BitNumber\fP * 4))"
+
+.PP
+Definition at line 67 of file stm32f10x_cec\&.c\&.
+.SS "#define FLAG_Mask   ((uint32_t)0x00FFFFFF) /* CEC FLAG mask */"
+
+.PP
+Definition at line 74 of file stm32f10x_cec\&.c\&.
+.SS "#define IE_BitNumber   0x01"
+
+.PP
+Definition at line 59 of file stm32f10x_cec\&.c\&.
+.SS "#define PE_BitNumber   0x00"
+
+.PP
+Definition at line 55 of file stm32f10x_cec\&.c\&.
+.SS "#define TEOM_BitNumber   0x01"
+
+.PP
+Definition at line 70 of file stm32f10x_cec\&.c\&.
+.SS "#define TSOM_BitNumber   0x00"
+
+.PP
+Definition at line 66 of file stm32f10x_cec\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

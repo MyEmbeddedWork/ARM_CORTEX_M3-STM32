@@ -1,0 +1,76 @@
+.TH "WWDG_Prescaler" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WWDG_Prescaler
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_2\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_4\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_8\fP   ((uint32_t)0x00000180)"
+.br
+.ti -1c
+.RI "#define \fBIS_WWDG_PRESCALER\fP(PRESCALER)"
+.br
+.ti -1c
+.RI "#define \fBIS_WWDG_WINDOW_VALUE\fP(VALUE)   ((VALUE) <= 0x7F)"
+.br
+.ti -1c
+.RI "#define \fBIS_WWDG_COUNTER\fP(COUNTER)   (((COUNTER) >= 0x40) && ((COUNTER) <= 0x7F))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_WWDG_COUNTER(COUNTER)   (((COUNTER) >= 0x40) && ((COUNTER) <= 0x7F))"
+
+.PP
+Definition at line 67 of file stm32f10x_wwdg\&.h\&.
+.SS "#define IS_WWDG_PRESCALER(PRESCALER)"
+\fBValue:\fP
+.PP
+.nf
+(((PRESCALER) == WWDG_Prescaler_1) || \
+                                      ((PRESCALER) == WWDG_Prescaler_2) || \
+                                      ((PRESCALER) == WWDG_Prescaler_4) || \
+                                      ((PRESCALER) == WWDG_Prescaler_8))
+.fi
+.PP
+Definition at line 62 of file stm32f10x_wwdg\&.h\&.
+.SS "#define IS_WWDG_WINDOW_VALUE(VALUE)   ((VALUE) <= 0x7F)"
+
+.PP
+Definition at line 66 of file stm32f10x_wwdg\&.h\&.
+.SS "#define WWDG_Prescaler_1   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 58 of file stm32f10x_wwdg\&.h\&.
+.SS "#define WWDG_Prescaler_2   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 59 of file stm32f10x_wwdg\&.h\&.
+.SS "#define WWDG_Prescaler_4   ((uint32_t)0x00000100)"
+
+.PP
+Definition at line 60 of file stm32f10x_wwdg\&.h\&.
+.SS "#define WWDG_Prescaler_8   ((uint32_t)0x00000180)"
+
+.PP
+Definition at line 61 of file stm32f10x_wwdg\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

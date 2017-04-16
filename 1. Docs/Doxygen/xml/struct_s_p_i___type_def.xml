@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_s_p_i___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>SPI_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a1e398155ddd013fcdd41309b4bd0bd5f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1162" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1162" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1gaa31357879a65ee1ed7223f3b9114dcf3" compoundref="stm32f10x__spi_8c" startline="436" endline="451">SPI_Cmd</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga56fc508a482f032f9eb80e4c63184126" compoundref="stm32f10x__spi_8c" startline="601" endline="616">SPI_NSSInternalSoftwareConfig</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1gafc82e90841d7879535d655c035709cb1" compoundref="stm32f10x__spi_8c" startline="651" endline="660">SPI_DataSizeConfig</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1gace8b1058e09bab150b0dbe5978810273" compoundref="stm32f10x__spi_8c" startline="667" endline="674">SPI_TransmitCRC</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga64f7276d119e6cb58afc100f8832adb0" compoundref="stm32f10x__spi_8c" startline="683" endline="698">SPI_CalculateCRC</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga166171c421fc51da7714723524d41b45" compoundref="stm32f10x__spi_8c" startline="752" endline="767">SPI_BiDirectionalLineConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a7f16c40933b8a713085436be72d30a46" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1163" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1ac891e34644b8dc27bacc906cfd18b235" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1164" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1164" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga17f4ef132e8ddbf94cb6b1688d181e41" compoundref="stm32f10x__spi_8c" startline="491" endline="526">SPI_I2S_ITConfig</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1gabed5b91a8576e6d578f364cc0e807e4a" compoundref="stm32f10x__spi_8c" startline="541" endline="557">SPI_I2S_DMACmd</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga4ec54abdedf6cd17403d853a926d91c1" compoundref="stm32f10x__spi_8c" startline="625" endline="640">SPI_SSOutputCmd</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga72decbc1cd79f8fad92a2204beca6bc5" compoundref="stm32f10x__spi_8c" startline="849" endline="894">SPI_I2S_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a1b7a800c0f56532a431b19cf868e4102" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a017d7d54a7bf1925facea6b5e02fec83" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1166" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1166" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga1bd785d129e09c5734a876c8f2767204" compoundref="stm32f10x__spi_8c" startline="786" endline="805">SPI_I2S_GetFlagStatus</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga3aabd9e2437e213056c0ed9bdfa1a724" compoundref="stm32f10x__spi_8c" startline="824" endline="832">SPI_I2S_ClearFlag</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga72decbc1cd79f8fad92a2204beca6bc5" compoundref="stm32f10x__spi_8c" startline="849" endline="894">SPI_I2S_GetITStatus</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga35a524a49ff3d058137060f751e8749f" compoundref="stm32f10x__spi_8c" startline="914" endline="935">SPI_I2S_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a09ce56649bb5477e2fcf3e92bca8f735" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1167" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1ae192c943732b6ab5e5611e860cc05544" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1168" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1168" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1gad5af40bebe8dbe3fa8bd476489d7e3da" compoundref="stm32f10x__spi_8c" startline="567" endline="574">SPI_I2S_SendData</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1gab77de76547f3bff403236b263b070a30" compoundref="stm32f10x__spi_8c" startline="583" endline="590">SPI_I2S_ReceiveData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1aeb1d1d561f1d51232369197fa7acb53a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1169" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a353c64e49ec9ae93b950668941f41175" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::CRCPR</definition>
+        <argsstring></argsstring>
+        <name>CRCPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1170" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1170" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga80fb9374cfce670f29128bb78568353f" compoundref="stm32f10x__spi_8c" startline="734" endline="741">SPI_GetCRCPolynomial</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a20e3ac1445ed1e7a9792ca492c46a73a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1171" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1ab53da6fb851d911ae0b1166be2cfe48a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::RXCRCR</definition>
+        <argsstring></argsstring>
+        <name>RXCRCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1172" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1172" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga4c81c193516e82cf0a2fdc149ef20cc6" compoundref="stm32f10x__spi_8c" startline="709" endline="727">SPI_GetCRC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1ab63440e38c7872a8ed11fb2d8d94714e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED5</definition>
+        <argsstring></argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1173" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a3c0c1be66bc0a1846274a7511f4a36f5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::TXCRCR</definition>
+        <argsstring></argsstring>
+        <name>TXCRCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1174" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1174" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga4c81c193516e82cf0a2fdc149ef20cc6" compoundref="stm32f10x__spi_8c" startline="709" endline="727">SPI_GetCRC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a0870177921541602a44f744f1b66e823" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED6</definition>
+        <argsstring></argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1175" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a20a4775ce461eec0d9a437bed464c0a5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::I2SCFGR</definition>
+        <argsstring></argsstring>
+        <name>I2SCFGR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1176" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1176" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1gafe061c71bbc5b4224f3f2884dc53739e" compoundref="stm32f10x__spi_8c" startline="460" endline="475">I2S_Cmd</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a98df0a538eb077b2cfc5194eda200f1b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED7</definition>
+        <argsstring></argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1177" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1aecee11b0d2e534b5243e9db6a0e10026" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t SPI_TypeDef::I2SPR</definition>
+        <argsstring></argsstring>
+        <name>I2SPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1178" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1178" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___type_def_1a0ffe762827b71caff20c75bf105387f6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_TypeDef::RESERVED8</definition>
+        <argsstring></argsstring>
+        <name>RESERVED8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1179" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Serial Peripheral Interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1161" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1160" bodyend="1180"/>
+    <listofallmembers>
+      <member refid="struct_s_p_i___type_def_1a1e398155ddd013fcdd41309b4bd0bd5f" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_s_p_i___type_def_1ac891e34644b8dc27bacc906cfd18b235" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_s_p_i___type_def_1a353c64e49ec9ae93b950668941f41175" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>CRCPR</name></member>
+      <member refid="struct_s_p_i___type_def_1ae192c943732b6ab5e5611e860cc05544" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>DR</name></member>
+      <member refid="struct_s_p_i___type_def_1a20a4775ce461eec0d9a437bed464c0a5" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>I2SCFGR</name></member>
+      <member refid="struct_s_p_i___type_def_1aecee11b0d2e534b5243e9db6a0e10026" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>I2SPR</name></member>
+      <member refid="struct_s_p_i___type_def_1a7f16c40933b8a713085436be72d30a46" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_s_p_i___type_def_1a1b7a800c0f56532a431b19cf868e4102" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_s_p_i___type_def_1a09ce56649bb5477e2fcf3e92bca8f735" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_s_p_i___type_def_1aeb1d1d561f1d51232369197fa7acb53a" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_s_p_i___type_def_1a20e3ac1445ed1e7a9792ca492c46a73a" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_s_p_i___type_def_1ab63440e38c7872a8ed11fb2d8d94714e" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED5</name></member>
+      <member refid="struct_s_p_i___type_def_1a0870177921541602a44f744f1b66e823" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED6</name></member>
+      <member refid="struct_s_p_i___type_def_1a98df0a538eb077b2cfc5194eda200f1b" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED7</name></member>
+      <member refid="struct_s_p_i___type_def_1a0ffe762827b71caff20c75bf105387f6" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RESERVED8</name></member>
+      <member refid="struct_s_p_i___type_def_1ab53da6fb851d911ae0b1166be2cfe48a" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>RXCRCR</name></member>
+      <member refid="struct_s_p_i___type_def_1a017d7d54a7bf1925facea6b5e02fec83" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>SR</name></member>
+      <member refid="struct_s_p_i___type_def_1a3c0c1be66bc0a1846274a7511f4a36f5" prot="public" virt="non-virtual"><scope>SPI_TypeDef</scope><name>TXCRCR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

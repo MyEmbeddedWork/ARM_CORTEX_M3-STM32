@@ -1,0 +1,223 @@
+.TH "SDIO_Private_TypesDefinitions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Private_TypesDefinitions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_OFFSET\fP   (\fBSDIO_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCLKCR_OFFSET\fP   (\fBSDIO_OFFSET\fP + 0x04)"
+.br
+.ti -1c
+.RI "#define \fBCLKEN_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCLKCR_CLKEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCLKCR_OFFSET\fP * 32) + (\fBCLKEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCMD_OFFSET\fP   (\fBSDIO_OFFSET\fP + 0x0C)"
+.br
+.ti -1c
+.RI "#define \fBSDIOSUSPEND_BitNumber\fP   0x0B"
+.br
+.ti -1c
+.RI "#define \fBCMD_SDIOSUSPEND_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBSDIOSUSPEND_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBENCMDCOMPL_BitNumber\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBCMD_ENCMDCOMPL_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBENCMDCOMPL_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBNIEN_BitNumber\fP   0x0D"
+.br
+.ti -1c
+.RI "#define \fBCMD_NIEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBNIEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBATACMD_BitNumber\fP   0x0E"
+.br
+.ti -1c
+.RI "#define \fBCMD_ATACMD_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBATACMD_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_OFFSET\fP   (\fBSDIO_OFFSET\fP + 0x2C)"
+.br
+.ti -1c
+.RI "#define \fBDMAEN_BitNumber\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_DMAEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBDMAEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRWSTART_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_RWSTART_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWSTART_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRWSTOP_BitNumber\fP   0x09"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_RWSTOP_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWSTOP_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRWMOD_BitNumber\fP   0x0A"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_RWMOD_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWMOD_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBSDIOEN_BitNumber\fP   0x0B"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_SDIOEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBSDIOEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCLKCR_CLEAR_MASK\fP   ((uint32_t)0xFFFF8100)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PWRCTRL_MASK\fP   ((uint32_t)0xFFFFFFFC)"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_CLEAR_MASK\fP   ((uint32_t)0xFFFFFF08)"
+.br
+.ti -1c
+.RI "#define \fBCMD_CLEAR_MASK\fP   ((uint32_t)0xFFFFF800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP_ADDR\fP   ((uint32_t)(\fBSDIO_BASE\fP + 0x14))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ATACMD_BitNumber   0x0E"
+
+.PP
+Definition at line 65 of file stm32f10x_sdio\&.c\&.
+.SS "#define CLKCR_CLEAR_MASK   ((uint32_t)0xFFFF8100)"
+
+.PP
+Definition at line 96 of file stm32f10x_sdio\&.c\&.
+.SS "#define CLKCR_CLKEN_BB   (\fBPERIPH_BB_BASE\fP + (\fBCLKCR_OFFSET\fP * 32) + (\fBCLKEN_BitNumber\fP * 4))"
+
+.PP
+Definition at line 47 of file stm32f10x_sdio\&.c\&.
+.SS "#define CLKCR_OFFSET   (\fBSDIO_OFFSET\fP + 0x04)"
+
+.PP
+Definition at line 45 of file stm32f10x_sdio\&.c\&.
+.SS "#define CLKEN_BitNumber   0x08"
+
+.PP
+Definition at line 46 of file stm32f10x_sdio\&.c\&.
+.SS "#define CMD_ATACMD_BB   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBATACMD_BitNumber\fP * 4))"
+
+.PP
+Definition at line 66 of file stm32f10x_sdio\&.c\&.
+.SS "#define CMD_CLEAR_MASK   ((uint32_t)0xFFFFF800)"
+
+.PP
+Definition at line 111 of file stm32f10x_sdio\&.c\&.
+.SS "#define CMD_ENCMDCOMPL_BB   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBENCMDCOMPL_BitNumber\fP * 4))"
+
+.PP
+Definition at line 58 of file stm32f10x_sdio\&.c\&.
+.SS "#define CMD_NIEN_BB   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBNIEN_BitNumber\fP * 4))"
+
+.PP
+Definition at line 62 of file stm32f10x_sdio\&.c\&.
+.SS "#define CMD_OFFSET   (\fBSDIO_OFFSET\fP + 0x0C)"
+
+.PP
+Definition at line 52 of file stm32f10x_sdio\&.c\&.
+.SS "#define CMD_SDIOSUSPEND_BB   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBSDIOSUSPEND_BitNumber\fP * 4))"
+
+.PP
+Definition at line 54 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_CLEAR_MASK   ((uint32_t)0xFFFFFF08)"
+
+.PP
+Definition at line 106 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_DMAEN_BB   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBDMAEN_BitNumber\fP * 4))"
+
+.PP
+Definition at line 73 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_OFFSET   (\fBSDIO_OFFSET\fP + 0x2C)"
+
+.PP
+Definition at line 71 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_RWMOD_BB   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWMOD_BitNumber\fP * 4))"
+
+.PP
+Definition at line 85 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_RWSTART_BB   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWSTART_BitNumber\fP * 4))"
+
+.PP
+Definition at line 77 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_RWSTOP_BB   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWSTOP_BitNumber\fP * 4))"
+
+.PP
+Definition at line 81 of file stm32f10x_sdio\&.c\&.
+.SS "#define DCTRL_SDIOEN_BB   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBSDIOEN_BitNumber\fP * 4))"
+
+.PP
+Definition at line 89 of file stm32f10x_sdio\&.c\&.
+.SS "#define DMAEN_BitNumber   0x03"
+
+.PP
+Definition at line 72 of file stm32f10x_sdio\&.c\&.
+.SS "#define ENCMDCOMPL_BitNumber   0x0C"
+
+.PP
+Definition at line 57 of file stm32f10x_sdio\&.c\&.
+.SS "#define NIEN_BitNumber   0x0D"
+
+.PP
+Definition at line 61 of file stm32f10x_sdio\&.c\&.
+.SS "#define PWR_PWRCTRL_MASK   ((uint32_t)0xFFFFFFFC)"
+
+.PP
+Definition at line 101 of file stm32f10x_sdio\&.c\&.
+.SS "#define RWMOD_BitNumber   0x0A"
+
+.PP
+Definition at line 84 of file stm32f10x_sdio\&.c\&.
+.SS "#define RWSTART_BitNumber   0x08"
+
+.PP
+Definition at line 76 of file stm32f10x_sdio\&.c\&.
+.SS "#define RWSTOP_BitNumber   0x09"
+
+.PP
+Definition at line 80 of file stm32f10x_sdio\&.c\&.
+.SS "#define SDIO_OFFSET   (\fBSDIO_BASE\fP \- \fBPERIPH_BASE\fP)"
+
+.PP
+Definition at line 40 of file stm32f10x_sdio\&.c\&.
+.SS "#define SDIO_RESP_ADDR   ((uint32_t)(\fBSDIO_BASE\fP + 0x14))"
+
+.PP
+Definition at line 114 of file stm32f10x_sdio\&.c\&.
+.SS "#define SDIOEN_BitNumber   0x0B"
+
+.PP
+Definition at line 88 of file stm32f10x_sdio\&.c\&.
+.SS "#define SDIOSUSPEND_BitNumber   0x0B"
+
+.PP
+Definition at line 53 of file stm32f10x_sdio\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

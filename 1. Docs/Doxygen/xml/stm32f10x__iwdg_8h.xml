@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__iwdg_8h" kind="file" language="C++">
+    <compoundname>stm32f10x_iwdg.h</compoundname>
+    <includes refid="stm32f10x_8h" local="yes">stm32f10x.h</includes>
+    <includedby refid="stm32f10x__conf_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</includedby>
+    <includedby refid="stm32f10x__iwdg_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c</includedby>
+    <incdepgraph>
+      <node id="647">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="644">
+        <label>stdint.h</label>
+      </node>
+      <node id="643">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="641">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h</label>
+        <link refid="stm32f10x__iwdg_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="642">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="649">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</label>
+        <link refid="stm32f10x__conf_8h"/>
+      </node>
+      <node id="650">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c</label>
+        <link refid="stm32f10x__iwdg_8c"/>
+      </node>
+      <node id="648">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h</label>
+        <link refid="stm32f10x__iwdg_8h"/>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91" prot="public" static="no">
+        <name>IWDG_WriteAccess_Enable</name>
+        <initializer>((uint16_t)0x5555)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc" prot="public" static="no">
+        <name>IWDG_WriteAccess_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___write_access_1gaa89c93332f5977175f8d416b7492de18" prot="public" static="no">
+        <name>IS_IWDG_WRITE_ACCESS</name>
+        <param><defname>ACCESS</defname></param>
+        <initializer>(((ACCESS) == <ref refid="group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91" kindref="member">IWDG_WriteAccess_Enable</ref>) || \
+                                      ((ACCESS) == <ref refid="group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc" kindref="member">IWDG_WriteAccess_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1ga82a058c196d5a9cd7ea2f2202b394ba0" prot="public" static="no">
+        <name>IWDG_Prescaler_4</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1ga59763b9a127c67adf5d11474188996a1" prot="public" static="no">
+        <name>IWDG_Prescaler_8</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1gafa81d30511ff5ec74bb38ed71f5bb66e" prot="public" static="no">
+        <name>IWDG_Prescaler_16</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1gaa8b091b6e4102513b1e3a1c4eb6756ba" prot="public" static="no">
+        <name>IWDG_Prescaler_32</name>
+        <initializer>((uint8_t)0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1ga7ea813c73ae0acb40acb60e7d3956910" prot="public" static="no">
+        <name>IWDG_Prescaler_64</name>
+        <initializer>((uint8_t)0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1gaea6bf96c2fd5a6f3b9574e7898096641" prot="public" static="no">
+        <name>IWDG_Prescaler_128</name>
+        <initializer>((uint8_t)0x05)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="75" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1ga7d6e918748185639049644c970db2b43" prot="public" static="no">
+        <name>IWDG_Prescaler_256</name>
+        <initializer>((uint8_t)0x06)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="76" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g__prescaler_1gab1e0695c1a22840d5be7c7fad283f4ba" prot="public" static="no">
+        <name>IS_IWDG_PRESCALER</name>
+        <param><defname>PRESCALER</defname></param>
+        <initializer>(((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1ga82a058c196d5a9cd7ea2f2202b394ba0" kindref="member">IWDG_Prescaler_4</ref>)  || \
+                                      ((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1ga59763b9a127c67adf5d11474188996a1" kindref="member">IWDG_Prescaler_8</ref>)  || \
+                                      ((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1gafa81d30511ff5ec74bb38ed71f5bb66e" kindref="member">IWDG_Prescaler_16</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1gaa8b091b6e4102513b1e3a1c4eb6756ba" kindref="member">IWDG_Prescaler_32</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1ga7ea813c73ae0acb40acb60e7d3956910" kindref="member">IWDG_Prescaler_64</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1gaea6bf96c2fd5a6f3b9574e7898096641" kindref="member">IWDG_Prescaler_128</ref>)|| \
+                                      ((PRESCALER) == <ref refid="group___i_w_d_g__prescaler_1ga7d6e918748185639049644c970db2b43" kindref="member">IWDG_Prescaler_256</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="77" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c" prot="public" static="no">
+        <name>IWDG_FLAG_PVU</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="92" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca" prot="public" static="no">
+        <name>IWDG_FLAG_RVU</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="93" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1ga5be9ae9ba267cf09a00523ef3e219293" prot="public" static="no">
+        <name>IS_IWDG_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c" kindref="member">IWDG_FLAG_PVU</ref>) || ((FLAG) == <ref refid="group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca" kindref="member">IWDG_FLAG_RVU</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="94" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1ga7c319e96bded8e3c38c6a42a1b335c68" prot="public" static="no">
+        <name>IS_IWDG_RELOAD</name>
+        <param><defname>RELOAD</defname></param>
+        <initializer>((RELOAD) &lt;= 0xFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="95" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i_w_d_g___exported___functions_1gae466681e5bdc11b353c508b89d75ca05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IWDG_WriteAccessCmd</definition>
+        <argsstring>(uint16_t IWDG_WriteAccess)</argsstring>
+        <name>IWDG_WriteAccessCmd</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>IWDG_WriteAccess</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables write access to IWDG_PR and IWDG_RLR registers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IWDG_WriteAccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of write access to IWDG_PR and IWDG_RLR registers. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>IWDG_WriteAccess_Enable: Enable write access to IWDG_PR and IWDG_RLR registers </para></listitem>
+<listitem><para>IWDG_WriteAccess_Disable: Disable write access to IWDG_PR and IWDG_RLR registers </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="116" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c" bodystart="92" bodyend="97"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i_w_d_g___write_access_1gaa89c93332f5977175f8d416b7492de18" compoundref="stm32f10x__iwdg_8h" startline="60">IS_IWDG_WRITE_ACCESS</references>
+        <references refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" compoundref="stm32f10x_8h" startline="1391">IWDG</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i_w_d_g___exported___functions_1ga4fa7f1cd690533a35ad9e4729c0450a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IWDG_SetPrescaler</definition>
+        <argsstring>(uint8_t IWDG_Prescaler)</argsstring>
+        <name>IWDG_SetPrescaler</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>IWDG_Prescaler</declname>
+        </param>
+        <briefdescription>
+<para>Sets IWDG Prescaler value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IWDG_Prescaler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the IWDG Prescaler value. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>IWDG_Prescaler_4: IWDG prescaler set to 4 </para></listitem>
+<listitem><para>IWDG_Prescaler_8: IWDG prescaler set to 8 </para></listitem>
+<listitem><para>IWDG_Prescaler_16: IWDG prescaler set to 16 </para></listitem>
+<listitem><para>IWDG_Prescaler_32: IWDG prescaler set to 32 </para></listitem>
+<listitem><para>IWDG_Prescaler_64: IWDG prescaler set to 64 </para></listitem>
+<listitem><para>IWDG_Prescaler_128: IWDG prescaler set to 128 </para></listitem>
+<listitem><para>IWDG_Prescaler_256: IWDG prescaler set to 256 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="117" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c" bodystart="112" bodyend="117"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i_w_d_g__prescaler_1gab1e0695c1a22840d5be7c7fad283f4ba" compoundref="stm32f10x__iwdg_8h" startline="77">IS_IWDG_PRESCALER</references>
+        <references refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" compoundref="stm32f10x_8h" startline="1391">IWDG</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i_w_d_g___exported___functions_1gae2a14752a0431f23cb80cebf202ac365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IWDG_SetReload</definition>
+        <argsstring>(uint16_t Reload)</argsstring>
+        <name>IWDG_SetReload</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>Reload</declname>
+        </param>
+        <briefdescription>
+<para>Sets IWDG Reload value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Reload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the IWDG Reload value. This parameter must be a number between 0 and 0x0FFF. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="118" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c" bodystart="125" bodyend="130"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i_w_d_g___flag_1ga7c319e96bded8e3c38c6a42a1b335c68" compoundref="stm32f10x__iwdg_8h" startline="95">IS_IWDG_RELOAD</references>
+        <references refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" compoundref="stm32f10x_8h" startline="1391">IWDG</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i_w_d_g___exported___functions_1ga7147ebabdc3fef97f532b171a4e70d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IWDG_ReloadCounter</definition>
+        <argsstring>(void)</argsstring>
+        <name>IWDG_ReloadCounter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reloads IWDG counter with value defined in the reload register (write access to IWDG_PR and IWDG_RLR registers disabled). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="119" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c" bodystart="138" bodyend="141"/>
+        <references refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" compoundref="stm32f10x_8h" startline="1391">IWDG</references>
+        <references refid="group___i_w_d_g___private___defines_1gad5e5efc1dbd6a045da5a36c3d9df16a5" compoundref="stm32f10x__iwdg_8c" startline="49">KR_KEY_Reload</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i_w_d_g___exported___functions_1ga479b2921c86f8c67b819f5c4bea6bdb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IWDG_Enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>IWDG_Enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enables IWDG (write access to IWDG_PR and IWDG_RLR registers disabled). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="120" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c" bodystart="148" bodyend="151"/>
+        <references refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" compoundref="stm32f10x_8h" startline="1391">IWDG</references>
+        <references refid="group___i_w_d_g___private___defines_1ga833138e20c8a26786dd7ca3b132152ed" compoundref="stm32f10x__iwdg_8c" startline="50">KR_KEY_Enable</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i_w_d_g___exported___functions_1ga37f050cfbedc0c15f9e0816c0b22011e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus IWDG_GetFlagStatus</definition>
+        <argsstring>(uint16_t IWDG_FLAG)</argsstring>
+        <name>IWDG_GetFlagStatus</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>IWDG_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified IWDG flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IWDG_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>IWDG_FLAG_PVU: Prescaler Value Update on going </para></listitem>
+<listitem><para>IWDG_FLAG_RVU: Reload Value Update on going </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of IWDG_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="121" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c" bodystart="161" bodyend="176"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i_w_d_g___flag_1ga5be9ae9ba267cf09a00523ef3e219293" compoundref="stm32f10x__iwdg_8h" startline="94">IS_IWDG_FLAG</references>
+        <references refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" compoundref="stm32f10x_8h" startline="1391">IWDG</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all the functions prototypes for the IWDG firmware library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="23"><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__STM32F10x_IWDG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__STM32F10x_IWDG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x_8h" kindref="compound">stm32f10x.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91" refkind="member"><highlight class="preprocessor">#define<sp/>IWDG_WriteAccess_Enable<sp/><sp/><sp/><sp/><sp/>((uint16_t)0x5555)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_WriteAccess_Disable<sp/><sp/><sp/><sp/>((uint16_t)0x0000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group___i_w_d_g___write_access_1gaa89c93332f5977175f8d416b7492de18" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IWDG_WRITE_ACCESS(ACCESS)<sp/>(((ACCESS)<sp/>==<sp/>IWDG_WriteAccess_Enable)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((ACCESS)<sp/>==<sp/>IWDG_WriteAccess_Disable))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="group___i_w_d_g__prescaler_1ga82a058c196d5a9cd7ea2f2202b394ba0" refkind="member"><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___i_w_d_g__prescaler_1ga59763b9a127c67adf5d11474188996a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="group___i_w_d_g__prescaler_1gafa81d30511ff5ec74bb38ed71f5bb66e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group___i_w_d_g__prescaler_1gaa8b091b6e4102513b1e3a1c4eb6756ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="group___i_w_d_g__prescaler_1ga7ea813c73ae0acb40acb60e7d3956910" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group___i_w_d_g__prescaler_1gaea6bf96c2fd5a6f3b9574e7898096641" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_128<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x05)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="group___i_w_d_g__prescaler_1ga7d6e918748185639049644c970db2b43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_Prescaler_256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x06)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="group___i_w_d_g__prescaler_1gab1e0695c1a22840d5be7c7fad283f4ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IWDG_PRESCALER(PRESCALER)<sp/>(((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_4)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_8)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_16)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_32)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_64)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_128)||<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>IWDG_Prescaler_256))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c" refkind="member"><highlight class="preprocessor">#define<sp/>IWDG_FLAG_PVU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint16_t)0x0001)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IWDG_FLAG_RVU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint16_t)0x0002)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group___i_w_d_g___flag_1ga5be9ae9ba267cf09a00523ef3e219293" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IWDG_FLAG(FLAG)<sp/>(((FLAG)<sp/>==<sp/>IWDG_FLAG_PVU)<sp/>||<sp/>((FLAG)<sp/>==<sp/>IWDG_FLAG_RVU))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group___i_w_d_g___flag_1ga7c319e96bded8e3c38c6a42a1b335c68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IWDG_RELOAD(RELOAD)<sp/>((RELOAD)<sp/>&lt;=<sp/>0xFFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_w_d_g___exported___functions_1gae466681e5bdc11b353c508b89d75ca05" kindref="member">IWDG_WriteAccessCmd</ref>(uint16_t<sp/>IWDG_WriteAccess);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_w_d_g___exported___functions_1ga4fa7f1cd690533a35ad9e4729c0450a3" kindref="member">IWDG_SetPrescaler</ref>(uint8_t<sp/>IWDG_Prescaler);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_w_d_g___exported___functions_1gae2a14752a0431f23cb80cebf202ac365" kindref="member">IWDG_SetReload</ref>(uint16_t<sp/>Reload);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_w_d_g___exported___functions_1ga7147ebabdc3fef97f532b171a4e70d49" kindref="member">IWDG_ReloadCounter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_w_d_g___exported___functions_1ga479b2921c86f8c67b819f5c4bea6bdb6" kindref="member">IWDG_Enable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/><ref refid="group___i_w_d_g___exported___functions_1ga37f050cfbedc0c15f9e0816c0b22011e" kindref="member">IWDG_GetFlagStatus</ref>(uint16_t<sp/>IWDG_FLAG);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__STM32F10x_IWDG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h"/>
+  </compounddef>
+</doxygen>

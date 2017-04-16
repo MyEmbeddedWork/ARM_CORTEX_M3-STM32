@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__fir__sparse__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_sparse_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__sparse__instance__f32_1a5e19e7f234ac30a3db843352bf2a8515" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_sparse_instance_f32::numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4432" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__sparse__instance__f32_1a57585aeca9dc8686e08df2865375a86d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_sparse_instance_f32::stateIndex</definition>
+        <argsstring></argsstring>
+        <name>stateIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state buffer index. Points to the oldest sample in the state buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4433" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__sparse__instance__f32_1a794af0916666d11cc564d6df08553555" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_fir_sparse_instance_f32::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state buffer array. The array is of length maxDelay+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4434" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__sparse__instance__f32_1a04af7c738dfb0882ad102fcad501d94a" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_fir_sparse_instance_f32::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4435" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__sparse__instance__f32_1af8b8c775f4084c36774f06c082b4c078" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_sparse_instance_f32::maxDelay</definition>
+        <argsstring></argsstring>
+        <name>maxDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum offset specified by the pTapDelay array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4436" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__sparse__instance__f32_1aaa54ae67e5d10c6dd0d697945c638d31" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* arm_fir_sparse_instance_f32::pTapDelay</definition>
+        <argsstring></argsstring>
+        <name>pTapDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the array of delay values. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4437" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4437" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point sparse FIR filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4431" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4430" bodyend="4438"/>
+    <listofallmembers>
+      <member refid="structarm__fir__sparse__instance__f32_1af8b8c775f4084c36774f06c082b4c078" prot="public" virt="non-virtual"><scope>arm_fir_sparse_instance_f32</scope><name>maxDelay</name></member>
+      <member refid="structarm__fir__sparse__instance__f32_1a5e19e7f234ac30a3db843352bf2a8515" prot="public" virt="non-virtual"><scope>arm_fir_sparse_instance_f32</scope><name>numTaps</name></member>
+      <member refid="structarm__fir__sparse__instance__f32_1a04af7c738dfb0882ad102fcad501d94a" prot="public" virt="non-virtual"><scope>arm_fir_sparse_instance_f32</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__sparse__instance__f32_1a794af0916666d11cc564d6df08553555" prot="public" virt="non-virtual"><scope>arm_fir_sparse_instance_f32</scope><name>pState</name></member>
+      <member refid="structarm__fir__sparse__instance__f32_1aaa54ae67e5d10c6dd0d697945c638d31" prot="public" virt="non-virtual"><scope>arm_fir_sparse_instance_f32</scope><name>pTapDelay</name></member>
+      <member refid="structarm__fir__sparse__instance__f32_1a57585aeca9dc8686e08df2865375a86d" prot="public" virt="non-virtual"><scope>arm_fir_sparse_instance_f32</scope><name>stateIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

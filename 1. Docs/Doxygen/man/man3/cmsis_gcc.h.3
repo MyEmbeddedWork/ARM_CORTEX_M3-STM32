@@ -1,0 +1,68 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h \- CMSIS Cortex-M Core Function/Instruction Header File\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__CMSIS_GCC_OUT_REG\fP(r)   '=r' (r)"
+.br
+.ti -1c
+.RI "#define \fB__CMSIS_GCC_USE_REG\fP(r)   'r' (r)"
+.br
+.ti -1c
+.RI "#define \fB__BKPT\fP(\fBvalue\fP)   __ASM \fBvolatile\fP ('bkpt '#value)"
+.br
+.RI "Breakpoint\&. "
+.ti -1c
+.RI "#define \fB__CLZ\fP   __builtin_clz"
+.br
+.RI "Count leading zeros\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__attribute__\fP ((always_inline)) __STATIC_INLINE void __enable_irq(void)"
+.br
+.RI "Enable IRQ Interrupts\&. "
+.ti -1c
+.RI "\fB__attribute__\fP ((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t \fBvalue\fP)"
+.br
+.RI "Reverse bit order of value\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBop2\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CMSIS Cortex-M Core Function/Instruction Header File\&. 
+
+
+.PP
+\fBVersion:\fP
+.RS 4
+V4\&.30 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+20\&. October 2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBcmsis_gcc\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

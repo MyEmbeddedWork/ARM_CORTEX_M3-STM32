@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i_w_d_g___write_access" kind="group">
+    <compoundname>IWDG_WriteAccess</compoundname>
+    <title>IWDG_WriteAccess</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91" prot="public" static="no">
+        <name>IWDG_WriteAccess_Enable</name>
+        <initializer>((uint16_t)0x5555)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc" prot="public" static="no">
+        <name>IWDG_WriteAccess_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___write_access_1gaa89c93332f5977175f8d416b7492de18" prot="public" static="no">
+        <name>IS_IWDG_WRITE_ACCESS</name>
+        <param><defname>ACCESS</defname></param>
+        <initializer>(((ACCESS) == <ref refid="group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91" kindref="member">IWDG_WriteAccess_Enable</ref>) || \
+                                      ((ACCESS) == <ref refid="group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc" kindref="member">IWDG_WriteAccess_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

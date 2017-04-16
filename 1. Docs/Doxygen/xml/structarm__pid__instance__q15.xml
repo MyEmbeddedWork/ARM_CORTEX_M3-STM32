@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__pid__instance__q15" kind="struct" language="C++" prot="public">
+    <compoundname>arm_pid_instance_q15</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__pid__instance__q15_1ad77f3a2823c7f96de42c92a3fbf3246b" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>q15_t arm_pid_instance_q15::A0</definition>
+        <argsstring></argsstring>
+        <name>A0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derived gain, A0 = Kp + Ki + Kd . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1739" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__q15_1a1b8412c517071962a9acfdc6778906ec" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t arm_pid_instance_q15::A1</definition>
+        <argsstring></argsstring>
+        <name>A1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derived gain A1 = -Kp - 2Kd | Kd. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1744" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__q15_1a4a3f0a878b5b6b055e3478a2f244cd30" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>q15_t arm_pid_instance_q15::state[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state array of length 3. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1746" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__q15_1ad228aae24a1b6d855c93a8b9bbc1c4f1" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>q15_t arm_pid_instance_q15::Kp</definition>
+        <argsstring></argsstring>
+        <name>Kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The proportional gain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1747" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__q15_1a0dcc19d5c8f7bc401acea9e8318cd777" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>q15_t arm_pid_instance_q15::Ki</definition>
+        <argsstring></argsstring>
+        <name>Ki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The integral gain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1748" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__q15_1af5d4b53091f19eff7536636b7cc43111" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>q15_t arm_pid_instance_q15::Kd</definition>
+        <argsstring></argsstring>
+        <name>Kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derivative gain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1749" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1749" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q15 PID Control. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1738" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1737" bodyend="1750"/>
+    <listofallmembers>
+      <member refid="structarm__pid__instance__q15_1ad77f3a2823c7f96de42c92a3fbf3246b" prot="public" virt="non-virtual"><scope>arm_pid_instance_q15</scope><name>A0</name></member>
+      <member refid="structarm__pid__instance__q15_1a1b8412c517071962a9acfdc6778906ec" prot="public" virt="non-virtual"><scope>arm_pid_instance_q15</scope><name>A1</name></member>
+      <member refid="structarm__pid__instance__q15_1af5d4b53091f19eff7536636b7cc43111" prot="public" virt="non-virtual"><scope>arm_pid_instance_q15</scope><name>Kd</name></member>
+      <member refid="structarm__pid__instance__q15_1a0dcc19d5c8f7bc401acea9e8318cd777" prot="public" virt="non-virtual"><scope>arm_pid_instance_q15</scope><name>Ki</name></member>
+      <member refid="structarm__pid__instance__q15_1ad228aae24a1b6d855c93a8b9bbc1c4f1" prot="public" virt="non-virtual"><scope>arm_pid_instance_q15</scope><name>Kp</name></member>
+      <member refid="structarm__pid__instance__q15_1a4a3f0a878b5b6b055e3478a2f244cd30" prot="public" virt="non-virtual"><scope>arm_pid_instance_q15</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

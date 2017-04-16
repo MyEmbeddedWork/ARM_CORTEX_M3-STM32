@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___transfer___type" kind="group">
+    <compoundname>SDIO_Transfer_Type</compoundname>
+    <title>SDIO_Transfer_Type</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___transfer___type_1ga5b54ada18cc4072ceff1d98ee4b69972" prot="public" static="no">
+        <name>SDIO_TransferMode_Block</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="356" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___transfer___type_1gadd0cafe0a80e6b6cc5c22d838cbb2e28" prot="public" static="no">
+        <name>SDIO_TransferMode_Stream</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="357" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___transfer___type_1gaf7565ea93f9ed01558bdc9ad80dac763" prot="public" static="no">
+        <name>IS_SDIO_TRANSFER_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___s_d_i_o___transfer___type_1gadd0cafe0a80e6b6cc5c22d838cbb2e28" kindref="member">SDIO_TransferMode_Stream</ref>) || \
+                                     ((MODE) == <ref refid="group___s_d_i_o___transfer___type_1ga5b54ada18cc4072ceff1d98ee4b69972" kindref="member">SDIO_TransferMode_Block</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="358" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+.TH "Prefetch_Buffer_Enable_Disable" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Prefetch_Buffer_Enable_Disable
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_PrefetchBuffer_Enable\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_PrefetchBuffer_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PREFETCHBUFFER_STATE\fP(STATE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_PrefetchBuffer_Disable   ((uint32_t)0x00000000)"
+FLASH Prefetch Buffer Disable 
+.PP
+Definition at line 98 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_PrefetchBuffer_Enable   ((uint32_t)0x00000010)"
+FLASH Prefetch Buffer Enable 
+.PP
+Definition at line 97 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_FLASH_PREFETCHBUFFER_STATE(STATE)"
+\fBValue:\fP
+.PP
+.nf
+(((STATE) == FLASH_PrefetchBuffer_Enable) || \
+                                              ((STATE) == FLASH_PrefetchBuffer_Disable))
+.fi
+.PP
+Definition at line 99 of file stm32f10x_flash\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

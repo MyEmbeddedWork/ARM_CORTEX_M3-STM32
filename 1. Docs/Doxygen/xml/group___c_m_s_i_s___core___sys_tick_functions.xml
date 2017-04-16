@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s___core___sys_tick_functions" kind="group">
+    <compoundname>CMSIS_Core_SysTickFunctions</compoundname>
+    <title>SysTick Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s___core___sys_tick_functions_1gae4e8f0238527c69f522029b93c8e5b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t SysTick_Config</definition>
+        <argsstring>(uint32_t ticks)</argsstring>
+        <name>SysTick_Config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+<para>System Tick Configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initializes the System <ref refid="class_timer" kindref="compound">Timer</ref> and its interrupt, and starts the System Tick <ref refid="class_timer" kindref="compound">Timer</ref>. Counter is in free running mode to generate periodic interrupts. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ticks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of ticks between two interrupts. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 Function succeeded. </para></simplesect>
+<simplesect kind="return"><para>1 Function failed. </para></simplesect>
+<simplesect kind="note"><para>When the variable <bold>__Vendor_SysTickConfig</bold> is set to 1, then the function <bold>SysTick_Config</bold> is not included. In this case, the file <bold><emphasis>device</emphasis>.h</bold> must contain a vendor-specific implementation of this function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="777" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="777" bodyend="791"/>
+        <references refid="group___c_m_s_i_s___sys_tick_1ga265912a7962f0e1abd170336e579b1b1" compoundref="core__cm0_8h" startline="527">SysTick_LOAD_RELOAD_Msk</references>
+        <references refid="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" compoundref="core__cm0_8h" startline="596">SysTick</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2305cbd44aaad792e3a4e538bdaf14f9" compoundref="core__cm0_8h" startline="696" endline="708">NVIC_SetPriority</references>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7" compoundref="stm32f10x_8h" startline="177">SysTick_IRQn</references>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gae3fe3587d5100c787e02102ce3944460" compoundref="stm32f10x_8h" startline="160">__NVIC_PRIO_BITS</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1gaa41d06039797423a46596bd313d57373" compoundref="core__cm0_8h" startline="517">SysTick_CTRL_CLKSOURCE_Msk</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1ga95bb984266ca764024836a870238a027" compoundref="core__cm0_8h" startline="520">SysTick_CTRL_TICKINT_Msk</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1ga16c9fee0ed0235524bdeb38af328fd1f" compoundref="core__cm0_8h" startline="523">SysTick_CTRL_ENABLE_Msk</references>
+        <referencedby refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" compoundref="_timer_8h" startline="27" endline="31">Timer::start</referencedby>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3387607fd8a1a32cccd77d2ac672dd96" compoundref="core__cm3_8h" startline="1606" endline="1617">NVIC_DecodePriority</referencedby>
+        <referencedby refid="group___c_m_s_i_s___core___cache_functions_1ga630131b2572eaa16b569ed364dfc895e" compoundref="core__cm7_8h" startline="2367" endline="2385">SCB_CleanInvalidateDCache_by_Addr</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions that configure the System. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

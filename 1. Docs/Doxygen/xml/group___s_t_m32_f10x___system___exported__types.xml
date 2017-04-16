@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_t_m32_f10x___system___exported__types" kind="group">
+    <compoundname>STM32F10x_System_Exported_types</compoundname>
+    <title>STM32F10x_System_Exported_types</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___s_t_m32_f10x___system___exported__types_1gaa3cd3e43291e81e795d642b79b6088e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SystemCoreClock</definition>
+        <argsstring></argsstring>
+        <name>SystemCoreClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Clock Frequency (Core Clock) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/system_stm32f10x.h" line="53" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" bodystart="163" bodyend="-1"/>
+        <referencedby refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" compoundref="_timer_8h" startline="27" endline="31">Timer::start</referencedby>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+        <referencedby refid="group___s_t_m32_f10x___system___private___functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f" compoundref="system__stm32f10x_8c" startline="307" endline="413">SystemCoreClockUpdate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

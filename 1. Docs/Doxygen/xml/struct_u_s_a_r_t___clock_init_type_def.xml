@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_u_s_a_r_t___clock_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>USART_ClockInitTypeDef</compoundname>
+    <includes refid="stm32f10x__usart_8h" local="no">stm32f10x_usart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___clock_init_type_def_1a229ba7c3f9a4d6d56513e6899f6c6693" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_ClockInitTypeDef::USART_Clock</definition>
+        <argsstring></argsstring>
+        <name>USART_Clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the USART clock is enabled or disabled. This parameter can be a value of <ref refid="group___u_s_a_r_t___clock" kindref="compound">USART_Clock</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="91" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gadb50c7a2175c91acd3728f8eefd0c63d" compoundref="stm32f10x__usart_8c" startline="302" endline="325">USART_ClockInit</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga59df27d0adda18b16ee28d47672cc724" compoundref="stm32f10x__usart_8c" startline="333" endline="340">USART_ClockStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___clock_init_type_def_1a01450cba8a40cf9a624b25979dc6aa77" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_ClockInitTypeDef::USART_CPOL</definition>
+        <argsstring></argsstring>
+        <name>USART_CPOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the steady state value of the serial clock. This parameter can be a value of <ref refid="group___u_s_a_r_t___clock___polarity" kindref="compound">USART_Clock_Polarity</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="94" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gadb50c7a2175c91acd3728f8eefd0c63d" compoundref="stm32f10x__usart_8c" startline="302" endline="325">USART_ClockInit</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga59df27d0adda18b16ee28d47672cc724" compoundref="stm32f10x__usart_8c" startline="333" endline="340">USART_ClockStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___clock_init_type_def_1abda3a2172bd5819e1c207dc0d1c822d8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_ClockInitTypeDef::USART_CPHA</definition>
+        <argsstring></argsstring>
+        <name>USART_CPHA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the clock transition on which the bit capture is made. This parameter can be a value of <ref refid="group___u_s_a_r_t___clock___phase" kindref="compound">USART_Clock_Phase</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="97" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gadb50c7a2175c91acd3728f8eefd0c63d" compoundref="stm32f10x__usart_8c" startline="302" endline="325">USART_ClockInit</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga59df27d0adda18b16ee28d47672cc724" compoundref="stm32f10x__usart_8c" startline="333" endline="340">USART_ClockStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___clock_init_type_def_1ab1b28d63d2be6e57849666d78a4467bd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_ClockInitTypeDef::USART_LastBit</definition>
+        <argsstring></argsstring>
+        <name>USART_LastBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the clock pulse corresponding to the last transmitted data bit (MSB) has to be output on the SCLK pin in synchronous mode. This parameter can be a value of <ref refid="group___u_s_a_r_t___last___bit" kindref="compound">USART_Last_Bit</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="100" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gadb50c7a2175c91acd3728f8eefd0c63d" compoundref="stm32f10x__usart_8c" startline="302" endline="325">USART_ClockInit</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga59df27d0adda18b16ee28d47672cc724" compoundref="stm32f10x__usart_8c" startline="333" endline="340">USART_ClockStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>USART Clock Init Structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="89" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="88" bodyend="103"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___clock_init_type_def_1a229ba7c3f9a4d6d56513e6899f6c6693" prot="public" virt="non-virtual"><scope>USART_ClockInitTypeDef</scope><name>USART_Clock</name></member>
+      <member refid="struct_u_s_a_r_t___clock_init_type_def_1abda3a2172bd5819e1c207dc0d1c822d8" prot="public" virt="non-virtual"><scope>USART_ClockInitTypeDef</scope><name>USART_CPHA</name></member>
+      <member refid="struct_u_s_a_r_t___clock_init_type_def_1a01450cba8a40cf9a624b25979dc6aa77" prot="public" virt="non-virtual"><scope>USART_ClockInitTypeDef</scope><name>USART_CPOL</name></member>
+      <member refid="struct_u_s_a_r_t___clock_init_type_def_1ab1b28d63d2be6e57849666d78a4467bd" prot="public" virt="non-virtual"><scope>USART_ClockInitTypeDef</scope><name>USART_LastBit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

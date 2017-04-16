@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___o_s_s_r___off___state___selection__for___run__mode__state" kind="group">
+    <compoundname>OSSR_Off_State_Selection_for_Run_mode_state</compoundname>
+    <title>OSSR_Off_State_Selection_for_Run_mode_state</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___o_s_s_r___off___state___selection__for___run__mode__state_1ga3703ba6189db045bec48c864289f997e" prot="public" static="no">
+        <name>TIM_OSSRState_Enable</name>
+        <initializer>((uint16_t)0x0800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="523" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___o_s_s_r___off___state___selection__for___run__mode__state_1ga766dfd8b3c32ec1b8b446f0e2dbe7b97" prot="public" static="no">
+        <name>TIM_OSSRState_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="524" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___o_s_s_r___off___state___selection__for___run__mode__state_1ga48b4f15f6346e28087edbb9af2ba4f63" prot="public" static="no">
+        <name>IS_TIM_OSSR_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___o_s_s_r___off___state___selection__for___run__mode__state_1ga3703ba6189db045bec48c864289f997e" kindref="member">TIM_OSSRState_Enable</ref>) || \
+                                  ((STATE) == <ref refid="group___o_s_s_r___off___state___selection__for___run__mode__state_1ga766dfd8b3c32ec1b8b446f0e2dbe7b97" kindref="member">TIM_OSSRState_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="525" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

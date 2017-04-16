@@ -1,0 +1,1010 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__cec_8c" kind="file" language="C++">
+    <compoundname>stm32f10x_cec.c</compoundname>
+    <includes refid="stm32f10x__cec_8h" local="yes">stm32f10x_cec.h</includes>
+    <includes refid="stm32f10x__rcc_8h" local="yes">stm32f10x_rcc.h</includes>
+    <incdepgraph>
+      <node id="876">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="873">
+        <label>stdint.h</label>
+      </node>
+      <node id="872">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="870">
+        <label>stm32f10x_cec.h</label>
+        <link refid="stm32f10x__cec_8h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+      </node>
+      <node id="869">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c</label>
+        <link refid="stm32f10x__cec_8c"/>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>stm32f10x_rcc.h</label>
+        <link refid="stm32f10x__rcc_8h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="871">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" prot="public" static="no">
+        <name>CEC_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaacb77bc44b3f8c87ab98f241e760e440" kindref="member">CEC_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="49" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" prot="public" static="no">
+        <name>CFGR_OFFSET</name>
+        <initializer>(<ref refid="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" kindref="member">CEC_OFFSET</ref> + 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga321e547b9574b065127c882e09a4f7e7" prot="public" static="no">
+        <name>PE_BitNumber</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga9d1f044508cda5ad8213bd7bc5c4363d" prot="public" static="no">
+        <name>CFGR_PE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" kindref="member">CFGR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1ga321e547b9574b065127c882e09a4f7e7" kindref="member">PE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="56" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga57731312db52f3498312a56e98166fad" prot="public" static="no">
+        <name>IE_BitNumber</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1gac7fe35cf912353ca51a56c5f1f25b2fb" prot="public" static="no">
+        <name>CFGR_IE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" kindref="member">CFGR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1ga57731312db52f3498312a56e98166fad" kindref="member">IE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" prot="public" static="no">
+        <name>CSR_OFFSET</name>
+        <initializer>(<ref refid="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" kindref="member">CEC_OFFSET</ref> + 0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga1a470abab836eba7b451950938708946" prot="public" static="no">
+        <name>TSOM_BitNumber</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga4971cc50b0ead4a493e2a9c03966c826" prot="public" static="no">
+        <name>CSR_TSOM_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1ga1a470abab836eba7b451950938708946" kindref="member">TSOM_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1gac86378eff7728e5cfca5480ab2dbef0b" prot="public" static="no">
+        <name>TEOM_BitNumber</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga9ac493d98ce1f6d82b778ace0f2bc7bb" prot="public" static="no">
+        <name>CSR_TEOM_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1gac86378eff7728e5cfca5480ab2dbef0b" kindref="member">TEOM_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1gaaedf9b8df17534f5eaf75ec1ca3fbd7a" prot="public" static="no">
+        <name>CFGR_CLEAR_Mask</name>
+        <initializer>(uint8_t)(0xF3)        /* CFGR register Mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" prot="public" static="no">
+        <name>FLAG_Mask</name>
+        <initializer>((uint32_t)0x00FFFFFF) /* CEC FLAG mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga604c3b15b51a46303c201fa3deac2212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>CEC_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the CEC peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="118" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="118" bodyend="124"/>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1gaa96437b649e13586945f40dac318a0ae" compoundref="stm32f10x__rcc_8h" startline="552">RCC_APB1Periph_CEC</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gaf48aee745a16370372b3eaa7cf3ed22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_Init</definition>
+        <argsstring>(CEC_InitTypeDef *CEC_InitStruct)</argsstring>
+        <name>CEC_Init</name>
+        <param>
+          <type><ref refid="struct_c_e_c___init_type_def" kindref="compound">CEC_InitTypeDef</ref> *</type>
+          <declname>CEC_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the CEC peripheral according to the specified parameters in the CEC_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_c_e_c___init_type_def" kindref="compound">CEC_InitTypeDef</ref> structure that contains the configuration information for the specified CEC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="135" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="135" bodyend="157"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c___bit_timing___mode_1ga55494269b2c9c55c11130a429f418a8d" compoundref="stm32f10x__cec_8h" startline="72">IS_CEC_BIT_TIMING_ERROR_MODE</references>
+        <references refid="struct_c_e_c___init_type_def_1a197bc5a8957ab0b86d4ecc1347fa9e37" compoundref="stm32f10x__cec_8h" startline="52">CEC_InitTypeDef::CEC_BitTimingMode</references>
+        <references refid="group___c_e_c___bit_period___mode_1ga3414347854a83bf70748624ec5b8dd49" compoundref="stm32f10x__cec_8h" startline="84">IS_CEC_BIT_PERIOD_ERROR_MODE</references>
+        <references refid="struct_c_e_c___init_type_def_1a3cc27a2030d87a8bea17c6b0750dda2a" compoundref="stm32f10x__cec_8h" startline="54">CEC_InitTypeDef::CEC_BitPeriodMode</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+        <references refid="group___c_e_c___private___defines_1gaaedf9b8df17534f5eaf75ec1ca3fbd7a" compoundref="stm32f10x__cec_8c" startline="73">CFGR_CLEAR_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga0c8efa79e5768930e567b3b3ed6e09e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_Cmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>CEC_Cmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified CEC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CEC peripheral. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="165" bodyend="179"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1ga9d1f044508cda5ad8213bd7bc5c4363d" compoundref="stm32f10x__cec_8c" startline="56">CFGR_PE_BB</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga57341732e9fca2df3bd9aa4ea53e14c7" compoundref="stm32f10x_8h" startline="4144">CEC_CFGR_PE</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga8be87c514505cf82eb29334f054fc0bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_ITConfig</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>CEC_ITConfig</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the CEC interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CEC interrupt. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="187" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="187" bodyend="193"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1gac7fe35cf912353ca51a56c5f1f25b2fb" compoundref="stm32f10x__cec_8c" startline="60">CFGR_IE_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gacad422ef1f50246b2021b41835b8a95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_OwnAddressConfig</definition>
+        <argsstring>(uint8_t CEC_OwnAddress)</argsstring>
+        <name>CEC_OwnAddressConfig</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>CEC_OwnAddress</declname>
+        </param>
+        <briefdescription>
+<para>Defines the Own Address of the CEC device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_OwnAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CEC own address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="200" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="200" bodyend="207"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c___own___address_1ga0659314b0be6092e73aa373394816557" compoundref="stm32f10x__cec_8h" startline="108">IS_CEC_ADDRESS</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gad2fc626e28a82008a29f062975a9af11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_SetPrescaler</definition>
+        <argsstring>(uint16_t CEC_Prescaler)</argsstring>
+        <name>CEC_SetPrescaler</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>CEC_Prescaler</declname>
+        </param>
+        <briefdescription>
+<para>Sets the CEC prescaler value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_Prescaler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CEC prescaler new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="214" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="214" bodyend="221"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c___prescaler_1ga88ad62af56298609444942b8f05b6d23" compoundref="stm32f10x__cec_8h" startline="116">IS_CEC_PRESCALER</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga6897ab26d8f909f9160e9fac54b97441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_SendDataByte</definition>
+        <argsstring>(uint8_t Data)</argsstring>
+        <name>CEC_SendDataByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Transmits single data through the CEC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="228" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="228" bodyend="232"/>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga165837bff6292e7674eff6f8b230da97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CEC_ReceiveDataByte</definition>
+        <argsstring>(void)</argsstring>
+        <name>CEC_ReceiveDataByte</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the most recent received data by the CEC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="240" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="240" bodyend="244"/>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga71e700461ffe7820d9e1c75da65fd0fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_StartOfMessage</definition>
+        <argsstring>(void)</argsstring>
+        <name>CEC_StartOfMessage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Starts a new message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="251" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="251" bodyend="255"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1ga4971cc50b0ead4a493e2a9c03966c826" compoundref="stm32f10x__cec_8c" startline="67">CSR_TSOM_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga1e2cf6e3a1ac891f2814f9d3f4043574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_EndOfMessageCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>CEC_EndOfMessageCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Transmits message with or without an EOM bit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CEC Tx End Of Message. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="263" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="263" bodyend="270"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1ga9ac493d98ce1f6d82b778ace0f2bc7bb" compoundref="stm32f10x__cec_8c" startline="71">CSR_TEOM_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gaf920706cb350182bf0728c66868053ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus CEC_GetFlagStatus</definition>
+        <argsstring>(uint32_t CEC_FLAG)</argsstring>
+        <name>CEC_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>CEC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Gets the CEC flag status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CEC flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>CEC_FLAG_BTE: Bit Timing Error </para></listitem>
+<listitem><para>CEC_FLAG_BPE: Bit Period Error </para></listitem>
+<listitem><para>CEC_FLAG_RBTFE: Rx Block Transfer Finished Error </para></listitem>
+<listitem><para>CEC_FLAG_SBE: Start Bit Error </para></listitem>
+<listitem><para>CEC_FLAG_ACKE: Block Acknowledge Error </para></listitem>
+<listitem><para>CEC_FLAG_LINE: Line Error </para></listitem>
+<listitem><para>CEC_FLAG_TBTFE: Tx Block Transfer Finished Error </para></listitem>
+<listitem><para>CEC_FLAG_TEOM: Tx End Of Message </para></listitem>
+<listitem><para>CEC_FLAG_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_FLAG_TBTRF: Tx Byte Transfer Request or Block Transfer Finished </para></listitem>
+<listitem><para>CEC_FLAG_RSOM: Rx Start Of Message </para></listitem>
+<listitem><para>CEC_FLAG_REOM: Rx End Of Message </para></listitem>
+<listitem><para>CEC_FLAG_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_FLAG_RBTF: Rx Byte/Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CEC_FLAG (SET or RESET) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="292" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="292" bodyend="336"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__flags__definition_1ga929b30d90f6807e9f72976596b0b850b" compoundref="stm32f10x__cec_8h" startline="150">IS_CEC_GET_FLAG</references>
+        <references refid="group___peripheral__memory__map_1gaacb77bc44b3f8c87ab98f241e760e440" compoundref="stm32f10x_8h" startline="1311">CEC_BASE</references>
+        <references refid="group___c_e_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__cec_8c" startline="74">FLAG_Mask</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga928b373fb5972204c56f9c64113f8c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_ClearFlag</definition>
+        <argsstring>(uint32_t CEC_FLAG)</argsstring>
+        <name>CEC_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>CEC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the CEC&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>CEC_FLAG_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_FLAG_TBTRF: Tx Byte Transfer Request or Block Transfer Finished </para></listitem>
+<listitem><para>CEC_FLAG_RSOM: Rx Start Of Message </para></listitem>
+<listitem><para>CEC_FLAG_REOM: Rx End Of Message </para></listitem>
+<listitem><para>CEC_FLAG_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_FLAG_RBTF: Rx Byte/Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="350" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="350" bodyend="361"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__flags__definition_1ga418911667f82a12dd097f7fac7ad4e89" compoundref="stm32f10x__cec_8h" startline="148">IS_CEC_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gaa1940a388d0bfcefe7483fb74cc2ba1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus CEC_GetITStatus</definition>
+        <argsstring>(uint8_t CEC_IT)</argsstring>
+        <name>CEC_GetITStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>CEC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified CEC interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CEC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>CEC_IT_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_IT_TBTF: Tx Block Transfer Finished </para></listitem>
+<listitem><para>CEC_IT_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_IT_RBTF: Rx Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CEC_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="373" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="373" bodyend="397"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__interrupts__definition_1ga7f553a4a3346c676101d81a024a9cba8" compoundref="stm32f10x__cec_8h" startline="98">IS_CEC_GET_IT</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga69eca6654f89f8b05bb296938678ac68" compoundref="stm32f10x_8h" startline="4145">CEC_CFGR_IE</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gade646921262a077172c708953822f248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_ClearITPendingBit</definition>
+        <argsstring>(uint16_t CEC_IT)</argsstring>
+        <name>CEC_ClearITPendingBit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>CEC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the CEC&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CEC interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>CEC_IT_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_IT_TBTF: Tx Block Transfer Finished </para></listitem>
+<listitem><para>CEC_IT_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_IT_RBTF: Rx Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="409" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="409" bodyend="420"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__interrupts__definition_1ga7f553a4a3346c676101d81a024a9cba8" compoundref="stm32f10x__cec_8h" startline="98">IS_CEC_GET_IT</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file provides all the CEC firmware functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__cec_8h" kindref="compound">stm32f10x_cec.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__rcc_8h" kindref="compound">stm32f10x_rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment">/*<sp/>------------<sp/>CEC<sp/>registers<sp/>bit<sp/>address<sp/>in<sp/>the<sp/>alias<sp/>region<sp/>-----------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CEC_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CEC_BASE<sp/>-<sp/>PERIPH_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>---<sp/>CFGR<sp/>Register<sp/>---*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>PE<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="group___c_e_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CFGR_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CEC_OFFSET<sp/>+<sp/>0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group___c_e_c___private___defines_1ga321e547b9574b065127c882e09a4f7e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PE_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="group___c_e_c___private___defines_1ga9d1f044508cda5ad8213bd7bc5c4363d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CFGR_PE_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CFGR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(PE_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>IE<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___c_e_c___private___defines_1ga57731312db52f3498312a56e98166fad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IE_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group___c_e_c___private___defines_1gac7fe35cf912353ca51a56c5f1f25b2fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CFGR_IE_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CFGR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(IE_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>---<sp/>CSR<sp/>Register<sp/>---*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>TSOM<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group___c_e_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSR_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CEC_OFFSET<sp/>+<sp/>0x10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="group___c_e_c___private___defines_1ga1a470abab836eba7b451950938708946" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSOM_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___c_e_c___private___defines_1ga4971cc50b0ead4a493e2a9c03966c826" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSR_TSOM_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CSR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(TSOM_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>TEOM<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="group___c_e_c___private___defines_1gac86378eff7728e5cfca5480ab2dbef0b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEOM_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___c_e_c___private___defines_1ga9ac493d98ce1f6d82b778ace0f2bc7bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSR_TEOM_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CSR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(TEOM_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="group___c_e_c___private___defines_1gaaedf9b8df17534f5eaf75ec1ca3fbd7a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CFGR_CLEAR_Mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(uint8_t)(0xF3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CFGR<sp/>register<sp/>Mask<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="group___c_e_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLAG_Mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00FFFFFF)<sp/></highlight><highlight class="comment">/*<sp/>CEC<sp/>FLAG<sp/>mask<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="118" refid="group___c_e_c___private___functions_1ga604c3b15b51a46303c201fa3deac2212" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga604c3b15b51a46303c201fa3deac2212" kindref="member">CEC_DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>CEC<sp/>reset<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" kindref="member">RCC_APB1PeriphResetCmd</ref>(<ref refid="group___a_p_b1__peripheral_1gaa96437b649e13586945f40dac318a0ae" kindref="member">RCC_APB1Periph_CEC</ref>,<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" kindref="member">ENABLE</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Release<sp/>CEC<sp/>from<sp/>reset<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" kindref="member">RCC_APB1PeriphResetCmd</ref>(<ref refid="group___a_p_b1__peripheral_1gaa96437b649e13586945f40dac318a0ae" kindref="member">RCC_APB1Periph_CEC</ref>,<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" kindref="member">DISABLE</ref>);<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="group___c_e_c___private___functions_1gaf48aee745a16370372b3eaa7cf3ed22b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1gaf48aee745a16370372b3eaa7cf3ed22b" kindref="member">CEC_Init</ref>(<ref refid="struct_c_e_c___init_type_def" kindref="compound">CEC_InitTypeDef</ref>*<sp/>CEC_InitStruct)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[ILG]<sp/>uint16_t<sp/>tmpreg<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmpreg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c___bit_timing___mode_1ga55494269b2c9c55c11130a429f418a8d" kindref="member">IS_CEC_BIT_TIMING_ERROR_MODE</ref>(CEC_InitStruct-&gt;<ref refid="struct_c_e_c___init_type_def_1a197bc5a8957ab0b86d4ecc1347fa9e37" kindref="member">CEC_BitTimingMode</ref>));<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c___bit_period___mode_1ga3414347854a83bf70748624ec5b8dd49" kindref="member">IS_CEC_BIT_PERIOD_ERROR_MODE</ref>(CEC_InitStruct-&gt;<ref refid="struct_c_e_c___init_type_def_1a3cc27a2030d87a8bea17c6b0750dda2a" kindref="member">CEC_BitPeriodMode</ref>));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*----------------------------<sp/>CEC<sp/>CFGR<sp/>Configuration<sp/>-----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>CEC<sp/>CFGR<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CFGR;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>BTEM<sp/>and<sp/>BPEM<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>tmpreg<sp/>&amp;=<sp/><ref refid="group___c_e_c___private___defines_1gaaedf9b8df17534f5eaf75ec1ca3fbd7a" kindref="member">CFGR_CLEAR_Mask</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>CEC:<sp/>Bit<sp/>Timing<sp/>Error<sp/>and<sp/>Bit<sp/>Period<sp/>Error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>tmpreg<sp/>|=<sp/>(uint16_t)(CEC_InitStruct-&gt;<ref refid="struct_c_e_c___init_type_def_1a197bc5a8957ab0b86d4ecc1347fa9e37" kindref="member">CEC_BitTimingMode</ref><sp/>|<sp/>CEC_InitStruct-&gt;<ref refid="struct_c_e_c___init_type_def_1a3cc27a2030d87a8bea17c6b0750dda2a" kindref="member">CEC_BitPeriodMode</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>to<sp/>CEC<sp/>CFGR<sp/><sp/>register*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CFGR<sp/>=<sp/>tmpreg;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="group___c_e_c___private___functions_1ga0c8efa79e5768930e567b3b3ed6e09e9" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga0c8efa79e5768930e567b3b3ed6e09e9" kindref="member">CEC_Cmd</ref>(<ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___c_e_c___private___defines_1ga9d1f044508cda5ad8213bd7bc5c4363d" kindref="member">CFGR_PE_BB</ref><sp/>=<sp/>(uint32_t)NewState;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NewState<sp/>==<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" kindref="member">DISABLE</ref>)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>until<sp/>the<sp/>PE<sp/>bit<sp/>is<sp/>cleared<sp/>by<sp/>hardware<sp/>(Idle<sp/>Line<sp/>detected)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((<ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CFGR<sp/>&amp;<sp/><ref refid="group___peripheral___registers___bits___definition_1ga57341732e9fca2df3bd9aa4ea53e14c7" kindref="member">CEC_CFGR_PE</ref>)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="group___c_e_c___private___functions_1ga8be87c514505cf82eb29334f054fc0bc" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga8be87c514505cf82eb29334f054fc0bc" kindref="member">CEC_ITConfig</ref>(<ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___c_e_c___private___defines_1gac7fe35cf912353ca51a56c5f1f25b2fb" kindref="member">CFGR_IE_BB</ref><sp/>=<sp/>(uint32_t)NewState;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="group___c_e_c___private___functions_1gacad422ef1f50246b2021b41835b8a95c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1gacad422ef1f50246b2021b41835b8a95c" kindref="member">CEC_OwnAddressConfig</ref>(uint8_t<sp/>CEC_OwnAddress)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c___own___address_1ga0659314b0be6092e73aa373394816557" kindref="member">IS_CEC_ADDRESS</ref>(CEC_OwnAddress));</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>CEC<sp/>own<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;OAR<sp/>=<sp/>CEC_OwnAddress;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="group___c_e_c___private___functions_1gad2fc626e28a82008a29f062975a9af11" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1gad2fc626e28a82008a29f062975a9af11" kindref="member">CEC_SetPrescaler</ref>(uint16_t<sp/>CEC_Prescaler)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c___prescaler_1ga88ad62af56298609444942b8f05b6d23" kindref="member">IS_CEC_PRESCALER</ref>(CEC_Prescaler));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/><sp/>Prescaler<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;PRES<sp/>=<sp/>CEC_Prescaler;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="group___c_e_c___private___functions_1ga6897ab26d8f909f9160e9fac54b97441" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga6897ab26d8f909f9160e9fac54b97441" kindref="member">CEC_SendDataByte</ref>(uint8_t<sp/>Data)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Transmit<sp/>Data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;TXD<sp/>=<sp/>Data<sp/>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="group___c_e_c___private___functions_1ga165837bff6292e7674eff6f8b230da97" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="group___c_e_c___private___functions_1ga165837bff6292e7674eff6f8b230da97" kindref="member">CEC_ReceiveDataByte</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Receive<sp/>Data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint8_t)(<ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;RXD);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="group___c_e_c___private___functions_1ga71e700461ffe7820d9e1c75da65fd0fb" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga71e700461ffe7820d9e1c75da65fd0fb" kindref="member">CEC_StartOfMessage</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Starts<sp/>of<sp/>new<sp/>message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___c_e_c___private___defines_1ga4971cc50b0ead4a493e2a9c03966c826" kindref="member">CSR_TSOM_BB</ref><sp/>=<sp/>(uint32_t)0x1;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="group___c_e_c___private___functions_1ga1e2cf6e3a1ac891f2814f9d3f4043574" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga1e2cf6e3a1ac891f2814f9d3f4043574" kindref="member">CEC_EndOfMessageCmd</ref>(<ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>data<sp/>byte<sp/>will<sp/>be<sp/>transmitted<sp/>with<sp/>or<sp/>without<sp/>an<sp/>EOM<sp/>bit*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___c_e_c___private___defines_1ga9ac493d98ce1f6d82b778ace0f2bc7bb" kindref="member">CSR_TEOM_BB</ref><sp/>=<sp/>(uint32_t)NewState;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="group___c_e_c___private___functions_1gaf920706cb350182bf0728c66868053ca" refkind="member"><highlight class="normal"><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/><ref refid="group___c_e_c___private___functions_1gaf920706cb350182bf0728c66868053ca" kindref="member">CEC_GetFlagStatus</ref>(uint32_t<sp/>CEC_FLAG)<sp/></highlight></codeline>
+<codeline lineno="293"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>uint32_t<sp/>cecreg<sp/>=<sp/>0,<sp/>cecbase<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c__flags__definition_1ga929b30d90f6807e9f72976596b0b850b" kindref="member">IS_CEC_GET_FLAG</ref>(CEC_FLAG));</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>CEC<sp/>peripheral<sp/>base<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>cecbase<sp/>=<sp/>(uint32_t)(<ref refid="group___peripheral__memory__map_1gaacb77bc44b3f8c87ab98f241e760e440" kindref="member">CEC_BASE</ref>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>flag<sp/>register<sp/>index<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/>cecreg<sp/>=<sp/>CEC_FLAG<sp/>&gt;&gt;<sp/>28;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>bit[23:0]<sp/>of<sp/>the<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>CEC_FLAG<sp/>&amp;=<sp/><ref refid="group___c_e_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" kindref="member">FLAG_Mask</ref>;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cecreg<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Flag<sp/>in<sp/>CEC<sp/>ESR<sp/>Register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>CEC_FLAG<sp/>=<sp/>(uint32_t)(CEC_FLAG<sp/>&gt;&gt;<sp/>16);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>CEC<sp/>ESR<sp/>register<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>cecbase<sp/>+=<sp/>0xC;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>CEC<sp/>CSR<sp/>register<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>cecbase<sp/>+=<sp/>0x10;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(((*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)cecbase)<sp/>&amp;<sp/>CEC_FLAG)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CEC_FLAG<sp/>is<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" kindref="member">SET</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CEC_FLAG<sp/>is<sp/>reset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>CEC_FLAG<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="group___c_e_c___private___functions_1ga928b373fb5972204c56f9c64113f8c67" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1ga928b373fb5972204c56f9c64113f8c67" kindref="member">CEC_ClearFlag</ref>(uint32_t<sp/>CEC_FLAG)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmp<sp/>=<sp/>0x0;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c__flags__definition_1ga418911667f82a12dd097f7fac7ad4e89" kindref="member">IS_CEC_CLEAR_FLAG</ref>(CEC_FLAG));</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>tmp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CSR<sp/>&amp;<sp/>0x2;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>selected<sp/>CEC<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CSR<sp/>&amp;=<sp/>(uint32_t)(((~(uint32_t)CEC_FLAG)<sp/>&amp;<sp/>0xFFFFFFFC)<sp/>|<sp/>tmp);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373" refid="group___c_e_c___private___functions_1gaa1940a388d0bfcefe7483fb74cc2ba1d" refkind="member"><highlight class="normal"><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref><sp/><ref refid="group___c_e_c___private___functions_1gaa1940a388d0bfcefe7483fb74cc2ba1d" kindref="member">CEC_GetITStatus</ref>(uint8_t<sp/>CEC_IT)</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/>uint32_t<sp/>enablestatus<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c__interrupts__definition_1ga7f553a4a3346c676101d81a024a9cba8" kindref="member">IS_CEC_GET_IT</ref>(CEC_IT));</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>CEC<sp/>IT<sp/>enable<sp/>bit<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>enablestatus<sp/>=<sp/>(<ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CFGR<sp/>&amp;<sp/>(uint8_t)<ref refid="group___peripheral___registers___bits___definition_1ga69eca6654f89f8b05bb296938678ac68" kindref="member">CEC_CFGR_IE</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>status<sp/>of<sp/>the<sp/>specified<sp/>CEC<sp/>interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((<ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CSR<sp/>&amp;<sp/>CEC_IT)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)<sp/>&amp;&amp;<sp/>enablestatus)</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CEC_IT<sp/>is<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" kindref="member">SET</ref>;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CEC_IT<sp/>is<sp/>reset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>CEC_IT<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="group___c_e_c___private___functions_1gade646921262a077172c708953822f248" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_e_c___private___functions_1gade646921262a077172c708953822f248" kindref="member">CEC_ClearITPendingBit</ref>(uint16_t<sp/>CEC_IT)</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmp<sp/>=<sp/>0x0;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_e_c__interrupts__definition_1ga7f553a4a3346c676101d81a024a9cba8" kindref="member">IS_CEC_GET_IT</ref>(CEC_IT));</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/>tmp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CSR<sp/>&amp;<sp/>0x2;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>selected<sp/>CEC<sp/>interrupt<sp/>pending<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" kindref="member">CEC</ref>-&gt;CSR<sp/>&amp;=<sp/>(uint32_t)(((~(uint32_t)CEC_IT)<sp/>&amp;<sp/>0xFFFFFFFC)<sp/>|<sp/>tmp);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c"/>
+  </compounddef>
+</doxygen>

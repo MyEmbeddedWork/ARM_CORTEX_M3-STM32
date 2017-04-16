@@ -1,0 +1,61 @@
+.TH "arm_lms_instance_q15" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_lms_instance_q15 \- Instance structure for the Q15 LMS filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBnumTaps\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpCoeffs\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP \fBmu\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBpostShift\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q15 LMS filter\&. 
+.PP
+Definition at line 4016 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBq15_t\fP arm_lms_instance_q15::mu"
+step size that controls filter coefficient updates\&. 
+.PP
+Definition at line 4021 of file arm_math\&.h\&.
+.SS "uint16_t arm_lms_instance_q15::numTaps"
+number of coefficients in the filter\&. 
+.PP
+Definition at line 4018 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_lms_instance_q15::pCoeffs"
+points to the coefficient array\&. The array is of length numTaps\&. 
+.PP
+Definition at line 4020 of file arm_math\&.h\&.
+.SS "uint32_t arm_lms_instance_q15::postShift"
+bit shift applied to coefficients\&. 
+.PP
+Definition at line 4022 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_lms_instance_q15::pState"
+points to the state variable array\&. The array is of length numTaps+blockSize-1\&. 
+.PP
+Definition at line 4019 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,752 @@
+.TH "CAN_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCAN_DeInit\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Deinitializes the CAN peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_Init\fP (\fBCAN_TypeDef\fP *CANx, \fBCAN_InitTypeDef\fP *CAN_InitStruct)"
+.br
+.RI "Initializes the CAN peripheral according to the specified parameters in the CAN_InitStruct\&. "
+.ti -1c
+.RI "void \fBCAN_FilterInit\fP (\fBCAN_FilterInitTypeDef\fP *CAN_FilterInitStruct)"
+.br
+.RI "Initializes the CAN peripheral according to the specified parameters in the CAN_FilterInitStruct\&. "
+.ti -1c
+.RI "void \fBCAN_StructInit\fP (\fBCAN_InitTypeDef\fP *CAN_InitStruct)"
+.br
+.RI "Fills each CAN_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBCAN_SlaveStartBank\fP (uint8_t CAN_BankNumber)"
+.br
+.RI "Select the start bank filter for slave CAN\&. "
+.ti -1c
+.RI "void \fBCAN_DBGFreeze\fP (\fBCAN_TypeDef\fP *CANx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the DBG Freeze for CAN\&. "
+.ti -1c
+.RI "void \fBCAN_TTComModeCmd\fP (\fBCAN_TypeDef\fP *CANx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disabes the CAN Time TriggerOperation communication mode\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_Transmit\fP (\fBCAN_TypeDef\fP *CANx, \fBCanTxMsg\fP *TxMessage)"
+.br
+.RI "Initiates the transmission of a message\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_TransmitStatus\fP (\fBCAN_TypeDef\fP *CANx, uint8_t TransmitMailbox)"
+.br
+.RI "Checks the transmission of a message\&. "
+.ti -1c
+.RI "void \fBCAN_CancelTransmit\fP (\fBCAN_TypeDef\fP *CANx, uint8_t Mailbox)"
+.br
+.RI "Cancels a transmit request\&. "
+.ti -1c
+.RI "void \fBCAN_Receive\fP (\fBCAN_TypeDef\fP *CANx, uint8_t FIFONumber, \fBCanRxMsg\fP *RxMessage)"
+.br
+.RI "Receives a message\&. "
+.ti -1c
+.RI "void \fBCAN_FIFORelease\fP (\fBCAN_TypeDef\fP *CANx, uint8_t FIFONumber)"
+.br
+.RI "Releases the specified FIFO\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_MessagePending\fP (\fBCAN_TypeDef\fP *CANx, uint8_t FIFONumber)"
+.br
+.RI "Returns the number of pending messages\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_OperatingModeRequest\fP (\fBCAN_TypeDef\fP *CANx, uint8_t CAN_OperatingMode)"
+.br
+.RI "Select the CAN Operation mode\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_Sleep\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Enters the low power mode\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_WakeUp\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Wakes the CAN up\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_GetLastErrorCode\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Returns the CANx's last error code (LEC)\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_GetReceiveErrorCounter\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Returns the CANx Receive Error Counter (REC)\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_GetLSBTransmitErrorCounter\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Returns the LSB of the 9-bit CANx Transmit Error Counter(TEC)\&. "
+.ti -1c
+.RI "void \fBCAN_ITConfig\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified CANx interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBCAN_GetFlagStatus\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_FLAG)"
+.br
+.RI "Checks whether the specified CAN flag is set or not\&. "
+.ti -1c
+.RI "void \fBCAN_ClearFlag\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_FLAG)"
+.br
+.RI "Clears the CAN's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBCAN_GetITStatus\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_IT)"
+.br
+.RI "Checks whether the specified CANx interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBCAN_ClearITPendingBit\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_IT)"
+.br
+.RI "Clears the CANx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void CAN_CancelTransmit (\fBCAN_TypeDef\fP * CANx, uint8_t Mailbox)"
+
+.PP
+Cancels a transmit request\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fIMailbox\fP Mailbox number\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 643 of file stm32f10x_can\&.c\&.
+.SS "void CAN_ClearFlag (\fBCAN_TypeDef\fP * CANx, uint32_t CAN_FLAG)"
+
+.PP
+Clears the CAN's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fICAN_FLAG\fP specifies the flag to clear\&. This parameter can be one of the following flags:
+.IP "\(bu" 2
+CAN_FLAG_RQCP0
+.IP "\(bu" 2
+CAN_FLAG_RQCP1
+.IP "\(bu" 2
+CAN_FLAG_RQCP2
+.IP "\(bu" 2
+CAN_FLAG_FF1
+.IP "\(bu" 2
+CAN_FLAG_FOV1
+.IP "\(bu" 2
+CAN_FLAG_FF0
+.IP "\(bu" 2
+CAN_FLAG_FOV0
+.IP "\(bu" 2
+CAN_FLAG_WKU
+.IP "\(bu" 2
+CAN_FLAG_SLAK
+.IP "\(bu" 2
+CAN_FLAG_LEC 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1153 of file stm32f10x_can\&.c\&.
+.SS "void CAN_ClearITPendingBit (\fBCAN_TypeDef\fP * CANx, uint32_t CAN_IT)"
+
+.PP
+Clears the CANx's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fICAN_IT\fP specifies the interrupt pending bit to clear\&.
+.IP "\(bu" 2
+CAN_IT_TME
+.IP "\(bu" 2
+CAN_IT_FF0
+.IP "\(bu" 2
+CAN_IT_FOV0
+.IP "\(bu" 2
+CAN_IT_FF1
+.IP "\(bu" 2
+CAN_IT_FOV1
+.IP "\(bu" 2
+CAN_IT_WKU
+.IP "\(bu" 2
+CAN_IT_SLK
+.IP "\(bu" 2
+CAN_IT_EWG
+.IP "\(bu" 2
+CAN_IT_EPV
+.IP "\(bu" 2
+CAN_IT_BOF
+.IP "\(bu" 2
+CAN_IT_LEC
+.IP "\(bu" 2
+CAN_IT_ERR 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1316 of file stm32f10x_can\&.c\&.
+.SS "void CAN_DBGFreeze (\fBCAN_TypeDef\fP * CANx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the DBG Freeze for CAN\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fINewState\fP new state of the CAN peripheral\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 451 of file stm32f10x_can\&.c\&.
+.SS "void CAN_DeInit (\fBCAN_TypeDef\fP * CANx)"
+
+.PP
+Deinitializes the CAN peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to select the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 122 of file stm32f10x_can\&.c\&.
+.SS "void CAN_FIFORelease (\fBCAN_TypeDef\fP * CANx, uint8_t FIFONumber)"
+
+.PP
+Releases the specified FIFO\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fIFIFONumber\fP FIFO to release, CAN_FIFO0 or CAN_FIFO1\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 730 of file stm32f10x_can\&.c\&.
+.SS "void CAN_FilterInit (\fBCAN_FilterInitTypeDef\fP * CAN_FilterInitStruct)"
+
+.PP
+Initializes the CAN peripheral according to the specified parameters in the CAN_FilterInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICAN_FilterInitStruct\fP pointer to a \fBCAN_FilterInitTypeDef\fP structure that contains the configuration information\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 292 of file stm32f10x_can\&.c\&.
+.SS "\fBFlagStatus\fP CAN_GetFlagStatus (\fBCAN_TypeDef\fP * CANx, uint32_t CAN_FLAG)"
+
+.PP
+Checks whether the specified CAN flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fICAN_FLAG\fP specifies the flag to check\&. This parameter can be one of the following flags:
+.IP "\(bu" 2
+CAN_FLAG_EWG
+.IP "\(bu" 2
+CAN_FLAG_EPV
+.IP "\(bu" 2
+CAN_FLAG_BOF
+.IP "\(bu" 2
+CAN_FLAG_RQCP0
+.IP "\(bu" 2
+CAN_FLAG_RQCP1
+.IP "\(bu" 2
+CAN_FLAG_RQCP2
+.IP "\(bu" 2
+CAN_FLAG_FMP1
+.IP "\(bu" 2
+CAN_FLAG_FF1
+.IP "\(bu" 2
+CAN_FLAG_FOV1
+.IP "\(bu" 2
+CAN_FLAG_FMP0
+.IP "\(bu" 2
+CAN_FLAG_FF0
+.IP "\(bu" 2
+CAN_FLAG_FOV0
+.IP "\(bu" 2
+CAN_FLAG_WKU
+.IP "\(bu" 2
+CAN_FLAG_SLAK
+.IP "\(bu" 2
+CAN_FLAG_LEC 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of CAN_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1053 of file stm32f10x_can\&.c\&.
+.SS "\fBITStatus\fP CAN_GetITStatus (\fBCAN_TypeDef\fP * CANx, uint32_t CAN_IT)"
+
+.PP
+Checks whether the specified CANx interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fICAN_IT\fP specifies the CAN interrupt source to check\&. This parameter can be one of the following flags:
+.IP "\(bu" 2
+CAN_IT_TME
+.IP "\(bu" 2
+CAN_IT_FMP0
+.IP "\(bu" 2
+CAN_IT_FF0
+.IP "\(bu" 2
+CAN_IT_FOV0
+.IP "\(bu" 2
+CAN_IT_FMP1
+.IP "\(bu" 2
+CAN_IT_FF1
+.IP "\(bu" 2
+CAN_IT_FOV1
+.IP "\(bu" 2
+CAN_IT_WKU
+.IP "\(bu" 2
+CAN_IT_SLK
+.IP "\(bu" 2
+CAN_IT_EWG
+.IP "\(bu" 2
+CAN_IT_EPV
+.IP "\(bu" 2
+CAN_IT_BOF
+.IP "\(bu" 2
+CAN_IT_LEC
+.IP "\(bu" 2
+CAN_IT_ERR 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP current state of CAN_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1213 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_GetLastErrorCode (\fBCAN_TypeDef\fP * CANx)"
+
+.PP
+Returns the CANx's last error code (LEC)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICAN_ErrorCode\fP specifies the Error code :
+.IP "\(bu" 2
+CAN_ERRORCODE_NoErr No Error
+.IP "\(bu" 2
+CAN_ERRORCODE_StuffErr Stuff Error
+.IP "\(bu" 2
+CAN_ERRORCODE_FormErr Form Error
+.IP "\(bu" 2
+CAN_ERRORCODE_ACKErr Acknowledgment Error
+.IP "\(bu" 2
+CAN_ERRORCODE_BitRecessiveErr Bit Recessive Error
+.IP "\(bu" 2
+CAN_ERRORCODE_BitDominantErr Bit Dominant Error
+.IP "\(bu" 2
+CAN_ERRORCODE_CRCErr CRC Error
+.IP "\(bu" 2
+CAN_ERRORCODE_SoftwareSetErr Software Set Error 
+.PP
+.RE
+.PP
+
+.PP
+Definition at line 932 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_GetLSBTransmitErrorCounter (\fBCAN_TypeDef\fP * CANx)"
+
+.PP
+Returns the LSB of the 9-bit CANx Transmit Error Counter(TEC)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fILSB\fP of the 9-bit CAN Transmit Error Counter\&. 
+.RE
+.PP
+
+.PP
+Definition at line 976 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_GetReceiveErrorCounter (\fBCAN_TypeDef\fP * CANx)"
+
+.PP
+Returns the CANx Receive Error Counter (REC)\&. 
+.PP
+\fBNote:\fP
+.RS 4
+In case of an error during reception, this counter is incremented by 1 or by 8 depending on the error condition as defined by the CAN standard\&. After every successful reception, the counter is decremented by 1 or reset to 120 if its value was higher than 128\&. When the counter value exceeds 127, the CAN controller enters the error passive state\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICAN\fP Receive Error Counter\&. 
+.RE
+.PP
+
+.PP
+Definition at line 956 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_Init (\fBCAN_TypeDef\fP * CANx, \fBCAN_InitTypeDef\fP * CAN_InitStruct)"
+
+.PP
+Initializes the CAN peripheral according to the specified parameters in the CAN_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fICAN_InitStruct\fP pointer to a \fBCAN_InitTypeDef\fP structure that contains the configuration information for the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIConstant\fP indicates initialization succeed which will be CAN_InitStatus_Failed or CAN_InitStatus_Success\&. 
+.RE
+.PP
+
+.PP
+Definition at line 154 of file stm32f10x_can\&.c\&.
+.SS "void CAN_ITConfig (\fBCAN_TypeDef\fP * CANx, uint32_t CAN_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified CANx interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fICAN_IT\fP specifies the CAN interrupt sources to be enabled or disabled\&. This parameter can be:
+.IP "\(bu" 2
+CAN_IT_TME,
+.IP "\(bu" 2
+CAN_IT_FMP0,
+.IP "\(bu" 2
+CAN_IT_FF0,
+.IP "\(bu" 2
+CAN_IT_FOV0,
+.IP "\(bu" 2
+CAN_IT_FMP1,
+.IP "\(bu" 2
+CAN_IT_FF1,
+.IP "\(bu" 2
+CAN_IT_FOV1,
+.IP "\(bu" 2
+CAN_IT_EWG,
+.IP "\(bu" 2
+CAN_IT_EPV,
+.IP "\(bu" 2
+CAN_IT_LEC,
+.IP "\(bu" 2
+CAN_IT_ERR,
+.IP "\(bu" 2
+CAN_IT_WKU or
+.IP "\(bu" 2
+CAN_IT_SLK\&. 
+.PP
+.br
+\fINewState\fP new state of the CAN interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1013 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_MessagePending (\fBCAN_TypeDef\fP * CANx, uint8_t FIFONumber)"
+
+.PP
+Returns the number of pending messages\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fIFIFONumber\fP Receive FIFO number, CAN_FIFO0 or CAN_FIFO1\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINbMessage\fP : which is the number of pending message\&. 
+.RE
+.PP
+
+.PP
+Definition at line 753 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_OperatingModeRequest (\fBCAN_TypeDef\fP * CANx, uint8_t CAN_OperatingMode)"
+
+.PP
+Select the CAN Operation mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICAN_OperatingMode\fP : CAN Operating Mode\&. This parameter can be one of \fBCAN_OperatingMode_TypeDef\fP enumeration\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIstatus\fP of the requested mode which can be
+.IP "\(bu" 2
+CAN_ModeStatus_Failed CAN failed entering the specific mode
+.IP "\(bu" 2
+CAN_ModeStatus_Success CAN Succeed entering the specific mode 
+.PP
+.RE
+.PP
+
+.PP
+Definition at line 784 of file stm32f10x_can\&.c\&.
+.SS "void CAN_Receive (\fBCAN_TypeDef\fP * CANx, uint8_t FIFONumber, \fBCanRxMsg\fP * RxMessage)"
+
+.PP
+Receives a message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fIFIFONumber\fP Receive FIFO number, CAN_FIFO0 or CAN_FIFO1\&. 
+.br
+\fIRxMessage\fP pointer to a structure receive message which contains CAN Id, CAN DLC, CAN datas and FMI number\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 676 of file stm32f10x_can\&.c\&.
+.SS "void CAN_SlaveStartBank (uint8_t CAN_BankNumber)"
+
+.PP
+Select the start bank filter for slave CAN\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function applies only to STM32 Connectivity line devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fICAN_BankNumber\fP Select the start slave bank filter from 1\&.\&.27\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 428 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_Sleep (\fBCAN_TypeDef\fP * CANx)"
+
+.PP
+Enters the low power mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIstatus\fP CAN_Sleep_Ok if sleep entered, CAN_Sleep_Failed in an other case\&. 
+.RE
+.PP
+
+.PP
+Definition at line 866 of file stm32f10x_can\&.c\&.
+.SS "void CAN_StructInit (\fBCAN_InitTypeDef\fP * CAN_InitStruct)"
+
+.PP
+Fills each CAN_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICAN_InitStruct\fP pointer to a \fBCAN_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 384 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_Transmit (\fBCAN_TypeDef\fP * CANx, \fBCanTxMsg\fP * TxMessage)"
+
+.PP
+Initiates the transmission of a message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fITxMessage\fP pointer to a structure which contains CAN Id, CAN DLC and CAN data\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP number of the mailbox that is used for transmission or CAN_TxStatus_NoMailBox if there is no empty mailbox\&. 
+.RE
+.PP
+
+.PP
+Definition at line 515 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_TransmitStatus (\fBCAN_TypeDef\fP * CANx, uint8_t TransmitMailbox)"
+
+.PP
+Checks the transmission of a message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fITransmitMailbox\fP the number of the mailbox that is used for transmission\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fICAN_TxStatus_Ok\fP if the CAN driver transmits the message, CAN_TxStatus_Failed in an other case\&. 
+.RE
+.PP
+
+.PP
+Definition at line 589 of file stm32f10x_can\&.c\&.
+.SS "void CAN_TTComModeCmd (\fBCAN_TypeDef\fP * CANx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disabes the CAN Time TriggerOperation communication mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.br
+\fINewState\fP : Mode new state , can be one of \fBFunctionalState\fP\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+when enabled, Time stamp (TIME[15:0]) value is sent in the last two data bytes of the 8-byte message: TIME[7:0] in data byte 6 and TIME[15:8] in data byte 7 
+.PP
+DLC must be programmed as 8 in order Time Stamp (2 bytes) to be sent over the CAN bus\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 481 of file stm32f10x_can\&.c\&.
+.SS "uint8_t CAN_WakeUp (\fBCAN_TypeDef\fP * CANx)"
+
+.PP
+Wakes the CAN up\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICANx\fP where x can be 1 or 2 to to select the CAN peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIstatus\fP CAN_WakeUp_Ok if sleep mode left, CAN_WakeUp_Failed in an other case\&. 
+.RE
+.PP
+
+.PP
+Definition at line 892 of file stm32f10x_can\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,380 @@
+.TH "DAC_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DAC_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDAC_DeInit\fP (void)"
+.br
+.RI "Deinitializes the DAC peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBDAC_Init\fP (uint32_t DAC_Channel, \fBDAC_InitTypeDef\fP *DAC_InitStruct)"
+.br
+.RI "Initializes the DAC peripheral according to the specified parameters in the DAC_InitStruct\&. "
+.ti -1c
+.RI "void \fBDAC_StructInit\fP (\fBDAC_InitTypeDef\fP *DAC_InitStruct)"
+.br
+.RI "Fills each DAC_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBDAC_Cmd\fP (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DAC channel\&. "
+.ti -1c
+.RI "void \fBDAC_DMACmd\fP (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DAC channel DMA request\&. "
+.ti -1c
+.RI "void \fBDAC_SoftwareTriggerCmd\fP (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected DAC channel software trigger\&. "
+.ti -1c
+.RI "void \fBDAC_DualSoftwareTriggerCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables simultaneously the two DAC channels software triggers\&. "
+.ti -1c
+.RI "void \fBDAC_WaveGenerationCmd\fP (uint32_t DAC_Channel, uint32_t DAC_Wave, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected DAC channel wave generation\&. "
+.ti -1c
+.RI "void \fBDAC_SetChannel1Data\fP (uint32_t DAC_Align, uint16_t Data)"
+.br
+.RI "Set the specified data holding register value for DAC channel1\&. "
+.ti -1c
+.RI "void \fBDAC_SetChannel2Data\fP (uint32_t DAC_Align, uint16_t Data)"
+.br
+.RI "Set the specified data holding register value for DAC channel2\&. "
+.ti -1c
+.RI "void \fBDAC_SetDualChannelData\fP (uint32_t DAC_Align, uint16_t Data2, uint16_t Data1)"
+.br
+.RI "Set the specified data holding register value for dual channel DAC\&. "
+.ti -1c
+.RI "uint16_t \fBDAC_GetDataOutputValue\fP (uint32_t DAC_Channel)"
+.br
+.RI "Returns the last data output value of the selected DAC channel\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void DAC_Cmd (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified DAC channel\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Channel\fP the selected DAC channel\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Channel_1: DAC Channel1 selected 
+.IP "\(bu" 2
+DAC_Channel_2: DAC Channel2 selected 
+.PP
+.br
+\fINewState\fP new state of the DAC channel\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 173 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_DeInit (void)"
+
+.PP
+Deinitializes the DAC peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 98 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_DMACmd (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified DAC channel DMA request\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Channel\fP the selected DAC channel\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Channel_1: DAC Channel1 selected 
+.IP "\(bu" 2
+DAC_Channel_2: DAC Channel2 selected 
+.PP
+.br
+\fINewState\fP new state of the selected DAC channel DMA request\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 233 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_DualSoftwareTriggerCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables simultaneously the two DAC channels software triggers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the DAC channels software triggers\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 284 of file stm32f10x_dac\&.c\&.
+.SS "uint16_t DAC_GetDataOutputValue (uint32_t DAC_Channel)"
+
+.PP
+Returns the last data output value of the selected DAC channel\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Channel\fP the selected DAC channel\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Channel_1: DAC Channel1 selected 
+.IP "\(bu" 2
+DAC_Channel_2: DAC Channel2 selected 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP selected DAC channel data output value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 430 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_Init (uint32_t DAC_Channel, \fBDAC_InitTypeDef\fP * DAC_InitStruct)"
+
+.PP
+Initializes the DAC peripheral according to the specified parameters in the DAC_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Channel\fP the selected DAC channel\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Channel_1: DAC Channel1 selected 
+.IP "\(bu" 2
+DAC_Channel_2: DAC Channel2 selected 
+.PP
+.br
+\fIDAC_InitStruct\fP pointer to a \fBDAC_InitTypeDef\fP structure that contains the configuration information for the specified DAC channel\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 117 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_SetChannel1Data (uint32_t DAC_Align, uint16_t Data)"
+
+.PP
+Set the specified data holding register value for DAC channel1\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Align\fP Specifies the data alignment for DAC channel1\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Align_8b_R: 8bit right data alignment selected 
+.IP "\(bu" 2
+DAC_Align_12b_L: 12bit left data alignment selected 
+.IP "\(bu" 2
+DAC_Align_12b_R: 12bit right data alignment selected 
+.PP
+.br
+\fIData\fP : Data to be loaded in the selected data holding register\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 342 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_SetChannel2Data (uint32_t DAC_Align, uint16_t Data)"
+
+.PP
+Set the specified data holding register value for DAC channel2\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Align\fP Specifies the data alignment for DAC channel2\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Align_8b_R: 8bit right data alignment selected 
+.IP "\(bu" 2
+DAC_Align_12b_L: 12bit left data alignment selected 
+.IP "\(bu" 2
+DAC_Align_12b_R: 12bit right data alignment selected 
+.PP
+.br
+\fIData\fP : Data to be loaded in the selected data holding register\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 367 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_SetDualChannelData (uint32_t DAC_Align, uint16_t Data2, uint16_t Data1)"
+
+.PP
+Set the specified data holding register value for dual channel DAC\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Align\fP Specifies the data alignment for dual channel DAC\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Align_8b_R: 8bit right data alignment selected 
+.IP "\(bu" 2
+DAC_Align_12b_L: 12bit left data alignment selected 
+.IP "\(bu" 2
+DAC_Align_12b_R: 12bit right data alignment selected 
+.PP
+.br
+\fIData2\fP Data for DAC Channel2 to be loaded in the selected data holding register\&. 
+.br
+\fIData1\fP Data for DAC Channel1 to be loaded in the selected data holding register\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 396 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_SoftwareTriggerCmd (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the selected DAC channel software trigger\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Channel\fP the selected DAC channel\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Channel_1: DAC Channel1 selected 
+.IP "\(bu" 2
+DAC_Channel_2: DAC Channel2 selected 
+.PP
+.br
+\fINewState\fP new state of the selected DAC channel software trigger\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 260 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_StructInit (\fBDAC_InitTypeDef\fP * DAC_InitStruct)"
+
+.PP
+Fills each DAC_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_InitStruct\fP : pointer to a \fBDAC_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 150 of file stm32f10x_dac\&.c\&.
+.SS "void DAC_WaveGenerationCmd (uint32_t DAC_Channel, uint32_t DAC_Wave, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the selected DAC channel wave generation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDAC_Channel\fP the selected DAC channel\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Channel_1: DAC Channel1 selected 
+.IP "\(bu" 2
+DAC_Channel_2: DAC Channel2 selected 
+.PP
+.br
+\fIDAC_Wave\fP Specifies the wave type to enable or disable\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DAC_Wave_Noise: noise wave generation 
+.IP "\(bu" 2
+DAC_Wave_Triangle: triangle wave generation 
+.PP
+.br
+\fINewState\fP new state of the selected DAC channel wave generation\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 314 of file stm32f10x_dac\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

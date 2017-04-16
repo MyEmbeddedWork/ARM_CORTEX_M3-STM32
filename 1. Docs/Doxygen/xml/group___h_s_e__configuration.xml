@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___h_s_e__configuration" kind="group">
+    <compoundname>HSE_configuration</compoundname>
+    <title>HSE_configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___h_s_e__configuration_1ga1616626d23fbce440398578855df6f97" prot="public" static="no">
+        <name>RCC_HSE_OFF</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_s_e__configuration_1gabc4f70a44776c557af20496b04d9a9db" prot="public" static="no">
+        <name>RCC_HSE_ON</name>
+        <initializer>((uint32_t)0x00010000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="68" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_s_e__configuration_1ga09061e9909d5f588baa7bfb0f7edd9fa" prot="public" static="no">
+        <name>RCC_HSE_Bypass</name>
+        <initializer>((uint32_t)0x00040000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_s_e__configuration_1ga287bbcafd73d07ec915c2f793301908a" prot="public" static="no">
+        <name>IS_RCC_HSE</name>
+        <param><defname>HSE</defname></param>
+        <initializer>(((HSE) == <ref refid="group___h_s_e__configuration_1ga1616626d23fbce440398578855df6f97" kindref="member">RCC_HSE_OFF</ref>) || ((HSE) == <ref refid="group___h_s_e__configuration_1gabc4f70a44776c557af20496b04d9a9db" kindref="member">RCC_HSE_ON</ref>) || \
+                         ((HSE) == <ref refid="group___h_s_e__configuration_1ga09061e9909d5f588baa7bfb0f7edd9fa" kindref="member">RCC_HSE_Bypass</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

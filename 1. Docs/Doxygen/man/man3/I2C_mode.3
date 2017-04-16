@@ -1,0 +1,54 @@
+.TH "I2C_mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_Mode_I2C\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Mode_SMBusDevice\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Mode_SMBusHost\fP   ((uint16_t)0x000A)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2C_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2C_Mode_I2C   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 92 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Mode_SMBusDevice   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 93 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Mode_SMBusHost   ((uint16_t)0x000A)"
+
+.PP
+Definition at line 94 of file stm32f10x_i2c\&.h\&.
+.SS "#define IS_I2C_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == I2C_Mode_I2C) || \
+                           ((MODE) == I2C_Mode_SMBusDevice) || \
+                           ((MODE) == I2C_Mode_SMBusHost))
+.fi
+.PP
+Definition at line 95 of file stm32f10x_i2c\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

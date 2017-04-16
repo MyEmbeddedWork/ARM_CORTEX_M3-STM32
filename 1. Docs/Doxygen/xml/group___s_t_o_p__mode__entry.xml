@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_t_o_p__mode__entry" kind="group">
+    <compoundname>STOP_mode_entry</compoundname>
+    <title>STOP_mode_entry</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4" prot="public" static="no">
+        <name>PWR_STOPEntry_WFI</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="90" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_t_o_p__mode__entry_1gaac98ac55fb8764121d4168d99c9b369e" prot="public" static="no">
+        <name>PWR_STOPEntry_WFE</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="91" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_t_o_p__mode__entry_1ga4a94eb1f400dec6e486fbc229cbea8a0" prot="public" static="no">
+        <name>IS_PWR_STOP_ENTRY</name>
+        <param><defname>ENTRY</defname></param>
+        <initializer>(((ENTRY) == <ref refid="group___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4" kindref="member">PWR_STOPEntry_WFI</ref>) || ((ENTRY) == <ref refid="group___s_t_o_p__mode__entry_1gaac98ac55fb8764121d4168d99c9b369e" kindref="member">PWR_STOPEntry_WFE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="92" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

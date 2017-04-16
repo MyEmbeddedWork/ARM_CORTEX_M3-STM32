@@ -1,0 +1,134 @@
+.TH "ADC_external_trigger_sources_for_injected_channels_conversion" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_external_trigger_sources_for_injected_channels_conversion
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T2_TRGO\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T2_CC1\fP   ((uint32_t)0x00003000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T3_CC4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T4_TRGO\fP   ((uint32_t)0x00005000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_Ext_IT15_TIM8_CC4\fP   ((uint32_t)0x00006000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T1_TRGO\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T1_CC4\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_None\fP   ((uint32_t)0x00007000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T4_CC3\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T8_CC2\fP   ((uint32_t)0x00003000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T8_CC4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T5_TRGO\fP   ((uint32_t)0x00005000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T5_CC4\fP   ((uint32_t)0x00006000)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_EXT_INJEC_TRIG\fP(INJTRIG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC_ExternalTrigInjecConv_Ext_IT15_TIM8_CC4   ((uint32_t)0x00006000)"
+For ADC1 and ADC2 
+.PP
+Definition at line 247 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_None   ((uint32_t)0x00007000)"
+For ADC1, ADC2 and ADC3 
+.PP
+Definition at line 251 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T1_CC4   ((uint32_t)0x00001000)"
+For ADC1, ADC2 and ADC3 
+.PP
+Definition at line 250 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T1_TRGO   ((uint32_t)0x00000000)"
+For ADC1, ADC2 and ADC3 
+.PP
+Definition at line 249 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T2_CC1   ((uint32_t)0x00003000)"
+For ADC1 and ADC2 
+.PP
+Definition at line 244 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T2_TRGO   ((uint32_t)0x00002000)"
+For ADC1 and ADC2 
+.PP
+Definition at line 243 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T3_CC4   ((uint32_t)0x00004000)"
+For ADC1 and ADC2 
+.PP
+Definition at line 245 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T4_CC3   ((uint32_t)0x00002000)"
+For ADC3 only 
+.PP
+Definition at line 253 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T4_TRGO   ((uint32_t)0x00005000)"
+For ADC1 and ADC2 
+.PP
+Definition at line 246 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T5_CC4   ((uint32_t)0x00006000)"
+For ADC3 only 
+.PP
+Definition at line 257 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T5_TRGO   ((uint32_t)0x00005000)"
+For ADC3 only 
+.PP
+Definition at line 256 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T8_CC2   ((uint32_t)0x00003000)"
+For ADC3 only 
+.PP
+Definition at line 254 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_ExternalTrigInjecConv_T8_CC4   ((uint32_t)0x00004000)"
+For ADC3 only 
+.PP
+Definition at line 255 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_EXT_INJEC_TRIG(INJTRIG)"
+\fBValue:\fP
+.PP
+.nf
+(((INJTRIG) == ADC_ExternalTrigInjecConv_T1_TRGO) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T1_CC4) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T2_TRGO) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T2_CC1) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T3_CC4) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T4_TRGO) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_Ext_IT15_TIM8_CC4) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_None) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T4_CC3) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T8_CC2) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T8_CC4) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T5_TRGO) || \
+                                        ((INJTRIG) == ADC_ExternalTrigInjecConv_T5_CC4))
+.fi
+.PP
+Definition at line 259 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__fir__interpolate__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_interpolate_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__interpolate__instance__f32_1ae6f94dcc0ccd8aa4bc699b20985d9df5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_fir_interpolate_instance_f32::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>upsample factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3456" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__interpolate__instance__f32_1a389e669e13ec56292a70db8e92194b12" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_interpolate_instance_f32::phaseLength</definition>
+        <argsstring></argsstring>
+        <name>phaseLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of each polyphase filter component. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3457" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__interpolate__instance__f32_1a86053b715980a93c9df630d6de5bb63c" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_fir_interpolate_instance_f32::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length L*phaseLength. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3458" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__interpolate__instance__f32_1a42a8ba1bda85fa86d7b6c84d3da4c75b" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_fir_interpolate_instance_f32::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length phaseLength+numTaps-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3459" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3459" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point FIR interpolator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3455" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3454" bodyend="3460"/>
+    <listofallmembers>
+      <member refid="structarm__fir__interpolate__instance__f32_1ae6f94dcc0ccd8aa4bc699b20985d9df5" prot="public" virt="non-virtual"><scope>arm_fir_interpolate_instance_f32</scope><name>L</name></member>
+      <member refid="structarm__fir__interpolate__instance__f32_1a86053b715980a93c9df630d6de5bb63c" prot="public" virt="non-virtual"><scope>arm_fir_interpolate_instance_f32</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__interpolate__instance__f32_1a389e669e13ec56292a70db8e92194b12" prot="public" virt="non-virtual"><scope>arm_fir_interpolate_instance_f32</scope><name>phaseLength</name></member>
+      <member refid="structarm__fir__interpolate__instance__f32_1a42a8ba1bda85fa86d7b6c84d3da4c75b" prot="public" virt="non-virtual"><scope>arm_fir_interpolate_instance_f32</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,293 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c \- This file provides all the I2C firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_i2c\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCR1_PE_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBCR1_PE_Reset\fP   ((uint16_t)0xFFFE)"
+.br
+.ti -1c
+.RI "#define \fBCR1_START_Set\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBCR1_START_Reset\fP   ((uint16_t)0xFEFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_STOP_Set\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBCR1_STOP_Reset\fP   ((uint16_t)0xFDFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ACK_Set\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ACK_Reset\fP   ((uint16_t)0xFBFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENGC_Set\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENGC_Reset\fP   ((uint16_t)0xFFBF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_SWRST_Set\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_SWRST_Reset\fP   ((uint16_t)0x7FFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_PEC_Set\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_PEC_Reset\fP   ((uint16_t)0xEFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENPEC_Set\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENPEC_Reset\fP   ((uint16_t)0xFFDF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENARP_Set\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENARP_Reset\fP   ((uint16_t)0xFFEF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_NOSTRETCH_Set\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBCR1_NOSTRETCH_Reset\fP   ((uint16_t)0xFF7F)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CLEAR_Mask\fP   ((uint16_t)0xFBF5)"
+.br
+.ti -1c
+.RI "#define \fBCR2_DMAEN_Set\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBCR2_DMAEN_Reset\fP   ((uint16_t)0xF7FF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LAST_Set\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LAST_Reset\fP   ((uint16_t)0xEFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_FREQ_Reset\fP   ((uint16_t)0xFFC0)"
+.br
+.ti -1c
+.RI "#define \fBOAR1_ADD0_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBOAR1_ADD0_Reset\fP   ((uint16_t)0xFFFE)"
+.br
+.ti -1c
+.RI "#define \fBOAR2_ENDUAL_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBOAR2_ENDUAL_Reset\fP   ((uint16_t)0xFFFE)"
+.br
+.ti -1c
+.RI "#define \fBOAR2_ADD2_Reset\fP   ((uint16_t)0xFF01)"
+.br
+.ti -1c
+.RI "#define \fBCCR_FS_Set\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBCCR_CCR_Set\fP   ((uint16_t)0x0FFF)"
+.br
+.ti -1c
+.RI "#define \fBFLAG_Mask\fP   ((uint32_t)0x00FFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBITEN_Mask\fP   ((uint32_t)0x07000000)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBI2C_DeInit\fP (\fBI2C_TypeDef\fP *I2Cx)"
+.br
+.RI "Deinitializes the I2Cx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBI2C_Init\fP (\fBI2C_TypeDef\fP *I2Cx, \fBI2C_InitTypeDef\fP *I2C_InitStruct)"
+.br
+.RI "Initializes the I2Cx peripheral according to the specified parameters in the I2C_InitStruct\&. "
+.ti -1c
+.RI "void \fBI2C_StructInit\fP (\fBI2C_InitTypeDef\fP *I2C_InitStruct)"
+.br
+.RI "Fills each I2C_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBI2C_Cmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C peripheral\&. "
+.ti -1c
+.RI "void \fBI2C_DMACmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C DMA requests\&. "
+.ti -1c
+.RI "void \fBI2C_DMALastTransferCmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Specifies if the next DMA transfer will be the last one\&. "
+.ti -1c
+.RI "void \fBI2C_GenerateSTART\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Generates I2Cx communication START condition\&. "
+.ti -1c
+.RI "void \fBI2C_GenerateSTOP\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Generates I2Cx communication STOP condition\&. "
+.ti -1c
+.RI "void \fBI2C_AcknowledgeConfig\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C acknowledge feature\&. "
+.ti -1c
+.RI "void \fBI2C_OwnAddress2Config\fP (\fBI2C_TypeDef\fP *I2Cx, uint8_t Address)"
+.br
+.RI "Configures the specified I2C own address2\&. "
+.ti -1c
+.RI "void \fBI2C_DualAddressCmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C dual addressing mode\&. "
+.ti -1c
+.RI "void \fBI2C_GeneralCallCmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C general call feature\&. "
+.ti -1c
+.RI "void \fBI2C_ITConfig\fP (\fBI2C_TypeDef\fP *I2Cx, uint16_t I2C_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C interrupts\&. "
+.ti -1c
+.RI "void \fBI2C_SendData\fP (\fBI2C_TypeDef\fP *I2Cx, uint8_t Data)"
+.br
+.RI "Sends a data byte through the I2Cx peripheral\&. "
+.ti -1c
+.RI "uint8_t \fBI2C_ReceiveData\fP (\fBI2C_TypeDef\fP *I2Cx)"
+.br
+.RI "Returns the most recent received data by the I2Cx peripheral\&. "
+.ti -1c
+.RI "void \fBI2C_Send7bitAddress\fP (\fBI2C_TypeDef\fP *I2Cx, uint8_t Address, uint8_t I2C_Direction)"
+.br
+.RI "Transmits the address byte to select the slave device\&. "
+.ti -1c
+.RI "uint16_t \fBI2C_ReadRegister\fP (\fBI2C_TypeDef\fP *I2Cx, uint8_t I2C_Register)"
+.br
+.RI "Reads the specified I2C register and returns its value\&. "
+.ti -1c
+.RI "void \fBI2C_SoftwareResetCmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C software reset\&. "
+.ti -1c
+.RI "void \fBI2C_NACKPositionConfig\fP (\fBI2C_TypeDef\fP *I2Cx, uint16_t I2C_NACKPosition)"
+.br
+.RI "Selects the specified I2C NACK position in master receiver mode\&. This function is useful in I2C Master Receiver mode when the number of data to be received is equal to 2\&. In this case, this function should be called (with parameter I2C_NACKPosition_Next) before data reception starts,as described in the 2-byte reception procedure recommended in Reference Manual in Section: Master receiver\&. "
+.ti -1c
+.RI "void \fBI2C_SMBusAlertConfig\fP (\fBI2C_TypeDef\fP *I2Cx, uint16_t I2C_SMBusAlert)"
+.br
+.RI "Drives the SMBusAlert pin high or low for the specified I2C\&. "
+.ti -1c
+.RI "void \fBI2C_TransmitPEC\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C PEC transfer\&. "
+.ti -1c
+.RI "void \fBI2C_PECPositionConfig\fP (\fBI2C_TypeDef\fP *I2Cx, uint16_t I2C_PECPosition)"
+.br
+.RI "Selects the specified I2C PEC position\&. "
+.ti -1c
+.RI "void \fBI2C_CalculatePEC\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the PEC value calculation of the transferred bytes\&. "
+.ti -1c
+.RI "uint8_t \fBI2C_GetPEC\fP (\fBI2C_TypeDef\fP *I2Cx)"
+.br
+.RI "Returns the PEC value for the specified I2C\&. "
+.ti -1c
+.RI "void \fBI2C_ARPCmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C ARP\&. "
+.ti -1c
+.RI "void \fBI2C_StretchClockCmd\fP (\fBI2C_TypeDef\fP *I2Cx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified I2C Clock stretching\&. "
+.ti -1c
+.RI "void \fBI2C_FastModeDutyCycleConfig\fP (\fBI2C_TypeDef\fP *I2Cx, uint16_t I2C_DutyCycle)"
+.br
+.RI "Selects the specified I2C fast mode duty cycle\&. "
+.ti -1c
+.RI "\fBErrorStatus\fP \fBI2C_CheckEvent\fP (\fBI2C_TypeDef\fP *I2Cx, uint32_t I2C_EVENT)"
+.br
+.RI "I2C State Monitoring Functions\&. "
+.ti -1c
+.RI "uint32_t \fBI2C_GetLastEvent\fP (\fBI2C_TypeDef\fP *I2Cx)"
+.br
+.RI "Returns the last I2Cx Event\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBI2C_GetFlagStatus\fP (\fBI2C_TypeDef\fP *I2Cx, uint32_t I2C_FLAG)"
+.br
+.RI "Checks whether the specified I2C flag is set or not\&. "
+.ti -1c
+.RI "void \fBI2C_ClearFlag\fP (\fBI2C_TypeDef\fP *I2Cx, uint32_t I2C_FLAG)"
+.br
+.RI "Clears the I2Cx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBI2C_GetITStatus\fP (\fBI2C_TypeDef\fP *I2Cx, uint32_t I2C_IT)"
+.br
+.RI "Checks whether the specified I2C interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBI2C_ClearITPendingBit\fP (\fBI2C_TypeDef\fP *I2Cx, uint32_t I2C_IT)"
+.br
+.RI "Clears the I2Cx�s interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the I2C firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_i2c\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

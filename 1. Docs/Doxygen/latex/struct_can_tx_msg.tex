@@ -1,0 +1,101 @@
+\hypertarget{struct_can_tx_msg}{}\section{Can\+Tx\+Msg Struct Reference}
+\label{struct_can_tx_msg}\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+
+
+C\+AN Tx message structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f10x\+\_\+can.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_can_tx_msg_abfb50c8208227f8cf378f29cf9a3a6f3}{Std\+Id}
+\item 
+uint32\+\_\+t \hyperlink{struct_can_tx_msg_a33050a95a4cc463b589ff16bdd416f22}{Ext\+Id}
+\item 
+uint8\+\_\+t \hyperlink{struct_can_tx_msg_aa4c8568a0e3250a17bd7e116b3e09670}{I\+DE}
+\item 
+uint8\+\_\+t \hyperlink{struct_can_tx_msg_a69f84255db38c6910058f290efdb7302}{R\+TR}
+\item 
+uint8\+\_\+t \hyperlink{struct_can_tx_msg_ab49d0fa602aad2fd9cd007adafc11fc2}{D\+LC}
+\item 
+uint8\+\_\+t \hyperlink{struct_can_tx_msg_aabfbf718f627da26d9e3cf903dc0ad02}{Data} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+AN Tx message structure definition. 
+
+Definition at line 151 of file stm32f10x\+\_\+can.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_can_tx_msg_aabfbf718f627da26d9e3cf903dc0ad02}\label{struct_can_tx_msg_aabfbf718f627da26d9e3cf903dc0ad02}} 
+\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}!Data@{Data}}
+\index{Data@{Data}!Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+\subsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily uint8\+\_\+t Can\+Tx\+Msg\+::\+Data\mbox{[}8\mbox{]}}
+
+Contains the data to be transmitted. It ranges from 0 to 0x\+FF. 
+
+Definition at line 171 of file stm32f10x\+\_\+can.\+h.
+
+\mbox{\Hypertarget{struct_can_tx_msg_ab49d0fa602aad2fd9cd007adafc11fc2}\label{struct_can_tx_msg_ab49d0fa602aad2fd9cd007adafc11fc2}} 
+\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}!D\+LC@{D\+LC}}
+\index{D\+LC@{D\+LC}!Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+\subsubsection{\texorpdfstring{D\+LC}{DLC}}
+{\footnotesize\ttfamily uint8\+\_\+t Can\+Tx\+Msg\+::\+D\+LC}
+
+Specifies the length of the frame that will be transmitted. This parameter can be a value between 0 to 8 
+
+Definition at line 167 of file stm32f10x\+\_\+can.\+h.
+
+\mbox{\Hypertarget{struct_can_tx_msg_a33050a95a4cc463b589ff16bdd416f22}\label{struct_can_tx_msg_a33050a95a4cc463b589ff16bdd416f22}} 
+\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}!Ext\+Id@{Ext\+Id}}
+\index{Ext\+Id@{Ext\+Id}!Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+\subsubsection{\texorpdfstring{Ext\+Id}{ExtId}}
+{\footnotesize\ttfamily uint32\+\_\+t Can\+Tx\+Msg\+::\+Ext\+Id}
+
+Specifies the extended identifier. This parameter can be a value between 0 to 0x1\+F\+F\+F\+F\+F\+FF. 
+
+Definition at line 156 of file stm32f10x\+\_\+can.\+h.
+
+\mbox{\Hypertarget{struct_can_tx_msg_aa4c8568a0e3250a17bd7e116b3e09670}\label{struct_can_tx_msg_aa4c8568a0e3250a17bd7e116b3e09670}} 
+\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}!I\+DE@{I\+DE}}
+\index{I\+DE@{I\+DE}!Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+\subsubsection{\texorpdfstring{I\+DE}{IDE}}
+{\footnotesize\ttfamily uint8\+\_\+t Can\+Tx\+Msg\+::\+I\+DE}
+
+Specifies the type of identifier for the message that will be transmitted. This parameter can be a value of \hyperlink{group___c_a_n__identifier__type}{C\+A\+N\+\_\+identifier\+\_\+type} 
+
+Definition at line 159 of file stm32f10x\+\_\+can.\+h.
+
+\mbox{\Hypertarget{struct_can_tx_msg_a69f84255db38c6910058f290efdb7302}\label{struct_can_tx_msg_a69f84255db38c6910058f290efdb7302}} 
+\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}!R\+TR@{R\+TR}}
+\index{R\+TR@{R\+TR}!Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+\subsubsection{\texorpdfstring{R\+TR}{RTR}}
+{\footnotesize\ttfamily uint8\+\_\+t Can\+Tx\+Msg\+::\+R\+TR}
+
+Specifies the type of frame for the message that will be transmitted. This parameter can be a value of \hyperlink{group___c_a_n__remote__transmission__request}{C\+A\+N\+\_\+remote\+\_\+transmission\+\_\+request} 
+
+Definition at line 163 of file stm32f10x\+\_\+can.\+h.
+
+\mbox{\Hypertarget{struct_can_tx_msg_abfb50c8208227f8cf378f29cf9a3a6f3}\label{struct_can_tx_msg_abfb50c8208227f8cf378f29cf9a3a6f3}} 
+\index{Can\+Tx\+Msg@{Can\+Tx\+Msg}!Std\+Id@{Std\+Id}}
+\index{Std\+Id@{Std\+Id}!Can\+Tx\+Msg@{Can\+Tx\+Msg}}
+\subsubsection{\texorpdfstring{Std\+Id}{StdId}}
+{\footnotesize\ttfamily uint32\+\_\+t Can\+Tx\+Msg\+::\+Std\+Id}
+
+Specifies the standard identifier. This parameter can be a value between 0 to 0x7\+FF. 
+
+Definition at line 153 of file stm32f10x\+\_\+can.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/\hyperlink{stm32f10x__can_8h}{stm32f10x\+\_\+can.\+h}\end{DoxyCompactItemize}

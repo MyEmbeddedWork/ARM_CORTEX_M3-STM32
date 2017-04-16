@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___u_s_b___device__clock__source" kind="group">
+    <compoundname>USB_Device_clock_source</compoundname>
+    <title>USB_Device_clock_source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___device__clock__source_1ga5e7a39e25fc37fd2b90edfe66bf1f53f" prot="public" static="no">
+        <name>RCC_USBCLKSource_PLLCLK_1Div5</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="375" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___device__clock__source_1ga8162727793b5690d6b96ad0cc7ce3866" prot="public" static="no">
+        <name>RCC_USBCLKSource_PLLCLK_Div1</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="376" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___device__clock__source_1ga484f7834b5506d9879ed84660c894250" prot="public" static="no">
+        <name>IS_RCC_USBCLK_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___u_s_b___device__clock__source_1ga5e7a39e25fc37fd2b90edfe66bf1f53f" kindref="member">RCC_USBCLKSource_PLLCLK_1Div5</ref>) || \
+                                      ((SOURCE) == <ref refid="group___u_s_b___device__clock__source_1ga8162727793b5690d6b96ad0cc7ce3866" kindref="member">RCC_USBCLKSource_PLLCLK_Div1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="378" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

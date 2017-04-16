@@ -1,0 +1,307 @@
+.TH "ADC_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCR1_DISCNUM_Reset\fP   ((uint32_t)0xFFFF1FFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_DISCEN_Set\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBCR1_DISCEN_Reset\fP   ((uint32_t)0xFFFFF7FF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_JAUTO_Set\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBCR1_JAUTO_Reset\fP   ((uint32_t)0xFFFFFBFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_JDISCEN_Set\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_JDISCEN_Reset\fP   ((uint32_t)0xFFFFEFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_AWDCH_Reset\fP   ((uint32_t)0xFFFFFFE0)"
+.br
+.ti -1c
+.RI "#define \fBCR1_AWDMode_Reset\fP   ((uint32_t)0xFF3FFDFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CLEAR_Mask\fP   ((uint32_t)0xFFF0FEFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_ADON_Set\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBCR2_ADON_Reset\fP   ((uint32_t)0xFFFFFFFE)"
+.br
+.ti -1c
+.RI "#define \fBCR2_DMA_Set\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBCR2_DMA_Reset\fP   ((uint32_t)0xFFFFFEFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_RSTCAL_Set\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBCR2_CAL_Set\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBCR2_SWSTART_Set\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_EXTTRIG_Set\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_EXTTRIG_Reset\fP   ((uint32_t)0xFFEFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_EXTTRIG_SWSTART_Set\fP   ((uint32_t)0x00500000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_EXTTRIG_SWSTART_Reset\fP   ((uint32_t)0xFFAFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_JEXTSEL_Reset\fP   ((uint32_t)0xFFFF8FFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_JEXTTRIG_Set\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_JEXTTRIG_Reset\fP   ((uint32_t)0xFFFF7FFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_JSWSTART_Set\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_JEXTTRIG_JSWSTART_Set\fP   ((uint32_t)0x00208000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_JEXTTRIG_JSWSTART_Reset\fP   ((uint32_t)0xFFDF7FFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_TSVREFE_Set\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_TSVREFE_Reset\fP   ((uint32_t)0xFF7FFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_CLEAR_Mask\fP   ((uint32_t)0xFFF1F7FD)"
+.br
+.ti -1c
+.RI "#define \fBSQR3_SQ_Set\fP   ((uint32_t)0x0000001F)"
+.br
+.ti -1c
+.RI "#define \fBSQR2_SQ_Set\fP   ((uint32_t)0x0000001F)"
+.br
+.ti -1c
+.RI "#define \fBSQR1_SQ_Set\fP   ((uint32_t)0x0000001F)"
+.br
+.ti -1c
+.RI "#define \fBSQR1_CLEAR_Mask\fP   ((uint32_t)0xFF0FFFFF)"
+.br
+.ti -1c
+.RI "#define \fBJSQR_JSQ_Set\fP   ((uint32_t)0x0000001F)"
+.br
+.ti -1c
+.RI "#define \fBJSQR_JL_Set\fP   ((uint32_t)0x00300000)"
+.br
+.ti -1c
+.RI "#define \fBJSQR_JL_Reset\fP   ((uint32_t)0xFFCFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBSMPR1_SMP_Set\fP   ((uint32_t)0x00000007)"
+.br
+.ti -1c
+.RI "#define \fBSMPR2_SMP_Set\fP   ((uint32_t)0x00000007)"
+.br
+.ti -1c
+.RI "#define \fBJDR_Offset\fP   ((uint8_t)0x28)"
+.br
+.ti -1c
+.RI "#define \fBDR_ADDRESS\fP   ((uint32_t)0x4001244C)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CR1_AWDCH_Reset   ((uint32_t)0xFFFFFFE0)"
+
+.PP
+Definition at line 69 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_AWDMode_Reset   ((uint32_t)0xFF3FFDFF)"
+
+.PP
+Definition at line 72 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_CLEAR_Mask   ((uint32_t)0xFFF0FEFF)"
+
+.PP
+Definition at line 75 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_DISCEN_Reset   ((uint32_t)0xFFFFF7FF)"
+
+.PP
+Definition at line 58 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_DISCEN_Set   ((uint32_t)0x00000800)"
+
+.PP
+Definition at line 57 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_DISCNUM_Reset   ((uint32_t)0xFFFF1FFF)"
+
+.PP
+Definition at line 54 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_JAUTO_Reset   ((uint32_t)0xFFFFFBFF)"
+
+.PP
+Definition at line 62 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_JAUTO_Set   ((uint32_t)0x00000400)"
+
+.PP
+Definition at line 61 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_JDISCEN_Reset   ((uint32_t)0xFFFFEFFF)"
+
+.PP
+Definition at line 66 of file stm32f10x_adc\&.c\&.
+.SS "#define CR1_JDISCEN_Set   ((uint32_t)0x00001000)"
+
+.PP
+Definition at line 65 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_ADON_Reset   ((uint32_t)0xFFFFFFFE)"
+
+.PP
+Definition at line 79 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_ADON_Set   ((uint32_t)0x00000001)"
+
+.PP
+Definition at line 78 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_CAL_Set   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 89 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_CLEAR_Mask   ((uint32_t)0xFFF1F7FD)"
+
+.PP
+Definition at line 121 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_DMA_Reset   ((uint32_t)0xFFFFFEFF)"
+
+.PP
+Definition at line 83 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_DMA_Set   ((uint32_t)0x00000100)"
+
+.PP
+Definition at line 82 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_EXTTRIG_Reset   ((uint32_t)0xFFEFFFFF)"
+
+.PP
+Definition at line 96 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_EXTTRIG_Set   ((uint32_t)0x00100000)"
+
+.PP
+Definition at line 95 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_EXTTRIG_SWSTART_Reset   ((uint32_t)0xFFAFFFFF)"
+
+.PP
+Definition at line 100 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_EXTTRIG_SWSTART_Set   ((uint32_t)0x00500000)"
+
+.PP
+Definition at line 99 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_JEXTSEL_Reset   ((uint32_t)0xFFFF8FFF)"
+
+.PP
+Definition at line 103 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_JEXTTRIG_JSWSTART_Reset   ((uint32_t)0xFFDF7FFF)"
+
+.PP
+Definition at line 114 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_JEXTTRIG_JSWSTART_Set   ((uint32_t)0x00208000)"
+
+.PP
+Definition at line 113 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_JEXTTRIG_Reset   ((uint32_t)0xFFFF7FFF)"
+
+.PP
+Definition at line 107 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_JEXTTRIG_Set   ((uint32_t)0x00008000)"
+
+.PP
+Definition at line 106 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_JSWSTART_Set   ((uint32_t)0x00200000)"
+
+.PP
+Definition at line 110 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_RSTCAL_Set   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 86 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_SWSTART_Set   ((uint32_t)0x00400000)"
+
+.PP
+Definition at line 92 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_TSVREFE_Reset   ((uint32_t)0xFF7FFFFF)"
+
+.PP
+Definition at line 118 of file stm32f10x_adc\&.c\&.
+.SS "#define CR2_TSVREFE_Set   ((uint32_t)0x00800000)"
+
+.PP
+Definition at line 117 of file stm32f10x_adc\&.c\&.
+.SS "#define DR_ADDRESS   ((uint32_t)0x4001244C)"
+
+.PP
+Definition at line 146 of file stm32f10x_adc\&.c\&.
+.SS "#define JDR_Offset   ((uint8_t)0x28)"
+
+.PP
+Definition at line 143 of file stm32f10x_adc\&.c\&.
+.SS "#define JSQR_JL_Reset   ((uint32_t)0xFFCFFFFF)"
+
+.PP
+Definition at line 136 of file stm32f10x_adc\&.c\&.
+.SS "#define JSQR_JL_Set   ((uint32_t)0x00300000)"
+
+.PP
+Definition at line 135 of file stm32f10x_adc\&.c\&.
+.SS "#define JSQR_JSQ_Set   ((uint32_t)0x0000001F)"
+
+.PP
+Definition at line 132 of file stm32f10x_adc\&.c\&.
+.SS "#define SMPR1_SMP_Set   ((uint32_t)0x00000007)"
+
+.PP
+Definition at line 139 of file stm32f10x_adc\&.c\&.
+.SS "#define SMPR2_SMP_Set   ((uint32_t)0x00000007)"
+
+.PP
+Definition at line 140 of file stm32f10x_adc\&.c\&.
+.SS "#define SQR1_CLEAR_Mask   ((uint32_t)0xFF0FFFFF)"
+
+.PP
+Definition at line 129 of file stm32f10x_adc\&.c\&.
+.SS "#define SQR1_SQ_Set   ((uint32_t)0x0000001F)"
+
+.PP
+Definition at line 126 of file stm32f10x_adc\&.c\&.
+.SS "#define SQR2_SQ_Set   ((uint32_t)0x0000001F)"
+
+.PP
+Definition at line 125 of file stm32f10x_adc\&.c\&.
+.SS "#define SQR3_SQ_Set   ((uint32_t)0x0000001F)"
+
+.PP
+Definition at line 124 of file stm32f10x_adc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

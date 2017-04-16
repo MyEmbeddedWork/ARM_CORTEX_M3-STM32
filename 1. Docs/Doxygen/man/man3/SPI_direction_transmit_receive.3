@@ -1,0 +1,46 @@
+.TH "SPI_direction_transmit_receive" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_direction_transmit_receive
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_Direction_Rx\fP   ((uint16_t)0xBFFF)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_Tx\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION\fP(DIRECTION)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SPI_DIRECTION(DIRECTION)"
+\fBValue:\fP
+.PP
+.nf
+(((DIRECTION) == SPI_Direction_Rx) || \
+                                     ((DIRECTION) == SPI_Direction_Tx))
+.fi
+.PP
+Definition at line 378 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_Direction_Rx   ((uint16_t)0xBFFF)"
+
+.PP
+Definition at line 376 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_Direction_Tx   ((uint16_t)0x4000)"
+
+.PP
+Definition at line 377 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

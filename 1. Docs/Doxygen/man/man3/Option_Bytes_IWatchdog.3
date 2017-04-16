@@ -1,0 +1,41 @@
+.TH "Option_Bytes_IWatchdog" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Option_Bytes_IWatchdog
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBOB_IWDG_SW\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_HW\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_IWDG_SOURCE\fP(SOURCE)   (((SOURCE) == \fBOB_IWDG_SW\fP) || ((SOURCE) == \fBOB_IWDG_HW\fP))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_OB_IWDG_SOURCE(SOURCE)   (((SOURCE) == \fBOB_IWDG_SW\fP) || ((SOURCE) == \fBOB_IWDG_HW\fP))"
+
+.PP
+Definition at line 261 of file stm32f10x_flash\&.h\&.
+.SS "#define OB_IWDG_HW   ((uint16_t)0x0000)"
+Hardware IWDG selected 
+.PP
+Definition at line 260 of file stm32f10x_flash\&.h\&.
+.SS "#define OB_IWDG_SW   ((uint16_t)0x0001)"
+Software IWDG selected 
+.PP
+Definition at line 259 of file stm32f10x_flash\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

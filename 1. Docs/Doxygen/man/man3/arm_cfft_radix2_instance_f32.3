@@ -1,0 +1,82 @@
+.TH "arm_cfft_radix2_instance_f32" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_cfft_radix2_instance_f32 \- Instance structure for the floating-point CFFT/CIFFT function\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBfftLen\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBifftFlag\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBbitReverseFlag\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpTwiddle\fP"
+.br
+.ti -1c
+.RI "uint16_t * \fBpBitRevTable\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBtwidCoefModifier\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBbitRevFactor\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBonebyfftLen\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the floating-point CFFT/CIFFT function\&. 
+.PP
+Definition at line 2053 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t arm_cfft_radix2_instance_f32::bitReverseFlag"
+flag that enables (bitReverseFlag=1) or disables (bitReverseFlag=0) bit reversal of output\&. 
+.PP
+Definition at line 2057 of file arm_math\&.h\&.
+.SS "uint16_t arm_cfft_radix2_instance_f32::bitRevFactor"
+bit reversal modifier that supports different size FFTs with the same bit reversal table\&. 
+.PP
+Definition at line 2061 of file arm_math\&.h\&.
+.SS "uint16_t arm_cfft_radix2_instance_f32::fftLen"
+length of the FFT\&. 
+.PP
+Definition at line 2055 of file arm_math\&.h\&.
+.SS "uint8_t arm_cfft_radix2_instance_f32::ifftFlag"
+flag that selects forward (ifftFlag=0) or inverse (ifftFlag=1) transform\&. 
+.PP
+Definition at line 2056 of file arm_math\&.h\&.
+.SS "\fBfloat32_t\fP arm_cfft_radix2_instance_f32::onebyfftLen"
+value of 1/fftLen\&. 
+.PP
+Definition at line 2062 of file arm_math\&.h\&.
+.SS "uint16_t* arm_cfft_radix2_instance_f32::pBitRevTable"
+points to the bit reversal table\&. 
+.PP
+Definition at line 2059 of file arm_math\&.h\&.
+.SS "\fBfloat32_t\fP* arm_cfft_radix2_instance_f32::pTwiddle"
+points to the Twiddle factor table\&. 
+.PP
+Definition at line 2058 of file arm_math\&.h\&.
+.SS "uint16_t arm_cfft_radix2_instance_f32::twidCoefModifier"
+twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table\&. 
+.PP
+Definition at line 2060 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

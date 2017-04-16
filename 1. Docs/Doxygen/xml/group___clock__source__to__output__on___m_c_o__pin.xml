@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___clock__source__to__output__on___m_c_o__pin" kind="group">
+    <compoundname>Clock_source_to_output_on_MCO_pin</compoundname>
+    <title>Clock_source_to_output_on_MCO_pin</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___clock__source__to__output__on___m_c_o__pin_1ga1f39ff9f5606d3ad56e221d253be17d3" prot="public" static="no">
+        <name>RCC_MCO_NoClock</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="564" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___clock__source__to__output__on___m_c_o__pin_1gab766ad89492ffe915de3438aaa96891b" prot="public" static="no">
+        <name>RCC_MCO_SYSCLK</name>
+        <initializer>((uint8_t)0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="565" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___clock__source__to__output__on___m_c_o__pin_1ga7206cdf03826781dc4fb1b094475d744" prot="public" static="no">
+        <name>RCC_MCO_HSI</name>
+        <initializer>((uint8_t)0x05)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="566" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___clock__source__to__output__on___m_c_o__pin_1ga8bd64bbefd2a725a0cfe2f2902dd9b0f" prot="public" static="no">
+        <name>RCC_MCO_HSE</name>
+        <initializer>((uint8_t)0x06)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="567" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___clock__source__to__output__on___m_c_o__pin_1ga1ce4233675bd7bdcb0220ed10ee7d8be" prot="public" static="no">
+        <name>RCC_MCO_PLLCLK_Div2</name>
+        <initializer>((uint8_t)0x07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="568" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___clock__source__to__output__on___m_c_o__pin_1ga0c2d4d6aa8881e01b8c06d8816284b73" prot="public" static="no">
+        <name>IS_RCC_MCO</name>
+        <param><defname>MCO</defname></param>
+        <initializer>(((MCO) == <ref refid="group___clock__source__to__output__on___m_c_o__pin_1ga1f39ff9f5606d3ad56e221d253be17d3" kindref="member">RCC_MCO_NoClock</ref>) || ((MCO) == <ref refid="group___clock__source__to__output__on___m_c_o__pin_1ga7206cdf03826781dc4fb1b094475d744" kindref="member">RCC_MCO_HSI</ref>) || \
+                          ((MCO) == <ref refid="group___clock__source__to__output__on___m_c_o__pin_1gab766ad89492ffe915de3438aaa96891b" kindref="member">RCC_MCO_SYSCLK</ref>)  || ((MCO) == <ref refid="group___clock__source__to__output__on___m_c_o__pin_1ga8bd64bbefd2a725a0cfe2f2902dd9b0f" kindref="member">RCC_MCO_HSE</ref>) || \
+                          ((MCO) == <ref refid="group___clock__source__to__output__on___m_c_o__pin_1ga1ce4233675bd7bdcb0220ed10ee7d8be" kindref="member">RCC_MCO_PLLCLK_Div2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="571" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

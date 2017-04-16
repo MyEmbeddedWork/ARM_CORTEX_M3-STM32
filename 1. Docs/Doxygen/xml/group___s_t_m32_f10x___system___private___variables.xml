@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_t_m32_f10x___system___private___variables" kind="group">
+    <compoundname>STM32F10x_System_Private_Variables</compoundname>
+    <title>STM32F10x_System_Private_Variables</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___s_t_m32_f10x___system___private___variables_1gaa3cd3e43291e81e795d642b79b6088e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SystemCoreClock</definition>
+        <argsstring></argsstring>
+        <name>SystemCoreClock</name>
+        <initializer>= <ref refid="group___s_t_m32_f10x___system___private___defines_1ga69649cc38f34627cfb48b51062ebd390" kindref="member">SYSCLK_FREQ_72MHz</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Clock Frequency (Core Clock) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" line="163" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" bodystart="163" bodyend="-1"/>
+        <referencedby refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" compoundref="_timer_8h" startline="27" endline="31">Timer::start</referencedby>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+        <referencedby refid="group___s_t_m32_f10x___system___private___functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f" compoundref="system__stm32f10x_8c" startline="307" endline="413">SystemCoreClockUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___s_t_m32_f10x___system___private___variables_1gacdc3ef54c0704c90e69a8a84fb2d970d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t AHBPrescTable[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>AHBPrescTable</name>
+        <initializer>= {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" line="168" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" bodystart="168" bodyend="-1"/>
+        <referencedby refid="group___s_t_m32_f10x___system___private___functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f" compoundref="system__stm32f10x_8c" startline="307" endline="413">SystemCoreClockUpdate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

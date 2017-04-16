@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___system___low___power" kind="group">
+    <compoundname>System_Low_Power</compoundname>
+    <title>System_Low_Power</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___system___low___power_1ga10748d2b2875afd122f6476864ad6cae" prot="public" static="no">
+        <name>NVIC_LP_SEVONPEND</name>
+        <initializer>((uint8_t)0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="127" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___system___low___power_1gaeec2d10922fa9ec5e65398667b303253" prot="public" static="no">
+        <name>NVIC_LP_SLEEPDEEP</name>
+        <initializer>((uint8_t)0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="128" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___system___low___power_1ga368dc13a9c762a307c07cfa2e3ef59ad" prot="public" static="no">
+        <name>NVIC_LP_SLEEPONEXIT</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="129" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___system___low___power_1ga985896f03bc1d7b3da17a212f1bc3de9" prot="public" static="no">
+        <name>IS_NVIC_LP</name>
+        <param><defname>LP</defname></param>
+        <initializer>(((LP) == <ref refid="group___system___low___power_1ga10748d2b2875afd122f6476864ad6cae" kindref="member">NVIC_LP_SEVONPEND</ref>) || \
+                        ((LP) == <ref refid="group___system___low___power_1gaeec2d10922fa9ec5e65398667b303253" kindref="member">NVIC_LP_SLEEPDEEP</ref>) || \
+                        ((LP) == <ref refid="group___system___low___power_1ga368dc13a9c762a307c07cfa2e3ef59ad" kindref="member">NVIC_LP_SLEEPONEXIT</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="130" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

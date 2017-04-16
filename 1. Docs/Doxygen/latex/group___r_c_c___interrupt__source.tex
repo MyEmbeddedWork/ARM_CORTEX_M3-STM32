@@ -1,0 +1,135 @@
+\hypertarget{group___r_c_c___interrupt__source}{}\section{R\+C\+C\+\_\+\+Interrupt\+\_\+source}
+\label{group___r_c_c___interrupt__source}\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+Collaboration diagram for R\+C\+C\+\_\+\+Interrupt\+\_\+source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___r_c_c___interrupt__source}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga2b4ef277c1b71f96e0bef4b9a72fca94}{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY}~((uint8\+\_\+t)0x01)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_gad6b6e78a426850f595ef180d292a673d}{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY}~((uint8\+\_\+t)0x02)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga69637e51b71f73f519c8c0a0613d042f}{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY}~((uint8\+\_\+t)0x04)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_gad13eaede352bca59611e6cae68665866}{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY}~((uint8\+\_\+t)0x08)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga68d48e7811fb58f2649dce6cf0d823d9}{R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY}~((uint8\+\_\+t)0x10)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga9bb34a4912d2084dc1c0834eb53aa7a3}{R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS}~((uint8\+\_\+t)0x80)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga710d72ccf88ddbec09b033c81a571a83}{I\+S\+\_\+\+R\+C\+C\+\_\+\+IT}(IT)~((((IT) \& (uint8\+\_\+t)0x\+E0) == 0x00) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga7a1b771d6d9c2d8346ab58a1f046f6a6}{I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\item 
+\#define \hyperlink{group___r_c_c___interrupt__source_ga8374741e47d696accd1a72647650ba63}{I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}(IT)~((((IT) \& (uint8\+\_\+t)0x60) == 0x00) \&\& ((\+I\+T) != 0x00))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga8374741e47d696accd1a72647650ba63}\label{group___r_c_c___interrupt__source_ga8374741e47d696accd1a72647650ba63}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT@{I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}}
+\index{I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT@{I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}{IS\_RCC\_CLEAR\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~((((IT) \& (uint8\+\_\+t)0x60) == 0x00) \&\& ((\+I\+T) != 0x00))}
+
+
+
+Definition at line 353 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga7a1b771d6d9c2d8346ab58a1f046f6a6}\label{group___r_c_c___interrupt__source_ga7a1b771d6d9c2d8346ab58a1f046f6a6}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT}}
+\index{I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT}{IS\_RCC\_GET\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((IT) == \hyperlink{group___r_c_c___interrupt__source_ga2b4ef277c1b71f96e0bef4b9a72fca94}{RCC\_IT\_LSIRDY}) || ((IT) == \hyperlink{group___r_c_c___interrupt__source_gad6b6e78a426850f595ef180d292a673d}{RCC\_IT\_LSERDY}) || \(\backslash\)
+                            ((IT) == \hyperlink{group___r_c_c___interrupt__source_ga69637e51b71f73f519c8c0a0613d042f}{RCC\_IT\_HSIRDY}) || ((IT) == 
+      \hyperlink{group___r_c_c___interrupt__source_gad13eaede352bca59611e6cae68665866}{RCC\_IT\_HSERDY}) || \(\backslash\)
+                            ((IT) == \hyperlink{group___r_c_c___interrupt__source_ga68d48e7811fb58f2649dce6cf0d823d9}{RCC\_IT\_PLLRDY}) || ((IT) == 
+      \hyperlink{group___r_c_c___interrupt__source_ga9bb34a4912d2084dc1c0834eb53aa7a3}{RCC\_IT\_CSS}))
+\end{DoxyCode}
+
+
+Definition at line 350 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga710d72ccf88ddbec09b033c81a571a83}\label{group___r_c_c___interrupt__source_ga710d72ccf88ddbec09b033c81a571a83}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!I\+S\+\_\+\+R\+C\+C\+\_\+\+IT@{I\+S\+\_\+\+R\+C\+C\+\_\+\+IT}}
+\index{I\+S\+\_\+\+R\+C\+C\+\_\+\+IT@{I\+S\+\_\+\+R\+C\+C\+\_\+\+IT}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+R\+C\+C\+\_\+\+IT}{IS\_RCC\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+C\+C\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~((((IT) \& (uint8\+\_\+t)0x\+E0) == 0x00) \&\& ((\+I\+T) != 0x00))}
+
+
+
+Definition at line 349 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga9bb34a4912d2084dc1c0834eb53aa7a3}\label{group___r_c_c___interrupt__source_ga9bb34a4912d2084dc1c0834eb53aa7a3}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS@{R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS}}
+\index{R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS@{R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS}{RCC\_IT\_CSS}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS~((uint8\+\_\+t)0x80)}
+
+
+
+Definition at line 346 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_gad13eaede352bca59611e6cae68665866}\label{group___r_c_c___interrupt__source_gad13eaede352bca59611e6cae68665866}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY}}
+\index{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY}{RCC\_IT\_HSERDY}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY~((uint8\+\_\+t)0x08)}
+
+
+
+Definition at line 344 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga69637e51b71f73f519c8c0a0613d042f}\label{group___r_c_c___interrupt__source_ga69637e51b71f73f519c8c0a0613d042f}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY}}
+\index{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY}{RCC\_IT\_HSIRDY}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY~((uint8\+\_\+t)0x04)}
+
+
+
+Definition at line 343 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_gad6b6e78a426850f595ef180d292a673d}\label{group___r_c_c___interrupt__source_gad6b6e78a426850f595ef180d292a673d}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY}}
+\index{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY}{RCC\_IT\_LSERDY}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY~((uint8\+\_\+t)0x02)}
+
+
+
+Definition at line 342 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga2b4ef277c1b71f96e0bef4b9a72fca94}\label{group___r_c_c___interrupt__source_ga2b4ef277c1b71f96e0bef4b9a72fca94}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY}}
+\index{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY}{RCC\_IT\_LSIRDY}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY~((uint8\+\_\+t)0x01)}
+
+
+
+Definition at line 341 of file stm32f10x\+\_\+rcc.\+h.
+
+\mbox{\Hypertarget{group___r_c_c___interrupt__source_ga68d48e7811fb58f2649dce6cf0d823d9}\label{group___r_c_c___interrupt__source_ga68d48e7811fb58f2649dce6cf0d823d9}} 
+\index{R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}!R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY}}
+\index{R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY@{R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY}!R\+C\+C\+\_\+\+Interrupt\+\_\+source@{R\+C\+C\+\_\+\+Interrupt\+\_\+source}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY}{RCC\_IT\_PLLRDY}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY~((uint8\+\_\+t)0x10)}
+
+
+
+Definition at line 345 of file stm32f10x\+\_\+rcc.\+h.
+

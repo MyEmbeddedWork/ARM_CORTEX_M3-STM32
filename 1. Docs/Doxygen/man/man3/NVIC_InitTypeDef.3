@@ -1,0 +1,54 @@
+.TH "NVIC_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NVIC_InitTypeDef \- NVIC Init Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <misc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBNVIC_IRQChannel\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBNVIC_IRQChannelPreemptionPriority\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBNVIC_IRQChannelSubPriority\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBNVIC_IRQChannelCmd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+NVIC Init Structure definition\&. 
+.PP
+Definition at line 50 of file misc\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t NVIC_InitTypeDef::NVIC_IRQChannel"
+Specifies the IRQ channel to be enabled or disabled\&. This parameter can be a value of \fBIRQn_Type\fP (For the complete STM32 Devices IRQ Channels list, please refer to \fBstm32f10x\&.h\fP file) 
+.PP
+Definition at line 52 of file misc\&.h\&.
+.SS "\fBFunctionalState\fP NVIC_InitTypeDef::NVIC_IRQChannelCmd"
+Specifies whether the IRQ channel defined in NVIC_IRQChannel will be enabled or disabled\&. This parameter can be set either to ENABLE or DISABLE 
+.PP
+Definition at line 65 of file misc\&.h\&.
+.SS "uint8_t NVIC_InitTypeDef::NVIC_IRQChannelPreemptionPriority"
+Specifies the pre-emption priority for the IRQ channel specified in NVIC_IRQChannel\&. This parameter can be a value between 0 and 15 as described in the table \fBNVIC_Priority_Table\fP 
+.PP
+Definition at line 57 of file misc\&.h\&.
+.SS "uint8_t NVIC_InitTypeDef::NVIC_IRQChannelSubPriority"
+Specifies the subpriority level for the IRQ channel specified in NVIC_IRQChannel\&. This parameter can be a value between 0 and 15 as described in the table \fBNVIC_Priority_Table\fP 
+.PP
+Definition at line 61 of file misc\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,62 @@
+.TH "Lock_level" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Lock_level
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_OFF\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_1\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_2\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_3\fP   ((uint16_t)0x0300)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LOCK_LEVEL\fP(LEVEL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_LOCK_LEVEL(LEVEL)"
+\fBValue:\fP
+.PP
+.nf
+(((LEVEL) == TIM_LOCKLevel_OFF) || \
+                                  ((LEVEL) == TIM_LOCKLevel_1) || \
+                                  ((LEVEL) == TIM_LOCKLevel_2) || \
+                                  ((LEVEL) == TIM_LOCKLevel_3))
+.fi
+.PP
+Definition at line 499 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_LOCKLevel_1   ((uint16_t)0x0100)"
+
+.PP
+Definition at line 496 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_LOCKLevel_2   ((uint16_t)0x0200)"
+
+.PP
+Definition at line 497 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_LOCKLevel_3   ((uint16_t)0x0300)"
+
+.PP
+Definition at line 498 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_LOCKLevel_OFF   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 495 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_a_n__remote__transmission__request" kind="group">
+    <compoundname>CAN_remote_transmission_request</compoundname>
+    <title>CAN_remote_transmission_request</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_n__remote__transmission__request_1ga2407c3a8b2cd97bd651143aa959219f1" prot="public" static="no">
+        <name>CAN_RTR_Data</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data frame </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="430" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n__remote__transmission__request_1ga42e95ddfb02d88c82de84058fb0fb349" prot="public" static="no">
+        <name>CAN_RTR_Remote</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remote frame </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="431" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n__remote__transmission__request_1ga3379997ad4da6fc4d7975c52b891bdc0" prot="public" static="no">
+        <name>IS_CAN_RTR</name>
+        <param><defname>RTR</defname></param>
+        <initializer>(((RTR) == <ref refid="group___c_a_n__remote__transmission__request_1ga2407c3a8b2cd97bd651143aa959219f1" kindref="member">CAN_RTR_Data</ref>) || ((RTR) == <ref refid="group___c_a_n__remote__transmission__request_1ga42e95ddfb02d88c82de84058fb0fb349" kindref="member">CAN_RTR_Remote</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="432" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

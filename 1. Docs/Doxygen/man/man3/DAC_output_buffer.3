@@ -1,0 +1,46 @@
+.TH "DAC_output_buffer" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DAC_output_buffer
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDAC_OutputBuffer_Enable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_OutputBuffer_Disable\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_OUTPUT_BUFFER_STATE\fP(STATE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DAC_OutputBuffer_Disable   ((uint32_t)0x00000002)"
+
+.PP
+Definition at line 189 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_OutputBuffer_Enable   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 188 of file stm32f10x_dac\&.h\&.
+.SS "#define IS_DAC_OUTPUT_BUFFER_STATE(STATE)"
+\fBValue:\fP
+.PP
+.nf
+(((STATE) == DAC_OutputBuffer_Enable) || \
+                                           ((STATE) == DAC_OutputBuffer_Disable))
+.fi
+.PP
+Definition at line 190 of file stm32f10x_dac\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

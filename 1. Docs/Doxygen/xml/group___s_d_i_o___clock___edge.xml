@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___clock___edge" kind="group">
+    <compoundname>SDIO_Clock_Edge</compoundname>
+    <title>SDIO_Clock_Edge</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___clock___edge_1ga6d0f902037762a3048d95303c0037313" prot="public" static="no">
+        <name>SDIO_ClockEdge_Rising</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="129" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___clock___edge_1ga7be68024e3e2fe1994def85bc944189b" prot="public" static="no">
+        <name>SDIO_ClockEdge_Falling</name>
+        <initializer>((uint32_t)0x00002000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="130" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___clock___edge_1ga63420b10a52e3d82a89a45f20dc41786" prot="public" static="no">
+        <name>IS_SDIO_CLOCK_EDGE</name>
+        <param><defname>EDGE</defname></param>
+        <initializer>(((EDGE) == <ref refid="group___s_d_i_o___clock___edge_1ga6d0f902037762a3048d95303c0037313" kindref="member">SDIO_ClockEdge_Rising</ref>) || \
+                                  ((EDGE) == <ref refid="group___s_d_i_o___clock___edge_1ga7be68024e3e2fe1994def85bc944189b" kindref="member">SDIO_ClockEdge_Falling</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="131" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

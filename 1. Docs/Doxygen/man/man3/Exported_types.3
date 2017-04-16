@@ -1,0 +1,275 @@
+.TH "Exported_types" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Exported_types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_FUNCTIONAL_STATE\fP(STATE)   (((STATE) == \fBDISABLE\fP) || ((STATE) == \fBENABLE\fP))"
+.br
+.ti -1c
+.RI "#define \fBHSEStartUp_TimeOut\fP   \fBHSE_STARTUP_TIMEOUT\fP"
+.br
+.ti -1c
+.RI "#define \fBHSE_Value\fP   \fBHSE_VALUE\fP"
+.br
+.ti -1c
+.RI "#define \fBHSI_Value\fP   \fBHSI_VALUE\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef int32_t \fBs32\fP"
+.br
+.ti -1c
+.RI "typedef int16_t \fBs16\fP"
+.br
+.ti -1c
+.RI "typedef int8_t \fBs8\fP"
+.br
+.ti -1c
+.RI "typedef const int32_t \fBsc32\fP"
+.br
+.ti -1c
+.RI "typedef const int16_t \fBsc16\fP"
+.br
+.ti -1c
+.RI "typedef const int8_t \fBsc8\fP"
+.br
+.ti -1c
+.RI "typedef \fB__IO\fP int32_t \fBvs32\fP"
+.br
+.ti -1c
+.RI "typedef \fB__IO\fP int16_t \fBvs16\fP"
+.br
+.ti -1c
+.RI "typedef \fB__IO\fP int8_t \fBvs8\fP"
+.br
+.ti -1c
+.RI "typedef \fB__I\fP int32_t \fBvsc32\fP"
+.br
+.ti -1c
+.RI "typedef \fB__I\fP int16_t \fBvsc16\fP"
+.br
+.ti -1c
+.RI "typedef \fB__I\fP int8_t \fBvsc8\fP"
+.br
+.ti -1c
+.RI "typedef uint32_t \fBu32\fP"
+.br
+.ti -1c
+.RI "typedef uint16_t \fBu16\fP"
+.br
+.ti -1c
+.RI "typedef uint8_t \fBu8\fP"
+.br
+.ti -1c
+.RI "typedef const uint32_t \fBuc32\fP"
+.br
+.ti -1c
+.RI "typedef const uint16_t \fBuc16\fP"
+.br
+.ti -1c
+.RI "typedef const uint8_t \fBuc8\fP"
+.br
+.ti -1c
+.RI "typedef \fB__IO\fP uint32_t \fBvu32\fP"
+.br
+.ti -1c
+.RI "typedef \fB__IO\fP uint16_t \fBvu16\fP"
+.br
+.ti -1c
+.RI "typedef \fB__IO\fP uint8_t \fBvu8\fP"
+.br
+.ti -1c
+.RI "typedef \fB__I\fP uint32_t \fBvuc32\fP"
+.br
+.ti -1c
+.RI "typedef \fB__I\fP uint16_t \fBvuc16\fP"
+.br
+.ti -1c
+.RI "typedef \fB__I\fP uint8_t \fBvuc8\fP"
+.br
+.ti -1c
+.RI "typedef enum \fBFlagStatus\fP \fBITStatus\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFlagStatus\fP { \fBRESET\fP = 0, \fBSET\fP = !RESET }"
+.br
+.ti -1c
+.RI "enum \fBFunctionalState\fP { \fBDISABLE\fP = 0, \fBENABLE\fP = !DISABLE }"
+.br
+.ti -1c
+.RI "enum \fBErrorStatus\fP { \fBERROR\fP = 0, \fBSUCCESS\fP = !ERROR }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HSE_Value   \fBHSE_VALUE\fP"
+
+.PP
+Definition at line 528 of file stm32f10x\&.h\&.
+.SS "#define HSEStartUp_TimeOut   \fBHSE_STARTUP_TIMEOUT\fP"
+
+.PP
+Definition at line 527 of file stm32f10x\&.h\&.
+.SS "#define HSI_Value   \fBHSI_VALUE\fP"
+
+.PP
+Definition at line 529 of file stm32f10x\&.h\&.
+.SS "#define IS_FUNCTIONAL_STATE(STATE)   (((STATE) == \fBDISABLE\fP) || ((STATE) == \fBENABLE\fP))"
+
+.PP
+Definition at line 522 of file stm32f10x\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef  enum \fBFlagStatus\fP  \fBITStatus\fP"
+
+.SS "typedef int16_t \fBs16\fP"
+
+.PP
+Definition at line 488 of file stm32f10x\&.h\&.
+.SS "typedef int32_t \fBs32\fP"
+< STM32F10x Standard Peripheral Library old types (maintained for legacy purpose) 
+.PP
+Definition at line 487 of file stm32f10x\&.h\&.
+.SS "typedef int8_t \fBs8\fP"
+
+.PP
+Definition at line 489 of file stm32f10x\&.h\&.
+.SS "typedef const int16_t \fBsc16\fP"
+Read Only 
+.PP
+Definition at line 492 of file stm32f10x\&.h\&.
+.SS "typedef const int32_t \fBsc32\fP"
+Read Only 
+.PP
+Definition at line 491 of file stm32f10x\&.h\&.
+.SS "typedef const int8_t \fBsc8\fP"
+Read Only 
+.PP
+Definition at line 493 of file stm32f10x\&.h\&.
+.SS "typedef uint16_t \fBu16\fP"
+
+.PP
+Definition at line 504 of file stm32f10x\&.h\&.
+.SS "typedef uint32_t \fBu32\fP"
+
+.PP
+Definition at line 503 of file stm32f10x\&.h\&.
+.SS "typedef uint8_t \fBu8\fP"
+
+.PP
+Definition at line 505 of file stm32f10x\&.h\&.
+.SS "typedef const uint16_t \fBuc16\fP"
+Read Only 
+.PP
+Definition at line 508 of file stm32f10x\&.h\&.
+.SS "typedef const uint32_t \fBuc32\fP"
+Read Only 
+.PP
+Definition at line 507 of file stm32f10x\&.h\&.
+.SS "typedef const uint8_t \fBuc8\fP"
+Read Only 
+.PP
+Definition at line 509 of file stm32f10x\&.h\&.
+.SS "typedef \fB__IO\fP int16_t \fBvs16\fP"
+
+.PP
+Definition at line 496 of file stm32f10x\&.h\&.
+.SS "typedef \fB__IO\fP int32_t \fBvs32\fP"
+
+.PP
+Definition at line 495 of file stm32f10x\&.h\&.
+.SS "typedef \fB__IO\fP int8_t \fBvs8\fP"
+
+.PP
+Definition at line 497 of file stm32f10x\&.h\&.
+.SS "typedef \fB__I\fP int16_t \fBvsc16\fP"
+Read Only 
+.PP
+Definition at line 500 of file stm32f10x\&.h\&.
+.SS "typedef \fB__I\fP int32_t \fBvsc32\fP"
+Read Only 
+.PP
+Definition at line 499 of file stm32f10x\&.h\&.
+.SS "typedef \fB__I\fP int8_t \fBvsc8\fP"
+Read Only 
+.PP
+Definition at line 501 of file stm32f10x\&.h\&.
+.SS "typedef \fB__IO\fP uint16_t \fBvu16\fP"
+
+.PP
+Definition at line 512 of file stm32f10x\&.h\&.
+.SS "typedef \fB__IO\fP uint32_t \fBvu32\fP"
+
+.PP
+Definition at line 511 of file stm32f10x\&.h\&.
+.SS "typedef \fB__IO\fP uint8_t \fBvu8\fP"
+
+.PP
+Definition at line 513 of file stm32f10x\&.h\&.
+.SS "typedef \fB__I\fP uint16_t \fBvuc16\fP"
+Read Only 
+.PP
+Definition at line 516 of file stm32f10x\&.h\&.
+.SS "typedef \fB__I\fP uint32_t \fBvuc32\fP"
+Read Only 
+.PP
+Definition at line 515 of file stm32f10x\&.h\&.
+.SS "typedef \fB__I\fP uint8_t \fBvuc8\fP"
+Read Only 
+.PP
+Definition at line 517 of file stm32f10x\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBErrorStatus\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIERROR \fP\fP
+.TP
+\fB\fISUCCESS \fP\fP
+.PP
+Definition at line 524 of file stm32f10x\&.h\&.
+.SS "enum \fBFlagStatus\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRESET \fP\fP
+.TP
+\fB\fISET \fP\fP
+.PP
+Definition at line 519 of file stm32f10x\&.h\&.
+.SS "enum \fBFunctionalState\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDISABLE \fP\fP
+.TP
+\fB\fIENABLE \fP\fP
+.PP
+Definition at line 521 of file stm32f10x\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

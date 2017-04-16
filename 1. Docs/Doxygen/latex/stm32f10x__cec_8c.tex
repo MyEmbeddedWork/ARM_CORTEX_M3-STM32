@@ -1,0 +1,97 @@
+\hypertarget{stm32f10x__cec_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+cec.c File Reference}
+\label{stm32f10x__cec_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+cec.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+cec.\+c}}
+
+
+This file provides all the C\+EC firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+cec.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+rcc.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+cec.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__cec_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga675324bd8967b75f32554f50210821af}{C\+E\+C\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___peripheral__memory__map_gaacb77bc44b3f8c87ab98f241e760e440}{C\+E\+C\+\_\+\+B\+A\+SE} -\/ \hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___c_e_c___private___defines_ga675324bd8967b75f32554f50210821af}{C\+E\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x00)
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga321e547b9574b065127c882e09a4f7e7}{P\+E\+\_\+\+Bit\+Number}~0x00
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga9d1f044508cda5ad8213bd7bc5c4363d}{C\+F\+G\+R\+\_\+\+P\+E\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___c_e_c___private___defines_ga321e547b9574b065127c882e09a4f7e7}{P\+E\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga57731312db52f3498312a56e98166fad}{I\+E\+\_\+\+Bit\+Number}~0x01
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_gac7fe35cf912353ca51a56c5f1f25b2fb}{C\+F\+G\+R\+\_\+\+I\+E\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___c_e_c___private___defines_ga57731312db52f3498312a56e98166fad}{I\+E\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___c_e_c___private___defines_ga675324bd8967b75f32554f50210821af}{C\+E\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x10)
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga1a470abab836eba7b451950938708946}{T\+S\+O\+M\+\_\+\+Bit\+Number}~0x00
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga4971cc50b0ead4a493e2a9c03966c826}{C\+S\+R\+\_\+\+T\+S\+O\+M\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___c_e_c___private___defines_ga1a470abab836eba7b451950938708946}{T\+S\+O\+M\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_gac86378eff7728e5cfca5480ab2dbef0b}{T\+E\+O\+M\+\_\+\+Bit\+Number}~0x01
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga9ac493d98ce1f6d82b778ace0f2bc7bb}{C\+S\+R\+\_\+\+T\+E\+O\+M\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___c_e_c___private___defines_gac86378eff7728e5cfca5480ab2dbef0b}{T\+E\+O\+M\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_gaaedf9b8df17534f5eaf75ec1ca3fbd7a}{C\+F\+G\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~(uint8\+\_\+t)(0x\+F3)        /$\ast$ C\+F\+G\+R register Mask $\ast$/
+\item 
+\#define \hyperlink{group___c_e_c___private___defines_ga2be62bf481cd44de9ab604efe5595ff6}{F\+L\+A\+G\+\_\+\+Mask}~((uint32\+\_\+t)0x00\+F\+F\+F\+F\+F\+F) /$\ast$ C\+E\+C F\+L\+A\+G mask $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___c_e_c___private___functions_ga604c3b15b51a46303c201fa3deac2212}{C\+E\+C\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the C\+EC peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_gaf48aee745a16370372b3eaa7cf3ed22b}{C\+E\+C\+\_\+\+Init} (\hyperlink{struct_c_e_c___init_type_def}{C\+E\+C\+\_\+\+Init\+Type\+Def} $\ast$C\+E\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the C\+EC peripheral according to the specified parameters in the C\+E\+C\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_ga0c8efa79e5768930e567b3b3ed6e09e9}{C\+E\+C\+\_\+\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified C\+EC peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_ga8be87c514505cf82eb29334f054fc0bc}{C\+E\+C\+\_\+\+I\+T\+Config} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\+EC interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_gacad422ef1f50246b2021b41835b8a95c}{C\+E\+C\+\_\+\+Own\+Address\+Config} (uint8\+\_\+t C\+E\+C\+\_\+\+Own\+Address)
+\begin{DoxyCompactList}\small\item\em Defines the Own Address of the C\+EC device. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_gad2fc626e28a82008a29f062975a9af11}{C\+E\+C\+\_\+\+Set\+Prescaler} (uint16\+\_\+t C\+E\+C\+\_\+\+Prescaler)
+\begin{DoxyCompactList}\small\item\em Sets the C\+EC prescaler value. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_ga6897ab26d8f909f9160e9fac54b97441}{C\+E\+C\+\_\+\+Send\+Data\+Byte} (uint8\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Transmits single data through the C\+EC peripheral. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group___c_e_c___private___functions_ga165837bff6292e7674eff6f8b230da97}{C\+E\+C\+\_\+\+Receive\+Data\+Byte} (void)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the C\+EC peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_ga71e700461ffe7820d9e1c75da65fd0fb}{C\+E\+C\+\_\+\+Start\+Of\+Message} (void)
+\begin{DoxyCompactList}\small\item\em Starts a new message. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_ga1e2cf6e3a1ac891f2814f9d3f4043574}{C\+E\+C\+\_\+\+End\+Of\+Message\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Transmits message with or without an E\+OM bit. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___c_e_c___private___functions_gaf920706cb350182bf0728c66868053ca}{C\+E\+C\+\_\+\+Get\+Flag\+Status} (uint32\+\_\+t C\+E\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Gets the C\+EC flag status. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_ga928b373fb5972204c56f9c64113f8c67}{C\+E\+C\+\_\+\+Clear\+Flag} (uint32\+\_\+t C\+E\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the C\+EC\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___c_e_c___private___functions_gaa1940a388d0bfcefe7483fb74cc2ba1d}{C\+E\+C\+\_\+\+Get\+I\+T\+Status} (uint8\+\_\+t C\+E\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified C\+EC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___private___functions_gade646921262a077172c708953822f248}{C\+E\+C\+\_\+\+Clear\+I\+T\+Pending\+Bit} (uint16\+\_\+t C\+E\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the C\+EC\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the C\+EC firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

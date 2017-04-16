@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__fir__instance__q15" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_instance_q15</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__instance__q15_1a0e46f93cf51bfb18b1be808be9c5bfc9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_instance_q15::numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of filter coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1041" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__instance__q15_1aa8d25f44f45b6a6c4cf38c31569b8a01" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>q15_t* arm_fir_instance_q15::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1042" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__instance__q15_1a6d16db16a5f8f0db54938f2967244d9e" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>q15_t* arm_fir_instance_q15::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1043" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q15 FIR filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1040" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1039" bodyend="1044"/>
+    <listofallmembers>
+      <member refid="structarm__fir__instance__q15_1a0e46f93cf51bfb18b1be808be9c5bfc9" prot="public" virt="non-virtual"><scope>arm_fir_instance_q15</scope><name>numTaps</name></member>
+      <member refid="structarm__fir__instance__q15_1a6d16db16a5f8f0db54938f2967244d9e" prot="public" virt="non-virtual"><scope>arm_fir_instance_q15</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__instance__q15_1aa8d25f44f45b6a6c4cf38c31569b8a01" prot="public" virt="non-virtual"><scope>arm_fir_instance_q15</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

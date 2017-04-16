@@ -1,0 +1,70 @@
+.TH "I2S_Standard" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2S_Standard
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2S_Standard_Phillips\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_MSB\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_LSB\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_PCMShort\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_PCMLong\fP   ((uint16_t)0x00B0)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_STANDARD\fP(STANDARD)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2S_Standard_LSB   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 264 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_Standard_MSB   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 263 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_Standard_PCMLong   ((uint16_t)0x00B0)"
+
+.PP
+Definition at line 266 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_Standard_PCMShort   ((uint16_t)0x0030)"
+
+.PP
+Definition at line 265 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_Standard_Phillips   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 262 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_I2S_STANDARD(STANDARD)"
+\fBValue:\fP
+.PP
+.nf
+(((STANDARD) == I2S_Standard_Phillips) || \
+                                   ((STANDARD) == I2S_Standard_MSB) || \
+                                   ((STANDARD) == I2S_Standard_LSB) || \
+                                   ((STANDARD) == I2S_Standard_PCMShort) || \
+                                   ((STANDARD) == I2S_Standard_PCMLong))
+.fi
+.PP
+Definition at line 267 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

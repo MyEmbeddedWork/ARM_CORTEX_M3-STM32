@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___option___bytes__n_r_s_t___s_t_o_p" kind="group">
+    <compoundname>Option_Bytes_nRST_STOP</compoundname>
+    <title>Option_Bytes_nRST_STOP</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___option___bytes__n_r_s_t___s_t_o_p_1ga6762d6e4045fec58b49dfc03c1927d51" prot="public" static="no">
+        <name>OB_STOP_NoRST</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No reset generated when entering in STOP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="240" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___option___bytes__n_r_s_t___s_t_o_p_1gaef92c03b1f279c532bfa13d3bb074b57" prot="public" static="no">
+        <name>OB_STOP_RST</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset generated when entering in STOP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="241" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___option___bytes__n_r_s_t___s_t_o_p_1ga131ae3434f300c8317dd6b3b349c7cab" prot="public" static="no">
+        <name>IS_OB_STOP_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___option___bytes__n_r_s_t___s_t_o_p_1ga6762d6e4045fec58b49dfc03c1927d51" kindref="member">OB_STOP_NoRST</ref>) || ((SOURCE) == <ref refid="group___option___bytes__n_r_s_t___s_t_o_p_1gaef92c03b1f279c532bfa13d3bb074b57" kindref="member">OB_STOP_RST</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="242" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

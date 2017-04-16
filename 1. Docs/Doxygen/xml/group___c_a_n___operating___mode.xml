@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_a_n___operating___mode" kind="group">
+    <compoundname>CAN_Operating_Mode</compoundname>
+    <title>CAN_Operating_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_n___operating___mode_1gace8a4b5c164aba6f473d6254ad1e8a36" prot="public" static="no">
+        <name>CAN_OperatingMode_Initialization</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialization mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="247" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___operating___mode_1ga663ecffaa60d1a201a035dfa45325848" prot="public" static="no">
+        <name>CAN_OperatingMode_Normal</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normal mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="248" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___operating___mode_1ga173b85d2baaa6249d966b8073e3ad8ca" prot="public" static="no">
+        <name>CAN_OperatingMode_Sleep</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sleep mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="249" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___operating___mode_1ga377f1598db9b0248ba83fa6e5a75db75" prot="public" static="no">
+        <name>IS_CAN_OPERATING_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___c_a_n___operating___mode_1gace8a4b5c164aba6f473d6254ad1e8a36" kindref="member">CAN_OperatingMode_Initialization</ref>) ||\
+                                    ((MODE) == <ref refid="group___c_a_n___operating___mode_1ga663ecffaa60d1a201a035dfa45325848" kindref="member">CAN_OperatingMode_Normal</ref>)|| \
+																		((MODE) == <ref refid="group___c_a_n___operating___mode_1ga173b85d2baaa6249d966b8073e3ad8ca" kindref="member">CAN_OperatingMode_Sleep</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="252" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

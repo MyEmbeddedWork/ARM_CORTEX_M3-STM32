@@ -1,0 +1,150 @@
+.TH "SDIO_Data_Block_Size" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Data_Block_Size
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_1b\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_2b\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_4b\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_8b\fP   ((uint32_t)0x00000030)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_16b\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_32b\fP   ((uint32_t)0x00000050)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_64b\fP   ((uint32_t)0x00000060)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_128b\fP   ((uint32_t)0x00000070)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_256b\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_512b\fP   ((uint32_t)0x00000090)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_1024b\fP   ((uint32_t)0x000000A0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_2048b\fP   ((uint32_t)0x000000B0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_4096b\fP   ((uint32_t)0x000000C0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_8192b\fP   ((uint32_t)0x000000D0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_16384b\fP   ((uint32_t)0x000000E0)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_BLOCK_SIZE\fP(SIZE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SDIO_BLOCK_SIZE(SIZE)"
+\fBValue:\fP
+.PP
+.nf
+(((SIZE) == SDIO_DataBlockSize_1b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_2b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_4b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_8b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_16b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_32b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_64b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_128b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_256b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_512b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_1024b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_2048b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_4096b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_8192b) || \
+                                  ((SIZE) == SDIO_DataBlockSize_16384b))
+.fi
+.PP
+Definition at line 321 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_1024b   ((uint32_t)0x000000A0)"
+
+.PP
+Definition at line 316 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_128b   ((uint32_t)0x00000070)"
+
+.PP
+Definition at line 313 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_16384b   ((uint32_t)0x000000E0)"
+
+.PP
+Definition at line 320 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_16b   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 310 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_1b   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 306 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_2048b   ((uint32_t)0x000000B0)"
+
+.PP
+Definition at line 317 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_256b   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 314 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_2b   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 307 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_32b   ((uint32_t)0x00000050)"
+
+.PP
+Definition at line 311 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_4096b   ((uint32_t)0x000000C0)"
+
+.PP
+Definition at line 318 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_4b   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 308 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_512b   ((uint32_t)0x00000090)"
+
+.PP
+Definition at line 315 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_64b   ((uint32_t)0x00000060)"
+
+.PP
+Definition at line 312 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_8192b   ((uint32_t)0x000000D0)"
+
+.PP
+Definition at line 319 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_DataBlockSize_8b   ((uint32_t)0x00000030)"
+
+.PP
+Definition at line 309 of file stm32f10x_sdio\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

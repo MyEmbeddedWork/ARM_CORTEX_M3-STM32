@@ -1,0 +1,150 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h \- This file contains all the functions prototypes for the PWR firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V2\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V3\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V4\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V5\fP   ((uint32_t)0x00000060)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V6\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V7\fP   ((uint32_t)0x000000A0)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V8\fP   ((uint32_t)0x000000C0)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PVDLevel_2V9\fP   ((uint32_t)0x000000E0)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_PVD_LEVEL\fP(LEVEL)"
+.br
+.ti -1c
+.RI "#define \fBPWR_Regulator_ON\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBPWR_Regulator_LowPower\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_REGULATOR\fP(REGULATOR)"
+.br
+.ti -1c
+.RI "#define \fBPWR_STOPEntry_WFI\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBPWR_STOPEntry_WFE\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_STOP_ENTRY\fP(ENTRY)   (((ENTRY) == \fBPWR_STOPEntry_WFI\fP) || ((ENTRY) == \fBPWR_STOPEntry_WFE\fP))"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WU\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_SB\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_PVDO\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_CLEAR_FLAG\fP(FLAG)   (((FLAG) == \fBPWR_FLAG_WU\fP) || ((FLAG) == \fBPWR_FLAG_SB\fP))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBPWR_DeInit\fP (void)"
+.br
+.RI "Deinitializes the PWR peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBPWR_BackupAccessCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables access to the RTC and backup registers\&. "
+.ti -1c
+.RI "void \fBPWR_PVDCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Power Voltage Detector(PVD)\&. "
+.ti -1c
+.RI "void \fBPWR_PVDLevelConfig\fP (uint32_t PWR_PVDLevel)"
+.br
+.RI "Configures the voltage threshold detected by the Power Voltage Detector(PVD)\&. "
+.ti -1c
+.RI "void \fBPWR_WakeUpPinCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the WakeUp Pin functionality\&. "
+.ti -1c
+.RI "void \fBPWR_EnterSTOPMode\fP (uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)"
+.br
+.RI "Enters STOP mode\&. "
+.ti -1c
+.RI "void \fBPWR_EnterSTANDBYMode\fP (void)"
+.br
+.RI "Enters STANDBY mode\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBPWR_GetFlagStatus\fP (uint32_t PWR_FLAG)"
+.br
+.RI "Checks whether the specified PWR flag is set or not\&. "
+.ti -1c
+.RI "void \fBPWR_ClearFlag\fP (uint32_t PWR_FLAG)"
+.br
+.RI "Clears the PWR's pending flags\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the PWR firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_pwr\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

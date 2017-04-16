@@ -1,0 +1,322 @@
+.TH "CMSIS_Core_RegAccFunctions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_RegAccFunctions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_CONTROL\fP (void)"
+.br
+.RI "Get Control Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_CONTROL\fP (uint32_t control)"
+.br
+.RI "Set Control Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_IPSR\fP (void)"
+.br
+.RI "Get IPSR Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_APSR\fP (void)"
+.br
+.RI "Get APSR Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_xPSR\fP (void)"
+.br
+.RI "Get xPSR Register\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_PSP\fP (void)"
+.br
+.RI "Get Process Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_PSP\fP (uint32_t topOfProcStack)"
+.br
+.RI "Set Process Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_MSP\fP (void)"
+.br
+.RI "Get Main Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_MSP\fP (uint32_t topOfMainStack)"
+.br
+.RI "Set Main Stack Pointer\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fB__get_PRIMASK\fP (void)"
+.br
+.RI "Get Priority Mask\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fB__set_PRIMASK\fP (uint32_t priMask)"
+.br
+.RI "Set Priority Mask\&. "
+.ti -1c
+.RI "\fB__attribute__\fP ((always_inline)) __STATIC_INLINE void __enable_irq(void)"
+.br
+.RI "Enable IRQ Interrupts\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "__attribute__ ((always_inline))"
+
+.PP
+Enable IRQ Interrupts\&. Set Priority Mask\&.
+.PP
+Get Priority Mask\&.
+.PP
+Set Main Stack Pointer\&.
+.PP
+Get Main Stack Pointer\&.
+.PP
+Set Process Stack Pointer\&.
+.PP
+Get Process Stack Pointer\&.
+.PP
+Get xPSR Register\&.
+.PP
+Get APSR Register\&.
+.PP
+Get IPSR Register\&.
+.PP
+Set Control Register\&.
+.PP
+Get Control Register\&.
+.PP
+Disable IRQ Interrupts\&.
+.PP
+Enables IRQ interrupts by clearing the I-bit in the CPSR\&. Can only be executed in Privileged modes\&.
+.PP
+Disables IRQ interrupts by setting the I-bit in the CPSR\&. Can only be executed in Privileged modes\&.
+.PP
+Returns the content of the Control Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Control Register value
+.RE
+.PP
+Writes the given value to the Control Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontrol\fP Control Register value to set
+.RE
+.PP
+Returns the content of the IPSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+IPSR Register value
+.RE
+.PP
+Returns the content of the APSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+APSR Register value
+.RE
+.PP
+Returns the content of the xPSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+xPSR Register value
+.RE
+.PP
+Returns the current value of the Process Stack Pointer (PSP)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+PSP Register value
+.RE
+.PP
+Assigns the given value to the Process Stack Pointer (PSP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItopOfProcStack\fP Process Stack Pointer value to set
+.RE
+.PP
+Returns the current value of the Main Stack Pointer (MSP)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+MSP Register value
+.RE
+.PP
+Assigns the given value to the Main Stack Pointer (MSP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItopOfMainStack\fP Main Stack Pointer value to set
+.RE
+.PP
+Returns the current state of the priority mask bit from the Priority Mask Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Priority Mask value
+.RE
+.PP
+Assigns the given value to the Priority Mask Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpriMask\fP Priority Mask 
+.RE
+.PP
+
+.PP
+Definition at line 50 of file cmsis_armcc_V6\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_APSR (void)"
+
+.PP
+Get APSR Register\&. Returns the content of the APSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+APSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line 93 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_CONTROL (void)"
+
+.PP
+Get Control Register\&. Returns the content of the Control Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Control Register value 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_IPSR (void)"
+
+.PP
+Get IPSR Register\&. Returns the content of the IPSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+IPSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_MSP (void)"
+
+.PP
+Get Main Stack Pointer\&. Returns the current value of the Main Stack Pointer (MSP)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+MSP Register value 
+.RE
+.PP
+
+.PP
+Definition at line 141 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_PRIMASK (void)"
+
+.PP
+Get Priority Mask\&. Returns the current state of the priority mask bit from the Priority Mask Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Priority Mask value 
+.RE
+.PP
+
+.PP
+Definition at line 165 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_PSP (void)"
+
+.PP
+Get Process Stack Pointer\&. Returns the current value of the Process Stack Pointer (PSP)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+PSP Register value 
+.RE
+.PP
+
+.PP
+Definition at line 117 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE uint32_t __get_xPSR (void)"
+
+.PP
+Get xPSR Register\&. Returns the content of the xPSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+xPSR Register value 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE void __set_CONTROL (uint32_t control)"
+
+.PP
+Set Control Register\&. Writes the given value to the Control Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontrol\fP Control Register value to set 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE void __set_MSP (uint32_t topOfMainStack)"
+
+.PP
+Set Main Stack Pointer\&. Assigns the given value to the Main Stack Pointer (MSP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItopOfMainStack\fP Main Stack Pointer value to set 
+.RE
+.PP
+
+.PP
+Definition at line 153 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE void __set_PRIMASK (uint32_t priMask)"
+
+.PP
+Set Priority Mask\&. Assigns the given value to the Priority Mask Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpriMask\fP Priority Mask 
+.RE
+.PP
+
+.PP
+Definition at line 177 of file cmsis_armcc\&.h\&.
+.SS "__STATIC_INLINE void __set_PSP (uint32_t topOfProcStack)"
+
+.PP
+Set Process Stack Pointer\&. Assigns the given value to the Process Stack Pointer (PSP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItopOfProcStack\fP Process Stack Pointer value to set 
+.RE
+.PP
+
+.PP
+Definition at line 129 of file cmsis_armcc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

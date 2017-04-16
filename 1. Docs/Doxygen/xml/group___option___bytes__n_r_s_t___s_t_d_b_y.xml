@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___option___bytes__n_r_s_t___s_t_d_b_y" kind="group">
+    <compoundname>Option_Bytes_nRST_STDBY</compoundname>
+    <title>Option_Bytes_nRST_STDBY</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839" prot="public" static="no">
+        <name>OB_STDBY_NoRST</name>
+        <initializer>((uint16_t)0x0004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No reset generated when entering in STANDBY </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="252" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce" prot="public" static="no">
+        <name>OB_STDBY_RST</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset generated when entering in STANDBY </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="253" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___option___bytes__n_r_s_t___s_t_d_b_y_1ga8a05393df3a5e89551b4e2e1e8c5b884" prot="public" static="no">
+        <name>IS_OB_STDBY_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839" kindref="member">OB_STDBY_NoRST</ref>) || ((SOURCE) == <ref refid="group___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce" kindref="member">OB_STDBY_RST</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="254" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

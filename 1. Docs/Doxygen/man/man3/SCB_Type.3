@@ -1,0 +1,441 @@
+.TH "SCB_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SCB_Type \- Structure type to access the System Control Block (SCB)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm0\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBCPUID\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBICSR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBAIRCR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSCR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSHP\fP [2U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSHCSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBVTOR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint8_t \fBSHP\fP [12U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCFSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBHFSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBDFSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMMFAR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBBFAR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBAFSR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBPFR\fP [2U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBDFR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBADR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBMMFR\fP [4U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBISAR\fP [5U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCPACR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint8_t \fBSHPR\fP [12U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBID_PFR\fP [2U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBID_DFR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBID_AFR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBID_MFR\fP [4U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBID_ISAR\fP [5U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBCLIDR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBCTR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBCCSIDR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCSSELR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [93U]"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBSTIR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [15U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBMVFR0\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBMVFR1\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBMVFR2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBICIALLU\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED6\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBICIMVAU\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCIMVAC\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCISW\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCCMVAU\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCCMVAC\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCCSW\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCCIMVAC\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCCISW\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED7\fP [6U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBITCMCR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBDTCMCR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBAHBPCR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCACR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBAHBSCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED8\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBABFSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSFCR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the System Control Block (SCB)\&. 
+.PP
+Definition at line 397 of file core_cm0\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t SCB_Type::ABFSR"
+Offset: 0x2A8 (R/W) Auxiliary Bus Fault Status Register 
+.PP
+Definition at line 559 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ADR"
+Offset: 0x04C (R/ ) Auxiliary Feature Register 
+.PP
+Definition at line 443 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::AFSR"
+Offset: 0x03C (R/W) Auxiliary Fault Status Register 
+.PP
+Definition at line 440 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::AHBPCR"
+Offset: 0x298 (R/W) AHBP Control Register 
+.PP
+Definition at line 555 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::AHBSCR"
+Offset: 0x2A0 (R/W) AHB Slave Control Register 
+.PP
+Definition at line 557 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::AIRCR"
+Offset: 0x00C (R/W) Application Interrupt and Reset Control Register 
+.PP
+Definition at line 402 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::BFAR"
+Offset: 0x038 (R/W) BusFault Address Register 
+.PP
+Definition at line 439 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::CACR"
+Offset: 0x29C (R/W) L1 Cache Control Register 
+.PP
+Definition at line 556 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::CCR"
+Offset: 0x014 (R/W) Configuration Control Register 
+.PP
+Definition at line 404 of file core_cm0\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::CCSIDR"
+Offset: 0x080 (R/ ) Cache Size ID Register 
+.PP
+Definition at line 532 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::CFSR"
+Offset: 0x028 (R/W) Configurable Fault Status Register 
+.PP
+Definition at line 435 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::CLIDR"
+Offset: 0x078 (R/ ) Cache Level ID register 
+.PP
+Definition at line 530 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::CPACR"
+Offset: 0x088 (R/W) Coprocessor Access Control Register 
+.PP
+Definition at line 447 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::CPUID"
+Offset: 0x000 (R/ ) CPUID Base Register 
+.PP
+Definition at line 399 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::CSSELR"
+Offset: 0x084 (R/W) Cache Size Selection Register 
+.PP
+Definition at line 533 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::CTR"
+Offset: 0x07C (R/ ) Cache Type register 
+.PP
+Definition at line 531 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCCIMVAC"
+Offset: 0x270 ( /W) D-Cache Clean and Invalidate by MVA to PoC 
+.PP
+Definition at line 550 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCCISW"
+Offset: 0x274 ( /W) D-Cache Clean and Invalidate by Set-way 
+.PP
+Definition at line 551 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCCMVAC"
+Offset: 0x268 ( /W) D-Cache Clean by MVA to PoC 
+.PP
+Definition at line 548 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCCMVAU"
+Offset: 0x264 ( /W) D-Cache Clean by MVA to PoU 
+.PP
+Definition at line 547 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCCSW"
+Offset: 0x26C ( /W) D-Cache Clean by Set-way 
+.PP
+Definition at line 549 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCIMVAC"
+Offset: 0x25C ( /W) D-Cache Invalidate by MVA to PoC 
+.PP
+Definition at line 545 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::DCISW"
+Offset: 0x260 ( /W) D-Cache Invalidate by Set-way 
+.PP
+Definition at line 546 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::DFR"
+Offset: 0x048 (R/ ) Debug Feature Register 
+.PP
+Definition at line 442 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::DFSR"
+Offset: 0x030 (R/W) Debug Fault Status Register 
+.PP
+Definition at line 437 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::DTCMCR"
+Offset: 0x294 (R/W) Data Tightly-Coupled Memory Control Registers 
+.PP
+Definition at line 554 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::HFSR"
+Offset: 0x02C (R/W) HardFault Status Register 
+.PP
+Definition at line 436 of file core_cm3\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::ICIALLU"
+Offset: 0x250 ( /W) I-Cache Invalidate All to PoU 
+.PP
+Definition at line 542 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::ICIMVAU"
+Offset: 0x258 ( /W) I-Cache Invalidate by MVA to PoU 
+.PP
+Definition at line 544 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::ICSR"
+Offset: 0x004 (R/W) Interrupt Control and State Register 
+.PP
+Definition at line 400 of file core_cm0\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ID_AFR"
+Offset: 0x04C (R/ ) Auxiliary Feature Register 
+.PP
+Definition at line 526 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ID_DFR"
+Offset: 0x048 (R/ ) Debug Feature Register 
+.PP
+Definition at line 525 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ID_ISAR[5U]"
+Offset: 0x060 (R/ ) Instruction Set Attributes Register 
+.PP
+Definition at line 528 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ID_MFR[4U]"
+Offset: 0x050 (R/ ) Memory Model Feature Register 
+.PP
+Definition at line 527 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ID_PFR[2U]"
+Offset: 0x040 (R/ ) Processor Feature Register 
+.PP
+Definition at line 524 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::ISAR"
+Offset: 0x060 (R/ ) Instruction Set Attributes Register 
+.PP
+Definition at line 445 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::ITCMCR"
+Offset: 0x290 (R/W) Instruction Tightly-Coupled Memory Control Register 
+.PP
+Definition at line 553 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::MMFAR"
+Offset: 0x034 (R/W) MemManage Fault Address Register 
+.PP
+Definition at line 438 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::MMFR"
+Offset: 0x050 (R/ ) Memory Model Feature Register 
+.PP
+Definition at line 444 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::MVFR0"
+Offset: 0x240 (R/ ) Media and VFP Feature Register 0 
+.PP
+Definition at line 538 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::MVFR1"
+Offset: 0x244 (R/ ) Media and VFP Feature Register 1 
+.PP
+Definition at line 539 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::MVFR2"
+Offset: 0x248 (R/ ) Media and VFP Feature Register 1 
+.PP
+Definition at line 540 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t SCB_Type::PFR"
+Offset: 0x040 (R/ ) Processor Feature Register 
+.PP
+Definition at line 441 of file core_cm3\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED0"
+
+.PP
+Definition at line 401 of file core_cm0\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED1"
+
+.PP
+Definition at line 405 of file core_cm0\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED3[93U]"
+
+.PP
+Definition at line 535 of file core_cm7\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED4[15U]"
+
+.PP
+Definition at line 537 of file core_cm7\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED5[1U]"
+
+.PP
+Definition at line 541 of file core_cm7\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED6[1U]"
+
+.PP
+Definition at line 543 of file core_cm7\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED7[6U]"
+
+.PP
+Definition at line 552 of file core_cm7\&.h\&.
+.SS "uint32_t SCB_Type::RESERVED8[1U]"
+
+.PP
+Definition at line 558 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::SCR"
+Offset: 0x010 (R/W) System Control Register 
+.PP
+Definition at line 403 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::SFCR"
+Offset: 0x290 (R/W) Security Features Control Register 
+.PP
+Definition at line 407 of file core_sc000\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::SHCSR"
+Offset: 0x024 (R/W) System Handler Control and State Register 
+.PP
+Definition at line 407 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint8_t SCB_Type::SHP"
+Offset: 0x01C (R/W) System Handlers Priority Registers\&. [0] is RESERVED
+.PP
+Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) 
+.PP
+Definition at line 406 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint8_t SCB_Type::SHP[12U]"
+Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) 
+.PP
+Definition at line 433 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint8_t SCB_Type::SHPR[12U]"
+Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) 
+.PP
+Definition at line 516 of file core_cm7\&.h\&.
+.SS "\fB__OM\fP uint32_t SCB_Type::STIR"
+Offset: 0x200 ( /W) Software Triggered Interrupt Register 
+.PP
+Definition at line 536 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t SCB_Type::VTOR"
+Offset: 0x008 (R/W) Vector Table Offset Register 
+.PP
+Definition at line 429 of file core_cm3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

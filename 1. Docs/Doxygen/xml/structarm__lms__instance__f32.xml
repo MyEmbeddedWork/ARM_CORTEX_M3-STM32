@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__lms__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_lms_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__lms__instance__f32_1af73880d9009982f5d14529869494ec3d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_lms_instance_f32::numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3970" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__f32_1aaf94285be2f99b5b9af40bea8dcb14b9" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_lms_instance_f32::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3971" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3971" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__f32_1a4795c6f7d3f17cec15c2fd09f66edd1a" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_lms_instance_f32::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3972" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3972" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__f32_1ae2af43d74c93dba16b876e10c97a5b99" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_lms_instance_f32::mu</definition>
+        <argsstring></argsstring>
+        <name>mu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>step size that controls filter coefficient updates. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3973" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3973" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point LMS filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3969" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3968" bodyend="3974"/>
+    <listofallmembers>
+      <member refid="structarm__lms__instance__f32_1ae2af43d74c93dba16b876e10c97a5b99" prot="public" virt="non-virtual"><scope>arm_lms_instance_f32</scope><name>mu</name></member>
+      <member refid="structarm__lms__instance__f32_1af73880d9009982f5d14529869494ec3d" prot="public" virt="non-virtual"><scope>arm_lms_instance_f32</scope><name>numTaps</name></member>
+      <member refid="structarm__lms__instance__f32_1a4795c6f7d3f17cec15c2fd09f66edd1a" prot="public" virt="non-virtual"><scope>arm_lms_instance_f32</scope><name>pCoeffs</name></member>
+      <member refid="structarm__lms__instance__f32_1aaf94285be2f99b5b9af40bea8dcb14b9" prot="public" virt="non-virtual"><scope>arm_lms_instance_f32</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

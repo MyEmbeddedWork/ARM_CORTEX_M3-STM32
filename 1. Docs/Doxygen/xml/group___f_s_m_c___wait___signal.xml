@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___wait___signal" kind="group">
+    <compoundname>FSMC_Wait_Signal</compoundname>
+    <title>FSMC_Wait_Signal</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___wait___signal_1ga6ea66c8ddee073281c421533bdff7e19" prot="public" static="no">
+        <name>FSMC_WaitSignal_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="415" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___wait___signal_1gaf809e339f1cdc9d0a815fd98712e9ee3" prot="public" static="no">
+        <name>FSMC_WaitSignal_Enable</name>
+        <initializer>((uint32_t)0x00002000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="416" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___wait___signal_1gae617db4f15c82850d4f5c927f9a7db3e" prot="public" static="no">
+        <name>IS_FSMC_WAITE_SIGNAL</name>
+        <param><defname>SIGNAL</defname></param>
+        <initializer>(((SIGNAL) == <ref refid="group___f_s_m_c___wait___signal_1ga6ea66c8ddee073281c421533bdff7e19" kindref="member">FSMC_WaitSignal_Disable</ref>) || \
+                                      ((SIGNAL) == <ref refid="group___f_s_m_c___wait___signal_1gaf809e339f1cdc9d0a815fd98712e9ee3" kindref="member">FSMC_WaitSignal_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="417" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+.TH "TIM_AOE_Bit_Set_Reset" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_AOE_Bit_Set_Reset
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_AutomaticOutput_Enable\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_AutomaticOutput_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_AUTOMATIC_OUTPUT_STATE\fP(STATE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_AUTOMATIC_OUTPUT_STATE(STATE)"
+\fBValue:\fP
+.PP
+.nf
+(((STATE) == TIM_AutomaticOutput_Enable) || \
+                                              ((STATE) == TIM_AutomaticOutput_Disable))
+.fi
+.PP
+Definition at line 485 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_AutomaticOutput_Disable   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 484 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_AutomaticOutput_Enable   ((uint16_t)0x4000)"
+
+.PP
+Definition at line 483 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

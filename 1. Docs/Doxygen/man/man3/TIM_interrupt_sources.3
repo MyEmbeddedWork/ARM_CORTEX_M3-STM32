@@ -1,0 +1,101 @@
+.TH "TIM_interrupt_sources" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_interrupt_sources
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_IT_Update\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC1\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_COM\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_Trigger\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_Break\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IT\fP(IT)   ((((IT) & (uint16_t)0xFF00) == 0x0000) && ((IT) != 0x0000))"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_GET_IT\fP(IT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == TIM_IT_Update) || \
+                           ((IT) == TIM_IT_CC1) || \
+                           ((IT) == TIM_IT_CC2) || \
+                           ((IT) == TIM_IT_CC3) || \
+                           ((IT) == TIM_IT_CC4) || \
+                           ((IT) == TIM_IT_COM) || \
+                           ((IT) == TIM_IT_Trigger) || \
+                           ((IT) == TIM_IT_Break))
+.fi
+.PP
+Definition at line 619 of file stm32f10x_tim\&.h\&.
+.SS "#define IS_TIM_IT(IT)   ((((IT) & (uint16_t)0xFF00) == 0x0000) && ((IT) != 0x0000))"
+
+.PP
+Definition at line 617 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_Break   ((uint16_t)0x0080)"
+
+.PP
+Definition at line 616 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_CC1   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 610 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_CC2   ((uint16_t)0x0004)"
+
+.PP
+Definition at line 611 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_CC3   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 612 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_CC4   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 613 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_COM   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 614 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_Trigger   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 615 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_IT_Update   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 609 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

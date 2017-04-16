@@ -1,0 +1,80 @@
+.TH "DAC_wave_generation" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DAC_wave_generation
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDAC_WaveGeneration_None\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_WaveGeneration_Noise\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDAC_WaveGeneration_Triangle\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_GENERATE_WAVE\fP(WAVE)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Wave_Noise\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Wave_Triangle\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_WAVE\fP(WAVE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DAC_Wave_Noise   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 226 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Wave_Triangle   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 227 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_WaveGeneration_Noise   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 118 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_WaveGeneration_None   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 117 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_WaveGeneration_Triangle   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 119 of file stm32f10x_dac\&.h\&.
+.SS "#define IS_DAC_GENERATE_WAVE(WAVE)"
+\fBValue:\fP
+.PP
+.nf
+(((WAVE) == DAC_WaveGeneration_None) || \
+                                    ((WAVE) == DAC_WaveGeneration_Noise) || \
+                                    ((WAVE) == DAC_WaveGeneration_Triangle))
+.fi
+.PP
+Definition at line 120 of file stm32f10x_dac\&.h\&.
+.SS "#define IS_DAC_WAVE(WAVE)"
+\fBValue:\fP
+.PP
+.nf
+(((WAVE) == DAC_Wave_Noise) || \
+                           ((WAVE) == DAC_Wave_Triangle))
+.fi
+.PP
+Definition at line 228 of file stm32f10x_dac\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

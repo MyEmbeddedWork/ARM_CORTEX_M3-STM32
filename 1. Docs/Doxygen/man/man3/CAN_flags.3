@@ -1,0 +1,158 @@
+.TH "CAN_flags" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAN_FLAG_RQCP0\fP   ((uint32_t)0x38000001)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_RQCP1\fP   ((uint32_t)0x38000100)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_RQCP2\fP   ((uint32_t)0x38010000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_FMP0\fP   ((uint32_t)0x12000003)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_FF0\fP   ((uint32_t)0x32000008)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_FOV0\fP   ((uint32_t)0x32000010)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_FMP1\fP   ((uint32_t)0x14000003)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_FF1\fP   ((uint32_t)0x34000008)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_FOV1\fP   ((uint32_t)0x34000010)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_WKU\fP   ((uint32_t)0x31000008)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_SLAK\fP   ((uint32_t)0x31000012)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_EWG\fP   ((uint32_t)0x10F00001)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_EPV\fP   ((uint32_t)0x10F00002)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_BOF\fP   ((uint32_t)0x10F00004)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAG_LEC\fP   ((uint32_t)0x30F00070)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_CLEAR_FLAG\fP(FLAG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAN_FLAG_BOF   ((uint32_t)0x10F00004)"
+Bus-Off Flag 
+.PP
+Definition at line 534 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_EPV   ((uint32_t)0x10F00002)"
+Error Passive Flag 
+.PP
+Definition at line 533 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_EWG   ((uint32_t)0x10F00001)"
+Error Warning Flag 
+.PP
+Definition at line 532 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_FF0   ((uint32_t)0x32000008)"
+FIFO 0 Full Flag 
+.PP
+Definition at line 519 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_FF1   ((uint32_t)0x34000008)"
+FIFO 1 Full Flag 
+.PP
+Definition at line 522 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_FMP0   ((uint32_t)0x12000003)"
+FIFO 0 Message Pending Flag 
+.PP
+Definition at line 518 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_FMP1   ((uint32_t)0x14000003)"
+FIFO 1 Message Pending Flag 
+.PP
+Definition at line 521 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_FOV0   ((uint32_t)0x32000010)"
+FIFO 0 Overrun Flag 
+.PP
+Definition at line 520 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_FOV1   ((uint32_t)0x34000010)"
+FIFO 1 Overrun Flag 
+.PP
+Definition at line 523 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_LEC   ((uint32_t)0x30F00070)"
+Last error code Flag 
+.PP
+Definition at line 535 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_RQCP0   ((uint32_t)0x38000001)"
+Request MailBox0 Flag 
+.PP
+Definition at line 513 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_RQCP1   ((uint32_t)0x38000100)"
+Request MailBox1 Flag 
+.PP
+Definition at line 514 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_RQCP2   ((uint32_t)0x38010000)"
+Request MailBox2 Flag 
+.PP
+Definition at line 515 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_SLAK   ((uint32_t)0x31000012)"
+Sleep acknowledge Flag 
+.PP
+Definition at line 527 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FLAG_WKU   ((uint32_t)0x31000008)"
+Wake up Flag 
+.PP
+Definition at line 526 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_CLEAR_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == CAN_FLAG_LEC) || ((FLAG) == CAN_FLAG_RQCP2) || \
+                                ((FLAG) == CAN_FLAG_RQCP1)  || ((FLAG) == CAN_FLAG_RQCP0) || \
+                                ((FLAG) == CAN_FLAG_FF0)  || ((FLAG) == CAN_FLAG_FOV0) ||\
+                                ((FLAG) == CAN_FLAG_FF1) || ((FLAG) == CAN_FLAG_FOV1) || \
+                                ((FLAG) == CAN_FLAG_WKU) || ((FLAG) == CAN_FLAG_SLAK))
+.fi
+.PP
+Definition at line 546 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_GET_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == CAN_FLAG_LEC)  || ((FLAG) == CAN_FLAG_BOF)   || \
+                               ((FLAG) == CAN_FLAG_EPV)  || ((FLAG) == CAN_FLAG_EWG)   || \
+                               ((FLAG) == CAN_FLAG_WKU)  || ((FLAG) == CAN_FLAG_FOV0)  || \
+                               ((FLAG) == CAN_FLAG_FF0)  || ((FLAG) == CAN_FLAG_FMP0)  || \
+                               ((FLAG) == CAN_FLAG_FOV1) || ((FLAG) == CAN_FLAG_FF1)   || \
+                               ((FLAG) == CAN_FLAG_FMP1) || ((FLAG) == CAN_FLAG_RQCP2) || \
+                               ((FLAG) == CAN_FLAG_RQCP1)|| ((FLAG) == CAN_FLAG_RQCP0) || \
+                               ((FLAG) == CAN_FLAG_SLAK ))
+.fi
+.PP
+Definition at line 537 of file stm32f10x_can\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

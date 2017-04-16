@@ -1,0 +1,46 @@
+.TH "CAN_filter_FIFO" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_filter_FIFO
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAN_Filter_FIFO0\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCAN_Filter_FIFO1\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_FILTER_FIFO\fP(FIFO)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAN_Filter_FIFO0   ((uint8_t)0x00)"
+Filter FIFO 0 assignment for filter x 
+.PP
+Definition at line 385 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_Filter_FIFO1   ((uint8_t)0x01)"
+Filter FIFO 1 assignment for filter x 
+.PP
+Definition at line 386 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_FILTER_FIFO(FIFO)"
+\fBValue:\fP
+.PP
+.nf
+(((FIFO) == CAN_FilterFIFO0) || \
+                                  ((FIFO) == CAN_FilterFIFO1))
+.fi
+.PP
+Definition at line 387 of file stm32f10x_can\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

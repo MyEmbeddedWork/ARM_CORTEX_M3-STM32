@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___write___operation" kind="group">
+    <compoundname>FSMC_Write_Operation</compoundname>
+    <title>FSMC_Write_Operation</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___write___operation_1ga74176320484248f06abae854170f9d9f" prot="public" static="no">
+        <name>FSMC_WriteOperation_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="402" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___write___operation_1ga2478beb6dd8861b34a16b8a57a795e56" prot="public" static="no">
+        <name>FSMC_WriteOperation_Enable</name>
+        <initializer>((uint32_t)0x00001000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="403" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___write___operation_1ga87fc20d11761caa66c3e7d77a3a7d3e3" prot="public" static="no">
+        <name>IS_FSMC_WRITE_OPERATION</name>
+        <param><defname>OPERATION</defname></param>
+        <initializer>(((OPERATION) == <ref refid="group___f_s_m_c___write___operation_1ga74176320484248f06abae854170f9d9f" kindref="member">FSMC_WriteOperation_Disable</ref>) || \
+                                            ((OPERATION) == <ref refid="group___f_s_m_c___write___operation_1ga2478beb6dd8861b34a16b8a57a795e56" kindref="member">FSMC_WriteOperation_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="404" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

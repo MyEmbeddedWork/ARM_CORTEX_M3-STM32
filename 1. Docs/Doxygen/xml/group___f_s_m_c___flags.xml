@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___flags" kind="group">
+    <compoundname>FSMC_Flags</compoundname>
+    <title>FSMC_Flags</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___flags_1ga5aadbd5d9f1b6a25bcc1fc6f3bf4c9cc" prot="public" static="no">
+        <name>FSMC_FLAG_RisingEdge</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="661" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___flags_1ga25868d35780998a52190c424ebb3823f" prot="public" static="no">
+        <name>FSMC_FLAG_Level</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="662" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___flags_1gaaaa85bce06ed962874686ad7af0f0cb7" prot="public" static="no">
+        <name>FSMC_FLAG_FallingEdge</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="663" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___flags_1ga8da2bd0b9d11877aaebaba0c77e8b0cc" prot="public" static="no">
+        <name>FSMC_FLAG_FEMPT</name>
+        <initializer>((uint32_t)0x00000040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="664" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___flags_1gab8674160ef7884f939e07041bbf5b18b" prot="public" static="no">
+        <name>IS_FSMC_GET_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___f_s_m_c___flags_1ga5aadbd5d9f1b6a25bcc1fc6f3bf4c9cc" kindref="member">FSMC_FLAG_RisingEdge</ref>) || \
+                                ((FLAG) == <ref refid="group___f_s_m_c___flags_1ga25868d35780998a52190c424ebb3823f" kindref="member">FSMC_FLAG_Level</ref>) || \
+                                ((FLAG) == <ref refid="group___f_s_m_c___flags_1gaaaa85bce06ed962874686ad7af0f0cb7" kindref="member">FSMC_FLAG_FallingEdge</ref>) || \
+                                ((FLAG) == <ref refid="group___f_s_m_c___flags_1ga8da2bd0b9d11877aaebaba0c77e8b0cc" kindref="member">FSMC_FLAG_FEMPT</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="665" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___flags_1ga1114bf56b54e726831b38fc8c5daa14e" prot="public" static="no">
+        <name>IS_FSMC_CLEAR_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>((((FLAG) &amp; (uint32_t)0xFFFFFFF8) == 0x00000000) &amp;&amp; ((FLAG) != 0x00000000))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="670" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

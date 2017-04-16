@@ -1,0 +1,82 @@
+.TH "RTC_interrupts_flags" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RTC_interrupts_flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRTC_FLAG_RTOFF\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_RSF\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_OW\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_ALR\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_SEC\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint16_t)0xFFF0) == 0x00) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_PRESCALER\fP(PRESCALER)   ((PRESCALER) <= 0xFFFFF)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RTC_CLEAR_FLAG(FLAG)   ((((FLAG) & (uint16_t)0xFFF0) == 0x00) && ((FLAG) != 0x00))"
+
+.PP
+Definition at line 77 of file stm32f10x_rtc\&.h\&.
+.SS "#define IS_RTC_GET_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == RTC_FLAG_RTOFF) || ((FLAG) == RTC_FLAG_RSF) || \
+                               ((FLAG) == RTC_FLAG_OW) || ((FLAG) == RTC_FLAG_ALR) || \
+                               ((FLAG) == RTC_FLAG_SEC))
+.fi
+.PP
+Definition at line 78 of file stm32f10x_rtc\&.h\&.
+.SS "#define IS_RTC_PRESCALER(PRESCALER)   ((PRESCALER) <= 0xFFFFF)"
+
+.PP
+Definition at line 81 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_FLAG_ALR   ((uint16_t)0x0002)"
+Alarm flag 
+.PP
+Definition at line 75 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_FLAG_OW   ((uint16_t)0x0004)"
+Overflow flag 
+.PP
+Definition at line 74 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_FLAG_RSF   ((uint16_t)0x0008)"
+Registers Synchronized flag 
+.PP
+Definition at line 73 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_FLAG_RTOFF   ((uint16_t)0x0020)"
+RTC Operation OFF flag 
+.PP
+Definition at line 72 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_FLAG_SEC   ((uint16_t)0x0001)"
+Second flag 
+.PP
+Definition at line 76 of file stm32f10x_rtc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

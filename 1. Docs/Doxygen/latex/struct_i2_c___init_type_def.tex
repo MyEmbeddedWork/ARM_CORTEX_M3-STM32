@@ -1,0 +1,101 @@
+\hypertarget{struct_i2_c___init_type_def}{}\section{I2\+C\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_i2_c___init_type_def}\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+
+
+I2C Init structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f10x\+\_\+i2c.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_i2_c___init_type_def_a737c289f4515ae4cb642db0412762169}{I2\+C\+\_\+\+Clock\+Speed}
+\item 
+uint16\+\_\+t \hyperlink{struct_i2_c___init_type_def_ad5cf353c5b6968b3610b70ca593cec52}{I2\+C\+\_\+\+Mode}
+\item 
+uint16\+\_\+t \hyperlink{struct_i2_c___init_type_def_aff23b28652359513dfd268dee54c3279}{I2\+C\+\_\+\+Duty\+Cycle}
+\item 
+uint16\+\_\+t \hyperlink{struct_i2_c___init_type_def_a08543cb71b4b2a89ad81a2cefff12b53}{I2\+C\+\_\+\+Own\+Address1}
+\item 
+uint16\+\_\+t \hyperlink{struct_i2_c___init_type_def_a7bcae26f098e897832e5e42b055f8c98}{I2\+C\+\_\+\+Ack}
+\item 
+uint16\+\_\+t \hyperlink{struct_i2_c___init_type_def_a300e847972f50b0d25c4f13be5d93d79}{I2\+C\+\_\+\+Acknowledged\+Address}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I2C Init structure definition. 
+
+Definition at line 56 of file stm32f10x\+\_\+i2c.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_i2_c___init_type_def_a7bcae26f098e897832e5e42b055f8c98}\label{struct_i2_c___init_type_def_a7bcae26f098e897832e5e42b055f8c98}} 
+\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}!I2\+C\+\_\+\+Ack@{I2\+C\+\_\+\+Ack}}
+\index{I2\+C\+\_\+\+Ack@{I2\+C\+\_\+\+Ack}!I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+Ack}{I2C\_Ack}}
+{\footnotesize\ttfamily uint16\+\_\+t I2\+C\+\_\+\+Init\+Type\+Def\+::\+I2\+C\+\_\+\+Ack}
+
+Enables or disables the acknowledgement. This parameter can be a value of \hyperlink{group___i2_c__acknowledgement}{I2\+C\+\_\+acknowledgement} 
+
+Definition at line 70 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{struct_i2_c___init_type_def_a300e847972f50b0d25c4f13be5d93d79}\label{struct_i2_c___init_type_def_a300e847972f50b0d25c4f13be5d93d79}} 
+\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}!I2\+C\+\_\+\+Acknowledged\+Address@{I2\+C\+\_\+\+Acknowledged\+Address}}
+\index{I2\+C\+\_\+\+Acknowledged\+Address@{I2\+C\+\_\+\+Acknowledged\+Address}!I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+Acknowledged\+Address}{I2C\_AcknowledgedAddress}}
+{\footnotesize\ttfamily uint16\+\_\+t I2\+C\+\_\+\+Init\+Type\+Def\+::\+I2\+C\+\_\+\+Acknowledged\+Address}
+
+Specifies if 7-\/bit or 10-\/bit address is acknowledged. This parameter can be a value of \hyperlink{group___i2_c__acknowledged__address}{I2\+C\+\_\+acknowledged\+\_\+address} 
+
+Definition at line 73 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{struct_i2_c___init_type_def_a737c289f4515ae4cb642db0412762169}\label{struct_i2_c___init_type_def_a737c289f4515ae4cb642db0412762169}} 
+\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}!I2\+C\+\_\+\+Clock\+Speed@{I2\+C\+\_\+\+Clock\+Speed}}
+\index{I2\+C\+\_\+\+Clock\+Speed@{I2\+C\+\_\+\+Clock\+Speed}!I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+Clock\+Speed}{I2C\_ClockSpeed}}
+{\footnotesize\ttfamily uint32\+\_\+t I2\+C\+\_\+\+Init\+Type\+Def\+::\+I2\+C\+\_\+\+Clock\+Speed}
+
+Specifies the clock frequency. This parameter must be set to a value lower than 400k\+Hz 
+
+Definition at line 58 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{struct_i2_c___init_type_def_aff23b28652359513dfd268dee54c3279}\label{struct_i2_c___init_type_def_aff23b28652359513dfd268dee54c3279}} 
+\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}!I2\+C\+\_\+\+Duty\+Cycle@{I2\+C\+\_\+\+Duty\+Cycle}}
+\index{I2\+C\+\_\+\+Duty\+Cycle@{I2\+C\+\_\+\+Duty\+Cycle}!I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+Duty\+Cycle}{I2C\_DutyCycle}}
+{\footnotesize\ttfamily uint16\+\_\+t I2\+C\+\_\+\+Init\+Type\+Def\+::\+I2\+C\+\_\+\+Duty\+Cycle}
+
+Specifies the I2C fast mode duty cycle. This parameter can be a value of \hyperlink{group___i2_c__duty__cycle__in__fast__mode}{I2\+C\+\_\+duty\+\_\+cycle\+\_\+in\+\_\+fast\+\_\+mode} 
+
+Definition at line 64 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{struct_i2_c___init_type_def_ad5cf353c5b6968b3610b70ca593cec52}\label{struct_i2_c___init_type_def_ad5cf353c5b6968b3610b70ca593cec52}} 
+\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}!I2\+C\+\_\+\+Mode@{I2\+C\+\_\+\+Mode}}
+\index{I2\+C\+\_\+\+Mode@{I2\+C\+\_\+\+Mode}!I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+Mode}{I2C\_Mode}}
+{\footnotesize\ttfamily uint16\+\_\+t I2\+C\+\_\+\+Init\+Type\+Def\+::\+I2\+C\+\_\+\+Mode}
+
+Specifies the I2C mode. This parameter can be a value of \hyperlink{group___i2_c__mode}{I2\+C\+\_\+mode} 
+
+Definition at line 61 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{struct_i2_c___init_type_def_a08543cb71b4b2a89ad81a2cefff12b53}\label{struct_i2_c___init_type_def_a08543cb71b4b2a89ad81a2cefff12b53}} 
+\index{I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}!I2\+C\+\_\+\+Own\+Address1@{I2\+C\+\_\+\+Own\+Address1}}
+\index{I2\+C\+\_\+\+Own\+Address1@{I2\+C\+\_\+\+Own\+Address1}!I2\+C\+\_\+\+Init\+Type\+Def@{I2\+C\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+Own\+Address1}{I2C\_OwnAddress1}}
+{\footnotesize\ttfamily uint16\+\_\+t I2\+C\+\_\+\+Init\+Type\+Def\+::\+I2\+C\+\_\+\+Own\+Address1}
+
+Specifies the first device own address. This parameter can be a 7-\/bit or 10-\/bit address. 
+
+Definition at line 67 of file stm32f10x\+\_\+i2c.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/\hyperlink{stm32f10x__i2c_8h}{stm32f10x\+\_\+i2c.\+h}\end{DoxyCompactItemize}

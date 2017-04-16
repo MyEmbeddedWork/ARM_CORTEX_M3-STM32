@@ -1,0 +1,60 @@
+.TH "SDIO_Response_Registers" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Response_Registers
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_RESP1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP2\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP3\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP4\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_RESP\fP(RESP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SDIO_RESP(RESP)"
+\fBValue:\fP
+.PP
+.nf
+(((RESP) == SDIO_RESP1) || ((RESP) == SDIO_RESP2) || \
+                            ((RESP) == SDIO_RESP3) || ((RESP) == SDIO_RESP4))
+.fi
+.PP
+Definition at line 287 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_RESP1   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 283 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_RESP2   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 284 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_RESP3   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 285 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_RESP4   ((uint32_t)0x0000000C)"
+
+.PP
+Definition at line 286 of file stm32f10x_sdio\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

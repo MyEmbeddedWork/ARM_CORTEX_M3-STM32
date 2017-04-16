@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__fir__decimate__instance__q15" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_decimate_instance_q15</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__q15_1aad9320284218b3aa378527ea518cf093" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_fir_decimate_instance_q15::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>decimation factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3271" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__q15_1ac1e9844488ec717da334fbd4c4f41990" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_decimate_instance_q15::numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3272" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__q15_1a01cacab67e73945e8289075598ede14d" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>q15_t* arm_fir_decimate_instance_q15::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3273" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__q15_1a3f7b5184bb28853ef401b001df121047" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>q15_t* arm_fir_decimate_instance_q15::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3274" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q15 FIR decimator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3270" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3269" bodyend="3275"/>
+    <listofallmembers>
+      <member refid="structarm__fir__decimate__instance__q15_1aad9320284218b3aa378527ea518cf093" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_q15</scope><name>M</name></member>
+      <member refid="structarm__fir__decimate__instance__q15_1ac1e9844488ec717da334fbd4c4f41990" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_q15</scope><name>numTaps</name></member>
+      <member refid="structarm__fir__decimate__instance__q15_1a01cacab67e73945e8289075598ede14d" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_q15</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__decimate__instance__q15_1a3f7b5184bb28853ef401b001df121047" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_q15</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

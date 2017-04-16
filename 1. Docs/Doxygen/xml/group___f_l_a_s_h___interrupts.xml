@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_l_a_s_h___interrupts" kind="group">
+    <compoundname>FLASH_Interrupts</compoundname>
+    <title>FLASH_Interrupts</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupts_1ga61c74493d4c1f36ddaf563719d446a7d" prot="public" static="no">
+        <name>FLASH_IT_ERROR</name>
+        <initializer>((uint32_t)0x00000400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPEC error interrupt source </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="287" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupts_1gaea20e80e1806d58a7544cfe8659e7f11" prot="public" static="no">
+        <name>FLASH_IT_EOP</name>
+        <initializer>((uint32_t)0x00001000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End of FLASH Operation Interrupt source </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="288" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupts_1ga808627239be1bf9c2d8bfed36ec4db19" prot="public" static="no">
+        <name>FLASH_IT_BANK1_ERROR</name>
+        <initializer><ref refid="group___f_l_a_s_h___interrupts_1ga61c74493d4c1f36ddaf563719d446a7d" kindref="member">FLASH_IT_ERROR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPEC BANK1 error interrupt source </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="289" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupts_1gac8825e2ce2c0e6ca63a40a347bd351a9" prot="public" static="no">
+        <name>FLASH_IT_BANK1_EOP</name>
+        <initializer><ref refid="group___f_l_a_s_h___interrupts_1gaea20e80e1806d58a7544cfe8659e7f11" kindref="member">FLASH_IT_EOP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End of FLASH BANK1 Operation Interrupt source </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="290" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupts_1ga46ee77d0be1f3e0a14ded0651163ae11" prot="public" static="no">
+        <name>IS_FLASH_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint32_t)0xFFFFEBFF) == 0x00000000) &amp;&amp; (((IT) != 0x00000000)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="292" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

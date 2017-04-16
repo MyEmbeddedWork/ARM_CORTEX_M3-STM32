@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_e_x_t_i___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>EXTI_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__exti_8h" local="no">stm32f10x_exti.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EXTI_InitTypeDef::EXTI_Line</definition>
+        <argsstring></argsstring>
+        <name>EXTI_Line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the EXTI lines to be enabled or disabled. This parameter can be any combination of <ref refid="group___e_x_t_i___lines" kindref="compound">EXTI_Lines</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="84" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" compoundref="stm32f10x__exti_8c" startline="101" endline="149">EXTI_Init</referencedby>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" compoundref="stm32f10x__exti_8c" startline="157" endline="163">EXTI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" kindref="member">EXTIMode_TypeDef</ref></type>
+        <definition>EXTIMode_TypeDef EXTI_InitTypeDef::EXTI_Mode</definition>
+        <argsstring></argsstring>
+        <name>EXTI_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the mode for the EXTI lines. This parameter can be a value of <ref refid="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" kindref="member">EXTIMode_TypeDef</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="87" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" compoundref="stm32f10x__exti_8c" startline="101" endline="149">EXTI_Init</referencedby>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" compoundref="stm32f10x__exti_8c" startline="157" endline="163">EXTI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___e_x_t_i___exported___types_1ga9da190f5425d1b421a06bced8cc48e9b" kindref="member">EXTITrigger_TypeDef</ref></type>
+        <definition>EXTITrigger_TypeDef EXTI_InitTypeDef::EXTI_Trigger</definition>
+        <argsstring></argsstring>
+        <name>EXTI_Trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the trigger signal active edge for the EXTI lines. This parameter can be a value of <ref refid="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" kindref="member">EXTIMode_TypeDef</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="90" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" compoundref="stm32f10x__exti_8c" startline="101" endline="149">EXTI_Init</referencedby>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" compoundref="stm32f10x__exti_8c" startline="157" endline="163">EXTI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" prot="public" static="no" mutable="no">
+        <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+        <definition>FunctionalState EXTI_InitTypeDef::EXTI_LineCmd</definition>
+        <argsstring></argsstring>
+        <name>EXTI_LineCmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the new state of the selected EXTI lines. This parameter can be set either to ENABLE or DISABLE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="93" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" compoundref="stm32f10x__exti_8c" startline="101" endline="149">EXTI_Init</referencedby>
+        <referencedby refid="group___e_x_t_i___private___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" compoundref="stm32f10x__exti_8c" startline="157" endline="163">EXTI_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>EXTI Init Structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="83" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="82" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" prot="public" virt="non-virtual"><scope>EXTI_InitTypeDef</scope><name>EXTI_Line</name></member>
+      <member refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" prot="public" virt="non-virtual"><scope>EXTI_InitTypeDef</scope><name>EXTI_LineCmd</name></member>
+      <member refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" prot="public" virt="non-virtual"><scope>EXTI_InitTypeDef</scope><name>EXTI_Mode</name></member>
+      <member refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" prot="public" virt="non-virtual"><scope>EXTI_InitTypeDef</scope><name>EXTI_Trigger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___input___capture___selection" kind="group">
+    <compoundname>TIM_Input_Capture_Selection</compoundname>
+    <title>TIM_Input_Capture_Selection</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3" prot="public" static="no">
+        <name>TIM_ICSelection_DirectTI</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to IC1, IC2, IC3 or IC4, respectively </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="576" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144" prot="public" static="no">
+        <name>TIM_ICSelection_IndirectTI</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to IC2, IC1, IC4 or IC3, respectively. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="578" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373" prot="public" static="no">
+        <name>TIM_ICSelection_TRC</name>
+        <initializer>((uint16_t)0x0003)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to TRC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="579" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___selection_1ga623d8592109f4702829ae7fc3806bcb8" prot="public" static="no">
+        <name>IS_TIM_IC_SELECTION</name>
+        <param><defname>SELECTION</defname></param>
+        <initializer>(((SELECTION) == <ref refid="group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3" kindref="member">TIM_ICSelection_DirectTI</ref>) || \
+                                        ((SELECTION) == <ref refid="group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144" kindref="member">TIM_ICSelection_IndirectTI</ref>) || \
+                                        ((SELECTION) == <ref refid="group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373" kindref="member">TIM_ICSelection_TRC</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="580" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="assert_8c" kind="file" language="C++">
+    <compoundname>assert.c</compoundname>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_trace_8h" local="yes">diag/Trace.h</includes>
+    <incdepgraph>
+      <node id="824">
+        <label>assert.h</label>
+      </node>
+      <node id="826">
+        <label>stdint.h</label>
+      </node>
+      <node id="825">
+        <label>stdlib.h</label>
+      </node>
+      <node id="827">
+        <label>diag/Trace.h</label>
+        <link refid="_trace_8h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="828">
+        <label>unistd.h</label>
+      </node>
+      <node id="823">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/assert.c</label>
+        <link refid="assert_8c"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="assert_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __attribute__</definition>
+        <argsstring>((noreturn))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(noreturn)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/assert.c" line="15" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/assert.c" bodystart="15" bodyend="24"/>
+        <references refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37">trace_printf</references>
+        <referencedby refid="namespace____gnu__cxx_1af51888cedbc669a114cd79e39e0cd9be" compoundref="__cxx_8cpp" startline="26" endline="30">__gnu_cxx::__verbose_terminate_handler</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_trace_8h" kindref="compound">diag/Trace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="assert_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" refkind="member"><highlight class="normal"><ref refid="assert_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" kindref="member">__attribute__</ref>((noreturn))</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">__assert_func<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*func,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*failedexpr)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref><sp/>(</highlight><highlight class="stringliteral">&quot;assertion<sp/>\&quot;%s\&quot;<sp/>failed:<sp/>file<sp/>\&quot;%s\&quot;,<sp/>line<sp/>%d%s%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>failedexpr,<sp/>file,<sp/>line,<sp/>func<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>function:<sp/>&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func<sp/>?<sp/>func<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>abort<sp/>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTREACHED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>STM32<sp/>specific,<sp/>but<sp/>can<sp/>be<sp/>used<sp/>on<sp/>other<sp/>platforms<sp/>too.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>you<sp/>need<sp/>it,<sp/>add<sp/>the<sp/>following<sp/>to<sp/>your<sp/>application<sp/>header:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//#ifdef<sp/><sp/>USE_FULL_ASSERT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>assert_param(expr)<sp/>((expr)<sp/>?<sp/>(void)0<sp/>:<sp/>assert_failed((uint8_t<sp/>*)__FILE__,<sp/>__LINE__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>assert_failed(uint8_t*<sp/>file,<sp/>uint32_t<sp/>line);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>assert_param(expr)<sp/>((void)0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//#endif<sp/>//<sp/>USE_FULL_ASSERT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USE_FULL_ASSERT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">assert_failed<sp/>(uint8_t*<sp/>file,<sp/>uint32_t<sp/>line);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>from<sp/>the<sp/>assert_param()<sp/>macro,<sp/>usually<sp/>defined<sp/>in<sp/>the<sp/>stm32f*_conf.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="assert_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" kindref="member">__attribute__</ref>((noreturn,<sp/>weak))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">assert_failed<sp/>(uint8_t*<sp/>file,<sp/>uint32_t<sp/>line)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref><sp/>(</highlight><highlight class="stringliteral">&quot;assert_param()<sp/>failed:<sp/>file<sp/>\&quot;%s\&quot;,<sp/>line<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>file,<sp/>line);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>abort<sp/>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTREACHED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>defined(USE_FULL_ASSERT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/assert.c"/>
+  </compounddef>
+</doxygen>

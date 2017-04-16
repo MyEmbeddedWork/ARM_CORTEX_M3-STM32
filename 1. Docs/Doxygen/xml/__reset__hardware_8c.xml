@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="__reset__hardware_8c" kind="file" language="C++">
+    <compoundname>_reset_hardware.c</compoundname>
+    <includes refid="cmsis__device_8h" local="yes">cmsis_device.h</includes>
+    <incdepgraph>
+      <node id="774">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="767">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_reset_hardware.c</label>
+        <link refid="__reset__hardware_8c"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="771">
+        <label>stdint.h</label>
+      </node>
+      <node id="770">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="768">
+        <label>cmsis_device.h</label>
+        <link refid="cmsis__device_8h"/>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="769">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="__reset__hardware_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __attribute__</definition>
+        <argsstring>((noreturn))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(noreturn)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_reset_hardware.c" line="13" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_reset_hardware.c" bodystart="13" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmsis__device_8h" kindref="compound">cmsis_device.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="__cxx_8cpp_1ab607d1d3eec24589f8cb96ab27b68f3f" refkind="member"><highlight class="normal"><ref refid="__reset__hardware_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" kindref="member">__attribute__</ref>((noreturn))</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1143dec48d60a3d6f238c4798a87759c" kindref="member">NVIC_SystemReset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">__reset_hardware(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>default<sp/>hardware<sp/>reset<sp/>routine;<sp/>it<sp/>can<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>redefined<sp/>in<sp/>the<sp/>application<sp/>for<sp/>more<sp/>complex<sp/>applications.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>from<sp/>_exit().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="__reset__hardware_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" kindref="member">__attribute__</ref>((weak,noreturn))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">__reset_hardware()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1143dec48d60a3d6f238c4798a87759c" kindref="member">NVIC_SystemReset</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_reset_hardware.c"/>
+  </compounddef>
+</doxygen>

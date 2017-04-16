@@ -1,0 +1,41 @@
+.TH "STOP_mode_entry" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+STOP_mode_entry
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_STOPEntry_WFI\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBPWR_STOPEntry_WFE\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_STOP_ENTRY\fP(ENTRY)   (((ENTRY) == \fBPWR_STOPEntry_WFI\fP) || ((ENTRY) == \fBPWR_STOPEntry_WFE\fP))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_PWR_STOP_ENTRY(ENTRY)   (((ENTRY) == \fBPWR_STOPEntry_WFI\fP) || ((ENTRY) == \fBPWR_STOPEntry_WFE\fP))"
+
+.PP
+Definition at line 92 of file stm32f10x_pwr\&.h\&.
+.SS "#define PWR_STOPEntry_WFE   ((uint8_t)0x02)"
+
+.PP
+Definition at line 91 of file stm32f10x_pwr\&.h\&.
+.SS "#define PWR_STOPEntry_WFI   ((uint8_t)0x01)"
+
+.PP
+Definition at line 90 of file stm32f10x_pwr\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

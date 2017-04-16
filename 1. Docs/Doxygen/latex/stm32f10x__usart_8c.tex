@@ -1,0 +1,161 @@
+\hypertarget{stm32f10x__usart_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+usart.c File Reference}
+\label{stm32f10x__usart_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+usart.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+usart.\+c}}
+
+
+This file provides all the U\+S\+A\+RT firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+usart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+rcc.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+usart.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{stm32f10x__usart_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga95f5821be56b1a5dbfdd38fdb37ed54c}{C\+R1\+\_\+\+U\+E\+\_\+\+Set}~((uint16\+\_\+t)0x2000)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga9c75a44192cb3dbbbf509cddfc47481c}{C\+R1\+\_\+\+U\+E\+\_\+\+Reset}~((uint16\+\_\+t)0x\+D\+F\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gae4045dea092c3cbfe07d14fef39195ce}{C\+R1\+\_\+\+W\+A\+K\+E\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F7\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga5cb566b7c5e126e5ef11dd25bba50ffa}{C\+R1\+\_\+\+R\+W\+U\+\_\+\+Set}~((uint16\+\_\+t)0x0002)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga064a46d19ffffddd410e969798d335ee}{C\+R1\+\_\+\+R\+W\+U\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+F\+D)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga2813b7fa1263aecfeefa48f8a55938b9}{C\+R1\+\_\+\+S\+B\+K\+\_\+\+Set}~((uint16\+\_\+t)0x0001)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga67f7dd35ea3d1296677e5fc50b88fa90}{C\+R1\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~((uint16\+\_\+t)0x\+E9\+F3)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga080c343a5a95d4419789b94405c27764}{C\+R2\+\_\+\+Address\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F\+F\+F0)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gabc3f2b022d70a11fd0605e58cb23023f}{C\+R2\+\_\+\+L\+I\+N\+E\+N\+\_\+\+Set}~((uint16\+\_\+t)0x4000)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga7b8fbe7be4c85c16ea1c1e3c9fa95b05}{C\+R2\+\_\+\+L\+I\+N\+E\+N\+\_\+\+Reset}~((uint16\+\_\+t)0x\+B\+F\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga9b365a89de44809a52895090e9050646}{C\+R2\+\_\+\+L\+B\+D\+L\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F\+F\+D\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga8a2294276016f30cb361a7f54ad07cd4}{C\+R2\+\_\+\+S\+T\+O\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~((uint16\+\_\+t)0x\+C\+F\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga846e1873279b2b0798cc34d76bd80592}{C\+R2\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F0\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gab47df7b36b4f1315953f6aa45de2fb61}{C\+R3\+\_\+\+S\+C\+E\+N\+\_\+\+Set}~((uint16\+\_\+t)0x0020)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga294c473dc7f8ff3e9cbaa0675c8c75f3}{C\+R3\+\_\+\+S\+C\+E\+N\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+D\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga950cc9f7251709854754add7d9aaca60}{C\+R3\+\_\+\+N\+A\+C\+K\+\_\+\+Set}~((uint16\+\_\+t)0x0010)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gabed0cac273ff4faf009e8c35243c1e10}{C\+R3\+\_\+\+N\+A\+C\+K\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+E\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga0c5c30ea9777d0c8c6f1b5ff85dfca3c}{C\+R3\+\_\+\+H\+D\+S\+E\+L\+\_\+\+Set}~((uint16\+\_\+t)0x0008)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga762c72448ba24f3487dfa457a8dcc9fc}{C\+R3\+\_\+\+H\+D\+S\+E\+L\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+F7)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gaea5d8d002a34c3a587719533db2c17f9}{C\+R3\+\_\+\+I\+R\+L\+P\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F\+F\+F\+B)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga085e8ef6bc8f5de45c5be95971715f7f}{C\+R3\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F\+C\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gad5dd1d08f3836f9a3c3f3cc0c66a8b8f}{C\+R3\+\_\+\+I\+R\+E\+N\+\_\+\+Set}~((uint16\+\_\+t)0x0002)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gad1520358de97e48fe18780e5cc5296bd}{C\+R3\+\_\+\+I\+R\+E\+N\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+F\+D)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga2fe593d0c308e2245bb66905930b3ebb}{G\+T\+P\+R\+\_\+\+L\+S\+B\+\_\+\+Mask}~((uint16\+\_\+t)0x00\+F\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga405b4222892bafdf1d084de5efd24d70}{G\+T\+P\+R\+\_\+\+M\+S\+B\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F\+F00)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga401c753d4de6ab56fcb026c91b8c8487}{I\+T\+\_\+\+Mask}~((uint16\+\_\+t)0x001\+F)
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga11495857ca81074790c376317382140f}{C\+R1\+\_\+\+O\+V\+E\+R8\+\_\+\+Set}~((\hyperlink{group___exported__types_gace9d960e74685e2cd84b36132dbbf8aa}{u16})0x8000)  /$\ast$ U\+S\+A\+R\+T O\+V\+E\+R8 mode Enable Mask $\ast$/
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gaf84165f2974000906c495b3c27dc5121}{C\+R1\+\_\+\+O\+V\+E\+R8\+\_\+\+Reset}~((\hyperlink{group___exported__types_gace9d960e74685e2cd84b36132dbbf8aa}{u16})0x7\+F\+F\+F)  /$\ast$ U\+S\+A\+R\+T O\+V\+E\+R8 mode Disable Mask $\ast$/
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_gac512024dda541435acfe0b50de925105}{C\+R3\+\_\+\+O\+N\+E\+B\+I\+T\+E\+\_\+\+Set}~((\hyperlink{group___exported__types_gace9d960e74685e2cd84b36132dbbf8aa}{u16})0x0800)  /$\ast$ U\+S\+A\+R\+T O\+N\+E\+B\+I\+T\+E mode Enable Mask $\ast$/
+\item 
+\#define \hyperlink{group___u_s_a_r_t___private___defines_ga55dc289819dde550630df98267bbef52}{C\+R3\+\_\+\+O\+N\+E\+B\+I\+T\+E\+\_\+\+Reset}~((\hyperlink{group___exported__types_gace9d960e74685e2cd84b36132dbbf8aa}{u16})0x\+F7\+F\+F)  /$\ast$ U\+S\+A\+R\+T O\+N\+E\+B\+I\+T\+E mode Disable Mask $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga2f8e1ce72da21b6539d8e1f299ec3b0d}{U\+S\+A\+R\+T\+\_\+\+De\+Init} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx)
+\begin{DoxyCompactList}\small\item\em Deinitializes the U\+S\+A\+R\+Tx peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga98da340ea0324002ba1b4263e91ab2ff}{U\+S\+A\+R\+T\+\_\+\+Init} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{struct_u_s_a_r_t___init_type_def}{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def} $\ast$U\+S\+A\+R\+T\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the U\+S\+A\+R\+Tx peripheral according to the specified parameters in the U\+S\+A\+R\+T\+\_\+\+Init\+Struct . \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga34e1faa2f312496c16cfd05155f4c8b1}{U\+S\+A\+R\+T\+\_\+\+Struct\+Init} (\hyperlink{struct_u_s_a_r_t___init_type_def}{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def} $\ast$U\+S\+A\+R\+T\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each U\+S\+A\+R\+T\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gadb50c7a2175c91acd3728f8eefd0c63d}{U\+S\+A\+R\+T\+\_\+\+Clock\+Init} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{struct_u_s_a_r_t___clock_init_type_def}{U\+S\+A\+R\+T\+\_\+\+Clock\+Init\+Type\+Def} $\ast$U\+S\+A\+R\+T\+\_\+\+Clock\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the U\+S\+A\+R\+Tx peripheral Clock according to the specified parameters in the U\+S\+A\+R\+T\+\_\+\+Clock\+Init\+Struct . \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga59df27d0adda18b16ee28d47672cc724}{U\+S\+A\+R\+T\+\_\+\+Clock\+Struct\+Init} (\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{U\+S\+A\+R\+T\+\_\+\+Clock\+Init\+Type\+Def} $\ast$U\+S\+A\+R\+T\+\_\+\+Clock\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each U\+S\+A\+R\+T\+\_\+\+Clock\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga45e51626739c5f22a6567c8a85d1d85e}{U\+S\+A\+R\+T\+\_\+\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified U\+S\+A\+RT peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga6d8f2dd1f34060ae7e386e3e5d56b6f6}{U\+S\+A\+R\+T\+\_\+\+I\+T\+Config} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified U\+S\+A\+RT interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga902857f199ebfba21c63d725354af66f}{U\+S\+A\+R\+T\+\_\+\+D\+M\+A\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+D\+M\+A\+Req, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+R\+T�s D\+MA interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga65ec9928817f3f031dd9a4dfc95d6666}{U\+S\+A\+R\+T\+\_\+\+Set\+Address} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint8\+\_\+t U\+S\+A\+R\+T\+\_\+\+Address)
+\begin{DoxyCompactList}\small\item\em Sets the address of the U\+S\+A\+RT node. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga4965417c2412c36e462fcad50a8d5393}{U\+S\+A\+R\+T\+\_\+\+Wake\+Up\+Config} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+Wake\+Up)
+\begin{DoxyCompactList}\small\item\em Selects the U\+S\+A\+RT Wake\+Up method. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gac27b78ce445a16fe33851d2f87781c02}{U\+S\+A\+R\+T\+\_\+\+Receiver\+Wake\+Up\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Determines if the U\+S\+A\+RT is in mute mode or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga7bc2d291831cbc5e53e73337308029b5}{U\+S\+A\+R\+T\+\_\+\+L\+I\+N\+Break\+Detect\+Length\+Config} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+L\+I\+N\+Break\+Detect\+Length)
+\begin{DoxyCompactList}\small\item\em Sets the U\+S\+A\+RT L\+IN Break detection length. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga9fdd6296f4ca4acdfcbd58bf56bd4185}{U\+S\+A\+R\+T\+\_\+\+L\+I\+N\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+R\+T�s L\+IN mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga0b43d42da9540f446d494bf69823c6fb}{U\+S\+A\+R\+T\+\_\+\+Send\+Data} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Transmits single data through the U\+S\+A\+R\+Tx peripheral. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___u_s_a_r_t___private___functions_gac67a91845b0b1d54d31bdfb1c5e9867c}{U\+S\+A\+R\+T\+\_\+\+Receive\+Data} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the U\+S\+A\+R\+Tx peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga39a3d33e23ee28529fa8f7259ce6811e}{U\+S\+A\+R\+T\+\_\+\+Send\+Break} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx)
+\begin{DoxyCompactList}\small\item\em Transmits break characters. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gac4a35c6acd71ae7e0d67c1f03f0a8777}{U\+S\+A\+R\+T\+\_\+\+Set\+Guard\+Time} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint8\+\_\+t U\+S\+A\+R\+T\+\_\+\+Guard\+Time)
+\begin{DoxyCompactList}\small\item\em Sets the specified U\+S\+A\+RT guard time. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gaf5da8f2eee8245425584d85d4f62cc33}{U\+S\+A\+R\+T\+\_\+\+Set\+Prescaler} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint8\+\_\+t U\+S\+A\+R\+T\+\_\+\+Prescaler)
+\begin{DoxyCompactList}\small\item\em Sets the system clock prescaler. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gabd1347e244c623447151ba3a5e986c5f}{U\+S\+A\+R\+T\+\_\+\+Smart\+Card\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+R\+T�s Smart Card mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga62e22f47e38aa53f2edce8771f7a5dfa}{U\+S\+A\+R\+T\+\_\+\+Smart\+Card\+N\+A\+C\+K\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables N\+A\+CK transmission. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gaaa23b05fe0e1896bad90da7f82750831}{U\+S\+A\+R\+T\+\_\+\+Half\+Duplex\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+R\+T�s Half Duplex communication. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga3897bab07491d9239f8a238a9a7cddea}{U\+S\+A\+R\+T\+\_\+\+Over\+Sampling8\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+RT\textquotesingle{}s 8x oversampling mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga3ed89ea8765d851510cfe90f7d90cbbb}{U\+S\+A\+R\+T\+\_\+\+One\+Bit\+Method\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+RT\textquotesingle{}s one bit sampling method. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga81a0cd36199040bf6d266b57babd678e}{U\+S\+A\+R\+T\+\_\+\+Ir\+D\+A\+Config} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+Ir\+D\+A\+Mode)
+\begin{DoxyCompactList}\small\item\em Configures the U\+S\+A\+RT\textquotesingle{}s Ir\+DA interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gabff56ebb494fdfadcc6ef4fe9ac8dd24}{U\+S\+A\+R\+T\+\_\+\+Ir\+D\+A\+Cmd} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the U\+S\+A\+RT\textquotesingle{}s Ir\+DA interface. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___u_s_a_r_t___private___functions_ga144630722defc9e312f0ad280b68e9da}{U\+S\+A\+R\+T\+\_\+\+Get\+Flag\+Status} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified U\+S\+A\+RT flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_gad962e148fc466ae1b45b288f6c91d966}{U\+S\+A\+R\+T\+\_\+\+Clear\+Flag} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the U\+S\+A\+R\+Tx\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___u_s_a_r_t___private___functions_ga93d8f031241bcdbe938d091a85295445}{U\+S\+A\+R\+T\+\_\+\+Get\+I\+T\+Status} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified U\+S\+A\+RT interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___private___functions_ga1fc25d0338695063be5e50156955d9bc}{U\+S\+A\+R\+T\+\_\+\+Clear\+I\+T\+Pending\+Bit} (\hyperlink{struct_u_s_a_r_t___type_def}{U\+S\+A\+R\+T\+\_\+\+Type\+Def} $\ast$U\+S\+A\+R\+Tx, uint16\+\_\+t U\+S\+A\+R\+T\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the U\+S\+A\+R\+Tx\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the U\+S\+A\+RT firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

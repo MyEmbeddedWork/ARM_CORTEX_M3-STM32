@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i___i2_s__interrupts__definition" kind="group">
+    <compoundname>SPI_I2S_interrupts_definition</compoundname>
+    <title>SPI_I2S_interrupts_definition</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga0f192977fdb12c40d35672b8ae074724" prot="public" static="no">
+        <name>SPI_I2S_IT_TXE</name>
+        <initializer>((uint8_t)0x71)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="388" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1gae46dd53cd2e4ad8b8a7836d3dcec57ea" prot="public" static="no">
+        <name>SPI_I2S_IT_RXNE</name>
+        <initializer>((uint8_t)0x60)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="389" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga1d9d4916bf7ae315f23a54ecfbcd9157" prot="public" static="no">
+        <name>SPI_I2S_IT_ERR</name>
+        <initializer>((uint8_t)0x50)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="390" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga3ec2f6950d7ff801f992e65593c3365e" prot="public" static="no">
+        <name>IS_SPI_I2S_CONFIG_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga0f192977fdb12c40d35672b8ae074724" kindref="member">SPI_I2S_IT_TXE</ref>) || \
+                                 ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1gae46dd53cd2e4ad8b8a7836d3dcec57ea" kindref="member">SPI_I2S_IT_RXNE</ref>) || \
+                                 ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga1d9d4916bf7ae315f23a54ecfbcd9157" kindref="member">SPI_I2S_IT_ERR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="391" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga279c30176e8ff7e2ec299774a2e88f45" prot="public" static="no">
+        <name>SPI_I2S_IT_OVR</name>
+        <initializer>((uint8_t)0x56)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="394" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga0b9780d5f31fd80f4d0fa7d6860041e9" prot="public" static="no">
+        <name>SPI_IT_MODF</name>
+        <initializer>((uint8_t)0x55)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="395" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga9aa97a5ce8d3500dc14ca4e30eada199" prot="public" static="no">
+        <name>SPI_IT_CRCERR</name>
+        <initializer>((uint8_t)0x54)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="396" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1ga54aba7dc06f97fb4839de5f42bd5a47d" prot="public" static="no">
+        <name>I2S_IT_UDR</name>
+        <initializer>((uint8_t)0x53)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="397" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1gabeb917a0a708af0439f753a5f4af4c5e" prot="public" static="no">
+        <name>IS_SPI_I2S_CLEAR_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga9aa97a5ce8d3500dc14ca4e30eada199" kindref="member">SPI_IT_CRCERR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="398" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s__interrupts__definition_1gacb2949c066a74f1c4ef8c6a0d4e14a0c" prot="public" static="no">
+        <name>IS_SPI_I2S_GET_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1gae46dd53cd2e4ad8b8a7836d3dcec57ea" kindref="member">SPI_I2S_IT_RXNE</ref>) || ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga0f192977fdb12c40d35672b8ae074724" kindref="member">SPI_I2S_IT_TXE</ref>) || \
+                               ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga54aba7dc06f97fb4839de5f42bd5a47d" kindref="member">I2S_IT_UDR</ref>) || ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga9aa97a5ce8d3500dc14ca4e30eada199" kindref="member">SPI_IT_CRCERR</ref>) || \
+                               ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga0b9780d5f31fd80f4d0fa7d6860041e9" kindref="member">SPI_IT_MODF</ref>) || ((IT) == <ref refid="group___s_p_i___i2_s__interrupts__definition_1ga279c30176e8ff7e2ec299774a2e88f45" kindref="member">SPI_I2S_IT_OVR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="399" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

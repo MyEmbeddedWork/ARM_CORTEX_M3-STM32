@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_d_a_c___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>DAC_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__dac_8h" local="no">stm32f10x_dac.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_a_c___init_type_def_1a7b26ebaeb51a0157a781f7de8ba779e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DAC_InitTypeDef::DAC_Trigger</definition>
+        <argsstring></argsstring>
+        <name>DAC_Trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the external trigger for the selected DAC channel. This parameter can be a value of <ref refid="group___d_a_c__trigger__selection" kindref="compound">DAC_trigger_selection</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="52" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="group___d_a_c___private___functions_1ga7c59850468ed4bf0659663fe495441da" compoundref="stm32f10x__dac_8c" startline="117" endline="142">DAC_Init</referencedby>
+        <referencedby refid="group___d_a_c___private___functions_1gadfc270974d54cb5fa5f92556015c4046" compoundref="stm32f10x__dac_8c" startline="150" endline="161">DAC_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_a_c___init_type_def_1a6753e78ddd2dc8273444ba01a272d63a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DAC_InitTypeDef::DAC_WaveGeneration</definition>
+        <argsstring></argsstring>
+        <name>DAC_WaveGeneration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether DAC channel noise waves or triangle waves are generated, or whether no wave is generated. This parameter can be a value of <ref refid="group___d_a_c__wave__generation" kindref="compound">DAC_wave_generation</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="55" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="group___d_a_c___private___functions_1ga7c59850468ed4bf0659663fe495441da" compoundref="stm32f10x__dac_8c" startline="117" endline="142">DAC_Init</referencedby>
+        <referencedby refid="group___d_a_c___private___functions_1gadfc270974d54cb5fa5f92556015c4046" compoundref="stm32f10x__dac_8c" startline="150" endline="161">DAC_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_a_c___init_type_def_1a27ed27a544d50781b20d59cc55e6cef8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DAC_InitTypeDef::DAC_LFSRUnmask_TriangleAmplitude</definition>
+        <argsstring></argsstring>
+        <name>DAC_LFSRUnmask_TriangleAmplitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the LFSR mask for noise wave generation or the maximum amplitude triangle generation for the DAC channel. This parameter can be a value of <ref refid="group___d_a_c__lfsrunmask__triangleamplitude" kindref="compound">DAC_lfsrunmask_triangleamplitude</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="59" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="group___d_a_c___private___functions_1ga7c59850468ed4bf0659663fe495441da" compoundref="stm32f10x__dac_8c" startline="117" endline="142">DAC_Init</referencedby>
+        <referencedby refid="group___d_a_c___private___functions_1gadfc270974d54cb5fa5f92556015c4046" compoundref="stm32f10x__dac_8c" startline="150" endline="161">DAC_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_a_c___init_type_def_1ad3e9e01486443e99f19e65a446b03ca6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DAC_InitTypeDef::DAC_OutputBuffer</definition>
+        <argsstring></argsstring>
+        <name>DAC_OutputBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the DAC channel output buffer is enabled or disabled. This parameter can be a value of <ref refid="group___d_a_c__output__buffer" kindref="compound">DAC_output_buffer</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="63" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="group___d_a_c___private___functions_1ga7c59850468ed4bf0659663fe495441da" compoundref="stm32f10x__dac_8c" startline="117" endline="142">DAC_Init</referencedby>
+        <referencedby refid="group___d_a_c___private___functions_1gadfc270974d54cb5fa5f92556015c4046" compoundref="stm32f10x__dac_8c" startline="150" endline="161">DAC_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DAC Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="51" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="50" bodyend="65"/>
+    <listofallmembers>
+      <member refid="struct_d_a_c___init_type_def_1a27ed27a544d50781b20d59cc55e6cef8" prot="public" virt="non-virtual"><scope>DAC_InitTypeDef</scope><name>DAC_LFSRUnmask_TriangleAmplitude</name></member>
+      <member refid="struct_d_a_c___init_type_def_1ad3e9e01486443e99f19e65a446b03ca6" prot="public" virt="non-virtual"><scope>DAC_InitTypeDef</scope><name>DAC_OutputBuffer</name></member>
+      <member refid="struct_d_a_c___init_type_def_1a7b26ebaeb51a0157a781f7de8ba779e5" prot="public" virt="non-virtual"><scope>DAC_InitTypeDef</scope><name>DAC_Trigger</name></member>
+      <member refid="struct_d_a_c___init_type_def_1a6753e78ddd2dc8273444ba01a272d63a" prot="public" virt="non-virtual"><scope>DAC_InitTypeDef</scope><name>DAC_WaveGeneration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

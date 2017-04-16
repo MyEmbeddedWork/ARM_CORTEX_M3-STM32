@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_d_w_t___type" kind="struct" language="C++" prot="public">
+    <compoundname>DWT_Type</compoundname>
+    <includes refid="core__cm3_8h" local="no">core_cm3.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_w_t___type_1add790c53410023b3b581919bb681fe2a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::CTRL</definition>
+        <argsstring></argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 (R/W) Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="848" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a102eaa529d9098242851cb57c52b42d9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::CYCCNT</definition>
+        <argsstring></argsstring>
+        <name>CYCCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x004 (R/W) Cycle Count Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="849" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a2c08096c82abe245c0fa97badc458154" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::CPICNT</definition>
+        <argsstring></argsstring>
+        <name>CPICNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x008 (R/W) CPI Count Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="850" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a9fe20c16c5167ca61486caf6832686d1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::EXCCNT</definition>
+        <argsstring></argsstring>
+        <name>EXCCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x00C (R/W) Exception Overhead Count Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="851" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a416a54e2084ce66e5ca74f152a5ecc70" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::SLEEPCNT</definition>
+        <argsstring></argsstring>
+        <name>SLEEPCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x010 (R/W) Sleep Count Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="852" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1acc05d89bdb1b4fe2fa499920ec02d0b1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::LSUCNT</definition>
+        <argsstring></argsstring>
+        <name>LSUCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x014 (R/W) LSU Count Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="853" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a1cfc48384ebd8fd8fb7e5d955aae6c97" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::FOLDCNT</definition>
+        <argsstring></argsstring>
+        <name>FOLDCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x018 (R/W) Folded-instruction Count Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="854" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a6353ca1d1ad9bc1be05d3b5632960113" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t DWT_Type::PCSR</definition>
+        <argsstring></argsstring>
+        <name>PCSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x01C (R/ ) Program Counter Sample Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="855" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a61c2965af5bc0643f9af65620b0e67c9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::COMP0</definition>
+        <argsstring></argsstring>
+        <name>COMP0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x020 (R/W) Comparator Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="856" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a821eb5e71f340ec077efc064cfc567db" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::MASK0</definition>
+        <argsstring></argsstring>
+        <name>MASK0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x024 (R/W) Mask Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="857" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a579ae082f58a0317b7ef029b20f52889" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::FUNCTION0</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x028 (R/W) Function Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="858" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1aef6d91fd3df2a013546764fe0e4ad7a8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DWT_Type::RESERVED0</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="859" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a38714af6b7fa7c64d68f5e1efbe7a931" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::COMP1</definition>
+        <argsstring></argsstring>
+        <name>COMP1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x030 (R/W) Comparator Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="860" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1aabf94936c9340e62fed836dcfb152405" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::MASK1</definition>
+        <argsstring></argsstring>
+        <name>MASK1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x034 (R/W) Mask Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="861" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a8dfcf25675f9606aa305c46e85182e4e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::FUNCTION1</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x038 (R/W) Function Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="862" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1af4ad5239d7d9b1990005f75464754594" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DWT_Type::RESERVED1</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="863" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a5ae6dde39989f27bae90afc2347deb46" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::COMP2</definition>
+        <argsstring></argsstring>
+        <name>COMP2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x040 (R/W) Comparator Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="864" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a00ac4d830dfe0070a656cda9baed170f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::MASK2</definition>
+        <argsstring></argsstring>
+        <name>MASK2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x044 (R/W) Mask Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="865" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1ab1b60d6600c38abae515bab8e86a188f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::FUNCTION2</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x048 (R/W) Function Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="866" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a61fdbdfbc267bb6ae3b5cff18f406f2f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DWT_Type::RESERVED2</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="867" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a85eb73d1848ac3f82d39d6c3e8910847" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::COMP3</definition>
+        <argsstring></argsstring>
+        <name>COMP3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x050 (R/W) Comparator Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="868" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a2a509d8505c37a3b64f6b24993df5f3f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::MASK3</definition>
+        <argsstring></argsstring>
+        <name>MASK3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x054 (R/W) Mask Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="869" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a52d4ff278fae6f9216c63b74ce328841" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t DWT_Type::FUNCTION3</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x058 (R/W) Function Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="870" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a668febfad1bc5035263c1115af6b4879" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DWT_Type::RESERVED3[981U]</definition>
+        <argsstring>[981U]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1134" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a4b8037802a3b25e367f0977d86f754ad" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t DWT_Type::LAR</definition>
+        <argsstring></argsstring>
+        <name>LAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFB0 ( W) Lock Access Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1135" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_w_t___type_1a4281befcc19ee69afdd50801cb1c9bcf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t DWT_Type::LSR</definition>
+        <argsstring></argsstring>
+        <name>LSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFB4 (R ) Lock Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1136" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Data Watchpoint and Trace Register (DWT). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="847" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="846" bodyend="871"/>
+    <listofallmembers>
+      <member refid="struct_d_w_t___type_1a61c2965af5bc0643f9af65620b0e67c9" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>COMP0</name></member>
+      <member refid="struct_d_w_t___type_1a38714af6b7fa7c64d68f5e1efbe7a931" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>COMP1</name></member>
+      <member refid="struct_d_w_t___type_1a5ae6dde39989f27bae90afc2347deb46" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>COMP2</name></member>
+      <member refid="struct_d_w_t___type_1a85eb73d1848ac3f82d39d6c3e8910847" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>COMP3</name></member>
+      <member refid="struct_d_w_t___type_1a2c08096c82abe245c0fa97badc458154" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>CPICNT</name></member>
+      <member refid="struct_d_w_t___type_1add790c53410023b3b581919bb681fe2a" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>CTRL</name></member>
+      <member refid="struct_d_w_t___type_1a102eaa529d9098242851cb57c52b42d9" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>CYCCNT</name></member>
+      <member refid="struct_d_w_t___type_1a9fe20c16c5167ca61486caf6832686d1" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>EXCCNT</name></member>
+      <member refid="struct_d_w_t___type_1a1cfc48384ebd8fd8fb7e5d955aae6c97" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>FOLDCNT</name></member>
+      <member refid="struct_d_w_t___type_1a579ae082f58a0317b7ef029b20f52889" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>FUNCTION0</name></member>
+      <member refid="struct_d_w_t___type_1a8dfcf25675f9606aa305c46e85182e4e" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>FUNCTION1</name></member>
+      <member refid="struct_d_w_t___type_1ab1b60d6600c38abae515bab8e86a188f" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>FUNCTION2</name></member>
+      <member refid="struct_d_w_t___type_1a52d4ff278fae6f9216c63b74ce328841" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>FUNCTION3</name></member>
+      <member refid="struct_d_w_t___type_1a4b8037802a3b25e367f0977d86f754ad" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>LAR</name></member>
+      <member refid="struct_d_w_t___type_1a4281befcc19ee69afdd50801cb1c9bcf" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>LSR</name></member>
+      <member refid="struct_d_w_t___type_1acc05d89bdb1b4fe2fa499920ec02d0b1" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>LSUCNT</name></member>
+      <member refid="struct_d_w_t___type_1a821eb5e71f340ec077efc064cfc567db" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>MASK0</name></member>
+      <member refid="struct_d_w_t___type_1aabf94936c9340e62fed836dcfb152405" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>MASK1</name></member>
+      <member refid="struct_d_w_t___type_1a00ac4d830dfe0070a656cda9baed170f" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>MASK2</name></member>
+      <member refid="struct_d_w_t___type_1a2a509d8505c37a3b64f6b24993df5f3f" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>MASK3</name></member>
+      <member refid="struct_d_w_t___type_1a6353ca1d1ad9bc1be05d3b5632960113" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>PCSR</name></member>
+      <member refid="struct_d_w_t___type_1aef6d91fd3df2a013546764fe0e4ad7a8" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>RESERVED0</name></member>
+      <member refid="struct_d_w_t___type_1af4ad5239d7d9b1990005f75464754594" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>RESERVED1</name></member>
+      <member refid="struct_d_w_t___type_1a61fdbdfbc267bb6ae3b5cff18f406f2f" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>RESERVED2</name></member>
+      <member refid="struct_d_w_t___type_1a668febfad1bc5035263c1115af6b4879" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>RESERVED3</name></member>
+      <member refid="struct_d_w_t___type_1a416a54e2084ce66e5ca74f152a5ecc70" prot="public" virt="non-virtual"><scope>DWT_Type</scope><name>SLEEPCNT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

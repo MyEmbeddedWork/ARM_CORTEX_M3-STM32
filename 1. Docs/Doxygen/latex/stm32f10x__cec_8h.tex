@@ -1,0 +1,141 @@
+\hypertarget{stm32f10x__cec_8h}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+cec.h File Reference}
+\label{stm32f10x__cec_8h}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+cec.\+h@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+cec.\+h}}
+
+
+This file contains all the functions prototypes for the C\+EC firmware library.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+cec.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__cec_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f10x__cec_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_e_c___init_type_def}{C\+E\+C\+\_\+\+Init\+Type\+Def}
+\begin{DoxyCompactList}\small\item\em C\+EC Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___c_e_c___bit_timing___mode_gaf6866e5087bb01c1ea4e20a207a1f691}{C\+E\+C\+\_\+\+Bit\+Timing\+Std\+Mode}~((uint16\+\_\+t)0x00)
+\item 
+\#define \hyperlink{group___c_e_c___bit_timing___mode_ga4fd44675c774985d1f6cd8976b18c947}{C\+E\+C\+\_\+\+Bit\+Timing\+Err\+Free\+Mode}~\hyperlink{group___peripheral___registers___bits___definition_ga8b06cd4e47f4235d8880e1ba0e56e2d7}{C\+E\+C\+\_\+\+C\+F\+G\+R\+\_\+\+B\+T\+EM}
+\item 
+\#define \hyperlink{group___c_e_c___bit_timing___mode_ga55494269b2c9c55c11130a429f418a8d}{I\+S\+\_\+\+C\+E\+C\+\_\+\+B\+I\+T\+\_\+\+T\+I\+M\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define \hyperlink{group___c_e_c___bit_period___mode_ga746ce0a831dfd76a47add310662c7f07}{C\+E\+C\+\_\+\+Bit\+Period\+Std\+Mode}~((uint16\+\_\+t)0x00)
+\item 
+\#define \hyperlink{group___c_e_c___bit_period___mode_ga5bf4c1b257b837770d4d59c93cca6902}{C\+E\+C\+\_\+\+Bit\+Period\+Flexible\+Mode}~\hyperlink{group___peripheral___registers___bits___definition_ga48c747693ec4dac8e4288ae4c0949def}{C\+E\+C\+\_\+\+C\+F\+G\+R\+\_\+\+B\+P\+EM}
+\item 
+\#define \hyperlink{group___c_e_c___bit_period___mode_ga3414347854a83bf70748624ec5b8dd49}{I\+S\+\_\+\+C\+E\+C\+\_\+\+B\+I\+T\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define \hyperlink{group___c_e_c__interrupts__definition_ga25f97d245f29e04a2d2bbc840389e6b5}{C\+E\+C\+\_\+\+I\+T\+\_\+\+T\+E\+RR}~\hyperlink{group___peripheral___registers___bits___definition_ga273caacb035cb2ec64c721fa6c747c35}{C\+E\+C\+\_\+\+C\+S\+R\+\_\+\+T\+E\+RR}
+\item 
+\#define \hyperlink{group___c_e_c__interrupts__definition_ga12b00fb3989f9ce9f2f7fc0094c0747d}{C\+E\+C\+\_\+\+I\+T\+\_\+\+T\+B\+T\+RF}~\hyperlink{group___peripheral___registers___bits___definition_ga650bba50140fa01d98abe80bf004a9b6}{C\+E\+C\+\_\+\+C\+S\+R\+\_\+\+T\+B\+T\+RF}
+\item 
+\#define \hyperlink{group___c_e_c__interrupts__definition_gac015ebba728a69eeb84be1bc56a58ac0}{C\+E\+C\+\_\+\+I\+T\+\_\+\+R\+E\+RR}~\hyperlink{group___peripheral___registers___bits___definition_ga2e33f1d4724efa45fce87ae2fcba6cff}{C\+E\+C\+\_\+\+C\+S\+R\+\_\+\+R\+E\+RR}
+\item 
+\#define \hyperlink{group___c_e_c__interrupts__definition_ga42834131bf077a878e84470ae98f1bb4}{C\+E\+C\+\_\+\+I\+T\+\_\+\+R\+B\+TF}~\hyperlink{group___peripheral___registers___bits___definition_gaa325807f8f3d4bdf8e989eeef208ca5a}{C\+E\+C\+\_\+\+C\+S\+R\+\_\+\+R\+B\+TF}
+\item 
+\#define \hyperlink{group___c_e_c__interrupts__definition_ga7f553a4a3346c676101d81a024a9cba8}{I\+S\+\_\+\+C\+E\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\item 
+\#define \hyperlink{group___c_e_c___own___address_ga0659314b0be6092e73aa373394816557}{I\+S\+\_\+\+C\+E\+C\+\_\+\+A\+D\+D\+R\+E\+SS}(A\+D\+D\+R\+E\+SS)~((A\+D\+D\+R\+E\+SS) $<$ 0x10)
+\item 
+\#define \hyperlink{group___c_e_c___prescaler_ga88ad62af56298609444942b8f05b6d23}{I\+S\+\_\+\+C\+E\+C\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}(P\+R\+E\+S\+C\+A\+L\+ER)~((P\+R\+E\+S\+C\+A\+L\+ER) $<$= 0x3\+F\+F\+F)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_ga66e91438a7df5d00db3c5410d8f7d456}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+B\+TE}~((uint32\+\_\+t)0x10010000)
+\begin{DoxyCompactList}\small\item\em E\+SR register flags. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gaf2a5d5dcbc57fc0cf7cfa988533a2a09}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+B\+PE}~((uint32\+\_\+t)0x10020000)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gafdfca815014dee4a458083337795c336}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+B\+T\+FE}~((uint32\+\_\+t)0x10040000)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gac77db62c05af2462ed3f1b64cef2e136}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+BE}~((uint32\+\_\+t)0x10080000)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_ga1583b7a221e54f2f19cb121bf310547c}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+A\+C\+KE}~((uint32\+\_\+t)0x10100000)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gaf751970725df12976dc6c8356910143a}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+L\+I\+NE}~((uint32\+\_\+t)0x10200000)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gaae90fd2f95085e113b6943bb35d899ba}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+T\+B\+T\+FE}~((uint32\+\_\+t)0x10400000)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gad0adfb11294f562f2c8dc555f69e25e0}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+T\+E\+OM}~((uint32\+\_\+t)0x00000002)
+\begin{DoxyCompactList}\small\item\em C\+SR register flags. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___c_e_c__flags__definition_ga7edc608ca7b4ea74dd4d795fa3214c11}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+T\+E\+RR}~((uint32\+\_\+t)0x00000004)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gaeb02634fdd06f4ea0990e2cf23cf200e}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+T\+B\+T\+RF}~((uint32\+\_\+t)0x00000008)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_ga4e352d4f48e3b197edf150860703d2bf}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+S\+OM}~((uint32\+\_\+t)0x00000010)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gaffeaec4eafbf1efbd88139b9bb0654a7}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+OM}~((uint32\+\_\+t)0x00000020)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gac2376c2b958536ab414574f60cb5d75a}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+RR}~((uint32\+\_\+t)0x00000040)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_gae73c6ec73ab8ad57b18d3bd416baf2d3}{C\+E\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+B\+TF}~((uint32\+\_\+t)0x00000080)
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_ga418911667f82a12dd097f7fac7ad4e89}{I\+S\+\_\+\+C\+E\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(F\+L\+AG)~((((F\+L\+AG) \& (uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F03) == 0x00) \&\& ((\+F\+L\+A\+G) != 0x00))
+\item 
+\#define \hyperlink{group___c_e_c__flags__definition_ga929b30d90f6807e9f72976596b0b850b}{I\+S\+\_\+\+C\+E\+C\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(F\+L\+AG)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___c_e_c___exported___functions_ga604c3b15b51a46303c201fa3deac2212}{C\+E\+C\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the C\+EC peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_gaf48aee745a16370372b3eaa7cf3ed22b}{C\+E\+C\+\_\+\+Init} (\hyperlink{struct_c_e_c___init_type_def}{C\+E\+C\+\_\+\+Init\+Type\+Def} $\ast$C\+E\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the C\+EC peripheral according to the specified parameters in the C\+E\+C\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_ga0c8efa79e5768930e567b3b3ed6e09e9}{C\+E\+C\+\_\+\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified C\+EC peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_ga8be87c514505cf82eb29334f054fc0bc}{C\+E\+C\+\_\+\+I\+T\+Config} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\+EC interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_gacad422ef1f50246b2021b41835b8a95c}{C\+E\+C\+\_\+\+Own\+Address\+Config} (uint8\+\_\+t C\+E\+C\+\_\+\+Own\+Address)
+\begin{DoxyCompactList}\small\item\em Defines the Own Address of the C\+EC device. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_gad2fc626e28a82008a29f062975a9af11}{C\+E\+C\+\_\+\+Set\+Prescaler} (uint16\+\_\+t C\+E\+C\+\_\+\+Prescaler)
+\begin{DoxyCompactList}\small\item\em Sets the C\+EC prescaler value. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_ga6897ab26d8f909f9160e9fac54b97441}{C\+E\+C\+\_\+\+Send\+Data\+Byte} (uint8\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Transmits single data through the C\+EC peripheral. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group___c_e_c___exported___functions_ga165837bff6292e7674eff6f8b230da97}{C\+E\+C\+\_\+\+Receive\+Data\+Byte} (void)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the C\+EC peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_ga71e700461ffe7820d9e1c75da65fd0fb}{C\+E\+C\+\_\+\+Start\+Of\+Message} (void)
+\begin{DoxyCompactList}\small\item\em Starts a new message. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_ga1e2cf6e3a1ac891f2814f9d3f4043574}{C\+E\+C\+\_\+\+End\+Of\+Message\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Transmits message with or without an E\+OM bit. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___c_e_c___exported___functions_gaf920706cb350182bf0728c66868053ca}{C\+E\+C\+\_\+\+Get\+Flag\+Status} (uint32\+\_\+t C\+E\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Gets the C\+EC flag status. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_ga928b373fb5972204c56f9c64113f8c67}{C\+E\+C\+\_\+\+Clear\+Flag} (uint32\+\_\+t C\+E\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the C\+EC\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___c_e_c___exported___functions_gaa1940a388d0bfcefe7483fb74cc2ba1d}{C\+E\+C\+\_\+\+Get\+I\+T\+Status} (uint8\+\_\+t C\+E\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified C\+EC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___c_e_c___exported___functions_gade646921262a077172c708953822f248}{C\+E\+C\+\_\+\+Clear\+I\+T\+Pending\+Bit} (uint16\+\_\+t C\+E\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the C\+EC\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains all the functions prototypes for the C\+EC firmware library. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

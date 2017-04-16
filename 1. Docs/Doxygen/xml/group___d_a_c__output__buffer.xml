@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_a_c__output__buffer" kind="group">
+    <compoundname>DAC_output_buffer</compoundname>
+    <title>DAC_output_buffer</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_a_c__output__buffer_1gab3f92803a8b6bc5fb3e4859908b5161f" prot="public" static="no">
+        <name>DAC_OutputBuffer_Enable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="184" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__output__buffer_1gad41f919d7141398cfdedf8218ce64450" prot="public" static="no">
+        <name>DAC_OutputBuffer_Disable</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="185" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__output__buffer_1gaa5a56816d641129fb62d11133c9dcccd" prot="public" static="no">
+        <name>IS_DAC_OUTPUT_BUFFER_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___d_a_c__output__buffer_1gab3f92803a8b6bc5fb3e4859908b5161f" kindref="member">DAC_OutputBuffer_Enable</ref>) || \
+                                           ((STATE) == <ref refid="group___d_a_c__output__buffer_1gad41f919d7141398cfdedf8218ce64450" kindref="member">DAC_OutputBuffer_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="186" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___break___input__enable__disable" kind="group">
+    <compoundname>Break_Input_enable_disable</compoundname>
+    <title>Break_Input_enable_disable</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___break___input__enable__disable_1gae7fbc11ac043454b2a880bffe98fdb8c" prot="public" static="no">
+        <name>TIM_Break_Enable</name>
+        <initializer>((uint16_t)0x1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="459" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___break___input__enable__disable_1ga31ba16dd70ad4d99adc911f7bf6662e5" prot="public" static="no">
+        <name>TIM_Break_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="460" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___break___input__enable__disable_1ga29dd5484bdc69a467387bd8059b69f0e" prot="public" static="no">
+        <name>IS_TIM_BREAK_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___break___input__enable__disable_1gae7fbc11ac043454b2a880bffe98fdb8c" kindref="member">TIM_Break_Enable</ref>) || \
+                                   ((STATE) == <ref refid="group___break___input__enable__disable_1ga31ba16dd70ad4d99adc911f7bf6662e5" kindref="member">TIM_Break_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="461" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

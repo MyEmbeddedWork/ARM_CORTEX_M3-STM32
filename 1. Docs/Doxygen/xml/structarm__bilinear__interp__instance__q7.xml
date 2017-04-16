@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__bilinear__interp__instance__q7" kind="struct" language="C++" prot="public">
+    <compoundname>arm_bilinear_interp_instance_q7</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__q7_1ad5a8067cab5f9ea4688b11a623e16607" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_bilinear_interp_instance_q7::numRows</definition>
+        <argsstring></argsstring>
+        <name>numRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of rows in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1883" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__q7_1a860dd0d24380ea06cfbb348fb3b12c9a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_bilinear_interp_instance_q7::numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of columns in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1884" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__q7_1af05194d691bbefb02c34bafb22ca9ef0" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ae541b6f232c305361e9b416fc9eed263" kindref="member">q7_t</ref> *</type>
+        <definition>q7_t* arm_bilinear_interp_instance_q7::pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1885" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1885" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q15 bilinear interpolation function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1882" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1881" bodyend="1886"/>
+    <listofallmembers>
+      <member refid="structarm__bilinear__interp__instance__q7_1a860dd0d24380ea06cfbb348fb3b12c9a" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_q7</scope><name>numCols</name></member>
+      <member refid="structarm__bilinear__interp__instance__q7_1ad5a8067cab5f9ea4688b11a623e16607" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_q7</scope><name>numRows</name></member>
+      <member refid="structarm__bilinear__interp__instance__q7_1af05194d691bbefb02c34bafb22ca9ef0" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_q7</scope><name>pData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

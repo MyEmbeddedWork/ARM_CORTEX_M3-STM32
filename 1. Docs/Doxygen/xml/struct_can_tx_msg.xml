@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_can_tx_msg" kind="struct" language="C++" prot="public">
+    <compoundname>CanTxMsg</compoundname>
+    <includes refid="stm32f10x__can_8h" local="no">stm32f10x_can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_can_tx_msg_1abfb50c8208227f8cf378f29cf9a3a6f3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CanTxMsg::StdId</definition>
+        <argsstring></argsstring>
+        <name>StdId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the standard identifier. This parameter can be a value between 0 to 0x7FF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="153" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_can_tx_msg_1a33050a95a4cc463b589ff16bdd416f22" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CanTxMsg::ExtId</definition>
+        <argsstring></argsstring>
+        <name>ExtId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the extended identifier. This parameter can be a value between 0 to 0x1FFFFFFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="156" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="156" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_can_tx_msg_1aa4c8568a0e3250a17bd7e116b3e09670" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CanTxMsg::IDE</definition>
+        <argsstring></argsstring>
+        <name>IDE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the type of identifier for the message that will be transmitted. This parameter can be a value of <ref refid="group___c_a_n__identifier__type" kindref="compound">CAN_identifier_type</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="159" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="159" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_can_tx_msg_1a69f84255db38c6910058f290efdb7302" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CanTxMsg::RTR</definition>
+        <argsstring></argsstring>
+        <name>RTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the type of frame for the message that will be transmitted. This parameter can be a value of <ref refid="group___c_a_n__remote__transmission__request" kindref="compound">CAN_remote_transmission_request</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="163" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_can_tx_msg_1ab49d0fa602aad2fd9cd007adafc11fc2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CanTxMsg::DLC</definition>
+        <argsstring></argsstring>
+        <name>DLC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the length of the frame that will be transmitted. This parameter can be a value between 0 to 8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="167" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="167" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_can_tx_msg_1aabfbf718f627da26d9e3cf903dc0ad02" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CanTxMsg::Data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contains the data to be transmitted. It ranges from 0 to 0xFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="171" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="171" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CAN Tx message structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="152" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="151" bodyend="173"/>
+    <listofallmembers>
+      <member refid="struct_can_tx_msg_1aabfbf718f627da26d9e3cf903dc0ad02" prot="public" virt="non-virtual"><scope>CanTxMsg</scope><name>Data</name></member>
+      <member refid="struct_can_tx_msg_1ab49d0fa602aad2fd9cd007adafc11fc2" prot="public" virt="non-virtual"><scope>CanTxMsg</scope><name>DLC</name></member>
+      <member refid="struct_can_tx_msg_1a33050a95a4cc463b589ff16bdd416f22" prot="public" virt="non-virtual"><scope>CanTxMsg</scope><name>ExtId</name></member>
+      <member refid="struct_can_tx_msg_1aa4c8568a0e3250a17bd7e116b3e09670" prot="public" virt="non-virtual"><scope>CanTxMsg</scope><name>IDE</name></member>
+      <member refid="struct_can_tx_msg_1a69f84255db38c6910058f290efdb7302" prot="public" virt="non-virtual"><scope>CanTxMsg</scope><name>RTR</name></member>
+      <member refid="struct_can_tx_msg_1abfb50c8208227f8cf378f29cf9a3a6f3" prot="public" virt="non-virtual"><scope>CanTxMsg</scope><name>StdId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

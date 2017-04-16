@@ -1,0 +1,75 @@
+.TH "ADC_flags_definition" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_flags_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADC_FLAG_AWD\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_EOC\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_JEOC\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_JSTRT\fP   ((uint8_t)0x08)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_STRT\fP   ((uint8_t)0x10)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint8_t)0xE0) == 0x00) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_GET_FLAG\fP(FLAG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC_FLAG_AWD   ((uint8_t)0x01)"
+
+.PP
+Definition at line 335 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_FLAG_EOC   ((uint8_t)0x02)"
+
+.PP
+Definition at line 336 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_FLAG_JEOC   ((uint8_t)0x04)"
+
+.PP
+Definition at line 337 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_FLAG_JSTRT   ((uint8_t)0x08)"
+
+.PP
+Definition at line 338 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_FLAG_STRT   ((uint8_t)0x10)"
+
+.PP
+Definition at line 339 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_CLEAR_FLAG(FLAG)   ((((FLAG) & (uint8_t)0xE0) == 0x00) && ((FLAG) != 0x00))"
+
+.PP
+Definition at line 340 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_GET_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == ADC_FLAG_AWD) || ((FLAG) == ADC_FLAG_EOC) || \
+                               ((FLAG) == ADC_FLAG_JEOC) || ((FLAG)== ADC_FLAG_JSTRT) || \
+                               ((FLAG) == ADC_FLAG_STRT))
+.fi
+.PP
+Definition at line 341 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

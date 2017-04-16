@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s__core__bitfield" kind="group">
+    <compoundname>CMSIS_core_bitfield</compoundname>
+    <title>Core register bit field macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="569" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="577" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="681" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="689" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1351" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1359" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1520" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1528" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1728" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1736" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="684" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="692" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1325" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>((<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref> &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1333" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1333" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Macros for use with bit field definitions (xxx_Pos, xxx_Msk). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

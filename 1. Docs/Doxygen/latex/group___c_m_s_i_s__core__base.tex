@@ -1,0 +1,1058 @@
+\hypertarget{group___c_m_s_i_s__core__base}{}\section{Core Definitions}
+\label{group___c_m_s_i_s__core__base}\index{Core Definitions@{Core Definitions}}
+
+
+Definitions for base addresses, unions, and structures.  
+
+
+Collaboration diagram for Core Definitions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{group___c_m_s_i_s__core__base}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}~(0x\+E0000000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}~(0x\+E0001000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}~(0x\+E0040000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}~(0x\+E000\+E\+D\+F0\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}{S\+Cn\+S\+CB}~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}{I\+TM}~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}{D\+WT}~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}{T\+PI}~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}{Core\+Debug}~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}~(0x\+E0000000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}~(0x\+E0001000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}~(0x\+E0040000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}~(0x\+E000\+E\+D\+F0\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}{S\+Cn\+S\+CB}~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}{I\+TM}~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}{D\+WT}~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}{T\+PI}~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}{Core\+Debug}~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}~(0x\+E0000000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}~(0x\+E0001000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}~(0x\+E0040000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}~(0x\+E000\+E\+D\+F0\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}{S\+Cn\+S\+CB}~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}{I\+TM}~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}{D\+WT}~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}{T\+PI}~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}{Core\+Debug}~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}{S\+Cn\+S\+CB}~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}~(0x\+E000\+E000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}~(0x\+E0000000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}~(0x\+E0001000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}~(0x\+E0040000\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}~(0x\+E000\+E\+D\+F0\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}{S\+Cn\+S\+CB}~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}{I\+TM}~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}{D\+WT}~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}{T\+PI}~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )
+\item 
+\#define \hyperlink{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}{Core\+Debug}~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definitions for base addresses, unions, and structures. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}\label{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug@{Core\+Debug}}
+\index{Core\+Debug@{Core\+Debug}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug}{CoreDebug}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})}
+
+Core Debug configuration struct 
+
+Definition at line 1362 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}\label{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug@{Core\+Debug}}
+\index{Core\+Debug@{Core\+Debug}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug}{CoreDebug}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})}
+
+Core Debug configuration struct 
+
+Definition at line 1388 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}\label{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug@{Core\+Debug}}
+\index{Core\+Debug@{Core\+Debug}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug}{CoreDebug}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})}
+
+Core Debug configuration struct 
+
+Definition at line 1557 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}\label{group___c_m_s_i_s__core__base_gab6e30a2b802d9021619dbb0be7f5d63d}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug@{Core\+Debug}}
+\index{Core\+Debug@{Core\+Debug}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug}{CoreDebug}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug~((\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type} $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE})}
+
+Core Debug configuration struct 
+
+Definition at line 1765 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}\label{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}}
+\index{Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug\+\_\+\+B\+A\+SE}{CoreDebug\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug\+\_\+\+B\+A\+SE~(0x\+E000\+E\+D\+F0\+U\+L)}
+
+Core Debug Base Address 
+
+Definition at line 1350 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}\label{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}}
+\index{Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug\+\_\+\+B\+A\+SE}{CoreDebug\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug\+\_\+\+B\+A\+SE~(0x\+E000\+E\+D\+F0\+U\+L)}
+
+Core Debug Base Address 
+
+Definition at line 1376 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}\label{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}}
+\index{Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug\+\_\+\+B\+A\+SE}{CoreDebug\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug\+\_\+\+B\+A\+SE~(0x\+E000\+E\+D\+F0\+U\+L)}
+
+Core Debug Base Address 
+
+Definition at line 1545 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}\label{group___c_m_s_i_s__core__base_ga680604dbcda9e9b31a1639fcffe5230b}} 
+\index{Core Definitions@{Core Definitions}!Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}}
+\index{Core\+Debug\+\_\+\+B\+A\+SE@{Core\+Debug\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Core\+Debug\+\_\+\+B\+A\+SE}{CoreDebug\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define Core\+Debug\+\_\+\+B\+A\+SE~(0x\+E000\+E\+D\+F0\+U\+L)}
+
+Core Debug Base Address 
+
+Definition at line 1753 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}\label{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}} 
+\index{Core Definitions@{Core Definitions}!D\+WT@{D\+WT}}
+\index{D\+WT@{D\+WT}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+WT}{DWT}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define D\+WT~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )}
+
+D\+WT configuration struct 
+
+Definition at line 1360 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}\label{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}} 
+\index{Core Definitions@{Core Definitions}!D\+WT@{D\+WT}}
+\index{D\+WT@{D\+WT}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+WT}{DWT}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define D\+WT~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )}
+
+D\+WT configuration struct 
+
+Definition at line 1386 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}\label{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}} 
+\index{Core Definitions@{Core Definitions}!D\+WT@{D\+WT}}
+\index{D\+WT@{D\+WT}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+WT}{DWT}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define D\+WT~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )}
+
+D\+WT configuration struct 
+
+Definition at line 1555 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}\label{group___c_m_s_i_s__core__base_gabbe5a060185e1d5afa3f85b14e10a6ce}} 
+\index{Core Definitions@{Core Definitions}!D\+WT@{D\+WT}}
+\index{D\+WT@{D\+WT}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+WT}{DWT}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define D\+WT~((\hyperlink{struct_d_w_t___type}{D\+W\+T\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}{D\+W\+T\+\_\+\+B\+A\+SE}      )}
+
+D\+WT configuration struct 
+
+Definition at line 1763 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}\label{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}} 
+\index{Core Definitions@{Core Definitions}!D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}}
+\index{D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+W\+T\+\_\+\+B\+A\+SE}{DWT\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define D\+W\+T\+\_\+\+B\+A\+SE~(0x\+E0001000\+U\+L)}
+
+D\+WT Base Address 
+
+Definition at line 1348 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}\label{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}} 
+\index{Core Definitions@{Core Definitions}!D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}}
+\index{D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+W\+T\+\_\+\+B\+A\+SE}{DWT\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define D\+W\+T\+\_\+\+B\+A\+SE~(0x\+E0001000\+U\+L)}
+
+D\+WT Base Address 
+
+Definition at line 1374 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}\label{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}} 
+\index{Core Definitions@{Core Definitions}!D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}}
+\index{D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+W\+T\+\_\+\+B\+A\+SE}{DWT\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define D\+W\+T\+\_\+\+B\+A\+SE~(0x\+E0001000\+U\+L)}
+
+D\+WT Base Address 
+
+Definition at line 1543 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}\label{group___c_m_s_i_s__core__base_gafdab534f961bf8935eb456cb7700dcd2}} 
+\index{Core Definitions@{Core Definitions}!D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}}
+\index{D\+W\+T\+\_\+\+B\+A\+SE@{D\+W\+T\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{D\+W\+T\+\_\+\+B\+A\+SE}{DWT\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define D\+W\+T\+\_\+\+B\+A\+SE~(0x\+E0001000\+U\+L)}
+
+D\+WT Base Address 
+
+Definition at line 1751 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}\label{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}} 
+\index{Core Definitions@{Core Definitions}!I\+TM@{I\+TM}}
+\index{I\+TM@{I\+TM}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+TM}{ITM}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define I\+TM~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )}
+
+I\+TM configuration struct 
+
+Definition at line 1359 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}\label{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}} 
+\index{Core Definitions@{Core Definitions}!I\+TM@{I\+TM}}
+\index{I\+TM@{I\+TM}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+TM}{ITM}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define I\+TM~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )}
+
+I\+TM configuration struct 
+
+Definition at line 1385 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}\label{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}} 
+\index{Core Definitions@{Core Definitions}!I\+TM@{I\+TM}}
+\index{I\+TM@{I\+TM}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+TM}{ITM}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define I\+TM~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )}
+
+I\+TM configuration struct 
+
+Definition at line 1554 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}\label{group___c_m_s_i_s__core__base_gabae7cdf882def602cb787bb039ff6a43}} 
+\index{Core Definitions@{Core Definitions}!I\+TM@{I\+TM}}
+\index{I\+TM@{I\+TM}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+TM}{ITM}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define I\+TM~((\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}      )}
+
+I\+TM configuration struct 
+
+Definition at line 1762 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}\label{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}} 
+\index{Core Definitions@{Core Definitions}!I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}}
+\index{I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+T\+M\+\_\+\+B\+A\+SE}{ITM\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define I\+T\+M\+\_\+\+B\+A\+SE~(0x\+E0000000\+U\+L)}
+
+I\+TM Base Address 
+
+Definition at line 1347 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}\label{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}} 
+\index{Core Definitions@{Core Definitions}!I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}}
+\index{I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+T\+M\+\_\+\+B\+A\+SE}{ITM\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define I\+T\+M\+\_\+\+B\+A\+SE~(0x\+E0000000\+U\+L)}
+
+I\+TM Base Address 
+
+Definition at line 1373 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}\label{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}} 
+\index{Core Definitions@{Core Definitions}!I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}}
+\index{I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+T\+M\+\_\+\+B\+A\+SE}{ITM\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define I\+T\+M\+\_\+\+B\+A\+SE~(0x\+E0000000\+U\+L)}
+
+I\+TM Base Address 
+
+Definition at line 1542 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}\label{group___c_m_s_i_s__core__base_gadd76251e412a195ec0a8f47227a8359e}} 
+\index{Core Definitions@{Core Definitions}!I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}}
+\index{I\+T\+M\+\_\+\+B\+A\+SE@{I\+T\+M\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{I\+T\+M\+\_\+\+B\+A\+SE}{ITM\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define I\+T\+M\+\_\+\+B\+A\+SE~(0x\+E0000000\+U\+L)}
+
+I\+TM Base Address 
+
+Definition at line 1750 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 597 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 709 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 713 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 1358 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 1384 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 1553 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}\label{group___c_m_s_i_s__core__base_gac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+IC@{N\+V\+IC}}
+\index{N\+V\+IC@{N\+V\+IC}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+IC}{NVIC}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}      $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}     )}
+
+N\+V\+IC configuration struct 
+
+Definition at line 1761 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 592 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 704 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 707 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 1352 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 1378 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 1547 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}\label{group___c_m_s_i_s__core__base_gaa0288691785a5f868238e0468b39523d}} 
+\index{Core Definitions@{Core Definitions}!N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}}
+\index{N\+V\+I\+C\+\_\+\+B\+A\+SE@{N\+V\+I\+C\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+B\+A\+SE}{NVIC\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0100\+U\+L)}
+
+N\+V\+IC Base Address 
+
+Definition at line 1755 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 595 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 707 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 711 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 1356 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 1382 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 1551 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}\label{group___c_m_s_i_s__core__base_gaaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{Core Definitions@{Core Definitions}!S\+CB@{S\+CB}}
+\index{S\+CB@{S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+CB}{SCB}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define S\+CB~((\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}      )}
+
+S\+CB configuration struct 
+
+Definition at line 1759 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 593 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 705 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 708 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 1353 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 1379 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 1548 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{group___c_m_s_i_s__core__base_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}}
+\index{S\+C\+B\+\_\+\+B\+A\+SE@{S\+C\+B\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+B\+\_\+\+B\+A\+SE}{SCB\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0\+D00\+U\+L)}
+
+System Control Block Base Address 
+
+Definition at line 1756 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}\label{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}} 
+\index{Core Definitions@{Core Definitions}!S\+Cn\+S\+CB@{S\+Cn\+S\+CB}}
+\index{S\+Cn\+S\+CB@{S\+Cn\+S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+Cn\+S\+CB}{SCnSCB}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \#define S\+Cn\+S\+CB~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )}
+
+System control Register not in S\+CB 
+
+Definition at line 710 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}\label{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}} 
+\index{Core Definitions@{Core Definitions}!S\+Cn\+S\+CB@{S\+Cn\+S\+CB}}
+\index{S\+Cn\+S\+CB@{S\+Cn\+S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+Cn\+S\+CB}{SCnSCB}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \#define S\+Cn\+S\+CB~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )}
+
+System control Register not in S\+CB 
+
+Definition at line 1355 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}\label{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}} 
+\index{Core Definitions@{Core Definitions}!S\+Cn\+S\+CB@{S\+Cn\+S\+CB}}
+\index{S\+Cn\+S\+CB@{S\+Cn\+S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+Cn\+S\+CB}{SCnSCB}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \#define S\+Cn\+S\+CB~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )}
+
+System control Register not in S\+CB 
+
+Definition at line 1381 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}\label{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}} 
+\index{Core Definitions@{Core Definitions}!S\+Cn\+S\+CB@{S\+Cn\+S\+CB}}
+\index{S\+Cn\+S\+CB@{S\+Cn\+S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+Cn\+S\+CB}{SCnSCB}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \#define S\+Cn\+S\+CB~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )}
+
+System control Register not in S\+CB 
+
+Definition at line 1550 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}\label{group___c_m_s_i_s__core__base_ga9fe0cd2eef83a8adad94490d9ecca63f}} 
+\index{Core Definitions@{Core Definitions}!S\+Cn\+S\+CB@{S\+Cn\+S\+CB}}
+\index{S\+Cn\+S\+CB@{S\+Cn\+S\+CB}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+Cn\+S\+CB}{SCnSCB}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \#define S\+Cn\+S\+CB~((\hyperlink{struct_s_cn_s_c_b___type}{S\+Cn\+S\+C\+B\+\_\+\+Type}    $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}      )}
+
+System control Register not in S\+CB 
+
+Definition at line 1758 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 590 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 702 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 705 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 1346 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 1372 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 1541 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}\label{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}} 
+\index{Core Definitions@{Core Definitions}!S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}}
+\index{S\+C\+S\+\_\+\+B\+A\+SE@{S\+C\+S\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+B\+A\+SE}{SCS\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000\+U\+L)}
+
+System Control Space Base Address 
+
+Definition at line 1749 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 596 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 708 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 712 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 1357 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 1383 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 1552 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}\label{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick@{Sys\+Tick}}
+\index{Sys\+Tick@{Sys\+Tick}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick}{SysTick}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}   $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}  )}
+
+Sys\+Tick configuration struct 
+
+Definition at line 1760 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 591 of file core\+\_\+cm0.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 703 of file core\+\_\+cm0plus.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 706 of file core\+\_\+sc000.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 1351 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 1377 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 1546 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}\label{group___c_m_s_i_s__core__base_ga58effaac0b93006b756d33209e814646}} 
+\index{Core Definitions@{Core Definitions}!Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}}
+\index{Sys\+Tick\+\_\+\+B\+A\+SE@{Sys\+Tick\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+B\+A\+SE}{SysTick\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\hyperlink{group___c_m_s_i_s__core__base_ga3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE} +  0x0010\+U\+L)}
+
+Sys\+Tick Base Address 
+
+Definition at line 1754 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}\label{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}} 
+\index{Core Definitions@{Core Definitions}!T\+PI@{T\+PI}}
+\index{T\+PI@{T\+PI}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+PI}{TPI}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define T\+PI~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )}
+
+T\+PI configuration struct 
+
+Definition at line 1361 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}\label{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}} 
+\index{Core Definitions@{Core Definitions}!T\+PI@{T\+PI}}
+\index{T\+PI@{T\+PI}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+PI}{TPI}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define T\+PI~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )}
+
+T\+PI configuration struct 
+
+Definition at line 1387 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}\label{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}} 
+\index{Core Definitions@{Core Definitions}!T\+PI@{T\+PI}}
+\index{T\+PI@{T\+PI}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+PI}{TPI}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define T\+PI~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )}
+
+T\+PI configuration struct 
+
+Definition at line 1556 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}\label{group___c_m_s_i_s__core__base_ga8b4dd00016aed25a0ea54e9a9acd1239}} 
+\index{Core Definitions@{Core Definitions}!T\+PI@{T\+PI}}
+\index{T\+PI@{T\+PI}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+PI}{TPI}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define T\+PI~((\hyperlink{struct_t_p_i___type}{T\+P\+I\+\_\+\+Type}       $\ast$)     \hyperlink{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}{T\+P\+I\+\_\+\+B\+A\+SE}      )}
+
+T\+PI configuration struct 
+
+Definition at line 1764 of file core\+\_\+cm7.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}\label{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}} 
+\index{Core Definitions@{Core Definitions}!T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}}
+\index{T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+P\+I\+\_\+\+B\+A\+SE}{TPI\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define T\+P\+I\+\_\+\+B\+A\+SE~(0x\+E0040000\+U\+L)}
+
+T\+PI Base Address 
+
+Definition at line 1349 of file core\+\_\+sc300.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}\label{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}} 
+\index{Core Definitions@{Core Definitions}!T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}}
+\index{T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+P\+I\+\_\+\+B\+A\+SE}{TPI\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define T\+P\+I\+\_\+\+B\+A\+SE~(0x\+E0040000\+U\+L)}
+
+T\+PI Base Address 
+
+Definition at line 1375 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}\label{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}} 
+\index{Core Definitions@{Core Definitions}!T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}}
+\index{T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+P\+I\+\_\+\+B\+A\+SE}{TPI\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define T\+P\+I\+\_\+\+B\+A\+SE~(0x\+E0040000\+U\+L)}
+
+T\+PI Base Address 
+
+Definition at line 1544 of file core\+\_\+cm4.\+h.
+
+\mbox{\Hypertarget{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}\label{group___c_m_s_i_s__core__base_ga2b1eeff850a7e418844ca847145a1a68}} 
+\index{Core Definitions@{Core Definitions}!T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}}
+\index{T\+P\+I\+\_\+\+B\+A\+SE@{T\+P\+I\+\_\+\+B\+A\+SE}!Core Definitions@{Core Definitions}}
+\subsubsection{\texorpdfstring{T\+P\+I\+\_\+\+B\+A\+SE}{TPI\_BASE}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define T\+P\+I\+\_\+\+B\+A\+SE~(0x\+E0040000\+U\+L)}
+
+T\+PI Base Address 
+
+Definition at line 1752 of file core\+\_\+cm7.\+h.
+

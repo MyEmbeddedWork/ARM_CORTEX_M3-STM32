@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i__data__direction" kind="group">
+    <compoundname>SPI_data_direction</compoundname>
+    <title>SPI_data_direction</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i__data__direction_1gab6bdb82e315a90210c4425c46bbdf5f1" prot="public" static="no">
+        <name>SPI_Direction_2Lines_FullDuplex</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="134" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__data__direction_1gab8ab942f7240394f50e4c86c5288516a" prot="public" static="no">
+        <name>SPI_Direction_2Lines_RxOnly</name>
+        <initializer>((uint16_t)0x0400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="135" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__data__direction_1ga42ea8306cfc1f23ffc51efae6f66320e" prot="public" static="no">
+        <name>SPI_Direction_1Line_Rx</name>
+        <initializer>((uint16_t)0x8000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="136" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__data__direction_1ga70cc710a771065b2ed11c2ac9697defe" prot="public" static="no">
+        <name>SPI_Direction_1Line_Tx</name>
+        <initializer>((uint16_t)0xC000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="137" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__data__direction_1ga536857c68ce1d9806c04046707448b3e" prot="public" static="no">
+        <name>IS_SPI_DIRECTION_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___s_p_i__data__direction_1gab6bdb82e315a90210c4425c46bbdf5f1" kindref="member">SPI_Direction_2Lines_FullDuplex</ref>) || \
+                                     ((MODE) == <ref refid="group___s_p_i__data__direction_1gab8ab942f7240394f50e4c86c5288516a" kindref="member">SPI_Direction_2Lines_RxOnly</ref>) || \
+                                     ((MODE) == <ref refid="group___s_p_i__data__direction_1ga42ea8306cfc1f23ffc51efae6f66320e" kindref="member">SPI_Direction_1Line_Rx</ref>) || \
+                                     ((MODE) == <ref refid="group___s_p_i__data__direction_1ga70cc710a771065b2ed11c2ac9697defe" kindref="member">SPI_Direction_1Line_Tx</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="138" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

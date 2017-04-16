@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___prescaler___reload___mode" kind="group">
+    <compoundname>TIM_Prescaler_Reload_Mode</compoundname>
+    <title>TIM_Prescaler_Reload_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___prescaler___reload___mode_1gad76dd05a3ae4e44e040e0e083bd460bf" prot="public" static="no">
+        <name>TIM_PSCReloadMode_Update</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="809" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="811" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___prescaler___reload___mode_1ga9ba55481ccdcb64268b7b9f2095bfc17" prot="public" static="no">
+        <name>TIM_PSCReloadMode_Immediate</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="810" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___prescaler___reload___mode_1ga156317fc6b2c1f6f2e1da9dfa555ecf4" prot="public" static="no">
+        <name>IS_TIM_PRESCALER_RELOAD</name>
+        <param><defname>RELOAD</defname></param>
+        <initializer>(((RELOAD) == <ref refid="group___t_i_m___prescaler___reload___mode_1gad76dd05a3ae4e44e040e0e083bd460bf" kindref="member">TIM_PSCReloadMode_Update</ref>) || \
+                                         ((RELOAD) == <ref refid="group___t_i_m___prescaler___reload___mode_1ga9ba55481ccdcb64268b7b9f2095bfc17" kindref="member">TIM_PSCReloadMode_Immediate</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="811" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="813" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_blink_led_8h" kind="file" language="C++">
+    <compoundname>BlinkLed.h</compoundname>
+    <includes refid="stm32f10x_8h" local="yes">stm32f10x.h</includes>
+    <includedby refid="_blink_led_8cpp" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/src/BlinkLed.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="0">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h</label>
+        <link refid="_blink_led_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="4">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="1">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h</label>
+        <link refid="_blink_led_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/BlinkLed.cpp</label>
+        <link refid="_blink_led_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_blink_led" prot="public">BlinkLed</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" prot="public" static="no">
+        <name>BLINK_PORT_NUMBER</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="19" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" prot="public" static="no">
+        <name>BLINK_PIN_NUMBER</name>
+        <initializer>(12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="20" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_blink_led_8h_1a80ac93a788b6dd9f62db0b37aef0cc6f" prot="public" static="no">
+        <name>BLINK_ACTIVE_LOW</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="21" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" prot="public" static="no">
+        <name>BLINK_GPIOx</name>
+        <param><defname>_N</defname></param>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *)(<ref refid="group___peripheral__memory__map_1gad7723846cc5db8e43a44d78cf21f6efa" kindref="member">GPIOA_BASE</ref> + (<ref refid="group___peripheral__memory__map_1gac944a89eb789000ece920c0f89cb6a68" kindref="member">GPIOB_BASE</ref>-<ref refid="group___peripheral__memory__map_1gad7723846cc5db8e43a44d78cf21f6efa" kindref="member">GPIOA_BASE</ref>)*(_N)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="23" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" prot="public" static="no">
+        <name>BLINK_PIN_MASK</name>
+        <param><defname>_N</defname></param>
+        <initializer>(1 &lt;&lt; (_N))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="24" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_blink_led_8h_1a3ac41105ecbde5b7a1dacfd82c36d857" prot="public" static="no">
+        <name>BLINK_RCC_MASKx</name>
+        <param><defname>_N</defname></param>
+        <initializer>(<ref refid="group___a_p_b2__peripheral_1ga44b92fbf2e288796b1acbce2708f3636" kindref="member">RCC_APB2Periph_GPIOA</ref> &lt;&lt; (_N))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="25" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>GNU<sp/>ARM<sp/>Eclipse<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BLINKLED_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINKLED_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x_8h" kindref="compound">stm32f10x.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----<sp/>LED<sp/>definitions<sp/>------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Adjust<sp/>these<sp/>definitions<sp/>for<sp/>your<sp/>own<sp/>board.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Olimex<sp/>STM32-H103<sp/>definitions<sp/>(the<sp/>GREEN<sp/>led,<sp/>C12,<sp/>active<sp/>low)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(SEGGER<sp/>J-Link<sp/>device<sp/>name:<sp/>STM32F103RB).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Port<sp/>numbers:<sp/>0=A,<sp/>1=B,<sp/>2=C,<sp/>3=D,<sp/>4=E,<sp/>5=F,<sp/>6=G,<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_PORT_NUMBER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_PIN_NUMBER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(12)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_blink_led_8h_1a80ac93a788b6dd9f62db0b37aef0cc6f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_ACTIVE_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_GPIOx(_N)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)(GPIOA_BASE<sp/>+<sp/>(GPIOB_BASE-GPIOA_BASE)*(_N)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_PIN_MASK(_N)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>(_N))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_blink_led_8h_1a3ac41105ecbde5b7a1dacfd82c36d857" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_RCC_MASKx(_N)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RCC_APB2Periph_GPIOA<sp/>&lt;&lt;<sp/>(_N))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_blink_led" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_blink_led" kindref="compound">BlinkLed</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="class_blink_led_1a97362f01ff940033431d666f7798dce1" kindref="member">BlinkLed</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" kindref="member">powerUp</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_blink_led_1ae5768d48c161e9150c97e19c369b64de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_blink_led_1ae5768d48c161e9150c97e19c369b64de" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>turnOn()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(BLINK_ACTIVE_LOW)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions_1ga6fcd35b207a66608dd2c9d7de9247dc8" kindref="member">GPIO_ResetBits</ref>(<ref refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" kindref="member">BLINK_GPIOx</ref>(<ref refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" kindref="member">BLINK_PORT_NUMBER</ref>),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" kindref="member">BLINK_PIN_MASK</ref>(<ref refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" kindref="member">BLINK_PIN_NUMBER</ref>));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions_1ga9e1352eed7c6620e18af2d86f6b6ff8e" kindref="member">GPIO_SetBits</ref>(<ref refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" kindref="member">BLINK_GPIOx</ref>(<ref refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" kindref="member">BLINK_PORT_NUMBER</ref>),</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" kindref="member">BLINK_PIN_MASK</ref>(<ref refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" kindref="member">BLINK_PIN_NUMBER</ref>));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_blink_led_1a9f8f662f733e131e6477161ac785f665" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_blink_led_1a9f8f662f733e131e6477161ac785f665" kindref="member">__attribute__</ref>((always_inline))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>turnOff()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(BLINK_ACTIVE_LOW)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions_1ga9e1352eed7c6620e18af2d86f6b6ff8e" kindref="member">GPIO_SetBits</ref>(<ref refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" kindref="member">BLINK_GPIOx</ref>(<ref refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" kindref="member">BLINK_PORT_NUMBER</ref>),</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" kindref="member">BLINK_PIN_MASK</ref>(<ref refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" kindref="member">BLINK_PIN_NUMBER</ref>));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions_1ga6fcd35b207a66608dd2c9d7de9247dc8" kindref="member">GPIO_ResetBits</ref>(<ref refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" kindref="member">BLINK_GPIOx</ref>(<ref refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" kindref="member">BLINK_PORT_NUMBER</ref>),</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" kindref="member">BLINK_PIN_MASK</ref>(<ref refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" kindref="member">BLINK_PIN_NUMBER</ref>));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BLINKLED_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h"/>
+  </compounddef>
+</doxygen>

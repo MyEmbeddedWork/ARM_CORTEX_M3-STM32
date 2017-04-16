@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___p_l_l__entry__clock__source" kind="group">
+    <compoundname>PLL_entry_clock_source</compoundname>
+    <title>PLL_entry_clock_source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_l_l__entry__clock__source_1ga53194dd3e2986980b156a3e8e456df06" prot="public" static="no">
+        <name>RCC_PLLSource_HSI_Div2</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_l_l__entry__clock__source_1ga62f02bf60a89bdef0d3a8137da3f4c2d" prot="public" static="no">
+        <name>RCC_PLLSource_HSE_Div1</name>
+        <initializer>((uint32_t)0x00010000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="84" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_l_l__entry__clock__source_1ga24863bc670737a2f5abce546a49e620c" prot="public" static="no">
+        <name>RCC_PLLSource_HSE_Div2</name>
+        <initializer>((uint32_t)0x00030000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="85" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_l_l__entry__clock__source_1ga8a8a84a16989bb4e5aca1af65ccf9a1b" prot="public" static="no">
+        <name>IS_RCC_PLL_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___p_l_l__entry__clock__source_1ga53194dd3e2986980b156a3e8e456df06" kindref="member">RCC_PLLSource_HSI_Div2</ref>) || \
+                                   ((SOURCE) == <ref refid="group___p_l_l__entry__clock__source_1ga62f02bf60a89bdef0d3a8137da3f4c2d" kindref="member">RCC_PLLSource_HSE_Div1</ref>) || \
+                                   ((SOURCE) == <ref refid="group___p_l_l__entry__clock__source_1ga24863bc670737a2f5abce546a49e620c" kindref="member">RCC_PLLSource_HSE_Div2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="86" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___preemption___priority___group" kind="group">
+    <compoundname>Preemption_Priority_Group</compoundname>
+    <title>Preemption_Priority_Group</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___preemption___priority___group_1gaeac0cf537f65d17bc19aee2410b2b60e" prot="public" static="no">
+        <name>NVIC_PriorityGroup_0</name>
+        <initializer>((uint32_t)0x700)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 bits for pre-emption priority 4 bits for subpriority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="142" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1ga89bf0bf9e70f1a372a541b1b8d7493aa" prot="public" static="no">
+        <name>NVIC_PriorityGroup_1</name>
+        <initializer>((uint32_t)0x600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1 bits for pre-emption priority 3 bits for subpriority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="144" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1ga505002e8b76aef65499ca371e40ec8b4" prot="public" static="no">
+        <name>NVIC_PriorityGroup_2</name>
+        <initializer>((uint32_t)0x500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>2 bits for pre-emption priority 2 bits for subpriority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="146" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1ga49bdbee77d4a70339d63c80462d49b4d" prot="public" static="no">
+        <name>NVIC_PriorityGroup_3</name>
+        <initializer>((uint32_t)0x400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3 bits for pre-emption priority 1 bits for subpriority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="148" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1gaf9020c585da2a299328f0b06dee391a2" prot="public" static="no">
+        <name>NVIC_PriorityGroup_4</name>
+        <initializer>((uint32_t)0x300)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>4 bits for pre-emption priority 0 bits for subpriority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="150" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1ga6569304a39fe4f91bd59b6a586c8ede9" prot="public" static="no">
+        <name>IS_NVIC_PRIORITY_GROUP</name>
+        <param><defname>GROUP</defname></param>
+        <initializer>(((GROUP) == <ref refid="group___preemption___priority___group_1gaeac0cf537f65d17bc19aee2410b2b60e" kindref="member">NVIC_PriorityGroup_0</ref>) || \
+                                       ((GROUP) == <ref refid="group___preemption___priority___group_1ga89bf0bf9e70f1a372a541b1b8d7493aa" kindref="member">NVIC_PriorityGroup_1</ref>) || \
+                                       ((GROUP) == <ref refid="group___preemption___priority___group_1ga505002e8b76aef65499ca371e40ec8b4" kindref="member">NVIC_PriorityGroup_2</ref>) || \
+                                       ((GROUP) == <ref refid="group___preemption___priority___group_1ga49bdbee77d4a70339d63c80462d49b4d" kindref="member">NVIC_PriorityGroup_3</ref>) || \
+                                       ((GROUP) == <ref refid="group___preemption___priority___group_1gaf9020c585da2a299328f0b06dee391a2" kindref="member">NVIC_PriorityGroup_4</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="152" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1gaf30fd8f5960c2e28a772d8f16bb156dd" prot="public" static="no">
+        <name>IS_NVIC_PREEMPTION_PRIORITY</name>
+        <param><defname>PRIORITY</defname></param>
+        <initializer>((PRIORITY) &lt; 0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="158" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1ga010705bc997dcff935b965b372cba61d" prot="public" static="no">
+        <name>IS_NVIC_SUB_PRIORITY</name>
+        <param><defname>PRIORITY</defname></param>
+        <initializer>((PRIORITY) &lt; 0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="160" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___preemption___priority___group_1ga1184bbb97d758385f98ab40dd5e5af59" prot="public" static="no">
+        <name>IS_NVIC_OFFSET</name>
+        <param><defname>OFFSET</defname></param>
+        <initializer>((OFFSET) &lt; 0x000FFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="162" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

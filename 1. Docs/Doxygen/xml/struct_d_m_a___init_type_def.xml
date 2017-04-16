@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_d_m_a___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>DMA_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__dma_8h" local="no">stm32f10x_dma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a232af556de7c2eec9a82d448730bd86d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_PeripheralBaseAddr</definition>
+        <argsstring></argsstring>
+        <name>DMA_PeripheralBaseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the peripheral base address for DMAy Channelx. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="52" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a41e7d463f0cfbcedf3170d7d27d088df" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_MemoryBaseAddr</definition>
+        <argsstring></argsstring>
+        <name>DMA_MemoryBaseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the memory base address for DMAy Channelx. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="54" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_DIR</definition>
+        <argsstring></argsstring>
+        <name>DMA_DIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies if the peripheral is the source or destination. This parameter can be a value of <ref refid="group___d_m_a__data__transfer__direction" kindref="compound">DMA_data_transfer_direction</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="56" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_BufferSize</definition>
+        <argsstring></argsstring>
+        <name>DMA_BufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the buffer size, in data unit, of the specified Channel. The data unit is equal to the configuration set in DMA_PeripheralDataSize or DMA_MemoryDataSize members depending in the transfer direction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="59" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_PeripheralInc</definition>
+        <argsstring></argsstring>
+        <name>DMA_PeripheralInc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the Peripheral address register is incremented or not. This parameter can be a value of <ref refid="group___d_m_a__peripheral__incremented__mode" kindref="compound">DMA_peripheral_incremented_mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="63" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_MemoryInc</definition>
+        <argsstring></argsstring>
+        <name>DMA_MemoryInc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the memory address register is incremented or not. This parameter can be a value of <ref refid="group___d_m_a__memory__incremented__mode" kindref="compound">DMA_memory_incremented_mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="66" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_PeripheralDataSize</definition>
+        <argsstring></argsstring>
+        <name>DMA_PeripheralDataSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Peripheral data width. This parameter can be a value of <ref refid="group___d_m_a__peripheral__data__size" kindref="compound">DMA_peripheral_data_size</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="69" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_MemoryDataSize</definition>
+        <argsstring></argsstring>
+        <name>DMA_MemoryDataSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Memory data width. This parameter can be a value of <ref refid="group___d_m_a__memory__data__size" kindref="compound">DMA_memory_data_size</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="72" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_Mode</definition>
+        <argsstring></argsstring>
+        <name>DMA_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the operation mode of the DMAy Channelx. This parameter can be a value of <ref refid="group___d_m_a__circular__normal__mode" kindref="compound">DMA_circular_normal_mode</ref>. <simplesect kind="note"><para>: The circular buffer mode cannot be used if the memory-to-memory data transfer is configured on the selected Channel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="75" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_Priority</definition>
+        <argsstring></argsstring>
+        <name>DMA_Priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the software priority for the DMAy Channelx. This parameter can be a value of <ref refid="group___d_m_a__priority__level" kindref="compound">DMA_priority_level</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="80" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_InitTypeDef::DMA_M2M</definition>
+        <argsstring></argsstring>
+        <name>DMA_M2M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies if the DMAy Channelx will be used in memory-to-memory transfer. This parameter can be a value of <ref refid="group___d_m_a__memory__to__memory" kindref="compound">DMA_memory_to_memory</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="83" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" compoundref="stm32f10x__dma_8c" startline="259" endline="284">DMA_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DMA Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="51" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="50" bodyend="85"/>
+    <listofallmembers>
+      <member refid="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_BufferSize</name></member>
+      <member refid="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_DIR</name></member>
+      <member refid="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_M2M</name></member>
+      <member refid="struct_d_m_a___init_type_def_1a41e7d463f0cfbcedf3170d7d27d088df" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_MemoryBaseAddr</name></member>
+      <member refid="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_MemoryDataSize</name></member>
+      <member refid="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_MemoryInc</name></member>
+      <member refid="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_Mode</name></member>
+      <member refid="struct_d_m_a___init_type_def_1a232af556de7c2eec9a82d448730bd86d" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_PeripheralBaseAddr</name></member>
+      <member refid="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_PeripheralDataSize</name></member>
+      <member refid="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_PeripheralInc</name></member>
+      <member refid="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" prot="public" virt="non-virtual"><scope>DMA_InitTypeDef</scope><name>DMA_Priority</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

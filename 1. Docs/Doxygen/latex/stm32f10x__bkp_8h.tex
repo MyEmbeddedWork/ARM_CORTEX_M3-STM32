@@ -1,0 +1,178 @@
+\hypertarget{stm32f10x__bkp_8h}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+bkp.h File Reference}
+\label{stm32f10x__bkp_8h}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+bkp.\+h@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+bkp.\+h}}
+
+
+This file contains all the functions prototypes for the B\+KP firmware library.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+bkp.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__bkp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f10x__bkp_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___tamper___pin__active__level_gae7203c3c0202cd68d201278c8be2b967}{B\+K\+P\+\_\+\+Tamper\+Pin\+Level\+\_\+\+High}~((uint16\+\_\+t)0x0000)
+\item 
+\#define \hyperlink{group___tamper___pin__active__level_gade9fc51f494eddcc4d88679c80fe39ce}{B\+K\+P\+\_\+\+Tamper\+Pin\+Level\+\_\+\+Low}~((uint16\+\_\+t)0x0001)
+\item 
+\#define \hyperlink{group___tamper___pin__active__level_gae7cd3bd314605f7752062c814b850c23}{I\+S\+\_\+\+B\+K\+P\+\_\+\+T\+A\+M\+P\+E\+R\+\_\+\+P\+I\+N\+\_\+\+L\+E\+V\+EL}(L\+E\+V\+EL)
+\item 
+\#define \hyperlink{group___r_t_c__output__source__to__output__on__the___tamper__pin_ga8a18950396b2db70311480ab76464c6e}{B\+K\+P\+\_\+\+R\+T\+C\+Output\+Source\+\_\+\+None}~((uint16\+\_\+t)0x0000)
+\item 
+\#define \hyperlink{group___r_t_c__output__source__to__output__on__the___tamper__pin_ga6fd7cb80bb52bca65641cbe6aa2c4590}{B\+K\+P\+\_\+\+R\+T\+C\+Output\+Source\+\_\+\+Calib\+Clock}~((uint16\+\_\+t)0x0080)
+\item 
+\#define \hyperlink{group___r_t_c__output__source__to__output__on__the___tamper__pin_gac016224386421d0cb1c0cd0ee201d65a}{B\+K\+P\+\_\+\+R\+T\+C\+Output\+Source\+\_\+\+Alarm}~((uint16\+\_\+t)0x0100)
+\item 
+\#define \hyperlink{group___r_t_c__output__source__to__output__on__the___tamper__pin_ga23cb72635820331317ee4ee5a7897a70}{B\+K\+P\+\_\+\+R\+T\+C\+Output\+Source\+\_\+\+Second}~((uint16\+\_\+t)0x0300)
+\item 
+\#define \hyperlink{group___r_t_c__output__source__to__output__on__the___tamper__pin_gac59454ee255feb55b5e14c34b70c99da}{I\+S\+\_\+\+B\+K\+P\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+S\+O\+U\+R\+CE}(S\+O\+U\+R\+CE)
+\item 
+\#define \hyperlink{group___data___backup___register_ga5d4c3eeaccafcfc0ee3b5dc01381bab0}{B\+K\+P\+\_\+\+D\+R1}~((uint16\+\_\+t)0x0004)
+\item 
+\#define \hyperlink{group___data___backup___register_ga73867f10a3ef17eeb0d3ace641f185ad}{B\+K\+P\+\_\+\+D\+R2}~((uint16\+\_\+t)0x0008)
+\item 
+\#define \hyperlink{group___data___backup___register_gadcc77540e016c6e8dffab223af35ae88}{B\+K\+P\+\_\+\+D\+R3}~((uint16\+\_\+t)0x000\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_gab327f2365ef58f3163f7fe8fa7b3c56e}{B\+K\+P\+\_\+\+D\+R4}~((uint16\+\_\+t)0x0010)
+\item 
+\#define \hyperlink{group___data___backup___register_ga21191497b79eb37ab00a1564e060e5ca}{B\+K\+P\+\_\+\+D\+R5}~((uint16\+\_\+t)0x0014)
+\item 
+\#define \hyperlink{group___data___backup___register_ga9d84a78d9c99d57844cfc557f4c047b4}{B\+K\+P\+\_\+\+D\+R6}~((uint16\+\_\+t)0x0018)
+\item 
+\#define \hyperlink{group___data___backup___register_gaed1b548c12929fbfbc57548ec1316df0}{B\+K\+P\+\_\+\+D\+R7}~((uint16\+\_\+t)0x001\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_gae6ed231677e748d838f37e7ab89e51ca}{B\+K\+P\+\_\+\+D\+R8}~((uint16\+\_\+t)0x0020)
+\item 
+\#define \hyperlink{group___data___backup___register_ga69f61ba6d9ed1092dcd82a5df1a0e054}{B\+K\+P\+\_\+\+D\+R9}~((uint16\+\_\+t)0x0024)
+\item 
+\#define \hyperlink{group___data___backup___register_ga82bb6da0b7a29a737b2d2b03c0561260}{B\+K\+P\+\_\+\+D\+R10}~((uint16\+\_\+t)0x0028)
+\item 
+\#define \hyperlink{group___data___backup___register_ga7784d76b7357c12fcc2dce349b3d7b6f}{B\+K\+P\+\_\+\+D\+R11}~((uint16\+\_\+t)0x0040)
+\item 
+\#define \hyperlink{group___data___backup___register_ga56c63e631781366c4c0c289a27eb325f}{B\+K\+P\+\_\+\+D\+R12}~((uint16\+\_\+t)0x0044)
+\item 
+\#define \hyperlink{group___data___backup___register_ga35202788ca784ad00d2ee11d54990c86}{B\+K\+P\+\_\+\+D\+R13}~((uint16\+\_\+t)0x0048)
+\item 
+\#define \hyperlink{group___data___backup___register_ga47211005caa15e93e138691ba9bf2fa1}{B\+K\+P\+\_\+\+D\+R14}~((uint16\+\_\+t)0x004\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_ga230f292dd8ef4e259630fd4f37d75869}{B\+K\+P\+\_\+\+D\+R15}~((uint16\+\_\+t)0x0050)
+\item 
+\#define \hyperlink{group___data___backup___register_ga4e12740ecfe8fcce668263c21df5492d}{B\+K\+P\+\_\+\+D\+R16}~((uint16\+\_\+t)0x0054)
+\item 
+\#define \hyperlink{group___data___backup___register_ga2d7c7e1c601b0313e60d876560a34329}{B\+K\+P\+\_\+\+D\+R17}~((uint16\+\_\+t)0x0058)
+\item 
+\#define \hyperlink{group___data___backup___register_ga43856bf6f92d07ffea0f96f5243ed8a2}{B\+K\+P\+\_\+\+D\+R18}~((uint16\+\_\+t)0x005\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_ga67587a68a981d5d8e0b1302d21db1f9b}{B\+K\+P\+\_\+\+D\+R19}~((uint16\+\_\+t)0x0060)
+\item 
+\#define \hyperlink{group___data___backup___register_gaafdc2f269b669c81734360e09d94cee2}{B\+K\+P\+\_\+\+D\+R20}~((uint16\+\_\+t)0x0064)
+\item 
+\#define \hyperlink{group___data___backup___register_gabb044653f8eda603075107603949d84a}{B\+K\+P\+\_\+\+D\+R21}~((uint16\+\_\+t)0x0068)
+\item 
+\#define \hyperlink{group___data___backup___register_gab78636475b284bbaeb819d510cfcc397}{B\+K\+P\+\_\+\+D\+R22}~((uint16\+\_\+t)0x006\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_gafe53f4315942eeb540b307a2b534dc2a}{B\+K\+P\+\_\+\+D\+R23}~((uint16\+\_\+t)0x0070)
+\item 
+\#define \hyperlink{group___data___backup___register_ga7fa403483a916fa56826a5f7f79551e4}{B\+K\+P\+\_\+\+D\+R24}~((uint16\+\_\+t)0x0074)
+\item 
+\#define \hyperlink{group___data___backup___register_ga99c4f81f642716e6b4544284d938ee9f}{B\+K\+P\+\_\+\+D\+R25}~((uint16\+\_\+t)0x0078)
+\item 
+\#define \hyperlink{group___data___backup___register_ga06b425e00596cf4c6a43e638f7542e0a}{B\+K\+P\+\_\+\+D\+R26}~((uint16\+\_\+t)0x007\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_ga282338412a00b49dc1fde17f8eacbae9}{B\+K\+P\+\_\+\+D\+R27}~((uint16\+\_\+t)0x0080)
+\item 
+\#define \hyperlink{group___data___backup___register_ga02762501319f1b7e7c01b56d45c45cf9}{B\+K\+P\+\_\+\+D\+R28}~((uint16\+\_\+t)0x0084)
+\item 
+\#define \hyperlink{group___data___backup___register_ga94e935c3e7ce7261d1823e888a8216c5}{B\+K\+P\+\_\+\+D\+R29}~((uint16\+\_\+t)0x0088)
+\item 
+\#define \hyperlink{group___data___backup___register_ga7114464779c0f0e008ec79f66aac9568}{B\+K\+P\+\_\+\+D\+R30}~((uint16\+\_\+t)0x008\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_gadb5b953e765da9d658600151dde63fa3}{B\+K\+P\+\_\+\+D\+R31}~((uint16\+\_\+t)0x0090)
+\item 
+\#define \hyperlink{group___data___backup___register_gaecc9c23e89fff9a5846305ec391d5cda}{B\+K\+P\+\_\+\+D\+R32}~((uint16\+\_\+t)0x0094)
+\item 
+\#define \hyperlink{group___data___backup___register_ga9a52ed4d0d70fc9d815d5e15945ad0d8}{B\+K\+P\+\_\+\+D\+R33}~((uint16\+\_\+t)0x0098)
+\item 
+\#define \hyperlink{group___data___backup___register_ga8553dfcf67aad9107544cf52bf0a54a5}{B\+K\+P\+\_\+\+D\+R34}~((uint16\+\_\+t)0x009\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_ga54e494fd651d2e1970ab7e5d6528af21}{B\+K\+P\+\_\+\+D\+R35}~((uint16\+\_\+t)0x00\+A0)
+\item 
+\#define \hyperlink{group___data___backup___register_ga212028eb8d981756b3bc78492434d19a}{B\+K\+P\+\_\+\+D\+R36}~((uint16\+\_\+t)0x00\+A4)
+\item 
+\#define \hyperlink{group___data___backup___register_ga6c11b636a33c5b352d267355e502b34d}{B\+K\+P\+\_\+\+D\+R37}~((uint16\+\_\+t)0x00\+A8)
+\item 
+\#define \hyperlink{group___data___backup___register_ga88f4c7dd39ba83b66159b2c808275a09}{B\+K\+P\+\_\+\+D\+R38}~((uint16\+\_\+t)0x00\+A\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_ga1656f56588b474b1f48bb96380cdfd4a}{B\+K\+P\+\_\+\+D\+R39}~((uint16\+\_\+t)0x00\+B0)
+\item 
+\#define \hyperlink{group___data___backup___register_ga17e0d382ac43abed1663846b5aecc09a}{B\+K\+P\+\_\+\+D\+R40}~((uint16\+\_\+t)0x00\+B4)
+\item 
+\#define \hyperlink{group___data___backup___register_gae1e184afc030987396716ddfad008e81}{B\+K\+P\+\_\+\+D\+R41}~((uint16\+\_\+t)0x00\+B8)
+\item 
+\#define \hyperlink{group___data___backup___register_ga557d35e490957616b02672005f516542}{B\+K\+P\+\_\+\+D\+R42}~((uint16\+\_\+t)0x00\+B\+C)
+\item 
+\#define \hyperlink{group___data___backup___register_gaff069cf5458ccf0a94e2f784e2d610b8}{I\+S\+\_\+\+B\+K\+P\+\_\+\+DR}(DR)
+\item 
+\#define \hyperlink{group___data___backup___register_gafc3386eaa5383b64e9d706e5fe8dc1cf}{I\+S\+\_\+\+B\+K\+P\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((V\+A\+L\+UE) $<$= 0x7\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___b_k_p___exported___functions_gaabff4d8f5ebf4fd9a840bcc9042ca226}{B\+K\+P\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the B\+KP peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_gae216446d641d075fb575ce6dbe2ff4c1}{B\+K\+P\+\_\+\+Tamper\+Pin\+Level\+Config} (uint16\+\_\+t B\+K\+P\+\_\+\+Tamper\+Pin\+Level)
+\begin{DoxyCompactList}\small\item\em Configures the Tamper Pin active level. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_ga3a0cdff9ad8238ade2c67e2b70f530ac}{B\+K\+P\+\_\+\+Tamper\+Pin\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Tamper Pin activation. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_gab8dbd0c4773f6edb98a28c8ff6a2ead0}{B\+K\+P\+\_\+\+I\+T\+Config} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Tamper Pin Interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_ga3d1b22b3c6a79f7b423616a0af1885bf}{B\+K\+P\+\_\+\+R\+T\+C\+Output\+Config} (uint16\+\_\+t B\+K\+P\+\_\+\+R\+T\+C\+Output\+Source)
+\begin{DoxyCompactList}\small\item\em Select the R\+TC output source to output on the Tamper pin. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_gad34db08a944450d2e7d56d0fd8db2bca}{B\+K\+P\+\_\+\+Set\+R\+T\+C\+Calibration\+Value} (uint8\+\_\+t Calibration\+Value)
+\begin{DoxyCompactList}\small\item\em Sets R\+TC Clock Calibration value. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_ga18d220387db651b3cb71fad5c092e041}{B\+K\+P\+\_\+\+Write\+Backup\+Register} (uint16\+\_\+t B\+K\+P\+\_\+\+DR, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Writes user data to the specified Data Backup Register. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___b_k_p___exported___functions_ga359d8fbc945e0f4e34fedbe037d842c8}{B\+K\+P\+\_\+\+Read\+Backup\+Register} (uint16\+\_\+t B\+K\+P\+\_\+\+DR)
+\begin{DoxyCompactList}\small\item\em Reads data from the specified Data Backup Register. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___b_k_p___exported___functions_gacc9aedde760383f0bd146f0d77a547db}{B\+K\+P\+\_\+\+Get\+Flag\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the Tamper Pin Event flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_ga3f3aea5b0a3d8d5d79b0b506928351ea}{B\+K\+P\+\_\+\+Clear\+Flag} (void)
+\begin{DoxyCompactList}\small\item\em Clears Tamper Pin Event pending flag. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___b_k_p___exported___functions_ga99566c9f1f17f499020606cb63511494}{B\+K\+P\+\_\+\+Get\+I\+T\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the Tamper Pin Interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___exported___functions_ga6a93ef8e40959bb10fea670e2040ad74}{B\+K\+P\+\_\+\+Clear\+I\+T\+Pending\+Bit} (void)
+\begin{DoxyCompactList}\small\item\em Clears Tamper Pin Interrupt pending bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains all the functions prototypes for the B\+KP firmware library. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

@@ -1,0 +1,82 @@
+.TH "arm_lms_norm_instance_q15" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_lms_norm_instance_q15 \- Instance structure for the Q15 normalized LMS filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBnumTaps\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpCoeffs\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP \fBmu\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBpostShift\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBrecipTable\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP \fBenergy\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP \fBx0\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q15 normalized LMS filter\&. 
+.PP
+Definition at line 4222 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBq15_t\fP arm_lms_norm_instance_q15::energy"
+saves previous frame energy\&. 
+.PP
+Definition at line 4230 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP arm_lms_norm_instance_q15::mu"
+step size that controls filter coefficient updates\&. 
+.PP
+Definition at line 4227 of file arm_math\&.h\&.
+.SS "uint16_t arm_lms_norm_instance_q15::numTaps"
+Number of coefficients in the filter\&. 
+.PP
+Definition at line 4224 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_lms_norm_instance_q15::pCoeffs"
+points to the coefficient array\&. The array is of length numTaps\&. 
+.PP
+Definition at line 4226 of file arm_math\&.h\&.
+.SS "uint8_t arm_lms_norm_instance_q15::postShift"
+bit shift applied to coefficients\&. 
+.PP
+Definition at line 4228 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_lms_norm_instance_q15::pState"
+points to the state variable array\&. The array is of length numTaps+blockSize-1\&. 
+.PP
+Definition at line 4225 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_lms_norm_instance_q15::recipTable"
+Points to the reciprocal initial value table\&. 
+.PP
+Definition at line 4229 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP arm_lms_norm_instance_q15::x0"
+saves previous input sample\&. 
+.PP
+Definition at line 4231 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

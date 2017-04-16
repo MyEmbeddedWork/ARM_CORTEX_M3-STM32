@@ -1,0 +1,1070 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___private___functions" kind="group">
+    <compoundname>FSMC_Private_Functions</compoundname>
+    <title>FSMC_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gaab3e6648e8a584e73785361ac960eded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NORSRAMDeInit</definition>
+        <argsstring>(uint32_t FSMC_Bank)</argsstring>
+        <name>FSMC_NORSRAMDeInit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <briefdescription>
+<para>Deinitializes the FSMC NOR/SRAM Banks registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank1_NORSRAM1: FSMC Bank1 NOR/SRAM1 </para></listitem>
+<listitem><para>FSMC_Bank1_NORSRAM2: FSMC Bank1 NOR/SRAM2 </para></listitem>
+<listitem><para>FSMC_Bank1_NORSRAM3: FSMC Bank1 NOR/SRAM3 </para></listitem>
+<listitem><para>FSMC_Bank1_NORSRAM4: FSMC Bank1 NOR/SRAM4 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="102" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="102" bodyend="119"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga3e3bed3dd83d38e63f11ac4cbcb87304" compoundref="stm32f10x__fsmc_8h" startline="274">IS_FSMC_NORSRAM_BANK</references>
+        <references refid="group___f_s_m_c___n_o_r_s_r_a_m___bank_1ga514a05828041fa1a13d464c9e4a0a4a9" compoundref="stm32f10x__fsmc_8h" startline="249">FSMC_Bank1_NORSRAM1</references>
+        <references refid="group___peripheral__declaration_1ga2a759bad07fe730c99f9e1490e646220" compoundref="stm32f10x_8h" startline="1448">FSMC_Bank1</references>
+        <references refid="group___peripheral__declaration_1ga422986101f42a8811ae89ac69deb2759" compoundref="stm32f10x_8h" startline="1449">FSMC_Bank1E</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gafb749503293474a68555961bd8f120e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NANDDeInit</definition>
+        <argsstring>(uint32_t FSMC_Bank)</argsstring>
+        <name>FSMC_NANDDeInit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <briefdescription>
+<para>Deinitializes the FSMC NAND Banks registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="129" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="129" bodyend="151"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga725bada099197f15f49dc0c5be00e19b" compoundref="stm32f10x__fsmc_8h" startline="279">IS_FSMC_NAND_BANK</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga2f53ccf3a4f3c80a5a56fb47ccd47ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_PCCARDDeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>FSMC_PCCARDDeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the FSMC PCCARD Bank registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="158" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="158" bodyend="166"/>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga9c27816e8b17394c9ee1ce9298917b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NORSRAMInit</definition>
+        <argsstring>(FSMC_NORSRAMInitTypeDef *FSMC_NORSRAMInitStruct)</argsstring>
+        <name>FSMC_NORSRAMInit</name>
+        <param>
+          <type><ref refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def" kindref="compound">FSMC_NORSRAMInitTypeDef</ref> *</type>
+          <declname>FSMC_NORSRAMInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the FSMC NOR/SRAM Banks according to the specified parameters in the FSMC_NORSRAMInitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_NORSRAMInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def" kindref="compound">FSMC_NORSRAMInitTypeDef</ref> structure that contains the configuration information for the FSMC NOR/SRAM specified Banks. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="176" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="176" bodyend="252"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga3e3bed3dd83d38e63f11ac4cbcb87304" compoundref="stm32f10x__fsmc_8h" startline="274">IS_FSMC_NORSRAM_BANK</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a7fcd864461cf0d1cf83b62fa2b4d3f86" compoundref="stm32f10x__fsmc_8h" startline="94">FSMC_NORSRAMInitTypeDef::FSMC_Bank</references>
+        <references refid="group___f_s_m_c___data___address___bus___multiplexing_1ga546fcab8c1b751b4a959ba2ce5b35d79" compoundref="stm32f10x__fsmc_8h" startline="300">IS_FSMC_MUX</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1af4ff95085d3bb39e34c2f88ca3140ce5" compoundref="stm32f10x__fsmc_8h" startline="97">FSMC_NORSRAMInitTypeDef::FSMC_DataAddressMux</references>
+        <references refid="group___f_s_m_c___memory___type_1ga255cd500e141f4ac024cf5f896921233" compoundref="stm32f10x__fsmc_8h" startline="314">IS_FSMC_MEMORY</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a979ad605c6a63923e060576ee01e888d" compoundref="stm32f10x__fsmc_8h" startline="101">FSMC_NORSRAMInitTypeDef::FSMC_MemoryType</references>
+        <references refid="group___f_s_m_c___data___width_1ga003d52b62f5950fb041f73f15ce20171" compoundref="stm32f10x__fsmc_8h" startline="328">IS_FSMC_MEMORY_WIDTH</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a1791c771ff86f5dc5422040409517e9d" compoundref="stm32f10x__fsmc_8h" startline="105">FSMC_NORSRAMInitTypeDef::FSMC_MemoryDataWidth</references>
+        <references refid="group___f_s_m_c___burst___access___mode_1gaf8736659c5064c3c03753d7874401e71" compoundref="stm32f10x__fsmc_8h" startline="341">IS_FSMC_BURSTMODE</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1aec0bfff5c934c251c21450a50f5bdb79" compoundref="stm32f10x__fsmc_8h" startline="108">FSMC_NORSRAMInitTypeDef::FSMC_BurstAccessMode</references>
+        <references refid="group___f_s_m_c___asynchronous_wait_1ga52d579de825316ee058baf11bfb749d6" compoundref="stm32f10x__fsmc_8h" startline="352">IS_FSMC_ASYNWAIT</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1ac350cc34377fe3d5f882a6801bab1ac9" compoundref="stm32f10x__fsmc_8h" startline="112">FSMC_NORSRAMInitTypeDef::FSMC_AsynchronousWait</references>
+        <references refid="group___f_s_m_c___wait___signal___polarity_1gabc5321807d5184fe5cdb7848e1be7bc6" compoundref="stm32f10x__fsmc_8h" startline="365">IS_FSMC_WAIT_POLARITY</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a5d4d76594fc201943b51095e3ef34791" compoundref="stm32f10x__fsmc_8h" startline="116">FSMC_NORSRAMInitTypeDef::FSMC_WaitSignalPolarity</references>
+        <references refid="group___f_s_m_c___wrap___mode_1ga0751d74b7fb1e17f6cedea091e8ebfc8" compoundref="stm32f10x__fsmc_8h" startline="378">IS_FSMC_WRAP_MODE</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a7e201c17bf7c5f6cc69fb6de29c8b024" compoundref="stm32f10x__fsmc_8h" startline="120">FSMC_NORSRAMInitTypeDef::FSMC_WrapMode</references>
+        <references refid="group___f_s_m_c___wait___timing_1ga3edb40c756afa8bb78550b7e22ded093" compoundref="stm32f10x__fsmc_8h" startline="391">IS_FSMC_WAIT_SIGNAL_ACTIVE</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a71c6e7cc8e7e1a8fd0562960ffd23e88" compoundref="stm32f10x__fsmc_8h" startline="124">FSMC_NORSRAMInitTypeDef::FSMC_WaitSignalActive</references>
+        <references refid="group___f_s_m_c___write___operation_1ga87fc20d11761caa66c3e7d77a3a7d3e3" compoundref="stm32f10x__fsmc_8h" startline="404">IS_FSMC_WRITE_OPERATION</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a596793d1735c4e38c87e3bf91d986370" compoundref="stm32f10x__fsmc_8h" startline="129">FSMC_NORSRAMInitTypeDef::FSMC_WriteOperation</references>
+        <references refid="group___f_s_m_c___wait___signal_1gae617db4f15c82850d4f5c927f9a7db3e" compoundref="stm32f10x__fsmc_8h" startline="417">IS_FSMC_WAITE_SIGNAL</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1aedbc7df3ff61cc93a910a64dc53c932b" compoundref="stm32f10x__fsmc_8h" startline="132">FSMC_NORSRAMInitTypeDef::FSMC_WaitSignal</references>
+        <references refid="group___f_s_m_c___extended___mode_1ga79849ea07bf2a8f09989a6babd9e66e2" compoundref="stm32f10x__fsmc_8h" startline="430">IS_FSMC_EXTENDED_MODE</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1af33d0076b5bfea3a66e388ed7f3eb3f3" compoundref="stm32f10x__fsmc_8h" startline="136">FSMC_NORSRAMInitTypeDef::FSMC_ExtendedMode</references>
+        <references refid="group___f_s_m_c___write___burst_1gab7b03a33fab765827832abbf07d01a10" compoundref="stm32f10x__fsmc_8h" startline="443">IS_FSMC_WRITE_BURST</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1adac3756711f2d76e56a8cbcb7a03843d" compoundref="stm32f10x__fsmc_8h" startline="139">FSMC_NORSRAMInitTypeDef::FSMC_WriteBurst</references>
+        <references refid="group___f_s_m_c___address___setup___time_1ga8b77d090338011abc1be7f4a420e2d8f" compoundref="stm32f10x__fsmc_8h" startline="453">IS_FSMC_ADDRESS_SETUP_TIME</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a33f8e281b9ff3187906309d005b4159e" compoundref="stm32f10x__fsmc_8h" startline="142">FSMC_NORSRAMInitTypeDef::FSMC_ReadWriteTimingStruct</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a2ba90f4ec16bc38a2c4fa29c593b713b" compoundref="stm32f10x__fsmc_8h" startline="52">FSMC_NORSRAMTimingInitTypeDef::FSMC_AddressSetupTime</references>
+        <references refid="group___f_s_m_c___address___hold___time_1gae7d031a5b95ad00acf67e9bc95064998" compoundref="stm32f10x__fsmc_8h" startline="463">IS_FSMC_ADDRESS_HOLD_TIME</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a917b227ccb0a765791897ce3647ab26b" compoundref="stm32f10x__fsmc_8h" startline="57">FSMC_NORSRAMTimingInitTypeDef::FSMC_AddressHoldTime</references>
+        <references refid="group___f_s_m_c___data___setup___time_1ga3d923de775489e844913b29e77e8cca7" compoundref="stm32f10x__fsmc_8h" startline="473">IS_FSMC_DATASETUP_TIME</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1aaa0a9178766adeed424d5c4eb728d1b1" compoundref="stm32f10x__fsmc_8h" startline="62">FSMC_NORSRAMTimingInitTypeDef::FSMC_DataSetupTime</references>
+        <references refid="group___f_s_m_c___bus___turn__around___duration_1ga9ec626f30679a18af91bf48c52d9260d" compoundref="stm32f10x__fsmc_8h" startline="483">IS_FSMC_TURNAROUND_TIME</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a3d98d57618e46ec6aa5d876dcc047d32" compoundref="stm32f10x__fsmc_8h" startline="67">FSMC_NORSRAMTimingInitTypeDef::FSMC_BusTurnAroundDuration</references>
+        <references refid="group___f_s_m_c___c_l_k___division_1ga9e5321b02ea049fd076ba705acd06b5f" compoundref="stm32f10x__fsmc_8h" startline="493">IS_FSMC_CLK_DIV</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a251b439331b82eecea58aa3f8882ea15" compoundref="stm32f10x__fsmc_8h" startline="72">FSMC_NORSRAMTimingInitTypeDef::FSMC_CLKDivision</references>
+        <references refid="group___f_s_m_c___data___latency_1ga1ab8659a9631d8bb4f57d8be8580155c" compoundref="stm32f10x__fsmc_8h" startline="503">IS_FSMC_DATA_LATENCY</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1abc33886615fc3627448aa2dba11cfc77" compoundref="stm32f10x__fsmc_8h" startline="76">FSMC_NORSRAMTimingInitTypeDef::FSMC_DataLatency</references>
+        <references refid="group___f_s_m_c___access___mode_1ga1844335f297ea30e9d7fae09ce562092" compoundref="stm32f10x__fsmc_8h" startline="517">IS_FSMC_ACCESS_MODE</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a261d043a19cecf77e6859403be204efc" compoundref="stm32f10x__fsmc_8h" startline="84">FSMC_NORSRAMTimingInitTypeDef::FSMC_AccessMode</references>
+        <references refid="group___peripheral__declaration_1ga2a759bad07fe730c99f9e1490e646220" compoundref="stm32f10x_8h" startline="1448">FSMC_Bank1</references>
+        <references refid="group___f_s_m_c___memory___type_1ga8b9390abe7c281947c550bf4365649e5" compoundref="stm32f10x__fsmc_8h" startline="313">FSMC_MemoryType_NOR</references>
+        <references refid="group___f_s_m_c___private___defines_1ga38da33a73789b2c932962d75dfc1341f" compoundref="stm32f10x__fsmc_8c" startline="51">BCR_FACCEN_Set</references>
+        <references refid="group___f_s_m_c___extended___mode_1gaef9ff4c81a52fdb0471d2c4422271d2a" compoundref="stm32f10x__fsmc_8h" startline="428">FSMC_ExtendedMode_Enable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1ac62cf7426a933ce6aa6efc3a8e82dac1" compoundref="stm32f10x__fsmc_8h" startline="144">FSMC_NORSRAMInitTypeDef::FSMC_WriteTimingStruct</references>
+        <references refid="group___peripheral__declaration_1ga422986101f42a8811ae89ac69deb2759" compoundref="stm32f10x_8h" startline="1449">FSMC_Bank1E</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NANDInit</definition>
+        <argsstring>(FSMC_NANDInitTypeDef *FSMC_NANDInitStruct)</argsstring>
+        <name>FSMC_NANDInit</name>
+        <param>
+          <type><ref refid="struct_f_s_m_c___n_a_n_d_init_type_def" kindref="compound">FSMC_NANDInitTypeDef</ref> *</type>
+          <declname>FSMC_NANDInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the FSMC NAND Banks according to the specified parameters in the FSMC_NANDInitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_NANDInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_f_s_m_c___n_a_n_d_init_type_def" kindref="compound">FSMC_NANDInitTypeDef</ref> structure that contains the configuration information for the FSMC NAND specified Banks. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="262" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="262" bodyend="318"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga725bada099197f15f49dc0c5be00e19b" compoundref="stm32f10x__fsmc_8h" startline="279">IS_FSMC_NAND_BANK</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a60d3ead2188e1dbdf06810e952b3ce0f" compoundref="stm32f10x__fsmc_8h" startline="185">FSMC_NANDInitTypeDef::FSMC_Bank</references>
+        <references refid="group___f_s_m_c___wait__feature_1ga07c2585b517df2c7afbe3ba16c22f236" compoundref="stm32f10x__fsmc_8h" startline="540">IS_FSMC_WAIT_FEATURE</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1ab350e15014c4a9f4b2c2f2848f11eeca" compoundref="stm32f10x__fsmc_8h" startline="188">FSMC_NANDInitTypeDef::FSMC_Waitfeature</references>
+        <references refid="group___f_s_m_c___data___width_1ga003d52b62f5950fb041f73f15ce20171" compoundref="stm32f10x__fsmc_8h" startline="328">IS_FSMC_MEMORY_WIDTH</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1ab4a4f56aab3150d8fb02aaf092db0235" compoundref="stm32f10x__fsmc_8h" startline="191">FSMC_NANDInitTypeDef::FSMC_MemoryDataWidth</references>
+        <references refid="group___f_s_m_c___e_c_c_1gaf1a7cb45edd8707bf4ea8aac96799c77" compoundref="stm32f10x__fsmc_8h" startline="554">IS_FSMC_ECC_STATE</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a58d0510c0ce0ae3d1e3863bf8f571377" compoundref="stm32f10x__fsmc_8h" startline="194">FSMC_NANDInitTypeDef::FSMC_ECC</references>
+        <references refid="group___f_s_m_c___e_c_c___page___size_1ga58fefa0d55875775a88f54ad7498178f" compoundref="stm32f10x__fsmc_8h" startline="571">IS_FSMC_ECCPAGE_SIZE</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ed6a25710ba724a7a8f90af60130cf6" compoundref="stm32f10x__fsmc_8h" startline="197">FSMC_NANDInitTypeDef::FSMC_ECCPageSize</references>
+        <references refid="group___f_s_m_c___t_c_l_r___setup___time_1ga324848d0d9c0d2aad7ab70873b4a15e9" compoundref="stm32f10x__fsmc_8h" startline="586">IS_FSMC_TCLR_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a633c7be46a1d281916b9f2e34fa3d36a" compoundref="stm32f10x__fsmc_8h" startline="200">FSMC_NANDInitTypeDef::FSMC_TCLRSetupTime</references>
+        <references refid="group___f_s_m_c___t_a_r___setup___time_1ga5b9e0f64c44ab68afca90cd28dedd8e3" compoundref="stm32f10x__fsmc_8h" startline="596">IS_FSMC_TAR_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a014c1b8977b454ac15654d93dbb7dff9" compoundref="stm32f10x__fsmc_8h" startline="204">FSMC_NANDInitTypeDef::FSMC_TARSetupTime</references>
+        <references refid="group___f_s_m_c___setup___time_1ga4f2fbb8f6ec492cc241a49c468e0d98d" compoundref="stm32f10x__fsmc_8h" startline="606">IS_FSMC_SETUP_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ab117a15e780c02fcad5d844e71c425" compoundref="stm32f10x__fsmc_8h" startline="208">FSMC_NANDInitTypeDef::FSMC_CommonSpaceTimingStruct</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a31632aeb49269a29a39e3b191590b6dc" compoundref="stm32f10x__fsmc_8h" startline="153">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_SetupTime</references>
+        <references refid="group___f_s_m_c___wait___setup___time_1ga5c0efc48afb916ceff32868940f81613" compoundref="stm32f10x__fsmc_8h" startline="616">IS_FSMC_WAIT_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a99a7d54ed2674faa5a4e0f2669812855" compoundref="stm32f10x__fsmc_8h" startline="159">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_WaitSetupTime</references>
+        <references refid="group___f_s_m_c___hold___setup___time_1gab2abc8eb967495f2a2bafec8162d6385" compoundref="stm32f10x__fsmc_8h" startline="626">IS_FSMC_HOLD_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1ae2b53c2cfd55ff277f453613dcf7c8b2" compoundref="stm32f10x__fsmc_8h" startline="165">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HoldSetupTime</references>
+        <references refid="group___f_s_m_c___hi_z___setup___time_1gaeb6295e8cc1a524f060c5e780f868033" compoundref="stm32f10x__fsmc_8h" startline="636">IS_FSMC_HIZ_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a8a2a2a9e71dbf276fddad2bb32c0d256" compoundref="stm32f10x__fsmc_8h" startline="172">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HiZSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a2a33bd855240dba37e507f223dbca062" compoundref="stm32f10x__fsmc_8h" startline="210">FSMC_NANDInitTypeDef::FSMC_AttributeSpaceTimingStruct</references>
+        <references refid="group___f_s_m_c___private___defines_1gaf3992efb285ab994c41463af5107c501" compoundref="stm32f10x__fsmc_8c" startline="58">PCR_MemoryType_NAND</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_PCCARDInit</definition>
+        <argsstring>(FSMC_PCCARDInitTypeDef *FSMC_PCCARDInitStruct)</argsstring>
+        <name>FSMC_PCCARDInit</name>
+        <param>
+          <type><ref refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def" kindref="compound">FSMC_PCCARDInitTypeDef</ref> *</type>
+          <declname>FSMC_PCCARDInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the FSMC PCCARD Bank according to the specified parameters in the FSMC_PCCARDInitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_PCCARDInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def" kindref="compound">FSMC_PCCARDInitTypeDef</ref> structure that contains the configuration information for the FSMC PCCARD Bank. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="328" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="328" bodyend="372"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___wait__feature_1ga07c2585b517df2c7afbe3ba16c22f236" compoundref="stm32f10x__fsmc_8h" startline="540">IS_FSMC_WAIT_FEATURE</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a3ffd8c627ffe3ac90dfbfe93a8b97c26" compoundref="stm32f10x__fsmc_8h" startline="219">FSMC_PCCARDInitTypeDef::FSMC_Waitfeature</references>
+        <references refid="group___f_s_m_c___t_c_l_r___setup___time_1ga324848d0d9c0d2aad7ab70873b4a15e9" compoundref="stm32f10x__fsmc_8h" startline="586">IS_FSMC_TCLR_TIME</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a15db9675791f6f9c7fd82fe1084ff694" compoundref="stm32f10x__fsmc_8h" startline="222">FSMC_PCCARDInitTypeDef::FSMC_TCLRSetupTime</references>
+        <references refid="group___f_s_m_c___t_a_r___setup___time_1ga5b9e0f64c44ab68afca90cd28dedd8e3" compoundref="stm32f10x__fsmc_8h" startline="596">IS_FSMC_TAR_TIME</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1ac83f977e01623595e0aa8dd0b1eb3fcc" compoundref="stm32f10x__fsmc_8h" startline="226">FSMC_PCCARDInitTypeDef::FSMC_TARSetupTime</references>
+        <references refid="group___f_s_m_c___setup___time_1ga4f2fbb8f6ec492cc241a49c468e0d98d" compoundref="stm32f10x__fsmc_8h" startline="606">IS_FSMC_SETUP_TIME</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a87cb99ebe9b5ed570c6467abc9c2ef6d" compoundref="stm32f10x__fsmc_8h" startline="231">FSMC_PCCARDInitTypeDef::FSMC_CommonSpaceTimingStruct</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a31632aeb49269a29a39e3b191590b6dc" compoundref="stm32f10x__fsmc_8h" startline="153">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_SetupTime</references>
+        <references refid="group___f_s_m_c___wait___setup___time_1ga5c0efc48afb916ceff32868940f81613" compoundref="stm32f10x__fsmc_8h" startline="616">IS_FSMC_WAIT_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a99a7d54ed2674faa5a4e0f2669812855" compoundref="stm32f10x__fsmc_8h" startline="159">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_WaitSetupTime</references>
+        <references refid="group___f_s_m_c___hold___setup___time_1gab2abc8eb967495f2a2bafec8162d6385" compoundref="stm32f10x__fsmc_8h" startline="626">IS_FSMC_HOLD_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1ae2b53c2cfd55ff277f453613dcf7c8b2" compoundref="stm32f10x__fsmc_8h" startline="165">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HoldSetupTime</references>
+        <references refid="group___f_s_m_c___hi_z___setup___time_1gaeb6295e8cc1a524f060c5e780f868033" compoundref="stm32f10x__fsmc_8h" startline="636">IS_FSMC_HIZ_TIME</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a8a2a2a9e71dbf276fddad2bb32c0d256" compoundref="stm32f10x__fsmc_8h" startline="172">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HiZSetupTime</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1aee510f2e6e6ef18e7f5eedfed702f697" compoundref="stm32f10x__fsmc_8h" startline="233">FSMC_PCCARDInitTypeDef::FSMC_AttributeSpaceTimingStruct</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1abd9b9e8d7623829a40e5255b0949a3a1" compoundref="stm32f10x__fsmc_8h" startline="235">FSMC_PCCARDInitTypeDef::FSMC_IOSpaceTimingStruct</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+        <references refid="group___f_s_m_c___data___width_1ga65d85c3072e6790ae760ca2248e46df6" compoundref="stm32f10x__fsmc_8h" startline="327">FSMC_MemoryDataWidth_16b</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gaf33e6dfc34f62d16a0cb416de9e83d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NORSRAMStructInit</definition>
+        <argsstring>(FSMC_NORSRAMInitTypeDef *FSMC_NORSRAMInitStruct)</argsstring>
+        <name>FSMC_NORSRAMStructInit</name>
+        <param>
+          <type><ref refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def" kindref="compound">FSMC_NORSRAMInitTypeDef</ref> *</type>
+          <declname>FSMC_NORSRAMInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each FSMC_NORSRAMInitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_NORSRAMInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def" kindref="compound">FSMC_NORSRAMInitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="380" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="380" bodyend="410"/>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a7fcd864461cf0d1cf83b62fa2b4d3f86" compoundref="stm32f10x__fsmc_8h" startline="94">FSMC_NORSRAMInitTypeDef::FSMC_Bank</references>
+        <references refid="group___f_s_m_c___n_o_r_s_r_a_m___bank_1ga514a05828041fa1a13d464c9e4a0a4a9" compoundref="stm32f10x__fsmc_8h" startline="249">FSMC_Bank1_NORSRAM1</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1af4ff95085d3bb39e34c2f88ca3140ce5" compoundref="stm32f10x__fsmc_8h" startline="97">FSMC_NORSRAMInitTypeDef::FSMC_DataAddressMux</references>
+        <references refid="group___f_s_m_c___data___address___bus___multiplexing_1ga1dd4d12e63aaf29dbb8ae4b613f2aa15" compoundref="stm32f10x__fsmc_8h" startline="299">FSMC_DataAddressMux_Enable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a979ad605c6a63923e060576ee01e888d" compoundref="stm32f10x__fsmc_8h" startline="101">FSMC_NORSRAMInitTypeDef::FSMC_MemoryType</references>
+        <references refid="group___f_s_m_c___memory___type_1ga8a24e8da42e67dcf6fb2f43659aa49cf" compoundref="stm32f10x__fsmc_8h" startline="311">FSMC_MemoryType_SRAM</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a1791c771ff86f5dc5422040409517e9d" compoundref="stm32f10x__fsmc_8h" startline="105">FSMC_NORSRAMInitTypeDef::FSMC_MemoryDataWidth</references>
+        <references refid="group___f_s_m_c___data___width_1ga5753e089830f19af70a724766e3c329f" compoundref="stm32f10x__fsmc_8h" startline="326">FSMC_MemoryDataWidth_8b</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1aec0bfff5c934c251c21450a50f5bdb79" compoundref="stm32f10x__fsmc_8h" startline="108">FSMC_NORSRAMInitTypeDef::FSMC_BurstAccessMode</references>
+        <references refid="group___f_s_m_c___burst___access___mode_1ga26fc544945415e350563a9b00684850c" compoundref="stm32f10x__fsmc_8h" startline="339">FSMC_BurstAccessMode_Disable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1ac350cc34377fe3d5f882a6801bab1ac9" compoundref="stm32f10x__fsmc_8h" startline="112">FSMC_NORSRAMInitTypeDef::FSMC_AsynchronousWait</references>
+        <references refid="group___f_s_m_c___asynchronous_wait_1ga36c0dad6fe6c0e01632d3312c8f4c4cb" compoundref="stm32f10x__fsmc_8h" startline="350">FSMC_AsynchronousWait_Disable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a5d4d76594fc201943b51095e3ef34791" compoundref="stm32f10x__fsmc_8h" startline="116">FSMC_NORSRAMInitTypeDef::FSMC_WaitSignalPolarity</references>
+        <references refid="group___f_s_m_c___wait___signal___polarity_1ga7dc72fdfc6225e5daa9b8efee8dff49f" compoundref="stm32f10x__fsmc_8h" startline="363">FSMC_WaitSignalPolarity_Low</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a7e201c17bf7c5f6cc69fb6de29c8b024" compoundref="stm32f10x__fsmc_8h" startline="120">FSMC_NORSRAMInitTypeDef::FSMC_WrapMode</references>
+        <references refid="group___f_s_m_c___wrap___mode_1ga6041f0d3055ea3811a5a19560092f266" compoundref="stm32f10x__fsmc_8h" startline="376">FSMC_WrapMode_Disable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a71c6e7cc8e7e1a8fd0562960ffd23e88" compoundref="stm32f10x__fsmc_8h" startline="124">FSMC_NORSRAMInitTypeDef::FSMC_WaitSignalActive</references>
+        <references refid="group___f_s_m_c___wait___timing_1ga62c6855a7cc65b20024085f09cdc65e8" compoundref="stm32f10x__fsmc_8h" startline="389">FSMC_WaitSignalActive_BeforeWaitState</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a596793d1735c4e38c87e3bf91d986370" compoundref="stm32f10x__fsmc_8h" startline="129">FSMC_NORSRAMInitTypeDef::FSMC_WriteOperation</references>
+        <references refid="group___f_s_m_c___write___operation_1ga2478beb6dd8861b34a16b8a57a795e56" compoundref="stm32f10x__fsmc_8h" startline="403">FSMC_WriteOperation_Enable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1aedbc7df3ff61cc93a910a64dc53c932b" compoundref="stm32f10x__fsmc_8h" startline="132">FSMC_NORSRAMInitTypeDef::FSMC_WaitSignal</references>
+        <references refid="group___f_s_m_c___wait___signal_1gaf809e339f1cdc9d0a815fd98712e9ee3" compoundref="stm32f10x__fsmc_8h" startline="416">FSMC_WaitSignal_Enable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1af33d0076b5bfea3a66e388ed7f3eb3f3" compoundref="stm32f10x__fsmc_8h" startline="136">FSMC_NORSRAMInitTypeDef::FSMC_ExtendedMode</references>
+        <references refid="group___f_s_m_c___extended___mode_1ga5a1f1acdc44328158f59012748980dd3" compoundref="stm32f10x__fsmc_8h" startline="427">FSMC_ExtendedMode_Disable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1adac3756711f2d76e56a8cbcb7a03843d" compoundref="stm32f10x__fsmc_8h" startline="139">FSMC_NORSRAMInitTypeDef::FSMC_WriteBurst</references>
+        <references refid="group___f_s_m_c___write___burst_1ga65a49ecd05b3a128e8908c6a625adae7" compoundref="stm32f10x__fsmc_8h" startline="441">FSMC_WriteBurst_Disable</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1a33f8e281b9ff3187906309d005b4159e" compoundref="stm32f10x__fsmc_8h" startline="142">FSMC_NORSRAMInitTypeDef::FSMC_ReadWriteTimingStruct</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a2ba90f4ec16bc38a2c4fa29c593b713b" compoundref="stm32f10x__fsmc_8h" startline="52">FSMC_NORSRAMTimingInitTypeDef::FSMC_AddressSetupTime</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a917b227ccb0a765791897ce3647ab26b" compoundref="stm32f10x__fsmc_8h" startline="57">FSMC_NORSRAMTimingInitTypeDef::FSMC_AddressHoldTime</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1aaa0a9178766adeed424d5c4eb728d1b1" compoundref="stm32f10x__fsmc_8h" startline="62">FSMC_NORSRAMTimingInitTypeDef::FSMC_DataSetupTime</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a3d98d57618e46ec6aa5d876dcc047d32" compoundref="stm32f10x__fsmc_8h" startline="67">FSMC_NORSRAMTimingInitTypeDef::FSMC_BusTurnAroundDuration</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a251b439331b82eecea58aa3f8882ea15" compoundref="stm32f10x__fsmc_8h" startline="72">FSMC_NORSRAMTimingInitTypeDef::FSMC_CLKDivision</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1abc33886615fc3627448aa2dba11cfc77" compoundref="stm32f10x__fsmc_8h" startline="76">FSMC_NORSRAMTimingInitTypeDef::FSMC_DataLatency</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_1a261d043a19cecf77e6859403be204efc" compoundref="stm32f10x__fsmc_8h" startline="84">FSMC_NORSRAMTimingInitTypeDef::FSMC_AccessMode</references>
+        <references refid="group___f_s_m_c___access___mode_1gae0f299b51c12257311694c4a8f5c00c3" compoundref="stm32f10x__fsmc_8h" startline="513">FSMC_AccessMode_A</references>
+        <references refid="struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def_1ac62cf7426a933ce6aa6efc3a8e82dac1" compoundref="stm32f10x__fsmc_8h" startline="144">FSMC_NORSRAMInitTypeDef::FSMC_WriteTimingStruct</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NANDStructInit</definition>
+        <argsstring>(FSMC_NANDInitTypeDef *FSMC_NANDInitStruct)</argsstring>
+        <name>FSMC_NANDStructInit</name>
+        <param>
+          <type><ref refid="struct_f_s_m_c___n_a_n_d_init_type_def" kindref="compound">FSMC_NANDInitTypeDef</ref> *</type>
+          <declname>FSMC_NANDInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each FSMC_NANDInitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_NANDInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_f_s_m_c___n_a_n_d_init_type_def" kindref="compound">FSMC_NANDInitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="418" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="418" bodyend="436"/>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a60d3ead2188e1dbdf06810e952b3ce0f" compoundref="stm32f10x__fsmc_8h" startline="185">FSMC_NANDInitTypeDef::FSMC_Bank</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1ab350e15014c4a9f4b2c2f2848f11eeca" compoundref="stm32f10x__fsmc_8h" startline="188">FSMC_NANDInitTypeDef::FSMC_Waitfeature</references>
+        <references refid="group___f_s_m_c___wait__feature_1ga8a31f05576e66546fbbcdb06ff67da7d" compoundref="stm32f10x__fsmc_8h" startline="538">FSMC_Waitfeature_Disable</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1ab4a4f56aab3150d8fb02aaf092db0235" compoundref="stm32f10x__fsmc_8h" startline="191">FSMC_NANDInitTypeDef::FSMC_MemoryDataWidth</references>
+        <references refid="group___f_s_m_c___data___width_1ga5753e089830f19af70a724766e3c329f" compoundref="stm32f10x__fsmc_8h" startline="326">FSMC_MemoryDataWidth_8b</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a58d0510c0ce0ae3d1e3863bf8f571377" compoundref="stm32f10x__fsmc_8h" startline="194">FSMC_NANDInitTypeDef::FSMC_ECC</references>
+        <references refid="group___f_s_m_c___e_c_c_1ga9a3264c0718f5023fd106abea7ef806d" compoundref="stm32f10x__fsmc_8h" startline="552">FSMC_ECC_Disable</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ed6a25710ba724a7a8f90af60130cf6" compoundref="stm32f10x__fsmc_8h" startline="197">FSMC_NANDInitTypeDef::FSMC_ECCPageSize</references>
+        <references refid="group___f_s_m_c___e_c_c___page___size_1gaaa1661267b44e6728fa64aca79de54b3" compoundref="stm32f10x__fsmc_8h" startline="565">FSMC_ECCPageSize_256Bytes</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a633c7be46a1d281916b9f2e34fa3d36a" compoundref="stm32f10x__fsmc_8h" startline="200">FSMC_NANDInitTypeDef::FSMC_TCLRSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a014c1b8977b454ac15654d93dbb7dff9" compoundref="stm32f10x__fsmc_8h" startline="204">FSMC_NANDInitTypeDef::FSMC_TARSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ab117a15e780c02fcad5d844e71c425" compoundref="stm32f10x__fsmc_8h" startline="208">FSMC_NANDInitTypeDef::FSMC_CommonSpaceTimingStruct</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a31632aeb49269a29a39e3b191590b6dc" compoundref="stm32f10x__fsmc_8h" startline="153">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_SetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a99a7d54ed2674faa5a4e0f2669812855" compoundref="stm32f10x__fsmc_8h" startline="159">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_WaitSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1ae2b53c2cfd55ff277f453613dcf7c8b2" compoundref="stm32f10x__fsmc_8h" startline="165">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HoldSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a8a2a2a9e71dbf276fddad2bb32c0d256" compoundref="stm32f10x__fsmc_8h" startline="172">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HiZSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a2a33bd855240dba37e507f223dbca062" compoundref="stm32f10x__fsmc_8h" startline="210">FSMC_NANDInitTypeDef::FSMC_AttributeSpaceTimingStruct</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_PCCARDStructInit</definition>
+        <argsstring>(FSMC_PCCARDInitTypeDef *FSMC_PCCARDInitStruct)</argsstring>
+        <name>FSMC_PCCARDStructInit</name>
+        <param>
+          <type><ref refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def" kindref="compound">FSMC_PCCARDInitTypeDef</ref> *</type>
+          <declname>FSMC_PCCARDInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each FSMC_PCCARDInitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_PCCARDInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def" kindref="compound">FSMC_PCCARDInitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="444" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="444" bodyend="462"/>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a3ffd8c627ffe3ac90dfbfe93a8b97c26" compoundref="stm32f10x__fsmc_8h" startline="219">FSMC_PCCARDInitTypeDef::FSMC_Waitfeature</references>
+        <references refid="group___f_s_m_c___wait__feature_1ga8a31f05576e66546fbbcdb06ff67da7d" compoundref="stm32f10x__fsmc_8h" startline="538">FSMC_Waitfeature_Disable</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a15db9675791f6f9c7fd82fe1084ff694" compoundref="stm32f10x__fsmc_8h" startline="222">FSMC_PCCARDInitTypeDef::FSMC_TCLRSetupTime</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1ac83f977e01623595e0aa8dd0b1eb3fcc" compoundref="stm32f10x__fsmc_8h" startline="226">FSMC_PCCARDInitTypeDef::FSMC_TARSetupTime</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a87cb99ebe9b5ed570c6467abc9c2ef6d" compoundref="stm32f10x__fsmc_8h" startline="231">FSMC_PCCARDInitTypeDef::FSMC_CommonSpaceTimingStruct</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a31632aeb49269a29a39e3b191590b6dc" compoundref="stm32f10x__fsmc_8h" startline="153">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_SetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a99a7d54ed2674faa5a4e0f2669812855" compoundref="stm32f10x__fsmc_8h" startline="159">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_WaitSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1ae2b53c2cfd55ff277f453613dcf7c8b2" compoundref="stm32f10x__fsmc_8h" startline="165">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HoldSetupTime</references>
+        <references refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a8a2a2a9e71dbf276fddad2bb32c0d256" compoundref="stm32f10x__fsmc_8h" startline="172">FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HiZSetupTime</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1aee510f2e6e6ef18e7f5eedfed702f697" compoundref="stm32f10x__fsmc_8h" startline="233">FSMC_PCCARDInitTypeDef::FSMC_AttributeSpaceTimingStruct</references>
+        <references refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1abd9b9e8d7623829a40e5255b0949a3a1" compoundref="stm32f10x__fsmc_8h" startline="235">FSMC_PCCARDInitTypeDef::FSMC_IOSpaceTimingStruct</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gaf943f0f2680168d3a95a3c2c9f3eca2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NORSRAMCmd</definition>
+        <argsstring>(uint32_t FSMC_Bank, FunctionalState NewState)</argsstring>
+        <name>FSMC_NORSRAMCmd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified NOR/SRAM Memory Bank. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank1_NORSRAM1: FSMC Bank1 NOR/SRAM1 </para></listitem>
+<listitem><para>FSMC_Bank1_NORSRAM2: FSMC Bank1 NOR/SRAM2 </para></listitem>
+<listitem><para>FSMC_Bank1_NORSRAM3: FSMC Bank1 NOR/SRAM3 </para></listitem>
+<listitem><para>FSMC_Bank1_NORSRAM4: FSMC Bank1 NOR/SRAM4 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the FSMC_Bank. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="475" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="475" bodyend="490"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga3e3bed3dd83d38e63f11ac4cbcb87304" compoundref="stm32f10x__fsmc_8h" startline="274">IS_FSMC_NORSRAM_BANK</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga2a759bad07fe730c99f9e1490e646220" compoundref="stm32f10x_8h" startline="1448">FSMC_Bank1</references>
+        <references refid="group___f_s_m_c___private___defines_1ga3c427afcf32b17fb72be67fd4638e6d5" compoundref="stm32f10x__fsmc_8c" startline="49">BCR_MBKEN_Set</references>
+        <references refid="group___f_s_m_c___private___defines_1gaa63b72d32a32c53a057ee0a45bed0d3b" compoundref="stm32f10x__fsmc_8c" startline="50">BCR_MBKEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga33ec7c39ea4d42e92c72c6e517d8235c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NANDCmd</definition>
+        <argsstring>(uint32_t FSMC_Bank, FunctionalState NewState)</argsstring>
+        <name>FSMC_NANDCmd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified NAND Memory Bank. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the FSMC_Bank. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="501" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="501" bodyend="530"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga725bada099197f15f49dc0c5be00e19b" compoundref="stm32f10x__fsmc_8h" startline="279">IS_FSMC_NAND_BANK</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___private___defines_1gade871050f882b7f48582084b0e95f67c" compoundref="stm32f10x__fsmc_8c" startline="54">PCR_PBKEN_Set</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___f_s_m_c___private___defines_1gac6d0ddc3888a0554b032f0f484cfe332" compoundref="stm32f10x__fsmc_8c" startline="55">PCR_PBKEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga2d410151ceb3428c6a1bf374a0472cde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_PCCARDCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>FSMC_PCCARDCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the PCCARD Memory Bank. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the PCCARD Memory Bank. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="538" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="538" bodyend="552"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+        <references refid="group___f_s_m_c___private___defines_1gade871050f882b7f48582084b0e95f67c" compoundref="stm32f10x__fsmc_8c" startline="54">PCR_PBKEN_Set</references>
+        <references refid="group___f_s_m_c___private___defines_1gac6d0ddc3888a0554b032f0f484cfe332" compoundref="stm32f10x__fsmc_8c" startline="55">PCR_PBKEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga5800301fc39bbe998a18ebd9ff191cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_NANDECCCmd</definition>
+        <argsstring>(uint32_t FSMC_Bank, FunctionalState NewState)</argsstring>
+        <name>FSMC_NANDECCCmd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the FSMC NAND ECC feature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the FSMC NAND ECC feature. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="564" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="564" bodyend="593"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga725bada099197f15f49dc0c5be00e19b" compoundref="stm32f10x__fsmc_8h" startline="279">IS_FSMC_NAND_BANK</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___private___defines_1ga8a0d7950936e3869b449d421e03a19ac" compoundref="stm32f10x__fsmc_8c" startline="56">PCR_ECCEN_Set</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___f_s_m_c___private___defines_1gaca1a5c5cd46c8a32dab58c3eb3b865fa" compoundref="stm32f10x__fsmc_8c" startline="57">PCR_ECCEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gaad6d4f5b5a41684ce053fea55bdb98d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_GetECC</definition>
+        <argsstring>(uint32_t FSMC_Bank)</argsstring>
+        <name>FSMC_GetECC</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <briefdescription>
+<para>Returns the error correction code register value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error Correction Code (ECC) value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="603" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="603" bodyend="619"/>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga217027ae3cd213b9076b6a1be197064c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_ITConfig</definition>
+        <argsstring>(uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState)</argsstring>
+        <name>FSMC_ITConfig</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified FSMC interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+<listitem><para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FSMC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para></listitem>
+<listitem><para>FSMC_IT_Level: Level edge detection interrupt. </para></listitem>
+<listitem><para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified FSMC interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="637" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="637" bodyend="680"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1gaca216ea0c184b78f23df15296a10bac0" compoundref="stm32f10x__fsmc_8h" startline="286">IS_FSMC_IT_BANK</references>
+        <references refid="group___f_s_m_c___interrupt__sources_1ga40a38f097a75f27a700e626905fa9a38" compoundref="stm32f10x__fsmc_8h" startline="649">IS_FSMC_IT</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1gaf72def0732c026b0245d721ee371c85b" compoundref="stm32f10x__fsmc_8h" startline="261">FSMC_Bank3_NAND</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gae00355115b078f483f0771057bb849c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus FSMC_GetFlagStatus</definition>
+        <argsstring>(uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</argsstring>
+        <name>FSMC_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified FSMC flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+<listitem><para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FSMC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_FLAG_RisingEdge: Rising egde detection Flag. </para></listitem>
+<listitem><para>FSMC_FLAG_Level: Level detection Flag. </para></listitem>
+<listitem><para>FSMC_FLAG_FallingEdge: Falling egde detection Flag. </para></listitem>
+<listitem><para>FSMC_FLAG_FEMPT: Fifo empty Flag. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of FSMC_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="697" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="697" bodyend="731"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga884e28a365a738ad8a3199ee279a1f77" compoundref="stm32f10x__fsmc_8h" startline="282">IS_FSMC_GETFLAG_BANK</references>
+        <references refid="group___f_s_m_c___flags_1gab8674160ef7884f939e07041bbf5b18b" compoundref="stm32f10x__fsmc_8h" startline="665">IS_FSMC_GET_FLAG</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1gaf72def0732c026b0245d721ee371c85b" compoundref="stm32f10x__fsmc_8h" startline="261">FSMC_Bank3_NAND</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga697618f2de0ad9a8a82461ddbebd5264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_ClearFlag</definition>
+        <argsstring>(uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</argsstring>
+        <name>FSMC_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the FSMC&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+<listitem><para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FSMC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>FSMC_FLAG_RisingEdge: Rising egde detection Flag. </para></listitem>
+<listitem><para>FSMC_FLAG_Level: Level detection Flag. </para></listitem>
+<listitem><para>FSMC_FLAG_FallingEdge: Falling egde detection Flag. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="747" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="747" bodyend="766"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1ga884e28a365a738ad8a3199ee279a1f77" compoundref="stm32f10x__fsmc_8h" startline="282">IS_FSMC_GETFLAG_BANK</references>
+        <references refid="group___f_s_m_c___flags_1ga1114bf56b54e726831b38fc8c5daa14e" compoundref="stm32f10x__fsmc_8h" startline="670">IS_FSMC_CLEAR_FLAG</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1gaf72def0732c026b0245d721ee371c85b" compoundref="stm32f10x__fsmc_8h" startline="261">FSMC_Bank3_NAND</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1ga7fce9ca889d33cd8b8b7413875dd4d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus FSMC_GetITStatus</definition>
+        <argsstring>(uint32_t FSMC_Bank, uint32_t FSMC_IT)</argsstring>
+        <name>FSMC_GetITStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified FSMC interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+<listitem><para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FSMC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para></listitem>
+<listitem><para>FSMC_IT_Level: Level edge detection interrupt. </para></listitem>
+<listitem><para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of FSMC_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="782" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="782" bodyend="817"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1gaca216ea0c184b78f23df15296a10bac0" compoundref="stm32f10x__fsmc_8h" startline="286">IS_FSMC_IT_BANK</references>
+        <references refid="group___f_s_m_c___interrupt__sources_1gae2a57d0b15e025212489ec1421ff245d" compoundref="stm32f10x__fsmc_8h" startline="650">IS_FSMC_GET_IT</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1gaf72def0732c026b0245d721ee371c85b" compoundref="stm32f10x__fsmc_8h" startline="261">FSMC_Bank3_NAND</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_s_m_c___private___functions_1gad9387e7674b8a376256a3378649e004e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FSMC_ClearITPendingBit</definition>
+        <argsstring>(uint32_t FSMC_Bank, uint32_t FSMC_IT)</argsstring>
+        <name>FSMC_ClearITPendingBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_Bank</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>FSMC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the FSMC&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FSMC_Bank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para></listitem>
+<listitem><para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para></listitem>
+<listitem><para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FSMC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para></listitem>
+<listitem><para>FSMC_IT_Level: Level edge detection interrupt. </para></listitem>
+<listitem><para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" line="833" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" bodystart="833" bodyend="852"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_s_m_c___exported___constants_1gaca216ea0c184b78f23df15296a10bac0" compoundref="stm32f10x__fsmc_8h" startline="286">IS_FSMC_IT_BANK</references>
+        <references refid="group___f_s_m_c___interrupt__sources_1ga40a38f097a75f27a700e626905fa9a38" compoundref="stm32f10x__fsmc_8h" startline="649">IS_FSMC_IT</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27" compoundref="stm32f10x__fsmc_8h" startline="260">FSMC_Bank2_NAND</references>
+        <references refid="group___peripheral__declaration_1gabb3dfb5e88694aa2983ecabd33a55e0a" compoundref="stm32f10x_8h" startline="1450">FSMC_Bank2</references>
+        <references refid="group___f_s_m_c___n_a_n_d___bank_1gaf72def0732c026b0245d721ee371c85b" compoundref="stm32f10x__fsmc_8h" startline="261">FSMC_Bank3_NAND</references>
+        <references refid="group___peripheral__declaration_1ga411eedc00b5b2b22b494004d4f41b736" compoundref="stm32f10x_8h" startline="1451">FSMC_Bank3</references>
+        <references refid="group___peripheral__declaration_1ga5aa00e4ac522693c6a21bc23ef5a96df" compoundref="stm32f10x_8h" startline="1452">FSMC_Bank4</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

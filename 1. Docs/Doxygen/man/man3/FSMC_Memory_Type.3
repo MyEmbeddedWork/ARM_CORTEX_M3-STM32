@@ -1,0 +1,54 @@
+.TH "FSMC_Memory_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_Memory_Type
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFSMC_MemoryType_SRAM\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryType_PSRAM\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryType_NOR\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_MEMORY\fP(MEMORY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FSMC_MemoryType_NOR   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 313 of file stm32f10x_fsmc\&.h\&.
+.SS "#define FSMC_MemoryType_PSRAM   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 312 of file stm32f10x_fsmc\&.h\&.
+.SS "#define FSMC_MemoryType_SRAM   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 311 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_MEMORY(MEMORY)"
+\fBValue:\fP
+.PP
+.nf
+(((MEMORY) == FSMC_MemoryType_SRAM) || \
+                                ((MEMORY) == FSMC_MemoryType_PSRAM)|| \
+                                ((MEMORY) == FSMC_MemoryType_NOR))
+.fi
+.PP
+Definition at line 314 of file stm32f10x_fsmc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

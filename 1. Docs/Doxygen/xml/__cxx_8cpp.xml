@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="__cxx_8cpp" kind="file" language="C++">
+    <compoundname>_cxx.cpp</compoundname>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes refid="_trace_8h" local="yes">diag/Trace.h</includes>
+    <incdepgraph>
+      <node id="797">
+        <label>diag/Trace.h</label>
+        <link refid="_trace_8h"/>
+        <childnode refid="798" relation="include">
+        </childnode>
+      </node>
+      <node id="794">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp</label>
+        <link refid="__cxx_8cpp"/>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+      </node>
+      <node id="796">
+        <label>sys/types.h</label>
+      </node>
+      <node id="798">
+        <label>unistd.h</label>
+      </node>
+      <node id="795">
+        <label>cstdlib</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace____gnu__cxx">__gnu_cxx</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="__cxx_8cpp_1ab607d1d3eec24589f8cb96ab27b68f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __attribute__</definition>
+        <argsstring>((noreturn)) __cxa_pure_virtual()</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(noreturn)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp" line="38" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_reset_hardware.c" bodystart="13" bodyend="35"/>
+        <references refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37">trace_printf</references>
+        <referencedby refid="__startup_8c_1a88508855b3ad63797a5059dd81d8041f" compoundref="__startup_8c" startline="128" endline="136">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="__cxx_8cpp_1a6be7d9ce80c86f5178635fa86c2dd5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __cxa_pure_virtual</definition>
+        <argsstring>()</argsstring>
+        <name>__cxa_pure_virtual</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp" line="42" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp" bodystart="42" bodyend="46"/>
+        <references refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974">trace_puts</references>
+        <referencedby refid="namespace____gnu__cxx_1af51888cedbc669a114cd79e39e0cd9be" compoundref="__cxx_8cpp" startline="26" endline="30">__gnu_cxx::__verbose_terminate_handler</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>functions<sp/>are<sp/>redefined<sp/>locally,<sp/>to<sp/>avoid<sp/>references<sp/>to<sp/>some</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>heavy<sp/>implementations<sp/>in<sp/>the<sp/>standard<sp/>C++<sp/>library.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_trace_8h" kindref="compound">diag/Trace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespace____gnu__cxx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace____gnu__cxx" kindref="compound">__gnu_cxx</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="namespace____gnu__cxx_1acf548952d6d5eb7ed0583d1abedb4164" kindref="member">__attribute__</ref>((noreturn))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="namespace____gnu__cxx_1af51888cedbc669a114cd79e39e0cd9be" kindref="member">__verbose_terminate_handler</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespace____gnu__cxx_1af51888cedbc669a114cd79e39e0cd9be" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace____gnu__cxx_1af51888cedbc669a114cd79e39e0cd9be" kindref="member">__verbose_terminate_handler</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" kindref="member">trace_puts</ref>(__func__);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="namespace____gnu__cxx_1acf548952d6d5eb7ed0583d1abedb4164" kindref="member">__attribute__</ref>((noreturn))</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="__cxx_8cpp_1a6be7d9ce80c86f5178635fa86c2dd5e7" kindref="member">__cxa_pure_virtual</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="__cxx_8cpp_1a6be7d9ce80c86f5178635fa86c2dd5e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="__cxx_8cpp_1a6be7d9ce80c86f5178635fa86c2dd5e7" kindref="member">__cxa_pure_virtual</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" kindref="member">trace_puts</ref>(__func__);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_cxx.cpp"/>
+  </compounddef>
+</doxygen>

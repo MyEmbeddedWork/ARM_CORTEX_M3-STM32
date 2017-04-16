@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___system__clock__source" kind="group">
+    <compoundname>System_clock_source</compoundname>
+    <title>System_clock_source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___system__clock__source_1ga0f392254e74dd965c48edd5aad148e20" prot="public" static="no">
+        <name>RCC_SYSCLKSource_HSI</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="289" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___system__clock__source_1gabeae110e41833842f8620647ea0ce85a" prot="public" static="no">
+        <name>RCC_SYSCLKSource_HSE</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="290" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___system__clock__source_1ga9301b7a07a7cb8c2c6ed87b619c1c966" prot="public" static="no">
+        <name>RCC_SYSCLKSource_PLLCLK</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="291" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___system__clock__source_1gaae9d6172a72b0a90cb3703aa59258c57" prot="public" static="no">
+        <name>IS_RCC_SYSCLK_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___system__clock__source_1ga0f392254e74dd965c48edd5aad148e20" kindref="member">RCC_SYSCLKSource_HSI</ref>) || \
+                                      ((SOURCE) == <ref refid="group___system__clock__source_1gabeae110e41833842f8620647ea0ce85a" kindref="member">RCC_SYSCLKSource_HSE</ref>) || \
+                                      ((SOURCE) == <ref refid="group___system__clock__source_1ga9301b7a07a7cb8c2c6ed87b619c1c966" kindref="member">RCC_SYSCLKSource_PLLCLK</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="292" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

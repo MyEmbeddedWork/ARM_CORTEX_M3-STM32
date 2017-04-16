@@ -1,0 +1,68 @@
+.TH "CanTxMsg" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CanTxMsg \- CAN Tx message structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_can\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBStdId\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBExtId\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBIDE\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRTR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBDLC\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBData\fP [8]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CAN Tx message structure definition\&. 
+.PP
+Definition at line 151 of file stm32f10x_can\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t CanTxMsg::Data[8]"
+Contains the data to be transmitted\&. It ranges from 0 to 0xFF\&. 
+.PP
+Definition at line 171 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CanTxMsg::DLC"
+Specifies the length of the frame that will be transmitted\&. This parameter can be a value between 0 to 8 
+.PP
+Definition at line 167 of file stm32f10x_can\&.h\&.
+.SS "uint32_t CanTxMsg::ExtId"
+Specifies the extended identifier\&. This parameter can be a value between 0 to 0x1FFFFFFF\&. 
+.PP
+Definition at line 156 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CanTxMsg::IDE"
+Specifies the type of identifier for the message that will be transmitted\&. This parameter can be a value of \fBCAN_identifier_type\fP 
+.PP
+Definition at line 159 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CanTxMsg::RTR"
+Specifies the type of frame for the message that will be transmitted\&. This parameter can be a value of \fBCAN_remote_transmission_request\fP 
+.PP
+Definition at line 163 of file stm32f10x_can\&.h\&.
+.SS "uint32_t CanTxMsg::StdId"
+Specifies the standard identifier\&. This parameter can be a value between 0 to 0x7FF\&. 
+.PP
+Definition at line 153 of file stm32f10x_can\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

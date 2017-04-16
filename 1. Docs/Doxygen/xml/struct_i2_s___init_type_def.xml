@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_i2_s___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>I2S_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__spi_8h" local="no">stm32f10x_spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s___init_type_def_1aa57e5190eac245c0873a00849b1bd239" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2S_InitTypeDef::I2S_Mode</definition>
+        <argsstring></argsstring>
+        <name>I2S_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the I2S operating mode. This parameter can be a value of <ref refid="group___i2_s___mode" kindref="compound">I2S_Mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="96" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga7470ec1d0759fdeeb42c7fe71a3b41b7" compoundref="stm32f10x__spi_8c" startline="407" endline="427">I2S_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___init_type_def_1ae987936e7cb9a962ee388c98f8c872b7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2S_InitTypeDef::I2S_Standard</definition>
+        <argsstring></argsstring>
+        <name>I2S_Standard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the standard used for the I2S communication. This parameter can be a value of <ref refid="group___i2_s___standard" kindref="compound">I2S_Standard</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="99" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga7470ec1d0759fdeeb42c7fe71a3b41b7" compoundref="stm32f10x__spi_8c" startline="407" endline="427">I2S_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___init_type_def_1ad5e59034081427fd638983c10f18e833" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2S_InitTypeDef::I2S_DataFormat</definition>
+        <argsstring></argsstring>
+        <name>I2S_DataFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the data format for the I2S communication. This parameter can be a value of <ref refid="group___i2_s___data___format" kindref="compound">I2S_Data_Format</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="102" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga7470ec1d0759fdeeb42c7fe71a3b41b7" compoundref="stm32f10x__spi_8c" startline="407" endline="427">I2S_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___init_type_def_1ae7aaf79b7f392d79ac2f7b35a24e5d1a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2S_InitTypeDef::I2S_MCLKOutput</definition>
+        <argsstring></argsstring>
+        <name>I2S_MCLKOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the I2S MCLK output is enabled or not. This parameter can be a value of <ref refid="group___i2_s___m_c_l_k___output" kindref="compound">I2S_MCLK_Output</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="105" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga7470ec1d0759fdeeb42c7fe71a3b41b7" compoundref="stm32f10x__spi_8c" startline="407" endline="427">I2S_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___init_type_def_1a87674c5fbccad53b7646565f35d1fc0a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2S_InitTypeDef::I2S_AudioFreq</definition>
+        <argsstring></argsstring>
+        <name>I2S_AudioFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the frequency selected for the I2S communication. This parameter can be a value of <ref refid="group___i2_s___audio___frequency" kindref="compound">I2S_Audio_Frequency</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="108" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga7470ec1d0759fdeeb42c7fe71a3b41b7" compoundref="stm32f10x__spi_8c" startline="407" endline="427">I2S_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___init_type_def_1aeb7741728520734ec2eab95d2143778c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2S_InitTypeDef::I2S_CPOL</definition>
+        <argsstring></argsstring>
+        <name>I2S_CPOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the idle state of the I2S clock. This parameter can be a value of <ref refid="group___i2_s___clock___polarity" kindref="compound">I2S_Clock_Polarity</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="111" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga7470ec1d0759fdeeb42c7fe71a3b41b7" compoundref="stm32f10x__spi_8c" startline="407" endline="427">I2S_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2S Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="94" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="93" bodyend="113"/>
+    <listofallmembers>
+      <member refid="struct_i2_s___init_type_def_1a87674c5fbccad53b7646565f35d1fc0a" prot="public" virt="non-virtual"><scope>I2S_InitTypeDef</scope><name>I2S_AudioFreq</name></member>
+      <member refid="struct_i2_s___init_type_def_1aeb7741728520734ec2eab95d2143778c" prot="public" virt="non-virtual"><scope>I2S_InitTypeDef</scope><name>I2S_CPOL</name></member>
+      <member refid="struct_i2_s___init_type_def_1ad5e59034081427fd638983c10f18e833" prot="public" virt="non-virtual"><scope>I2S_InitTypeDef</scope><name>I2S_DataFormat</name></member>
+      <member refid="struct_i2_s___init_type_def_1ae7aaf79b7f392d79ac2f7b35a24e5d1a" prot="public" virt="non-virtual"><scope>I2S_InitTypeDef</scope><name>I2S_MCLKOutput</name></member>
+      <member refid="struct_i2_s___init_type_def_1aa57e5190eac245c0873a00849b1bd239" prot="public" virt="non-virtual"><scope>I2S_InitTypeDef</scope><name>I2S_Mode</name></member>
+      <member refid="struct_i2_s___init_type_def_1ae987936e7cb9a962ee388c98f8c872b7" prot="public" virt="non-virtual"><scope>I2S_InitTypeDef</scope><name>I2S_Standard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

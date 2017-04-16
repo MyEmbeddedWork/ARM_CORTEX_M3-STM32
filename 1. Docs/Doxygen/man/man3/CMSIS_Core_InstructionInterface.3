@@ -1,0 +1,731 @@
+.TH "CMSIS_Core_InstructionInterface" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_InstructionInterface
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__NOP\fP   __nop"
+.br
+.RI "No Operation\&. "
+.ti -1c
+.RI "#define \fB__WFI\fP   __wfi"
+.br
+.RI "Wait For Interrupt\&. "
+.ti -1c
+.RI "#define \fB__WFE\fP   __wfe"
+.br
+.RI "Wait For Event\&. "
+.ti -1c
+.RI "#define \fB__SEV\fP   __sev"
+.br
+.RI "Send Event\&. "
+.ti -1c
+.RI "#define \fB__ISB\fP()"
+.br
+.RI "Instruction Synchronization Barrier\&. "
+.ti -1c
+.RI "#define \fB__DSB\fP()"
+.br
+.RI "Data Synchronization Barrier\&. "
+.ti -1c
+.RI "#define \fB__DMB\fP()"
+.br
+.RI "Data Memory Barrier\&. "
+.ti -1c
+.RI "#define \fB__REV\fP   __rev"
+.br
+.RI "Reverse byte order (32 bit) "
+.ti -1c
+.RI "#define \fB__ROR\fP   __ror"
+.br
+.RI "Rotate Right in unsigned value (32 bit) "
+.ti -1c
+.RI "#define \fB__BKPT\fP(\fBvalue\fP)   __breakpoint(\fBvalue\fP)"
+.br
+.RI "Breakpoint\&. "
+.ti -1c
+.RI "#define \fB__CLZ\fP   __clz"
+.br
+.RI "Count leading zeros\&. "
+.ti -1c
+.RI "#define \fB__CMSIS_GCC_OUT_REG\fP(r)   '=r' (r)"
+.br
+.ti -1c
+.RI "#define \fB__CMSIS_GCC_USE_REG\fP(r)   'r' (r)"
+.br
+.ti -1c
+.RI "#define \fB__NOP\fP   __builtin_arm_nop"
+.br
+.RI "No Operation\&. "
+.ti -1c
+.RI "#define \fB__WFI\fP   __builtin_arm_wfi"
+.br
+.RI "Wait For Interrupt\&. "
+.ti -1c
+.RI "#define \fB__WFE\fP   __builtin_arm_wfe"
+.br
+.RI "Wait For Event\&. "
+.ti -1c
+.RI "#define \fB__SEV\fP   __builtin_arm_sev"
+.br
+.RI "Send Event\&. "
+.ti -1c
+.RI "#define \fB__ISB\fP()   __builtin_arm_isb(0xF);"
+.br
+.RI "Instruction Synchronization Barrier\&. "
+.ti -1c
+.RI "#define \fB__DSB\fP()   __builtin_arm_dsb(0xF);"
+.br
+.RI "Data Synchronization Barrier\&. "
+.ti -1c
+.RI "#define \fB__DMB\fP()   __builtin_arm_dmb(0xF);"
+.br
+.RI "Data Memory Barrier\&. "
+.ti -1c
+.RI "#define \fB__REV\fP   __builtin_bswap32"
+.br
+.RI "Reverse byte order (32 bit) "
+.ti -1c
+.RI "#define \fB__REV16\fP   __builtin_bswap16                           /* ToDo:  ARMCC_V6: check if __builtin_bswap16 could be used */"
+.br
+.RI "Reverse byte order (16 bit) "
+.ti -1c
+.RI "#define \fB__BKPT\fP(\fBvalue\fP)   __ASM \fBvolatile\fP ('bkpt '#value)"
+.br
+.RI "Breakpoint\&. "
+.ti -1c
+.RI "#define \fB__CLZ\fP   __builtin_clz"
+.br
+.RI "Count leading zeros\&. "
+.ti -1c
+.RI "#define \fB__CMSIS_GCC_OUT_REG\fP(r)   '=r' (r)"
+.br
+.ti -1c
+.RI "#define \fB__CMSIS_GCC_USE_REG\fP(r)   'r' (r)"
+.br
+.ti -1c
+.RI "#define \fB__BKPT\fP(\fBvalue\fP)   __ASM \fBvolatile\fP ('bkpt '#value)"
+.br
+.RI "Breakpoint\&. "
+.ti -1c
+.RI "#define \fB__CLZ\fP   __builtin_clz"
+.br
+.RI "Count leading zeros\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__attribute__\fP ((section('\&.rev16_text'))) __STATIC_INLINE __ASM uint32_t \fB__REV16\fP(uint32_t \fBvalue\fP)"
+.br
+.RI "Reverse byte order (16 bit) "
+.ti -1c
+.RI "\fB__attribute__\fP ((section('\&.revsh_text'))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t \fBvalue\fP)"
+.br
+.RI "Reverse byte order in signed short value\&. "
+.ti -1c
+.RI "\fB__attribute__\fP ((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t \fBvalue\fP)"
+.br
+.RI "Reverse bit order of value\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBop2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBop2\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Access to dedicated instructions 
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __BKPT(\fBvalue\fP)   __breakpoint(\fBvalue\fP)"
+
+.PP
+Breakpoint\&. Causes the processor to enter Debug state\&. Debug tools can use this to investigate system state when the instruction at a particular address is reached\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP is ignored by the processor\&. If required, a debugger can use it to store additional information about the breakpoint\&. 
+.RE
+.PP
+
+.PP
+Definition at line 427 of file cmsis_armcc\&.h\&.
+.SS "#define __BKPT(\fBvalue\fP)   __ASM \fBvolatile\fP ('bkpt '#value)"
+
+.PP
+Breakpoint\&. Causes the processor to enter Debug state\&. Debug tools can use this to investigate system state when the instruction at a particular address is reached\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP is ignored by the processor\&. If required, a debugger can use it to store additional information about the breakpoint\&. 
+.RE
+.PP
+
+.PP
+Definition at line 517 of file cmsis_gcc\&.h\&.
+.SS "#define __BKPT(\fBvalue\fP)   __ASM \fBvolatile\fP ('bkpt '#value)"
+
+.PP
+Breakpoint\&. Causes the processor to enter Debug state\&. Debug tools can use this to investigate system state when the instruction at a particular address is reached\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP is ignored by the processor\&. If required, a debugger can use it to store additional information about the breakpoint\&. 
+.RE
+.PP
+
+.PP
+Definition at line 865 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __CLZ   __clz"
+
+.PP
+Count leading zeros\&. Counts the number of leading zeros of a data value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to count the leading zeros 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+number of leading zeros in value 
+.RE
+.PP
+
+.PP
+Definition at line 463 of file cmsis_armcc\&.h\&.
+.SS "#define __CLZ   __builtin_clz"
+
+.PP
+Count leading zeros\&. Counts the number of leading zeros of a data value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to count the leading zeros 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+number of leading zeros in value 
+.RE
+.PP
+
+.PP
+Definition at line 554 of file cmsis_gcc\&.h\&.
+.SS "#define __CLZ   __builtin_clz"
+
+.PP
+Count leading zeros\&. Counts the number of leading zeros of a data value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to count the leading zeros 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+number of leading zeros in value 
+.RE
+.PP
+
+.PP
+Definition at line 903 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __CMSIS_GCC_OUT_REG(r)   '=r' (r)"
+
+.PP
+Definition at line 365 of file cmsis_gcc\&.h\&.
+.SS "#define __CMSIS_GCC_OUT_REG(r)   '=r' (r)"
+
+.PP
+Definition at line 746 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __CMSIS_GCC_USE_REG(r)   'r' (r)"
+
+.PP
+Definition at line 366 of file cmsis_gcc\&.h\&.
+.SS "#define __CMSIS_GCC_USE_REG(r)   'r' (r)"
+
+.PP
+Definition at line 747 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __DMB()"
+\fBValue:\fP
+.PP
+.nf
+do {\
+                   __schedule_barrier();\
+                   __dmb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)
+.fi
+.PP
+Data Memory Barrier\&. Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion\&. 
+.PP
+Definition at line 366 of file cmsis_armcc\&.h\&.
+.SS "#define __DMB()   __builtin_arm_dmb(0xF);"
+
+.PP
+Data Memory Barrier\&. Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion\&. 
+.PP
+Definition at line 799 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __DSB()"
+\fBValue:\fP
+.PP
+.nf
+do {\
+                   __schedule_barrier();\
+                   __dsb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)
+.fi
+.PP
+Data Synchronization Barrier\&. Acts as a special kind of Data Memory Barrier\&. It completes when all explicit memory accesses before this instruction complete\&. 
+.PP
+Definition at line 355 of file cmsis_armcc\&.h\&.
+.SS "#define __DSB()   __builtin_arm_dsb(0xF);"
+
+.PP
+Data Synchronization Barrier\&. Acts as a special kind of Data Memory Barrier\&. It completes when all explicit memory accesses before this instruction complete\&. 
+.PP
+Definition at line 791 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __ISB()"
+\fBValue:\fP
+.PP
+.nf
+do {\
+                   __schedule_barrier();\
+                   __isb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)
+.fi
+.PP
+Instruction Synchronization Barrier\&. Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed\&. 
+.PP
+Definition at line 344 of file cmsis_armcc\&.h\&.
+.SS "#define __ISB()   __builtin_arm_isb(0xF);"
+
+.PP
+Instruction Synchronization Barrier\&. Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed\&. 
+.PP
+Definition at line 784 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __NOP   __nop"
+
+.PP
+No Operation\&. No Operation does nothing\&. This instruction can be used for code alignment purposes\&. 
+.PP
+Definition at line 313 of file cmsis_armcc\&.h\&.
+.SS "#define __NOP   __builtin_arm_nop"
+
+.PP
+No Operation\&. No Operation does nothing\&. This instruction can be used for code alignment purposes\&. 
+.PP
+Definition at line 754 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __REV   __rev"
+
+.PP
+Reverse byte order (32 bit) Reverses the byte order in integer value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value 
+.RE
+.PP
+
+.PP
+Definition at line 378 of file cmsis_armcc\&.h\&.
+.SS "#define __REV   __builtin_bswap32"
+
+.PP
+Reverse byte order (32 bit) Reverses the byte order in integer value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value 
+.RE
+.PP
+
+.PP
+Definition at line 808 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __REV16   __builtin_bswap16                           /* ToDo:  ARMCC_V6: check if __builtin_bswap16 could be used */"
+
+.PP
+Reverse byte order (16 bit) Reverses the byte order in two unsigned short values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value 
+.RE
+.PP
+
+.PP
+Definition at line 817 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __ROR   __ror"
+
+.PP
+Rotate Right in unsigned value (32 bit) Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to rotate 
+.br
+\fIvalue\fP Number of Bits to rotate 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Rotated value 
+.RE
+.PP
+
+.PP
+Definition at line 417 of file cmsis_armcc\&.h\&.
+.SS "#define __SEV   __sev"
+
+.PP
+Send Event\&. Send Event is a hint instruction\&. It causes an event to be signaled to the CPU\&. 
+.PP
+Definition at line 335 of file cmsis_armcc\&.h\&.
+.SS "#define __SEV   __builtin_arm_sev"
+
+.PP
+Send Event\&. Send Event is a hint instruction\&. It causes an event to be signaled to the CPU\&. 
+.PP
+Definition at line 775 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __WFE   __wfe"
+
+.PP
+Wait For Event\&. Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs\&. 
+.PP
+Definition at line 328 of file cmsis_armcc\&.h\&.
+.SS "#define __WFE   __builtin_arm_wfe"
+
+.PP
+Wait For Event\&. Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs\&. 
+.PP
+Definition at line 768 of file cmsis_armcc_V6\&.h\&.
+.SS "#define __WFI   __wfi"
+
+.PP
+Wait For Interrupt\&. Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs\&. 
+.PP
+Definition at line 320 of file cmsis_armcc\&.h\&.
+.SS "#define __WFI   __builtin_arm_wfi"
+
+.PP
+Wait For Interrupt\&. Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs\&. 
+.PP
+Definition at line 760 of file cmsis_armcc_V6\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "__attribute__ ((section('\&.rev16_text')))"
+
+.PP
+Reverse byte order (16 bit) Reverses the byte order in two unsigned short values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value 
+.RE
+.PP
+
+.PP
+Definition at line 388 of file cmsis_armcc\&.h\&.
+.SS "__attribute__ ((section('\&.revsh_text')))"
+
+.PP
+Reverse byte order in signed short value\&. Reverses the byte order in a signed short value with sign extension to integer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value 
+.RE
+.PP
+
+.PP
+Definition at line 402 of file cmsis_armcc\&.h\&.
+.SS "void __attribute__ ((always_inline))\fC [inline]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+{
+    return 0
+.fi
+.PP
+Reverse bit order of value\&. Enable IRQ Interrupts\&.
+.PP
+Set Priority Mask\&.
+.PP
+Get Priority Mask\&.
+.PP
+Set Main Stack Pointer\&.
+.PP
+Get Main Stack Pointer\&.
+.PP
+Set Process Stack Pointer\&.
+.PP
+Get Process Stack Pointer\&.
+.PP
+Get xPSR Register\&.
+.PP
+Get APSR Register\&.
+.PP
+Get IPSR Register\&.
+.PP
+Set Control Register\&.
+.PP
+Get Control Register\&.
+.PP
+Disable IRQ Interrupts\&.
+.PP
+Reverse byte order (16 bit)
+.PP
+Reverse byte order (32 bit)
+.PP
+Data Memory Barrier\&.
+.PP
+Data Synchronization Barrier\&.
+.PP
+Instruction Synchronization Barrier\&.
+.PP
+Send Event\&.
+.PP
+Wait For Event\&.
+.PP
+Wait For Interrupt\&.
+.PP
+No Operation\&.
+.PP
+Rotate Right in unsigned value (32 bit)
+.PP
+Reverse byte order in signed short value\&.
+.PP
+Reverses the bit order of the given value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value
+.RE
+.PP
+Reverses the byte order in a signed short value with sign extension to integer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value
+.RE
+.PP
+Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIop1\fP Value to rotate 
+.br
+\fIop2\fP Number of Bits to rotate 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Rotated value
+.RE
+.PP
+No Operation does nothing\&. This instruction can be used for code alignment purposes\&.
+.PP
+Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs\&.
+.PP
+Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs\&.
+.PP
+Send Event is a hint instruction\&. It causes an event to be signaled to the CPU\&.
+.PP
+Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed\&.
+.PP
+Acts as a special kind of Data Memory Barrier\&. It completes when all explicit memory accesses before this instruction complete\&.
+.PP
+Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion\&.
+.PP
+Reverses the byte order in integer value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value
+.RE
+.PP
+Reverses the byte order in two unsigned short values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to reverse 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Reversed value
+.RE
+.PP
+Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP Value to rotate 
+.br
+\fIvalue\fP Number of Bits to rotate 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Rotated value
+.RE
+.PP
+Disables IRQ interrupts by setting the I-bit in the CPSR\&. Can only be executed in Privileged modes\&.
+.PP
+Returns the content of the Control Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Control Register value
+.RE
+.PP
+Writes the given value to the Control Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontrol\fP Control Register value to set
+.RE
+.PP
+Returns the content of the IPSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+IPSR Register value
+.RE
+.PP
+Returns the content of the APSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+APSR Register value
+.RE
+.PP
+Returns the content of the xPSR Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+xPSR Register value
+.RE
+.PP
+Returns the current value of the Process Stack Pointer (PSP)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+PSP Register value
+.RE
+.PP
+Assigns the given value to the Process Stack Pointer (PSP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItopOfProcStack\fP Process Stack Pointer value to set
+.RE
+.PP
+Returns the current value of the Main Stack Pointer (MSP)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+MSP Register value
+.RE
+.PP
+Assigns the given value to the Main Stack Pointer (MSP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItopOfMainStack\fP Main Stack Pointer value to set
+.RE
+.PP
+Returns the current state of the priority mask bit from the Priority Mask Register\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Priority Mask value
+.RE
+.PP
+Assigns the given value to the Priority Mask Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpriMask\fP Priority Mask
+.RE
+.PP
+Enables IRQ interrupts by clearing the I-bit in the CPSR\&. Can only be executed in Privileged modes\&. 
+.PP
+Definition at line 439 of file cmsis_armcc\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "uint32_t op2"
+\fBInitial value:\fP
+.PP
+.nf
+{
+  return (op1 >> op2) | (op1 << (32U - op2))
+.fi
+.PP
+Definition at line 505 of file cmsis_gcc\&.h\&.
+.SS "uint32_t op2"
+\fBInitial value:\fP
+.PP
+.nf
+{
+  return (op1 >> op2) | (op1 << (32U - op2))
+.fi
+.PP
+Definition at line 853 of file cmsis_armcc_V6\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

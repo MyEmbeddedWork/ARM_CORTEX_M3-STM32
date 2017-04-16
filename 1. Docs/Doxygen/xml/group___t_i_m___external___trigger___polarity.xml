@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___external___trigger___polarity" kind="group">
+    <compoundname>TIM_External_Trigger_Polarity</compoundname>
+    <title>TIM_External_Trigger_Polarity</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___external___trigger___polarity_1ga96f3959a02c0491ab8d65cfa384ce7e3" prot="public" static="no">
+        <name>TIM_ExtTRGPolarity_Inverted</name>
+        <initializer>((uint16_t)0x8000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="797" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___external___trigger___polarity_1ga63fe7c58c491d2a812d5621b71c2d0c5" prot="public" static="no">
+        <name>TIM_ExtTRGPolarity_NonInverted</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="798" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___external___trigger___polarity_1ga489ea1fed28375dec49cf1b8dfac47ca" prot="public" static="no">
+        <name>IS_TIM_EXT_POLARITY</name>
+        <param><defname>POLARITY</defname></param>
+        <initializer>(((POLARITY) == <ref refid="group___t_i_m___external___trigger___polarity_1ga96f3959a02c0491ab8d65cfa384ce7e3" kindref="member">TIM_ExtTRGPolarity_Inverted</ref>) || \
+                                       ((POLARITY) == <ref refid="group___t_i_m___external___trigger___polarity_1ga63fe7c58c491d2a812d5621b71c2d0c5" kindref="member">TIM_ExtTRGPolarity_NonInverted</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="799" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

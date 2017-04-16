@@ -1,0 +1,328 @@
+.TH "RCC_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_OFFSET\fP   (\fBRCC_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x00)"
+.br
+.ti -1c
+.RI "#define \fBHSION_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCR_HSION_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBHSION_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBPLLON_BitNumber\fP   0x18"
+.br
+.ti -1c
+.RI "#define \fBCR_PLLON_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBPLLON_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSSON_BitNumber\fP   0x13"
+.br
+.ti -1c
+.RI "#define \fBCR_CSSON_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBCSSON_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCFGR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x04)"
+.br
+.ti -1c
+.RI "#define \fBUSBPRE_BitNumber\fP   0x16"
+.br
+.ti -1c
+.RI "#define \fBCFGR_USBPRE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBUSBPRE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBBDCR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x20)"
+.br
+.ti -1c
+.RI "#define \fBRTCEN_BitNumber\fP   0x0F"
+.br
+.ti -1c
+.RI "#define \fBBDCR_RTCEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBBDCR_OFFSET\fP * 32) + (\fBRTCEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBBDRST_BitNumber\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBBDCR_BDRST_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBBDCR_OFFSET\fP * 32) + (\fBBDRST_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x24)"
+.br
+.ti -1c
+.RI "#define \fBLSION_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCSR_LSION_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBLSION_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEBYP_Reset\fP   ((uint32_t)0xFFFBFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEBYP_Set\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEON_Reset\fP   ((uint32_t)0xFFFEFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEON_Set\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSITRIM_Mask\fP   ((uint32_t)0xFFFFFF07)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLL_Mask\fP   ((uint32_t)0xFFC0FFFF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLLMull_Mask\fP   ((uint32_t)0x003C0000)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLLSRC_Mask\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLLXTPRE_Mask\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_SWS_Mask\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_SW_Mask\fP   ((uint32_t)0xFFFFFFFC)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_HPRE_Reset_Mask\fP   ((uint32_t)0xFFFFFF0F)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_HPRE_Set_Mask\fP   ((uint32_t)0x000000F0)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE1_Reset_Mask\fP   ((uint32_t)0xFFFFF8FF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE1_Set_Mask\fP   ((uint32_t)0x00000700)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE2_Reset_Mask\fP   ((uint32_t)0xFFFFC7FF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE2_Set_Mask\fP   ((uint32_t)0x00003800)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_ADCPRE_Reset_Mask\fP   ((uint32_t)0xFFFF3FFF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_ADCPRE_Set_Mask\fP   ((uint32_t)0x0000C000)"
+.br
+.ti -1c
+.RI "#define \fBCSR_RMVF_Set\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBFLAG_Mask\fP   ((uint8_t)0x1F)"
+.br
+.ti -1c
+.RI "#define \fBCIR_BYTE2_ADDRESS\fP   ((uint32_t)0x40021009)"
+.br
+.ti -1c
+.RI "#define \fBCIR_BYTE3_ADDRESS\fP   ((uint32_t)0x4002100A)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_BYTE4_ADDRESS\fP   ((uint32_t)0x40021007)"
+.br
+.ti -1c
+.RI "#define \fBBDCR_ADDRESS\fP   (\fBPERIPH_BASE\fP + \fBBDCR_OFFSET\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BDCR_ADDRESS   (\fBPERIPH_BASE\fP + \fBBDCR_OFFSET\fP)"
+
+.PP
+Definition at line 175 of file stm32f10x_rcc\&.c\&.
+.SS "#define BDCR_BDRST_BB   (\fBPERIPH_BB_BASE\fP + (\fBBDCR_OFFSET\fP * 32) + (\fBBDRST_BitNumber\fP * 4))"
+
+.PP
+Definition at line 96 of file stm32f10x_rcc\&.c\&.
+.SS "#define BDCR_OFFSET   (\fBRCC_OFFSET\fP + 0x20)"
+
+.PP
+Definition at line 90 of file stm32f10x_rcc\&.c\&.
+.SS "#define BDCR_RTCEN_BB   (\fBPERIPH_BB_BASE\fP + (\fBBDCR_OFFSET\fP * 32) + (\fBRTCEN_BitNumber\fP * 4))"
+
+.PP
+Definition at line 92 of file stm32f10x_rcc\&.c\&.
+.SS "#define BDRST_BitNumber   0x10"
+
+.PP
+Definition at line 95 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_ADCPRE_Reset_Mask   ((uint32_t)0xFFFF3FFF)"
+
+.PP
+Definition at line 145 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_ADCPRE_Set_Mask   ((uint32_t)0x0000C000)"
+
+.PP
+Definition at line 146 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_BYTE4_ADDRESS   ((uint32_t)0x40021007)"
+
+.PP
+Definition at line 172 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_HPRE_Reset_Mask   ((uint32_t)0xFFFFFF0F)"
+
+.PP
+Definition at line 139 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_HPRE_Set_Mask   ((uint32_t)0x000000F0)"
+
+.PP
+Definition at line 140 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_OFFSET   (\fBRCC_OFFSET\fP + 0x04)"
+
+.PP
+Definition at line 77 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PLL_Mask   ((uint32_t)0xFFC0FFFF)"
+
+.PP
+Definition at line 131 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PLLMull_Mask   ((uint32_t)0x003C0000)"
+
+.PP
+Definition at line 134 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PLLSRC_Mask   ((uint32_t)0x00010000)"
+
+.PP
+Definition at line 135 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PLLXTPRE_Mask   ((uint32_t)0x00020000)"
+
+.PP
+Definition at line 136 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PPRE1_Reset_Mask   ((uint32_t)0xFFFFF8FF)"
+
+.PP
+Definition at line 141 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PPRE1_Set_Mask   ((uint32_t)0x00000700)"
+
+.PP
+Definition at line 142 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PPRE2_Reset_Mask   ((uint32_t)0xFFFFC7FF)"
+
+.PP
+Definition at line 143 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_PPRE2_Set_Mask   ((uint32_t)0x00003800)"
+
+.PP
+Definition at line 144 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_SW_Mask   ((uint32_t)0xFFFFFFFC)"
+
+.PP
+Definition at line 138 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_SWS_Mask   ((uint32_t)0x0000000C)"
+
+.PP
+Definition at line 137 of file stm32f10x_rcc\&.c\&.
+.SS "#define CFGR_USBPRE_BB   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBUSBPRE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 81 of file stm32f10x_rcc\&.c\&.
+.SS "#define CIR_BYTE2_ADDRESS   ((uint32_t)0x40021009)"
+
+.PP
+Definition at line 166 of file stm32f10x_rcc\&.c\&.
+.SS "#define CIR_BYTE3_ADDRESS   ((uint32_t)0x4002100A)"
+
+.PP
+Definition at line 169 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_CSSON_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBCSSON_BitNumber\fP * 4))"
+
+.PP
+Definition at line 72 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_HSEBYP_Reset   ((uint32_t)0xFFFBFFFF)"
+
+.PP
+Definition at line 121 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_HSEBYP_Set   ((uint32_t)0x00040000)"
+
+.PP
+Definition at line 122 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_HSEON_Reset   ((uint32_t)0xFFFEFFFF)"
+
+.PP
+Definition at line 123 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_HSEON_Set   ((uint32_t)0x00010000)"
+
+.PP
+Definition at line 124 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_HSION_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBHSION_BitNumber\fP * 4))"
+
+.PP
+Definition at line 54 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_HSITRIM_Mask   ((uint32_t)0xFFFFFF07)"
+
+.PP
+Definition at line 125 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_OFFSET   (\fBRCC_OFFSET\fP + 0x00)"
+
+.PP
+Definition at line 52 of file stm32f10x_rcc\&.c\&.
+.SS "#define CR_PLLON_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBPLLON_BitNumber\fP * 4))"
+
+.PP
+Definition at line 58 of file stm32f10x_rcc\&.c\&.
+.SS "#define CSR_LSION_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBLSION_BitNumber\fP * 4))"
+
+.PP
+Definition at line 103 of file stm32f10x_rcc\&.c\&.
+.SS "#define CSR_OFFSET   (\fBRCC_OFFSET\fP + 0x24)"
+
+.PP
+Definition at line 101 of file stm32f10x_rcc\&.c\&.
+.SS "#define CSR_RMVF_Set   ((uint32_t)0x01000000)"
+
+.PP
+Definition at line 149 of file stm32f10x_rcc\&.c\&.
+.SS "#define CSSON_BitNumber   0x13"
+
+.PP
+Definition at line 71 of file stm32f10x_rcc\&.c\&.
+.SS "#define FLAG_Mask   ((uint8_t)0x1F)"
+
+.PP
+Definition at line 163 of file stm32f10x_rcc\&.c\&.
+.SS "#define HSION_BitNumber   0x00"
+
+.PP
+Definition at line 53 of file stm32f10x_rcc\&.c\&.
+.SS "#define LSION_BitNumber   0x00"
+
+.PP
+Definition at line 102 of file stm32f10x_rcc\&.c\&.
+.SS "#define PLLON_BitNumber   0x18"
+
+.PP
+Definition at line 57 of file stm32f10x_rcc\&.c\&.
+.SS "#define RCC_OFFSET   (\fBRCC_BASE\fP \- \fBPERIPH_BASE\fP)"
+
+.PP
+Definition at line 47 of file stm32f10x_rcc\&.c\&.
+.SS "#define RTCEN_BitNumber   0x0F"
+
+.PP
+Definition at line 91 of file stm32f10x_rcc\&.c\&.
+.SS "#define USBPRE_BitNumber   0x16"
+
+.PP
+Definition at line 80 of file stm32f10x_rcc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

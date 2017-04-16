@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___read___wait___mode" kind="group">
+    <compoundname>SDIO_Read_Wait_Mode</compoundname>
+    <title>SDIO_Read_Wait_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___read___wait___mode_1ga5d73b50fed8b2589f337a6301f22f41c" prot="public" static="no">
+        <name>SDIO_ReadWaitMode_CLK</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="465" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___read___wait___mode_1ga3d6952d82468b49dcc7abd5b9e02039f" prot="public" static="no">
+        <name>SDIO_ReadWaitMode_DATA2</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="466" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___read___wait___mode_1ga35144093f5b3553a62c2248896eead4d" prot="public" static="no">
+        <name>IS_SDIO_READWAIT_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___s_d_i_o___read___wait___mode_1ga5d73b50fed8b2589f337a6301f22f41c" kindref="member">SDIO_ReadWaitMode_CLK</ref>) || \
+                                     ((MODE) == <ref refid="group___s_d_i_o___read___wait___mode_1ga3d6952d82468b49dcc7abd5b9e02039f" kindref="member">SDIO_ReadWaitMode_DATA2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="467" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

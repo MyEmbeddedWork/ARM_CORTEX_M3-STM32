@@ -1,0 +1,125 @@
+.TH "BKP_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BKP_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBKP_OFFSET\fP   (\fBBKP_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCR_OFFSET\fP   (\fBBKP_OFFSET\fP + 0x30)"
+.br
+.ti -1c
+.RI "#define \fBTPAL_BitNumber\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCR_TPAL_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBTPAL_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTPE_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCR_TPE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBTPE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSR_OFFSET\fP   (\fBBKP_OFFSET\fP + 0x34)"
+.br
+.ti -1c
+.RI "#define \fBTPIE_BitNumber\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCSR_TPIE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTPIE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTIF_BitNumber\fP   0x09"
+.br
+.ti -1c
+.RI "#define \fBCSR_TIF_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTIF_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTEF_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCSR_TEF_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTEF_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRTCCR_CAL_MASK\fP   ((uint16_t)0xFF80)"
+.br
+.ti -1c
+.RI "#define \fBRTCCR_MASK\fP   ((uint16_t)0xFC7F)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BKP_OFFSET   (\fBBKP_BASE\fP \- \fBPERIPH_BASE\fP)"
+
+.PP
+Definition at line 48 of file stm32f10x_bkp\&.c\&.
+.SS "#define CR_OFFSET   (\fBBKP_OFFSET\fP + 0x30)"
+
+.PP
+Definition at line 53 of file stm32f10x_bkp\&.c\&.
+.SS "#define CR_TPAL_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBTPAL_BitNumber\fP * 4))"
+
+.PP
+Definition at line 55 of file stm32f10x_bkp\&.c\&.
+.SS "#define CR_TPE_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBTPE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 59 of file stm32f10x_bkp\&.c\&.
+.SS "#define CSR_OFFSET   (\fBBKP_OFFSET\fP + 0x34)"
+
+.PP
+Definition at line 64 of file stm32f10x_bkp\&.c\&.
+.SS "#define CSR_TEF_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTEF_BitNumber\fP * 4))"
+
+.PP
+Definition at line 74 of file stm32f10x_bkp\&.c\&.
+.SS "#define CSR_TIF_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTIF_BitNumber\fP * 4))"
+
+.PP
+Definition at line 70 of file stm32f10x_bkp\&.c\&.
+.SS "#define CSR_TPIE_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTPIE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 66 of file stm32f10x_bkp\&.c\&.
+.SS "#define RTCCR_CAL_MASK   ((uint16_t)0xFF80)"
+
+.PP
+Definition at line 79 of file stm32f10x_bkp\&.c\&.
+.SS "#define RTCCR_MASK   ((uint16_t)0xFC7F)"
+
+.PP
+Definition at line 80 of file stm32f10x_bkp\&.c\&.
+.SS "#define TEF_BitNumber   0x08"
+
+.PP
+Definition at line 73 of file stm32f10x_bkp\&.c\&.
+.SS "#define TIF_BitNumber   0x09"
+
+.PP
+Definition at line 69 of file stm32f10x_bkp\&.c\&.
+.SS "#define TPAL_BitNumber   0x01"
+
+.PP
+Definition at line 54 of file stm32f10x_bkp\&.c\&.
+.SS "#define TPE_BitNumber   0x00"
+
+.PP
+Definition at line 58 of file stm32f10x_bkp\&.c\&.
+.SS "#define TPIE_BitNumber   0x02"
+
+.PP
+Definition at line 65 of file stm32f10x_bkp\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

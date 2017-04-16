@@ -1,0 +1,41 @@
+.TH "CAN_remote_transmission_request" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_remote_transmission_request
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAN_RTR_Data\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_RTR_Remote\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_RTR\fP(RTR)   (((RTR) == \fBCAN_RTR_Data\fP) || ((RTR) == \fBCAN_RTR_Remote\fP))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAN_RTR_Data   ((uint32_t)0x00000000)"
+Data frame 
+.PP
+Definition at line 430 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_RTR_Remote   ((uint32_t)0x00000002)"
+Remote frame 
+.PP
+Definition at line 431 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_RTR(RTR)   (((RTR) == \fBCAN_RTR_Data\fP) || ((RTR) == \fBCAN_RTR_Remote\fP))"
+
+.PP
+Definition at line 432 of file stm32f10x_can\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

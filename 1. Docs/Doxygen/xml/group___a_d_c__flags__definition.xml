@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___a_d_c__flags__definition" kind="group">
+    <compoundname>ADC_flags_definition</compoundname>
+    <title>ADC_flags_definition</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1gadb75a4b430fb84950232b7a8f3a6a877" prot="public" static="no">
+        <name>ADC_FLAG_AWD</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="335" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1gaf2c6fdf7e9ab63b778149e5fb56413d4" prot="public" static="no">
+        <name>ADC_FLAG_EOC</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="336" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1ga4df8eea8ab83d98104ee15a339743a4e" prot="public" static="no">
+        <name>ADC_FLAG_JEOC</name>
+        <initializer>((uint8_t)0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="337" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1ga278f4e866f4322c1120bf0db5301c432" prot="public" static="no">
+        <name>ADC_FLAG_JSTRT</name>
+        <initializer>((uint8_t)0x08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="338" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1gad0c59ae7749c69b5b91f2c533db1b619" prot="public" static="no">
+        <name>ADC_FLAG_STRT</name>
+        <initializer>((uint8_t)0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="339" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1gac5b6fb60ec921255b05261ec04573470" prot="public" static="no">
+        <name>IS_ADC_CLEAR_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>((((FLAG) &amp; (uint8_t)0xE0) == 0x00) &amp;&amp; ((FLAG) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="340" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__flags__definition_1ga597eb68dfef9dbe0928ed14a1aedc710" prot="public" static="no">
+        <name>IS_ADC_GET_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___a_d_c__flags__definition_1gadb75a4b430fb84950232b7a8f3a6a877" kindref="member">ADC_FLAG_AWD</ref>) || ((FLAG) == <ref refid="group___a_d_c__flags__definition_1gaf2c6fdf7e9ab63b778149e5fb56413d4" kindref="member">ADC_FLAG_EOC</ref>) || \
+                               ((FLAG) == <ref refid="group___a_d_c__flags__definition_1ga4df8eea8ab83d98104ee15a339743a4e" kindref="member">ADC_FLAG_JEOC</ref>) || ((FLAG)== <ref refid="group___a_d_c__flags__definition_1ga278f4e866f4322c1120bf0db5301c432" kindref="member">ADC_FLAG_JSTRT</ref>) || \
+                               ((FLAG) == <ref refid="group___a_d_c__flags__definition_1gad0c59ae7749c69b5b91f2c533db1b619" kindref="member">ADC_FLAG_STRT</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="341" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

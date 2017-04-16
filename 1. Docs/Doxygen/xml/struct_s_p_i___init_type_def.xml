@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_s_p_i___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>SPI_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__spi_8h" local="no">stm32f10x_spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1a8cf0fefa76b9238a41997db14eac62a9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_Direction</definition>
+        <argsstring></argsstring>
+        <name>SPI_Direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SPI unidirectional or bidirectional data mode. This parameter can be a value of <ref refid="group___s_p_i__data__direction" kindref="compound">SPI_data_direction</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="58" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1a578435d3b3a17baa5d5ff87447aa697f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_Mode</definition>
+        <argsstring></argsstring>
+        <name>SPI_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SPI operating mode. This parameter can be a value of <ref refid="group___s_p_i__mode" kindref="compound">SPI_mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="61" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1a0e63950d46a6483f9b7048b8c97800b8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_DataSize</definition>
+        <argsstring></argsstring>
+        <name>SPI_DataSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SPI data size. This parameter can be a value of <ref refid="group___s_p_i__data__size" kindref="compound">SPI_data_size</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="64" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1a1fe46794d91fd950e06da06b0e488997" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_CPOL</definition>
+        <argsstring></argsstring>
+        <name>SPI_CPOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the serial clock steady state. This parameter can be a value of <ref refid="group___s_p_i___clock___polarity" kindref="compound">SPI_Clock_Polarity</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="67" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1acdaac9259c45f137e804f90122edb129" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_CPHA</definition>
+        <argsstring></argsstring>
+        <name>SPI_CPHA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the clock active edge for the bit capture. This parameter can be a value of <ref refid="group___s_p_i___clock___phase" kindref="compound">SPI_Clock_Phase</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="70" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1a6c1ea4b5e3d147b74799efa42e3903c6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_NSS</definition>
+        <argsstring></argsstring>
+        <name>SPI_NSS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the NSS signal is managed by hardware (NSS pin) or by software using the SSI bit. This parameter can be a value of <ref refid="group___s_p_i___slave___select__management" kindref="compound">SPI_Slave_Select_management</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="73" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1adfcf6178b6a117643111c13403f32e71" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_BaudRatePrescaler</definition>
+        <argsstring></argsstring>
+        <name>SPI_BaudRatePrescaler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Baud Rate prescaler value which will be used to configure the transmit and receive SCK clock. This parameter can be a value of <ref refid="group___s_p_i___baud_rate___prescaler" kindref="compound">SPI_BaudRate_Prescaler</ref>. <simplesect kind="note"><para>The communication clock is derived from the master clock. The slave clock does not need to be set. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="77" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1ace7ca292c290953f8a6ae86f79949f5b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_FirstBit</definition>
+        <argsstring></argsstring>
+        <name>SPI_FirstBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether data transfers start from MSB or LSB bit. This parameter can be a value of <ref refid="group___s_p_i___m_s_b___l_s_b__transmission" kindref="compound">SPI_MSB_LSB_transmission</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="83" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___init_type_def_1aee6460416ade6c4016aac2bd64cae0eb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPI_InitTypeDef::SPI_CRCPolynomial</definition>
+        <argsstring></argsstring>
+        <name>SPI_CRCPolynomial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the polynomial used for the CRC calculation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="86" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="group___s_p_i___private___functions_1ga8dacc1dc48bf08c0f12da409f4889037" compoundref="stm32f10x__spi_8c" startline="158" endline="202">SPI_Init</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga9a0116f88cc2c4478c270f05608703f1" compoundref="stm32f10x__spi_8c" startline="379" endline="400">SPI_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPI Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="56" bodyend="87"/>
+    <listofallmembers>
+      <member refid="struct_s_p_i___init_type_def_1adfcf6178b6a117643111c13403f32e71" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_BaudRatePrescaler</name></member>
+      <member refid="struct_s_p_i___init_type_def_1acdaac9259c45f137e804f90122edb129" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_CPHA</name></member>
+      <member refid="struct_s_p_i___init_type_def_1a1fe46794d91fd950e06da06b0e488997" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_CPOL</name></member>
+      <member refid="struct_s_p_i___init_type_def_1aee6460416ade6c4016aac2bd64cae0eb" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_CRCPolynomial</name></member>
+      <member refid="struct_s_p_i___init_type_def_1a0e63950d46a6483f9b7048b8c97800b8" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_DataSize</name></member>
+      <member refid="struct_s_p_i___init_type_def_1a8cf0fefa76b9238a41997db14eac62a9" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_Direction</name></member>
+      <member refid="struct_s_p_i___init_type_def_1ace7ca292c290953f8a6ae86f79949f5b" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_FirstBit</name></member>
+      <member refid="struct_s_p_i___init_type_def_1a578435d3b3a17baa5d5ff87447aa697f" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_Mode</name></member>
+      <member refid="struct_s_p_i___init_type_def_1a6c1ea4b5e3d147b74799efa42e3903c6" prot="public" virt="non-virtual"><scope>SPI_InitTypeDef</scope><name>SPI_NSS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

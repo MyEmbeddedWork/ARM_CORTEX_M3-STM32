@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___exported__macro" kind="group">
+    <compoundname>Exported_macro</compoundname>
+    <title>Exported_macro</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___exported__macro_1ga26474f43799fbade9cf300e21dd3a91a" prot="public" static="no">
+        <name>SET_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>((REG) |= (BIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8317" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macro_1ga133aae6fc0d41bffab39ab223a7001de" prot="public" static="no">
+        <name>CLEAR_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>((REG) &amp;= ~(BIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8319" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macro_1ga822bb1bb9710d5f2fa6396b84e583c33" prot="public" static="no">
+        <name>READ_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>((REG) &amp; (BIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8321" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macro_1ga1378fbdda39f40b85420df55f41460ef" prot="public" static="no">
+        <name>CLEAR_REG</name>
+        <param><defname>REG</defname></param>
+        <initializer>((REG) = (0x0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8323" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macro_1ga32f78bffcaf6d13023dcd7f05e0c4d57" prot="public" static="no">
+        <name>WRITE_REG</name>
+        <param><defname>REG</defname></param>
+        <param><defname>VAL</defname></param>
+        <initializer>((REG) = (VAL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8325" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macro_1gae7f188a4d26c9e713a48414783421071" prot="public" static="no">
+        <name>READ_REG</name>
+        <param><defname>REG</defname></param>
+        <initializer>((REG))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8327" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macro_1ga6553c99f510c3bab8cc0a91602053247" prot="public" static="no">
+        <name>MODIFY_REG</name>
+        <param><defname>REG</defname></param>
+        <param><defname>CLEARMASK</defname></param>
+        <param><defname>SETMASK</defname></param>
+        <initializer><ref refid="group___exported__macro_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>((REG), (((<ref refid="group___exported__macro_1gae7f188a4d26c9e713a48414783421071" kindref="member">READ_REG</ref>(REG)) &amp; (~(CLEARMASK))) | (SETMASK)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="8329" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="8329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

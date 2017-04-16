@@ -1,0 +1,110 @@
+.TH "DMA_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_InitTypeDef \- DMA Init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_dma\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBDMA_PeripheralBaseAddr\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_MemoryBaseAddr\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_DIR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_BufferSize\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_PeripheralInc\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_MemoryInc\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_PeripheralDataSize\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_MemoryDataSize\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_Mode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_Priority\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMA_M2M\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+DMA Init structure definition\&. 
+.PP
+Definition at line 50 of file stm32f10x_dma\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t DMA_InitTypeDef::DMA_BufferSize"
+Specifies the buffer size, in data unit, of the specified Channel\&. The data unit is equal to the configuration set in DMA_PeripheralDataSize or DMA_MemoryDataSize members depending in the transfer direction\&. 
+.PP
+Definition at line 59 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_DIR"
+Specifies if the peripheral is the source or destination\&. This parameter can be a value of \fBDMA_data_transfer_direction\fP 
+.PP
+Definition at line 56 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_M2M"
+Specifies if the DMAy Channelx will be used in memory-to-memory transfer\&. This parameter can be a value of \fBDMA_memory_to_memory\fP 
+.PP
+Definition at line 83 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_MemoryBaseAddr"
+Specifies the memory base address for DMAy Channelx\&. 
+.PP
+Definition at line 54 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_MemoryDataSize"
+Specifies the Memory data width\&. This parameter can be a value of \fBDMA_memory_data_size\fP 
+.PP
+Definition at line 72 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_MemoryInc"
+Specifies whether the memory address register is incremented or not\&. This parameter can be a value of \fBDMA_memory_incremented_mode\fP 
+.PP
+Definition at line 66 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_Mode"
+Specifies the operation mode of the DMAy Channelx\&. This parameter can be a value of \fBDMA_circular_normal_mode\fP\&. 
+.PP
+\fBNote:\fP
+.RS 4
+: The circular buffer mode cannot be used if the memory-to-memory data transfer is configured on the selected Channel 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_PeripheralBaseAddr"
+Specifies the peripheral base address for DMAy Channelx\&. 
+.PP
+Definition at line 52 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_PeripheralDataSize"
+Specifies the Peripheral data width\&. This parameter can be a value of \fBDMA_peripheral_data_size\fP 
+.PP
+Definition at line 69 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_PeripheralInc"
+Specifies whether the Peripheral address register is incremented or not\&. This parameter can be a value of \fBDMA_peripheral_incremented_mode\fP 
+.PP
+Definition at line 63 of file stm32f10x_dma\&.h\&.
+.SS "uint32_t DMA_InitTypeDef::DMA_Priority"
+Specifies the software priority for the DMAy Channelx\&. This parameter can be a value of \fBDMA_priority_level\fP 
+.PP
+Definition at line 80 of file stm32f10x_dma\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

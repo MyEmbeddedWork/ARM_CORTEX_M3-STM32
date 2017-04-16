@@ -1,0 +1,717 @@
+\hypertarget{group___d_m_a__interrupts__definition}{}\section{D\+M\+A\+\_\+interrupts\+\_\+definition}
+\label{group___d_m_a__interrupts__definition}\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+Collaboration diagram for D\+M\+A\+\_\+interrupts\+\_\+definition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_m_a__interrupts__definition}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga06e83dd277e0d3e5635cf8ce8dfd6e16}{D\+M\+A\+\_\+\+I\+T\+\_\+\+TC}~((uint32\+\_\+t)0x00000002)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gadf11c572b9797e04a14b105fdc2e5f66}{D\+M\+A\+\_\+\+I\+T\+\_\+\+HT}~((uint32\+\_\+t)0x00000004)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gaf9d92649d2a0146f663ff253d8f3b59e}{D\+M\+A\+\_\+\+I\+T\+\_\+\+TE}~((uint32\+\_\+t)0x00000008)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga47f6af7da302c19aba24516037d305e7}{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}(IT)~((((IT) \& 0x\+F\+F\+F\+F\+F\+F\+F1) == 0x00) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga017d35f4f6fbf5689ef39af7227bc5b0}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1}~((uint32\+\_\+t)0x00000001)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga783532083dcc6e9752feb2e982ce7426}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1}~((uint32\+\_\+t)0x00000002)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gaea8c98e79c8cb420c81f7380a4c8e1da}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1}~((uint32\+\_\+t)0x00000004)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga0121b479efafe485719d14634a02d542}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1}~((uint32\+\_\+t)0x00000008)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga183f3044b39da5e3b3c688239086f836}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2}~((uint32\+\_\+t)0x00000010)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga14171253268d69143102594cde56b0e1}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2}~((uint32\+\_\+t)0x00000020)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gab2d608582c350ed00412f7a09fe10ae7}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2}~((uint32\+\_\+t)0x00000040)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga24e2ed429ff0c0b03c7fec8f4bc8bcc8}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2}~((uint32\+\_\+t)0x00000080)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga3e71e661eb2ebab146b48b3aee5ad9b1}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3}~((uint32\+\_\+t)0x00000100)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga37c375d4e3d681efecddc9f25c0c7bcd}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3}~((uint32\+\_\+t)0x00000200)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga1e3b12ceb8ba5b8d129d5bdee21904de}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3}~((uint32\+\_\+t)0x00000400)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga54e8f93512a446fcaf2b10cd92f81379}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3}~((uint32\+\_\+t)0x00000800)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga24d5f98faba722d1ab54812ee7ad8eea}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4}~((uint32\+\_\+t)0x00001000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga4f6dd1c5092ca262f38c8bb8a7dc2986}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4}~((uint32\+\_\+t)0x00002000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga1e74c117ead07f4a8749e076316cf9d0}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4}~((uint32\+\_\+t)0x00004000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga48c3fecb70662a786f32d5cea0a894f8}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4}~((uint32\+\_\+t)0x00008000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga6a8d925c490ea6e7eaf9fbceea9774f6}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5}~((uint32\+\_\+t)0x00010000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gaf916fe8154ad4a956eec66ecfe0e7e36}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5}~((uint32\+\_\+t)0x00020000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga3ddcb696d05b414be7a533993efa849f}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5}~((uint32\+\_\+t)0x00040000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga7c1f1a465bd0e9755e5fbf2cd7054528}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5}~((uint32\+\_\+t)0x00080000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga623e986da940dbdbc4155f0c1fc4eae8}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6}~((uint32\+\_\+t)0x00100000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga466bad6bf0a2c115aee96d2a1e3b8ddf}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6}~((uint32\+\_\+t)0x00200000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga0a86890a8aa84b5c4f12f1684850fa91}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6}~((uint32\+\_\+t)0x00400000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga2bbf515c1154a5ad359cbd0ace724e64}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6}~((uint32\+\_\+t)0x00800000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga3df39a2f922a5f33ebf1ba3f1adfc15d}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7}~((uint32\+\_\+t)0x01000000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga17efb3180f536c295853e64e5ca508c2}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7}~((uint32\+\_\+t)0x02000000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga9f8a6dd7fc4978c95cbd9de63c85bc37}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7}~((uint32\+\_\+t)0x04000000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga1261e2bfa461a8097603b7737eb7698c}{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7}~((uint32\+\_\+t)0x08000000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gafe096e037c0b7cc498cdb993d32e06c5}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1}~((uint32\+\_\+t)0x10000001)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga2b6a86186eb56749032aa18b9baff850}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1}~((uint32\+\_\+t)0x10000002)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gab9544576514917f9a1fcbb3100c3c2ae}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1}~((uint32\+\_\+t)0x10000004)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga912b0a1e7104dc70d25ca1a33338b6eb}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1}~((uint32\+\_\+t)0x10000008)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gad1b225f7053b88eeee62e5ed1801b5c3}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2}~((uint32\+\_\+t)0x10000010)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga174df6fdfa25046c1481ede66ff1eb6d}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2}~((uint32\+\_\+t)0x10000020)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gaf1cb017935477795a7bfb0d1a271e69a}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2}~((uint32\+\_\+t)0x10000040)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga5f32004b492a225495c9c1dcd5002042}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2}~((uint32\+\_\+t)0x10000080)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga9876a20bc7ae5ccff6d4e62a8b767070}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3}~((uint32\+\_\+t)0x10000100)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga249abc1068e8979f52d7d867b5de5a75}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3}~((uint32\+\_\+t)0x10000200)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gab3c0d024e03f9fdca539710c7e528904}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3}~((uint32\+\_\+t)0x10000400)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga2fd4ce5d7e2d67c05379f826ae1b1da6}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3}~((uint32\+\_\+t)0x10000800)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga004761fbcd7dba2f242639b2992ada17}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4}~((uint32\+\_\+t)0x10001000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga54b6716e82894f76c87926afe2a65f30}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4}~((uint32\+\_\+t)0x10002000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga4aa775a2f1e10783bd43911ad65bb28b}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4}~((uint32\+\_\+t)0x10004000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga54dfd8a41ad683f01e3103e6473a7aff}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4}~((uint32\+\_\+t)0x10008000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga2205d7e002767d98f7aa206634374082}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5}~((uint32\+\_\+t)0x10010000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gaa1134531a0aeb8daeb516985562129b0}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5}~((uint32\+\_\+t)0x10020000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga4c1e0d1572267c1d48d787009148e3ef}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5}~((uint32\+\_\+t)0x10040000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gad47115e9a4d0d3f5d9101097983b5525}{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5}~((uint32\+\_\+t)0x10080000)
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_ga390481b083355ed774b04f70a42f0dfb}{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}(IT)~(((((IT) \& 0x\+F0000000) == 0x00) $\vert$$\vert$ (((\+I\+T) \& 0x\+E\+F\+F00000) == 0x00)) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___d_m_a__interrupts__definition_gaaafa1bd74bc5e78e276c731faa8eed22}{I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga017d35f4f6fbf5689ef39af7227bc5b0}\label{group___d_m_a__interrupts__definition_ga017d35f4f6fbf5689ef39af7227bc5b0}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1}{DMA1\_IT\_GL1}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L1~((uint32\+\_\+t)0x00000001)}
+
+
+
+Definition at line 220 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga183f3044b39da5e3b3c688239086f836}\label{group___d_m_a__interrupts__definition_ga183f3044b39da5e3b3c688239086f836}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2}{DMA1\_IT\_GL2}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L2~((uint32\+\_\+t)0x00000010)}
+
+
+
+Definition at line 224 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga3e71e661eb2ebab146b48b3aee5ad9b1}\label{group___d_m_a__interrupts__definition_ga3e71e661eb2ebab146b48b3aee5ad9b1}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3}{DMA1\_IT\_GL3}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L3~((uint32\+\_\+t)0x00000100)}
+
+
+
+Definition at line 228 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga24d5f98faba722d1ab54812ee7ad8eea}\label{group___d_m_a__interrupts__definition_ga24d5f98faba722d1ab54812ee7ad8eea}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4}{DMA1\_IT\_GL4}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L4~((uint32\+\_\+t)0x00001000)}
+
+
+
+Definition at line 232 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga6a8d925c490ea6e7eaf9fbceea9774f6}\label{group___d_m_a__interrupts__definition_ga6a8d925c490ea6e7eaf9fbceea9774f6}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5}{DMA1\_IT\_GL5}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L5~((uint32\+\_\+t)0x00010000)}
+
+
+
+Definition at line 236 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga623e986da940dbdbc4155f0c1fc4eae8}\label{group___d_m_a__interrupts__definition_ga623e986da940dbdbc4155f0c1fc4eae8}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6}{DMA1\_IT\_GL6}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L6~((uint32\+\_\+t)0x00100000)}
+
+
+
+Definition at line 240 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga3df39a2f922a5f33ebf1ba3f1adfc15d}\label{group___d_m_a__interrupts__definition_ga3df39a2f922a5f33ebf1ba3f1adfc15d}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7}{DMA1\_IT\_GL7}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+G\+L7~((uint32\+\_\+t)0x01000000)}
+
+
+
+Definition at line 244 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gaea8c98e79c8cb420c81f7380a4c8e1da}\label{group___d_m_a__interrupts__definition_gaea8c98e79c8cb420c81f7380a4c8e1da}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1}{DMA1\_IT\_HT1}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T1~((uint32\+\_\+t)0x00000004)}
+
+
+
+Definition at line 222 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gab2d608582c350ed00412f7a09fe10ae7}\label{group___d_m_a__interrupts__definition_gab2d608582c350ed00412f7a09fe10ae7}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2}{DMA1\_IT\_HT2}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T2~((uint32\+\_\+t)0x00000040)}
+
+
+
+Definition at line 226 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga1e3b12ceb8ba5b8d129d5bdee21904de}\label{group___d_m_a__interrupts__definition_ga1e3b12ceb8ba5b8d129d5bdee21904de}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3}{DMA1\_IT\_HT3}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T3~((uint32\+\_\+t)0x00000400)}
+
+
+
+Definition at line 230 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga1e74c117ead07f4a8749e076316cf9d0}\label{group___d_m_a__interrupts__definition_ga1e74c117ead07f4a8749e076316cf9d0}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4}{DMA1\_IT\_HT4}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T4~((uint32\+\_\+t)0x00004000)}
+
+
+
+Definition at line 234 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga3ddcb696d05b414be7a533993efa849f}\label{group___d_m_a__interrupts__definition_ga3ddcb696d05b414be7a533993efa849f}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5}{DMA1\_IT\_HT5}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T5~((uint32\+\_\+t)0x00040000)}
+
+
+
+Definition at line 238 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga0a86890a8aa84b5c4f12f1684850fa91}\label{group___d_m_a__interrupts__definition_ga0a86890a8aa84b5c4f12f1684850fa91}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6}{DMA1\_IT\_HT6}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T6~((uint32\+\_\+t)0x00400000)}
+
+
+
+Definition at line 242 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga9f8a6dd7fc4978c95cbd9de63c85bc37}\label{group___d_m_a__interrupts__definition_ga9f8a6dd7fc4978c95cbd9de63c85bc37}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7}{DMA1\_IT\_HT7}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+H\+T7~((uint32\+\_\+t)0x04000000)}
+
+
+
+Definition at line 246 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga783532083dcc6e9752feb2e982ce7426}\label{group___d_m_a__interrupts__definition_ga783532083dcc6e9752feb2e982ce7426}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1}{DMA1\_IT\_TC1}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C1~((uint32\+\_\+t)0x00000002)}
+
+
+
+Definition at line 221 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga14171253268d69143102594cde56b0e1}\label{group___d_m_a__interrupts__definition_ga14171253268d69143102594cde56b0e1}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2}{DMA1\_IT\_TC2}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C2~((uint32\+\_\+t)0x00000020)}
+
+
+
+Definition at line 225 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga37c375d4e3d681efecddc9f25c0c7bcd}\label{group___d_m_a__interrupts__definition_ga37c375d4e3d681efecddc9f25c0c7bcd}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3}{DMA1\_IT\_TC3}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C3~((uint32\+\_\+t)0x00000200)}
+
+
+
+Definition at line 229 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga4f6dd1c5092ca262f38c8bb8a7dc2986}\label{group___d_m_a__interrupts__definition_ga4f6dd1c5092ca262f38c8bb8a7dc2986}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4}{DMA1\_IT\_TC4}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C4~((uint32\+\_\+t)0x00002000)}
+
+
+
+Definition at line 233 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gaf916fe8154ad4a956eec66ecfe0e7e36}\label{group___d_m_a__interrupts__definition_gaf916fe8154ad4a956eec66ecfe0e7e36}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5}{DMA1\_IT\_TC5}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C5~((uint32\+\_\+t)0x00020000)}
+
+
+
+Definition at line 237 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga466bad6bf0a2c115aee96d2a1e3b8ddf}\label{group___d_m_a__interrupts__definition_ga466bad6bf0a2c115aee96d2a1e3b8ddf}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6}{DMA1\_IT\_TC6}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C6~((uint32\+\_\+t)0x00200000)}
+
+
+
+Definition at line 241 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga17efb3180f536c295853e64e5ca508c2}\label{group___d_m_a__interrupts__definition_ga17efb3180f536c295853e64e5ca508c2}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7}{DMA1\_IT\_TC7}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+C7~((uint32\+\_\+t)0x02000000)}
+
+
+
+Definition at line 245 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga0121b479efafe485719d14634a02d542}\label{group___d_m_a__interrupts__definition_ga0121b479efafe485719d14634a02d542}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1}{DMA1\_IT\_TE1}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E1~((uint32\+\_\+t)0x00000008)}
+
+
+
+Definition at line 223 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga24e2ed429ff0c0b03c7fec8f4bc8bcc8}\label{group___d_m_a__interrupts__definition_ga24e2ed429ff0c0b03c7fec8f4bc8bcc8}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2}{DMA1\_IT\_TE2}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E2~((uint32\+\_\+t)0x00000080)}
+
+
+
+Definition at line 227 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga54e8f93512a446fcaf2b10cd92f81379}\label{group___d_m_a__interrupts__definition_ga54e8f93512a446fcaf2b10cd92f81379}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3}{DMA1\_IT\_TE3}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E3~((uint32\+\_\+t)0x00000800)}
+
+
+
+Definition at line 231 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga48c3fecb70662a786f32d5cea0a894f8}\label{group___d_m_a__interrupts__definition_ga48c3fecb70662a786f32d5cea0a894f8}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4}{DMA1\_IT\_TE4}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E4~((uint32\+\_\+t)0x00008000)}
+
+
+
+Definition at line 235 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga7c1f1a465bd0e9755e5fbf2cd7054528}\label{group___d_m_a__interrupts__definition_ga7c1f1a465bd0e9755e5fbf2cd7054528}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5}{DMA1\_IT\_TE5}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E5~((uint32\+\_\+t)0x00080000)}
+
+
+
+Definition at line 239 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga2bbf515c1154a5ad359cbd0ace724e64}\label{group___d_m_a__interrupts__definition_ga2bbf515c1154a5ad359cbd0ace724e64}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6}{DMA1\_IT\_TE6}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E6~((uint32\+\_\+t)0x00800000)}
+
+
+
+Definition at line 243 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga1261e2bfa461a8097603b7737eb7698c}\label{group___d_m_a__interrupts__definition_ga1261e2bfa461a8097603b7737eb7698c}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7}}
+\index{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7@{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7}{DMA1\_IT\_TE7}}
+{\footnotesize\ttfamily \#define D\+M\+A1\+\_\+\+I\+T\+\_\+\+T\+E7~((uint32\+\_\+t)0x08000000)}
+
+
+
+Definition at line 247 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gafe096e037c0b7cc498cdb993d32e06c5}\label{group___d_m_a__interrupts__definition_gafe096e037c0b7cc498cdb993d32e06c5}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1}{DMA2\_IT\_GL1}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L1~((uint32\+\_\+t)0x10000001)}
+
+
+
+Definition at line 249 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gad1b225f7053b88eeee62e5ed1801b5c3}\label{group___d_m_a__interrupts__definition_gad1b225f7053b88eeee62e5ed1801b5c3}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2}{DMA2\_IT\_GL2}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L2~((uint32\+\_\+t)0x10000010)}
+
+
+
+Definition at line 253 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga9876a20bc7ae5ccff6d4e62a8b767070}\label{group___d_m_a__interrupts__definition_ga9876a20bc7ae5ccff6d4e62a8b767070}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3}{DMA2\_IT\_GL3}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L3~((uint32\+\_\+t)0x10000100)}
+
+
+
+Definition at line 257 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga004761fbcd7dba2f242639b2992ada17}\label{group___d_m_a__interrupts__definition_ga004761fbcd7dba2f242639b2992ada17}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4}{DMA2\_IT\_GL4}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L4~((uint32\+\_\+t)0x10001000)}
+
+
+
+Definition at line 261 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga2205d7e002767d98f7aa206634374082}\label{group___d_m_a__interrupts__definition_ga2205d7e002767d98f7aa206634374082}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5}{DMA2\_IT\_GL5}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+G\+L5~((uint32\+\_\+t)0x10010000)}
+
+
+
+Definition at line 265 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gab9544576514917f9a1fcbb3100c3c2ae}\label{group___d_m_a__interrupts__definition_gab9544576514917f9a1fcbb3100c3c2ae}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1}{DMA2\_IT\_HT1}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T1~((uint32\+\_\+t)0x10000004)}
+
+
+
+Definition at line 251 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gaf1cb017935477795a7bfb0d1a271e69a}\label{group___d_m_a__interrupts__definition_gaf1cb017935477795a7bfb0d1a271e69a}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2}{DMA2\_IT\_HT2}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T2~((uint32\+\_\+t)0x10000040)}
+
+
+
+Definition at line 255 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gab3c0d024e03f9fdca539710c7e528904}\label{group___d_m_a__interrupts__definition_gab3c0d024e03f9fdca539710c7e528904}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3}{DMA2\_IT\_HT3}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T3~((uint32\+\_\+t)0x10000400)}
+
+
+
+Definition at line 259 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga4aa775a2f1e10783bd43911ad65bb28b}\label{group___d_m_a__interrupts__definition_ga4aa775a2f1e10783bd43911ad65bb28b}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4}{DMA2\_IT\_HT4}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T4~((uint32\+\_\+t)0x10004000)}
+
+
+
+Definition at line 263 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga4c1e0d1572267c1d48d787009148e3ef}\label{group___d_m_a__interrupts__definition_ga4c1e0d1572267c1d48d787009148e3ef}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5}{DMA2\_IT\_HT5}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+H\+T5~((uint32\+\_\+t)0x10040000)}
+
+
+
+Definition at line 267 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga2b6a86186eb56749032aa18b9baff850}\label{group___d_m_a__interrupts__definition_ga2b6a86186eb56749032aa18b9baff850}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1}{DMA2\_IT\_TC1}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C1~((uint32\+\_\+t)0x10000002)}
+
+
+
+Definition at line 250 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga174df6fdfa25046c1481ede66ff1eb6d}\label{group___d_m_a__interrupts__definition_ga174df6fdfa25046c1481ede66ff1eb6d}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2}{DMA2\_IT\_TC2}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C2~((uint32\+\_\+t)0x10000020)}
+
+
+
+Definition at line 254 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga249abc1068e8979f52d7d867b5de5a75}\label{group___d_m_a__interrupts__definition_ga249abc1068e8979f52d7d867b5de5a75}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3}{DMA2\_IT\_TC3}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C3~((uint32\+\_\+t)0x10000200)}
+
+
+
+Definition at line 258 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga54b6716e82894f76c87926afe2a65f30}\label{group___d_m_a__interrupts__definition_ga54b6716e82894f76c87926afe2a65f30}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4}{DMA2\_IT\_TC4}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C4~((uint32\+\_\+t)0x10002000)}
+
+
+
+Definition at line 262 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gaa1134531a0aeb8daeb516985562129b0}\label{group___d_m_a__interrupts__definition_gaa1134531a0aeb8daeb516985562129b0}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5}{DMA2\_IT\_TC5}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+C5~((uint32\+\_\+t)0x10020000)}
+
+
+
+Definition at line 266 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga912b0a1e7104dc70d25ca1a33338b6eb}\label{group___d_m_a__interrupts__definition_ga912b0a1e7104dc70d25ca1a33338b6eb}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1}{DMA2\_IT\_TE1}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E1~((uint32\+\_\+t)0x10000008)}
+
+
+
+Definition at line 252 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga5f32004b492a225495c9c1dcd5002042}\label{group___d_m_a__interrupts__definition_ga5f32004b492a225495c9c1dcd5002042}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2}{DMA2\_IT\_TE2}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E2~((uint32\+\_\+t)0x10000080)}
+
+
+
+Definition at line 256 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga2fd4ce5d7e2d67c05379f826ae1b1da6}\label{group___d_m_a__interrupts__definition_ga2fd4ce5d7e2d67c05379f826ae1b1da6}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3}{DMA2\_IT\_TE3}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E3~((uint32\+\_\+t)0x10000800)}
+
+
+
+Definition at line 260 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga54dfd8a41ad683f01e3103e6473a7aff}\label{group___d_m_a__interrupts__definition_ga54dfd8a41ad683f01e3103e6473a7aff}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4}{DMA2\_IT\_TE4}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E4~((uint32\+\_\+t)0x10008000)}
+
+
+
+Definition at line 264 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gad47115e9a4d0d3f5d9101097983b5525}\label{group___d_m_a__interrupts__definition_gad47115e9a4d0d3f5d9101097983b5525}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5}}
+\index{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5@{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5}{DMA2\_IT\_TE5}}
+{\footnotesize\ttfamily \#define D\+M\+A2\+\_\+\+I\+T\+\_\+\+T\+E5~((uint32\+\_\+t)0x10080000)}
+
+
+
+Definition at line 268 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gadf11c572b9797e04a14b105fdc2e5f66}\label{group___d_m_a__interrupts__definition_gadf11c572b9797e04a14b105fdc2e5f66}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A\+\_\+\+I\+T\+\_\+\+HT@{D\+M\+A\+\_\+\+I\+T\+\_\+\+HT}}
+\index{D\+M\+A\+\_\+\+I\+T\+\_\+\+HT@{D\+M\+A\+\_\+\+I\+T\+\_\+\+HT}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A\+\_\+\+I\+T\+\_\+\+HT}{DMA\_IT\_HT}}
+{\footnotesize\ttfamily \#define D\+M\+A\+\_\+\+I\+T\+\_\+\+HT~((uint32\+\_\+t)0x00000004)}
+
+
+
+Definition at line 216 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga06e83dd277e0d3e5635cf8ce8dfd6e16}\label{group___d_m_a__interrupts__definition_ga06e83dd277e0d3e5635cf8ce8dfd6e16}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A\+\_\+\+I\+T\+\_\+\+TC@{D\+M\+A\+\_\+\+I\+T\+\_\+\+TC}}
+\index{D\+M\+A\+\_\+\+I\+T\+\_\+\+TC@{D\+M\+A\+\_\+\+I\+T\+\_\+\+TC}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A\+\_\+\+I\+T\+\_\+\+TC}{DMA\_IT\_TC}}
+{\footnotesize\ttfamily \#define D\+M\+A\+\_\+\+I\+T\+\_\+\+TC~((uint32\+\_\+t)0x00000002)}
+
+
+
+Definition at line 215 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gaf9d92649d2a0146f663ff253d8f3b59e}\label{group___d_m_a__interrupts__definition_gaf9d92649d2a0146f663ff253d8f3b59e}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!D\+M\+A\+\_\+\+I\+T\+\_\+\+TE@{D\+M\+A\+\_\+\+I\+T\+\_\+\+TE}}
+\index{D\+M\+A\+\_\+\+I\+T\+\_\+\+TE@{D\+M\+A\+\_\+\+I\+T\+\_\+\+TE}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{D\+M\+A\+\_\+\+I\+T\+\_\+\+TE}{DMA\_IT\_TE}}
+{\footnotesize\ttfamily \#define D\+M\+A\+\_\+\+I\+T\+\_\+\+TE~((uint32\+\_\+t)0x00000008)}
+
+
+
+Definition at line 217 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga390481b083355ed774b04f70a42f0dfb}\label{group___d_m_a__interrupts__definition_ga390481b083355ed774b04f70a42f0dfb}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT@{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}}
+\index{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT@{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}{IS\_DMA\_CLEAR\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~(((((IT) \& 0x\+F0000000) == 0x00) $\vert$$\vert$ (((\+I\+T) \& 0x\+E\+F\+F00000) == 0x00)) \&\& ((\+I\+T) != 0x00))}
+
+
+
+Definition at line 270 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_ga47f6af7da302c19aba24516037d305e7}\label{group___d_m_a__interrupts__definition_ga47f6af7da302c19aba24516037d305e7}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT@{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}}
+\index{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT@{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}{IS\_DMA\_CONFIG\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+D\+M\+A\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~((((IT) \& 0x\+F\+F\+F\+F\+F\+F\+F1) == 0x00) \&\& ((\+I\+T) != 0x00))}
+
+
+
+Definition at line 218 of file stm32f10x\+\_\+dma.\+h.
+
+\mbox{\Hypertarget{group___d_m_a__interrupts__definition_gaaafa1bd74bc5e78e276c731faa8eed22}\label{group___d_m_a__interrupts__definition_gaaafa1bd74bc5e78e276c731faa8eed22}} 
+\index{D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}!I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT}}
+\index{I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT}!D\+M\+A\+\_\+interrupts\+\_\+definition@{D\+M\+A\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT}{IS\_DMA\_GET\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+D\+M\+A\+\_\+\+G\+E\+T\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga017d35f4f6fbf5689ef39af7227bc5b0}{DMA1\_IT\_GL1}) || ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga783532083dcc6e9752feb2e982ce7426}{DMA1\_IT\_TC1}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gaea8c98e79c8cb420c81f7380a4c8e1da}{DMA1\_IT\_HT1}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga0121b479efafe485719d14634a02d542}{DMA1\_IT\_TE1}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga183f3044b39da5e3b3c688239086f836}{DMA1\_IT\_GL2}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga14171253268d69143102594cde56b0e1}{DMA1\_IT\_TC2}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gab2d608582c350ed00412f7a09fe10ae7}{DMA1\_IT\_HT2}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga24e2ed429ff0c0b03c7fec8f4bc8bcc8}{DMA1\_IT\_TE2}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga3e71e661eb2ebab146b48b3aee5ad9b1}{DMA1\_IT\_GL3}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga37c375d4e3d681efecddc9f25c0c7bcd}{DMA1\_IT\_TC3}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga1e3b12ceb8ba5b8d129d5bdee21904de}{DMA1\_IT\_HT3}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga54e8f93512a446fcaf2b10cd92f81379}{DMA1\_IT\_TE3}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga24d5f98faba722d1ab54812ee7ad8eea}{DMA1\_IT\_GL4}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga4f6dd1c5092ca262f38c8bb8a7dc2986}{DMA1\_IT\_TC4}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga1e74c117ead07f4a8749e076316cf9d0}{DMA1\_IT\_HT4}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga48c3fecb70662a786f32d5cea0a894f8}{DMA1\_IT\_TE4}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga6a8d925c490ea6e7eaf9fbceea9774f6}{DMA1\_IT\_GL5}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_gaf916fe8154ad4a956eec66ecfe0e7e36}{DMA1\_IT\_TC5}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga3ddcb696d05b414be7a533993efa849f}{DMA1\_IT\_HT5}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga7c1f1a465bd0e9755e5fbf2cd7054528}{DMA1\_IT\_TE5}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga623e986da940dbdbc4155f0c1fc4eae8}{DMA1\_IT\_GL6}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga466bad6bf0a2c115aee96d2a1e3b8ddf}{DMA1\_IT\_TC6}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga0a86890a8aa84b5c4f12f1684850fa91}{DMA1\_IT\_HT6}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga2bbf515c1154a5ad359cbd0ace724e64}{DMA1\_IT\_TE6}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga3df39a2f922a5f33ebf1ba3f1adfc15d}{DMA1\_IT\_GL7}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga17efb3180f536c295853e64e5ca508c2}{DMA1\_IT\_TC7}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga9f8a6dd7fc4978c95cbd9de63c85bc37}{DMA1\_IT\_HT7}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga1261e2bfa461a8097603b7737eb7698c}{DMA1\_IT\_TE7}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gafe096e037c0b7cc498cdb993d32e06c5}{DMA2\_IT\_GL1}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga2b6a86186eb56749032aa18b9baff850}{DMA2\_IT\_TC1}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gab9544576514917f9a1fcbb3100c3c2ae}{DMA2\_IT\_HT1}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga912b0a1e7104dc70d25ca1a33338b6eb}{DMA2\_IT\_TE1}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gad1b225f7053b88eeee62e5ed1801b5c3}{DMA2\_IT\_GL2}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga174df6fdfa25046c1481ede66ff1eb6d}{DMA2\_IT\_TC2}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gaf1cb017935477795a7bfb0d1a271e69a}{DMA2\_IT\_HT2}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga5f32004b492a225495c9c1dcd5002042}{DMA2\_IT\_TE2}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga9876a20bc7ae5ccff6d4e62a8b767070}{DMA2\_IT\_GL3}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga249abc1068e8979f52d7d867b5de5a75}{DMA2\_IT\_TC3}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_gab3c0d024e03f9fdca539710c7e528904}{DMA2\_IT\_HT3}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga2fd4ce5d7e2d67c05379f826ae1b1da6}{DMA2\_IT\_TE3}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga004761fbcd7dba2f242639b2992ada17}{DMA2\_IT\_GL4}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga54b6716e82894f76c87926afe2a65f30}{DMA2\_IT\_TC4}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga4aa775a2f1e10783bd43911ad65bb28b}{DMA2\_IT\_HT4}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_ga54dfd8a41ad683f01e3103e6473a7aff}{DMA2\_IT\_TE4}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga2205d7e002767d98f7aa206634374082}{DMA2\_IT\_GL5}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_gaa1134531a0aeb8daeb516985562129b0}{DMA2\_IT\_TC5}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___d_m_a__interrupts__definition_ga4c1e0d1572267c1d48d787009148e3ef}{DMA2\_IT\_HT5}) || ((IT) == 
+      \hyperlink{group___d_m_a__interrupts__definition_gad47115e9a4d0d3f5d9101097983b5525}{DMA2\_IT\_TE5}))
+\end{DoxyCode}
+
+
+Definition at line 272 of file stm32f10x\+\_\+dma.\+h.
+

@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c___events" kind="group">
+    <compoundname>I2C_Events</compoundname>
+    <title>I2C_Events</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c___events_1gaeef8c22ac035122b06e31b360ac7aeb3" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_MODE_SELECT</name>
+        <initializer>((uint32_t)0x00030001)  /* BUSY, MSL and SB flag */</initializer>
+        <briefdescription>
+<para>Communication start. </para>        </briefdescription>
+        <detaileddescription>
+<para>After sending the START condition (<ref refid="group___i2_c___exported___functions_1ga36c522b471588be9779c878222ccb20f" kindref="member">I2C_GenerateSTART()</ref> function) the master has to wait for this event. It means that the Start condition has been correctly released on the I2C bus (the bus is free, no other devices is communicating). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="325" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga2361a6e60b7dc86fb682dd06fbd3edb7" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED</name>
+        <initializer>((uint32_t)0x00070082)  /* BUSY, MSL, ADDR, TXE and TRA flags */</initializer>
+        <briefdescription>
+<para>Address Acknowledge. </para>        </briefdescription>
+        <detaileddescription>
+<para>After checking on EV5 (start condition correctly released on the bus), the master sends the address of the slave(s) with which it will communicate (<ref refid="group___i2_c___exported___functions_1ga009fc2a5b2313c36da39ece39a1156a6" kindref="member">I2C_Send7bitAddress()</ref> function, it also determines the direction of the communication: Master transmitter or Receiver). Then the master has to wait that a slave acknowledges his address. If an acknowledge is sent on the bus, one of the following events will be set:</para><para>1) In case of Master Receiver (7-bit addressing): the I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED event is set.</para><para>2) In case of Master Transmitter (7-bit addressing): the I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED is set</para><para>3) In case of 10-Bit addressing mode, the master (just after generating the START and checking on EV5) has to send the header of 10-bit addressing mode (<ref refid="group___i2_c___exported___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" kindref="member">I2C_SendData()</ref> function). Then master should wait on EV9. It means that the 10-bit addressing header has been correctly sent on the bus. Then master should send the second part of the 10-bit address (LSB) using the function <ref refid="group___i2_c___exported___functions_1ga009fc2a5b2313c36da39ece39a1156a6" kindref="member">I2C_Send7bitAddress()</ref>. Then master should wait for event EV6. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="353" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1gabfde82864432ddb87b6462234d542e60" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED</name>
+        <initializer>((uint32_t)0x00030002)  /* BUSY, MSL and ADDR flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="354" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1gad04882597bbf542c6fee7a9c837fbc8c" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_MODE_ADDRESS10</name>
+        <initializer>((uint32_t)0x00030008)  /* BUSY, MSL and ADD10 flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="356" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga6bcf2ae49961e07e27cf9fdf334719e3" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_BYTE_RECEIVED</name>
+        <initializer>((uint32_t)0x00030040)  /* BUSY, MSL and RXNE flags */</initializer>
+        <briefdescription>
+<para>Communication events. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a communication is established (START condition generated and slave address acknowledged) then the master has to check on one of the following events for communication procedures:</para><para>1) Master Receiver mode: The master has to wait on the event EV7 then to read the data received from the slave (<ref refid="group___i2_c___exported___functions_1gaeaaa4b6f77f50eb57465148c55d27fb2" kindref="member">I2C_ReceiveData()</ref> function).</para><para>2) Master Transmitter mode: The master has to send data (<ref refid="group___i2_c___exported___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" kindref="member">I2C_SendData()</ref> function) then to wait on event EV8 or EV8_2. These two events are similar:<itemizedlist>
+<listitem><para>EV8 means that the data has been written in the data register and is being shifted out.</para></listitem><listitem><para>EV8_2 means that the data has been physically shifted out and output on the bus. In most cases, using EV8 is sufficient for the application. Using EV8_2 leads to a slower communication but ensure more reliable test. EV8_2 is also more suitable than EV8 for testing on the last data transmission (before Stop condition generation).</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>In case the user software does not guarantee that this event EV7 is managed before the current byte end of transfer, then user may check on EV7 and BTF flag at the same time (ie. (I2C_EVENT_MASTER_BYTE_RECEIVED | I2C_FLAG_BTF)). In this case the communication may be slower. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="389" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga037ac1e67e44ee085acac6f034bd73b2" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_BYTE_TRANSMITTING</name>
+        <initializer>((uint32_t)0x00070080) /* TRA, BUSY, MSL, TXE flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="393" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga8fe3b96b54e3c38e1de5d48536039c8f" prot="public" static="no">
+        <name>I2C_EVENT_MASTER_BYTE_TRANSMITTED</name>
+        <initializer>((uint32_t)0x00070084)  /* TRA, BUSY, MSL, TXE and BTF flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="395" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga6cf0e334704618b024eee604849f50f7" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED</name>
+        <initializer>((uint32_t)0x00020002) /* BUSY and ADDR flags */</initializer>
+        <briefdescription>
+<para>Communication start events. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait on one of these events at the start of the communication. It means that the I2C peripheral detected a Start condition on the bus (generated by master device) followed by the peripheral address. The peripheral generates an ACK condition on the bus (if the acknowledge feature is enabled through function <ref refid="group___i2_c___exported___functions_1ga7bb44e894d68a7991f564c43fb187486" kindref="member">I2C_AcknowledgeConfig()</ref>) and the events listed above are set :</para><para>1) In normal case (only one address managed by the slave), when the address sent by the master matches the own address of the peripheral (configured by I2C_OwnAddress1 field) the I2C_EVENT_SLAVE_XXX_ADDRESS_MATCHED event is set (where XXX could be TRANSMITTER or RECEIVER).</para><para>2) In case the address sent by the master matches the second address of the peripheral (configured by the function <ref refid="group___i2_c___exported___functions_1ga7be2cc634a613c8e3539137e897a22df" kindref="member">I2C_OwnAddress2Config()</ref> and enabled by the function <ref refid="group___i2_c___exported___functions_1ga02145a333a56e79557d6ef4ea03fc313" kindref="member">I2C_DualAddressCmd()</ref>) the events I2C_EVENT_SLAVE_XXX_SECONDADDRESS_MATCHED (where XXX could be TRANSMITTER or RECEIVER) are set.</para><para>3) In case the address sent by the master is General Call (address 0x00) and if the General Call is enabled for the peripheral (using function <ref refid="group___i2_c___exported___functions_1ga65c740fc8d7b3b9f15cc432d8699d471" kindref="member">I2C_GeneralCallCmd()</ref>) the following event is set I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="430" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga3fa381c1fd9a95c8ae13c6cc402b1327" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED</name>
+        <initializer>((uint32_t)0x00060082) /* TRA, BUSY, TXE and ADDR flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="431" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga17e78ab01fa980b3df10f8d9f6864c48" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED</name>
+        <initializer>((uint32_t)0x00820000)  /* DUALF and BUSY flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="434" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga6221aa204356bec9146f800ccfc99fc1" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED</name>
+        <initializer>((uint32_t)0x00860080)  /* DUALF, TRA, BUSY and TXE flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="435" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga15195f6def95f688ae9725899f49ea23" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED</name>
+        <initializer>((uint32_t)0x00120000)  /* GENCALL and BUSY flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="438" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga8b244626839940569c6c8bbfc4efe21d" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_BYTE_RECEIVED</name>
+        <initializer>((uint32_t)0x00020040)  /* BUSY and RXNE flags */</initializer>
+        <briefdescription>
+<para>Communication events. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait on one of these events when EV1 has already been checked and:</para><para><itemizedlist>
+<listitem><para>Slave RECEIVER mode:<itemizedlist>
+<listitem><para>EV2: When the application is expecting a data byte to be received.</para></listitem><listitem><para>EV4: When the application is expecting the end of the communication: master sends a stop condition and data transmission is stopped.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Slave Transmitter mode:<itemizedlist>
+<listitem><para>EV3: When a byte has been transmitted by the slave and the application is expecting the end of the byte transmission. The two events I2C_EVENT_SLAVE_BYTE_TRANSMITTED and I2C_EVENT_SLAVE_BYTE_TRANSMITTING are similar. The second one can optionally be used when the user software doesn&apos;t guarantee the EV3 is managed before the current byte end of transfer.</para></listitem><listitem><para>EV3_2: When the master sends a NACK in order to tell slave that data transmission shall end (before sending the STOP condition). In this case slave has to stop sending data bytes and expect a Stop condition on the bus.</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>In case the user software does not guarantee that the event EV2 is managed before the current byte end of transfer, then user may check on EV2 and BTF flag at the same time (ie. (I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_BTF)). In this case the communication may be slower. </para></simplesect>
+</para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="469" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga3148d8d7087e418959bc31e2646b2941" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_STOP_DETECTED</name>
+        <initializer>((uint32_t)0x00000010)  /* STOPF flag */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="471" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga50652880323b8c2746b5afbdfea03fe1" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_BYTE_TRANSMITTED</name>
+        <initializer>((uint32_t)0x00060084)  /* TRA, BUSY, TXE and BTF flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="475" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1gaa574c93a99497649f3d8e7ff53796231" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_BYTE_TRANSMITTING</name>
+        <initializer>((uint32_t)0x00060080)  /* TRA, BUSY and TXE flags */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="476" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga249bd611f1ca64653c0bfc606c591088" prot="public" static="no">
+        <name>I2C_EVENT_SLAVE_ACK_FAILURE</name>
+        <initializer>((uint32_t)0x00000400)  /* AF flag */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="478" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___events_1ga4b42e6936006195f89ff4f763d366970" prot="public" static="no">
+        <name>IS_I2C_EVENT</name>
+        <param><defname>EVENT</defname></param>
+        <initializer>(((EVENT) == <ref refid="group___i2_c___events_1ga3fa381c1fd9a95c8ae13c6cc402b1327" kindref="member">I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga6cf0e334704618b024eee604849f50f7" kindref="member">I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga6221aa204356bec9146f800ccfc99fc1" kindref="member">I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga17e78ab01fa980b3df10f8d9f6864c48" kindref="member">I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga15195f6def95f688ae9725899f49ea23" kindref="member">I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga8b244626839940569c6c8bbfc4efe21d" kindref="member">I2C_EVENT_SLAVE_BYTE_RECEIVED</ref>) || \
+                             ((EVENT) == (<ref refid="group___i2_c___events_1ga8b244626839940569c6c8bbfc4efe21d" kindref="member">I2C_EVENT_SLAVE_BYTE_RECEIVED</ref> | <ref refid="group___i2_c__flags__definition_1ga3755b783aa73568659478c2e2e45e27f" kindref="member">I2C_FLAG_DUALF</ref>)) || \
+                             ((EVENT) == (<ref refid="group___i2_c___events_1ga8b244626839940569c6c8bbfc4efe21d" kindref="member">I2C_EVENT_SLAVE_BYTE_RECEIVED</ref> | <ref refid="group___i2_c__flags__definition_1gab3a93b6840ad406c2fc09e0e96c59b88" kindref="member">I2C_FLAG_GENCALL</ref>)) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga50652880323b8c2746b5afbdfea03fe1" kindref="member">I2C_EVENT_SLAVE_BYTE_TRANSMITTED</ref>) || \
+                             ((EVENT) == (<ref refid="group___i2_c___events_1ga50652880323b8c2746b5afbdfea03fe1" kindref="member">I2C_EVENT_SLAVE_BYTE_TRANSMITTED</ref> | <ref refid="group___i2_c__flags__definition_1ga3755b783aa73568659478c2e2e45e27f" kindref="member">I2C_FLAG_DUALF</ref>)) || \
+                             ((EVENT) == (<ref refid="group___i2_c___events_1ga50652880323b8c2746b5afbdfea03fe1" kindref="member">I2C_EVENT_SLAVE_BYTE_TRANSMITTED</ref> | <ref refid="group___i2_c__flags__definition_1gab3a93b6840ad406c2fc09e0e96c59b88" kindref="member">I2C_FLAG_GENCALL</ref>)) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga3148d8d7087e418959bc31e2646b2941" kindref="member">I2C_EVENT_SLAVE_STOP_DETECTED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1gaeef8c22ac035122b06e31b360ac7aeb3" kindref="member">I2C_EVENT_MASTER_MODE_SELECT</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga2361a6e60b7dc86fb682dd06fbd3edb7" kindref="member">I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1gabfde82864432ddb87b6462234d542e60" kindref="member">I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga6bcf2ae49961e07e27cf9fdf334719e3" kindref="member">I2C_EVENT_MASTER_BYTE_RECEIVED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga8fe3b96b54e3c38e1de5d48536039c8f" kindref="member">I2C_EVENT_MASTER_BYTE_TRANSMITTED</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga037ac1e67e44ee085acac6f034bd73b2" kindref="member">I2C_EVENT_MASTER_BYTE_TRANSMITTING</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1gad04882597bbf542c6fee7a9c837fbc8c" kindref="member">I2C_EVENT_MASTER_MODE_ADDRESS10</ref>) || \
+                             ((EVENT) == <ref refid="group___i2_c___events_1ga249bd611f1ca64653c0bfc606c591088" kindref="member">I2C_EVENT_SLAVE_ACK_FAILURE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="482" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

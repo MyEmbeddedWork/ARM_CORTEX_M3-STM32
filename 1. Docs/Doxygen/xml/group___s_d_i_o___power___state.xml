@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___power___state" kind="group">
+    <compoundname>SDIO_Power_State</compoundname>
+    <title>SDIO_Power_State</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___power___state_1gab2f36a68fc50795ea74a7e98b4ac2d37" prot="public" static="no">
+        <name>SDIO_PowerState_OFF</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="191" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___power___state_1ga0aacd8c94effe8066c6d447fc884d217" prot="public" static="no">
+        <name>SDIO_PowerState_ON</name>
+        <initializer>((uint32_t)0x00000003)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="192" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___power___state_1gad0dae767c2024de1769efb1feccc14ef" prot="public" static="no">
+        <name>IS_SDIO_POWER_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___s_d_i_o___power___state_1gab2f36a68fc50795ea74a7e98b4ac2d37" kindref="member">SDIO_PowerState_OFF</ref>) || ((STATE) == <ref refid="group___s_d_i_o___power___state_1ga0aacd8c94effe8066c6d447fc884d217" kindref="member">SDIO_PowerState_ON</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="193" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+.TH "CEC_BitTiming_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEC_BitTiming_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCEC_BitTimingStdMode\fP   ((uint16_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCEC_BitTimingErrFreeMode\fP   \fBCEC_CFGR_BTEM\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_BIT_TIMING_ERROR_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CEC_BitTimingErrFreeMode   \fBCEC_CFGR_BTEM\fP"
+Bit timing error Free Mode 
+.PP
+Definition at line 70 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_BitTimingStdMode   ((uint16_t)0x00)"
+Bit timing error Standard Mode 
+.PP
+Definition at line 69 of file stm32f10x_cec\&.h\&.
+.SS "#define IS_CEC_BIT_TIMING_ERROR_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == CEC_BitTimingStdMode) || \
+                                            ((MODE) == CEC_BitTimingErrFreeMode))
+.fi
+.PP
+Definition at line 72 of file stm32f10x_cec\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

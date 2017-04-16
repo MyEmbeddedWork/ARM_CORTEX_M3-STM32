@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i__direction__transmit__receive" kind="group">
+    <compoundname>SPI_direction_transmit_receive</compoundname>
+    <title>SPI_direction_transmit_receive</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i__direction__transmit__receive_1ga9a59d225a8cf42eebafbec6ad95c078c" prot="public" static="no">
+        <name>SPI_Direction_Rx</name>
+        <initializer>((uint16_t)0xBFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="376" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__direction__transmit__receive_1gabd76982a7e305c13f7ad8ea1789d3c0c" prot="public" static="no">
+        <name>SPI_Direction_Tx</name>
+        <initializer>((uint16_t)0x4000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="377" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__direction__transmit__receive_1gae96b69403c4206e347cde77b9a30e207" prot="public" static="no">
+        <name>IS_SPI_DIRECTION</name>
+        <param><defname>DIRECTION</defname></param>
+        <initializer>(((DIRECTION) == <ref refid="group___s_p_i__direction__transmit__receive_1ga9a59d225a8cf42eebafbec6ad95c078c" kindref="member">SPI_Direction_Rx</ref>) || \
+                                     ((DIRECTION) == <ref refid="group___s_p_i__direction__transmit__receive_1gabd76982a7e305c13f7ad8ea1789d3c0c" kindref="member">SPI_Direction_Tx</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="378" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+.TH "CAN_filter_mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_filter_mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAN_FilterMode_IdMask\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FilterMode_IdList\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_FILTER_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAN_FilterMode_IdList   ((uint8_t)0x01)"
+identifier list mode 
+.PP
+Definition at line 359 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_FilterMode_IdMask   ((uint8_t)0x00)"
+identifier/mask mode 
+.PP
+Definition at line 358 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_FILTER_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == CAN_FilterMode_IdMask) || \
+                                  ((MODE) == CAN_FilterMode_IdList))
+.fi
+.PP
+Definition at line 361 of file stm32f10x_can\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

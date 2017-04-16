@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_c_a_n___f_i_f_o_mail_box___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>CAN_FIFOMailBox_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_a_n___f_i_f_o_mail_box___type_def_1a034504d43f7b16b320745a25b3a8f12d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_FIFOMailBox_TypeDef::RIR</definition>
+        <argsstring></argsstring>
+        <name>RIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="683" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="683" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___f_i_f_o_mail_box___type_def_1a49d74ca8b402c2b9596bfcbe4cd051a9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_FIFOMailBox_TypeDef::RDTR</definition>
+        <argsstring></argsstring>
+        <name>RDTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="684" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="684" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___f_i_f_o_mail_box___type_def_1ac7d62861de29d0b4fcf11fabbdbd76e7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_FIFOMailBox_TypeDef::RDLR</definition>
+        <argsstring></argsstring>
+        <name>RDLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="685" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="685" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___f_i_f_o_mail_box___type_def_1a95890984bd67845015d40e82fb091c93" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_FIFOMailBox_TypeDef::RDHR</definition>
+        <argsstring></argsstring>
+        <name>RDHR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="686" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="686" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" compoundref="stm32f10x__can_8c" startline="676" endline="717">CAN_Receive</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Controller Area Network FIFOMailBox. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="682" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="681" bodyend="687"/>
+    <listofallmembers>
+      <member refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1a95890984bd67845015d40e82fb091c93" prot="public" virt="non-virtual"><scope>CAN_FIFOMailBox_TypeDef</scope><name>RDHR</name></member>
+      <member refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1ac7d62861de29d0b4fcf11fabbdbd76e7" prot="public" virt="non-virtual"><scope>CAN_FIFOMailBox_TypeDef</scope><name>RDLR</name></member>
+      <member refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1a49d74ca8b402c2b9596bfcbe4cd051a9" prot="public" virt="non-virtual"><scope>CAN_FIFOMailBox_TypeDef</scope><name>RDTR</name></member>
+      <member refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1a034504d43f7b16b320745a25b3a8f12d" prot="public" virt="non-virtual"><scope>CAN_FIFOMailBox_TypeDef</scope><name>RIR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

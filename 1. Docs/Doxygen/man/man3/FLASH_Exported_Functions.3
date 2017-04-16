@@ -1,0 +1,1049 @@
+.TH "FLASH_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFLASH_SetLatency\fP (uint32_t FLASH_Latency)"
+.br
+.RI "Sets the code latency value\&. "
+.ti -1c
+.RI "void \fBFLASH_HalfCycleAccessCmd\fP (uint32_t FLASH_HalfCycleAccess)"
+.br
+.RI "Enables or disables the Half cycle flash access\&. "
+.ti -1c
+.RI "void \fBFLASH_PrefetchBufferCmd\fP (uint32_t FLASH_PrefetchBuffer)"
+.br
+.RI "Enables or disables the Prefetch Buffer\&. "
+.ti -1c
+.RI "void \fBFLASH_Unlock\fP (void)"
+.br
+.RI "Unlocks the FLASH Program Erase Controller\&. "
+.ti -1c
+.RI "void \fBFLASH_Lock\fP (void)"
+.br
+.RI "Locks the FLASH Program Erase Controller\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ErasePage\fP (uint32_t Page_Address)"
+.br
+.RI "Erases a specified FLASH page\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EraseAllPages\fP (void)"
+.br
+.RI "Erases all FLASH pages\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EraseOptionBytes\fP (void)"
+.br
+.RI "Erases the FLASH option bytes\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ProgramWord\fP (uint32_t Address, uint32_t Data)"
+.br
+.RI "Programs a word at a specified address\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ProgramHalfWord\fP (uint32_t Address, uint16_t Data)"
+.br
+.RI "Programs a half word at a specified address\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ProgramOptionByteData\fP (uint32_t Address, uint8_t Data)"
+.br
+.RI "Programs a half word at a specified Option Byte Data address\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EnableWriteProtection\fP (uint32_t FLASH_Pages)"
+.br
+.RI "Write protects the desired pages\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ReadOutProtection\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the read out protection\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_UserOptionByteConfig\fP (uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY)"
+.br
+.RI "Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY\&. "
+.ti -1c
+.RI "uint32_t \fBFLASH_GetUserOptionByte\fP (void)"
+.br
+.RI "Returns the FLASH User Option Bytes values\&. "
+.ti -1c
+.RI "uint32_t \fBFLASH_GetWriteProtectionOptionByte\fP (void)"
+.br
+.RI "Returns the FLASH Write Protection Option Bytes Register value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFLASH_GetReadOutProtectionStatus\fP (void)"
+.br
+.RI "Checks whether the FLASH Read Out Protection Status is set or not\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFLASH_GetPrefetchBufferStatus\fP (void)"
+.br
+.RI "Checks whether the FLASH Prefetch Buffer status is set or not\&. "
+.ti -1c
+.RI "void \fBFLASH_ITConfig\fP (uint32_t FLASH_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified FLASH interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFLASH_GetFlagStatus\fP (uint32_t FLASH_FLAG)"
+.br
+.RI "Checks whether the specified FLASH flag is set or not\&. "
+.ti -1c
+.RI "void \fBFLASH_ClearFlag\fP (uint32_t FLASH_FLAG)"
+.br
+.RI "Clears the FLASH's pending flags\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_GetStatus\fP (void)"
+.br
+.RI "Returns the FLASH Status\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_WaitForLastOperation\fP (uint32_t Timeout)"
+.br
+.RI "Waits for a Flash operation to complete or a TIMEOUT to occur\&. "
+.ti -1c
+.RI "void \fBFLASH_UnlockBank1\fP (void)"
+.br
+.RI "Unlocks the FLASH Bank1 Program Erase Controller\&. "
+.ti -1c
+.RI "void \fBFLASH_LockBank1\fP (void)"
+.br
+.RI "Locks the FLASH Bank1 Program Erase Controller\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EraseAllBank1Pages\fP (void)"
+.br
+.RI "Erases all Bank1 FLASH pages\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_GetBank1Status\fP (void)"
+.br
+.RI "Returns the FLASH Bank1 Status\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_WaitForLastBank1Operation\fP (uint32_t Timeout)"
+.br
+.RI "Waits for a Flash operation on Bank1 to complete or a TIMEOUT to occur\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void FLASH_ClearFlag (uint32_t FLASH_FLAG)"
+
+.PP
+Clears the FLASH's pending flags\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices, this function clears Bank1 or Bank2�s pending flags
+.IP "\(bu" 2
+For other devices, it clears Bank1�s pending flags\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_FLAG\fP specifies the FLASH flags to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FLASH_FLAG_PGERR: FLASH Program error flag 
+.IP "\(bu" 2
+FLASH_FLAG_WRPRTERR: FLASH Write protected error flag 
+.IP "\(bu" 2
+FLASH_FLAG_EOP: FLASH End of Operation flag 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1465 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_EnableWriteProtection (uint32_t FLASH_Pages)"
+
+.PP
+Write protects the desired pages\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_Pages\fP specifies the address of the pages to be write protected\&. This parameter can be: 
+.PD 0
+
+.IP "\(bu" 2
+For \fBSTM32_Low-density_devices\fP: value between FLASH_WRProt_Pages0to3 and FLASH_WRProt_Pages28to31 
+.IP "\(bu" 2
+For \fBSTM32_Medium-density_devices\fP: value between FLASH_WRProt_Pages0to3 and FLASH_WRProt_Pages124to127 
+.IP "\(bu" 2
+For \fBSTM32_High-density_devices\fP: value between FLASH_WRProt_Pages0to1 and FLASH_WRProt_Pages60to61 or FLASH_WRProt_Pages62to255 
+.IP "\(bu" 2
+For \fBSTM32_Connectivity_line_devices:\fP value between FLASH_WRProt_Pages0to1 and FLASH_WRProt_Pages60to61 or FLASH_WRProt_Pages62to127 
+.IP "\(bu" 2
+For \fBSTM32_XL-density_devices\fP: value between FLASH_WRProt_Pages0to1 and FLASH_WRProt_Pages60to61 or FLASH_WRProt_Pages62to511 
+.IP "\(bu" 2
+FLASH_WRProt_AllPages 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 997 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_EraseAllBank1Pages (void)"
+
+.PP
+Erases all Bank1 FLASH pages\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices this function erases all Bank1 pages\&.
+.IP "\(bu" 2
+For all other devices it erases all Bank1 pages and it is equivalent to FLASH_EraseAllPages function\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 555 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_EraseAllPages (void)"
+
+.PP
+Erases all FLASH pages\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 492 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_EraseOptionBytes (void)"
+
+.PP
+Erases the FLASH option bytes\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This functions erases all option bytes except the Read protection (RDP)\&. 
+.PP
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 616 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_ErasePage (uint32_t Page_Address)"
+
+.PP
+Erases a specified FLASH page\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPage_Address\fP The page address to be erased\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 419 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_GetBank1Status (void)"
+
+.PP
+Returns the FLASH Bank1 Status\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices, it is equivalent to FLASH_GetStatus function\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG, FLASH_ERROR_WRP or FLASH_COMPLETE 
+.RE
+.PP
+
+.PP
+Definition at line 1537 of file stm32f10x_flash\&.c\&.
+.SS "\fBFlagStatus\fP FLASH_GetFlagStatus (uint32_t FLASH_FLAG)"
+
+.PP
+Checks whether the specified FLASH flag is set or not\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices, this function checks whether the specified Bank1 or Bank2 flag is set or not\&.
+.IP "\(bu" 2
+For other devices, it checks whether the specified Bank1 flag is set or not\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_FLAG\fP specifies the FLASH flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FLASH_FLAG_BSY: FLASH Busy flag 
+.IP "\(bu" 2
+FLASH_FLAG_PGERR: FLASH Program error flag 
+.IP "\(bu" 2
+FLASH_FLAG_WRPRTERR: FLASH Write protected error flag 
+.IP "\(bu" 2
+FLASH_FLAG_EOP: FLASH End of Operation flag 
+.IP "\(bu" 2
+FLASH_FLAG_OPTERR: FLASH Option Byte error flag 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of FLASH_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1379 of file stm32f10x_flash\&.c\&.
+.SS "\fBFlagStatus\fP FLASH_GetPrefetchBufferStatus (void)"
+
+.PP
+Checks whether the FLASH Prefetch Buffer status is set or not\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Prefetch Buffer Status (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1282 of file stm32f10x_flash\&.c\&.
+.SS "\fBFlagStatus\fP FLASH_GetReadOutProtectionStatus (void)"
+
+.PP
+Checks whether the FLASH Read Out Protection Status is set or not\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP ReadOut Protection Status(SET or RESET) 
+.RE
+.PP
+
+.PP
+Definition at line 1262 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_GetStatus (void)"
+
+.PP
+Returns the FLASH Status\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices, it is equivalent to FLASH_GetBank1Status function\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG, FLASH_ERROR_WRP or FLASH_COMPLETE 
+.RE
+.PP
+
+.PP
+Definition at line 1499 of file stm32f10x_flash\&.c\&.
+.SS "uint32_t FLASH_GetUserOptionByte (void)"
+
+.PP
+Returns the FLASH User Option Bytes values\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP FLASH User Option Bytes values:IWDG_SW(Bit0), RST_STOP(Bit1) and RST_STDBY(Bit2)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1238 of file stm32f10x_flash\&.c\&.
+.SS "uint32_t FLASH_GetWriteProtectionOptionByte (void)"
+
+.PP
+Returns the FLASH Write Protection Option Bytes Register value\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP FLASH Write Protection Option Bytes Register value 
+.RE
+.PP
+
+.PP
+Definition at line 1250 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_HalfCycleAccessCmd (uint32_t FLASH_HalfCycleAccess)"
+
+.PP
+Enables or disables the Half cycle flash access\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_HalfCycleAccess\fP specifies the FLASH Half cycle Access mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FLASH_HalfCycleAccess_Enable: FLASH Half Cycle Enable 
+.IP "\(bu" 2
+FLASH_HalfCycleAccess_Disable: FLASH Half Cycle Disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 281 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_ITConfig (uint32_t FLASH_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified FLASH interrupts\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices, enables or disables the specified FLASH interrupts for Bank1 and Bank2\&.
+.IP "\(bu" 2
+For other devices it enables or disables the specified FLASH interrupts for Bank1\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_IT\fP specifies the FLASH interrupt sources to be enabled or disabled\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FLASH_IT_ERROR: FLASH Error Interrupt 
+.IP "\(bu" 2
+FLASH_IT_EOP: FLASH end of operation Interrupt 
+.PP
+.br
+\fINewState\fP new state of the specified Flash interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1312 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_Lock (void)"
+
+.PP
+Locks the FLASH Program Erase Controller\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices this function Locks Bank1 and Bank2\&.
+.IP "\(bu" 2
+For all other devices it Locks Bank1 and it is equivalent to FLASH_LockBank1 function\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 372 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_LockBank1 (void)"
+
+.PP
+Locks the FLASH Bank1 Program Erase Controller\&. 
+.PP
+\fBNote:\fP
+.RS 4
+this function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices this function Locks Bank1\&.
+.IP "\(bu" 2
+For all other devices it Locks Bank1 and it is equivalent to FLASH_Lock function\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 392 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_PrefetchBufferCmd (uint32_t FLASH_PrefetchBuffer)"
+
+.PP
+Enables or disables the Prefetch Buffer\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_PrefetchBuffer\fP specifies the Prefetch buffer status\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FLASH_PrefetchBuffer_Enable: FLASH Prefetch Buffer Enable 
+.IP "\(bu" 2
+FLASH_PrefetchBuffer_Disable: FLASH Prefetch Buffer Disable 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 300 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_ProgramHalfWord (uint32_t Address, uint16_t Data)"
+
+.PP
+Programs a half word at a specified address\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIAddress\fP specifies the address to be programmed\&. 
+.br
+\fIData\fP specifies the data to be programmed\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 880 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_ProgramOptionByteData (uint32_t Address, uint8_t Data)"
+
+.PP
+Programs a half word at a specified Option Byte Data address\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIAddress\fP specifies the address to be programmed\&. This parameter can be 0x1FFFF804 or 0x1FFFF806\&. 
+.br
+\fIData\fP specifies the data to be programmed\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 951 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_ProgramWord (uint32_t Address, uint32_t Data)"
+
+.PP
+Programs a word at a specified address\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIAddress\fP specifies the address to be programmed\&. 
+.br
+\fIData\fP specifies the data to be programmed\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 687 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_ReadOutProtection (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the read out protection\&. 
+.PP
+\fBNote:\fP
+.RS 4
+If the user has already programmed the other option bytes before calling this function, he must re-program them since this function erases all option bytes\&. 
+.PP
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewstate\fP new state of the ReadOut Protection\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1071 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_SetLatency (uint32_t FLASH_Latency)"
+
+.PP
+Sets the code latency value\&. 
+.PP
+.nf
+This driver provides functions to configure and program the Flash memory of all STM32F10x devices,
+including the latest STM32F10x_XL density devices\&. 
+
+STM32F10x_XL devices feature up to 1 Mbyte with dual bank architecture for read-while-write (RWW) capability:
+   - bank1: fixed size of 512 Kbytes (256 pages of 2Kbytes each)
+   - bank2: up to 512 Kbytes (up to 256 pages of 2Kbytes each)
+While other STM32F10x devices features only one bank with memory up to 512 Kbytes\&.
+
+In version V3\&.3\&.0, some functions were updated and new ones were added to support
+STM32F10x_XL devices\&. Thus some functions manages all devices, while other are 
+dedicated for XL devices only\&.
+
+The table below presents the list of available functions depending on the used STM32F10x devices\&.  
+     
+                                                     
+    Legacy functions used for all STM32F10x devices *
+                                                     
+  +----------------------------------------------------------------------------------------------------------------------------------+
+  |       Functions prototypes         |STM32F10x_XL|Other STM32F10x|    Comments                                                    |
+  |                                    |   devices  |  devices      |                                                                |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_SetLatency                    |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_HalfCycleAccessCmd            |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_PrefetchBufferCmd             |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_Unlock                        |    Yes     |      Yes      | - For STM32F10X_XL devices: unlock Bank1 and Bank2\&.            |
+  |                                    |            |               | - For other devices: unlock Bank1 and it is equivalent         |
+  |                                    |            |               |   to FLASH_UnlockBank1 function\&.                               |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_Lock                          |    Yes     |      Yes      | - For STM32F10X_XL devices: lock Bank1 and Bank2\&.              |
+  |                                    |            |               | - For other devices: lock Bank1 and it is equivalent           |
+  |                                    |            |               |   to FLASH_LockBank1 function\&.                                 |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ErasePage                     |    Yes     |      Yes      | - For STM32F10x_XL devices: erase a page in Bank1 and Bank2    |
+  |                                    |            |               | - For other devices: erase a page in Bank1                     |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_EraseAllPages                 |    Yes     |      Yes      | - For STM32F10x_XL devices: erase all pages in Bank1 and Bank2 |
+  |                                    |            |               | - For other devices: erase all pages in Bank1                  |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_EraseOptionBytes              |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ProgramWord                   |    Yes     |      Yes      | Updated to program up to 1MByte (depending on the used device) |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ProgramHalfWord               |    Yes     |      Yes      | Updated to program up to 1MByte (depending on the used device) |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ProgramOptionByteData         |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_EnableWriteProtection         |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ReadOutProtection             |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_UserOptionByteConfig          |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_GetUserOptionByte             |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_GetWriteProtectionOptionByte  |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_GetReadOutProtectionStatus    |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_GetPrefetchBufferStatus       |    Yes     |      Yes      | No change                                                      |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ITConfig                      |    Yes     |      Yes      | - For STM32F10x_XL devices: enable Bank1 and Bank2's interrupts|
+  |                                    |            |               | - For other devices: enable Bank1's interrupts                 |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_GetFlagStatus                 |    Yes     |      Yes      | - For STM32F10x_XL devices: return Bank1 and Bank2's flag status|
+  |                                    |            |               | - For other devices: return Bank1's flag status                |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_ClearFlag                     |    Yes     |      Yes      | - For STM32F10x_XL devices: clear Bank1 and Bank2's flag       |
+  |                                    |            |               | - For other devices: clear Bank1's flag                        |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_GetStatus                     |    Yes     |      Yes      | - Return the status of Bank1 (for all devices)                 |
+  |                                    |            |               |   equivalent to FLASH_GetBank1Status function                  |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_WaitForLastOperation          |    Yes     |      Yes      | - Wait for Bank1 last operation (for all devices)              |
+  |                                    |            |               |   equivalent to: FLASH_WaitForLastBank1Operation function      |
+  +----------------------------------------------------------------------------------------------------------------------------------+
+
+                                                                                                                          
+    New functions used for all STM32F10x devices to manage Bank1:                                                        *
+      - These functions are mainly useful for STM32F10x_XL density devices, to have separate control for Bank1 and bank2 *
+      - For other devices, these functions are optional (covered by functions listed above)                              *
+                                                                                                                          
+  +----------------------------------------------------------------------------------------------------------------------------------+
+  |       Functions prototypes         |STM32F10x_XL|Other STM32F10x|    Comments                                                    |
+  |                                    |   devices  |  devices      |                                                                |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_UnlockBank1                  |    Yes     |      Yes      | - Unlock Bank1                                                 |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_LockBank1                     |    Yes     |      Yes      | - Lock Bank1                                                   |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_EraseAllBank1Pages           |    Yes     |      Yes      | - Erase all pages in Bank1                                     |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_GetBank1Status               |    Yes     |      Yes      | - Return the status of Bank1                                   |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_WaitForLastBank1Operation    |    Yes     |      Yes      | - Wait for Bank1 last operation                                |
+  +----------------------------------------------------------------------------------------------------------------------------------+
+
+                                                                               
+    New Functions used only with STM32F10x_XL density devices to manage Bank2 *
+                                                                               
+  +----------------------------------------------------------------------------------------------------------------------------------+
+  |       Functions prototypes         |STM32F10x_XL|Other STM32F10x|    Comments                                                    |
+  |                                    |   devices  |  devices      |                                                                |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_UnlockBank2                  |    Yes     |      No       | - Unlock Bank2                                                 |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  |FLASH_LockBank2                     |    Yes     |      No       | - Lock Bank2                                                   |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_EraseAllBank2Pages           |    Yes     |      No       | - Erase all pages in Bank2                                     |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_GetBank2Status               |    Yes     |      No       | - Return the status of Bank2                                   |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_WaitForLastBank2Operation    |    Yes     |      No       | - Wait for Bank2 last operation                                |
+  |----------------------------------------------------------------------------------------------------------------------------------|
+  | FLASH_BootConfig                   |    Yes     |      No       | - Configure to boot from Bank1 or Bank2                        |
+  +----------------------------------------------------------------------------------------------------------------------------------+
+
+.fi
+.PP
+ 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFLASH_Latency\fP specifies the FLASH Latency value\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FLASH_Latency_0: FLASH Zero Latency cycle 
+.IP "\(bu" 2
+FLASH_Latency_1: FLASH One Latency cycle 
+.IP "\(bu" 2
+FLASH_Latency_2: FLASH Two Latency cycles 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 254 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_Unlock (void)"
+
+.PP
+Unlocks the FLASH Program Erase Controller\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices this function unlocks Bank1 and Bank2\&.
+.IP "\(bu" 2
+For all other devices it unlocks Bank1 and it is equivalent to FLASH_UnlockBank1 function\&.\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 319 of file stm32f10x_flash\&.c\&.
+.SS "void FLASH_UnlockBank1 (void)"
+
+.PP
+Unlocks the FLASH Bank1 Program Erase Controller\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices this function unlocks Bank1\&.
+.IP "\(bu" 2
+For all other devices it unlocks Bank1 and it is equivalent to FLASH_Unlock function\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 340 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_UserOptionByteConfig (uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY)"
+
+.PP
+Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIOB_IWDG\fP Selects the IWDG mode This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+OB_IWDG_SW: Software IWDG selected 
+.IP "\(bu" 2
+OB_IWDG_HW: Hardware IWDG selected 
+.PP
+.br
+\fIOB_STOP\fP Reset event when entering STOP mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+OB_STOP_NoRST: No reset generated when entering in STOP 
+.IP "\(bu" 2
+OB_STOP_RST: Reset generated when entering in STOP 
+.PP
+.br
+\fIOB_STDBY\fP Reset event when entering Standby mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+OB_STDBY_NoRST: No reset generated when entering in STANDBY 
+.IP "\(bu" 2
+OB_STDBY_RST: Reset generated when entering in STANDBY 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1140 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_WaitForLastBank1Operation (uint32_t Timeout)"
+
+.PP
+Waits for a Flash operation on Bank1 to complete or a TIMEOUT to occur\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices, it is equivalent to FLASH_WaitForLastOperation\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fITimeout\fP FLASH programming Timeout 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1645 of file stm32f10x_flash\&.c\&.
+.SS "\fBFLASH_Status\fP FLASH_WaitForLastOperation (uint32_t Timeout)"
+
+.PP
+Waits for a Flash operation to complete or a TIMEOUT to occur\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function can be used for all STM32F10x devices, it is equivalent to FLASH_WaitForLastBank1Operation\&.
+.IP "\(bu" 2
+For STM32F10X_XL devices this function waits for a Bank1 Flash operation to complete or a TIMEOUT to occur\&.
+.IP "\(bu" 2
+For all other devices it waits for a Flash operation to complete or a TIMEOUT to occur\&. 
+.PP
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fITimeout\fP FLASH programming Timeout 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIFLASH\fP Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1617 of file stm32f10x_flash\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

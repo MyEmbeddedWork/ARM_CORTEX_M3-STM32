@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i___m_s_b___l_s_b__transmission" kind="group">
+    <compoundname>SPI_MSB_LSB_transmission</compoundname>
+    <title>SPI_MSB_LSB_transmission</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___m_s_b___l_s_b__transmission_1ga45e688f93a93b605886240cad23bc2eb" prot="public" static="no">
+        <name>SPI_FirstBit_MSB</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="234" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___m_s_b___l_s_b__transmission_1ga5ef57fca79434cbc517e4ede548ca02d" prot="public" static="no">
+        <name>SPI_FirstBit_LSB</name>
+        <initializer>((uint16_t)0x0080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="235" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___m_s_b___l_s_b__transmission_1gabee8e0302741f4a5c41b96af640c63ad" prot="public" static="no">
+        <name>IS_SPI_FIRST_BIT</name>
+        <param><defname>BIT</defname></param>
+        <initializer>(((BIT) == <ref refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga45e688f93a93b605886240cad23bc2eb" kindref="member">SPI_FirstBit_MSB</ref>) || \
+                               ((BIT) == <ref refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga5ef57fca79434cbc517e4ede548ca02d" kindref="member">SPI_FirstBit_LSB</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="236" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="__sbrk_8c" kind="file" language="C++">
+    <compoundname>_sbrk.c</compoundname>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">errno.h</includes>
+    <incdepgraph>
+      <node id="807">
+        <label>errno.h</label>
+      </node>
+      <node id="806">
+        <label>sys/types.h</label>
+      </node>
+      <node id="805">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_sbrk.c</label>
+        <link refid="__sbrk_8c"/>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="__sbrk_8c_1aae54d7b9578ba1fc171ce6f30f4c68a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>caddr_t</type>
+        <definition>caddr_t _sbrk</definition>
+        <argsstring>(int incr)</argsstring>
+        <name>_sbrk</name>
+        <param>
+          <type>int</type>
+          <declname>incr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_sbrk.c" line="14" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_sbrk.c" bodystart="22" bodyend="62"/>
+        <references refid="__syscalls_8c_1ad65a8842cc674e3ddf69355898c0ecbf" compoundref="__syscalls_8c" startline="9">errno</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">caddr_t</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="__sbrk_8c_1aae54d7b9578ba1fc171ce6f30f4c68a3" kindref="member">_sbrk</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>incr);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>definitions<sp/>used<sp/>here<sp/>should<sp/>be<sp/>kept<sp/>in<sp/>sync<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>stack<sp/>definitions<sp/>in<sp/>the<sp/>linker<sp/>script.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">caddr_t</highlight></codeline>
+<codeline lineno="22" refid="__sbrk_8c_1aae54d7b9578ba1fc171ce6f30f4c68a3" refkind="member"><highlight class="normal"><ref refid="__sbrk_8c_1aae54d7b9578ba1fc171ce6f30f4c68a3" kindref="member">_sbrk</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>incr)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_Heap_Begin;<sp/></highlight><highlight class="comment">//<sp/>Defined<sp/>by<sp/>the<sp/>linker.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_Heap_Limit;<sp/></highlight><highlight class="comment">//<sp/>Defined<sp/>by<sp/>the<sp/>linker.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>current_heap_end;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>current_block_address;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_heap_end<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>current_heap_end<sp/>=<sp/>&amp;_Heap_Begin;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>current_block_address<sp/>=<sp/>current_heap_end;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>to<sp/>align<sp/>heap<sp/>to<sp/>word<sp/>boundary,<sp/>else<sp/>will<sp/>get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>hard<sp/>faults<sp/>on<sp/>Cortex-M0.<sp/>So<sp/>we<sp/>assume<sp/>that<sp/>heap<sp/>starts<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>word<sp/>boundary,<sp/>hence<sp/>make<sp/>sure<sp/>we<sp/>always<sp/>add<sp/>a<sp/>multiple<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>4<sp/>to<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>incr<sp/>=<sp/>(incr<sp/>+<sp/>3)<sp/>&amp;<sp/>(~3);<sp/></highlight><highlight class="comment">//<sp/>align<sp/>value<sp/>to<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_heap_end<sp/>+<sp/>incr<sp/>&gt;<sp/>&amp;_Heap_Limit)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Some<sp/>of<sp/>the<sp/>libstdc++-v3<sp/>tests<sp/>rely<sp/>upon<sp/>detecting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>out<sp/>of<sp/>memory<sp/>errors,<sp/>so<sp/>do<sp/>not<sp/>abort<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>abort<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_write<sp/>(1,<sp/></highlight><highlight class="stringliteral">&quot;_sbrk:<sp/>Heap<sp/>and<sp/>stack<sp/>collision\n&quot;</highlight><highlight class="normal">,<sp/>32);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>abort<sp/>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Heap<sp/>has<sp/>overflowed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="__syscalls_8c_1ad65a8842cc674e3ddf69355898c0ecbf" kindref="member">errno</ref><sp/>=<sp/>ENOMEM;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(caddr_t)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>current_heap_end<sp/>+=<sp/>incr;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(caddr_t)<sp/>current_block_address;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_sbrk.c"/>
+  </compounddef>
+</doxygen>

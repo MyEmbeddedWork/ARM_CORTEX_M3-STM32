@@ -1,0 +1,41 @@
+.TH "Option_Bytes_nRST_STDBY" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Option_Bytes_nRST_STDBY
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBOB_STDBY_NoRST\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBOB_STDBY_RST\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_STDBY_SOURCE\fP(SOURCE)   (((SOURCE) == \fBOB_STDBY_NoRST\fP) || ((SOURCE) == \fBOB_STDBY_RST\fP))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_OB_STDBY_SOURCE(SOURCE)   (((SOURCE) == \fBOB_STDBY_NoRST\fP) || ((SOURCE) == \fBOB_STDBY_RST\fP))"
+
+.PP
+Definition at line 285 of file stm32f10x_flash\&.h\&.
+.SS "#define OB_STDBY_NoRST   ((uint16_t)0x0004)"
+No reset generated when entering in STANDBY 
+.PP
+Definition at line 283 of file stm32f10x_flash\&.h\&.
+.SS "#define OB_STDBY_RST   ((uint16_t)0x0000)"
+Reset generated when entering in STANDBY 
+.PP
+Definition at line 284 of file stm32f10x_flash\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

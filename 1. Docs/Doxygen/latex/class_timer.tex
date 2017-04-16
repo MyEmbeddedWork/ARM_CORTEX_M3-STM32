@@ -1,0 +1,143 @@
+\hypertarget{class_timer}{}\section{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \hyperlink{class_timer_af064c6652d9c7424aa2a69091077371d}{ticks\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_timer_a8ed3c5e074223900c0c9a74376471209}{Timer} ()=default
+\item 
+void \hyperlink{class_timer_abb13e798f6d89b09fdc9182d64c7558b}{start} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_timer_ad946179cf9404a33927ec3d33ed270d7}{sleep} (\hyperlink{class_timer_af064c6652d9c7424aa2a69091077371d}{ticks\+\_\+t} ticks)
+\item 
+static void \hyperlink{class_timer_afba5678215b6aa1983edf2c08241c99b}{tick} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \hyperlink{class_timer_af064c6652d9c7424aa2a69091077371d}{ticks\+\_\+t} \hyperlink{class_timer_afb0566d18137755123193fc239593daa}{F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ} = 1000u
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Timer.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_timer_af064c6652d9c7424aa2a69091077371d}\label{class_timer_af064c6652d9c7424aa2a69091077371d}} 
+\index{Timer@{Timer}!ticks\+\_\+t@{ticks\+\_\+t}}
+\index{ticks\+\_\+t@{ticks\+\_\+t}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{ticks\+\_\+t}{ticks\_t}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t \hyperlink{class_timer_af064c6652d9c7424aa2a69091077371d}{Timer\+::ticks\+\_\+t}}
+
+
+
+Definition at line 16 of file Timer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_timer_a8ed3c5e074223900c0c9a74376471209}\label{class_timer_a8ed3c5e074223900c0c9a74376471209}} 
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_ad946179cf9404a33927ec3d33ed270d7}\label{class_timer_ad946179cf9404a33927ec3d33ed270d7}} 
+\index{Timer@{Timer}!sleep@{sleep}}
+\index{sleep@{sleep}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void Timer\+::sleep (\begin{DoxyParamCaption}\item[{\hyperlink{class_timer_af064c6652d9c7424aa2a69091077371d}{ticks\+\_\+t}}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 22 of file Timer.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_ad946179cf9404a33927ec3d33ed270d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_timer_abb13e798f6d89b09fdc9182d64c7558b}\label{class_timer_abb13e798f6d89b09fdc9182d64c7558b}} 
+\index{Timer@{Timer}!start@{start}}
+\index{start@{start}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Timer\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file Timer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_abb13e798f6d89b09fdc9182d64c7558b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_timer_abb13e798f6d89b09fdc9182d64c7558b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_timer_afba5678215b6aa1983edf2c08241c99b}\label{class_timer_afba5678215b6aa1983edf2c08241c99b}} 
+\index{Timer@{Timer}!tick@{tick}}
+\index{tick@{tick}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily static void Timer\+::tick (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 37 of file Timer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_afba5678215b6aa1983edf2c08241c99b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_timer_afb0566d18137755123193fc239593daa}\label{class_timer_afb0566d18137755123193fc239593daa}} 
+\index{Timer@{Timer}!F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ@{F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}}
+\index{F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ@{F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}{FREQUENCY\_HZ}}
+{\footnotesize\ttfamily constexpr \hyperlink{class_timer_af064c6652d9c7424aa2a69091077371d}{ticks\+\_\+t} Timer\+::\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ = 1000u\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 17 of file Timer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/include/\hyperlink{_timer_8h}{Timer.\+h}\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/src/\hyperlink{_timer_8cpp}{Timer.\+cpp}\end{DoxyCompactItemize}

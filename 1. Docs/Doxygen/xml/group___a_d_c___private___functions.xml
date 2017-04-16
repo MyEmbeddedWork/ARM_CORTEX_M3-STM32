@@ -1,0 +1,1931 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___a_d_c___private___functions" kind="group">
+    <compoundname>ADC_Private_Functions</compoundname>
+    <title>ADC_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga31fa6bc09de17125e9db2830ce77c09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_DeInit</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_DeInit</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Deinitializes the ADCx peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="185" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="185" bodyend="214"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___peripheral__declaration_1ga90d2d5c526ce5c0a551f533eccbee71a" compoundref="stm32f10x_8h" startline="1415">ADC1</references>
+        <references refid="group___r_c_c___exported___functions_1gad94553850ac07106a27ee85fec37efdf" compoundref="stm32f10x__rcc_8c" startline="1185" endline="1198">RCC_APB2PeriphResetCmd</references>
+        <references refid="group___a_p_b2__peripheral_1gacd24acb2cd5ca208652157f6c13d3145" compoundref="stm32f10x__rcc_8h" startline="505">RCC_APB2Periph_ADC1</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1gac5503ae96c26b4475226f96715a1bf1e" compoundref="stm32f10x_8h" startline="1416">ADC2</references>
+        <references refid="group___a_p_b2__peripheral_1ga4fd76e573e827702568d6064e33448b5" compoundref="stm32f10x__rcc_8h" startline="506">RCC_APB2Periph_ADC2</references>
+        <references refid="group___peripheral__declaration_1gae917784606daf6b04c9b7b96b40c2f74" compoundref="stm32f10x_8h" startline="1421">ADC3</references>
+        <references refid="group___a_p_b2__peripheral_1ga371d55bbf17bf965a213c59f2d276d72" compoundref="stm32f10x__rcc_8h" startline="511">RCC_APB2Periph_ADC3</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gabbab6038cf8691404350625e477254f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_Init</definition>
+        <argsstring>(ADC_TypeDef *ADCx, ADC_InitTypeDef *ADC_InitStruct)</argsstring>
+        <name>ADC_Init</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_d_c___init_type_def" kindref="compound">ADC_InitTypeDef</ref> *</type>
+          <declname>ADC_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the ADCx peripheral according to the specified parameters in the ADC_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_a_d_c___init_type_def" kindref="compound">ADC_InitTypeDef</ref> structure that contains the configuration information for the specified ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="224" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="224" bodyend="274"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__mode_1ga4abf4c7de28a42d7b124c9e403a6e537" compoundref="stm32f10x__adc_8h" startline="111">IS_ADC_MODE</references>
+        <references refid="struct_a_d_c___init_type_def_1a0f9ec17ad585d66a54625213062c9260" compoundref="stm32f10x__adc_8h" startline="58">ADC_InitTypeDef::ADC_Mode</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="struct_a_d_c___init_type_def_1aaf44f54f22ab40bf8fae01f075aa4c87" compoundref="stm32f10x__adc_8h" startline="62">ADC_InitTypeDef::ADC_ScanConvMode</references>
+        <references refid="struct_a_d_c___init_type_def_1a2149036a332281e70a36879a2396b8d1" compoundref="stm32f10x__adc_8h" startline="66">ADC_InitTypeDef::ADC_ContinuousConvMode</references>
+        <references refid="group___a_d_c__external__trigger__sources__for__regular__channels__conversion_1gac74e6054adbedd72822cacde69105318" compoundref="stm32f10x__adc_8h" startline="146">IS_ADC_EXT_TRIG</references>
+        <references refid="struct_a_d_c___init_type_def_1ae5d0c48e70c2a39355b7ab0cc1df8310" compoundref="stm32f10x__adc_8h" startline="70">ADC_InitTypeDef::ADC_ExternalTrigConv</references>
+        <references refid="group___a_d_c__data__align_1ga2903b620e3c61dc47ed8c0fbf4197801" compoundref="stm32f10x__adc_8h" startline="170">IS_ADC_DATA_ALIGN</references>
+        <references refid="struct_a_d_c___init_type_def_1a622e89d8fba3900f20aaf40d5560ab7b" compoundref="stm32f10x__adc_8h" startline="74">ADC_InitTypeDef::ADC_DataAlign</references>
+        <references refid="group___a_d_c__regular__length_1ga1ea82167f6dccdef1d160675f4534584" compoundref="stm32f10x__adc_8h" startline="393">IS_ADC_REGULAR_LENGTH</references>
+        <references refid="struct_a_d_c___init_type_def_1ad6f39a12ac32a2767085ac94e9338bc3" compoundref="stm32f10x__adc_8h" startline="77">ADC_InitTypeDef::ADC_NbrOfChannel</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1ga67f7dd35ea3d1296677e5fc50b88fa90" compoundref="stm32f10x__adc_8c" startline="75">CR1_CLEAR_Mask</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga49192361afb92aee0e3f1124ef1131a0" compoundref="stm32f10x__adc_8c" startline="121">CR2_CLEAR_Mask</references>
+        <references refid="struct_a_d_c___type_def_1a0185aa54962ba987f192154fb7a2d673" compoundref="stm32f10x_8h" startline="555">ADC_TypeDef::SQR1</references>
+        <references refid="group___a_d_c___private___defines_1ga6e3e238f38d7ff17939cbd5417fc51cc" compoundref="stm32f10x__adc_8c" startline="129">SQR1_CLEAR_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga6c6e754d1d0a98d56e465efaf73272ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_StructInit</definition>
+        <argsstring>(ADC_InitTypeDef *ADC_InitStruct)</argsstring>
+        <name>ADC_StructInit</name>
+        <param>
+          <type><ref refid="struct_a_d_c___init_type_def" kindref="compound">ADC_InitTypeDef</ref> *</type>
+          <declname>ADC_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each ADC_InitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADC_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to an <ref refid="struct_a_d_c___init_type_def" kindref="compound">ADC_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="281" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="281" bodyend="296"/>
+        <references refid="struct_a_d_c___init_type_def_1a0f9ec17ad585d66a54625213062c9260" compoundref="stm32f10x__adc_8h" startline="58">ADC_InitTypeDef::ADC_Mode</references>
+        <references refid="group___a_d_c__mode_1ga2754d3a35559dc10e3d6a7d920e83432" compoundref="stm32f10x__adc_8h" startline="100">ADC_Mode_Independent</references>
+        <references refid="struct_a_d_c___init_type_def_1aaf44f54f22ab40bf8fae01f075aa4c87" compoundref="stm32f10x__adc_8h" startline="62">ADC_InitTypeDef::ADC_ScanConvMode</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___init_type_def_1a2149036a332281e70a36879a2396b8d1" compoundref="stm32f10x__adc_8h" startline="66">ADC_InitTypeDef::ADC_ContinuousConvMode</references>
+        <references refid="struct_a_d_c___init_type_def_1ae5d0c48e70c2a39355b7ab0cc1df8310" compoundref="stm32f10x__adc_8h" startline="70">ADC_InitTypeDef::ADC_ExternalTrigConv</references>
+        <references refid="group___a_d_c__external__trigger__sources__for__regular__channels__conversion_1ga303f24361ea930f8214e9e68b63b244e" compoundref="stm32f10x__adc_8h" startline="129">ADC_ExternalTrigConv_T1_CC1</references>
+        <references refid="struct_a_d_c___init_type_def_1a622e89d8fba3900f20aaf40d5560ab7b" compoundref="stm32f10x__adc_8h" startline="74">ADC_InitTypeDef::ADC_DataAlign</references>
+        <references refid="group___a_d_c__data__align_1ga80b5d2f2b6b058bc498f58e0a92ad035" compoundref="stm32f10x__adc_8h" startline="168">ADC_DataAlign_Right</references>
+        <references refid="struct_a_d_c___init_type_def_1ad6f39a12ac32a2767085ac94e9338bc3" compoundref="stm32f10x__adc_8h" startline="77">ADC_InitTypeDef::ADC_NbrOfChannel</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga40882d399e3371755ed610c1134e634e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_Cmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_Cmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified ADC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the ADCx peripheral. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="305" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="305" bodyend="320"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga21779759f3d5d1389b114d7a1bb6fca1" compoundref="stm32f10x__adc_8c" startline="78">CR2_ADON_Set</references>
+        <references refid="group___a_d_c___private___defines_1gaa3eb5d77998387159508a57d7e09f459" compoundref="stm32f10x__adc_8c" startline="79">CR2_ADON_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gac5881d5995818001584b27b137a8dbcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_DMACmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_DMACmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified ADC DMA request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 3 to select the ADC peripheral. Note: ADC2 hasn&apos;t a DMA capability. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC DMA transfer. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="330" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="330" bodyend="345"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1ga56ce1703cee9a93969fc507b985ee949" compoundref="stm32f10x__adc_8h" startline="93">IS_ADC_DMA_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga7fa8ba27f5b249dd7cb0b6e53a25d6e2" compoundref="stm32f10x__adc_8c" startline="82">CR2_DMA_Set</references>
+        <references refid="group___a_d_c___private___defines_1ga8e674886185af86bc17d9266ddbdca7c" compoundref="stm32f10x__adc_8c" startline="83">CR2_DMA_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gad4c84b54b539944f555488bf979f82b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ITConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint16_t ADC_IT, FunctionalState NewState)</argsstring>
+        <name>ADC_ITConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>ADC_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified ADC interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the ADC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>ADC_IT_EOC: End of conversion interrupt mask </para></listitem>
+<listitem><para>ADC_IT_AWD: Analog watchdog interrupt mask </para></listitem>
+<listitem><para>ADC_IT_JEOC: End of injected conversion interrupt mask </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified ADC interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="359" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="359" bodyend="378"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___a_d_c__interrupts__definition_1gaf5f8d35930becff402eeb8220641432f" compoundref="stm32f10x__adc_8h" startline="323">IS_ADC_IT</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga3d542020ba28c1d16238a0defbee6d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ResetCalibration</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_ResetCalibration</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Resets the selected ADC calibration registers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="385" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="385" bodyend="391"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gaf256d4606fbe82d7e4cdc8d177653b53" compoundref="stm32f10x__adc_8c" startline="86">CR2_RSTCAL_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga113be9fe25add8d7496bed659c68e02b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus ADC_GetResetCalibrationStatus</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_GetResetCalibrationStatus</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Gets the selected ADC reset calibration registers status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of ADC reset calibration registers (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="398" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="398" bodyend="416"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gaf256d4606fbe82d7e4cdc8d177653b53" compoundref="stm32f10x__adc_8c" startline="86">CR2_RSTCAL_Set</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gadcba6341124a6aabfd2dd885ca8e5f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_StartCalibration</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_StartCalibration</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Starts the selected ADC calibration process. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="423" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="423" bodyend="429"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga6705aae168367a2d961e64dd9137ae3a" compoundref="stm32f10x__adc_8c" startline="89">CR2_CAL_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga7a728f699b487c7fa1694d7424967122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus ADC_GetCalibrationStatus</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_GetCalibrationStatus</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Gets the selected ADC calibration status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of ADC calibration (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="436" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="436" bodyend="454"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga6705aae168367a2d961e64dd9137ae3a" compoundref="stm32f10x__adc_8c" startline="89">CR2_CAL_Set</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga694130a8d1ad3c8877b7eddb29611b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_SoftwareStartConvCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_SoftwareStartConvCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the selected ADC software start conversion . </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC software start conversion. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="463" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="463" bodyend="480"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gad9bed838631a650428d2318694a66094" compoundref="stm32f10x__adc_8c" startline="99">CR2_EXTTRIG_SWSTART_Set</references>
+        <references refid="group___a_d_c___private___defines_1gad0a6e5cf09868318178434340ade2fe1" compoundref="stm32f10x__adc_8c" startline="100">CR2_EXTTRIG_SWSTART_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gaf1119583782ecbcec380efcb7eb74883" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus ADC_GetSoftwareStartConvStatus</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_GetSoftwareStartConvStatus</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Gets the selected ADC Software start conversion Status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of ADC software start conversion (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="487" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="487" bodyend="505"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gac40733c6a8918c16cd52fcade75a6de6" compoundref="stm32f10x__adc_8c" startline="92">CR2_SWSTART_Set</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga6eb241ba82d67d1371136c9132083937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_DiscModeChannelCountConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t Number)</argsstring>
+        <name>ADC_DiscModeChannelCountConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Number</declname>
+        </param>
+        <briefdescription>
+<para>Configures the discontinuous mode for the selected ADC regular group channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the discontinuous mode regular channel count value. This number must be between 1 and 8. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="515" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="515" bodyend="531"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__regular__discontinuous__mode__number_1gab8dfaacb2f25e65ca755de71050ff270" compoundref="stm32f10x__adc_8h" startline="412">IS_ADC_REGULAR_DISC_NUMBER</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1ga88cecf0c336d950115d7a52d599de816" compoundref="stm32f10x__adc_8c" startline="54">CR1_DISCNUM_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga1909649d10253ce88d986ffbb94a4be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_DiscModeCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_DiscModeCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the discontinuous mode on regular group channel for the specified ADC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC discontinuous mode on regular group channel. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="542" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="542" bodyend="557"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1ga95f4f653adde3407c116919c2b7d9c74" compoundref="stm32f10x__adc_8c" startline="57">CR1_DISCEN_Set</references>
+        <references refid="group___a_d_c___private___defines_1ga959f617e77853bff85ca5e8d6fba6611" compoundref="stm32f10x__adc_8c" startline="58">CR1_DISCEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gac531adb577b648d4bb8881f2ed627d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_RegularChannelConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)</argsstring>
+        <name>ADC_RegularChannelConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_Channel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Rank</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_SampleTime</declname>
+        </param>
+        <briefdescription>
+<para>Configures for the selected ADC regular channel its corresponding rank in the sequencer and its sample time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_Channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC channel to configure. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_Channel_0: ADC Channel0 selected </para></listitem>
+<listitem><para>ADC_Channel_1: ADC Channel1 selected </para></listitem>
+<listitem><para>ADC_Channel_2: ADC Channel2 selected </para></listitem>
+<listitem><para>ADC_Channel_3: ADC Channel3 selected </para></listitem>
+<listitem><para>ADC_Channel_4: ADC Channel4 selected </para></listitem>
+<listitem><para>ADC_Channel_5: ADC Channel5 selected </para></listitem>
+<listitem><para>ADC_Channel_6: ADC Channel6 selected </para></listitem>
+<listitem><para>ADC_Channel_7: ADC Channel7 selected </para></listitem>
+<listitem><para>ADC_Channel_8: ADC Channel8 selected </para></listitem>
+<listitem><para>ADC_Channel_9: ADC Channel9 selected </para></listitem>
+<listitem><para>ADC_Channel_10: ADC Channel10 selected </para></listitem>
+<listitem><para>ADC_Channel_11: ADC Channel11 selected </para></listitem>
+<listitem><para>ADC_Channel_12: ADC Channel12 selected </para></listitem>
+<listitem><para>ADC_Channel_13: ADC Channel13 selected </para></listitem>
+<listitem><para>ADC_Channel_14: ADC Channel14 selected </para></listitem>
+<listitem><para>ADC_Channel_15: ADC Channel15 selected </para></listitem>
+<listitem><para>ADC_Channel_16: ADC Channel16 selected </para></listitem>
+<listitem><para>ADC_Channel_17: ADC Channel17 selected </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rank in the regular group sequencer. This parameter must be between 1 to 16. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_SampleTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample time value to be set for the selected channel. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_SampleTime_1Cycles5: Sample time equal to 1.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_7Cycles5: Sample time equal to 7.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_13Cycles5: Sample time equal to 13.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_28Cycles5: Sample time equal to 28.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_41Cycles5: Sample time equal to 41.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_55Cycles5: Sample time equal to 55.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_71Cycles5: Sample time equal to 71.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_239Cycles5: Sample time equal to 239.5 cycles </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="596" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="596" bodyend="683"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__channels_1gaba41910dcb2b449c613a5ef638862e77" compoundref="stm32f10x__adc_8h" startline="202">IS_ADC_CHANNEL</references>
+        <references refid="group___a_d_c__regular__rank_1ga5928a1e9315f798e27220b91f1bae7f2" compoundref="stm32f10x__adc_8h" startline="402">IS_ADC_REGULAR_RANK</references>
+        <references refid="group___a_d_c__sampling__time_1ga30e0307fa009e1c383d3047b48e94644" compoundref="stm32f10x__adc_8h" startline="227">IS_ADC_SAMPLE_TIME</references>
+        <references refid="group___a_d_c__channels_1ga01a61c428be0cb69327e428e32a42aa1" compoundref="stm32f10x__adc_8h" startline="189">ADC_Channel_9</references>
+        <references refid="struct_a_d_c___type_def_1a73009a8122fcc628f467a4e997109347" compoundref="stm32f10x_8h" startline="547">ADC_TypeDef::SMPR1</references>
+        <references refid="group___a_d_c___private___defines_1ga244048ec3ba9461a6609942def9a15ba" compoundref="stm32f10x__adc_8c" startline="139">SMPR1_SMP_Set</references>
+        <references refid="struct_a_d_c___type_def_1a9e68fe36c4c8fbbac294b5496ccf7130" compoundref="stm32f10x_8h" startline="548">ADC_TypeDef::SMPR2</references>
+        <references refid="group___a_d_c___private___defines_1ga6555beb1970c42125678d80530bba4d3" compoundref="stm32f10x__adc_8c" startline="140">SMPR2_SMP_Set</references>
+        <references refid="struct_a_d_c___type_def_1a51dbdba74c4d3559157392109af68fc6" compoundref="stm32f10x_8h" startline="557">ADC_TypeDef::SQR3</references>
+        <references refid="group___a_d_c___private___defines_1ga8a04f115021dc5261562b4dc04c01109" compoundref="stm32f10x__adc_8c" startline="124">SQR3_SQ_Set</references>
+        <references refid="struct_a_d_c___type_def_1a6b6e55e6c667042e5a46a76518b73d5a" compoundref="stm32f10x_8h" startline="556">ADC_TypeDef::SQR2</references>
+        <references refid="group___a_d_c___private___defines_1ga2329f779aee00e5990d6430a01de8cb0" compoundref="stm32f10x__adc_8c" startline="125">SQR2_SQ_Set</references>
+        <references refid="struct_a_d_c___type_def_1a0185aa54962ba987f192154fb7a2d673" compoundref="stm32f10x_8h" startline="555">ADC_TypeDef::SQR1</references>
+        <references refid="group___a_d_c___private___defines_1ga91fb5f63b765a543dfa419ea0219351b" compoundref="stm32f10x__adc_8c" startline="126">SQR1_SQ_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga3ae92d7940a16c898223374a5857f509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ExternalTrigConvCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_ExternalTrigConvCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the ADCx conversion through external trigger. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC external trigger start of conversion. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="692" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="692" bodyend="707"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gaf39824995dbcbabf76697cd7116352d6" compoundref="stm32f10x__adc_8c" startline="95">CR2_EXTTRIG_Set</references>
+        <references refid="group___a_d_c___private___defines_1ga8a96cb9aac77bab199f3dff54da230a6" compoundref="stm32f10x__adc_8c" startline="96">CR2_EXTTRIG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gaaf74221c285ec5dab5e66baf7bec6bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t ADC_GetConversionValue</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_GetConversionValue</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the last ADCx conversion result data for regular channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data conversion value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="714" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="714" bodyend="720"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a84114accead82bd11a0e12a429cdfed9" compoundref="stm32f10x_8h" startline="563">ADC_TypeDef::DR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gac5a4792dc29ef7ff6bfbce9f37e8a668" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ADC_GetDualModeConversionValue</definition>
+        <argsstring>(void)</argsstring>
+        <name>ADC_GetDualModeConversionValue</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the last ADC1 and ADC2 conversion result data in dual mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data conversion value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="726" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="726" bodyend="730"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___a_d_c___private___defines_1ga35ecb1c96cfae175f5f00490e5e91e88" compoundref="stm32f10x__adc_8c" startline="146">DR_ADDRESS</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga1ff9c3b8e4bbdd2addfd227f1a506a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_AutoInjectedConvCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_AutoInjectedConvCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the selected ADC automatic injected group conversion after regular one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC auto injected conversion This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="740" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="740" bodyend="755"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1gaa8478f12e212738e249a7fafb69d4dd4" compoundref="stm32f10x__adc_8c" startline="61">CR1_JAUTO_Set</references>
+        <references refid="group___a_d_c___private___defines_1gab6c4a9f0a661bf7c5add35ea3a90b756" compoundref="stm32f10x__adc_8c" startline="62">CR1_JAUTO_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga0b583b94183fa4ff287177b9ee808092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_InjectedDiscModeCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_InjectedDiscModeCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the discontinuous mode for injected group channel for the specified ADC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC discontinuous mode on injected group channel. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="766" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="766" bodyend="781"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1gafef4d16c890bf5e6eb381ad01c829309" compoundref="stm32f10x__adc_8c" startline="65">CR1_JDISCEN_Set</references>
+        <references refid="group___a_d_c___private___defines_1gab6ffba92495342bd5f0a8b1fa216526b" compoundref="stm32f10x__adc_8c" startline="66">CR1_JDISCEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gafc02ce1e84e96b692adf085f61a0bca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ExternalTrigInjectedConvConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint32_t ADC_ExternalTrigInjecConv)</argsstring>
+        <name>ADC_ExternalTrigInjectedConvConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ADC_ExternalTrigInjecConv</declname>
+        </param>
+        <briefdescription>
+<para>Configures the ADCx external trigger for injected channels conversion. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_ExternalTrigInjecConv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the ADC trigger to start injected conversion. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_ExternalTrigInjecConv_T1_TRGO: Timer1 TRGO event selected (for ADC1, ADC2 and ADC3) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T1_CC4: Timer1 capture compare4 selected (for ADC1, ADC2 and ADC3) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T2_TRGO: Timer2 TRGO event selected (for ADC1 and ADC2) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T2_CC1: Timer2 capture compare1 selected (for ADC1 and ADC2) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T3_CC4: Timer3 capture compare4 selected (for ADC1 and ADC2) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T4_TRGO: Timer4 TRGO event selected (for ADC1 and ADC2) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_Ext_IT15_TIM8_CC4: External interrupt line 15 or Timer8 capture compare4 event selected (for ADC1 and ADC2) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T4_CC3: Timer4 capture compare3 selected (for ADC3 only) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T8_CC2: Timer8 capture compare2 selected (for ADC3 only) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T8_CC4: Timer8 capture compare4 selected (for ADC3 only) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T5_TRGO: Timer5 TRGO event selected (for ADC3 only) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_T5_CC4: Timer5 capture compare4 selected (for ADC3 only) </para></listitem>
+<listitem><para>ADC_ExternalTrigInjecConv_None: Injected conversion started by software and not by external trigger (for ADC1, ADC2 and ADC3) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="805" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="805" bodyend="819"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__external__trigger__sources__for__injected__channels__conversion_1ga3cb8cadbff46e432b5e000c3a7489a0b" compoundref="stm32f10x__adc_8h" startline="259">IS_ADC_EXT_INJEC_TRIG</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gafa78c11893aa39ad2c0117414ae1704d" compoundref="stm32f10x__adc_8c" startline="103">CR2_JEXTSEL_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gad81d134c083d8f407c819e6f4722d553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ExternalTrigInjectedConvCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_ExternalTrigInjectedConvCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the ADCx injected channels conversion through external trigger. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC external trigger start of injected conversion. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="830" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="830" bodyend="845"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga20a54958799c567e9efaa0635aa18a99" compoundref="stm32f10x__adc_8c" startline="106">CR2_JEXTTRIG_Set</references>
+        <references refid="group___a_d_c___private___defines_1ga94404d5a0103c5e2d7ffa45956356931" compoundref="stm32f10x__adc_8c" startline="107">CR2_JEXTTRIG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga5b141d5dbf5f417a11dfa622c8c149d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_SoftwareStartInjectedConvCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, FunctionalState NewState)</argsstring>
+        <name>ADC_SoftwareStartInjectedConvCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the selected ADC start of the injected channels conversion. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected ADC software start injected conversion. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="855" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="855" bodyend="872"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1gaac5989ccf10d806f2f6a70f925d6b130" compoundref="stm32f10x__adc_8c" startline="113">CR2_JEXTTRIG_JSWSTART_Set</references>
+        <references refid="group___a_d_c___private___defines_1gaaa2fb01c1649fde61115602559942ee2" compoundref="stm32f10x__adc_8c" startline="114">CR2_JEXTTRIG_JSWSTART_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga8765f8835b8cfed13dce3d8d71767dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus</definition>
+        <argsstring>(ADC_TypeDef *ADCx)</argsstring>
+        <name>ADC_GetSoftwareStartInjectedConvCmdStatus</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <briefdescription>
+<para>Gets the selected ADC Software start injected conversion Status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of ADC software start injected conversion (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="879" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="879" bodyend="897"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="struct_a_d_c___type_def_1a1053a65a21af0d27afe1bf9cf7b7aca7" compoundref="stm32f10x_8h" startline="546">ADC_TypeDef::CR2</references>
+        <references refid="group___a_d_c___private___defines_1ga5292617782f3327f2e1ed0bd9461704e" compoundref="stm32f10x__adc_8c" startline="110">CR2_JSWSTART_Set</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gae2b44bff080184e1cf6f2cb6b9bb3e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_InjectedChannelConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)</argsstring>
+        <name>ADC_InjectedChannelConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_Channel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Rank</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_SampleTime</declname>
+        </param>
+        <briefdescription>
+<para>Configures for the selected ADC injected channel its corresponding rank in the sequencer and its sample time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_Channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC channel to configure. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_Channel_0: ADC Channel0 selected </para></listitem>
+<listitem><para>ADC_Channel_1: ADC Channel1 selected </para></listitem>
+<listitem><para>ADC_Channel_2: ADC Channel2 selected </para></listitem>
+<listitem><para>ADC_Channel_3: ADC Channel3 selected </para></listitem>
+<listitem><para>ADC_Channel_4: ADC Channel4 selected </para></listitem>
+<listitem><para>ADC_Channel_5: ADC Channel5 selected </para></listitem>
+<listitem><para>ADC_Channel_6: ADC Channel6 selected </para></listitem>
+<listitem><para>ADC_Channel_7: ADC Channel7 selected </para></listitem>
+<listitem><para>ADC_Channel_8: ADC Channel8 selected </para></listitem>
+<listitem><para>ADC_Channel_9: ADC Channel9 selected </para></listitem>
+<listitem><para>ADC_Channel_10: ADC Channel10 selected </para></listitem>
+<listitem><para>ADC_Channel_11: ADC Channel11 selected </para></listitem>
+<listitem><para>ADC_Channel_12: ADC Channel12 selected </para></listitem>
+<listitem><para>ADC_Channel_13: ADC Channel13 selected </para></listitem>
+<listitem><para>ADC_Channel_14: ADC Channel14 selected </para></listitem>
+<listitem><para>ADC_Channel_15: ADC Channel15 selected </para></listitem>
+<listitem><para>ADC_Channel_16: ADC Channel16 selected </para></listitem>
+<listitem><para>ADC_Channel_17: ADC Channel17 selected </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rank in the injected group sequencer. This parameter must be between 1 and 4. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_SampleTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample time value to be set for the selected channel. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_SampleTime_1Cycles5: Sample time equal to 1.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_7Cycles5: Sample time equal to 7.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_13Cycles5: Sample time equal to 13.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_28Cycles5: Sample time equal to 28.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_41Cycles5: Sample time equal to 41.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_55Cycles5: Sample time equal to 55.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_71Cycles5: Sample time equal to 71.5 cycles </para></listitem>
+<listitem><para>ADC_SampleTime_239Cycles5: Sample time equal to 239.5 cycles </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="936" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="936" bodyend="990"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__channels_1gaba41910dcb2b449c613a5ef638862e77" compoundref="stm32f10x__adc_8h" startline="202">IS_ADC_CHANNEL</references>
+        <references refid="group___a_d_c__injected__rank_1ga63f95f9a45f4d718aabc9e429d860e9d" compoundref="stm32f10x__adc_8h" startline="382">IS_ADC_INJECTED_RANK</references>
+        <references refid="group___a_d_c__sampling__time_1ga30e0307fa009e1c383d3047b48e94644" compoundref="stm32f10x__adc_8h" startline="227">IS_ADC_SAMPLE_TIME</references>
+        <references refid="group___a_d_c__channels_1ga01a61c428be0cb69327e428e32a42aa1" compoundref="stm32f10x__adc_8h" startline="189">ADC_Channel_9</references>
+        <references refid="struct_a_d_c___type_def_1a73009a8122fcc628f467a4e997109347" compoundref="stm32f10x_8h" startline="547">ADC_TypeDef::SMPR1</references>
+        <references refid="group___a_d_c___private___defines_1ga244048ec3ba9461a6609942def9a15ba" compoundref="stm32f10x__adc_8c" startline="139">SMPR1_SMP_Set</references>
+        <references refid="struct_a_d_c___type_def_1a9e68fe36c4c8fbbac294b5496ccf7130" compoundref="stm32f10x_8h" startline="548">ADC_TypeDef::SMPR2</references>
+        <references refid="group___a_d_c___private___defines_1ga6555beb1970c42125678d80530bba4d3" compoundref="stm32f10x__adc_8c" startline="140">SMPR2_SMP_Set</references>
+        <references refid="struct_a_d_c___type_def_1a5438a76a93ac1bd2526e92ef298dc193" compoundref="stm32f10x_8h" startline="558">ADC_TypeDef::JSQR</references>
+        <references refid="group___a_d_c___private___defines_1ga46af9e738702305be0127f6c15c4f7b0" compoundref="stm32f10x__adc_8c" startline="135">JSQR_JL_Set</references>
+        <references refid="group___a_d_c___private___defines_1ga5d460390dbe3b400b5e0fdf1e94929f0" compoundref="stm32f10x__adc_8c" startline="132">JSQR_JSQ_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga24eba90bc3ee955e07659a605011710d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_InjectedSequencerLengthConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t Length)</argsstring>
+        <name>ADC_InjectedSequencerLengthConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+<para>Configures the sequencer length for injected channels. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sequencer length. This parameter must be a number between 1 to 4. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="999" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="999" bodyend="1016"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__injected__length_1gaecdddab7424a697722683296ca70e176" compoundref="stm32f10x__adc_8h" startline="372">IS_ADC_INJECTED_LENGTH</references>
+        <references refid="struct_a_d_c___type_def_1a5438a76a93ac1bd2526e92ef298dc193" compoundref="stm32f10x_8h" startline="558">ADC_TypeDef::JSQR</references>
+        <references refid="group___a_d_c___private___defines_1gac8d1173791ea10bac7c53a368d593a16" compoundref="stm32f10x__adc_8c" startline="136">JSQR_JL_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga07a942613088ab3ecfc3d97a20475920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_SetInjectedOffset</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_InjectedChannel, uint16_t Offset)</argsstring>
+        <name>ADC_SetInjectedOffset</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_InjectedChannel</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>Offset</declname>
+        </param>
+        <briefdescription>
+<para>Set the injected channels conversion value offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_InjectedChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC injected channel to set its offset. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_InjectedChannel_1: Injected Channel1 selected </para></listitem>
+<listitem><para>ADC_InjectedChannel_2: Injected Channel2 selected </para></listitem>
+<listitem><para>ADC_InjectedChannel_3: Injected Channel3 selected </para></listitem>
+<listitem><para>ADC_InjectedChannel_4: Injected Channel4 selected </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the offset value for the selected ADC injected channel This parameter must be a 12bit value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1031" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1031" bodyend="1045"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__injected__channel__selection_1gae0bbfb5dbad0fbac8b672db6f63cf8d0" compoundref="stm32f10x__adc_8h" startline="284">IS_ADC_INJECTED_CHANNEL</references>
+        <references refid="group___a_d_c__injected__offset_1ga252eaf5d2552f0d11b1bcca7dc48950a" compoundref="stm32f10x__adc_8h" startline="362">IS_ADC_OFFSET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga1dea5ed24571a2e0ce4cbd41c9c1ec46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t ADC_GetInjectedConversionValue</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_InjectedChannel)</argsstring>
+        <name>ADC_GetInjectedConversionValue</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_InjectedChannel</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ADC injected channel conversion result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_InjectedChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the converted ADC injected channel. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_InjectedChannel_1: Injected Channel1 selected </para></listitem>
+<listitem><para>ADC_InjectedChannel_2: Injected Channel2 selected </para></listitem>
+<listitem><para>ADC_InjectedChannel_3: Injected Channel3 selected </para></listitem>
+<listitem><para>ADC_InjectedChannel_4: Injected Channel4 selected </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data conversion value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1058" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1058" bodyend="1071"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__injected__channel__selection_1gae0bbfb5dbad0fbac8b672db6f63cf8d0" compoundref="stm32f10x__adc_8h" startline="284">IS_ADC_INJECTED_CHANNEL</references>
+        <references refid="group___a_d_c___private___defines_1ga5671a68d6f0d01c6c465ee7a3a8f3eea" compoundref="stm32f10x__adc_8c" startline="143">JDR_Offset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gad017d69bec6e497afd35ba25ea22d86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_AnalogWatchdogCmd</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint32_t ADC_AnalogWatchdog)</argsstring>
+        <name>ADC_AnalogWatchdogCmd</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ADC_AnalogWatchdog</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the analog watchdog on single/all regular or injected channels. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_AnalogWatchdog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC analog watchdog configuration. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_AnalogWatchdog_SingleRegEnable: Analog watchdog on a single regular channel </para></listitem>
+<listitem><para>ADC_AnalogWatchdog_SingleInjecEnable: Analog watchdog on a single injected channel </para></listitem>
+<listitem><para>ADC_AnalogWatchdog_SingleRegOrInjecEnable: Analog watchdog on a single regular or injected channel </para></listitem>
+<listitem><para>ADC_AnalogWatchdog_AllRegEnable: Analog watchdog on all regular channel </para></listitem>
+<listitem><para>ADC_AnalogWatchdog_AllInjecEnable: Analog watchdog on all injected channel </para></listitem>
+<listitem><para>ADC_AnalogWatchdog_AllRegAllInjecEnable: Analog watchdog on all regular and injected channels </para></listitem>
+<listitem><para>ADC_AnalogWatchdog_None: No channel guarded by the analog watchdog </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1088" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1088" bodyend="1102"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__analog__watchdog__selection_1ga53ffa30f756569194342bfba80165544" compoundref="stm32f10x__adc_8h" startline="304">IS_ADC_ANALOG_WATCHDOG</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1gae53703f0c718ecc5b3e1a69c60af3697" compoundref="stm32f10x__adc_8c" startline="72">CR1_AWDMode_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga79588d02aa8e4147f21cb90a4708366d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_AnalogWatchdogThresholdsConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint16_t HighThreshold, uint16_t LowThreshold)</argsstring>
+        <name>ADC_AnalogWatchdogThresholdsConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>HighThreshold</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>LowThreshold</declname>
+        </param>
+        <briefdescription>
+<para>Configures the high and low thresholds of the analog watchdog. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HighThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC analog watchdog High threshold value. This parameter must be a 12bit value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LowThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC analog watchdog Low threshold value. This parameter must be a 12bit value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1113" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1113" bodyend="1124"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__thresholds_1gaa71cdff6dafddfccff8a7e88768bfb54" compoundref="stm32f10x__adc_8h" startline="352">IS_ADC_THRESHOLD</references>
+        <references refid="struct_a_d_c___type_def_1a297ac2d83a1837bfdc0333474b977de0" compoundref="stm32f10x_8h" startline="553">ADC_TypeDef::HTR</references>
+        <references refid="struct_a_d_c___type_def_1afdaf8050fb01739206a92c9ad610f396" compoundref="stm32f10x_8h" startline="554">ADC_TypeDef::LTR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga03cef3d12292ffa2b8520524d5b0226c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_AnalogWatchdogSingleChannelConfig</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_Channel)</argsstring>
+        <name>ADC_AnalogWatchdogSingleChannelConfig</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_Channel</declname>
+        </param>
+        <briefdescription>
+<para>Configures the analog watchdog guarded single channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_Channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ADC channel to configure for the analog watchdog. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_Channel_0: ADC Channel0 selected </para></listitem>
+<listitem><para>ADC_Channel_1: ADC Channel1 selected </para></listitem>
+<listitem><para>ADC_Channel_2: ADC Channel2 selected </para></listitem>
+<listitem><para>ADC_Channel_3: ADC Channel3 selected </para></listitem>
+<listitem><para>ADC_Channel_4: ADC Channel4 selected </para></listitem>
+<listitem><para>ADC_Channel_5: ADC Channel5 selected </para></listitem>
+<listitem><para>ADC_Channel_6: ADC Channel6 selected </para></listitem>
+<listitem><para>ADC_Channel_7: ADC Channel7 selected </para></listitem>
+<listitem><para>ADC_Channel_8: ADC Channel8 selected </para></listitem>
+<listitem><para>ADC_Channel_9: ADC Channel9 selected </para></listitem>
+<listitem><para>ADC_Channel_10: ADC Channel10 selected </para></listitem>
+<listitem><para>ADC_Channel_11: ADC Channel11 selected </para></listitem>
+<listitem><para>ADC_Channel_12: ADC Channel12 selected </para></listitem>
+<listitem><para>ADC_Channel_13: ADC Channel13 selected </para></listitem>
+<listitem><para>ADC_Channel_14: ADC Channel14 selected </para></listitem>
+<listitem><para>ADC_Channel_15: ADC Channel15 selected </para></listitem>
+<listitem><para>ADC_Channel_16: ADC Channel16 selected </para></listitem>
+<listitem><para>ADC_Channel_17: ADC Channel17 selected </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1151" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1151" bodyend="1165"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__channels_1gaba41910dcb2b449c613a5ef638862e77" compoundref="stm32f10x__adc_8h" startline="202">IS_ADC_CHANNEL</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="group___a_d_c___private___defines_1gabe7e68383d281e58707a1cd749a3374e" compoundref="stm32f10x__adc_8c" startline="69">CR1_AWDCH_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga848682e2d7d3de9f8cf03ffa4c11f0b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_TempSensorVrefintCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>ADC_TempSensorVrefintCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the temperature sensor and Vrefint channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the temperature sensor. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1173" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1173" bodyend="1187"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga90d2d5c526ce5c0a551f533eccbee71a" compoundref="stm32f10x_8h" startline="1415">ADC1</references>
+        <references refid="group___a_d_c___private___defines_1ga7f5e0f807edebbfcef4883f3ec42b9e8" compoundref="stm32f10x__adc_8c" startline="117">CR2_TSVREFE_Set</references>
+        <references refid="group___a_d_c___private___defines_1gaa207bc0eeed8b546dc9536b02df633b5" compoundref="stm32f10x__adc_8c" startline="118">CR2_TSVREFE_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gaa12546e51ec905c90a3aada432bd4633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus ADC_GetFlagStatus</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_FLAG)</argsstring>
+        <name>ADC_GetFlagStatus</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified ADC flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_FLAG_AWD: Analog watchdog flag </para></listitem>
+<listitem><para>ADC_FLAG_EOC: End of conversion flag </para></listitem>
+<listitem><para>ADC_FLAG_JEOC: End of injected group conversion flag </para></listitem>
+<listitem><para>ADC_FLAG_JSTRT: Start of injected group conversion flag </para></listitem>
+<listitem><para>ADC_FLAG_STRT: Start of regular group conversion flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of ADC_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1201" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1201" bodyend="1220"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__flags__definition_1ga597eb68dfef9dbe0928ed14a1aedc710" compoundref="stm32f10x__adc_8h" startline="341">IS_ADC_GET_FLAG</references>
+        <references refid="struct_a_d_c___type_def_1a9745df96e98f3cdc2d05ccefce681f64" compoundref="stm32f10x_8h" startline="544">ADC_TypeDef::SR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gaf34f36798f811b4a41321ea2d12118d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ClearFlag</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint8_t ADC_FLAG)</argsstring>
+        <name>ADC_ClearFlag</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ADC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the ADCx&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>ADC_FLAG_AWD: Analog watchdog flag </para></listitem>
+<listitem><para>ADC_FLAG_EOC: End of conversion flag </para></listitem>
+<listitem><para>ADC_FLAG_JEOC: End of injected group conversion flag </para></listitem>
+<listitem><para>ADC_FLAG_JSTRT: Start of injected group conversion flag </para></listitem>
+<listitem><para>ADC_FLAG_STRT: Start of regular group conversion flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1234" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1234" bodyend="1241"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__flags__definition_1gac5b6fb60ec921255b05261ec04573470" compoundref="stm32f10x__adc_8h" startline="340">IS_ADC_CLEAR_FLAG</references>
+        <references refid="struct_a_d_c___type_def_1a9745df96e98f3cdc2d05ccefce681f64" compoundref="stm32f10x_8h" startline="544">ADC_TypeDef::SR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1gaa1d3b910a83dbf14d4f68c8eef058612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus ADC_GetITStatus</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint16_t ADC_IT)</argsstring>
+        <name>ADC_GetITStatus</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>ADC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified ADC interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the ADC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>ADC_IT_EOC: End of conversion interrupt mask </para></listitem>
+<listitem><para>ADC_IT_AWD: Analog watchdog interrupt mask </para></listitem>
+<listitem><para>ADC_IT_JEOC: End of injected conversion interrupt mask </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of ADC_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1253" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1253" bodyend="1277"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__interrupts__definition_1gacae69f04de1a0033f065864d868c006e" compoundref="stm32f10x__adc_8h" startline="325">IS_ADC_GET_IT</references>
+        <references refid="struct_a_d_c___type_def_1a89b1ff4376683dd2896ea8b32ded05b2" compoundref="stm32f10x_8h" startline="545">ADC_TypeDef::CR1</references>
+        <references refid="struct_a_d_c___type_def_1a9745df96e98f3cdc2d05ccefce681f64" compoundref="stm32f10x_8h" startline="544">ADC_TypeDef::SR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___a_d_c___private___functions_1ga601c6a67bd883eb631ecc7aa5e999b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_ClearITPendingBit</definition>
+        <argsstring>(ADC_TypeDef *ADCx, uint16_t ADC_IT)</argsstring>
+        <name>ADC_ClearITPendingBit</name>
+        <param>
+          <type><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *</type>
+          <declname>ADCx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>ADC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the ADCx&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ADCx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ADC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the ADC interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>ADC_IT_EOC: End of conversion interrupt mask </para></listitem>
+<listitem><para>ADC_IT_AWD: Analog watchdog interrupt mask </para></listitem>
+<listitem><para>ADC_IT_JEOC: End of injected conversion interrupt mask </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" line="1289" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c" bodystart="1289" bodyend="1299"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" compoundref="stm32f10x__adc_8h" startline="89">IS_ADC_ALL_PERIPH</references>
+        <references refid="group___a_d_c__interrupts__definition_1gaf5f8d35930becff402eeb8220641432f" compoundref="stm32f10x__adc_8h" startline="323">IS_ADC_IT</references>
+        <references refid="struct_a_d_c___type_def_1a9745df96e98f3cdc2d05ccefce681f64" compoundref="stm32f10x_8h" startline="544">ADC_TypeDef::SR</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

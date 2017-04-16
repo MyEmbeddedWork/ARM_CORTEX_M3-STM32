@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_a_n___mode" kind="group">
+    <compoundname>CAN_Mode</compoundname>
+    <title>CAN_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_n___mode_1gaaf1f48ab4917ccfd5fd31dd781d59e29" prot="public" static="no">
+        <name>CAN_Mode_Normal</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normal mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="229" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___mode_1gaad036c944403186eb3496ff65020c0ee" prot="public" static="no">
+        <name>CAN_Mode_LoopBack</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loopback mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="230" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___mode_1gac05e5d666f18eb35e8da70e6e17e8fb8" prot="public" static="no">
+        <name>CAN_Mode_Silent</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>silent mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="231" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___mode_1ga087afa0d24d2cf399225993573c984eb" prot="public" static="no">
+        <name>CAN_Mode_Silent_LoopBack</name>
+        <initializer>((uint8_t)0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loopback combined with silent mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="232" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n___mode_1ga5d6480c240edeba383b4e07d65814d98" prot="public" static="no">
+        <name>IS_CAN_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___c_a_n___mode_1gaaf1f48ab4917ccfd5fd31dd781d59e29" kindref="member">CAN_Mode_Normal</ref>) || \
+                           ((MODE) == <ref refid="group___c_a_n___mode_1gaad036c944403186eb3496ff65020c0ee" kindref="member">CAN_Mode_LoopBack</ref>)|| \
+                           ((MODE) == <ref refid="group___c_a_n___mode_1gac05e5d666f18eb35e8da70e6e17e8fb8" kindref="member">CAN_Mode_Silent</ref>) || \
+                           ((MODE) == <ref refid="group___c_a_n___mode_1ga087afa0d24d2cf399225993573c984eb" kindref="member">CAN_Mode_Silent_LoopBack</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="234" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

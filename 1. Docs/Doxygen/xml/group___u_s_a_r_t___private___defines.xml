@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___u_s_a_r_t___private___defines" kind="group">
+    <compoundname>USART_Private_Defines</compoundname>
+    <title>USART_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga95f5821be56b1a5dbfdd38fdb37ed54c" prot="public" static="no">
+        <name>CR1_UE_Set</name>
+        <initializer>((uint16_t)0x2000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="47" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga9c75a44192cb3dbbbf509cddfc47481c" prot="public" static="no">
+        <name>CR1_UE_Reset</name>
+        <initializer>((uint16_t)0xDFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Disable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gae4045dea092c3cbfe07d14fef39195ce" prot="public" static="no">
+        <name>CR1_WAKE_Mask</name>
+        <initializer>((uint16_t)0xF7FF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART WakeUp Method Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="50" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga5cb566b7c5e126e5ef11dd25bba50ffa" prot="public" static="no">
+        <name>CR1_RWU_Set</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART mute mode Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="52" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga064a46d19ffffddd410e969798d335ee" prot="public" static="no">
+        <name>CR1_RWU_Reset</name>
+        <initializer>((uint16_t)0xFFFD)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART mute mode Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga2813b7fa1263aecfeefa48f8a55938b9" prot="public" static="no">
+        <name>CR1_SBK_Set</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Break Character send Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga67f7dd35ea3d1296677e5fc50b88fa90" prot="public" static="no">
+        <name>CR1_CLEAR_Mask</name>
+        <initializer>((uint16_t)0xE9F3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART CR1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga080c343a5a95d4419789b94405c27764" prot="public" static="no">
+        <name>CR2_Address_Mask</name>
+        <initializer>((uint16_t)0xFFF0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART address Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="56" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gabc3f2b022d70a11fd0605e58cb23023f" prot="public" static="no">
+        <name>CR2_LINEN_Set</name>
+        <initializer>((uint16_t)0x4000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART LIN Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga7b8fbe7be4c85c16ea1c1e3c9fa95b05" prot="public" static="no">
+        <name>CR2_LINEN_Reset</name>
+        <initializer>((uint16_t)0xBFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART LIN Disable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga9b365a89de44809a52895090e9050646" prot="public" static="no">
+        <name>CR2_LBDL_Mask</name>
+        <initializer>((uint16_t)0xFFDF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART LIN Break detection Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga8a2294276016f30cb361a7f54ad07cd4" prot="public" static="no">
+        <name>CR2_STOP_CLEAR_Mask</name>
+        <initializer>((uint16_t)0xCFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART CR2 STOP Bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga846e1873279b2b0798cc34d76bd80592" prot="public" static="no">
+        <name>CR2_CLOCK_CLEAR_Mask</name>
+        <initializer>((uint16_t)0xF0FF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART CR2 Clock Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="63" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gab47df7b36b4f1315953f6aa45de2fb61" prot="public" static="no">
+        <name>CR3_SCEN_Set</name>
+        <initializer>((uint16_t)0x0020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART SC Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga294c473dc7f8ff3e9cbaa0675c8c75f3" prot="public" static="no">
+        <name>CR3_SCEN_Reset</name>
+        <initializer>((uint16_t)0xFFDF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART SC Disable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga950cc9f7251709854754add7d9aaca60" prot="public" static="no">
+        <name>CR3_NACK_Set</name>
+        <initializer>((uint16_t)0x0010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART SC NACK Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="68" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gabed0cac273ff4faf009e8c35243c1e10" prot="public" static="no">
+        <name>CR3_NACK_Reset</name>
+        <initializer>((uint16_t)0xFFEF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART SC NACK Disable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga0c5c30ea9777d0c8c6f1b5ff85dfca3c" prot="public" static="no">
+        <name>CR3_HDSEL_Set</name>
+        <initializer>((uint16_t)0x0008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Half-Duplex Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga762c72448ba24f3487dfa457a8dcc9fc" prot="public" static="no">
+        <name>CR3_HDSEL_Reset</name>
+        <initializer>((uint16_t)0xFFF7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Half-Duplex Disable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gaea5d8d002a34c3a587719533db2c17f9" prot="public" static="no">
+        <name>CR3_IRLP_Mask</name>
+        <initializer>((uint16_t)0xFFFB)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART IrDA LowPower mode Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga085e8ef6bc8f5de45c5be95971715f7f" prot="public" static="no">
+        <name>CR3_CLEAR_Mask</name>
+        <initializer>((uint16_t)0xFCFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART CR3 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="75" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gad5dd1d08f3836f9a3c3f3cc0c66a8b8f" prot="public" static="no">
+        <name>CR3_IREN_Set</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART IrDA Enable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="77" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gad1520358de97e48fe18780e5cc5296bd" prot="public" static="no">
+        <name>CR3_IREN_Reset</name>
+        <initializer>((uint16_t)0xFFFD)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART IrDA Disable Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="78" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga2fe593d0c308e2245bb66905930b3ebb" prot="public" static="no">
+        <name>GTPR_LSB_Mask</name>
+        <initializer>((uint16_t)0x00FF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guard Time Register LSB Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="79" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga405b4222892bafdf1d084de5efd24d70" prot="public" static="no">
+        <name>GTPR_MSB_Mask</name>
+        <initializer>((uint16_t)0xFF00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guard Time Register MSB Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="80" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga401c753d4de6ab56fcb026c91b8c8487" prot="public" static="no">
+        <name>IT_Mask</name>
+        <initializer>((uint16_t)0x001F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Interrupt Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga11495857ca81074790c376317382140f" prot="public" static="no">
+        <name>CR1_OVER8_Set</name>
+        <initializer>((<ref refid="group___exported__types_1gace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>)0x8000)  /* USART OVER8 mode Enable Mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="84" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gaf84165f2974000906c495b3c27dc5121" prot="public" static="no">
+        <name>CR1_OVER8_Reset</name>
+        <initializer>((<ref refid="group___exported__types_1gace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>)0x7FFF)  /* USART OVER8 mode Disable Mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="85" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1gac512024dda541435acfe0b50de925105" prot="public" static="no">
+        <name>CR3_ONEBITE_Set</name>
+        <initializer>((<ref refid="group___exported__types_1gace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>)0x0800)  /* USART ONEBITE mode Enable Mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="88" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___private___defines_1ga55dc289819dde550630df98267bbef52" prot="public" static="no">
+        <name>CR3_ONEBITE_Reset</name>
+        <initializer>((<ref refid="group___exported__types_1gace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>)0xF7FF)  /* USART ONEBITE mode Disable Mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" line="89" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

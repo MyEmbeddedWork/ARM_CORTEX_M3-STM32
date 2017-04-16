@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_b_g_m_c_u___private___functions" kind="group">
+    <compoundname>DBGMCU_Private_Functions</compoundname>
+    <title>DBGMCU_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_b_g_m_c_u___private___functions_1ga47419e9ca75ab7be4c70feb82faa0511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t DBGMCU_GetREVID</definition>
+        <argsstring>(void)</argsstring>
+        <name>DBGMCU_GetREVID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the device revision identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>revision identifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" line="84" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" bodystart="84" bodyend="87"/>
+        <references refid="group___peripheral__declaration_1ga92ec6d9ec2251fda7d4ce09748cd74b4" compoundref="stm32f10x_8h" startline="1453">DBGMCU</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_b_g_m_c_u___private___functions_1gac34193c34dbce759bf424957a31b3266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t DBGMCU_GetDEVID</definition>
+        <argsstring>(void)</argsstring>
+        <name>DBGMCU_GetDEVID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the device identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" line="94" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" bodystart="94" bodyend="97"/>
+        <references refid="group___peripheral__declaration_1ga92ec6d9ec2251fda7d4ce09748cd74b4" compoundref="stm32f10x_8h" startline="1453">DBGMCU</references>
+        <references refid="group___d_b_g_m_c_u___private___defines_1gaeeece10cca80f3c632d3d77c3f2917b6" compoundref="stm32f10x__dbgmcu_8c" startline="46">IDCODE_DEVID_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_b_g_m_c_u___private___functions_1gadf2f267f855ac1e4c03905c5dcfbd28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DBGMCU_Config</definition>
+        <argsstring>(uint32_t DBGMCU_Periph, FunctionalState NewState)</argsstring>
+        <name>DBGMCU_Config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>DBGMCU_Periph</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Configures the specified peripheral and low power mode behavior when the MCU under Debug mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DBGMCU_Periph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the peripheral and low power mode. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>DBGMCU_SLEEP: Keep debugger connection during SLEEP mode </para></listitem>
+<listitem><para>DBGMCU_STOP: Keep debugger connection during STOP mode </para></listitem>
+<listitem><para>DBGMCU_STANDBY: Keep debugger connection during STANDBY mode </para></listitem>
+<listitem><para>DBGMCU_IWDG_STOP: Debug IWDG stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_WWDG_STOP: Debug WWDG stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM1_STOP: TIM1 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM2_STOP: TIM2 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM3_STOP: TIM3 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM4_STOP: TIM4 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_CAN1_STOP: Debug CAN2 stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_I2C1_SMBUS_TIMEOUT: I2C1 SMBUS timeout mode stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_I2C2_SMBUS_TIMEOUT: I2C2 SMBUS timeout mode stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM5_STOP: TIM5 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM6_STOP: TIM6 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM7_STOP: TIM7 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM8_STOP: TIM8 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_CAN2_STOP: Debug CAN2 stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM15_STOP: TIM15 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM16_STOP: TIM16 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM17_STOP: TIM17 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM9_STOP: TIM9 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM10_STOP: TIM10 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM11_STOP: TIM11 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM12_STOP: TIM12 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM13_STOP: TIM13 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM14_STOP: TIM14 counter stopped when Core is halted </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified peripheral in Debug mode. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" line="134" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" bodystart="134" bodyend="148"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_b_g_m_c_u___exported___constants_1ga96d44dc7861b6a3f364942704f323a45" compoundref="stm32f10x__dbgmcu_8h" startline="81">IS_DBGMCU_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga92ec6d9ec2251fda7d4ce09748cd74b4" compoundref="stm32f10x_8h" startline="1453">DBGMCU</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

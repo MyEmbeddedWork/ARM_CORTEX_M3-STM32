@@ -1,0 +1,625 @@
+.TH "CMSIS_core_base" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_core_base \- Definitions for base addresses, unions, and structures\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBITM_BASE\fP   (0xE0000000UL)"
+.br
+.ti -1c
+.RI "#define \fBDWT_BASE\fP   (0xE0001000UL)"
+.br
+.ti -1c
+.RI "#define \fBTPI_BASE\fP   (0xE0040000UL)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_BASE\fP   (0xE000EDF0UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCnSCB\fP   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBITM\fP   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBDWT\fP   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBTPI\fP   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug\fP   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBITM_BASE\fP   (0xE0000000UL)"
+.br
+.ti -1c
+.RI "#define \fBDWT_BASE\fP   (0xE0001000UL)"
+.br
+.ti -1c
+.RI "#define \fBTPI_BASE\fP   (0xE0040000UL)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_BASE\fP   (0xE000EDF0UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCnSCB\fP   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBITM\fP   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBDWT\fP   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBTPI\fP   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug\fP   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBITM_BASE\fP   (0xE0000000UL)"
+.br
+.ti -1c
+.RI "#define \fBDWT_BASE\fP   (0xE0001000UL)"
+.br
+.ti -1c
+.RI "#define \fBTPI_BASE\fP   (0xE0040000UL)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_BASE\fP   (0xE000EDF0UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCnSCB\fP   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBITM\fP   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBDWT\fP   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBTPI\fP   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug\fP   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCnSCB\fP   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBSCS_BASE\fP   (0xE000E000UL)"
+.br
+.ti -1c
+.RI "#define \fBITM_BASE\fP   (0xE0000000UL)"
+.br
+.ti -1c
+.RI "#define \fBDWT_BASE\fP   (0xE0001000UL)"
+.br
+.ti -1c
+.RI "#define \fBTPI_BASE\fP   (0xE0040000UL)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_BASE\fP   (0xE000EDF0UL)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_BASE\fP   (\fBSCS_BASE\fP +  0x0010UL)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_BASE\fP   (\fBSCS_BASE\fP +  0x0100UL)"
+.br
+.ti -1c
+.RI "#define \fBSCB_BASE\fP   (\fBSCS_BASE\fP +  0x0D00UL)"
+.br
+.ti -1c
+.RI "#define \fBSCnSCB\fP   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSCB\fP   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBSysTick\fP   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+.br
+.ti -1c
+.RI "#define \fBNVIC\fP   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+.br
+.ti -1c
+.RI "#define \fBITM\fP   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBDWT\fP   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBTPI\fP   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug\fP   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definitions for base addresses, unions, and structures\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CoreDebug   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+Core Debug configuration struct 
+.PP
+Definition at line 1362 of file core_sc300\&.h\&.
+.SS "#define CoreDebug   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+Core Debug configuration struct 
+.PP
+Definition at line 1388 of file core_cm3\&.h\&.
+.SS "#define CoreDebug   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+Core Debug configuration struct 
+.PP
+Definition at line 1557 of file core_cm4\&.h\&.
+.SS "#define CoreDebug   ((\fBCoreDebug_Type\fP *)     \fBCoreDebug_BASE\fP)"
+Core Debug configuration struct 
+.PP
+Definition at line 1765 of file core_cm7\&.h\&.
+.SS "#define CoreDebug_BASE   (0xE000EDF0UL)"
+Core Debug Base Address 
+.PP
+Definition at line 1350 of file core_sc300\&.h\&.
+.SS "#define CoreDebug_BASE   (0xE000EDF0UL)"
+Core Debug Base Address 
+.PP
+Definition at line 1376 of file core_cm3\&.h\&.
+.SS "#define CoreDebug_BASE   (0xE000EDF0UL)"
+Core Debug Base Address 
+.PP
+Definition at line 1545 of file core_cm4\&.h\&.
+.SS "#define CoreDebug_BASE   (0xE000EDF0UL)"
+Core Debug Base Address 
+.PP
+Definition at line 1753 of file core_cm7\&.h\&.
+.SS "#define DWT   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+DWT configuration struct 
+.PP
+Definition at line 1360 of file core_sc300\&.h\&.
+.SS "#define DWT   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+DWT configuration struct 
+.PP
+Definition at line 1386 of file core_cm3\&.h\&.
+.SS "#define DWT   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+DWT configuration struct 
+.PP
+Definition at line 1555 of file core_cm4\&.h\&.
+.SS "#define DWT   ((\fBDWT_Type\fP       *)     \fBDWT_BASE\fP      )"
+DWT configuration struct 
+.PP
+Definition at line 1763 of file core_cm7\&.h\&.
+.SS "#define DWT_BASE   (0xE0001000UL)"
+DWT Base Address 
+.PP
+Definition at line 1348 of file core_sc300\&.h\&.
+.SS "#define DWT_BASE   (0xE0001000UL)"
+DWT Base Address 
+.PP
+Definition at line 1374 of file core_cm3\&.h\&.
+.SS "#define DWT_BASE   (0xE0001000UL)"
+DWT Base Address 
+.PP
+Definition at line 1543 of file core_cm4\&.h\&.
+.SS "#define DWT_BASE   (0xE0001000UL)"
+DWT Base Address 
+.PP
+Definition at line 1751 of file core_cm7\&.h\&.
+.SS "#define ITM   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+ITM configuration struct 
+.PP
+Definition at line 1359 of file core_sc300\&.h\&.
+.SS "#define ITM   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+ITM configuration struct 
+.PP
+Definition at line 1385 of file core_cm3\&.h\&.
+.SS "#define ITM   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+ITM configuration struct 
+.PP
+Definition at line 1554 of file core_cm4\&.h\&.
+.SS "#define ITM   ((\fBITM_Type\fP       *)     \fBITM_BASE\fP      )"
+ITM configuration struct 
+.PP
+Definition at line 1762 of file core_cm7\&.h\&.
+.SS "#define ITM_BASE   (0xE0000000UL)"
+ITM Base Address 
+.PP
+Definition at line 1347 of file core_sc300\&.h\&.
+.SS "#define ITM_BASE   (0xE0000000UL)"
+ITM Base Address 
+.PP
+Definition at line 1373 of file core_cm3\&.h\&.
+.SS "#define ITM_BASE   (0xE0000000UL)"
+ITM Base Address 
+.PP
+Definition at line 1542 of file core_cm4\&.h\&.
+.SS "#define ITM_BASE   (0xE0000000UL)"
+ITM Base Address 
+.PP
+Definition at line 1750 of file core_cm7\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 597 of file core_cm0\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 709 of file core_cm0plus\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 713 of file core_sc000\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 1358 of file core_sc300\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 1384 of file core_cm3\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 1553 of file core_cm4\&.h\&.
+.SS "#define NVIC   ((\fBNVIC_Type\fP      *)     \fBNVIC_BASE\fP     )"
+NVIC configuration struct 
+.PP
+Definition at line 1761 of file core_cm7\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 592 of file core_cm0\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 704 of file core_cm0plus\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 707 of file core_sc000\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 1352 of file core_sc300\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 1378 of file core_cm3\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 1547 of file core_cm4\&.h\&.
+.SS "#define NVIC_BASE   (\fBSCS_BASE\fP +  0x0100UL)"
+NVIC Base Address 
+.PP
+Definition at line 1755 of file core_cm7\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 595 of file core_cm0\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 707 of file core_cm0plus\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 711 of file core_sc000\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 1356 of file core_sc300\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 1382 of file core_cm3\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 1551 of file core_cm4\&.h\&.
+.SS "#define SCB   ((\fBSCB_Type\fP       *)     \fBSCB_BASE\fP      )"
+SCB configuration struct 
+.PP
+Definition at line 1759 of file core_cm7\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 593 of file core_cm0\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 705 of file core_cm0plus\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 708 of file core_sc000\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 1353 of file core_sc300\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 1379 of file core_cm3\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 1548 of file core_cm4\&.h\&.
+.SS "#define SCB_BASE   (\fBSCS_BASE\fP +  0x0D00UL)"
+System Control Block Base Address 
+.PP
+Definition at line 1756 of file core_cm7\&.h\&.
+.SS "#define SCnSCB   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+System control Register not in SCB 
+.PP
+Definition at line 710 of file core_sc000\&.h\&.
+.SS "#define SCnSCB   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+System control Register not in SCB 
+.PP
+Definition at line 1355 of file core_sc300\&.h\&.
+.SS "#define SCnSCB   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+System control Register not in SCB 
+.PP
+Definition at line 1381 of file core_cm3\&.h\&.
+.SS "#define SCnSCB   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+System control Register not in SCB 
+.PP
+Definition at line 1550 of file core_cm4\&.h\&.
+.SS "#define SCnSCB   ((\fBSCnSCB_Type\fP    *)     \fBSCS_BASE\fP      )"
+System control Register not in SCB 
+.PP
+Definition at line 1758 of file core_cm7\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 590 of file core_cm0\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 702 of file core_cm0plus\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 705 of file core_sc000\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 1346 of file core_sc300\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 1372 of file core_cm3\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 1541 of file core_cm4\&.h\&.
+.SS "#define SCS_BASE   (0xE000E000UL)"
+System Control Space Base Address 
+.PP
+Definition at line 1749 of file core_cm7\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 596 of file core_cm0\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 708 of file core_cm0plus\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 712 of file core_sc000\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 1357 of file core_sc300\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 1383 of file core_cm3\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 1552 of file core_cm4\&.h\&.
+.SS "#define SysTick   ((\fBSysTick_Type\fP   *)     \fBSysTick_BASE\fP  )"
+SysTick configuration struct 
+.PP
+Definition at line 1760 of file core_cm7\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 591 of file core_cm0\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 703 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 706 of file core_sc000\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 1351 of file core_sc300\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 1377 of file core_cm3\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 1546 of file core_cm4\&.h\&.
+.SS "#define SysTick_BASE   (\fBSCS_BASE\fP +  0x0010UL)"
+SysTick Base Address 
+.PP
+Definition at line 1754 of file core_cm7\&.h\&.
+.SS "#define TPI   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+TPI configuration struct 
+.PP
+Definition at line 1361 of file core_sc300\&.h\&.
+.SS "#define TPI   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+TPI configuration struct 
+.PP
+Definition at line 1387 of file core_cm3\&.h\&.
+.SS "#define TPI   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+TPI configuration struct 
+.PP
+Definition at line 1556 of file core_cm4\&.h\&.
+.SS "#define TPI   ((\fBTPI_Type\fP       *)     \fBTPI_BASE\fP      )"
+TPI configuration struct 
+.PP
+Definition at line 1764 of file core_cm7\&.h\&.
+.SS "#define TPI_BASE   (0xE0040000UL)"
+TPI Base Address 
+.PP
+Definition at line 1349 of file core_sc300\&.h\&.
+.SS "#define TPI_BASE   (0xE0040000UL)"
+TPI Base Address 
+.PP
+Definition at line 1375 of file core_cm3\&.h\&.
+.SS "#define TPI_BASE   (0xE0040000UL)"
+TPI Base Address 
+.PP
+Definition at line 1544 of file core_cm4\&.h\&.
+.SS "#define TPI_BASE   (0xE0040000UL)"
+TPI Base Address 
+.PP
+Definition at line 1752 of file core_cm7\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

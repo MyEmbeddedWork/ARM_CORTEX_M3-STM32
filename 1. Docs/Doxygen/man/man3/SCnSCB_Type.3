@@ -1,0 +1,54 @@
+.TH "SCnSCB_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SCnSCB_Type \- Structure type to access the System Control and ID Register not in the SCB\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm3\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBICTR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBACTLR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the System Control and ID Register not in the SCB\&. 
+.PP
+Definition at line 652 of file core_cm3\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t SCnSCB_Type::ACTLR"
+Offset: 0x008 (R/W) Auxiliary Control Register 
+.PP
+Definition at line 716 of file core_cm4\&.h\&.
+.SS "\fB__IM\fP uint32_t SCnSCB_Type::ICTR"
+Offset: 0x004 (R/ ) Interrupt Controller Type Register 
+.PP
+Definition at line 655 of file core_cm3\&.h\&.
+.SS "uint32_t SCnSCB_Type::RESERVED0"
+
+.PP
+Definition at line 654 of file core_cm3\&.h\&.
+.SS "uint32_t SCnSCB_Type::RESERVED1"
+
+.PP
+Definition at line 659 of file core_cm3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

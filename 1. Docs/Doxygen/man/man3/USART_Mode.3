@@ -1,0 +1,41 @@
+.TH "USART_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USART_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUSART_Mode_Rx\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Mode_Tx\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_MODE\fP(MODE)   ((((MODE) & (uint16_t)0xFFF3) == 0x00) && ((MODE) != (uint16_t)0x00))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_USART_MODE(MODE)   ((((MODE) & (uint16_t)0xFFF3) == 0x00) && ((MODE) != (uint16_t)0x00))"
+
+.PP
+Definition at line 176 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_Mode_Rx   ((uint16_t)0x0004)"
+
+.PP
+Definition at line 174 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_Mode_Tx   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 175 of file stm32f10x_usart\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

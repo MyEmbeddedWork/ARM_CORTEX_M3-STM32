@@ -1,0 +1,84 @@
+\hypertarget{group___r_t_c__interrupts__define}{}\section{R\+T\+C\+\_\+interrupts\+\_\+define}
+\label{group___r_t_c__interrupts__define}\index{R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}}
+Collaboration diagram for R\+T\+C\+\_\+interrupts\+\_\+define\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___r_t_c__interrupts__define}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_gabcfefb2f22cb8ca65113c2c13d0e0640}{R\+T\+C\+\_\+\+I\+T\+\_\+\+OW}~((uint16\+\_\+t)0x0004)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga92f0316a3c69aefc2b20c3392843d3da}{R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR}~((uint16\+\_\+t)0x0002)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga960bccbc10da872549cf52c03dd342f1}{R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC}~((uint16\+\_\+t)0x0001)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga5c941995b804ce4c7ef62e28e0133a83}{I\+S\+\_\+\+R\+T\+C\+\_\+\+IT}(IT)~((((IT) \& (uint16\+\_\+t)0x\+F\+F\+F8) == 0x00) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga2e10d8ccb2aa398ac14bde526f98dbc9}{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___r_t_c__interrupts__define_ga2e10d8ccb2aa398ac14bde526f98dbc9}\label{group___r_t_c__interrupts__define_ga2e10d8ccb2aa398ac14bde526f98dbc9}} 
+\index{R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}!I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT}!R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT}{IS\_RTC\_GET\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((IT) == \hyperlink{group___r_t_c__interrupts__define_gabcfefb2f22cb8ca65113c2c13d0e0640}{RTC\_IT\_OW}) || ((IT) == \hyperlink{group___r_t_c__interrupts__define_ga92f0316a3c69aefc2b20c3392843d3da}{RTC\_IT\_ALR}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___r_t_c__interrupts__define_ga960bccbc10da872549cf52c03dd342f1}{RTC\_IT\_SEC}))
+\end{DoxyCode}
+
+
+Definition at line 62 of file stm32f10x\+\_\+rtc.\+h.
+
+\mbox{\Hypertarget{group___r_t_c__interrupts__define_ga5c941995b804ce4c7ef62e28e0133a83}\label{group___r_t_c__interrupts__define_ga5c941995b804ce4c7ef62e28e0133a83}} 
+\index{R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}!I\+S\+\_\+\+R\+T\+C\+\_\+\+IT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+IT}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+IT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+IT}!R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+IT}{IS\_RTC\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+T\+C\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~((((IT) \& (uint16\+\_\+t)0x\+F\+F\+F8) == 0x00) \&\& ((\+I\+T) != 0x00))}
+
+
+
+Definition at line 61 of file stm32f10x\+\_\+rtc.\+h.
+
+\mbox{\Hypertarget{group___r_t_c__interrupts__define_ga92f0316a3c69aefc2b20c3392843d3da}\label{group___r_t_c__interrupts__define_ga92f0316a3c69aefc2b20c3392843d3da}} 
+\index{R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}!R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR@{R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR}}
+\index{R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR@{R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR}!R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR}{RTC\_IT\_ALR}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR~((uint16\+\_\+t)0x0002)}
+
+Alarm interrupt 
+
+Definition at line 59 of file stm32f10x\+\_\+rtc.\+h.
+
+\mbox{\Hypertarget{group___r_t_c__interrupts__define_gabcfefb2f22cb8ca65113c2c13d0e0640}\label{group___r_t_c__interrupts__define_gabcfefb2f22cb8ca65113c2c13d0e0640}} 
+\index{R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}!R\+T\+C\+\_\+\+I\+T\+\_\+\+OW@{R\+T\+C\+\_\+\+I\+T\+\_\+\+OW}}
+\index{R\+T\+C\+\_\+\+I\+T\+\_\+\+OW@{R\+T\+C\+\_\+\+I\+T\+\_\+\+OW}!R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+I\+T\+\_\+\+OW}{RTC\_IT\_OW}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+I\+T\+\_\+\+OW~((uint16\+\_\+t)0x0004)}
+
+Overflow interrupt 
+
+Definition at line 58 of file stm32f10x\+\_\+rtc.\+h.
+
+\mbox{\Hypertarget{group___r_t_c__interrupts__define_ga960bccbc10da872549cf52c03dd342f1}\label{group___r_t_c__interrupts__define_ga960bccbc10da872549cf52c03dd342f1}} 
+\index{R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}!R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC@{R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC}}
+\index{R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC@{R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC}!R\+T\+C\+\_\+interrupts\+\_\+define@{R\+T\+C\+\_\+interrupts\+\_\+define}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC}{RTC\_IT\_SEC}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC~((uint16\+\_\+t)0x0001)}
+
+Second interrupt 
+
+Definition at line 60 of file stm32f10x\+\_\+rtc.\+h.
+

@@ -1,0 +1,347 @@
+.TH "CMSIS_Core_NVICFunctions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_NVICFunctions \- Functions that manage interrupts and exceptions via the NVIC\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_BIT_SHIFT\fP(\fBIRQn\fP)   (  ((((uint32_t)(int32_t)(\fBIRQn\fP))         )      &  0x03UL) * 8UL)"
+.br
+.ti -1c
+.RI "#define \fB_SHP_IDX\fP(\fBIRQn\fP)   ( (((((uint32_t)(int32_t)(\fBIRQn\fP)) & 0x0FUL)\-8UL) >>    2UL)      )"
+.br
+.ti -1c
+.RI "#define \fB_IP_IDX\fP(\fBIRQn\fP)   (   (((uint32_t)(int32_t)(\fBIRQn\fP))                >>    2UL)      )"
+.br
+.ti -1c
+.RI "#define \fB_BIT_SHIFT\fP(\fBIRQn\fP)   (  ((((uint32_t)(int32_t)(\fBIRQn\fP))         )      &  0x03UL) * 8UL)"
+.br
+.ti -1c
+.RI "#define \fB_SHP_IDX\fP(\fBIRQn\fP)   ( (((((uint32_t)(int32_t)(\fBIRQn\fP)) & 0x0FUL)\-8UL) >>    2UL)      )"
+.br
+.ti -1c
+.RI "#define \fB_IP_IDX\fP(\fBIRQn\fP)   (   (((uint32_t)(int32_t)(\fBIRQn\fP))                >>    2UL)      )"
+.br
+.ti -1c
+.RI "#define \fB_BIT_SHIFT\fP(\fBIRQn\fP)   (  ((((uint32_t)(int32_t)(\fBIRQn\fP))         )      &  0x03UL) * 8UL)"
+.br
+.ti -1c
+.RI "#define \fB_SHP_IDX\fP(\fBIRQn\fP)   ( (((((uint32_t)(int32_t)(\fBIRQn\fP)) & 0x0FUL)\-8UL) >>    2UL)      )"
+.br
+.ti -1c
+.RI "#define \fB_IP_IDX\fP(\fBIRQn\fP)   (   (((uint32_t)(int32_t)(\fBIRQn\fP))                >>    2UL)      )"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_EnableIRQ\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Enable External Interrupt\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_DisableIRQ\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Disable External Interrupt\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBNVIC_GetPendingIRQ\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Get Pending Interrupt\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_SetPendingIRQ\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Set Pending Interrupt\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_ClearPendingIRQ\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Clear Pending Interrupt\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_SetPriority\fP (\fBIRQn_Type\fP \fBIRQn\fP, uint32_t priority)"
+.br
+.RI "Set Interrupt Priority\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBNVIC_GetPriority\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Get Interrupt Priority\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_SystemReset\fP (void)"
+.br
+.RI "System Reset\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_SetPriorityGrouping\fP (uint32_t PriorityGroup)"
+.br
+.RI "Set Priority Grouping\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBNVIC_GetPriorityGrouping\fP (void)"
+.br
+.RI "Get Priority Grouping\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBNVIC_GetActive\fP (\fBIRQn_Type\fP \fBIRQn\fP)"
+.br
+.RI "Get Active Interrupt\&. "
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBNVIC_EncodePriority\fP (uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)"
+.br
+.RI "Encode Priority\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBNVIC_DecodePriority\fP (uint32_t Priority, uint32_t PriorityGroup, uint32_t *const pPreemptPriority, uint32_t *const pSubPriority)"
+.br
+.RI "Decode Priority\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Functions that manage interrupts and exceptions via the NVIC\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define _BIT_SHIFT(\fBIRQn\fP)   (  ((((uint32_t)(int32_t)(\fBIRQn\fP))         )      &  0x03UL) * 8UL)"
+
+.PP
+Definition at line 627 of file core_cm0\&.h\&.
+.SS "#define _BIT_SHIFT(\fBIRQn\fP)   (  ((((uint32_t)(int32_t)(\fBIRQn\fP))         )      &  0x03UL) * 8UL)"
+
+.PP
+Definition at line 743 of file core_cm0plus\&.h\&.
+.SS "#define _BIT_SHIFT(\fBIRQn\fP)   (  ((((uint32_t)(int32_t)(\fBIRQn\fP))         )      &  0x03UL) * 8UL)"
+
+.PP
+Definition at line 747 of file core_sc000\&.h\&.
+.SS "#define _IP_IDX(\fBIRQn\fP)   (   (((uint32_t)(int32_t)(\fBIRQn\fP))                >>    2UL)      )"
+
+.PP
+Definition at line 629 of file core_cm0\&.h\&.
+.SS "#define _IP_IDX(\fBIRQn\fP)   (   (((uint32_t)(int32_t)(\fBIRQn\fP))                >>    2UL)      )"
+
+.PP
+Definition at line 745 of file core_cm0plus\&.h\&.
+.SS "#define _IP_IDX(\fBIRQn\fP)   (   (((uint32_t)(int32_t)(\fBIRQn\fP))                >>    2UL)      )"
+
+.PP
+Definition at line 749 of file core_sc000\&.h\&.
+.SS "#define _SHP_IDX(\fBIRQn\fP)   ( (((((uint32_t)(int32_t)(\fBIRQn\fP)) & 0x0FUL)\-8UL) >>    2UL)      )"
+
+.PP
+Definition at line 628 of file core_cm0\&.h\&.
+.SS "#define _SHP_IDX(\fBIRQn\fP)   ( (((((uint32_t)(int32_t)(\fBIRQn\fP)) & 0x0FUL)\-8UL) >>    2UL)      )"
+
+.PP
+Definition at line 744 of file core_cm0plus\&.h\&.
+.SS "#define _SHP_IDX(\fBIRQn\fP)   ( (((((uint32_t)(int32_t)(\fBIRQn\fP)) & 0x0FUL)\-8UL) >>    2UL)      )"
+
+.PP
+Definition at line 748 of file core_sc000\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "__STATIC_INLINE void NVIC_ClearPendingIRQ (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Clear Pending Interrupt\&. Clears the pending bit of an external interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP External interrupt number\&. Value cannot be negative\&. 
+.RE
+.PP
+
+.PP
+Definition at line 683 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGroup, uint32_t *const pPreemptPriority, uint32_t *const pSubPriority)"
+
+.PP
+Decode Priority\&. Decodes an interrupt priority value with a given priority group to preemptive priority value and subpriority value\&. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS) the smallest possible priority group is set\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPriority\fP Priority value, which can be retrieved with the function \fBNVIC_GetPriority()\fP\&. 
+.br
+\fIPriorityGroup\fP Used priority group\&. 
+.br
+\fIpPreemptPriority\fP Preemptive priority value (starting from 0)\&. 
+.br
+\fIpSubPriority\fP Subpriority value (starting from 0)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1606 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE void NVIC_DisableIRQ (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Disable External Interrupt\&. Disables a device-specific interrupt in the NVIC interrupt controller\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP External interrupt number\&. Value cannot be negative\&. 
+.RE
+.PP
+
+.PP
+Definition at line 648 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE void NVIC_EnableIRQ (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Enable External Interrupt\&. Enables a device-specific interrupt in the NVIC interrupt controller\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP External interrupt number\&. Value cannot be negative\&. 
+.RE
+.PP
+
+.PP
+Definition at line 637 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)"
+
+.PP
+Encode Priority\&. Encodes the priority for an interrupt with the given priority group, preemptive priority value, and subpriority value\&. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS), the smallest possible priority group is set\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPriorityGroup\fP Used priority group\&. 
+.br
+\fIPreemptPriority\fP Preemptive priority value (starting from 0)\&. 
+.br
+\fISubPriority\fP Subpriority value (starting from 0)\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Encoded priority\&. Value can be used in the function \fBNVIC_SetPriority()\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1579 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE uint32_t NVIC_GetActive (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Get Active Interrupt\&. Reads the active register in NVIC and returns the active bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP Interrupt number\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+0 Interrupt status is not active\&. 
+.PP
+1 Interrupt status is active\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1519 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE uint32_t NVIC_GetPendingIRQ (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Get Pending Interrupt\&. Reads the pending register in the NVIC and returns the pending bit for the specified interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP Interrupt number\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+0 Interrupt status is not pending\&. 
+.PP
+1 Interrupt status is pending\&. 
+.RE
+.PP
+
+.PP
+Definition at line 661 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE uint32_t NVIC_GetPriority (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Get Interrupt Priority\&. Reads the priority of an interrupt\&. The interrupt number can be positive to specify an external (device specific) interrupt, or negative to specify an internal (core) interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP Interrupt number\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Interrupt Priority\&. Value is aligned automatically to the implemented priority bits of the microcontroller\&. 
+.RE
+.PP
+
+.PP
+Definition at line 720 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping (void)"
+
+.PP
+Get Priority Grouping\&. Reads the priority grouping field from the NVIC Interrupt Controller\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Priority grouping field (SCB->AIRCR [10:8] PRIGROUP field)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1449 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE void NVIC_SetPendingIRQ (\fBIRQn_Type\fP IRQn)"
+
+.PP
+Set Pending Interrupt\&. Sets the pending bit of an external interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP Interrupt number\&. Value cannot be negative\&. 
+.RE
+.PP
+
+.PP
+Definition at line 672 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE void NVIC_SetPriority (\fBIRQn_Type\fP IRQn, uint32_t priority)"
+
+.PP
+Set Interrupt Priority\&. Sets the priority of an interrupt\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The priority cannot be set for every core interrupt\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIRQn\fP Interrupt number\&. 
+.br
+\fIpriority\fP Priority to set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 696 of file core_cm0\&.h\&.
+.SS "__STATIC_INLINE void NVIC_SetPriorityGrouping (uint32_t PriorityGroup)"
+
+.PP
+Set Priority Grouping\&. Sets the priority grouping field using the required unlock sequence\&. The parameter PriorityGroup is assigned to the field SCB->AIRCR [10:8] PRIGROUP field\&. Only values from 0\&.\&.7 are used\&. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS), the smallest possible priority group is set\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPriorityGroup\fP Priority grouping field\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1430 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE void NVIC_SystemReset (void)"
+
+.PP
+System Reset\&. Initiates a system reset request to reset the MCU\&. 
+.PP
+Definition at line 738 of file core_cm0\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

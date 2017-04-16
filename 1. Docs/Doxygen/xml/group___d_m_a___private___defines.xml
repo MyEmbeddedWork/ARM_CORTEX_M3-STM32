@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_m_a___private___defines" kind="group">
+    <compoundname>DMA_Private_Defines</compoundname>
+    <title>DMA_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga76177263f2b9878765606f3bb8b9cc64" prot="public" static="no">
+        <name>DMA1_Channel1_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga3475228c998897d0f408a4c5da066186" kindref="member">DMA_ISR_GIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga1a1522414af27c7fff2cc27edac1d680" kindref="member">DMA_ISR_TCIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5f83359698adf05854b55705f78d8a5c" kindref="member">DMA_ISR_HTIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga26bfd55e965445ae253a5c5fa8f1769a" kindref="member">DMA_ISR_TEIF1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga255d8869e69919c3b5c434088239ae8c" prot="public" static="no">
+        <name>DMA1_Channel2_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga44fa823dbb15b829621961efc60d6a95" kindref="member">DMA_ISR_GIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga631741eb4843eda3578808a3d8b527b2" kindref="member">DMA_ISR_TCIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga8ee1947aef188f437f37d3ff444f8646" kindref="member">DMA_ISR_HTIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5bcd07efcadd5fef598edec1cca70e38" kindref="member">DMA_ISR_TEIF2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="49" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gabbe4f28c48dc0c3b678cbf4a4fd79e54" prot="public" static="no">
+        <name>DMA1_Channel3_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gacb0bd8fb0e580688c5cf617b618bbc17" kindref="member">DMA_ISR_GIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga28664595df654d9d8052fb6f9cc48495" kindref="member">DMA_ISR_TCIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga53bb9a00737c52faffaaa91ff08b34a1" kindref="member">DMA_ISR_HTIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaa624379143a2535d7a60d87d59834d10" kindref="member">DMA_ISR_TEIF3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="50" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga6b67cd69dbebc4d39a13b3d863a4122b" prot="public" static="no">
+        <name>DMA1_Channel4_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gaf4f69823d44810c353af1f0a89eaf180" kindref="member">DMA_ISR_GIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1gad7d4e46949a35cf037a303bd65a0c87a" kindref="member">DMA_ISR_TCIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga684cf326c770f1ab21c604a5f62907ad" kindref="member">DMA_ISR_HTIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga12fcc1471918f3e7b293b2d825177253" kindref="member">DMA_ISR_TEIF4</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="51" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga44192309991b50231e3af515bf27bef7" prot="public" static="no">
+        <name>DMA1_Channel5_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga83d4d9cba635d1e33e3477b773379cfd" kindref="member">DMA_ISR_GIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5ea57d09f13edbd6ad8afe9465e0fa70" kindref="member">DMA_ISR_TCIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga3d1f2b8c82b1e20b4311af8ca9576736" kindref="member">DMA_ISR_HTIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga42f9b12c4c80cbb7cd0f94f139c73de3" kindref="member">DMA_ISR_TEIF5</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="52" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga4d6e7845da3456440a947a86e1827244" prot="public" static="no">
+        <name>DMA1_Channel6_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gac55f4836aa8e6cfc9bdcadfabf65b5d8" kindref="member">DMA_ISR_GIF6</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga2d76395cf6c6ef50e05c96d7ae723058" kindref="member">DMA_ISR_TCIF6</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga41b6d9787aeff76a51581d9488b4604f" kindref="member">DMA_ISR_HTIF6</ref> | <ref refid="group___peripheral___registers___bits___definition_1gae47d914969922381708ae06c1c71123a" kindref="member">DMA_ISR_TEIF6</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga510bb442153092ff35e73dcaa845d8d1" prot="public" static="no">
+        <name>DMA1_Channel7_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga86f178e879b2d8ceeea351e4750272dd" kindref="member">DMA_ISR_GIF7</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga4528af54928542c09502c01827418732" kindref="member">DMA_ISR_TCIF7</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga769016c2b0bf22ff3ad6967b3dc0e2bb" kindref="member">DMA_ISR_HTIF7</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaf8333b3c78b7d0a07bd4b1e91e902b31" kindref="member">DMA_ISR_TEIF7</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga1a8a861830805d87d8f487920525125d" prot="public" static="no">
+        <name>DMA2_Channel1_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga3475228c998897d0f408a4c5da066186" kindref="member">DMA_ISR_GIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga1a1522414af27c7fff2cc27edac1d680" kindref="member">DMA_ISR_TCIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5f83359698adf05854b55705f78d8a5c" kindref="member">DMA_ISR_HTIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga26bfd55e965445ae253a5c5fa8f1769a" kindref="member">DMA_ISR_TEIF1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="57" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga93ffc8595a8b0f1410b9e8a348fcd480" prot="public" static="no">
+        <name>DMA2_Channel2_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga44fa823dbb15b829621961efc60d6a95" kindref="member">DMA_ISR_GIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga631741eb4843eda3578808a3d8b527b2" kindref="member">DMA_ISR_TCIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga8ee1947aef188f437f37d3ff444f8646" kindref="member">DMA_ISR_HTIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5bcd07efcadd5fef598edec1cca70e38" kindref="member">DMA_ISR_TEIF2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga96bd8d986420e19b3ce94bd67a48b24a" prot="public" static="no">
+        <name>DMA2_Channel3_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gacb0bd8fb0e580688c5cf617b618bbc17" kindref="member">DMA_ISR_GIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga28664595df654d9d8052fb6f9cc48495" kindref="member">DMA_ISR_TCIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga53bb9a00737c52faffaaa91ff08b34a1" kindref="member">DMA_ISR_HTIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaa624379143a2535d7a60d87d59834d10" kindref="member">DMA_ISR_TEIF3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gae844f9b933a07a6f75472c3f849cbb5c" prot="public" static="no">
+        <name>DMA2_Channel4_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gaf4f69823d44810c353af1f0a89eaf180" kindref="member">DMA_ISR_GIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1gad7d4e46949a35cf037a303bd65a0c87a" kindref="member">DMA_ISR_TCIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga684cf326c770f1ab21c604a5f62907ad" kindref="member">DMA_ISR_HTIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga12fcc1471918f3e7b293b2d825177253" kindref="member">DMA_ISR_TEIF4</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gaedaf3e94d362754266807d6ccbab2e3e" prot="public" static="no">
+        <name>DMA2_Channel5_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga83d4d9cba635d1e33e3477b773379cfd" kindref="member">DMA_ISR_GIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5ea57d09f13edbd6ad8afe9465e0fa70" kindref="member">DMA_ISR_TCIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga3d1f2b8c82b1e20b4311af8ca9576736" kindref="member">DMA_ISR_HTIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga42f9b12c4c80cbb7cd0f94f139c73de3" kindref="member">DMA_ISR_TEIF5</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" prot="public" static="no">
+        <name>FLAG_Mask</name>
+        <initializer>((uint32_t)0x10000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="64" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gac2c71cc75907c7c3467907e766dc4188" prot="public" static="no">
+        <name>CCR_CLEAR_Mask</name>
+        <initializer>((uint32_t)0xFFFF800F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

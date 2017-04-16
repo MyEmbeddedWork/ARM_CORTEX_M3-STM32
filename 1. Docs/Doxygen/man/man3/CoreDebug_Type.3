@@ -1,0 +1,54 @@
+.TH "CoreDebug_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoreDebug_Type \- Structure type to access the Core Debug Register (CoreDebug)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm3\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBDHCSR\fP"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBDCRSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBDCRDR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBDEMCR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Core Debug Register (CoreDebug)\&. 
+.PP
+Definition at line 1243 of file core_cm3\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t CoreDebug_Type::DCRDR"
+Offset: 0x008 (R/W) Debug Core Register Data Register 
+.PP
+Definition at line 1247 of file core_cm3\&.h\&.
+.SS "\fB__OM\fP uint32_t CoreDebug_Type::DCRSR"
+Offset: 0x004 ( /W) Debug Core Register Selector Register 
+.PP
+Definition at line 1246 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t CoreDebug_Type::DEMCR"
+Offset: 0x00C (R/W) Debug Exception and Monitor Control Register 
+.PP
+Definition at line 1248 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t CoreDebug_Type::DHCSR"
+Offset: 0x000 (R/W) Debug Halting Control and Status Register 
+.PP
+Definition at line 1245 of file core_cm3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

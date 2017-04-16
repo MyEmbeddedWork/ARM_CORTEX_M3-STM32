@@ -1,0 +1,54 @@
+.TH "System_Low_Power" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+System_Low_Power
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBNVIC_LP_SEVONPEND\fP   ((uint8_t)0x10)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_LP_SLEEPDEEP\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_LP_SLEEPONEXIT\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_LP\fP(LP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_NVIC_LP(LP)"
+\fBValue:\fP
+.PP
+.nf
+(((LP) == NVIC_LP_SEVONPEND) || \
+                        ((LP) == NVIC_LP_SLEEPDEEP) || \
+                        ((LP) == NVIC_LP_SLEEPONEXIT))
+.fi
+.PP
+Definition at line 130 of file misc\&.h\&.
+.SS "#define NVIC_LP_SEVONPEND   ((uint8_t)0x10)"
+
+.PP
+Definition at line 127 of file misc\&.h\&.
+.SS "#define NVIC_LP_SLEEPDEEP   ((uint8_t)0x04)"
+
+.PP
+Definition at line 128 of file misc\&.h\&.
+.SS "#define NVIC_LP_SLEEPONEXIT   ((uint8_t)0x02)"
+
+.PP
+Definition at line 129 of file misc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

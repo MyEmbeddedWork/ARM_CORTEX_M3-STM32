@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="semihosting_8h" kind="file" language="C++">
+    <compoundname>semihosting.h</compoundname>
+    <includedby refid="exception__handlers_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/exception_handlers.c</includedby>
+    <invincdepgraph>
+      <node id="90">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h</label>
+        <link refid="semihosting_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/exception_handlers.c</label>
+        <link refid="exception__handlers_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="semihosting_8h_1a799889dbbe0f2a2ba0fd045ab9155c0d" prot="public" static="no">
+        <name>AngelSWI_ARM</name>
+        <initializer>0x123456</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="49" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semihosting_8h_1a52405d1acc07639f9f6cb1693d5437e0" prot="public" static="no">
+        <name>AngelSWI</name>
+        <initializer><ref refid="semihosting_8h_1a799889dbbe0f2a2ba0fd045ab9155c0d" kindref="member">AngelSWI_ARM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="53" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semihosting_8h_1a0096307232da04e85affd90d3753e5c1" prot="public" static="no">
+        <name>AngelSWIInsn</name>
+        <initializer>&quot;swi&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="62" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semihosting_8h_1ad6e808da9f5f2ccdc14571bb3be30030" prot="public" static="no">
+        <name>AngelSWIAsm</name>
+        <initializer>swi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="63" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955" prot="public" static="no">
+        <name>OperationNumber</name>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a1e8010ad9e6d1ff29a2c309dcce562c4" prot="public">
+          <name>SEMIHOSTING_EnterSVC</name>
+          <initializer>= 0x17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f" prot="public">
+          <name>SEMIHOSTING_ReportException</name>
+          <initializer>= 0x18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ad3510bf376f9de79b96cf64c5086c191" prot="public">
+          <name>SEMIHOSTING_SYS_CLOSE</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9926f9916a67ac06dca9dd4a37d287d1" prot="public">
+          <name>SEMIHOSTING_SYS_CLOCK</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ac4622cd6487037d89c296e82e37345ac" prot="public">
+          <name>SEMIHOSTING_SYS_ELAPSED</name>
+          <initializer>= 0x30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aa3a31b77abd833dde82fa4e0b8611bc9" prot="public">
+          <name>SEMIHOSTING_SYS_ERRNO</name>
+          <initializer>= 0x13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a3e949e38172269f893161095c65220dd" prot="public">
+          <name>SEMIHOSTING_SYS_FLEN</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a437a9a0c4a70dbedcb11851511357ab6" prot="public">
+          <name>SEMIHOSTING_SYS_GET_CMDLINE</name>
+          <initializer>= 0x15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ab3771abdb14db38b2c8499744f08cf90" prot="public">
+          <name>SEMIHOSTING_SYS_HEAPINFO</name>
+          <initializer>= 0x16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a17d1ea71fea7dda5950e8a40ad83ab99" prot="public">
+          <name>SEMIHOSTING_SYS_ISERROR</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aab298cac69009bc12c76335c5f0c6293" prot="public">
+          <name>SEMIHOSTING_SYS_ISTTY</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ae1ed8ed0ec82d76628671bfc6b96c2d8" prot="public">
+          <name>SEMIHOSTING_SYS_OPEN</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ac778e8c9d34312cc374e6c3944739585" prot="public">
+          <name>SEMIHOSTING_SYS_READ</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ad660d6a7ee480d67538657ec1cf3dd22" prot="public">
+          <name>SEMIHOSTING_SYS_READC</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a6967f75e9d753f6be0a79fab3c21847c" prot="public">
+          <name>SEMIHOSTING_SYS_REMOVE</name>
+          <initializer>= 0x0E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aeeb2d6fbf5175ae3573d46080f9034f8" prot="public">
+          <name>SEMIHOSTING_SYS_RENAME</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a6bc8a00c58c3d3d70d816ae494772058" prot="public">
+          <name>SEMIHOSTING_SYS_SEEK</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955acfe3855bb6707f6223f63f3561b48c4b" prot="public">
+          <name>SEMIHOSTING_SYS_SYSTEM</name>
+          <initializer>= 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a096d055933d76014c5c7bcf479a46cc0" prot="public">
+          <name>SEMIHOSTING_SYS_TICKFREQ</name>
+          <initializer>= 0x31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9771471947fe184e3eb3a1eb02a862e9" prot="public">
+          <name>SEMIHOSTING_SYS_TIME</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a95055a5c7298611a40cd227e3b394d93" prot="public">
+          <name>SEMIHOSTING_SYS_TMPNAM</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a383c529db53a8cc54631bf18bb9531d3" prot="public">
+          <name>SEMIHOSTING_SYS_WRITE</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9c57b8c9baa11c43e0396bdc3339e9d6" prot="public">
+          <name>SEMIHOSTING_SYS_WRITEC</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955abf5f7cab3b1a63f29116542674042a51" prot="public">
+          <name>SEMIHOSTING_SYS_WRITE0</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a97308e2a5471b6725e9198f057870cb2" prot="public">
+          <name>ADP_Stopped_ApplicationExit</name>
+          <initializer>= ((2 &lt;&lt; 16) + 38)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a09774fa193a1c79327c02f3c5f26d393" prot="public">
+          <name>ADP_Stopped_RunTimeError</name>
+          <initializer>= ((2 &lt;&lt; 16) + 35)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="13" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="12" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="semihosting_8h_1a40c15747aa7d502fffebb8862d494b52" prot="public" static="no" mutable="no">
+        <type>int void *</type>
+        <definition>int void* arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <initializer>{
+  int <ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="77" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="semihosting_8h_1aacce635d68067370c70caa2381ea1040" prot="public" static="no" mutable="no">
+        <type>return</type>
+        <definition>return value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="102" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="group___c_m_s_i_s___core___instruction_interface_1gade0870dc150fccdf0a5ae2d3300b2954" compoundref="cmsis__armcc_8h" startline="439" endline="453">__attribute__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="semihosting_8h_1a98e2c4eea386fd66abf40bce60154756" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int __attribute__</definition>
+        <argsstring>((always_inline)) call_host(int reason</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="semihosting_8h_1a65e6ad7ed1b130fda2cf7f6a0861fca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asm</type>
+        <definition>asm volatile</definition>
+        <argsstring>(&quot; mov r0, %[rsn]  \ &quot; mov r1, %[arg] \&quot; &quot; &quot; AngelSWIInsn &quot; %[swi] \&quot; &quot; mov %[val], r0&quot; :[val] &quot;=r&quot;(value) :[rsn] &quot;r&quot;(reason), [arg] &quot;r&quot;(arg), [swi] &quot;i&quot;(AngelSWI) :&quot;r0&quot;, &quot;r1&quot;, &quot;r2&quot;, &quot;r3&quot;, &quot;ip&quot;, &quot;lr&quot;, &quot;memory&quot;, &quot;cc&quot;)</argsstring>
+        <name>volatile</name>
+        <param>
+          <type>&quot; mov</type>
+          <declname>r0</declname>
+        </param>
+        <param>
+          <type>% \ &quot; mov</type>
+          <declname>r1</declname>
+          <array>[rsn]</array>
+        </param>
+        <param>
+          <type>% \&quot; &quot; &quot; AngelSWIInsn &quot; % \&quot; &quot; mov %</type>
+          <array>[arg][swi][val]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="semihosting_8h_1a8743fdbc616b2f214ae41792ab811610" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __attribute__</definition>
+        <argsstring>((always_inline, noreturn)) report_exception(int reason)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline, noreturn)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" line="109" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" bodystart="109" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ARM_SEMIHOSTING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_SEMIHOSTING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Semihosting<sp/>operations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955" kindref="member">OperationNumber</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Regular<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a1e8010ad9e6d1ff29a2c309dcce562c4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a1e8010ad9e6d1ff29a2c309dcce562c4" kindref="member">SEMIHOSTING_EnterSVC</ref><sp/>=<sp/>0x17,</highlight></codeline>
+<codeline lineno="16" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f" kindref="member">SEMIHOSTING_ReportException</ref><sp/>=<sp/>0x18,</highlight></codeline>
+<codeline lineno="17" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ad3510bf376f9de79b96cf64c5086c191" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ad3510bf376f9de79b96cf64c5086c191" kindref="member">SEMIHOSTING_SYS_CLOSE</ref><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="18" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9926f9916a67ac06dca9dd4a37d287d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9926f9916a67ac06dca9dd4a37d287d1" kindref="member">SEMIHOSTING_SYS_CLOCK</ref><sp/>=<sp/>0x10,</highlight></codeline>
+<codeline lineno="19" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ac4622cd6487037d89c296e82e37345ac" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ac4622cd6487037d89c296e82e37345ac" kindref="member">SEMIHOSTING_SYS_ELAPSED</ref><sp/>=<sp/>0x30,</highlight></codeline>
+<codeline lineno="20" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aa3a31b77abd833dde82fa4e0b8611bc9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aa3a31b77abd833dde82fa4e0b8611bc9" kindref="member">SEMIHOSTING_SYS_ERRNO</ref><sp/>=<sp/>0x13,</highlight></codeline>
+<codeline lineno="21" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a3e949e38172269f893161095c65220dd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a3e949e38172269f893161095c65220dd" kindref="member">SEMIHOSTING_SYS_FLEN</ref><sp/>=<sp/>0x0C,</highlight></codeline>
+<codeline lineno="22" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a437a9a0c4a70dbedcb11851511357ab6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a437a9a0c4a70dbedcb11851511357ab6" kindref="member">SEMIHOSTING_SYS_GET_CMDLINE</ref><sp/>=<sp/>0x15,</highlight></codeline>
+<codeline lineno="23" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ab3771abdb14db38b2c8499744f08cf90" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ab3771abdb14db38b2c8499744f08cf90" kindref="member">SEMIHOSTING_SYS_HEAPINFO</ref><sp/>=<sp/>0x16,</highlight></codeline>
+<codeline lineno="24" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a17d1ea71fea7dda5950e8a40ad83ab99" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a17d1ea71fea7dda5950e8a40ad83ab99" kindref="member">SEMIHOSTING_SYS_ISERROR</ref><sp/>=<sp/>0x08,</highlight></codeline>
+<codeline lineno="25" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aab298cac69009bc12c76335c5f0c6293" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aab298cac69009bc12c76335c5f0c6293" kindref="member">SEMIHOSTING_SYS_ISTTY</ref><sp/>=<sp/>0x09,</highlight></codeline>
+<codeline lineno="26" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ae1ed8ed0ec82d76628671bfc6b96c2d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ae1ed8ed0ec82d76628671bfc6b96c2d8" kindref="member">SEMIHOSTING_SYS_OPEN</ref><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="27" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ac778e8c9d34312cc374e6c3944739585" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ac778e8c9d34312cc374e6c3944739585" kindref="member">SEMIHOSTING_SYS_READ</ref><sp/>=<sp/>0x06,</highlight></codeline>
+<codeline lineno="28" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ad660d6a7ee480d67538657ec1cf3dd22" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955ad660d6a7ee480d67538657ec1cf3dd22" kindref="member">SEMIHOSTING_SYS_READC</ref><sp/>=<sp/>0x07,</highlight></codeline>
+<codeline lineno="29" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a6967f75e9d753f6be0a79fab3c21847c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a6967f75e9d753f6be0a79fab3c21847c" kindref="member">SEMIHOSTING_SYS_REMOVE</ref><sp/>=<sp/>0x0E,</highlight></codeline>
+<codeline lineno="30" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aeeb2d6fbf5175ae3573d46080f9034f8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955aeeb2d6fbf5175ae3573d46080f9034f8" kindref="member">SEMIHOSTING_SYS_RENAME</ref><sp/>=<sp/>0x0F,</highlight></codeline>
+<codeline lineno="31" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a6bc8a00c58c3d3d70d816ae494772058" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a6bc8a00c58c3d3d70d816ae494772058" kindref="member">SEMIHOSTING_SYS_SEEK</ref><sp/>=<sp/>0x0A,</highlight></codeline>
+<codeline lineno="32" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955acfe3855bb6707f6223f63f3561b48c4b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955acfe3855bb6707f6223f63f3561b48c4b" kindref="member">SEMIHOSTING_SYS_SYSTEM</ref><sp/>=<sp/>0x12,</highlight></codeline>
+<codeline lineno="33" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a096d055933d76014c5c7bcf479a46cc0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a096d055933d76014c5c7bcf479a46cc0" kindref="member">SEMIHOSTING_SYS_TICKFREQ</ref><sp/>=<sp/>0x31,</highlight></codeline>
+<codeline lineno="34" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9771471947fe184e3eb3a1eb02a862e9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9771471947fe184e3eb3a1eb02a862e9" kindref="member">SEMIHOSTING_SYS_TIME</ref><sp/>=<sp/>0x11,</highlight></codeline>
+<codeline lineno="35" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a95055a5c7298611a40cd227e3b394d93" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a95055a5c7298611a40cd227e3b394d93" kindref="member">SEMIHOSTING_SYS_TMPNAM</ref><sp/>=<sp/>0x0D,</highlight></codeline>
+<codeline lineno="36" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a383c529db53a8cc54631bf18bb9531d3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a383c529db53a8cc54631bf18bb9531d3" kindref="member">SEMIHOSTING_SYS_WRITE</ref><sp/>=<sp/>0x05,</highlight></codeline>
+<codeline lineno="37" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9c57b8c9baa11c43e0396bdc3339e9d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a9c57b8c9baa11c43e0396bdc3339e9d6" kindref="member">SEMIHOSTING_SYS_WRITEC</ref><sp/>=<sp/>0x03,</highlight></codeline>
+<codeline lineno="38" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955abf5f7cab3b1a63f29116542674042a51" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955abf5f7cab3b1a63f29116542674042a51" kindref="member">SEMIHOSTING_SYS_WRITE0</ref><sp/>=<sp/>0x04,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Codes<sp/>returned<sp/>by<sp/>SEMIHOSTING_ReportException</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a97308e2a5471b6725e9198f057870cb2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a97308e2a5471b6725e9198f057870cb2" kindref="member">ADP_Stopped_ApplicationExit</ref><sp/>=<sp/>((2<sp/>&lt;&lt;<sp/>16)<sp/>+<sp/>38),</highlight></codeline>
+<codeline lineno="42" refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a09774fa193a1c79327c02f3c5f26d393" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a09774fa193a1c79327c02f3c5f26d393" kindref="member">ADP_Stopped_RunTimeError</ref><sp/>=<sp/>((2<sp/>&lt;&lt;<sp/>16)<sp/>+<sp/>35),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SWI<sp/>numbers<sp/>and<sp/>reason<sp/>codes<sp/>for<sp/>RDI<sp/>(Angel)<sp/>monitors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="semihosting_8h_1a799889dbbe0f2a2ba0fd045ab9155c0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWI_ARM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x123456</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__thumb__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xAB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="semihosting_8h_1a52405d1acc07639f9f6cb1693d5437e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AngelSWI_ARM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>thumb<sp/>only<sp/>architectures<sp/>use<sp/>the<sp/>BKPT<sp/>instruction<sp/>instead<sp/>of<sp/>SWI.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__ARM_ARCH_7M__)<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>||<sp/>defined(__ARM_ARCH_7EM__)<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>||<sp/>defined(__ARM_ARCH_6M__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWIInsn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;bkpt&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWIAsm<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bkpt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="semihosting_8h_1a0096307232da04e85affd90d3753e5c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWIInsn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;swi&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="semihosting_8h_1ad6e808da9f5f2ccdc14571bb3be30030" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWIAsm<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>swi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(OS_DEBUG_SEMIHOSTING_FAULTS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testing<sp/>the<sp/>local<sp/>semihosting<sp/>handler<sp/>cannot<sp/>use<sp/>another<sp/>BKPT,<sp/>since<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>configuration<sp/>cannot<sp/>trigger<sp/>HaedFault<sp/>exceptions<sp/>while<sp/>the<sp/>debugger<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>connected,<sp/>so<sp/>we<sp/>use<sp/>an<sp/>illegal<sp/>op<sp/>code,<sp/>that<sp/>will<sp/>trigger<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UsageFault<sp/>exception.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWITestFault<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;setend<sp/>be&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AngelSWITestFaultOpCode<sp/>(0xB658)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">__attribute__<sp/>((always_inline))</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">call_host<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reason,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="semihosting_8h_1a40c15747aa7d502fffebb8862d494b52" kindref="member">arg</ref>)</highlight></codeline>
+<codeline lineno="78" refid="semihosting_8h_1a40c15747aa7d502fffebb8862d494b52" refkind="member"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>mov<sp/>r0,<sp/>%[rsn]<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>mov<sp/>r1,<sp/>%[arg]<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(OS_DEBUG_SEMIHOSTING_FAULTS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>AngelSWITestFault<sp/></highlight><highlight class="stringliteral">&quot;<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/><ref refid="semihosting_8h_1a0096307232da04e85affd90d3753e5c1" kindref="member">AngelSWIInsn</ref><sp/></highlight><highlight class="stringliteral">&quot;<sp/>%[swi]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>mov<sp/>%[val],<sp/>r0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>[val]<sp/></highlight><highlight class="stringliteral">&quot;=r&quot;</highlight><highlight class="normal"><sp/>(<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)<sp/></highlight><highlight class="comment">/*<sp/>Outputs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>[rsn]<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(reason),<sp/>[<ref refid="semihosting_8h_1a40c15747aa7d502fffebb8862d494b52" kindref="member">arg</ref>]<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(<ref refid="semihosting_8h_1a40c15747aa7d502fffebb8862d494b52" kindref="member">arg</ref>),<sp/>[swi]<sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal"><sp/>(<ref refid="semihosting_8h_1a52405d1acc07639f9f6cb1693d5437e0" kindref="member">AngelSWI</ref>)<sp/></highlight><highlight class="comment">/*<sp/>Inputs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;r0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ip&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;lr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;memory&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;cc&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clobbers<sp/>r0<sp/>and<sp/>r1,<sp/>and<sp/>lr<sp/>if<sp/>in<sp/>supervisor<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accordingly<sp/>to<sp/>page<sp/>13-77<sp/>of<sp/>ARM<sp/>DUI<sp/>0040D<sp/>other<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>can<sp/>also<sp/>be<sp/>clobbered.<sp/>Some<sp/>memory<sp/>positions<sp/>may<sp/>also<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>changed<sp/>by<sp/>a<sp/>system<sp/>call,<sp/>so<sp/>they<sp/>should<sp/>not<sp/>be<sp/>kept<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>registers.<sp/>Note:<sp/>we<sp/>are<sp/>assuming<sp/>the<sp/>manual<sp/>is<sp/>right<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Angel<sp/>is<sp/>respecting<sp/>the<sp/>APCS.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>used<sp/>in<sp/>_exit()<sp/>to<sp/>return<sp/>the<sp/>status<sp/>code<sp/>as<sp/>Angel<sp/>exception.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">__attribute__<sp/>((always_inline,noreturn))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">report_exception<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reason)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>call_host<sp/>(<ref refid="semihosting_8h_1a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f" kindref="member">SEMIHOSTING_ReportException</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>reason);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;;)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ARM_SEMIHOSTING_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h"/>
+  </compounddef>
+</doxygen>

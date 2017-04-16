@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___interrupt__sources" kind="group">
+    <compoundname>FSMC_Interrupt_sources</compoundname>
+    <title>FSMC_Interrupt_sources</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___interrupt__sources_1gac483854bd6f90d8c7899a597a0c0ab1a" prot="public" static="no">
+        <name>FSMC_IT_RisingEdge</name>
+        <initializer>((uint32_t)0x00000008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="646" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___interrupt__sources_1ga59b5839854074008fb36fa86ec50a0c7" prot="public" static="no">
+        <name>FSMC_IT_Level</name>
+        <initializer>((uint32_t)0x00000010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="647" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___interrupt__sources_1ga8e4b9589c9981c900b5f2e84581a9693" prot="public" static="no">
+        <name>FSMC_IT_FallingEdge</name>
+        <initializer>((uint32_t)0x00000020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="648" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___interrupt__sources_1ga40a38f097a75f27a700e626905fa9a38" prot="public" static="no">
+        <name>IS_FSMC_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint32_t)0xFFFFFFC7) == 0x00000000) &amp;&amp; ((IT) != 0x00000000))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="649" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___interrupt__sources_1gae2a57d0b15e025212489ec1421ff245d" prot="public" static="no">
+        <name>IS_FSMC_GET_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___f_s_m_c___interrupt__sources_1gac483854bd6f90d8c7899a597a0c0ab1a" kindref="member">FSMC_IT_RisingEdge</ref>) || \
+                            ((IT) == <ref refid="group___f_s_m_c___interrupt__sources_1ga59b5839854074008fb36fa86ec50a0c7" kindref="member">FSMC_IT_Level</ref>) || \
+                            ((IT) == <ref refid="group___f_s_m_c___interrupt__sources_1ga8e4b9589c9981c900b5f2e84581a9693" kindref="member">FSMC_IT_FallingEdge</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="650" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

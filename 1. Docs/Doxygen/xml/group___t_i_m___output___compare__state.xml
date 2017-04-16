@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___output___compare__state" kind="group">
+    <compoundname>TIM_Output_Compare_state</compoundname>
+    <title>TIM_Output_Compare_state</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___output___compare__state_1ga4ad0f484cfa16b5190654da8278940d0" prot="public" static="no">
+        <name>TIM_OutputState_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="411" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__state_1ga65afdda8761b6ac5ed0c0ad67c05dffe" prot="public" static="no">
+        <name>TIM_OutputState_Enable</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="412" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__state_1ga5848617f830d2de688eaff50ed279679" prot="public" static="no">
+        <name>IS_TIM_OUTPUT_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___t_i_m___output___compare__state_1ga4ad0f484cfa16b5190654da8278940d0" kindref="member">TIM_OutputState_Disable</ref>) || \
+                                    ((STATE) == <ref refid="group___t_i_m___output___compare__state_1ga65afdda8761b6ac5ed0c0ad67c05dffe" kindref="member">TIM_OutputState_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="413" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+.TH "CMSIS_Core_CacheFunctions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_CacheFunctions \- Functions that configure Instruction and Data cache\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCCSIDR_WAYS\fP(x)   (((x) & \fBSCB_CCSIDR_ASSOCIATIVITY_Msk\fP) >> \fBSCB_CCSIDR_ASSOCIATIVITY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBCCSIDR_SETS\fP(x)   (((x) & \fBSCB_CCSIDR_NUMSETS_Msk\fP      ) >> \fBSCB_CCSIDR_NUMSETS_Pos\fP      )"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_EnableICache\fP (void)"
+.br
+.RI "Enable I-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_DisableICache\fP (void)"
+.br
+.RI "Disable I-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_InvalidateICache\fP (void)"
+.br
+.RI "Invalidate I-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_EnableDCache\fP (void)"
+.br
+.RI "Enable D-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_DisableDCache\fP (void)"
+.br
+.RI "Disable D-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_InvalidateDCache\fP (void)"
+.br
+.RI "Invalidate D-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_CleanDCache\fP (void)"
+.br
+.RI "Clean D-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_CleanInvalidateDCache\fP (void)"
+.br
+.RI "Clean & Invalidate D-Cache\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_InvalidateDCache_by_Addr\fP (uint32_t *addr, int32_t dsize)"
+.br
+.RI "D-Cache Invalidate by address\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_CleanDCache_by_Addr\fP (uint32_t *addr, int32_t dsize)"
+.br
+.RI "D-Cache Clean by address\&. "
+.ti -1c
+.RI "__STATIC_INLINE void \fBSCB_CleanInvalidateDCache_by_Addr\fP (uint32_t *addr, int32_t dsize)"
+.br
+.RI "D-Cache Clean and Invalidate by address\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Functions that configure Instruction and Data cache\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CCSIDR_SETS(x)   (((x) & \fBSCB_CCSIDR_NUMSETS_Msk\fP      ) >> \fBSCB_CCSIDR_NUMSETS_Pos\fP      )"
+
+.PP
+Definition at line 2074 of file core_cm7\&.h\&.
+.SS "#define CCSIDR_WAYS(x)   (((x) & \fBSCB_CCSIDR_ASSOCIATIVITY_Msk\fP) >> \fBSCB_CCSIDR_ASSOCIATIVITY_Pos\fP)"
+
+.PP
+Definition at line 2073 of file core_cm7\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "__STATIC_INLINE void SCB_CleanDCache (void)"
+
+.PP
+Clean D-Cache\&. Cleans D-Cache 
+.PP
+Definition at line 2241 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_CleanDCache_by_Addr (uint32_t * addr, int32_t dsize)"
+
+.PP
+D-Cache Clean by address\&. Cleans D-Cache for the given address 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaddr\fP address (aligned to 32-byte boundary) 
+.br
+\fIdsize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.PP
+Definition at line 2340 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_CleanInvalidateDCache (void)"
+
+.PP
+Clean & Invalidate D-Cache\&. Cleans and Invalidates D-Cache 
+.PP
+Definition at line 2276 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_CleanInvalidateDCache_by_Addr (uint32_t * addr, int32_t dsize)"
+
+.PP
+D-Cache Clean and Invalidate by address\&. Cleans and invalidates D_Cache for the given address 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaddr\fP address (aligned to 32-byte boundary) 
+.br
+\fIdsize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.PP
+Definition at line 2367 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_DisableDCache (void)"
+
+.PP
+Disable D-Cache\&. Turns off D-Cache 
+.PP
+Definition at line 2169 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_DisableICache (void)"
+
+.PP
+Disable I-Cache\&. Turns off I-Cache 
+.PP
+Definition at line 2098 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_EnableDCache (void)"
+
+.PP
+Enable D-Cache\&. Turns on D-Cache 
+.PP
+Definition at line 2131 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_EnableICache (void)"
+
+.PP
+Enable I-Cache\&. Turns on I-Cache 
+.PP
+Definition at line 2081 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_InvalidateDCache (void)"
+
+.PP
+Invalidate D-Cache\&. Invalidates D-Cache 
+.PP
+Definition at line 2206 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_InvalidateDCache_by_Addr (uint32_t * addr, int32_t dsize)"
+
+.PP
+D-Cache Invalidate by address\&. Invalidates D-Cache for the given address 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaddr\fP address (aligned to 32-byte boundary) 
+.br
+\fIdsize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.PP
+Definition at line 2313 of file core_cm7\&.h\&.
+.SS "__STATIC_INLINE void SCB_InvalidateICache (void)"
+
+.PP
+Invalidate I-Cache\&. Invalidates I-Cache 
+.PP
+Definition at line 2115 of file core_cm7\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

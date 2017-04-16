@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___hardware___flow___control" kind="group">
+    <compoundname>SDIO_Hardware_Flow_Control</compoundname>
+    <title>SDIO_Hardware_Flow_Control</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___hardware___flow___control_1ga7529a3c8a11ac685bde4aafa12c8a977" prot="public" static="no">
+        <name>SDIO_HardwareFlowControl_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="179" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___hardware___flow___control_1gab6cfef6778d829f3dcefc6c2bad7c9aa" prot="public" static="no">
+        <name>SDIO_HardwareFlowControl_Enable</name>
+        <initializer>((uint32_t)0x00004000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="180" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___hardware___flow___control_1gad8be549f8348479d064dff21343ae411" prot="public" static="no">
+        <name>IS_SDIO_HARDWARE_FLOW_CONTROL</name>
+        <param><defname>CONTROL</defname></param>
+        <initializer>(((CONTROL) == <ref refid="group___s_d_i_o___hardware___flow___control_1ga7529a3c8a11ac685bde4aafa12c8a977" kindref="member">SDIO_HardwareFlowControl_Disable</ref>) || \
+                                                ((CONTROL) == <ref refid="group___s_d_i_o___hardware___flow___control_1gab6cfef6778d829f3dcefc6c2bad7c9aa" kindref="member">SDIO_HardwareFlowControl_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="181" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

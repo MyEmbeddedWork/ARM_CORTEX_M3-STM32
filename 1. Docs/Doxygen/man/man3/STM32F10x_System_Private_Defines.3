@@ -1,0 +1,56 @@
+.TH "STM32F10x_System_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+STM32F10x_System_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSYSCLK_FREQ_72MHz\fP   72000000"
+.br
+.ti -1c
+.RI "#define \fBVECT_TAB_OFFSET\fP   0x0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SYSCLK_FREQ_72MHz   72000000"
+< Uncomment the line corresponding to the desired System clock (SYSCLK) frequency (after reset the HSI is used as SYSCLK source)
+.PP
+.SH "IMPORTANT NOTE: "
+.PP
+.PP
+.IP "1." 4
+After each device reset the HSI is used as System clock source\&.
+.IP "2." 4
+Please make sure that the selected System clock doesn't exceed your device's maximum frequency\&.
+.IP "3." 4
+If none of the define below is enabled, the HSI is used as System clock source\&.
+.IP "4." 4
+The System clock configuration functions provided within this file assume that:
+.IP "  \(bu" 4
+For Low, Medium and High density Value line devices an external 8MHz crystal is used to drive the System clock\&.
+.IP "  \(bu" 4
+For Low, Medium and High density devices an external 8MHz crystal is used to drive the System clock\&.
+.IP "  \(bu" 4
+For Connectivity line devices an external 25MHz crystal is used to drive the System clock\&. If you are using different crystal you have to adapt those functions accordingly\&.Uncomment the following line if you need to use external SRAM mounted on STM3210E-EVAL board (STM32 High density and XL-density devices) or on STM32100E-EVAL board (STM32 High-density value line devices) as data memory Uncomment the following line if you need to relocate your vector Table in Internal SRAM\&. 
+.PP
+
+.PP
+
+.PP
+Definition at line 115 of file system_stm32f10x\&.c\&.
+.SS "#define VECT_TAB_OFFSET   0x0"
+Vector Table base offset field\&. This value must be a multiple of 0x200\&. 
+.PP
+Definition at line 128 of file system_stm32f10x\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

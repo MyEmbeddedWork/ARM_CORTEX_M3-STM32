@@ -1,0 +1,1277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___private___functions" kind="group">
+    <compoundname>SDIO_Private_Functions</compoundname>
+    <title>SDIO_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gac359d2c6c67a2590f8f9b720c0e4ff1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>SDIO_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the SDIO peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="161" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="161" bodyend="172"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_Init</definition>
+        <argsstring>(SDIO_InitTypeDef *SDIO_InitStruct)</argsstring>
+        <name>SDIO_Init</name>
+        <param>
+          <type><ref refid="struct_s_d_i_o___init_type_def" kindref="compound">SDIO_InitTypeDef</ref> *</type>
+          <declname>SDIO_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the SDIO peripheral according to the specified parameters in the SDIO_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_s_d_i_o___init_type_def" kindref="compound">SDIO_InitTypeDef</ref> structure that contains the configuration information for the SDIO peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="181" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="181" bodyend="211"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___clock___edge_1ga63420b10a52e3d82a89a45f20dc41786" compoundref="stm32f10x__sdio_8h" startline="131">IS_SDIO_CLOCK_EDGE</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a3252c846b68988b8ae70ca0d40030a52" compoundref="stm32f10x__sdio_8h" startline="54">SDIO_InitTypeDef::SDIO_ClockEdge</references>
+        <references refid="group___s_d_i_o___clock___bypass_1ga5d5a2fcdd3150e4a89c5aa1efd738dec" compoundref="stm32f10x__sdio_8h" startline="143">IS_SDIO_CLOCK_BYPASS</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a6a06a65a5630b21da261f46125cb20b1" compoundref="stm32f10x__sdio_8h" startline="57">SDIO_InitTypeDef::SDIO_ClockBypass</references>
+        <references refid="group___s_d_i_o___clock___power___save_1ga41988203e5d4e35a755aa604f1876cd3" compoundref="stm32f10x__sdio_8h" startline="155">IS_SDIO_CLOCK_POWER_SAVE</references>
+        <references refid="struct_s_d_i_o___init_type_def_1ac236cc5a376a65b9de64a31dab816364" compoundref="stm32f10x__sdio_8h" startline="61">SDIO_InitTypeDef::SDIO_ClockPowerSave</references>
+        <references refid="group___s_d_i_o___bus___wide_1gaa5c6ad922117d5df3213631bf68fde5b" compoundref="stm32f10x__sdio_8h" startline="168">IS_SDIO_BUS_WIDE</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a0540529f615c2b29933b442bc326f0a7" compoundref="stm32f10x__sdio_8h" startline="65">SDIO_InitTypeDef::SDIO_BusWide</references>
+        <references refid="group___s_d_i_o___hardware___flow___control_1gad8be549f8348479d064dff21343ae411" compoundref="stm32f10x__sdio_8h" startline="181">IS_SDIO_HARDWARE_FLOW_CONTROL</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a5f57f8aca913de9aed47ef708c05f34f" compoundref="stm32f10x__sdio_8h" startline="68">SDIO_InitTypeDef::SDIO_HardwareFlowControl</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1gac8d10dd1e49ca9e8a6954146654e9a01" compoundref="stm32f10x__sdio_8c" startline="96">CLKCR_CLEAR_MASK</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a4166ee534e6cf8ac2c6a6a03bec45b06" compoundref="stm32f10x__sdio_8h" startline="71">SDIO_InitTypeDef::SDIO_ClockDiv</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_StructInit</definition>
+        <argsstring>(SDIO_InitTypeDef *SDIO_InitStruct)</argsstring>
+        <name>SDIO_StructInit</name>
+        <param>
+          <type><ref refid="struct_s_d_i_o___init_type_def" kindref="compound">SDIO_InitTypeDef</ref> *</type>
+          <declname>SDIO_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each SDIO_InitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_s_d_i_o___init_type_def" kindref="compound">SDIO_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="219" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="219" bodyend="228"/>
+        <references refid="struct_s_d_i_o___init_type_def_1a4166ee534e6cf8ac2c6a6a03bec45b06" compoundref="stm32f10x__sdio_8h" startline="71">SDIO_InitTypeDef::SDIO_ClockDiv</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a3252c846b68988b8ae70ca0d40030a52" compoundref="stm32f10x__sdio_8h" startline="54">SDIO_InitTypeDef::SDIO_ClockEdge</references>
+        <references refid="group___s_d_i_o___clock___edge_1ga6d0f902037762a3048d95303c0037313" compoundref="stm32f10x__sdio_8h" startline="129">SDIO_ClockEdge_Rising</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a6a06a65a5630b21da261f46125cb20b1" compoundref="stm32f10x__sdio_8h" startline="57">SDIO_InitTypeDef::SDIO_ClockBypass</references>
+        <references refid="group___s_d_i_o___clock___bypass_1gacc168d55136a0c6575e5afd7a6550343" compoundref="stm32f10x__sdio_8h" startline="141">SDIO_ClockBypass_Disable</references>
+        <references refid="struct_s_d_i_o___init_type_def_1ac236cc5a376a65b9de64a31dab816364" compoundref="stm32f10x__sdio_8h" startline="61">SDIO_InitTypeDef::SDIO_ClockPowerSave</references>
+        <references refid="group___s_d_i_o___clock___power___save_1ga032aa5fb2dfd7ba5dbd60a3845c82ba0" compoundref="stm32f10x__sdio_8h" startline="153">SDIO_ClockPowerSave_Disable</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a0540529f615c2b29933b442bc326f0a7" compoundref="stm32f10x__sdio_8h" startline="65">SDIO_InitTypeDef::SDIO_BusWide</references>
+        <references refid="group___s_d_i_o___bus___wide_1ga9c333b57937c5cc0a173a58519f9250a" compoundref="stm32f10x__sdio_8h" startline="165">SDIO_BusWide_1b</references>
+        <references refid="struct_s_d_i_o___init_type_def_1a5f57f8aca913de9aed47ef708c05f34f" compoundref="stm32f10x__sdio_8h" startline="68">SDIO_InitTypeDef::SDIO_HardwareFlowControl</references>
+        <references refid="group___s_d_i_o___hardware___flow___control_1ga7529a3c8a11ac685bde4aafa12c8a977" compoundref="stm32f10x__sdio_8h" startline="179">SDIO_HardwareFlowControl_Disable</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga7243b857d6b323748ff3a493b265bedc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_ClockCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_ClockCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the SDIO Clock. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the SDIO Clock. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="235" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="235" bodyend="241"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1gabfb5772b9b734972b576309f7ca8bf92" compoundref="stm32f10x__sdio_8c" startline="47">CLKCR_CLKEN_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga36ecca32b904de74218fbe65cd5f5270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_SetPowerState</definition>
+        <argsstring>(uint32_t SDIO_PowerState)</argsstring>
+        <name>SDIO_SetPowerState</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_PowerState</declname>
+        </param>
+        <briefdescription>
+<para>Sets the power status of the controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_PowerState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the Power state. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>SDIO_PowerState_OFF </para></listitem>
+<listitem><para>SDIO_PowerState_ON </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="251" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="251" bodyend="258"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___power___state_1gad0dae767c2024de1769efb1feccc14ef" compoundref="stm32f10x__sdio_8h" startline="193">IS_SDIO_POWER_STATE</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga7e6ec7be68d0fbb8fb4e3725cca9a05c" compoundref="stm32f10x__sdio_8c" startline="101">PWR_PWRCTRL_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga3a19de2c7cd51645702213f64a1758ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_GetPowerState</definition>
+        <argsstring>(void)</argsstring>
+        <name>SDIO_GetPowerState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the power status of the controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>status of the controller. The returned value can be one of the following:<itemizedlist>
+<listitem><para>0x00: Power OFF</para></listitem><listitem><para>0x02: Power UP</para></listitem><listitem><para>0x03: Power ON </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="269" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="269" bodyend="272"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga7e6ec7be68d0fbb8fb4e3725cca9a05c" compoundref="stm32f10x__sdio_8c" startline="101">PWR_PWRCTRL_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga208f51237ef43288735829dbaed37f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_ITConfig</definition>
+        <argsstring>(uint32_t SDIO_IT, FunctionalState NewState)</argsstring>
+        <name>SDIO_ITConfig</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the SDIO interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the SDIO interrupt sources to be enabled or disabled. This parameter can be one or a combination of the following values: <itemizedlist>
+<listitem><para>SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CTIMEOUT: Command response timeout interrupt </para></listitem>
+<listitem><para>SDIO_IT_DTIMEOUT: Data timeout interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXOVERR: Received FIFO overrun error interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDSENT: Command sent (no response required) interrupt </para></listitem>
+<listitem><para>SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt </para></listitem>
+<listitem><para>SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt </para></listitem>
+<listitem><para>SDIO_IT_DBCKEND: Data block sent/received (CRC check passed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDACT: Command transfer in progress interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXACT: Data transmit in progress interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXACT: Data receive in progress interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXFIFOHE: Transmit FIFO Half Empty interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXFIFOHF: Receive FIFO Half Full interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXFIFOF: Transmit FIFO full interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXFIFOF: Receive FIFO full interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXFIFOE: Transmit FIFO empty interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXFIFOE: Receive FIFO empty interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXDAVL: Data available in transmit FIFO interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXDAVL: Data available in receive FIFO interrupt </para></listitem>
+<listitem><para>SDIO_IT_SDIOIT: SD I/O interrupt received interrupt </para></listitem>
+<listitem><para>SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified SDIO interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="307" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="307" bodyend="323"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___interrupt__sources_1ga0e413e92ec50bab73042e8965acc3e6c" compoundref="stm32f10x__sdio_8h" startline="227">IS_SDIO_IT</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gad36fde5ec0ce0c2089b9d971c2271e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_DMACmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_DMACmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the SDIO DMA request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the selected SDIO DMA request. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="331" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="331" bodyend="337"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga43f7336d4f955c6cf1f676ccbc043fe9" compoundref="stm32f10x__sdio_8c" startline="73">DCTRL_DMAEN_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga7117d2f702703f6c0a66bc07707cab23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_SendCommand</definition>
+        <argsstring>(SDIO_CmdInitTypeDef *SDIO_CmdInitStruct)</argsstring>
+        <name>SDIO_SendCommand</name>
+        <param>
+          <type><ref refid="struct_s_d_i_o___cmd_init_type_def" kindref="compound">SDIO_CmdInitTypeDef</ref> *</type>
+          <declname>SDIO_CmdInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the SDIO Command according to the specified parameters in the SDIO_CmdInitStruct and send the command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_CmdInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_s_d_i_o___cmd_init_type_def" kindref="compound">SDIO_CmdInitTypeDef</ref> structure that contains the configuration information for the SDIO command. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="346" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="346" bodyend="374"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___command___index_1gae988f9f37c4ebb5f5f9866acb30f2880" compoundref="stm32f10x__sdio_8h" startline="236">IS_SDIO_CMD_INDEX</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1ab5e1df1f0e8d48a308edfb59a6f80fb4" compoundref="stm32f10x__sdio_8h" startline="83">SDIO_CmdInitTypeDef::SDIO_CmdIndex</references>
+        <references refid="group___s_d_i_o___response___type_1gae4df2359c9b637694b9baa220c16e062" compoundref="stm32f10x__sdio_8h" startline="248">IS_SDIO_RESPONSE</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1aecb203e21321126d5f05c34787cacfd2" compoundref="stm32f10x__sdio_8h" startline="85">SDIO_CmdInitTypeDef::SDIO_Response</references>
+        <references refid="group___s_d_i_o___wait___interrupt___state_1ga7ee5c289c8e06a76b849808d15b03810" compoundref="stm32f10x__sdio_8h" startline="262">IS_SDIO_WAIT</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1a582258554233ff8550bd04d2d790c67c" compoundref="stm32f10x__sdio_8h" startline="88">SDIO_CmdInitTypeDef::SDIO_Wait</references>
+        <references refid="group___s_d_i_o___c_p_s_m___state_1ga58cf04903dab015106e4e0937bef443b" compoundref="stm32f10x__sdio_8h" startline="274">IS_SDIO_CPSM</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1ab0e869ae285cc132478dd743c28cd8e2" compoundref="stm32f10x__sdio_8h" startline="91">SDIO_CmdInitTypeDef::SDIO_CPSM</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1a37dfc4d7191ec10cffdb05ecf58d4807" compoundref="stm32f10x__sdio_8h" startline="78">SDIO_CmdInitTypeDef::SDIO_Argument</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga2325d77090e44221b07f8fba5bc9217e" compoundref="stm32f10x__sdio_8c" startline="111">CMD_CLEAR_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga09d9e89f49c87c82aec79c97b7068e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_CmdStructInit</definition>
+        <argsstring>(SDIO_CmdInitTypeDef *SDIO_CmdInitStruct)</argsstring>
+        <name>SDIO_CmdStructInit</name>
+        <param>
+          <type><ref refid="struct_s_d_i_o___cmd_init_type_def" kindref="compound">SDIO_CmdInitTypeDef</ref> *</type>
+          <declname>SDIO_CmdInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each SDIO_CmdInitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_CmdInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_s_d_i_o___cmd_init_type_def" kindref="compound">SDIO_CmdInitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="382" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="382" bodyend="390"/>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1a37dfc4d7191ec10cffdb05ecf58d4807" compoundref="stm32f10x__sdio_8h" startline="78">SDIO_CmdInitTypeDef::SDIO_Argument</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1ab5e1df1f0e8d48a308edfb59a6f80fb4" compoundref="stm32f10x__sdio_8h" startline="83">SDIO_CmdInitTypeDef::SDIO_CmdIndex</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1aecb203e21321126d5f05c34787cacfd2" compoundref="stm32f10x__sdio_8h" startline="85">SDIO_CmdInitTypeDef::SDIO_Response</references>
+        <references refid="group___s_d_i_o___response___type_1ga308b8ef0e79ba451644dda923bb3ac41" compoundref="stm32f10x__sdio_8h" startline="245">SDIO_Response_No</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1a582258554233ff8550bd04d2d790c67c" compoundref="stm32f10x__sdio_8h" startline="88">SDIO_CmdInitTypeDef::SDIO_Wait</references>
+        <references refid="group___s_d_i_o___wait___interrupt___state_1ga266294e1ffd7a4b45e62bff753ca44b2" compoundref="stm32f10x__sdio_8h" startline="259">SDIO_Wait_No</references>
+        <references refid="struct_s_d_i_o___cmd_init_type_def_1ab0e869ae285cc132478dd743c28cd8e2" compoundref="stm32f10x__sdio_8h" startline="91">SDIO_CmdInitTypeDef::SDIO_CPSM</references>
+        <references refid="group___s_d_i_o___c_p_s_m___state_1ga996751273ad238e255a740f7c2844c6c" compoundref="stm32f10x__sdio_8h" startline="272">SDIO_CPSM_Disable</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga9badf271c818e09da301d715c4ad0e5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t SDIO_GetCommandResponse</definition>
+        <argsstring>(void)</argsstring>
+        <name>SDIO_GetCommandResponse</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns command index of last command for which response received. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the command index of the last command response received. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="397" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="397" bodyend="400"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga5c1e859511840e8cca6a9a768bce220b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_GetResponse</definition>
+        <argsstring>(uint32_t SDIO_RESP)</argsstring>
+        <name>SDIO_GetResponse</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_RESP</declname>
+        </param>
+        <briefdescription>
+<para>Returns response received from the card for the last command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_RESP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the SDIO response register. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>SDIO_RESP1: Response Register 1 </para></listitem>
+<listitem><para>SDIO_RESP2: Response Register 2 </para></listitem>
+<listitem><para>SDIO_RESP3: Response Register 3 </para></listitem>
+<listitem><para>SDIO_RESP4: Response Register 4 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Corresponding response register value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="412" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="412" bodyend="422"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___response___registers_1gaea6a7f75a5e677d50ba5c9ae2d3a7839" compoundref="stm32f10x__sdio_8h" startline="287">IS_SDIO_RESP</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga4285ce49b005e3d03ddf9fdc491c4d70" compoundref="stm32f10x__sdio_8c" startline="114">SDIO_RESP_ADDR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_DataConfig</definition>
+        <argsstring>(SDIO_DataInitTypeDef *SDIO_DataInitStruct)</argsstring>
+        <name>SDIO_DataConfig</name>
+        <param>
+          <type><ref refid="struct_s_d_i_o___data_init_type_def" kindref="compound">SDIO_DataInitTypeDef</ref> *</type>
+          <declname>SDIO_DataInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the SDIO data path according to the specified parameters in the SDIO_DataInitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_DataInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_s_d_i_o___data_init_type_def" kindref="compound">SDIO_DataInitTypeDef</ref> structure that contains the configuration information for the SDIO command. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="431" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="431" bodyend="464"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___data___length_1ga57dd64db3f69d18625ea8ca82c009fad" compoundref="stm32f10x__sdio_8h" startline="297">IS_SDIO_DATA_LENGTH</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1ac325889a6dd582130a752aafc3ec9ee9" compoundref="stm32f10x__sdio_8h" startline="100">SDIO_DataInitTypeDef::SDIO_DataLength</references>
+        <references refid="group___s_d_i_o___data___block___size_1ga25ce8d64134659c479d61aa681761948" compoundref="stm32f10x__sdio_8h" startline="321">IS_SDIO_BLOCK_SIZE</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a2252d17c4b3182830eb9f400489cb10f" compoundref="stm32f10x__sdio_8h" startline="102">SDIO_DataInitTypeDef::SDIO_DataBlockSize</references>
+        <references refid="group___s_d_i_o___transfer___direction_1gaf84b8004cfef6a5a525b20db8a83c2f7" compoundref="stm32f10x__sdio_8h" startline="346">IS_SDIO_TRANSFER_DIR</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a4838fffdb3f87850569dff12f15485db" compoundref="stm32f10x__sdio_8h" startline="105">SDIO_DataInitTypeDef::SDIO_TransferDir</references>
+        <references refid="group___s_d_i_o___transfer___type_1gaf7565ea93f9ed01558bdc9ad80dac763" compoundref="stm32f10x__sdio_8h" startline="358">IS_SDIO_TRANSFER_MODE</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a58ac19aaaceb2791d4bbcd30f334dd21" compoundref="stm32f10x__sdio_8h" startline="109">SDIO_DataInitTypeDef::SDIO_TransferMode</references>
+        <references refid="group___s_d_i_o___d_p_s_m___state_1gac87a2d7a8fc417a4514d733be50e6d63" compoundref="stm32f10x__sdio_8h" startline="370">IS_SDIO_DPSM</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1ad5eb5f3c6fd9e5d4a6664c5cf57d6b03" compoundref="stm32f10x__sdio_8h" startline="112">SDIO_DataInitTypeDef::SDIO_DPSM</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a6877ec1042a273e228114e5362b93aa1" compoundref="stm32f10x__sdio_8h" startline="98">SDIO_DataInitTypeDef::SDIO_DataTimeOut</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga9e9fc7810b95805aeeb760bbdd87fa9b" compoundref="stm32f10x__sdio_8c" startline="106">DCTRL_CLEAR_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_DataStructInit</definition>
+        <argsstring>(SDIO_DataInitTypeDef *SDIO_DataInitStruct)</argsstring>
+        <name>SDIO_DataStructInit</name>
+        <param>
+          <type><ref refid="struct_s_d_i_o___data_init_type_def" kindref="compound">SDIO_DataInitTypeDef</ref> *</type>
+          <declname>SDIO_DataInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each SDIO_DataInitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_DataInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_s_d_i_o___data_init_type_def" kindref="compound">SDIO_DataInitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="472" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="472" bodyend="481"/>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a6877ec1042a273e228114e5362b93aa1" compoundref="stm32f10x__sdio_8h" startline="98">SDIO_DataInitTypeDef::SDIO_DataTimeOut</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1ac325889a6dd582130a752aafc3ec9ee9" compoundref="stm32f10x__sdio_8h" startline="100">SDIO_DataInitTypeDef::SDIO_DataLength</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a2252d17c4b3182830eb9f400489cb10f" compoundref="stm32f10x__sdio_8h" startline="102">SDIO_DataInitTypeDef::SDIO_DataBlockSize</references>
+        <references refid="group___s_d_i_o___data___block___size_1gaa86e90ddc3426b242a5230b3360c620d" compoundref="stm32f10x__sdio_8h" startline="306">SDIO_DataBlockSize_1b</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a4838fffdb3f87850569dff12f15485db" compoundref="stm32f10x__sdio_8h" startline="105">SDIO_DataInitTypeDef::SDIO_TransferDir</references>
+        <references refid="group___s_d_i_o___transfer___direction_1gaef8af0ffa4ea04b3362338d268cc0935" compoundref="stm32f10x__sdio_8h" startline="344">SDIO_TransferDir_ToCard</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1a58ac19aaaceb2791d4bbcd30f334dd21" compoundref="stm32f10x__sdio_8h" startline="109">SDIO_DataInitTypeDef::SDIO_TransferMode</references>
+        <references refid="group___s_d_i_o___transfer___type_1ga5b54ada18cc4072ceff1d98ee4b69972" compoundref="stm32f10x__sdio_8h" startline="356">SDIO_TransferMode_Block</references>
+        <references refid="struct_s_d_i_o___data_init_type_def_1ad5eb5f3c6fd9e5d4a6664c5cf57d6b03" compoundref="stm32f10x__sdio_8h" startline="112">SDIO_DataInitTypeDef::SDIO_DPSM</references>
+        <references refid="group___s_d_i_o___d_p_s_m___state_1ga156a9f6ab87a46dcb99ddd7462ca064b" compoundref="stm32f10x__sdio_8h" startline="368">SDIO_DPSM_Disable</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_GetDataCounter</definition>
+        <argsstring>(void)</argsstring>
+        <name>SDIO_GetDataCounter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns number of remaining data bytes to be transferred. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of remaining data bytes to be transferred </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="488" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="488" bodyend="491"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga4e8ac755ef3c31ecd4ed2708df19187e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_ReadData</definition>
+        <argsstring>(void)</argsstring>
+        <name>SDIO_ReadData</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Read one data word from Rx FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="498" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="498" bodyend="501"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga361008b5252aa33b5f2b5823ee3d7240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_WriteData</definition>
+        <argsstring>(uint32_t Data)</argsstring>
+        <name>SDIO_WriteData</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Write one data word to Tx FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>32-bit data word to write. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="508" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="508" bodyend="511"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga9a3343983a2d68b5164a1c89797d2dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_GetFIFOCount</definition>
+        <argsstring>(void)</argsstring>
+        <name>SDIO_GetFIFOCount</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the number of words left to be written to or read from FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Remaining</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of words. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="518" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="518" bodyend="521"/>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gac88f914d9a68a83abc2265ec8a7b79fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_StartSDIOReadWait</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_StartSDIOReadWait</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Starts the SD I/O Read Wait operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the Start SDIO Read Wait operation. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="529" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="529" bodyend="535"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1gac776c39dfac0e1ed007217133e1145c3" compoundref="stm32f10x__sdio_8c" startline="77">DCTRL_RWSTART_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gaca6b25eb2debb73ac827c66f0ebcf837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_StopSDIOReadWait</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_StopSDIOReadWait</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Stops the SD I/O Read Wait operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the Stop SDIO Read Wait operation. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="543" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="543" bodyend="549"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga678da1db835676b0fb1976cf3408e2d1" compoundref="stm32f10x__sdio_8c" startline="81">DCTRL_RWSTOP_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga2baac4ea1bb6c2d94345d2712604338a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_SetSDIOReadWaitMode</definition>
+        <argsstring>(uint32_t SDIO_ReadWaitMode)</argsstring>
+        <name>SDIO_SetSDIOReadWaitMode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_ReadWaitMode</declname>
+        </param>
+        <briefdescription>
+<para>Sets one of the two options of inserting read wait interval. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_ReadWaitMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SD I/O Read Wait operation mode. This parameter can be: <itemizedlist>
+<listitem><para>SDIO_ReadWaitMode_CLK: Read Wait control by stopping SDIOCLK </para></listitem>
+<listitem><para>SDIO_ReadWaitMode_DATA2: Read Wait control using SDIO_DATA2 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="559" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="559" bodyend="565"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___read___wait___mode_1ga35144093f5b3553a62c2248896eead4d" compoundref="stm32f10x__sdio_8h" startline="467">IS_SDIO_READWAIT_MODE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1gad34bfe8650534ce24320ae83886c91e3" compoundref="stm32f10x__sdio_8c" startline="85">DCTRL_RWMOD_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga24e210c185d5a7855cbaff4472a8f8d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_SetSDIOOperation</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_SetSDIOOperation</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the SD I/O Mode Operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of SDIO specific operation. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="573" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="573" bodyend="579"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga894f7da62b89ddd9f4b79d066056a3c7" compoundref="stm32f10x__sdio_8c" startline="89">DCTRL_SDIOEN_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga9264137a01a1ab81d03bc80a3b3120fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_SendSDIOSuspendCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_SendSDIOSuspendCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the SD I/O Mode suspend command sending. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the SD I/O Mode suspend command. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="587" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="587" bodyend="593"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga931e48aa282e2a937308f57f807e0781" compoundref="stm32f10x__sdio_8c" startline="54">CMD_SDIOSUSPEND_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga1bbe98c629812bc62121d9c8b2c5e21b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_CommandCompletionCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_CommandCompletionCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the command completion signal. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of command completion signal. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="601" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="601" bodyend="607"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1gade06098d1616639ce5f1b70675280b7c" compoundref="stm32f10x__sdio_8c" startline="58">CMD_ENCMDCOMPL_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1gab44b8cbc21be000a291563076159503b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_CEATAITCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_CEATAITCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the CE-ATA interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CE-ATA interrupt. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="614" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="614" bodyend="620"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1ga08623f1d053677de8b20a6f5f5090edd" compoundref="stm32f10x__sdio_8c" startline="62">CMD_NIEN_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga8dc7f17804bdb745b42f6647c8487b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_SendCEATACmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>SDIO_SendCEATACmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Sends CE-ATA command (CMD61). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CE-ATA command. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="627" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="627" bodyend="633"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___s_d_i_o___private___types_definitions_1gabb7e537f931b6fdd3b49e826f2e19d7c" compoundref="stm32f10x__sdio_8c" startline="66">CMD_ATACMD_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga644514b4b3c95c5c4326d99cd166f6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus SDIO_GetFlagStatus</definition>
+        <argsstring>(uint32_t SDIO_FLAG)</argsstring>
+        <name>SDIO_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified SDIO flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>SDIO_FLAG_CCRCFAIL: Command response received (CRC check failed) </para></listitem>
+<listitem><para>SDIO_FLAG_DCRCFAIL: Data block sent/received (CRC check failed) </para></listitem>
+<listitem><para>SDIO_FLAG_CTIMEOUT: Command response timeout </para></listitem>
+<listitem><para>SDIO_FLAG_DTIMEOUT: Data timeout </para></listitem>
+<listitem><para>SDIO_FLAG_TXUNDERR: Transmit FIFO underrun error </para></listitem>
+<listitem><para>SDIO_FLAG_RXOVERR: Received FIFO overrun error </para></listitem>
+<listitem><para>SDIO_FLAG_CMDREND: Command response received (CRC check passed) </para></listitem>
+<listitem><para>SDIO_FLAG_CMDSENT: Command sent (no response required) </para></listitem>
+<listitem><para>SDIO_FLAG_DATAEND: Data end (data counter, SDIDCOUNT, is zero) </para></listitem>
+<listitem><para>SDIO_FLAG_STBITERR: Start bit not detected on all data signals in wide bus mode. </para></listitem>
+<listitem><para>SDIO_FLAG_DBCKEND: Data block sent/received (CRC check passed) </para></listitem>
+<listitem><para>SDIO_FLAG_CMDACT: Command transfer in progress </para></listitem>
+<listitem><para>SDIO_FLAG_TXACT: Data transmit in progress </para></listitem>
+<listitem><para>SDIO_FLAG_RXACT: Data receive in progress </para></listitem>
+<listitem><para>SDIO_FLAG_TXFIFOHE: Transmit FIFO Half Empty </para></listitem>
+<listitem><para>SDIO_FLAG_RXFIFOHF: Receive FIFO Half Full </para></listitem>
+<listitem><para>SDIO_FLAG_TXFIFOF: Transmit FIFO full </para></listitem>
+<listitem><para>SDIO_FLAG_RXFIFOF: Receive FIFO full </para></listitem>
+<listitem><para>SDIO_FLAG_TXFIFOE: Transmit FIFO empty </para></listitem>
+<listitem><para>SDIO_FLAG_RXFIFOE: Receive FIFO empty </para></listitem>
+<listitem><para>SDIO_FLAG_TXDAVL: Data available in transmit FIFO </para></listitem>
+<listitem><para>SDIO_FLAG_RXDAVL: Data available in receive FIFO </para></listitem>
+<listitem><para>SDIO_FLAG_SDIOIT: SD I/O interrupt received </para></listitem>
+<listitem><para>SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of SDIO_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="666" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="666" bodyend="682"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___flags_1ga04b3c3c316e112172abacbf5e316f24a" compoundref="stm32f10x__sdio_8h" startline="403">IS_SDIO_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga7aff4efdeb528229135f9f285e53518a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_ClearFlag</definition>
+        <argsstring>(uint32_t SDIO_FLAG)</argsstring>
+        <name>SDIO_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the SDIO&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be one or a combination of the following values: <itemizedlist>
+<listitem><para>SDIO_FLAG_CCRCFAIL: Command response received (CRC check failed) </para></listitem>
+<listitem><para>SDIO_FLAG_DCRCFAIL: Data block sent/received (CRC check failed) </para></listitem>
+<listitem><para>SDIO_FLAG_CTIMEOUT: Command response timeout </para></listitem>
+<listitem><para>SDIO_FLAG_DTIMEOUT: Data timeout </para></listitem>
+<listitem><para>SDIO_FLAG_TXUNDERR: Transmit FIFO underrun error </para></listitem>
+<listitem><para>SDIO_FLAG_RXOVERR: Received FIFO overrun error </para></listitem>
+<listitem><para>SDIO_FLAG_CMDREND: Command response received (CRC check passed) </para></listitem>
+<listitem><para>SDIO_FLAG_CMDSENT: Command sent (no response required) </para></listitem>
+<listitem><para>SDIO_FLAG_DATAEND: Data end (data counter, SDIDCOUNT, is zero) </para></listitem>
+<listitem><para>SDIO_FLAG_STBITERR: Start bit not detected on all data signals in wide bus mode </para></listitem>
+<listitem><para>SDIO_FLAG_DBCKEND: Data block sent/received (CRC check passed) </para></listitem>
+<listitem><para>SDIO_FLAG_SDIOIT: SD I/O interrupt received </para></listitem>
+<listitem><para>SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="704" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="704" bodyend="710"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___flags_1ga8a093bc0b51901676fd5da7087d8ab3a" compoundref="stm32f10x__sdio_8h" startline="428">IS_SDIO_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga2d64af1f3df0f99cb518f9a89bbd02ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus SDIO_GetITStatus</definition>
+        <argsstring>(uint32_t SDIO_IT)</argsstring>
+        <name>SDIO_GetITStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified SDIO interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the SDIO interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CTIMEOUT: Command response timeout interrupt </para></listitem>
+<listitem><para>SDIO_IT_DTIMEOUT: Data timeout interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXOVERR: Received FIFO overrun error interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDSENT: Command sent (no response required) interrupt </para></listitem>
+<listitem><para>SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt </para></listitem>
+<listitem><para>SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt </para></listitem>
+<listitem><para>SDIO_IT_DBCKEND: Data block sent/received (CRC check passed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDACT: Command transfer in progress interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXACT: Data transmit in progress interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXACT: Data receive in progress interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXFIFOHE: Transmit FIFO Half Empty interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXFIFOHF: Receive FIFO Half Full interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXFIFOF: Transmit FIFO full interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXFIFOF: Receive FIFO full interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXFIFOE: Transmit FIFO empty interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXFIFOE: Receive FIFO empty interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXDAVL: Data available in transmit FIFO interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXDAVL: Data available in receive FIFO interrupt </para></listitem>
+<listitem><para>SDIO_IT_SDIOIT: SD I/O interrupt received interrupt </para></listitem>
+<listitem><para>SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of SDIO_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="743" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="743" bodyend="758"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___flags_1gaef42c81f1f6250d8f9f438f4e16d1e98" compoundref="stm32f10x__sdio_8h" startline="430">IS_SDIO_GET_IT</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___s_d_i_o___private___functions_1ga048e07fd86321cd01b2a22c071c3149b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDIO_ClearITPendingBit</definition>
+        <argsstring>(uint32_t SDIO_IT)</argsstring>
+        <name>SDIO_ClearITPendingBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>SDIO_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the SDIO&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SDIO_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt pending bit to clear. This parameter can be one or a combination of the following values: <itemizedlist>
+<listitem><para>SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CTIMEOUT: Command response timeout interrupt </para></listitem>
+<listitem><para>SDIO_IT_DTIMEOUT: Data timeout interrupt </para></listitem>
+<listitem><para>SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt </para></listitem>
+<listitem><para>SDIO_IT_RXOVERR: Received FIFO overrun error interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt </para></listitem>
+<listitem><para>SDIO_IT_CMDSENT: Command sent (no response required) interrupt </para></listitem>
+<listitem><para>SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt </para></listitem>
+<listitem><para>SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt </para></listitem>
+<listitem><para>SDIO_IT_SDIOIT: SD I/O interrupt received interrupt </para></listitem>
+<listitem><para>SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="779" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="779" bodyend="785"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___s_d_i_o___flags_1gaf829b01d8c3e9a1e4e04d39abdc8c355" compoundref="stm32f10x__sdio_8h" startline="455">IS_SDIO_CLEAR_IT</references>
+        <references refid="group___peripheral__declaration_1ga8149aa2760fffac16bc75216d5fd9331" compoundref="stm32f10x_8h" startline="1428">SDIO</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

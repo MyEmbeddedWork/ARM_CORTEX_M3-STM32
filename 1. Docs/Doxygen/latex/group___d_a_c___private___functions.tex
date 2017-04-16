@@ -1,0 +1,379 @@
+\hypertarget{group___d_a_c___private___functions}{}\section{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}
+\label{group___d_a_c___private___functions}\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+Collaboration diagram for D\+A\+C\+\_\+\+Private\+\_\+\+Functions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{group___d_a_c___private___functions}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___d_a_c___private___functions_ga1fae225204e1e049d6795319e99ba8bc}{D\+A\+C\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the D\+AC peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_ga7c59850468ed4bf0659663fe495441da}{D\+A\+C\+\_\+\+Init} (uint32\+\_\+t D\+A\+C\+\_\+\+Channel, \hyperlink{struct_d_a_c___init_type_def}{D\+A\+C\+\_\+\+Init\+Type\+Def} $\ast$D\+A\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the D\+AC peripheral according to the specified parameters in the D\+A\+C\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_gadfc270974d54cb5fa5f92556015c4046}{D\+A\+C\+\_\+\+Struct\+Init} (\hyperlink{struct_d_a_c___init_type_def}{D\+A\+C\+\_\+\+Init\+Type\+Def} $\ast$D\+A\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each D\+A\+C\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_ga323e61530d7fa9396c3bce9edb61f733}{D\+A\+C\+\_\+\+Cmd} (uint32\+\_\+t D\+A\+C\+\_\+\+Channel, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified D\+AC channel. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_ga194cba38f60ace11658824f0250121f4}{D\+A\+C\+\_\+\+D\+M\+A\+Cmd} (uint32\+\_\+t D\+A\+C\+\_\+\+Channel, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified D\+AC channel D\+MA request. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_ga46f9f7f6b9520a86e300fe966afe5fb3}{D\+A\+C\+\_\+\+Software\+Trigger\+Cmd} (uint32\+\_\+t D\+A\+C\+\_\+\+Channel, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected D\+AC channel software trigger. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_gab4d3b364a6b184dcd65f3b294ebf56dc}{D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables simultaneously the two D\+AC channels software triggers. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_gabd51ae6880821d4dcd923969ec19a19e}{D\+A\+C\+\_\+\+Wave\+Generation\+Cmd} (uint32\+\_\+t D\+A\+C\+\_\+\+Channel, uint32\+\_\+t D\+A\+C\+\_\+\+Wave, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected D\+AC channel wave generation. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_gad06b4230d2b17d1d13f41dce4c782461}{D\+A\+C\+\_\+\+Set\+Channel1\+Data} (uint32\+\_\+t D\+A\+C\+\_\+\+Align, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for D\+AC channel1. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_ga44e12006ec186791378d132da8541552}{D\+A\+C\+\_\+\+Set\+Channel2\+Data} (uint32\+\_\+t D\+A\+C\+\_\+\+Align, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for D\+AC channel2. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c___private___functions_ga4ca2cfdf56ab35a23f2517f23d7fbb24}{D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data} (uint32\+\_\+t D\+A\+C\+\_\+\+Align, uint16\+\_\+t Data2, uint16\+\_\+t Data1)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for dual channel D\+AC. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___d_a_c___private___functions_ga51274838de1e5dd012a82d7f44d7a50b}{D\+A\+C\+\_\+\+Get\+Data\+Output\+Value} (uint32\+\_\+t D\+A\+C\+\_\+\+Channel)
+\begin{DoxyCompactList}\small\item\em Returns the last data output value of the selected D\+AC channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga323e61530d7fa9396c3bce9edb61f733}\label{group___d_a_c___private___functions_ga323e61530d7fa9396c3bce9edb61f733}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Cmd@{D\+A\+C\+\_\+\+Cmd}}
+\index{D\+A\+C\+\_\+\+Cmd@{D\+A\+C\+\_\+\+Cmd}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Cmd()}{DAC\_Cmd()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Channel,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified D\+AC channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Channel} & the selected D\+AC channel. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Channel\+\_\+1\+: D\+AC Channel1 selected \item D\+A\+C\+\_\+\+Channel\+\_\+2\+: D\+AC Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the D\+AC channel. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 173 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga1fae225204e1e049d6795319e99ba8bc}\label{group___d_a_c___private___functions_ga1fae225204e1e049d6795319e99ba8bc}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+De\+Init@{D\+A\+C\+\_\+\+De\+Init}}
+\index{D\+A\+C\+\_\+\+De\+Init@{D\+A\+C\+\_\+\+De\+Init}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+De\+Init()}{DAC\_DeInit()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the D\+AC peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 98 of file stm32f10x\+\_\+dac.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{group___d_a_c___private___functions_ga1fae225204e1e049d6795319e99ba8bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga194cba38f60ace11658824f0250121f4}\label{group___d_a_c___private___functions_ga194cba38f60ace11658824f0250121f4}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+D\+M\+A\+Cmd@{D\+A\+C\+\_\+\+D\+M\+A\+Cmd}}
+\index{D\+A\+C\+\_\+\+D\+M\+A\+Cmd@{D\+A\+C\+\_\+\+D\+M\+A\+Cmd}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+D\+M\+A\+Cmd()}{DAC\_DMACmd()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+D\+M\+A\+Cmd (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Channel,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified D\+AC channel D\+MA request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Channel} & the selected D\+AC channel. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Channel\+\_\+1\+: D\+AC Channel1 selected \item D\+A\+C\+\_\+\+Channel\+\_\+2\+: D\+AC Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the selected D\+AC channel D\+MA request. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 233 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_gab4d3b364a6b184dcd65f3b294ebf56dc}\label{group___d_a_c___private___functions_gab4d3b364a6b184dcd65f3b294ebf56dc}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd@{D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd}}
+\index{D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd@{D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd()}{DAC\_DualSoftwareTriggerCmd()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Dual\+Software\+Trigger\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables simultaneously the two D\+AC channels software triggers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the D\+AC channels software triggers. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 284 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga51274838de1e5dd012a82d7f44d7a50b}\label{group___d_a_c___private___functions_ga51274838de1e5dd012a82d7f44d7a50b}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Get\+Data\+Output\+Value@{D\+A\+C\+\_\+\+Get\+Data\+Output\+Value}}
+\index{D\+A\+C\+\_\+\+Get\+Data\+Output\+Value@{D\+A\+C\+\_\+\+Get\+Data\+Output\+Value}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Get\+Data\+Output\+Value()}{DAC\_GetDataOutputValue()}}
+{\footnotesize\ttfamily uint16\+\_\+t D\+A\+C\+\_\+\+Get\+Data\+Output\+Value (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Channel }\end{DoxyParamCaption})}
+
+
+
+Returns the last data output value of the selected D\+AC channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Channel} & the selected D\+AC channel. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Channel\+\_\+1\+: D\+AC Channel1 selected \item D\+A\+C\+\_\+\+Channel\+\_\+2\+: D\+AC Channel2 selected \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & selected D\+AC channel data output value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 430 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga7c59850468ed4bf0659663fe495441da}\label{group___d_a_c___private___functions_ga7c59850468ed4bf0659663fe495441da}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Init@{D\+A\+C\+\_\+\+Init}}
+\index{D\+A\+C\+\_\+\+Init@{D\+A\+C\+\_\+\+Init}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Init()}{DAC\_Init()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Channel,  }\item[{\hyperlink{struct_d_a_c___init_type_def}{D\+A\+C\+\_\+\+Init\+Type\+Def} $\ast$}]{D\+A\+C\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the D\+AC peripheral according to the specified parameters in the D\+A\+C\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Channel} & the selected D\+AC channel. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Channel\+\_\+1\+: D\+AC Channel1 selected \item D\+A\+C\+\_\+\+Channel\+\_\+2\+: D\+AC Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\+A\+C\+\_\+\+Init\+Struct} & pointer to a \hyperlink{struct_d_a_c___init_type_def}{D\+A\+C\+\_\+\+Init\+Type\+Def} structure that contains the configuration information for the specified D\+AC channel. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 117 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_gad06b4230d2b17d1d13f41dce4c782461}\label{group___d_a_c___private___functions_gad06b4230d2b17d1d13f41dce4c782461}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Set\+Channel1\+Data@{D\+A\+C\+\_\+\+Set\+Channel1\+Data}}
+\index{D\+A\+C\+\_\+\+Set\+Channel1\+Data@{D\+A\+C\+\_\+\+Set\+Channel1\+Data}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Set\+Channel1\+Data()}{DAC\_SetChannel1Data()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Set\+Channel1\+Data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Align,  }\item[{uint16\+\_\+t}]{Data }\end{DoxyParamCaption})}
+
+
+
+Set the specified data holding register value for D\+AC channel1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Align} & Specifies the data alignment for D\+AC channel1. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Align\+\_\+8b\+\_\+R\+: 8bit right data alignment selected \item D\+A\+C\+\_\+\+Align\+\_\+12b\+\_\+L\+: 12bit left data alignment selected \item D\+A\+C\+\_\+\+Align\+\_\+12b\+\_\+R\+: 12bit right data alignment selected \end{DoxyItemize}
+\\
+\hline
+{\em Data} & \+: Data to be loaded in the selected data holding register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 342 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga44e12006ec186791378d132da8541552}\label{group___d_a_c___private___functions_ga44e12006ec186791378d132da8541552}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Set\+Channel2\+Data@{D\+A\+C\+\_\+\+Set\+Channel2\+Data}}
+\index{D\+A\+C\+\_\+\+Set\+Channel2\+Data@{D\+A\+C\+\_\+\+Set\+Channel2\+Data}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Set\+Channel2\+Data()}{DAC\_SetChannel2Data()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Set\+Channel2\+Data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Align,  }\item[{uint16\+\_\+t}]{Data }\end{DoxyParamCaption})}
+
+
+
+Set the specified data holding register value for D\+AC channel2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Align} & Specifies the data alignment for D\+AC channel2. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Align\+\_\+8b\+\_\+R\+: 8bit right data alignment selected \item D\+A\+C\+\_\+\+Align\+\_\+12b\+\_\+L\+: 12bit left data alignment selected \item D\+A\+C\+\_\+\+Align\+\_\+12b\+\_\+R\+: 12bit right data alignment selected \end{DoxyItemize}
+\\
+\hline
+{\em Data} & \+: Data to be loaded in the selected data holding register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 367 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga4ca2cfdf56ab35a23f2517f23d7fbb24}\label{group___d_a_c___private___functions_ga4ca2cfdf56ab35a23f2517f23d7fbb24}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data@{D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data}}
+\index{D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data@{D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data()}{DAC\_SetDualChannelData()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Set\+Dual\+Channel\+Data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Align,  }\item[{uint16\+\_\+t}]{Data2,  }\item[{uint16\+\_\+t}]{Data1 }\end{DoxyParamCaption})}
+
+
+
+Set the specified data holding register value for dual channel D\+AC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Align} & Specifies the data alignment for dual channel D\+AC. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Align\+\_\+8b\+\_\+R\+: 8bit right data alignment selected \item D\+A\+C\+\_\+\+Align\+\_\+12b\+\_\+L\+: 12bit left data alignment selected \item D\+A\+C\+\_\+\+Align\+\_\+12b\+\_\+R\+: 12bit right data alignment selected \end{DoxyItemize}
+\\
+\hline
+{\em Data2} & Data for D\+AC Channel2 to be loaded in the selected data holding register. \\
+\hline
+{\em Data1} & Data for D\+AC Channel1 to be loaded in the selected data holding register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 396 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_ga46f9f7f6b9520a86e300fe966afe5fb3}\label{group___d_a_c___private___functions_ga46f9f7f6b9520a86e300fe966afe5fb3}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Software\+Trigger\+Cmd@{D\+A\+C\+\_\+\+Software\+Trigger\+Cmd}}
+\index{D\+A\+C\+\_\+\+Software\+Trigger\+Cmd@{D\+A\+C\+\_\+\+Software\+Trigger\+Cmd}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Software\+Trigger\+Cmd()}{DAC\_SoftwareTriggerCmd()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Software\+Trigger\+Cmd (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Channel,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the selected D\+AC channel software trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Channel} & the selected D\+AC channel. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Channel\+\_\+1\+: D\+AC Channel1 selected \item D\+A\+C\+\_\+\+Channel\+\_\+2\+: D\+AC Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the selected D\+AC channel software trigger. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 260 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_gadfc270974d54cb5fa5f92556015c4046}\label{group___d_a_c___private___functions_gadfc270974d54cb5fa5f92556015c4046}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Struct\+Init@{D\+A\+C\+\_\+\+Struct\+Init}}
+\index{D\+A\+C\+\_\+\+Struct\+Init@{D\+A\+C\+\_\+\+Struct\+Init}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Struct\+Init()}{DAC\_StructInit()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_d_a_c___init_type_def}{D\+A\+C\+\_\+\+Init\+Type\+Def} $\ast$}]{D\+A\+C\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each D\+A\+C\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Init\+Struct} & \+: pointer to a \hyperlink{struct_d_a_c___init_type_def}{D\+A\+C\+\_\+\+Init\+Type\+Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 150 of file stm32f10x\+\_\+dac.\+c.
+
+\mbox{\Hypertarget{group___d_a_c___private___functions_gabd51ae6880821d4dcd923969ec19a19e}\label{group___d_a_c___private___functions_gabd51ae6880821d4dcd923969ec19a19e}} 
+\index{D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}!D\+A\+C\+\_\+\+Wave\+Generation\+Cmd@{D\+A\+C\+\_\+\+Wave\+Generation\+Cmd}}
+\index{D\+A\+C\+\_\+\+Wave\+Generation\+Cmd@{D\+A\+C\+\_\+\+Wave\+Generation\+Cmd}!D\+A\+C\+\_\+\+Private\+\_\+\+Functions@{D\+A\+C\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{D\+A\+C\+\_\+\+Wave\+Generation\+Cmd()}{DAC\_WaveGenerationCmd()}}
+{\footnotesize\ttfamily void D\+A\+C\+\_\+\+Wave\+Generation\+Cmd (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Channel,  }\item[{uint32\+\_\+t}]{D\+A\+C\+\_\+\+Wave,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the selected D\+AC channel wave generation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+A\+C\+\_\+\+Channel} & the selected D\+AC channel. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Channel\+\_\+1\+: D\+AC Channel1 selected \item D\+A\+C\+\_\+\+Channel\+\_\+2\+: D\+AC Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\+A\+C\+\_\+\+Wave} & Specifies the wave type to enable or disable. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item D\+A\+C\+\_\+\+Wave\+\_\+\+Noise\+: noise wave generation \item D\+A\+C\+\_\+\+Wave\+\_\+\+Triangle\+: triangle wave generation \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the selected D\+AC channel wave generation. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 314 of file stm32f10x\+\_\+dac.\+c.
+

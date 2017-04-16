@@ -1,0 +1,97 @@
+.TH "PWR_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_OFFSET\fP   (\fBPWR_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCR_OFFSET\fP   (\fBPWR_OFFSET\fP + 0x00)"
+.br
+.ti -1c
+.RI "#define \fBDBP_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCR_DBP_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBDBP_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBPVDE_BitNumber\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBCR_PVDE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBPVDE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSR_OFFSET\fP   (\fBPWR_OFFSET\fP + 0x04)"
+.br
+.ti -1c
+.RI "#define \fBEWUP_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCSR_EWUP_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBEWUP_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCR_DS_MASK\fP   ((uint32_t)0xFFFFFFFC)"
+.br
+.ti -1c
+.RI "#define \fBCR_PLS_MASK\fP   ((uint32_t)0xFFFFFF1F)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CR_DBP_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBDBP_BitNumber\fP * 4))"
+
+.PP
+Definition at line 55 of file stm32f10x_pwr\&.c\&.
+.SS "#define CR_DS_MASK   ((uint32_t)0xFFFFFFFC)"
+
+.PP
+Definition at line 71 of file stm32f10x_pwr\&.c\&.
+.SS "#define CR_OFFSET   (\fBPWR_OFFSET\fP + 0x00)"
+
+.PP
+Definition at line 53 of file stm32f10x_pwr\&.c\&.
+.SS "#define CR_PLS_MASK   ((uint32_t)0xFFFFFF1F)"
+
+.PP
+Definition at line 72 of file stm32f10x_pwr\&.c\&.
+.SS "#define CR_PVDE_BB   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBPVDE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 59 of file stm32f10x_pwr\&.c\&.
+.SS "#define CSR_EWUP_BB   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBEWUP_BitNumber\fP * 4))"
+
+.PP
+Definition at line 66 of file stm32f10x_pwr\&.c\&.
+.SS "#define CSR_OFFSET   (\fBPWR_OFFSET\fP + 0x04)"
+
+.PP
+Definition at line 64 of file stm32f10x_pwr\&.c\&.
+.SS "#define DBP_BitNumber   0x08"
+
+.PP
+Definition at line 54 of file stm32f10x_pwr\&.c\&.
+.SS "#define EWUP_BitNumber   0x08"
+
+.PP
+Definition at line 65 of file stm32f10x_pwr\&.c\&.
+.SS "#define PVDE_BitNumber   0x04"
+
+.PP
+Definition at line 58 of file stm32f10x_pwr\&.c\&.
+.SS "#define PWR_OFFSET   (\fBPWR_BASE\fP \- \fBPERIPH_BASE\fP)"
+
+.PP
+Definition at line 48 of file stm32f10x_pwr\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

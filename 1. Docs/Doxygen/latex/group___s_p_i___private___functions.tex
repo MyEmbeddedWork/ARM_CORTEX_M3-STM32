@@ -1,0 +1,736 @@
+\hypertarget{group___s_p_i___private___functions}{}\section{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}
+\label{group___s_p_i___private___functions}\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+Collaboration diagram for S\+P\+I\+\_\+\+Private\+\_\+\+Functions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group___s_p_i___private___functions}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_p_i___private___functions_gabe36880945fa56785283a9c0092124cc}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Deinitializes the S\+P\+Ix peripheral registers to their default reset values (Affects also the I2\+Ss). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga8dacc1dc48bf08c0f12da409f4889037}{S\+P\+I\+\_\+\+Init} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} $\ast$S\+P\+I\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+P\+Ix peripheral according to the specified parameters in the S\+P\+I\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga53661884ae4a9640df7cbc59187782f7}{I2\+S\+\_\+\+Init} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+P\+Ix peripheral according to the specified parameters in the I2\+S\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga9a0116f88cc2c4478c270f05608703f1}{S\+P\+I\+\_\+\+Struct\+Init} (\hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} $\ast$S\+P\+I\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+P\+I\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga7470ec1d0759fdeeb42c7fe71a3b41b7}{I2\+S\+\_\+\+Struct\+Init} (\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each I2\+S\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gaa31357879a65ee1ed7223f3b9114dcf3}{S\+P\+I\+\_\+\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\+PI peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gafe061c71bbc5b4224f3f2884dc53739e}{I2\+S\+\_\+\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\+PI peripheral (in I2S mode). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga17f4ef132e8ddbf94cb6b1688d181e41}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\+P\+I/\+I2S interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gabed5b91a8576e6d578f364cc0e807e4a}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Req, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+P\+Ix/\+I2\+Sx D\+MA interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gad5af40bebe8dbe3fa8bd476489d7e3da}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Transmits a Data through the S\+P\+Ix/\+I2\+Sx peripheral. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___s_p_i___private___functions_gab77de76547f3bff403236b263b070a30}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the S\+P\+Ix/\+I2\+Sx peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga56fc508a482f032f9eb80e4c63184126}{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Soft)
+\begin{DoxyCompactList}\small\item\em Configures internally by software the N\+SS pin for the selected S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga4ec54abdedf6cd17403d853a926d91c1}{S\+P\+I\+\_\+\+S\+S\+Output\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SS output for the selected S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gafc82e90841d7879535d655c035709cb1}{S\+P\+I\+\_\+\+Data\+Size\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gace8b1058e09bab150b0dbe5978810273}{S\+P\+I\+\_\+\+Transmit\+C\+RC} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Transmit the S\+P\+Ix C\+RC value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga64f7276d119e6cb58afc100f8832adb0}{S\+P\+I\+\_\+\+Calculate\+C\+RC} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\+RC value calculation of the transferred bytes. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___s_p_i___private___functions_ga4c81c193516e82cf0a2fdc149ef20cc6}{S\+P\+I\+\_\+\+Get\+C\+RC} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+C\+RC)
+\begin{DoxyCompactList}\small\item\em Returns the transmit or the receive C\+RC register value for the specified S\+PI. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___s_p_i___private___functions_ga80fb9374cfce670f29128bb78568353f}{S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Returns the C\+RC Polynomial register value for the specified S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga166171c421fc51da7714723524d41b45}{S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+Direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bi-\/directional mode for the specified S\+PI. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+P\+I/\+I2S flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga3aabd9e2437e213056c0ed9bdfa1a724}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the S\+P\+Ix C\+RC Error (C\+R\+C\+E\+RR) flag. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+P\+I/\+I2S interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga35a524a49ff3d058137060f751e8749f}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the S\+P\+Ix C\+RC Error (C\+R\+C\+E\+RR) interrupt pending bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___s_p_i___private___functions_gafe061c71bbc5b4224f3f2884dc53739e}\label{group___s_p_i___private___functions_gafe061c71bbc5b4224f3f2884dc53739e}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!I2\+S\+\_\+\+Cmd@{I2\+S\+\_\+\+Cmd}}
+\index{I2\+S\+\_\+\+Cmd@{I2\+S\+\_\+\+Cmd}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{I2\+S\+\_\+\+Cmd()}{I2S\_Cmd()}}
+{\footnotesize\ttfamily void I2\+S\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified S\+PI peripheral (in I2S mode). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em New\+State} & new state of the S\+P\+Ix peripheral. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 460 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga53661884ae4a9640df7cbc59187782f7}\label{group___s_p_i___private___functions_ga53661884ae4a9640df7cbc59187782f7}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!I2\+S\+\_\+\+Init@{I2\+S\+\_\+\+Init}}
+\index{I2\+S\+\_\+\+Init@{I2\+S\+\_\+\+Init}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{I2\+S\+\_\+\+Init()}{I2S\_Init()}}
+{\footnotesize\ttfamily void I2\+S\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} $\ast$}]{I2\+S\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+P\+Ix peripheral according to the specified parameters in the I2\+S\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 2 or 3 to select the S\+PI peripheral (configured in I2S mode). \\
+\hline
+{\em I2\+S\+\_\+\+Init\+Struct} & pointer to an \hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} structure that contains the configuration information for the specified S\+PI peripheral configured in I2S mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The function calculates the optimal prescaler needed to obtain the most accurate audio frequency (depending on the I2S clock source, the P\+LL values and the product configuration). But in case the prescaler value is greater than 511, the default value (0x02) will be configured instead. $\ast$ 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 219 of file stm32f10x\+\_\+spi.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{group___s_p_i___private___functions_ga53661884ae4a9640df7cbc59187782f7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga7470ec1d0759fdeeb42c7fe71a3b41b7}\label{group___s_p_i___private___functions_ga7470ec1d0759fdeeb42c7fe71a3b41b7}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!I2\+S\+\_\+\+Struct\+Init@{I2\+S\+\_\+\+Struct\+Init}}
+\index{I2\+S\+\_\+\+Struct\+Init@{I2\+S\+\_\+\+Struct\+Init}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{I2\+S\+\_\+\+Struct\+Init()}{I2S\_StructInit()}}
+{\footnotesize\ttfamily void I2\+S\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} $\ast$}]{I2\+S\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each I2\+S\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\+S\+\_\+\+Init\+Struct} & \+: pointer to a \hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 407 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga166171c421fc51da7714723524d41b45}\label{group___s_p_i___private___functions_ga166171c421fc51da7714723524d41b45}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config@{S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config}}
+\index{S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config@{S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config()}{SPI\_BiDirectionalLineConfig()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{S\+P\+I\+\_\+\+Direction }\end{DoxyParamCaption})}
+
+
+
+Selects the data transfer direction in bi-\/directional mode for the specified S\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em S\+P\+I\+\_\+\+Direction} & specifies the data transfer direction in bi-\/directional mode. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+Direction\+\_\+\+Tx\+: Selects Tx transmission direction \item S\+P\+I\+\_\+\+Direction\+\_\+\+Rx\+: Selects Rx receive direction \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 752 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga64f7276d119e6cb58afc100f8832adb0}\label{group___s_p_i___private___functions_ga64f7276d119e6cb58afc100f8832adb0}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Calculate\+C\+RC@{S\+P\+I\+\_\+\+Calculate\+C\+RC}}
+\index{S\+P\+I\+\_\+\+Calculate\+C\+RC@{S\+P\+I\+\_\+\+Calculate\+C\+RC}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Calculate\+C\+R\+C()}{SPI\_CalculateCRC()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Calculate\+C\+RC (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the C\+RC value calculation of the transferred bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em New\+State} & new state of the S\+P\+Ix C\+RC value calculation. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 683 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_gaa31357879a65ee1ed7223f3b9114dcf3}\label{group___s_p_i___private___functions_gaa31357879a65ee1ed7223f3b9114dcf3}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Cmd@{S\+P\+I\+\_\+\+Cmd}}
+\index{S\+P\+I\+\_\+\+Cmd@{S\+P\+I\+\_\+\+Cmd}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Cmd()}{SPI\_Cmd()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified S\+PI peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em New\+State} & new state of the S\+P\+Ix peripheral. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 436 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_gafc82e90841d7879535d655c035709cb1}\label{group___s_p_i___private___functions_gafc82e90841d7879535d655c035709cb1}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Data\+Size\+Config@{S\+P\+I\+\_\+\+Data\+Size\+Config}}
+\index{S\+P\+I\+\_\+\+Data\+Size\+Config@{S\+P\+I\+\_\+\+Data\+Size\+Config}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Data\+Size\+Config()}{SPI\_DataSizeConfig()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Data\+Size\+Config (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{S\+P\+I\+\_\+\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+Configures the data size for the selected S\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em S\+P\+I\+\_\+\+Data\+Size} & specifies the S\+PI data size. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+Data\+Size\+\_\+16b\+: Set data frame format to 16bit \item S\+P\+I\+\_\+\+Data\+Size\+\_\+8b\+: Set data frame format to 8bit \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 651 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga4c81c193516e82cf0a2fdc149ef20cc6}\label{group___s_p_i___private___functions_ga4c81c193516e82cf0a2fdc149ef20cc6}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Get\+C\+RC@{S\+P\+I\+\_\+\+Get\+C\+RC}}
+\index{S\+P\+I\+\_\+\+Get\+C\+RC@{S\+P\+I\+\_\+\+Get\+C\+RC}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Get\+C\+R\+C()}{SPI\_GetCRC()}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Get\+C\+RC (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint8\+\_\+t}]{S\+P\+I\+\_\+\+C\+RC }\end{DoxyParamCaption})}
+
+
+
+Returns the transmit or the receive C\+RC register value for the specified S\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em S\+P\+I\+\_\+\+C\+RC} & specifies the C\+RC register to be read. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+Tx\+: Selects Tx C\+RC register \item S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+Rx\+: Selects Rx C\+RC register \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & selected C\+RC register value.. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 709 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga80fb9374cfce670f29128bb78568353f}\label{group___s_p_i___private___functions_ga80fb9374cfce670f29128bb78568353f}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial@{S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial}}
+\index{S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial@{S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial()}{SPI\_GetCRCPolynomial()}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix }\end{DoxyParamCaption})}
+
+
+
+Returns the C\+RC Polynomial register value for the specified S\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & C\+RC Polynomial register value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 734 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga3aabd9e2437e213056c0ed9bdfa1a724}\label{group___s_p_i___private___functions_ga3aabd9e2437e213056c0ed9bdfa1a724}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag()}{SPI\_I2S\_ClearFlag()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG }\end{DoxyParamCaption})}
+
+
+
+Clears the S\+P\+Ix C\+RC Error (C\+R\+C\+E\+RR) flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode 
+\end{DoxyItemize}\\
+\hline
+{\em S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG} & specifies the S\+PI flag to clear. This function clears only C\+R\+C\+E\+RR flag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O\+VR (Over\+Run error) flag is cleared by software sequence\+: a read operation to S\+P\+I\+\_\+\+DR register (\hyperlink{group___s_p_i___private___functions_gab77de76547f3bff403236b263b070a30}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data()}) followed by a read operation to S\+P\+I\+\_\+\+SR register (\hyperlink{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status()}).
+\item U\+DR (Under\+Run error) flag is cleared by a read operation to S\+P\+I\+\_\+\+SR register (\hyperlink{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status()}).
+\item M\+O\+DF (Mode Fault) flag is cleared by software sequence\+: a read/write operation to S\+P\+I\+\_\+\+SR register (\hyperlink{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status()}) followed by a write operation to S\+P\+I\+\_\+\+C\+R1 register (\hyperlink{group___s_p_i___private___functions_gaa31357879a65ee1ed7223f3b9114dcf3}{S\+P\+I\+\_\+\+Cmd()} to enable the S\+PI). 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 824 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga35a524a49ff3d058137060f751e8749f}\label{group___s_p_i___private___functions_ga35a524a49ff3d058137060f751e8749f}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit()}{SPI\_I2S\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint8\+\_\+t}]{S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT }\end{DoxyParamCaption})}
+
+
+
+Clears the S\+P\+Ix C\+RC Error (C\+R\+C\+E\+RR) interrupt pending bit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode 
+\end{DoxyItemize}\\
+\hline
+{\em S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT} & specifies the S\+PI interrupt pending bit to clear. This function clears only C\+R\+C\+E\+RR interrupt pending bit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item O\+VR (Over\+Run Error) interrupt pending bit is cleared by software sequence\+: a read operation to S\+P\+I\+\_\+\+DR register (\hyperlink{group___s_p_i___private___functions_gab77de76547f3bff403236b263b070a30}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data()}) followed by a read operation to S\+P\+I\+\_\+\+SR register (\hyperlink{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status()}).
+\item U\+DR (Under\+Run Error) interrupt pending bit is cleared by a read operation to S\+P\+I\+\_\+\+SR register (\hyperlink{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status()}).
+\item M\+O\+DF (Mode Fault) interrupt pending bit is cleared by software sequence\+: a read/write operation to S\+P\+I\+\_\+\+SR register (\hyperlink{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status()}) followed by a write operation to S\+P\+I\+\_\+\+C\+R1 register (\hyperlink{group___s_p_i___private___functions_gaa31357879a65ee1ed7223f3b9114dcf3}{S\+P\+I\+\_\+\+Cmd()} to enable the S\+PI). 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 914 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_gabe36880945fa56785283a9c0092124cc}\label{group___s_p_i___private___functions_gabe36880945fa56785283a9c0092124cc}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init()}{SPI\_I2S\_DeInit()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the S\+P\+Ix peripheral registers to their default reset values (Affects also the I2\+Ss). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 119 of file stm32f10x\+\_\+spi.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{group___s_p_i___private___functions_gabe36880945fa56785283a9c0092124cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___s_p_i___private___functions_gabed5b91a8576e6d578f364cc0e807e4a}\label{group___s_p_i___private___functions_gabed5b91a8576e6d578f364cc0e807e4a}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd()}{SPI\_I2S\_DMACmd()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Req,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the S\+P\+Ix/\+I2\+Sx D\+MA interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode
+\item 2 or 3 in I2S mode 
+\end{DoxyItemize}\\
+\hline
+{\em S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Req} & specifies the S\+P\+I/\+I2S D\+MA transfer request to be enabled or disabled. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Req\+\_\+\+Tx\+: Tx buffer D\+MA transfer request \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Req\+\_\+\+Rx\+: Rx buffer D\+MA transfer request \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the selected S\+P\+I/\+I2S D\+MA transfer request. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 541 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}\label{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status()}{SPI\_I2S\_GetFlagStatus()}}
+{\footnotesize\ttfamily \hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified S\+P\+I/\+I2S flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode
+\item 2 or 3 in I2S mode 
+\end{DoxyItemize}\\
+\hline
+{\em S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG} & specifies the S\+P\+I/\+I2S flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+A\+G\+\_\+\+T\+XE\+: Transmit buffer empty flag. \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+NE\+: Receive buffer not empty flag. \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+A\+G\+\_\+\+B\+SY\+: Busy flag. \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+A\+G\+\_\+\+O\+VR\+: Overrun flag. \item S\+P\+I\+\_\+\+F\+L\+A\+G\+\_\+\+M\+O\+DF\+: Mode Fault flag. \item S\+P\+I\+\_\+\+F\+L\+A\+G\+\_\+\+C\+R\+C\+E\+RR\+: C\+RC Error flag. \item I2\+S\+\_\+\+F\+L\+A\+G\+\_\+\+U\+DR\+: Underrun Error flag. \item I2\+S\+\_\+\+F\+L\+A\+G\+\_\+\+C\+H\+S\+I\+DE\+: Channel Side flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 786 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}\label{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status()}{SPI\_I2S\_GetITStatus()}}
+{\footnotesize\ttfamily \hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint8\+\_\+t}]{S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified S\+P\+I/\+I2S interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode
+\item 2 or 3 in I2S mode 
+\end{DoxyItemize}\\
+\hline
+{\em S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT} & specifies the S\+P\+I/\+I2S interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+\_\+\+T\+XE\+: Transmit buffer empty interrupt. \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+\_\+\+R\+X\+NE\+: Receive buffer not empty interrupt. \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+\_\+\+O\+VR\+: Overrun interrupt. \item S\+P\+I\+\_\+\+I\+T\+\_\+\+M\+O\+DF\+: Mode Fault interrupt. \item S\+P\+I\+\_\+\+I\+T\+\_\+\+C\+R\+C\+E\+RR\+: C\+RC Error interrupt. \item I2\+S\+\_\+\+I\+T\+\_\+\+U\+DR\+: Underrun Error interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 849 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga17f4ef132e8ddbf94cb6b1688d181e41}\label{group___s_p_i___private___functions_ga17f4ef132e8ddbf94cb6b1688d181e41}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config()}{SPI\_I2S\_ITConfig()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint8\+\_\+t}]{S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the specified S\+P\+I/\+I2S interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode
+\item 2 or 3 in I2S mode 
+\end{DoxyItemize}\\
+\hline
+{\em S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT} & specifies the S\+P\+I/\+I2S interrupt source to be enabled or disabled. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+\_\+\+T\+XE\+: Tx buffer empty interrupt mask \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+\_\+\+R\+X\+NE\+: Rx buffer not empty interrupt mask \item S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+\_\+\+E\+RR\+: Error interrupt mask \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the specified S\+P\+I/\+I2S interrupt. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 491 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_gab77de76547f3bff403236b263b070a30}\label{group___s_p_i___private___functions_gab77de76547f3bff403236b263b070a30}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data()}{SPI\_I2S\_ReceiveData()}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix }\end{DoxyParamCaption})}
+
+
+
+Returns the most recent received data by the S\+P\+Ix/\+I2\+Sx peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode
+\item 2 or 3 in I2S mode 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & value of the received data. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 583 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_gad5af40bebe8dbe3fa8bd476489d7e3da}\label{group___s_p_i___private___functions_gad5af40bebe8dbe3fa8bd476489d7e3da}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data}}
+\index{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data@{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data()}{SPI\_I2S\_SendData()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{Data }\end{DoxyParamCaption})}
+
+
+
+Transmits a Data through the S\+P\+Ix/\+I2\+Sx peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be
+\begin{DoxyItemize}
+\item 1, 2 or 3 in S\+PI mode
+\item 2 or 3 in I2S mode 
+\end{DoxyItemize}\\
+\hline
+{\em Data} & \+: Data to be transmitted. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 567 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga8dacc1dc48bf08c0f12da409f4889037}\label{group___s_p_i___private___functions_ga8dacc1dc48bf08c0f12da409f4889037}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Init@{S\+P\+I\+\_\+\+Init}}
+\index{S\+P\+I\+\_\+\+Init@{S\+P\+I\+\_\+\+Init}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Init()}{SPI\_Init()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{\hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} $\ast$}]{S\+P\+I\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+P\+Ix peripheral according to the specified parameters in the S\+P\+I\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em S\+P\+I\+\_\+\+Init\+Struct} & pointer to a \hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} structure that contains the configuration information for the specified S\+PI peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 158 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga56fc508a482f032f9eb80e4c63184126}\label{group___s_p_i___private___functions_ga56fc508a482f032f9eb80e4c63184126}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config@{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config}}
+\index{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config@{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config()}{SPI\_NSSInternalSoftwareConfig()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{uint16\+\_\+t}]{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Soft }\end{DoxyParamCaption})}
+
+
+
+Configures internally by software the N\+SS pin for the selected S\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Soft} & specifies the S\+PI N\+SS internal state. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Soft\+\_\+\+Set\+: Set N\+SS pin internally \item S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Soft\+\_\+\+Reset\+: Reset N\+SS pin internally \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 601 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga4ec54abdedf6cd17403d853a926d91c1}\label{group___s_p_i___private___functions_ga4ec54abdedf6cd17403d853a926d91c1}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+S\+S\+Output\+Cmd@{S\+P\+I\+\_\+\+S\+S\+Output\+Cmd}}
+\index{S\+P\+I\+\_\+\+S\+S\+Output\+Cmd@{S\+P\+I\+\_\+\+S\+S\+Output\+Cmd}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+S\+S\+Output\+Cmd()}{SPI\_SSOutputCmd()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+S\+S\+Output\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SS output for the selected S\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+{\em New\+State} & new state of the S\+P\+Ix SS output. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 625 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_ga9a0116f88cc2c4478c270f05608703f1}\label{group___s_p_i___private___functions_ga9a0116f88cc2c4478c270f05608703f1}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Struct\+Init@{S\+P\+I\+\_\+\+Struct\+Init}}
+\index{S\+P\+I\+\_\+\+Struct\+Init@{S\+P\+I\+\_\+\+Struct\+Init}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Struct\+Init()}{SPI\_StructInit()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} $\ast$}]{S\+P\+I\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each S\+P\+I\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+I\+\_\+\+Init\+Struct} & \+: pointer to a \hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 379 of file stm32f10x\+\_\+spi.\+c.
+
+\mbox{\Hypertarget{group___s_p_i___private___functions_gace8b1058e09bab150b0dbe5978810273}\label{group___s_p_i___private___functions_gace8b1058e09bab150b0dbe5978810273}} 
+\index{S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}!S\+P\+I\+\_\+\+Transmit\+C\+RC@{S\+P\+I\+\_\+\+Transmit\+C\+RC}}
+\index{S\+P\+I\+\_\+\+Transmit\+C\+RC@{S\+P\+I\+\_\+\+Transmit\+C\+RC}!S\+P\+I\+\_\+\+Private\+\_\+\+Functions@{S\+P\+I\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Transmit\+C\+R\+C()}{SPI\_TransmitCRC()}}
+{\footnotesize\ttfamily void S\+P\+I\+\_\+\+Transmit\+C\+RC (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$}]{S\+P\+Ix }\end{DoxyParamCaption})}
+
+
+
+Transmit the S\+P\+Ix C\+RC value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+Ix} & where x can be 1, 2 or 3 to select the S\+PI peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 667 of file stm32f10x\+\_\+spi.\+c.
+

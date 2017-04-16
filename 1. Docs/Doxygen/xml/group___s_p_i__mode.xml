@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i__mode" kind="group">
+    <compoundname>SPI_mode</compoundname>
+    <title>SPI_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i__mode_1gaa9e47fb7c1d6c4655b72a00ed1f3b651" prot="public" static="no">
+        <name>SPI_Mode_Master</name>
+        <initializer>((uint16_t)0x0104)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="150" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__mode_1ga84621141413ee07cb2d2dc82da2baa42" prot="public" static="no">
+        <name>SPI_Mode_Slave</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="151" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__mode_1gad5135300763c75dbb446861536359f12" prot="public" static="no">
+        <name>IS_SPI_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___s_p_i__mode_1gaa9e47fb7c1d6c4655b72a00ed1f3b651" kindref="member">SPI_Mode_Master</ref>) || \
+                           ((MODE) == <ref refid="group___s_p_i__mode_1ga84621141413ee07cb2d2dc82da2baa42" kindref="member">SPI_Mode_Slave</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="152" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

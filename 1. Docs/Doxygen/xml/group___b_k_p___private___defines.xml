@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___b_k_p___private___defines" kind="group">
+    <compoundname>BKP_Private_Defines</compoundname>
+    <title>BKP_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gaaaf71f474657e7c0c5b0d6ba9697cf5d" prot="public" static="no">
+        <name>BKP_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaa15d5a9f40794105397ba5ea567c4ae1" kindref="member">BKP_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" prot="public" static="no">
+        <name>CR_OFFSET</name>
+        <initializer>(<ref refid="group___b_k_p___private___defines_1gaaaf71f474657e7c0c5b0d6ba9697cf5d" kindref="member">BKP_OFFSET</ref> + 0x30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga4af1869d665b8804104b6754c787820a" prot="public" static="no">
+        <name>TPAL_BitNumber</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gaa36e52f37b9fa6982bd224a6dcb86f78" prot="public" static="no">
+        <name>CR_TPAL_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" kindref="member">CR_OFFSET</ref> * 32) + (<ref refid="group___b_k_p___private___defines_1ga4af1869d665b8804104b6754c787820a" kindref="member">TPAL_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga8c68be900246b028ff4af93ad119eb98" prot="public" static="no">
+        <name>TPE_BitNumber</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga6c11e801c2c1aa87ec2feaefe12bbb96" prot="public" static="no">
+        <name>CR_TPE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" kindref="member">CR_OFFSET</ref> * 32) + (<ref refid="group___b_k_p___private___defines_1ga8c68be900246b028ff4af93ad119eb98" kindref="member">TPE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga984cbe73312b6d3d355c5053763d499a" prot="public" static="no">
+        <name>CSR_OFFSET</name>
+        <initializer>(<ref refid="group___b_k_p___private___defines_1gaaaf71f474657e7c0c5b0d6ba9697cf5d" kindref="member">BKP_OFFSET</ref> + 0x34)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="64" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gac62e6ae9548498efa47fb72637545117" prot="public" static="no">
+        <name>TPIE_BitNumber</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga1f6dcf729994613b21f554ca371d393c" prot="public" static="no">
+        <name>CSR_TPIE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___b_k_p___private___defines_1gac62e6ae9548498efa47fb72637545117" kindref="member">TPIE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gac8b1b82c7029c05e720c50585762bcf2" prot="public" static="no">
+        <name>TIF_BitNumber</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga8d9e7cac2321fae6d257e8c1316264e3" prot="public" static="no">
+        <name>CSR_TIF_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___b_k_p___private___defines_1gac8b1b82c7029c05e720c50585762bcf2" kindref="member">TIF_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gaeb8676e7543d93df60cf7c63fd795672" prot="public" static="no">
+        <name>TEF_BitNumber</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1gad60539cc791a26701d414aee529ea203" prot="public" static="no">
+        <name>CSR_TEF_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___b_k_p___private___defines_1gaeb8676e7543d93df60cf7c63fd795672" kindref="member">TEF_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga61a540c5dd9d18e936b8fd3e01f7f6ff" prot="public" static="no">
+        <name>RTCCR_CAL_MASK</name>
+        <initializer>((uint16_t)0xFF80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="79" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_k_p___private___defines_1ga4bda91755d5ae28e9e487e946917a1ec" prot="public" static="no">
+        <name>RTCCR_MASK</name>
+        <initializer>((uint16_t)0xFC7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" line="80" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

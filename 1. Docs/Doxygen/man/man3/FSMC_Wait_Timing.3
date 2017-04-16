@@ -1,0 +1,46 @@
+.TH "FSMC_Wait_Timing" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_Wait_Timing
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalActive_BeforeWaitState\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalActive_DuringWaitState\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAIT_SIGNAL_ACTIVE\fP(ACTIVE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FSMC_WaitSignalActive_BeforeWaitState   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 389 of file stm32f10x_fsmc\&.h\&.
+.SS "#define FSMC_WaitSignalActive_DuringWaitState   ((uint32_t)0x00000800)"
+
+.PP
+Definition at line 390 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_WAIT_SIGNAL_ACTIVE(ACTIVE)"
+\fBValue:\fP
+.PP
+.nf
+(((ACTIVE) == FSMC_WaitSignalActive_BeforeWaitState) || \
+                                            ((ACTIVE) == FSMC_WaitSignalActive_DuringWaitState))
+.fi
+.PP
+Definition at line 391 of file stm32f10x_fsmc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,105 @@
+.TH "FLASH_Flags" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BSY\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_EOP\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PGERR\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_WRPRTERR\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_OPTERR\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BANK1_BSY\fP   \fBFLASH_FLAG_BSY\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BANK1_EOP\fP   \fBFLASH_FLAG_EOP\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BANK1_PGERR\fP   \fBFLASH_FLAG_PGERR\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BANK1_WRPRTERR\fP   \fBFLASH_FLAG_WRPRTERR\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint32_t)0xFFFFFFCA) == 0x00000000) && ((FLAG) != 0x00000000))"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_GET_FLAG\fP(FLAG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_FLAG_BANK1_BSY   \fBFLASH_FLAG_BSY\fP"
+FLASH BANK1 Busy flag 
+.PP
+Definition at line 365 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_BANK1_EOP   \fBFLASH_FLAG_EOP\fP"
+FLASH BANK1 End of Operation flag 
+.PP
+Definition at line 366 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_BANK1_PGERR   \fBFLASH_FLAG_PGERR\fP"
+FLASH BANK1 Program error flag 
+.PP
+Definition at line 367 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_BANK1_WRPRTERR   \fBFLASH_FLAG_WRPRTERR\fP"
+FLASH BANK1 Write protected error flag 
+.PP
+Definition at line 368 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_BSY   ((uint32_t)0x00000001)"
+FLASH Busy flag 
+.PP
+Definition at line 359 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_EOP   ((uint32_t)0x00000020)"
+FLASH End of Operation flag 
+.PP
+Definition at line 360 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_OPTERR   ((uint32_t)0x00000001)"
+FLASH Option Byte error flag 
+.PP
+Definition at line 363 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_PGERR   ((uint32_t)0x00000004)"
+FLASH Program error flag 
+.PP
+Definition at line 361 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_FLAG_WRPRTERR   ((uint32_t)0x00000010)"
+FLASH Write protected error flag 
+.PP
+Definition at line 362 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_FLASH_CLEAR_FLAG(FLAG)   ((((FLAG) & (uint32_t)0xFFFFFFCA) == 0x00000000) && ((FLAG) != 0x00000000))"
+
+.PP
+Definition at line 370 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_FLASH_GET_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == FLASH_FLAG_BSY) || ((FLAG) == FLASH_FLAG_EOP) || \
+                                  ((FLAG) == FLASH_FLAG_PGERR) || ((FLAG) == FLASH_FLAG_WRPRTERR) || \
+                                  ((FLAG) == FLASH_FLAG_BANK1_BSY) || ((FLAG) == FLASH_FLAG_BANK1_EOP) || \
+                                  ((FLAG) == FLASH_FLAG_BANK1_PGERR) || ((FLAG) == FLASH_FLAG_BANK1_WRPRTERR) || \
+                                  ((FLAG) == FLASH_FLAG_OPTERR))
+.fi
+.PP
+Definition at line 371 of file stm32f10x_flash\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

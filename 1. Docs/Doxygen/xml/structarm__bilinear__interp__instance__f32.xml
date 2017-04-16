@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__bilinear__interp__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_bilinear_interp_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__f32_1a34f2b17cc57b95011960df9718af6ed6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_bilinear_interp_instance_f32::numRows</definition>
+        <argsstring></argsstring>
+        <name>numRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of rows in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1853" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__f32_1aede17bebfb1f835b61d71dd813eab3f8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_bilinear_interp_instance_f32::numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of columns in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1854" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__f32_1afd1e764591c991c212d56c893efb5ea4" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_bilinear_interp_instance_f32::pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1855" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1855" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point bilinear interpolation function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1852" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1851" bodyend="1856"/>
+    <listofallmembers>
+      <member refid="structarm__bilinear__interp__instance__f32_1aede17bebfb1f835b61d71dd813eab3f8" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_f32</scope><name>numCols</name></member>
+      <member refid="structarm__bilinear__interp__instance__f32_1a34f2b17cc57b95011960df9718af6ed6" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_f32</scope><name>numRows</name></member>
+      <member refid="structarm__bilinear__interp__instance__f32_1afd1e764591c991c212d56c893efb5ea4" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_f32</scope><name>pData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

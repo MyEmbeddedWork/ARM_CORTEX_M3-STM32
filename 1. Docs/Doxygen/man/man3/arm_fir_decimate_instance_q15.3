@@ -1,0 +1,54 @@
+.TH "arm_fir_decimate_instance_q15" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_fir_decimate_instance_q15 \- Instance structure for the Q15 FIR decimator\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBM\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBnumTaps\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpCoeffs\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpState\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q15 FIR decimator\&. 
+.PP
+Definition at line 3269 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t arm_fir_decimate_instance_q15::M"
+decimation factor\&. 
+.PP
+Definition at line 3271 of file arm_math\&.h\&.
+.SS "uint16_t arm_fir_decimate_instance_q15::numTaps"
+number of coefficients in the filter\&. 
+.PP
+Definition at line 3272 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_fir_decimate_instance_q15::pCoeffs"
+points to the coefficient array\&. The array is of length numTaps\&. 
+.PP
+Definition at line 3273 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_fir_decimate_instance_q15::pState"
+points to the state variable array\&. The array is of length numTaps+blockSize-1\&. 
+.PP
+Definition at line 3274 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

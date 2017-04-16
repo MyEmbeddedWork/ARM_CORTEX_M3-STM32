@@ -1,0 +1,421 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h \- This file contains all the functions prototypes for the FSMC firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBFSMC_NORSRAMTimingInitTypeDef\fP"
+.br
+.RI "Timing parameters For NOR/SRAM Banks\&. "
+.ti -1c
+.RI "struct \fBFSMC_NORSRAMInitTypeDef\fP"
+.br
+.RI "FSMC NOR/SRAM Init structure definition\&. "
+.ti -1c
+.RI "struct \fBFSMC_NAND_PCCARDTimingInitTypeDef\fP"
+.br
+.RI "Timing parameters For FSMC NAND and PCCARD Banks\&. "
+.ti -1c
+.RI "struct \fBFSMC_NANDInitTypeDef\fP"
+.br
+.RI "FSMC NAND Init structure definition\&. "
+.ti -1c
+.RI "struct \fBFSMC_PCCARDInitTypeDef\fP"
+.br
+.RI "FSMC PCCARD Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFSMC_Bank1_NORSRAM1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1_NORSRAM2\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1_NORSRAM3\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1_NORSRAM4\fP   ((uint32_t)0x00000006)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank2_NAND\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank3_NAND\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank4_PCCARD\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_NORSRAM_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_NAND_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_GETFLAG_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_IT_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_DataAddressMux_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_DataAddressMux_Enable\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_MUX\fP(MUX)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryType_SRAM\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryType_PSRAM\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryType_NOR\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_MEMORY\fP(MEMORY)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryDataWidth_8b\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_MemoryDataWidth_16b\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_MEMORY_WIDTH\fP(WIDTH)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_BurstAccessMode_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_BurstAccessMode_Enable\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_BURSTMODE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AsynchronousWait_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AsynchronousWait_Enable\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ASYNWAIT\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalPolarity_Low\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalPolarity_High\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAIT_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WrapMode_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WrapMode_Enable\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WRAP_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalActive_BeforeWaitState\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalActive_DuringWaitState\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAIT_SIGNAL_ACTIVE\fP(ACTIVE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WriteOperation_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WriteOperation_Enable\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WRITE_OPERATION\fP(OPERATION)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignal_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignal_Enable\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAITE_SIGNAL\fP(SIGNAL)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ExtendedMode_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ExtendedMode_Enable\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_EXTENDED_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WriteBurst_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WriteBurst_Enable\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WRITE_BURST\fP(BURST)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ADDRESS_SETUP_TIME\fP(TIME)   ((TIME) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ADDRESS_HOLD_TIME\fP(TIME)   ((TIME) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_DATASETUP_TIME\fP(TIME)   (((TIME) > 0) && ((TIME) <= 0xFF))"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_TURNAROUND_TIME\fP(TIME)   ((TIME) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_CLK_DIV\fP(DIV)   ((DIV) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_DATA_LATENCY\fP(LATENCY)   ((LATENCY) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AccessMode_A\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AccessMode_B\fP   ((uint32_t)0x10000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AccessMode_C\fP   ((uint32_t)0x20000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AccessMode_D\fP   ((uint32_t)0x30000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ACCESS_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Waitfeature_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Waitfeature_Enable\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAIT_FEATURE\fP(FEATURE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECC_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECC_Enable\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ECC_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECCPageSize_256Bytes\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECCPageSize_512Bytes\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECCPageSize_1024Bytes\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECCPageSize_2048Bytes\fP   ((uint32_t)0x00060000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECCPageSize_4096Bytes\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_ECCPageSize_8192Bytes\fP   ((uint32_t)0x000A0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ECCPAGE_SIZE\fP(SIZE)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_TCLR_TIME\fP(TIME)   ((TIME) <= 0xFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_TAR_TIME\fP(TIME)   ((TIME) <= 0xFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_SETUP_TIME\fP(TIME)   ((TIME) <= 0xFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAIT_TIME\fP(TIME)   ((TIME) <= 0xFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_HOLD_TIME\fP(TIME)   ((TIME) <= 0xFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_HIZ_TIME\fP(TIME)   ((TIME) <= 0xFF)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_IT_RisingEdge\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_IT_Level\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_IT_FallingEdge\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_IT\fP(IT)   ((((IT) & (uint32_t)0xFFFFFFC7) == 0x00000000) && ((IT) != 0x00000000))"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_FLAG_RisingEdge\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_FLAG_Level\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_FLAG_FallingEdge\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_FLAG_FEMPT\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint32_t)0xFFFFFFF8) == 0x00000000) && ((FLAG) != 0x00000000))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFSMC_NORSRAMDeInit\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Deinitializes the FSMC NOR/SRAM Banks registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDDeInit\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Deinitializes the FSMC NAND Banks registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDDeInit\fP (void)"
+.br
+.RI "Deinitializes the FSMC PCCARD Bank registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMInit\fP (\fBFSMC_NORSRAMInitTypeDef\fP *FSMC_NORSRAMInitStruct)"
+.br
+.RI "Initializes the FSMC NOR/SRAM Banks according to the specified parameters in the FSMC_NORSRAMInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDInit\fP (\fBFSMC_NANDInitTypeDef\fP *FSMC_NANDInitStruct)"
+.br
+.RI "Initializes the FSMC NAND Banks according to the specified parameters in the FSMC_NANDInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDInit\fP (\fBFSMC_PCCARDInitTypeDef\fP *FSMC_PCCARDInitStruct)"
+.br
+.RI "Initializes the FSMC PCCARD Bank according to the specified parameters in the FSMC_PCCARDInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMStructInit\fP (\fBFSMC_NORSRAMInitTypeDef\fP *FSMC_NORSRAMInitStruct)"
+.br
+.RI "Fills each FSMC_NORSRAMInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDStructInit\fP (\fBFSMC_NANDInitTypeDef\fP *FSMC_NANDInitStruct)"
+.br
+.RI "Fills each FSMC_NANDInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDStructInit\fP (\fBFSMC_PCCARDInitTypeDef\fP *FSMC_PCCARDInitStruct)"
+.br
+.RI "Fills each FSMC_PCCARDInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified NOR/SRAM Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified NAND Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the PCCARD Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDECCCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the FSMC NAND ECC feature\&. "
+.ti -1c
+.RI "uint32_t \fBFSMC_GetECC\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Returns the error correction code register value\&. "
+.ti -1c
+.RI "void \fBFSMC_ITConfig\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified FSMC interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFSMC_GetFlagStatus\fP (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+.br
+.RI "Checks whether the specified FSMC flag is set or not\&. "
+.ti -1c
+.RI "void \fBFSMC_ClearFlag\fP (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+.br
+.RI "Clears the FSMC's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBFSMC_GetITStatus\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+.br
+.RI "Checks whether the specified FSMC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBFSMC_ClearITPendingBit\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+.br
+.RI "Clears the FSMC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the FSMC firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_fsmc\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

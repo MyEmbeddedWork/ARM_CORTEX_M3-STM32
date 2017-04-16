@@ -1,0 +1,564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_e_c___private___functions" kind="group">
+    <compoundname>CEC_Private_Functions</compoundname>
+    <title>CEC_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga604c3b15b51a46303c201fa3deac2212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>CEC_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the CEC peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="118" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="118" bodyend="124"/>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1gaa96437b649e13586945f40dac318a0ae" compoundref="stm32f10x__rcc_8h" startline="552">RCC_APB1Periph_CEC</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gaf48aee745a16370372b3eaa7cf3ed22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_Init</definition>
+        <argsstring>(CEC_InitTypeDef *CEC_InitStruct)</argsstring>
+        <name>CEC_Init</name>
+        <param>
+          <type><ref refid="struct_c_e_c___init_type_def" kindref="compound">CEC_InitTypeDef</ref> *</type>
+          <declname>CEC_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the CEC peripheral according to the specified parameters in the CEC_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_c_e_c___init_type_def" kindref="compound">CEC_InitTypeDef</ref> structure that contains the configuration information for the specified CEC peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="135" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="135" bodyend="157"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c___bit_timing___mode_1ga55494269b2c9c55c11130a429f418a8d" compoundref="stm32f10x__cec_8h" startline="72">IS_CEC_BIT_TIMING_ERROR_MODE</references>
+        <references refid="struct_c_e_c___init_type_def_1a197bc5a8957ab0b86d4ecc1347fa9e37" compoundref="stm32f10x__cec_8h" startline="52">CEC_InitTypeDef::CEC_BitTimingMode</references>
+        <references refid="group___c_e_c___bit_period___mode_1ga3414347854a83bf70748624ec5b8dd49" compoundref="stm32f10x__cec_8h" startline="84">IS_CEC_BIT_PERIOD_ERROR_MODE</references>
+        <references refid="struct_c_e_c___init_type_def_1a3cc27a2030d87a8bea17c6b0750dda2a" compoundref="stm32f10x__cec_8h" startline="54">CEC_InitTypeDef::CEC_BitPeriodMode</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+        <references refid="group___c_e_c___private___defines_1gaaedf9b8df17534f5eaf75ec1ca3fbd7a" compoundref="stm32f10x__cec_8c" startline="73">CFGR_CLEAR_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga0c8efa79e5768930e567b3b3ed6e09e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_Cmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>CEC_Cmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified CEC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CEC peripheral. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="165" bodyend="179"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1ga9d1f044508cda5ad8213bd7bc5c4363d" compoundref="stm32f10x__cec_8c" startline="56">CFGR_PE_BB</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga57341732e9fca2df3bd9aa4ea53e14c7" compoundref="stm32f10x_8h" startline="4144">CEC_CFGR_PE</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga8be87c514505cf82eb29334f054fc0bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_ITConfig</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>CEC_ITConfig</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the CEC interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CEC interrupt. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="187" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="187" bodyend="193"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1gac7fe35cf912353ca51a56c5f1f25b2fb" compoundref="stm32f10x__cec_8c" startline="60">CFGR_IE_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gacad422ef1f50246b2021b41835b8a95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_OwnAddressConfig</definition>
+        <argsstring>(uint8_t CEC_OwnAddress)</argsstring>
+        <name>CEC_OwnAddressConfig</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>CEC_OwnAddress</declname>
+        </param>
+        <briefdescription>
+<para>Defines the Own Address of the CEC device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_OwnAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CEC own address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="200" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="200" bodyend="207"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c___own___address_1ga0659314b0be6092e73aa373394816557" compoundref="stm32f10x__cec_8h" startline="108">IS_CEC_ADDRESS</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gad2fc626e28a82008a29f062975a9af11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_SetPrescaler</definition>
+        <argsstring>(uint16_t CEC_Prescaler)</argsstring>
+        <name>CEC_SetPrescaler</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>CEC_Prescaler</declname>
+        </param>
+        <briefdescription>
+<para>Sets the CEC prescaler value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_Prescaler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CEC prescaler new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="214" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="214" bodyend="221"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c___prescaler_1ga88ad62af56298609444942b8f05b6d23" compoundref="stm32f10x__cec_8h" startline="116">IS_CEC_PRESCALER</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga6897ab26d8f909f9160e9fac54b97441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_SendDataByte</definition>
+        <argsstring>(uint8_t Data)</argsstring>
+        <name>CEC_SendDataByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Transmits single data through the CEC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="228" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="228" bodyend="232"/>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga165837bff6292e7674eff6f8b230da97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CEC_ReceiveDataByte</definition>
+        <argsstring>(void)</argsstring>
+        <name>CEC_ReceiveDataByte</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the most recent received data by the CEC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="240" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="240" bodyend="244"/>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga71e700461ffe7820d9e1c75da65fd0fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_StartOfMessage</definition>
+        <argsstring>(void)</argsstring>
+        <name>CEC_StartOfMessage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Starts a new message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="251" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="251" bodyend="255"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1ga4971cc50b0ead4a493e2a9c03966c826" compoundref="stm32f10x__cec_8c" startline="67">CSR_TSOM_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga1e2cf6e3a1ac891f2814f9d3f4043574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_EndOfMessageCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>CEC_EndOfMessageCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Transmits message with or without an EOM bit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CEC Tx End Of Message. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="263" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="263" bodyend="270"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___c_e_c___private___defines_1ga9ac493d98ce1f6d82b778ace0f2bc7bb" compoundref="stm32f10x__cec_8c" startline="71">CSR_TEOM_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gaf920706cb350182bf0728c66868053ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus CEC_GetFlagStatus</definition>
+        <argsstring>(uint32_t CEC_FLAG)</argsstring>
+        <name>CEC_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>CEC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Gets the CEC flag status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CEC flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>CEC_FLAG_BTE: Bit Timing Error </para></listitem>
+<listitem><para>CEC_FLAG_BPE: Bit Period Error </para></listitem>
+<listitem><para>CEC_FLAG_RBTFE: Rx Block Transfer Finished Error </para></listitem>
+<listitem><para>CEC_FLAG_SBE: Start Bit Error </para></listitem>
+<listitem><para>CEC_FLAG_ACKE: Block Acknowledge Error </para></listitem>
+<listitem><para>CEC_FLAG_LINE: Line Error </para></listitem>
+<listitem><para>CEC_FLAG_TBTFE: Tx Block Transfer Finished Error </para></listitem>
+<listitem><para>CEC_FLAG_TEOM: Tx End Of Message </para></listitem>
+<listitem><para>CEC_FLAG_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_FLAG_TBTRF: Tx Byte Transfer Request or Block Transfer Finished </para></listitem>
+<listitem><para>CEC_FLAG_RSOM: Rx Start Of Message </para></listitem>
+<listitem><para>CEC_FLAG_REOM: Rx End Of Message </para></listitem>
+<listitem><para>CEC_FLAG_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_FLAG_RBTF: Rx Byte/Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CEC_FLAG (SET or RESET) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="292" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="292" bodyend="336"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__flags__definition_1ga929b30d90f6807e9f72976596b0b850b" compoundref="stm32f10x__cec_8h" startline="150">IS_CEC_GET_FLAG</references>
+        <references refid="group___peripheral__memory__map_1gaacb77bc44b3f8c87ab98f241e760e440" compoundref="stm32f10x_8h" startline="1311">CEC_BASE</references>
+        <references refid="group___c_e_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__cec_8c" startline="74">FLAG_Mask</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1ga928b373fb5972204c56f9c64113f8c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_ClearFlag</definition>
+        <argsstring>(uint32_t CEC_FLAG)</argsstring>
+        <name>CEC_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>CEC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the CEC&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>CEC_FLAG_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_FLAG_TBTRF: Tx Byte Transfer Request or Block Transfer Finished </para></listitem>
+<listitem><para>CEC_FLAG_RSOM: Rx Start Of Message </para></listitem>
+<listitem><para>CEC_FLAG_REOM: Rx End Of Message </para></listitem>
+<listitem><para>CEC_FLAG_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_FLAG_RBTF: Rx Byte/Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="350" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="350" bodyend="361"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__flags__definition_1ga418911667f82a12dd097f7fac7ad4e89" compoundref="stm32f10x__cec_8h" startline="148">IS_CEC_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gaa1940a388d0bfcefe7483fb74cc2ba1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus CEC_GetITStatus</definition>
+        <argsstring>(uint8_t CEC_IT)</argsstring>
+        <name>CEC_GetITStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>CEC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified CEC interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CEC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>CEC_IT_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_IT_TBTF: Tx Block Transfer Finished </para></listitem>
+<listitem><para>CEC_IT_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_IT_RBTF: Rx Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CEC_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="373" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="373" bodyend="397"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__interrupts__definition_1ga7f553a4a3346c676101d81a024a9cba8" compoundref="stm32f10x__cec_8h" startline="98">IS_CEC_GET_IT</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga69eca6654f89f8b05bb296938678ac68" compoundref="stm32f10x_8h" startline="4145">CEC_CFGR_IE</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_e_c___private___functions_1gade646921262a077172c708953822f248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CEC_ClearITPendingBit</definition>
+        <argsstring>(uint16_t CEC_IT)</argsstring>
+        <name>CEC_ClearITPendingBit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>CEC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the CEC&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CEC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CEC interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>CEC_IT_TERR: Tx Error </para></listitem>
+<listitem><para>CEC_IT_TBTF: Tx Block Transfer Finished </para></listitem>
+<listitem><para>CEC_IT_RERR: Rx Error </para></listitem>
+<listitem><para>CEC_IT_RBTF: Rx Block Transfer Finished </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="409" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="409" bodyend="420"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_e_c__interrupts__definition_1ga7f553a4a3346c676101d81a024a9cba8" compoundref="stm32f10x__cec_8h" startline="98">IS_CEC_GET_IT</references>
+        <references refid="group___peripheral__declaration_1ga7d03f4d873d59ff8bc76b6c9b576f3e3" compoundref="stm32f10x_8h" startline="1405">CEC</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

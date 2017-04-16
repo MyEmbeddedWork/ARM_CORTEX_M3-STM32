@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_l_a_s_h___flags" kind="group">
+    <compoundname>FLASH_Flags</compoundname>
+    <title>FLASH_Flags</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" prot="public" static="no">
+        <name>FLASH_FLAG_BSY</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Busy flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="328" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" prot="public" static="no">
+        <name>FLASH_FLAG_EOP</name>
+        <initializer>((uint32_t)0x00000020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH End of Operation flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="329" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gae2ef62dee0a5ca01e6226746039b6f20" prot="public" static="no">
+        <name>FLASH_FLAG_PGERR</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Program error flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="330" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga5c59a7f07507cac38091275964d3d35d" prot="public" static="no">
+        <name>FLASH_FLAG_WRPRTERR</name>
+        <initializer>((uint32_t)0x00000010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Write protected error flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="331" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gac36b0605df97c9414933369a32251e4a" prot="public" static="no">
+        <name>FLASH_FLAG_OPTERR</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Option Byte error flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="332" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga1f85e6d511503886e9fbe7d0228c97a4" prot="public" static="no">
+        <name>FLASH_FLAG_BANK1_BSY</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" kindref="member">FLASH_FLAG_BSY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH BANK1 Busy flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="334" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gafa7670ee5ce8a2eb1f64c458a9f08e5b" prot="public" static="no">
+        <name>FLASH_FLAG_BANK1_EOP</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" kindref="member">FLASH_FLAG_EOP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH BANK1 End of Operation flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="335" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gaa1056ffdd1c434a2967d5ed7c0d263be" prot="public" static="no">
+        <name>FLASH_FLAG_BANK1_PGERR</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1gae2ef62dee0a5ca01e6226746039b6f20" kindref="member">FLASH_FLAG_PGERR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH BANK1 Program error flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="336" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga1646345adbcda773ef25785b1bdc4c43" prot="public" static="no">
+        <name>FLASH_FLAG_BANK1_WRPRTERR</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1ga5c59a7f07507cac38091275964d3d35d" kindref="member">FLASH_FLAG_WRPRTERR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH BANK1 Write protected error flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="337" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga82f8c6104c348d6aa47c7658ed3b6b36" prot="public" static="no">
+        <name>IS_FLASH_CLEAR_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>((((FLAG) &amp; (uint32_t)0xFFFFFFCA) == 0x00000000) &amp;&amp; ((FLAG) != 0x00000000))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="339" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga61b60325cd94e1608e34afc7aff20ee4" prot="public" static="no">
+        <name>IS_FLASH_GET_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" kindref="member">FLASH_FLAG_BSY</ref>) || ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" kindref="member">FLASH_FLAG_EOP</ref>) || \
+                                  ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1gae2ef62dee0a5ca01e6226746039b6f20" kindref="member">FLASH_FLAG_PGERR</ref>) || ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1ga5c59a7f07507cac38091275964d3d35d" kindref="member">FLASH_FLAG_WRPRTERR</ref>) || \
+								  ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1ga1f85e6d511503886e9fbe7d0228c97a4" kindref="member">FLASH_FLAG_BANK1_BSY</ref>) || ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1gafa7670ee5ce8a2eb1f64c458a9f08e5b" kindref="member">FLASH_FLAG_BANK1_EOP</ref>) || \
+                                  ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1gaa1056ffdd1c434a2967d5ed7c0d263be" kindref="member">FLASH_FLAG_BANK1_PGERR</ref>) || ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1ga1646345adbcda773ef25785b1bdc4c43" kindref="member">FLASH_FLAG_BANK1_WRPRTERR</ref>) || \
+                                  ((FLAG) == <ref refid="group___f_l_a_s_h___flags_1gac36b0605df97c9414933369a32251e4a" kindref="member">FLASH_FLAG_OPTERR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="340" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+.TH "AHB_clock_source" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AHB_clock_source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div2\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div4\fP   ((uint32_t)0x00000090)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div8\fP   ((uint32_t)0x000000A0)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div16\fP   ((uint32_t)0x000000B0)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div64\fP   ((uint32_t)0x000000C0)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div128\fP   ((uint32_t)0x000000D0)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div256\fP   ((uint32_t)0x000000E0)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLK_Div512\fP   ((uint32_t)0x000000F0)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_HCLK\fP(HCLK)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RCC_HCLK(HCLK)"
+\fBValue:\fP
+.PP
+.nf
+(((HCLK) == RCC_SYSCLK_Div1) || ((HCLK) == RCC_SYSCLK_Div2) || \
+                           ((HCLK) == RCC_SYSCLK_Div4) || ((HCLK) == RCC_SYSCLK_Div8) || \
+                           ((HCLK) == RCC_SYSCLK_Div16) || ((HCLK) == RCC_SYSCLK_Div64) || \
+                           ((HCLK) == RCC_SYSCLK_Div128) || ((HCLK) == RCC_SYSCLK_Div256) || \
+                           ((HCLK) == RCC_SYSCLK_Div512))
+.fi
+.PP
+Definition at line 312 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div1   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 303 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div128   ((uint32_t)0x000000D0)"
+
+.PP
+Definition at line 309 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div16   ((uint32_t)0x000000B0)"
+
+.PP
+Definition at line 307 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div2   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 304 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div256   ((uint32_t)0x000000E0)"
+
+.PP
+Definition at line 310 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div4   ((uint32_t)0x00000090)"
+
+.PP
+Definition at line 305 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div512   ((uint32_t)0x000000F0)"
+
+.PP
+Definition at line 311 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div64   ((uint32_t)0x000000C0)"
+
+.PP
+Definition at line 308 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_SYSCLK_Div8   ((uint32_t)0x000000A0)"
+
+.PP
+Definition at line 306 of file stm32f10x_rcc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

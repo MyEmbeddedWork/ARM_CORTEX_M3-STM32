@@ -1,0 +1,46 @@
+.TH "FSMC_Wait_Signal" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_Wait_Signal
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFSMC_WaitSignal_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignal_Enable\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAITE_SIGNAL\fP(SIGNAL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FSMC_WaitSignal_Disable   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 415 of file stm32f10x_fsmc\&.h\&.
+.SS "#define FSMC_WaitSignal_Enable   ((uint32_t)0x00002000)"
+
+.PP
+Definition at line 416 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_WAITE_SIGNAL(SIGNAL)"
+\fBValue:\fP
+.PP
+.nf
+(((SIGNAL) == FSMC_WaitSignal_Disable) || \
+                                      ((SIGNAL) == FSMC_WaitSignal_Enable))
+.fi
+.PP
+Definition at line 417 of file stm32f10x_fsmc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

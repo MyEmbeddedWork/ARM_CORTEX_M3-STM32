@@ -1,0 +1,86 @@
+.TH "ADC_analog_watchdog_selection" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_analog_watchdog_selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_SingleRegEnable\fP   ((uint32_t)0x00800200)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_SingleInjecEnable\fP   ((uint32_t)0x00400200)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_SingleRegOrInjecEnable\fP   ((uint32_t)0x00C00200)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_AllRegEnable\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_AllInjecEnable\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_AllRegAllInjecEnable\fP   ((uint32_t)0x00C00000)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_None\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_ANALOG_WATCHDOG\fP(WATCHDOG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC_AnalogWatchdog_AllInjecEnable   ((uint32_t)0x00400000)"
+
+.PP
+Definition at line 300 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_AnalogWatchdog_AllRegAllInjecEnable   ((uint32_t)0x00C00000)"
+
+.PP
+Definition at line 301 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_AnalogWatchdog_AllRegEnable   ((uint32_t)0x00800000)"
+
+.PP
+Definition at line 299 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_AnalogWatchdog_None   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 302 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_AnalogWatchdog_SingleInjecEnable   ((uint32_t)0x00400200)"
+
+.PP
+Definition at line 297 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_AnalogWatchdog_SingleRegEnable   ((uint32_t)0x00800200)"
+
+.PP
+Definition at line 296 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_AnalogWatchdog_SingleRegOrInjecEnable   ((uint32_t)0x00C00200)"
+
+.PP
+Definition at line 298 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_ANALOG_WATCHDOG(WATCHDOG)"
+\fBValue:\fP
+.PP
+.nf
+(((WATCHDOG) == ADC_AnalogWatchdog_SingleRegEnable) || \
+                                          ((WATCHDOG) == ADC_AnalogWatchdog_SingleInjecEnable) || \
+                                          ((WATCHDOG) == ADC_AnalogWatchdog_SingleRegOrInjecEnable) || \
+                                          ((WATCHDOG) == ADC_AnalogWatchdog_AllRegEnable) || \
+                                          ((WATCHDOG) == ADC_AnalogWatchdog_AllInjecEnable) || \
+                                          ((WATCHDOG) == ADC_AnalogWatchdog_AllRegAllInjecEnable) || \
+                                          ((WATCHDOG) == ADC_AnalogWatchdog_None))
+.fi
+.PP
+Definition at line 304 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

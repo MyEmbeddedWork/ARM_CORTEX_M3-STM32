@@ -1,0 +1,199 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_spi.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_spi.c \- This file provides all the SPI firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_spi\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCR1_SPE_Set\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBCR1_SPE_Reset\fP   ((uint16_t)0xFFBF)"
+.br
+.ti -1c
+.RI "#define \fBI2SCFGR_I2SE_Set\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBI2SCFGR_I2SE_Reset\fP   ((uint16_t)0xFBFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CRCNext_Set\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CRCEN_Set\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CRCEN_Reset\fP   ((uint16_t)0xDFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_SSOE_Set\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBCR2_SSOE_Reset\fP   ((uint16_t)0xFFFB)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CLEAR_Mask\fP   ((uint16_t)0x3040)"
+.br
+.ti -1c
+.RI "#define \fBI2SCFGR_CLEAR_Mask\fP   ((uint16_t)0xF040)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Mode_Select\fP   ((uint16_t)0xF7FF)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Mode_Select\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBI2S2_CLOCK_SRC\fP   ((uint32_t)(0x00020000))"
+.br
+.ti -1c
+.RI "#define \fBI2S3_CLOCK_SRC\fP   ((uint32_t)(0x00040000))"
+.br
+.ti -1c
+.RI "#define \fBI2S_MUL_MASK\fP   ((uint32_t)(0x0000F000))"
+.br
+.ti -1c
+.RI "#define \fBI2S_DIV_MASK\fP   ((uint32_t)(0x000000F0))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSPI_I2S_DeInit\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Deinitializes the SPIx peripheral registers to their default reset values (Affects also the I2Ss)\&. "
+.ti -1c
+.RI "void \fBSPI_Init\fP (\fBSPI_TypeDef\fP *SPIx, \fBSPI_InitTypeDef\fP *SPI_InitStruct)"
+.br
+.RI "Initializes the SPIx peripheral according to the specified parameters in the SPI_InitStruct\&. "
+.ti -1c
+.RI "void \fBI2S_Init\fP (\fBSPI_TypeDef\fP *SPIx, \fBI2S_InitTypeDef\fP *I2S_InitStruct)"
+.br
+.RI "Initializes the SPIx peripheral according to the specified parameters in the I2S_InitStruct\&. "
+.ti -1c
+.RI "void \fBSPI_StructInit\fP (\fBSPI_InitTypeDef\fP *SPI_InitStruct)"
+.br
+.RI "Fills each SPI_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBI2S_StructInit\fP (\fBI2S_InitTypeDef\fP *I2S_InitStruct)"
+.br
+.RI "Fills each I2S_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBSPI_Cmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI peripheral\&. "
+.ti -1c
+.RI "void \fBI2S_Cmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI peripheral (in I2S mode)\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ITConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI/I2S interrupts\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_DMACmd\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_DMAReq, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SPIx/I2Sx DMA interface\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_SendData\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t Data)"
+.br
+.RI "Transmits a Data through the SPIx/I2Sx peripheral\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_I2S_ReceiveData\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Returns the most recent received data by the SPIx/I2Sx peripheral\&. "
+.ti -1c
+.RI "void \fBSPI_NSSInternalSoftwareConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_NSSInternalSoft)"
+.br
+.RI "Configures internally by software the NSS pin for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_SSOutputCmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SS output for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_DataSizeConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_DataSize)"
+.br
+.RI "Configures the data size for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_TransmitCRC\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Transmit the SPIx CRC value\&. "
+.ti -1c
+.RI "void \fBSPI_CalculateCRC\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CRC value calculation of the transferred bytes\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_GetCRC\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_CRC)"
+.br
+.RI "Returns the transmit or the receive CRC register value for the specified SPI\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_GetCRCPolynomial\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Returns the CRC Polynomial register value for the specified SPI\&. "
+.ti -1c
+.RI "void \fBSPI_BiDirectionalLineConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_Direction)"
+.br
+.RI "Selects the data transfer direction in bi-directional mode for the specified SPI\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBSPI_I2S_GetFlagStatus\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_FLAG)"
+.br
+.RI "Checks whether the specified SPI/I2S flag is set or not\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ClearFlag\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_FLAG)"
+.br
+.RI "Clears the SPIx CRC Error (CRCERR) flag\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBSPI_I2S_GetITStatus\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT)"
+.br
+.RI "Checks whether the specified SPI/I2S interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ClearITPendingBit\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT)"
+.br
+.RI "Clears the SPIx CRC Error (CRCERR) interrupt pending bit\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the SPI firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_spi\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

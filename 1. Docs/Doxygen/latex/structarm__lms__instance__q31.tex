@@ -1,0 +1,89 @@
+\hypertarget{structarm__lms__instance__q31}{}\section{arm\+\_\+lms\+\_\+instance\+\_\+q31 Struct Reference}
+\label{structarm__lms__instance__q31}\index{arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}}
+
+
+Instance structure for the Q31 L\+MS filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structarm__lms__instance__q31_ac0d84f7d054555931ef8a62511fbcb8a}{num\+Taps}
+\item 
+\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t} $\ast$ \hyperlink{structarm__lms__instance__q31_a206d47b49de6f357f933ebe61520753c}{p\+State}
+\item 
+\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t} $\ast$ \hyperlink{structarm__lms__instance__q31_a4afe56e991a5416adfd462aa88bda500}{p\+Coeffs}
+\item 
+\hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t} \hyperlink{structarm__lms__instance__q31_acb6ca9996b3c5f740d5d6c8e9f4f1d46}{mu}
+\item 
+uint32\+\_\+t \hyperlink{structarm__lms__instance__q31_a4705a8f0011bb9166e09bf5bd51e595e}{post\+Shift}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance structure for the Q31 L\+MS filter. 
+
+Definition at line 4067 of file arm\+\_\+math.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structarm__lms__instance__q31_acb6ca9996b3c5f740d5d6c8e9f4f1d46}\label{structarm__lms__instance__q31_acb6ca9996b3c5f740d5d6c8e9f4f1d46}} 
+\index{arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}!mu@{mu}}
+\index{mu@{mu}!arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}}
+\subsubsection{\texorpdfstring{mu}{mu}}
+{\footnotesize\ttfamily \hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t} arm\+\_\+lms\+\_\+instance\+\_\+q31\+::mu}
+
+step size that controls filter coefficient updates. 
+
+Definition at line 4072 of file arm\+\_\+math.\+h.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_ac0d84f7d054555931ef8a62511fbcb8a}\label{structarm__lms__instance__q31_ac0d84f7d054555931ef8a62511fbcb8a}} 
+\index{arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}!num\+Taps@{num\+Taps}}
+\index{num\+Taps@{num\+Taps}!arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}}
+\subsubsection{\texorpdfstring{num\+Taps}{numTaps}}
+{\footnotesize\ttfamily uint16\+\_\+t arm\+\_\+lms\+\_\+instance\+\_\+q31\+::num\+Taps}
+
+number of coefficients in the filter. 
+
+Definition at line 4069 of file arm\+\_\+math.\+h.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_a4afe56e991a5416adfd462aa88bda500}\label{structarm__lms__instance__q31_a4afe56e991a5416adfd462aa88bda500}} 
+\index{arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}!p\+Coeffs@{p\+Coeffs}}
+\index{p\+Coeffs@{p\+Coeffs}!arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}}
+\subsubsection{\texorpdfstring{p\+Coeffs}{pCoeffs}}
+{\footnotesize\ttfamily \hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}$\ast$ arm\+\_\+lms\+\_\+instance\+\_\+q31\+::p\+Coeffs}
+
+points to the coefficient array. The array is of length num\+Taps. 
+
+Definition at line 4071 of file arm\+\_\+math.\+h.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_a4705a8f0011bb9166e09bf5bd51e595e}\label{structarm__lms__instance__q31_a4705a8f0011bb9166e09bf5bd51e595e}} 
+\index{arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}!post\+Shift@{post\+Shift}}
+\index{post\+Shift@{post\+Shift}!arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}}
+\subsubsection{\texorpdfstring{post\+Shift}{postShift}}
+{\footnotesize\ttfamily uint32\+\_\+t arm\+\_\+lms\+\_\+instance\+\_\+q31\+::post\+Shift}
+
+bit shift applied to coefficients. 
+
+Definition at line 4073 of file arm\+\_\+math.\+h.
+
+\mbox{\Hypertarget{structarm__lms__instance__q31_a206d47b49de6f357f933ebe61520753c}\label{structarm__lms__instance__q31_a206d47b49de6f357f933ebe61520753c}} 
+\index{arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}!p\+State@{p\+State}}
+\index{p\+State@{p\+State}!arm\+\_\+lms\+\_\+instance\+\_\+q31@{arm\+\_\+lms\+\_\+instance\+\_\+q31}}
+\subsubsection{\texorpdfstring{p\+State}{pState}}
+{\footnotesize\ttfamily \hyperlink{arm__math_8h_adc89a3547f5324b7b3b95adec3806bc0}{q31\+\_\+t}$\ast$ arm\+\_\+lms\+\_\+instance\+\_\+q31\+::p\+State}
+
+points to the state variable array. The array is of length num\+Taps+block\+Size-\/1. 
+
+Definition at line 4070 of file arm\+\_\+math.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/cmsis/\hyperlink{arm__math_8h}{arm\+\_\+math.\+h}\end{DoxyCompactItemize}

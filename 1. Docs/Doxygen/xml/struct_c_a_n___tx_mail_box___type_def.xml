@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_c_a_n___tx_mail_box___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>CAN_TxMailBox_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_a_n___tx_mail_box___type_def_1a22f525c909de2dcec1d4093fe1d562b8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TxMailBox_TypeDef::TIR</definition>
+        <argsstring></argsstring>
+        <name>TIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="671" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="671" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___tx_mail_box___type_def_1a2351cb865d064cf75f61642aaa887f76" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TxMailBox_TypeDef::TDTR</definition>
+        <argsstring></argsstring>
+        <name>TDTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="672" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="672" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1ga94740177bab153ca5b102d122f9a8cca" compoundref="stm32f10x__can_8c" startline="481" endline="506">CAN_TTComModeCmd</referencedby>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___tx_mail_box___type_def_1a408c96501b1cc8bd527432736d132a39" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TxMailBox_TypeDef::TDLR</definition>
+        <argsstring></argsstring>
+        <name>TDLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="673" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="673" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n___tx_mail_box___type_def_1a98c6bcd7c9bae378ebf83fd9f5b59020" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CAN_TxMailBox_TypeDef::TDHR</definition>
+        <argsstring></argsstring>
+        <name>TDHR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="674" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="674" bodyend="-1"/>
+        <referencedby refid="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" compoundref="stm32f10x__can_8c" startline="515" endline="578">CAN_Transmit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Controller Area Network TxMailBox. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="670" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="669" bodyend="675"/>
+    <listofallmembers>
+      <member refid="struct_c_a_n___tx_mail_box___type_def_1a98c6bcd7c9bae378ebf83fd9f5b59020" prot="public" virt="non-virtual"><scope>CAN_TxMailBox_TypeDef</scope><name>TDHR</name></member>
+      <member refid="struct_c_a_n___tx_mail_box___type_def_1a408c96501b1cc8bd527432736d132a39" prot="public" virt="non-virtual"><scope>CAN_TxMailBox_TypeDef</scope><name>TDLR</name></member>
+      <member refid="struct_c_a_n___tx_mail_box___type_def_1a2351cb865d064cf75f61642aaa887f76" prot="public" virt="non-virtual"><scope>CAN_TxMailBox_TypeDef</scope><name>TDTR</name></member>
+      <member refid="struct_c_a_n___tx_mail_box___type_def_1a22f525c909de2dcec1d4093fe1d562b8" prot="public" virt="non-virtual"><scope>CAN_TxMailBox_TypeDef</scope><name>TIR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

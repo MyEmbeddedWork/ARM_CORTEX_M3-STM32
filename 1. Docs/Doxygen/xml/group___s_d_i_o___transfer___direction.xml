@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___transfer___direction" kind="group">
+    <compoundname>SDIO_Transfer_Direction</compoundname>
+    <title>SDIO_Transfer_Direction</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___transfer___direction_1gaef8af0ffa4ea04b3362338d268cc0935" prot="public" static="no">
+        <name>SDIO_TransferDir_ToCard</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="344" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___transfer___direction_1ga55a6d9613d3e2e7762296b45d0d13222" prot="public" static="no">
+        <name>SDIO_TransferDir_ToSDIO</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="345" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___transfer___direction_1gaf84b8004cfef6a5a525b20db8a83c2f7" prot="public" static="no">
+        <name>IS_SDIO_TRANSFER_DIR</name>
+        <param><defname>DIR</defname></param>
+        <initializer>(((DIR) == <ref refid="group___s_d_i_o___transfer___direction_1gaef8af0ffa4ea04b3362338d268cc0935" kindref="member">SDIO_TransferDir_ToCard</ref>) || \
+                                   ((DIR) == <ref refid="group___s_d_i_o___transfer___direction_1ga55a6d9613d3e2e7762296b45d0d13222" kindref="member">SDIO_TransferDir_ToSDIO</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="346" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

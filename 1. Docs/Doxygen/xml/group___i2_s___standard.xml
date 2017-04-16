@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_s___standard" kind="group">
+    <compoundname>I2S_Standard</compoundname>
+    <title>I2S_Standard</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_s___standard_1gacdb89d66a2a941924ff4b7a8d14884f9" prot="public" static="no">
+        <name>I2S_Standard_Phillips</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="262" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___standard_1gae716cfa7e031affc37fe65dd80b0e6f4" prot="public" static="no">
+        <name>I2S_Standard_MSB</name>
+        <initializer>((uint16_t)0x0010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="263" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___standard_1ga88bc9001a13b95a0844d81fea2080df6" prot="public" static="no">
+        <name>I2S_Standard_LSB</name>
+        <initializer>((uint16_t)0x0020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="264" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___standard_1gaaf59e587048ff632037dfc9875ab4c7b" prot="public" static="no">
+        <name>I2S_Standard_PCMShort</name>
+        <initializer>((uint16_t)0x0030)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="265" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___standard_1gaf79cb88702059506d876dbd776d7a136" prot="public" static="no">
+        <name>I2S_Standard_PCMLong</name>
+        <initializer>((uint16_t)0x00B0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="266" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___standard_1ga826b9ddb34520b8fa64c2b65c9bfd528" prot="public" static="no">
+        <name>IS_I2S_STANDARD</name>
+        <param><defname>STANDARD</defname></param>
+        <initializer>(((STANDARD) == <ref refid="group___i2_s___standard_1gacdb89d66a2a941924ff4b7a8d14884f9" kindref="member">I2S_Standard_Phillips</ref>) || \
+                                   ((STANDARD) == <ref refid="group___i2_s___standard_1gae716cfa7e031affc37fe65dd80b0e6f4" kindref="member">I2S_Standard_MSB</ref>) || \
+                                   ((STANDARD) == <ref refid="group___i2_s___standard_1ga88bc9001a13b95a0844d81fea2080df6" kindref="member">I2S_Standard_LSB</ref>) || \
+                                   ((STANDARD) == <ref refid="group___i2_s___standard_1gaaf59e587048ff632037dfc9875ab4c7b" kindref="member">I2S_Standard_PCMShort</ref>) || \
+                                   ((STANDARD) == <ref refid="group___i2_s___standard_1gaf79cb88702059506d876dbd776d7a136" kindref="member">I2S_Standard_PCMLong</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="267" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

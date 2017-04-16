@@ -1,0 +1,46 @@
+.TH "FSMC_AsynchronousWait" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_AsynchronousWait
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFSMC_AsynchronousWait_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_AsynchronousWait_Enable\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_ASYNWAIT\fP(STATE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FSMC_AsynchronousWait_Disable   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 350 of file stm32f10x_fsmc\&.h\&.
+.SS "#define FSMC_AsynchronousWait_Enable   ((uint32_t)0x00008000)"
+
+.PP
+Definition at line 351 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_ASYNWAIT(STATE)"
+\fBValue:\fP
+.PP
+.nf
+(((STATE) == FSMC_AsynchronousWait_Disable) || \
+                                 ((STATE) == FSMC_AsynchronousWait_Enable))
+.fi
+.PP
+Definition at line 352 of file stm32f10x_fsmc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__dct4__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_dct4_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a262b29a51c371b46efc89120e31ccf37" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_dct4_instance_f32::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the DCT4. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2256" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1adb1ef2739ddbe62e5cdadc47455a4147" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_dct4_instance_f32::Nby2</definition>
+        <argsstring></argsstring>
+        <name>Nby2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>half of the length of the DCT4. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2257" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a61ce8c967b2e998a9c0041cca73cdef8" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_dct4_instance_f32::normalize</definition>
+        <argsstring></argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalizing factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2258" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1ad13544aafad268588c62e3eb35ae662c" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_dct4_instance_f32::pTwiddle</definition>
+        <argsstring></argsstring>
+        <name>pTwiddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2259" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a6da1187e070801e011ce5e0582efa861" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_dct4_instance_f32::pCosFactor</definition>
+        <argsstring></argsstring>
+        <name>pCosFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the cosFactor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2260" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a978f37fc19add31af243ab5c63ae502f" prot="public" static="no" mutable="no">
+        <type><ref refid="structarm__rfft__instance__f32" kindref="compound">arm_rfft_instance_f32</ref> *</type>
+        <definition>arm_rfft_instance_f32* arm_dct4_instance_f32::pRfft</definition>
+        <argsstring></argsstring>
+        <name>pRfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the real FFT instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2261" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a018f7860b6e070af533fb7d76c7cdc32" prot="public" static="no" mutable="no">
+        <type><ref refid="structarm__cfft__radix4__instance__f32" kindref="compound">arm_cfft_radix4_instance_f32</ref> *</type>
+        <definition>arm_cfft_radix4_instance_f32* arm_dct4_instance_f32::pCfft</definition>
+        <argsstring></argsstring>
+        <name>pCfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the complex FFT instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2262" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point DCT4/IDCT4 function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>arm_rfft_instance_f32</label>
+        <link refid="structarm__rfft__instance__f32"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>pCfft</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>arm_dct4_instance_f32</label>
+        <link refid="structarm__dct4__instance__f32"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>pCfft</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>pRfft</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>arm_cfft_radix4_instance_f32</label>
+        <link refid="structarm__cfft__radix4__instance__f32"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2255" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2254" bodyend="2263"/>
+    <listofallmembers>
+      <member refid="structarm__dct4__instance__f32_1a262b29a51c371b46efc89120e31ccf37" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>N</name></member>
+      <member refid="structarm__dct4__instance__f32_1adb1ef2739ddbe62e5cdadc47455a4147" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>Nby2</name></member>
+      <member refid="structarm__dct4__instance__f32_1a61ce8c967b2e998a9c0041cca73cdef8" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>normalize</name></member>
+      <member refid="structarm__dct4__instance__f32_1a018f7860b6e070af533fb7d76c7cdc32" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pCfft</name></member>
+      <member refid="structarm__dct4__instance__f32_1a6da1187e070801e011ce5e0582efa861" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pCosFactor</name></member>
+      <member refid="structarm__dct4__instance__f32_1a978f37fc19add31af243ab5c63ae502f" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pRfft</name></member>
+      <member refid="structarm__dct4__instance__f32_1ad13544aafad268588c62e3eb35ae662c" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pTwiddle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

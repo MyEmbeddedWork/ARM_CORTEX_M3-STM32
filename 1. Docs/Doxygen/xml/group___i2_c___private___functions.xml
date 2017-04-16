@@ -1,0 +1,1802 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c___private___functions" kind="group">
+    <compoundname>I2C_Private_Functions</compoundname>
+    <title>I2C_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga2ee214364603059ad5d9089f749f5bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_DeInit</definition>
+        <argsstring>(I2C_TypeDef *I2Cx)</argsstring>
+        <name>I2C_DeInit</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <briefdescription>
+<para>Deinitializes the I2Cx peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="162" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="162" bodyend="181"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___peripheral__declaration_1gab45d257574da6fe1f091cc45b7eda6cc" compoundref="stm32f10x_8h" startline="1398">I2C1</references>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1ga594f87d504f7d63697d841033d1538f6" compoundref="stm32f10x__rcc_8h" startline="544">RCC_APB1Periph_I2C1</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___a_p_b1__peripheral_1ga8eaeded403b5a2277fbfb3896c639416" compoundref="stm32f10x__rcc_8h" startline="545">RCC_APB1Periph_I2C2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_Init</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, I2C_InitTypeDef *I2C_InitStruct)</argsstring>
+        <name>I2C_Init</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_i2_c___init_type_def" kindref="compound">I2C_InitTypeDef</ref> *</type>
+          <declname>I2C_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the I2Cx peripheral according to the specified parameters in the I2C_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_i2_c___init_type_def" kindref="compound">I2C_InitTypeDef</ref> structure that contains the configuration information for the specified I2C peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="191" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="191" bodyend="304"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__clock__speed_1gae0d731df1b264d853703716c29309b9b" compoundref="stm32f10x__i2c_8h" startline="519">IS_I2C_CLOCK_SPEED</references>
+        <references refid="struct_i2_c___init_type_def_1a737c289f4515ae4cb642db0412762169" compoundref="stm32f10x__i2c_8h" startline="58">I2C_InitTypeDef::I2C_ClockSpeed</references>
+        <references refid="group___i2_c__mode_1ga58464e1fe94a79bab721137a544baf79" compoundref="stm32f10x__i2c_8h" startline="95">IS_I2C_MODE</references>
+        <references refid="struct_i2_c___init_type_def_1ad5cf353c5b6968b3610b70ca593cec52" compoundref="stm32f10x__i2c_8h" startline="61">I2C_InitTypeDef::I2C_Mode</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1gae9b3276d9b6ec872ee4fafa2b2fafb83" compoundref="stm32f10x__i2c_8h" startline="108">IS_I2C_DUTY_CYCLE</references>
+        <references refid="struct_i2_c___init_type_def_1aff23b28652359513dfd268dee54c3279" compoundref="stm32f10x__i2c_8h" startline="64">I2C_InitTypeDef::I2C_DutyCycle</references>
+        <references refid="group___i2_c__own__address1_1gad84e8b9523d45b6105b4d5cb68994a79" compoundref="stm32f10x__i2c_8h" startline="510">IS_I2C_OWN_ADDRESS1</references>
+        <references refid="struct_i2_c___init_type_def_1a08543cb71b4b2a89ad81a2cefff12b53" compoundref="stm32f10x__i2c_8h" startline="67">I2C_InitTypeDef::I2C_OwnAddress1</references>
+        <references refid="group___i2_c__acknowledgement_1ga6401bedc842e784a2bb78b3aa21af19d" compoundref="stm32f10x__i2c_8h" startline="120">IS_I2C_ACK_STATE</references>
+        <references refid="struct_i2_c___init_type_def_1a7bcae26f098e897832e5e42b055f8c98" compoundref="stm32f10x__i2c_8h" startline="70">I2C_InitTypeDef::I2C_Ack</references>
+        <references refid="group___i2_c__acknowledged__address_1ga26a3af0a468f7226ed72fde27528c0ba" compoundref="stm32f10x__i2c_8h" startline="144">IS_I2C_ACKNOWLEDGE_ADDRESS</references>
+        <references refid="struct_i2_c___init_type_def_1a300e847972f50b0d25c4f13be5d93d79" compoundref="stm32f10x__i2c_8h" startline="73">I2C_InitTypeDef::I2C_AcknowledgedAddress</references>
+        <references refid="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" compoundref="stm32f10x_8h" startline="1032">I2C_TypeDef::CR2</references>
+        <references refid="group___i2_c___private___defines_1ga2bcf74bd8fc3aaa931faf750d1afe405" compoundref="stm32f10x__i2c_8c" startline="100">CR2_FREQ_Reset</references>
+        <references refid="group___r_c_c___exported___functions_1ga3e9944fd1ed734275222bbb3e3f29993" compoundref="stm32f10x__rcc_8c" startline="908" endline="1031">RCC_GetClocksFreq</references>
+        <references refid="struct_r_c_c___clocks_type_def_1add4cfc63c35178d187107edc764e0b8f" compoundref="stm32f10x__rcc_8h" startline="50">RCC_ClocksTypeDef::PCLK1_Frequency</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga21dc289f16c502a2bc0a88e1514a8ee0" compoundref="stm32f10x__i2c_8c" startline="50">CR1_PE_Reset</references>
+        <references refid="struct_i2_c___type_def_1aaba7a808e4dfae5cc06b197c298af206" compoundref="stm32f10x_8h" startline="1046">I2C_TypeDef::TRISE</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db" compoundref="stm32f10x__i2c_8h" startline="107">I2C_DutyCycle_2</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1" compoundref="stm32f10x__i2c_8h" startline="106">I2C_DutyCycle_16_9</references>
+        <references refid="group___i2_c___private___defines_1ga07695fd4c06df54def77840118f83a0d" compoundref="stm32f10x__i2c_8c" startline="117">CCR_CCR_Set</references>
+        <references refid="group___i2_c___private___defines_1ga3af49180596b283514782708ac85606e" compoundref="stm32f10x__i2c_8c" startline="114">CCR_FS_Set</references>
+        <references refid="struct_i2_c___type_def_1a1775e779008da2b4d1807c2b5033b8a5" compoundref="stm32f10x_8h" startline="1044">I2C_TypeDef::CCR</references>
+        <references refid="group___i2_c___private___defines_1ga913b708338087f3ffc2fba2b05a38917" compoundref="stm32f10x__i2c_8c" startline="49">CR1_PE_Set</references>
+        <references refid="group___i2_c___private___defines_1ga67f7dd35ea3d1296677e5fc50b88fa90" compoundref="stm32f10x__i2c_8c" startline="89">CR1_CLEAR_Mask</references>
+        <references refid="struct_i2_c___type_def_1ad218fdcb9606477c1d63f8ee38d3c5c9" compoundref="stm32f10x_8h" startline="1034">I2C_TypeDef::OAR1</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_StructInit</definition>
+        <argsstring>(I2C_InitTypeDef *I2C_InitStruct)</argsstring>
+        <name>I2C_StructInit</name>
+        <param>
+          <type><ref refid="struct_i2_c___init_type_def" kindref="compound">I2C_InitTypeDef</ref> *</type>
+          <declname>I2C_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each I2C_InitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2C_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_i2_c___init_type_def" kindref="compound">I2C_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="311" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="311" bodyend="326"/>
+        <references refid="struct_i2_c___init_type_def_1a737c289f4515ae4cb642db0412762169" compoundref="stm32f10x__i2c_8h" startline="58">I2C_InitTypeDef::I2C_ClockSpeed</references>
+        <references refid="struct_i2_c___init_type_def_1ad5cf353c5b6968b3610b70ca593cec52" compoundref="stm32f10x__i2c_8h" startline="61">I2C_InitTypeDef::I2C_Mode</references>
+        <references refid="group___i2_c__mode_1ga8bc3b0555ca31b6f8423bc2ada45d1ac" compoundref="stm32f10x__i2c_8h" startline="92">I2C_Mode_I2C</references>
+        <references refid="struct_i2_c___init_type_def_1aff23b28652359513dfd268dee54c3279" compoundref="stm32f10x__i2c_8h" startline="64">I2C_InitTypeDef::I2C_DutyCycle</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db" compoundref="stm32f10x__i2c_8h" startline="107">I2C_DutyCycle_2</references>
+        <references refid="struct_i2_c___init_type_def_1a08543cb71b4b2a89ad81a2cefff12b53" compoundref="stm32f10x__i2c_8h" startline="67">I2C_InitTypeDef::I2C_OwnAddress1</references>
+        <references refid="struct_i2_c___init_type_def_1a7bcae26f098e897832e5e42b055f8c98" compoundref="stm32f10x__i2c_8h" startline="70">I2C_InitTypeDef::I2C_Ack</references>
+        <references refid="group___i2_c__acknowledgement_1gadb5f47c052ac6bae1aa58c724e339e36" compoundref="stm32f10x__i2c_8h" startline="119">I2C_Ack_Disable</references>
+        <references refid="struct_i2_c___init_type_def_1a300e847972f50b0d25c4f13be5d93d79" compoundref="stm32f10x__i2c_8h" startline="73">I2C_InitTypeDef::I2C_AcknowledgedAddress</references>
+        <references refid="group___i2_c__acknowledged__address_1ga5e5ad2148f9da14457c7b59357acee97" compoundref="stm32f10x__i2c_8h" startline="142">I2C_AcknowledgedAddress_7bit</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga7e1323c9133c2cb424dfb5b10b7d2f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_Cmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_Cmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2Cx peripheral. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="335" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="335" bodyend="350"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga913b708338087f3ffc2fba2b05a38917" compoundref="stm32f10x__i2c_8c" startline="49">CR1_PE_Set</references>
+        <references refid="group___i2_c___private___defines_1ga21dc289f16c502a2bc0a88e1514a8ee0" compoundref="stm32f10x__i2c_8c" startline="50">CR1_PE_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga38502ce11e5ec923e0f6476aaa35b45c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_DMACmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_DMACmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C DMA requests. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C DMA transfer. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="359" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="359" bodyend="374"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" compoundref="stm32f10x_8h" startline="1032">I2C_TypeDef::CR2</references>
+        <references refid="group___i2_c___private___defines_1gafe82da50fa03bd5ecb36340da64c87ca" compoundref="stm32f10x__i2c_8c" startline="92">CR2_DMAEN_Set</references>
+        <references refid="group___i2_c___private___defines_1gabe742f89a768e29b9a2d86f7782991a6" compoundref="stm32f10x__i2c_8c" startline="93">CR2_DMAEN_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gab2e994c5681eb6ec7c26a03ffe1de060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_DMALastTransferCmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_DMALastTransferCmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Specifies if the next DMA transfer will be the last one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C DMA last transfer. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="383" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="383" bodyend="398"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" compoundref="stm32f10x_8h" startline="1032">I2C_TypeDef::CR2</references>
+        <references refid="group___i2_c___private___defines_1ga3604dd2f23b0f15a088ef6fe9731485a" compoundref="stm32f10x__i2c_8c" startline="96">CR2_LAST_Set</references>
+        <references refid="group___i2_c___private___defines_1ga904e044226182269485936bad8314f84" compoundref="stm32f10x__i2c_8c" startline="97">CR2_LAST_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga36c522b471588be9779c878222ccb20f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_GenerateSTART</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_GenerateSTART</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Generates I2Cx communication START condition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C START condition generation. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="407" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="407" bodyend="422"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga53820dd338da9779d039718148184ef9" compoundref="stm32f10x__i2c_8c" startline="53">CR1_START_Set</references>
+        <references refid="group___i2_c___private___defines_1gacc62242e31a380aec2ef9f836b3cf19d" compoundref="stm32f10x__i2c_8c" startline="54">CR1_START_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga5c92cb573ca0ae58cc465e5400246561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_GenerateSTOP</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_GenerateSTOP</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Generates I2Cx communication STOP condition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C STOP condition generation. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="431" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="431" bodyend="446"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1gac14ffc5548d2c30d21c49612c57e52be" compoundref="stm32f10x__i2c_8c" startline="57">CR1_STOP_Set</references>
+        <references refid="group___i2_c___private___defines_1gac44124bc7b468c7dee8188712e407e02" compoundref="stm32f10x__i2c_8c" startline="58">CR1_STOP_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga7bb44e894d68a7991f564c43fb187486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_AcknowledgeConfig</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_AcknowledgeConfig</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C acknowledge feature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C Acknowledgement. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="455" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="455" bodyend="470"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga1f74487a0fbffdcd8a4c440c732dc316" compoundref="stm32f10x__i2c_8c" startline="61">CR1_ACK_Set</references>
+        <references refid="group___i2_c___private___defines_1gaa8bcbe2f6089d896aff8e7770368aada" compoundref="stm32f10x__i2c_8c" startline="62">CR1_ACK_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga7be2cc634a613c8e3539137e897a22df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_OwnAddress2Config</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint8_t Address)</argsstring>
+        <name>I2C_OwnAddress2Config</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Address</declname>
+        </param>
+        <briefdescription>
+<para>Configures the specified I2C own address2. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the 7bit I2C own address2. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="478" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="478" bodyend="507"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="struct_i2_c___type_def_1a03189e2a57c81ae5d103739b72f52c93" compoundref="stm32f10x_8h" startline="1036">I2C_TypeDef::OAR2</references>
+        <references refid="group___i2_c___private___defines_1ga243036db699954e290f48e6743323054" compoundref="stm32f10x__i2c_8c" startline="111">OAR2_ADD2_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga02145a333a56e79557d6ef4ea03fc313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_DualAddressCmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_DualAddressCmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C dual addressing mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C dual addressing mode. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="516" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="516" bodyend="531"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1a03189e2a57c81ae5d103739b72f52c93" compoundref="stm32f10x_8h" startline="1036">I2C_TypeDef::OAR2</references>
+        <references refid="group___i2_c___private___defines_1ga859551657f688e5efdb3f573e78ee979" compoundref="stm32f10x__i2c_8c" startline="107">OAR2_ENDUAL_Set</references>
+        <references refid="group___i2_c___private___defines_1gaae86eb7689c73e34388cfbd03b8d9ecd" compoundref="stm32f10x__i2c_8c" startline="108">OAR2_ENDUAL_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga65c740fc8d7b3b9f15cc432d8699d471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_GeneralCallCmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_GeneralCallCmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C general call feature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C General call. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="540" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="540" bodyend="555"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1gadcd99a681046a2315f4bc72c9f461f0e" compoundref="stm32f10x__i2c_8c" startline="65">CR1_ENGC_Set</references>
+        <references refid="group___i2_c___private___defines_1gab51161052b055a5eecb0aad447a776e5" compoundref="stm32f10x__i2c_8c" startline="66">CR1_ENGC_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga58fed146a06cb81d2940604e460de047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_ITConfig</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint16_t I2C_IT, FunctionalState NewState)</argsstring>
+        <name>I2C_ITConfig</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>I2C_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the I2C interrupts sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>I2C_IT_BUF: Buffer interrupt mask </para></listitem>
+<listitem><para>I2C_IT_EVT: Event interrupt mask </para></listitem>
+<listitem><para>I2C_IT_ERR: Error interrupt mask </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified I2C interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="569" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="569" bodyend="586"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___i2_c__interrupts__definition_1gae2695a081871336881f9105d6c847c4f" compoundref="stm32f10x__i2c_8h" startline="219">IS_I2C_CONFIG_IT</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" compoundref="stm32f10x_8h" startline="1032">I2C_TypeDef::CR2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_SendData</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint8_t Data)</argsstring>
+        <name>I2C_SendData</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Sends a data byte through the I2Cx peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte to be transmitted.. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="594" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="594" bodyend="600"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="struct_i2_c___type_def_1a5c1551b886fbb8e801b9203f6d7dc7c5" compoundref="stm32f10x_8h" startline="1038">I2C_TypeDef::DR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gaeaaa4b6f77f50eb57465148c55d27fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t I2C_ReceiveData</definition>
+        <argsstring>(I2C_TypeDef *I2Cx)</argsstring>
+        <name>I2C_ReceiveData</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the most recent received data by the I2Cx peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the received data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="607" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="607" bodyend="613"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="struct_i2_c___type_def_1a5c1551b886fbb8e801b9203f6d7dc7c5" compoundref="stm32f10x_8h" startline="1038">I2C_TypeDef::DR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga009fc2a5b2313c36da39ece39a1156a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_Send7bitAddress</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint8_t Address, uint8_t I2C_Direction)</argsstring>
+        <name>I2C_Send7bitAddress</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>I2C_Direction</declname>
+        </param>
+        <briefdescription>
+<para>Transmits the address byte to select the slave device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the slave address which will be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_Direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies whether the I2C device will be a Transmitter or a Receiver. This parameter can be one of the following values <itemizedlist>
+<listitem><para>I2C_Direction_Transmitter: Transmitter mode </para></listitem>
+<listitem><para>I2C_Direction_Receiver: Receiver mode </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="625" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="625" bodyend="652"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__transfer__direction_1ga33368efe652bc25b4f4b74f02ce0657e" compoundref="stm32f10x__i2c_8h" startline="132">IS_I2C_DIRECTION</references>
+        <references refid="group___i2_c__transfer__direction_1ga9895ee2d7d8cc8ba4daafafa1c3ce1ac" compoundref="stm32f10x__i2c_8h" startline="130">I2C_Direction_Transmitter</references>
+        <references refid="group___i2_c___private___defines_1gaeb56bf422fd13e68c82783df63f425ab" compoundref="stm32f10x__i2c_8c" startline="103">OAR1_ADD0_Set</references>
+        <references refid="group___i2_c___private___defines_1gac5c2ac4577b70e1d7618b7fa1d715e3a" compoundref="stm32f10x__i2c_8c" startline="104">OAR1_ADD0_Reset</references>
+        <references refid="struct_i2_c___type_def_1a5c1551b886fbb8e801b9203f6d7dc7c5" compoundref="stm32f10x_8h" startline="1038">I2C_TypeDef::DR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga8021dc796d15f997356b0583d6346805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_ReadRegister</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint8_t I2C_Register)</argsstring>
+        <name>I2C_ReadRegister</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>I2C_Register</declname>
+        </param>
+        <briefdescription>
+<para>Reads the specified I2C register and returns its value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2C_Register</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the register to read. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_Register_CR1: CR1 register. </para></listitem>
+<listitem><para>I2C_Register_CR2: CR2 register. </para></listitem>
+<listitem><para>I2C_Register_OAR1: OAR1 register. </para></listitem>
+<listitem><para>I2C_Register_OAR2: OAR2 register. </para></listitem>
+<listitem><para>I2C_Register_DR: DR register. </para></listitem>
+<listitem><para>I2C_Register_SR1: SR1 register. </para></listitem>
+<listitem><para>I2C_Register_SR2: SR2 register. </para></listitem>
+<listitem><para>I2C_Register_CCR: CCR register. </para></listitem>
+<listitem><para>I2C_Register_TRISE: TRISE register. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the read register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="669" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="669" bodyend="682"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__registers_1ga37206b258f7930065c308ec7d35f243e" compoundref="stm32f10x__i2c_8h" startline="163">IS_I2C_REGISTER</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga1289c908aeb882443aba323b459c638b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_SoftwareResetCmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_SoftwareResetCmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C software reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C software reset. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="691" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="691" bodyend="706"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga0e067bb108052ea0e8e49feb194c2ca0" compoundref="stm32f10x__i2c_8c" startline="69">CR1_SWRST_Set</references>
+        <references refid="group___i2_c___private___defines_1gab41b615034ed8f830ef4900a0fcefc39" compoundref="stm32f10x__i2c_8c" startline="70">CR1_SWRST_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gad08ebffc3a234d84e6405ec115bd74f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_NACKPositionConfig</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint16_t I2C_NACKPosition)</argsstring>
+        <name>I2C_NACKPositionConfig</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>I2C_NACKPosition</declname>
+        </param>
+        <briefdescription>
+<para>Selects the specified I2C NACK position in master receiver mode. This function is useful in I2C Master Receiver mode when the number of data to be received is equal to 2. In this case, this function should be called (with parameter I2C_NACKPosition_Next) before data reception starts,as described in the 2-byte reception procedure recommended in Reference Manual in Section: Master receiver. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_NACKPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the NACK position. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_NACKPosition_Next: indicates that the next byte will be the last received byte. </para></listitem>
+<listitem><para>I2C_NACKPosition_Current: indicates that current byte is the last received byte.</para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function configures the same bit (POS) as <ref refid="group___i2_c___private___functions_1ga5d0f939bdd45542502827bf408f24161" kindref="member">I2C_PECPositionConfig()</ref> but is intended to be used in I2C mode while <ref refid="group___i2_c___private___functions_1ga5d0f939bdd45542502827bf408f24161" kindref="member">I2C_PECPositionConfig()</ref> is intended to used in SMBUS mode.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="729" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="729" bodyend="746"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c___n_c_a_k__position_1ga631b4b1674a12aa2b3b27360983029e3" compoundref="stm32f10x__i2c_8h" startline="206">IS_I2C_NACK_POSITION</references>
+        <references refid="group___i2_c___n_c_a_k__position_1gacb512a4bd4841a763b6ec51606687fca" compoundref="stm32f10x__i2c_8h" startline="204">I2C_NACKPosition_Next</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___n_c_a_k__position_1ga8d91c1e62730a9d927ca8e9ec4f7ef8f" compoundref="stm32f10x__i2c_8h" startline="205">I2C_NACKPosition_Current</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga75a810776d9710d2f6d9c5d9e93241c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_SMBusAlertConfig</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint16_t I2C_SMBusAlert)</argsstring>
+        <name>I2C_SMBusAlertConfig</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>I2C_SMBusAlert</declname>
+        </param>
+        <briefdescription>
+<para>Drives the SMBusAlert pin high or low for the specified I2C. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_SMBusAlert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies SMBAlert pin level. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_SMBusAlert_Low: SMBAlert pin driven low </para></listitem>
+<listitem><para>I2C_SMBusAlert_High: SMBAlert pin driven high </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="757" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="757" bodyend="772"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c___s_m_bus__alert__pin__level_1ga61b0c91563eb4bd598329241fe7d3bb4" compoundref="stm32f10x__i2c_8h" startline="182">IS_I2C_SMBUS_ALERT</references>
+        <references refid="group___i2_c___s_m_bus__alert__pin__level_1ga6f923166107afb8aad1d7d1a87048d6e" compoundref="stm32f10x__i2c_8h" startline="180">I2C_SMBusAlert_Low</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___s_m_bus__alert__pin__level_1gac3ab64f43ef90f0f83f9c88981aaa862" compoundref="stm32f10x__i2c_8h" startline="181">I2C_SMBusAlert_High</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gaa27d1440290fe601e730b6980999afe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_TransmitPEC</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_TransmitPEC</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C PEC transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2C PEC transmission. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="781" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="781" bodyend="796"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1gad0ab853d291338d4cf3aee736353f0b8" compoundref="stm32f10x__i2c_8c" startline="73">CR1_PEC_Set</references>
+        <references refid="group___i2_c___private___defines_1gabb6969dfa44c3539ef93f04f8136c3c7" compoundref="stm32f10x__i2c_8c" startline="74">CR1_PEC_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga5d0f939bdd45542502827bf408f24161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_PECPositionConfig</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint16_t I2C_PECPosition)</argsstring>
+        <name>I2C_PECPositionConfig</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>I2C_PECPosition</declname>
+        </param>
+        <briefdescription>
+<para>Selects the specified I2C PEC position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_PECPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the PEC position. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_PECPosition_Next: indicates that the next byte is PEC </para></listitem>
+<listitem><para>I2C_PECPosition_Current: indicates that current byte is PEC</para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function configures the same bit (POS) as <ref refid="group___i2_c___private___functions_1gad08ebffc3a234d84e6405ec115bd74f1" kindref="member">I2C_NACKPositionConfig()</ref> but is intended to be used in SMBUS mode while <ref refid="group___i2_c___private___functions_1gad08ebffc3a234d84e6405ec115bd74f1" kindref="member">I2C_NACKPositionConfig()</ref> is intended to used in I2C mode.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="812" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="812" bodyend="827"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c___p_e_c__position_1gac8611a62b06256b1b3c60d4859a016ef" compoundref="stm32f10x__i2c_8h" startline="194">IS_I2C_PEC_POSITION</references>
+        <references refid="group___i2_c___p_e_c__position_1ga74d0996efe6e278fb28d053ba78fccc5" compoundref="stm32f10x__i2c_8h" startline="192">I2C_PECPosition_Next</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___p_e_c__position_1ga8a393364dd651f88bcaebac71c1c52c7" compoundref="stm32f10x__i2c_8h" startline="193">I2C_PECPosition_Current</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gae86801251359226c35745e0a258388b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_CalculatePEC</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_CalculatePEC</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the PEC value calculation of the transferred bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2Cx PEC value calculation. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="836" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="836" bodyend="851"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga7fdf69341e5debc3244812012ae332e6" compoundref="stm32f10x__i2c_8c" startline="77">CR1_ENPEC_Set</references>
+        <references refid="group___i2_c___private___defines_1gabd33104d7b8e4673fa330f4ca3a97e44" compoundref="stm32f10x__i2c_8c" startline="78">CR1_ENPEC_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga7bf75e7c27c0e1d73e70fc0e1c7cd1dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t I2C_GetPEC</definition>
+        <argsstring>(I2C_TypeDef *I2Cx)</argsstring>
+        <name>I2C_GetPEC</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the PEC value for the specified I2C. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PEC value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="858" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="858" bodyend="874"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="struct_i2_c___type_def_1a95c7f729b10eb2acafe499d9c9a81a83" compoundref="stm32f10x_8h" startline="1042">I2C_TypeDef::SR2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga66d86742bf1be58b17ef8779ffc79d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_ARPCmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_ARPCmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C ARP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2Cx ARP. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="883" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="883" bodyend="898"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1ga73cfd7b486b4279fc6a83de64ab23985" compoundref="stm32f10x__i2c_8c" startline="81">CR1_ENARP_Set</references>
+        <references refid="group___i2_c___private___defines_1ga173b065ec9b7b33c0fa0bf71c0fa2207" compoundref="stm32f10x__i2c_8c" startline="82">CR1_ENARP_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga7459feb3b1dfcd3e4f6574002ca7d3bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_StretchClockCmd</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, FunctionalState NewState)</argsstring>
+        <name>I2C_StretchClockCmd</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2C Clock stretching. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the I2Cx Clock stretching. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="907" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="907" bodyend="922"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" compoundref="stm32f10x_8h" startline="1030">I2C_TypeDef::CR1</references>
+        <references refid="group___i2_c___private___defines_1gac4abee43c3523527780f200adf465bc0" compoundref="stm32f10x__i2c_8c" startline="85">CR1_NOSTRETCH_Set</references>
+        <references refid="group___i2_c___private___defines_1ga9a1609fd4bbcc38fc6423836730c8fa0" compoundref="stm32f10x__i2c_8c" startline="86">CR1_NOSTRETCH_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1gaa570f76bc34e5b0531b29b1a90af1275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_FastModeDutyCycleConfig</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint16_t I2C_DutyCycle)</argsstring>
+        <name>I2C_FastModeDutyCycleConfig</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>I2C_DutyCycle</declname>
+        </param>
+        <briefdescription>
+<para>Selects the specified I2C fast mode duty cycle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_DutyCycle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the fast mode duty cycle. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_DutyCycle_2: I2C fast mode Tlow/Thigh = 2 </para></listitem>
+<listitem><para>I2C_DutyCycle_16_9: I2C fast mode Tlow/Thigh = 16/9 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="933" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="933" bodyend="948"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1gae9b3276d9b6ec872ee4fafa2b2fafb83" compoundref="stm32f10x__i2c_8h" startline="108">IS_I2C_DUTY_CYCLE</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1" compoundref="stm32f10x__i2c_8h" startline="106">I2C_DutyCycle_16_9</references>
+        <references refid="struct_i2_c___type_def_1a1775e779008da2b4d1807c2b5033b8a5" compoundref="stm32f10x_8h" startline="1044">I2C_TypeDef::CCR</references>
+        <references refid="group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db" compoundref="stm32f10x__i2c_8h" startline="107">I2C_DutyCycle_2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga8333b96c67f83cba354b3407fcbb6ee8" kindref="member">ErrorStatus</ref></type>
+        <definition>ErrorStatus I2C_CheckEvent</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint32_t I2C_EVENT)</argsstring>
+        <name>I2C_CheckEvent</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>I2C_EVENT</declname>
+        </param>
+        <briefdescription>
+<para>I2C State Monitoring Functions. </para>        </briefdescription>
+        <detaileddescription>
+<para>This I2C driver provides three different ways for I2C state monitoring depending on the application requirements and constraints:</para><para>1) Basic state monitoring: Using <ref refid="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" kindref="member">I2C_CheckEvent()</ref> function: It compares the status registers (SR1 and SR2) content to a given event (can be the combination of one or more flags). It returns SUCCESS if the current status includes the given flags and returns ERROR if one or more flags are missing in the current status.<itemizedlist>
+<listitem><para>When to use:<itemizedlist>
+<listitem><para>This function is suitable for most applications as well as for startup activity since the events are fully described in the product reference manual (RM0008).</para></listitem><listitem><para>It is also suitable for users who need to define their own events.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Limitations:<itemizedlist>
+<listitem><para>If an error occurs (ie. error flags are set besides to the monitored flags), the <ref refid="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" kindref="member">I2C_CheckEvent()</ref> function may return SUCCESS despite the communication hold or corrupted real state. In this case, it is advised to use error interrupts to monitor the error events and handle them in the interrupt IRQ handler.</para><para><simplesect kind="note"><para>For error management, it is advised to use the following functions:<itemizedlist>
+<listitem><para><ref refid="group___i2_c___private___functions_1ga58fed146a06cb81d2940604e460de047" kindref="member">I2C_ITConfig()</ref> to configure and enable the error interrupts (I2C_IT_ERR).</para></listitem><listitem><para>I2Cx_ER_IRQHandler() which is called when the error interrupt occurs. Where x is the peripheral instance (I2C1, I2C2 ...)</para></listitem><listitem><para><ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref> or <ref refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" kindref="member">I2C_GetITStatus()</ref> to be called into I2Cx_ER_IRQHandler() in order to determine which error occured.</para></listitem><listitem><para><ref refid="group___i2_c___private___functions_1ga9d4f8fe9f7232696114b5578b1223963" kindref="member">I2C_ClearFlag()</ref> or <ref refid="group___i2_c___private___functions_1ga110dda440fa200b5f77349df19b3e6bb" kindref="member">I2C_ClearITPendingBit()</ref> and/or <ref refid="group___i2_c___private___functions_1ga1289c908aeb882443aba323b459c638b" kindref="member">I2C_SoftwareResetCmd()</ref> and/or I2C_GenerateStop() in order to clear the error flag and source, and return to correct communication status.</para></listitem></itemizedlist>
+</para></simplesect>
+2) Advanced state monitoring: Using the function <ref refid="group___i2_c___private___functions_1ga29237aea9b5a3ead33167e1d027e9f1a" kindref="member">I2C_GetLastEvent()</ref> which returns the image of both status registers in a single word (uint32_t) (Status Register 2 value is shifted left by 16 bits and concatenated to Status Register 1).</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>When to use:<itemizedlist>
+<listitem><para>This function is suitable for the same applications above but it allows to overcome the mentioned limitation of <ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref> function. The returned value could be compared to events already defined in the library (<ref refid="stm32f10x__i2c_8h" kindref="compound">stm32f10x_i2c.h</ref>) or to custom values defined by user.</para></listitem><listitem><para>This function is suitable when multiple flags are monitored at the same time.</para></listitem><listitem><para>At the opposite of <ref refid="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" kindref="member">I2C_CheckEvent()</ref> function, this function allows user to choose when an event is accepted (when all events flags are set and no other flags are set or just when the needed flags are set like <ref refid="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" kindref="member">I2C_CheckEvent()</ref> function).</para></listitem></itemizedlist>
+</para><para>Limitations:<itemizedlist>
+<listitem><para>User may need to define his own events.</para></listitem><listitem><para>Same remark concerning the error management is applicable for this function if user decides to check only regular communication flags (and ignores error flags).</para></listitem></itemizedlist>
+</para><para>3) Flag-based state monitoring: Using the function <ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref> which simply returns the status of one single flag (ie. I2C_FLAG_RXNE ...).<itemizedlist>
+<listitem><para>When to use:<itemizedlist>
+<listitem><para>This function could be used for specific applications or in debug phase.</para></listitem><listitem><para>It is suitable when only one flag checking is needed (most I2C events are monitored through multiple flags).</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Limitations:<itemizedlist>
+<listitem><para>When calling this function, the Status register is accessed. Some flags are cleared when the status register is accessed. So checking the status of one Flag, may clear other ones.</para></listitem><listitem><para>Function may need to be called twice or more in order to monitor one single event.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>For detailed description of Events, please refer to section I2C_Events in <ref refid="stm32f10x__i2c_8h" kindref="compound">stm32f10x_i2c.h</ref> file.</para><para>1) Basic state monitoring Checks whether the last I2Cx Event is equal to the one passed as parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_EVENT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the event to be checked. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED : EV1 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED : EV1 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED : EV1 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED : EV1 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED : EV1 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_BYTE_RECEIVED : EV2 </para></listitem>
+<listitem><para>(I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_DUALF) : EV2 </para></listitem>
+<listitem><para>(I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_GENCALL) : EV2 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_BYTE_TRANSMITTED : EV3 </para></listitem>
+<listitem><para>(I2C_EVENT_SLAVE_BYTE_TRANSMITTED | I2C_FLAG_DUALF) : EV3 </para></listitem>
+<listitem><para>(I2C_EVENT_SLAVE_BYTE_TRANSMITTED | I2C_FLAG_GENCALL) : EV3 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_ACK_FAILURE : EV3_2 </para></listitem>
+<listitem><para>I2C_EVENT_SLAVE_STOP_DETECTED : EV4 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_MODE_SELECT : EV5 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED : EV6 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED : EV6 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_BYTE_RECEIVED : EV7 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_BYTE_TRANSMITTING : EV8 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_BYTE_TRANSMITTED : EV8_2 </para></listitem>
+<listitem><para>I2C_EVENT_MASTER_MODE_ADDRESS10 : EV9</para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: For detailed description of Events, please refer to section I2C_Events in <ref refid="stm32f10x__i2c_8h" kindref="compound">stm32f10x_i2c.h</ref> file.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>An</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem><para>SUCCESS: Last event is equal to the I2C_EVENT</para></listitem><listitem><para>ERROR: Last event is different from the I2C_EVENT </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="1073" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="1073" bodyend="1104"/>
+        <references refid="group___exported__types_1gga8333b96c67f83cba354b3407fcbb6ee8a2fd6f336d08340583bd620a7f5694c90" compoundref="stm32f10x_8h" startline="524">ERROR</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c___events_1ga4b42e6936006195f89ff4f763d366970" compoundref="stm32f10x__i2c_8h" startline="482">IS_I2C_EVENT</references>
+        <references refid="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" compoundref="stm32f10x_8h" startline="1040">I2C_TypeDef::SR1</references>
+        <references refid="struct_i2_c___type_def_1a95c7f729b10eb2acafe499d9c9a81a83" compoundref="stm32f10x_8h" startline="1042">I2C_TypeDef::SR2</references>
+        <references refid="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__i2c_8c" startline="120">FLAG_Mask</references>
+        <references refid="group___exported__types_1gga8333b96c67f83cba354b3407fcbb6ee8ac7f69f7c9e5aea9b8f54cf02870e2bf8" compoundref="stm32f10x_8h" startline="524">SUCCESS</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga29237aea9b5a3ead33167e1d027e9f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t I2C_GetLastEvent</definition>
+        <argsstring>(I2C_TypeDef *I2Cx)</argsstring>
+        <name>I2C_GetLastEvent</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the last I2Cx Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>2) Advanced state monitoring <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: For detailed description of Events, please refer to section I2C_Events in <ref refid="stm32f10x__i2c_8h" kindref="compound">stm32f10x_i2c.h</ref> file.</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="1121" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="1121" bodyend="1139"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" compoundref="stm32f10x_8h" startline="1040">I2C_TypeDef::SR1</references>
+        <references refid="struct_i2_c___type_def_1a95c7f729b10eb2acafe499d9c9a81a83" compoundref="stm32f10x_8h" startline="1042">I2C_TypeDef::SR2</references>
+        <references refid="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__i2c_8c" startline="120">FLAG_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus I2C_GetFlagStatus</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint32_t I2C_FLAG)</argsstring>
+        <name>I2C_GetFlagStatus</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>I2C_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified I2C flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para>3) Flag-based state monitoring <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_FLAG_DUALF: Dual flag (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_SMBHOST: SMBus host header (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_SMBDEFAULT: SMBus default header (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_GENCALL: General call header flag (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_TRA: Transmitter/Receiver flag </para></listitem>
+<listitem><para>I2C_FLAG_BUSY: Bus busy flag </para></listitem>
+<listitem><para>I2C_FLAG_MSL: Master/Slave flag </para></listitem>
+<listitem><para>I2C_FLAG_SMBALERT: SMBus Alert flag </para></listitem>
+<listitem><para>I2C_FLAG_TIMEOUT: Timeout or Tlow error flag </para></listitem>
+<listitem><para>I2C_FLAG_PECERR: PEC error in reception flag </para></listitem>
+<listitem><para>I2C_FLAG_OVR: Overrun/Underrun flag (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_AF: Acknowledge failure flag </para></listitem>
+<listitem><para>I2C_FLAG_ARLO: Arbitration lost flag (Master mode) </para></listitem>
+<listitem><para>I2C_FLAG_BERR: Bus error flag </para></listitem>
+<listitem><para>I2C_FLAG_TXE: Data register empty flag (Transmitter) </para></listitem>
+<listitem><para>I2C_FLAG_RXNE: Data register not empty (Receiver) flag </para></listitem>
+<listitem><para>I2C_FLAG_STOPF: Stop detection flag (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_ADD10: 10-bit header sent flag (Master mode) </para></listitem>
+<listitem><para>I2C_FLAG_BTF: Byte transfer finished flag </para></listitem>
+<listitem><para>I2C_FLAG_ADDR: Address sent flag (Master mode) &quot;ADSL&quot; Address matched flag (Slave mode)&quot;ENDA&quot; </para></listitem>
+<listitem><para>I2C_FLAG_SB: Start bit flag (Master mode) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of I2C_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="1176" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="1176" bodyend="1220"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__flags__definition_1ga1a2c2a7c50cd8e33e532918106b4f6ce" compoundref="stm32f10x__i2c_8h" startline="293">IS_I2C_GET_FLAG</references>
+        <references refid="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__i2c_8c" startline="120">FLAG_Mask</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga9d4f8fe9f7232696114b5578b1223963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_ClearFlag</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint32_t I2C_FLAG)</argsstring>
+        <name>I2C_ClearFlag</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>I2C_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the I2Cx&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>I2C_FLAG_SMBALERT: SMBus Alert flag </para></listitem>
+<listitem><para>I2C_FLAG_TIMEOUT: Timeout or Tlow error flag </para></listitem>
+<listitem><para>I2C_FLAG_PECERR: PEC error in reception flag </para></listitem>
+<listitem><para>I2C_FLAG_OVR: Overrun/Underrun flag (Slave mode) </para></listitem>
+<listitem><para>I2C_FLAG_AF: Acknowledge failure flag </para></listitem>
+<listitem><para>I2C_FLAG_ARLO: Arbitration lost flag (Master mode) </para></listitem>
+<listitem><para>I2C_FLAG_BERR: Bus error flag</para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><itemizedlist>
+<listitem><para>STOPF (STOP detection) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref>) followed by a write operation to I2C_CR1 register (<ref refid="group___i2_c___private___functions_1ga7e1323c9133c2cb424dfb5b10b7d2f0b" kindref="member">I2C_Cmd()</ref> to re-enable the I2C peripheral).</para></listitem><listitem><para>ADD10 (10-bit header sent) is cleared by software sequence: a read operation to I2C_SR1 (<ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref>) followed by writing the second byte of the address in DR register.</para></listitem><listitem><para>BTF (Byte Transfer Finished) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref>) followed by a read/write to I2C_DR register (<ref refid="group___i2_c___private___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" kindref="member">I2C_SendData()</ref>).</para></listitem><listitem><para>ADDR (Address sent) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref>) followed by a read operation to I2C_SR2 register ((void)(I2Cx-&gt;SR2)).</para></listitem><listitem><para>SB (Start Bit) is cleared software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga15c95d0ed124f029621a2061b1677ee7" kindref="member">I2C_GetFlagStatus()</ref>) followed by a write operation to I2C_DR register (<ref refid="group___i2_c___private___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" kindref="member">I2C_SendData()</ref>). </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="1255" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="1255" bodyend="1265"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__flags__definition_1ga66c8180841350c47627c323acfe42ee9" compoundref="stm32f10x__i2c_8h" startline="291">IS_I2C_CLEAR_FLAG</references>
+        <references refid="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__i2c_8c" startline="120">FLAG_Mask</references>
+        <references refid="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" compoundref="stm32f10x_8h" startline="1040">I2C_TypeDef::SR1</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus I2C_GetITStatus</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint32_t I2C_IT)</argsstring>
+        <name>I2C_GetITStatus</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>I2C_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified I2C interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>I2C_IT_SMBALERT: SMBus Alert flag </para></listitem>
+<listitem><para>I2C_IT_TIMEOUT: Timeout or Tlow error flag </para></listitem>
+<listitem><para>I2C_IT_PECERR: PEC error in reception flag </para></listitem>
+<listitem><para>I2C_IT_OVR: Overrun/Underrun flag (Slave mode) </para></listitem>
+<listitem><para>I2C_IT_AF: Acknowledge failure flag </para></listitem>
+<listitem><para>I2C_IT_ARLO: Arbitration lost flag (Master mode) </para></listitem>
+<listitem><para>I2C_IT_BERR: Bus error flag </para></listitem>
+<listitem><para>I2C_IT_TXE: Data register empty flag (Transmitter) </para></listitem>
+<listitem><para>I2C_IT_RXNE: Data register not empty (Receiver) flag </para></listitem>
+<listitem><para>I2C_IT_STOPF: Stop detection flag (Slave mode) </para></listitem>
+<listitem><para>I2C_IT_ADD10: 10-bit header sent flag (Master mode) </para></listitem>
+<listitem><para>I2C_IT_BTF: Byte transfer finished flag </para></listitem>
+<listitem><para>I2C_IT_ADDR: Address sent flag (Master mode) &quot;ADSL&quot; Address matched flag (Slave mode)&quot;ENDAD&quot; </para></listitem>
+<listitem><para>I2C_IT_SB: Start bit flag (Master mode) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of I2C_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="1289" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="1289" bodyend="1317"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__interrupts__definition_1gab3d113f3d6b6e6f7896c5d7a8d8c2d01" compoundref="stm32f10x__i2c_8h" startline="245">IS_I2C_GET_IT</references>
+        <references refid="group___i2_c___private___defines_1gab99e12994e073c2a681a6cf68492b3e2" compoundref="stm32f10x__i2c_8c" startline="123">ITEN_Mask</references>
+        <references refid="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" compoundref="stm32f10x_8h" startline="1032">I2C_TypeDef::CR2</references>
+        <references refid="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__i2c_8c" startline="120">FLAG_Mask</references>
+        <references refid="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" compoundref="stm32f10x_8h" startline="1040">I2C_TypeDef::SR1</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___private___functions_1ga110dda440fa200b5f77349df19b3e6bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_ClearITPendingBit</definition>
+        <argsstring>(I2C_TypeDef *I2Cx, uint32_t I2C_IT)</argsstring>
+        <name>I2C_ClearITPendingBit</name>
+        <param>
+          <type><ref refid="struct_i2_c___type_def" kindref="compound">I2C_TypeDef</ref> *</type>
+          <declname>I2Cx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>I2C_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the I2Cx�s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2Cx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the I2C peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I2C_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>I2C_IT_SMBALERT: SMBus Alert interrupt </para></listitem>
+<listitem><para>I2C_IT_TIMEOUT: Timeout or Tlow error interrupt </para></listitem>
+<listitem><para>I2C_IT_PECERR: PEC error in reception interrupt </para></listitem>
+<listitem><para>I2C_IT_OVR: Overrun/Underrun interrupt (Slave mode) </para></listitem>
+<listitem><para>I2C_IT_AF: Acknowledge failure interrupt </para></listitem>
+<listitem><para>I2C_IT_ARLO: Arbitration lost interrupt (Master mode) </para></listitem>
+<listitem><para>I2C_IT_BERR: Bus error interrupt</para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><itemizedlist>
+<listitem><para>STOPF (STOP detection) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" kindref="member">I2C_GetITStatus()</ref>) followed by a write operation to I2C_CR1 register (<ref refid="group___i2_c___private___functions_1ga7e1323c9133c2cb424dfb5b10b7d2f0b" kindref="member">I2C_Cmd()</ref> to re-enable the I2C peripheral).</para></listitem><listitem><para>ADD10 (10-bit header sent) is cleared by software sequence: a read operation to I2C_SR1 (<ref refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" kindref="member">I2C_GetITStatus()</ref>) followed by writing the second byte of the address in I2C_DR register.</para></listitem><listitem><para>BTF (Byte Transfer Finished) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" kindref="member">I2C_GetITStatus()</ref>) followed by a read/write to I2C_DR register (<ref refid="group___i2_c___private___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" kindref="member">I2C_SendData()</ref>).</para></listitem><listitem><para>ADDR (Address sent) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" kindref="member">I2C_GetITStatus()</ref>) followed by a read operation to I2C_SR2 register ((void)(I2Cx-&gt;SR2)).</para></listitem><listitem><para>SB (Start Bit) is cleared by software sequence: a read operation to I2C_SR1 register (<ref refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" kindref="member">I2C_GetITStatus()</ref>) followed by a write operation to I2C_DR register (<ref refid="group___i2_c___private___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" kindref="member">I2C_SendData()</ref>). </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="1350" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="1350" bodyend="1360"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___i2_c___exported___constants_1ga2e57489a40603d6ab7ff115b94eeb303" compoundref="stm32f10x__i2c_8h" startline="86">IS_I2C_ALL_PERIPH</references>
+        <references refid="group___i2_c__interrupts__definition_1ga368c05fc9aadd7bb4d23280791b5a751" compoundref="stm32f10x__i2c_8h" startline="243">IS_I2C_CLEAR_IT</references>
+        <references refid="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__i2c_8c" startline="120">FLAG_Mask</references>
+        <references refid="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" compoundref="stm32f10x_8h" startline="1040">I2C_TypeDef::SR1</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

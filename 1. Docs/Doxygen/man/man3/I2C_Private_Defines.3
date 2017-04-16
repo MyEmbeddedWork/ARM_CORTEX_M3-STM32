@@ -1,0 +1,265 @@
+.TH "I2C_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCR1_PE_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBCR1_PE_Reset\fP   ((uint16_t)0xFFFE)"
+.br
+.ti -1c
+.RI "#define \fBCR1_START_Set\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBCR1_START_Reset\fP   ((uint16_t)0xFEFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_STOP_Set\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBCR1_STOP_Reset\fP   ((uint16_t)0xFDFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ACK_Set\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ACK_Reset\fP   ((uint16_t)0xFBFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENGC_Set\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENGC_Reset\fP   ((uint16_t)0xFFBF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_SWRST_Set\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_SWRST_Reset\fP   ((uint16_t)0x7FFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_PEC_Set\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_PEC_Reset\fP   ((uint16_t)0xEFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENPEC_Set\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENPEC_Reset\fP   ((uint16_t)0xFFDF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENARP_Set\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBCR1_ENARP_Reset\fP   ((uint16_t)0xFFEF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_NOSTRETCH_Set\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBCR1_NOSTRETCH_Reset\fP   ((uint16_t)0xFF7F)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CLEAR_Mask\fP   ((uint16_t)0xFBF5)"
+.br
+.ti -1c
+.RI "#define \fBCR2_DMAEN_Set\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBCR2_DMAEN_Reset\fP   ((uint16_t)0xF7FF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LAST_Set\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LAST_Reset\fP   ((uint16_t)0xEFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_FREQ_Reset\fP   ((uint16_t)0xFFC0)"
+.br
+.ti -1c
+.RI "#define \fBOAR1_ADD0_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBOAR1_ADD0_Reset\fP   ((uint16_t)0xFFFE)"
+.br
+.ti -1c
+.RI "#define \fBOAR2_ENDUAL_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBOAR2_ENDUAL_Reset\fP   ((uint16_t)0xFFFE)"
+.br
+.ti -1c
+.RI "#define \fBOAR2_ADD2_Reset\fP   ((uint16_t)0xFF01)"
+.br
+.ti -1c
+.RI "#define \fBCCR_FS_Set\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBCCR_CCR_Set\fP   ((uint16_t)0x0FFF)"
+.br
+.ti -1c
+.RI "#define \fBFLAG_Mask\fP   ((uint32_t)0x00FFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBITEN_Mask\fP   ((uint32_t)0x07000000)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CCR_CCR_Set   ((uint16_t)0x0FFF)"
+
+.PP
+Definition at line 117 of file stm32f10x_i2c\&.c\&.
+.SS "#define CCR_FS_Set   ((uint16_t)0x8000)"
+
+.PP
+Definition at line 114 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ACK_Reset   ((uint16_t)0xFBFF)"
+
+.PP
+Definition at line 62 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ACK_Set   ((uint16_t)0x0400)"
+
+.PP
+Definition at line 61 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_CLEAR_Mask   ((uint16_t)0xFBF5)"
+
+.PP
+Definition at line 89 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ENARP_Reset   ((uint16_t)0xFFEF)"
+
+.PP
+Definition at line 82 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ENARP_Set   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 81 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ENGC_Reset   ((uint16_t)0xFFBF)"
+
+.PP
+Definition at line 66 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ENGC_Set   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 65 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ENPEC_Reset   ((uint16_t)0xFFDF)"
+
+.PP
+Definition at line 78 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_ENPEC_Set   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 77 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_NOSTRETCH_Reset   ((uint16_t)0xFF7F)"
+
+.PP
+Definition at line 86 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_NOSTRETCH_Set   ((uint16_t)0x0080)"
+
+.PP
+Definition at line 85 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_PE_Reset   ((uint16_t)0xFFFE)"
+
+.PP
+Definition at line 50 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_PE_Set   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 49 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_PEC_Reset   ((uint16_t)0xEFFF)"
+
+.PP
+Definition at line 74 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_PEC_Set   ((uint16_t)0x1000)"
+
+.PP
+Definition at line 73 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_START_Reset   ((uint16_t)0xFEFF)"
+
+.PP
+Definition at line 54 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_START_Set   ((uint16_t)0x0100)"
+
+.PP
+Definition at line 53 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_STOP_Reset   ((uint16_t)0xFDFF)"
+
+.PP
+Definition at line 58 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_STOP_Set   ((uint16_t)0x0200)"
+
+.PP
+Definition at line 57 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_SWRST_Reset   ((uint16_t)0x7FFF)"
+
+.PP
+Definition at line 70 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR1_SWRST_Set   ((uint16_t)0x8000)"
+
+.PP
+Definition at line 69 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR2_DMAEN_Reset   ((uint16_t)0xF7FF)"
+
+.PP
+Definition at line 93 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR2_DMAEN_Set   ((uint16_t)0x0800)"
+
+.PP
+Definition at line 92 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR2_FREQ_Reset   ((uint16_t)0xFFC0)"
+
+.PP
+Definition at line 100 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR2_LAST_Reset   ((uint16_t)0xEFFF)"
+
+.PP
+Definition at line 97 of file stm32f10x_i2c\&.c\&.
+.SS "#define CR2_LAST_Set   ((uint16_t)0x1000)"
+
+.PP
+Definition at line 96 of file stm32f10x_i2c\&.c\&.
+.SS "#define FLAG_Mask   ((uint32_t)0x00FFFFFF)"
+
+.PP
+Definition at line 120 of file stm32f10x_i2c\&.c\&.
+.SS "#define ITEN_Mask   ((uint32_t)0x07000000)"
+
+.PP
+Definition at line 123 of file stm32f10x_i2c\&.c\&.
+.SS "#define OAR1_ADD0_Reset   ((uint16_t)0xFFFE)"
+
+.PP
+Definition at line 104 of file stm32f10x_i2c\&.c\&.
+.SS "#define OAR1_ADD0_Set   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 103 of file stm32f10x_i2c\&.c\&.
+.SS "#define OAR2_ADD2_Reset   ((uint16_t)0xFF01)"
+
+.PP
+Definition at line 111 of file stm32f10x_i2c\&.c\&.
+.SS "#define OAR2_ENDUAL_Reset   ((uint16_t)0xFFFE)"
+
+.PP
+Definition at line 108 of file stm32f10x_i2c\&.c\&.
+.SS "#define OAR2_ENDUAL_Set   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 107 of file stm32f10x_i2c\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

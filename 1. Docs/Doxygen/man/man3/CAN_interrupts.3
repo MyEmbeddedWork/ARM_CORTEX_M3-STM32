@@ -1,0 +1,172 @@
+.TH "CAN_interrupts" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_interrupts
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAN_IT_TME\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_FMP0\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_FF0\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_FOV0\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_FMP1\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_FF1\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_FOV1\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_WKU\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_SLK\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_EWG\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_EPV\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_BOF\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_LEC\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_ERR\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_RQCP0\fP   \fBCAN_IT_TME\fP"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_RQCP1\fP   \fBCAN_IT_TME\fP"
+.br
+.ti -1c
+.RI "#define \fBCAN_IT_RQCP2\fP   \fBCAN_IT_TME\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_CLEAR_IT\fP(IT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAN_IT_BOF   ((uint32_t)0x00000400)"
+Bus-off Interrupt 
+.PP
+Definition at line 579 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_EPV   ((uint32_t)0x00000200)"
+Error passive Interrupt 
+.PP
+Definition at line 578 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_ERR   ((uint32_t)0x00008000)"
+Error Interrupt 
+.PP
+Definition at line 581 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_EWG   ((uint32_t)0x00000100)"
+Error warning Interrupt 
+.PP
+Definition at line 577 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_FF0   ((uint32_t)0x00000004)"
+FIFO 0 full Interrupt 
+.PP
+Definition at line 566 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_FF1   ((uint32_t)0x00000020)"
+FIFO 1 full Interrupt 
+.PP
+Definition at line 569 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_FMP0   ((uint32_t)0x00000002)"
+FIFO 0 message pending Interrupt 
+.PP
+Definition at line 565 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_FMP1   ((uint32_t)0x00000010)"
+FIFO 1 message pending Interrupt 
+.PP
+Definition at line 568 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_FOV0   ((uint32_t)0x00000008)"
+FIFO 0 overrun Interrupt 
+.PP
+Definition at line 567 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_FOV1   ((uint32_t)0x00000040)"
+FIFO 1 overrun Interrupt 
+.PP
+Definition at line 570 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_LEC   ((uint32_t)0x00000800)"
+Last error code Interrupt 
+.PP
+Definition at line 580 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_RQCP0   \fBCAN_IT_TME\fP"
+
+.PP
+Definition at line 584 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_RQCP1   \fBCAN_IT_TME\fP"
+
+.PP
+Definition at line 585 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_RQCP2   \fBCAN_IT_TME\fP"
+
+.PP
+Definition at line 586 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_SLK   ((uint32_t)0x00020000)"
+Sleep acknowledge Interrupt 
+.PP
+Definition at line 574 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_TME   ((uint32_t)0x00000001)"
+Transmit mailbox empty Interrupt 
+.PP
+Definition at line 562 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_IT_WKU   ((uint32_t)0x00010000)"
+Wake-up Interrupt 
+.PP
+Definition at line 573 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_CLEAR_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == CAN_IT_TME) || ((IT) == CAN_IT_FF0)    ||\
+                             ((IT) == CAN_IT_FOV0)|| ((IT) == CAN_IT_FF1)    ||\
+                             ((IT) == CAN_IT_FOV1)|| ((IT) == CAN_IT_EWG)    ||\
+                             ((IT) == CAN_IT_EPV) || ((IT) == CAN_IT_BOF)    ||\
+                             ((IT) == CAN_IT_LEC) || ((IT) == CAN_IT_ERR)    ||\
+                             ((IT) == CAN_IT_WKU) || ((IT) == CAN_IT_SLK))
+.fi
+.PP
+Definition at line 597 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == CAN_IT_TME) || ((IT) == CAN_IT_FMP0)  ||\
+                             ((IT) == CAN_IT_FF0)  || ((IT) == CAN_IT_FOV0)  ||\
+                             ((IT) == CAN_IT_FMP1) || ((IT) == CAN_IT_FF1)   ||\
+                             ((IT) == CAN_IT_FOV1) || ((IT) == CAN_IT_EWG)   ||\
+                             ((IT) == CAN_IT_EPV)  || ((IT) == CAN_IT_BOF)   ||\
+                             ((IT) == CAN_IT_LEC)  || ((IT) == CAN_IT_ERR)   ||\
+                             ((IT) == CAN_IT_WKU)  || ((IT) == CAN_IT_SLK))
+.fi
+.PP
+Definition at line 589 of file stm32f10x_can\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

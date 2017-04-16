@@ -1,0 +1,66 @@
+.TH "TIM_Input_Capture_Polarity" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Input_Capture_Polarity
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_ICPolarity_Rising\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPolarity_Falling\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPolarity_BothEdge\fP   ((uint16_t)0x000A)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_POLARITY_LITE\fP(POLARITY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_IC_POLARITY(POLARITY)"
+\fBValue:\fP
+.PP
+.nf
+(((POLARITY) == TIM_ICPolarity_Rising) || \
+                                      ((POLARITY) == TIM_ICPolarity_Falling))
+.fi
+.PP
+Definition at line 562 of file stm32f10x_tim\&.h\&.
+.SS "#define IS_TIM_IC_POLARITY_LITE(POLARITY)"
+\fBValue:\fP
+.PP
+.nf
+(((POLARITY) == TIM_ICPolarity_Rising) || \
+                                           ((POLARITY) == TIM_ICPolarity_Falling)|| \
+                                           ((POLARITY) == TIM_ICPolarity_BothEdge))
+.fi
+.PP
+Definition at line 564 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ICPolarity_BothEdge   ((uint16_t)0x000A)"
+
+.PP
+Definition at line 561 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ICPolarity_Falling   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 560 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ICPolarity_Rising   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 559 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

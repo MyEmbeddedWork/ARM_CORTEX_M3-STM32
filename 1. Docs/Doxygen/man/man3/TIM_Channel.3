@@ -1,0 +1,87 @@
+.TH "TIM_Channel" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Channel
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_Channel_1\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_4\fP   ((uint16_t)0x000C)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_PWMI_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_COMPLEMENTARY_CHANNEL\fP(CHANNEL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_CHANNEL(CHANNEL)"
+\fBValue:\fP
+.PP
+.nf
+(((CHANNEL) == TIM_Channel_1) || \
+                                 ((CHANNEL) == TIM_Channel_2) || \
+                                 ((CHANNEL) == TIM_Channel_3) || \
+                                 ((CHANNEL) == TIM_Channel_4))
+.fi
+.PP
+Definition at line 338 of file stm32f10x_tim\&.h\&.
+.SS "#define IS_TIM_COMPLEMENTARY_CHANNEL(CHANNEL)"
+\fBValue:\fP
+.PP
+.nf
+(((CHANNEL) == TIM_Channel_1) || \
+                                               ((CHANNEL) == TIM_Channel_2) || \
+                                               ((CHANNEL) == TIM_Channel_3))
+.fi
+.PP
+Definition at line 344 of file stm32f10x_tim\&.h\&.
+.SS "#define IS_TIM_PWMI_CHANNEL(CHANNEL)"
+\fBValue:\fP
+.PP
+.nf
+(((CHANNEL) == TIM_Channel_1) || \
+                                      ((CHANNEL) == TIM_Channel_2))
+.fi
+.PP
+Definition at line 342 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_Channel_1   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 334 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_Channel_2   ((uint16_t)0x0004)"
+
+.PP
+Definition at line 335 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_Channel_3   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 336 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_Channel_4   ((uint16_t)0x000C)"
+
+.PP
+Definition at line 337 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

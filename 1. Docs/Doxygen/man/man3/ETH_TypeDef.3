@@ -1,0 +1,467 @@
+.TH "ETH_TypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ETH_TypeDef \- Ethernet MAC\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACFFR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACHTHR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACHTLR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACMIIAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACMIIDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACFCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACVLANTR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACRWUFFR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACPMTCSR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACIMR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA0HR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA0LR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA1HR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA1LR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA2HR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA2LR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA3HR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMACA3LR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [40]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCRIR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCTIR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCRIMR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCTIMR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [14]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCTGFSCCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCTGFMSCCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [5]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCTGFCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [10]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCRFCECR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCRFAECR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED6\fP [10]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMCRGUFCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED7\fP [334]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTSCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPSSIR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTSHR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTSLR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTSHUR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTSLUR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTSAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTTHR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPTPTTLR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED8\fP [567]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMABMR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMATPDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMARPDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMARDLAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMATDLAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMASR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMAOMR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMAIER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMAMFBOCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED9\fP [9]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMACHTDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMACHRDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMACHTBAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDMACHRBAR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Ethernet MAC\&. 
+.PP
+Definition at line 816 of file stm32f10x\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMABMR"
+
+.PP
+Definition at line 867 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMACHRBAR"
+
+.PP
+Definition at line 880 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMACHRDR"
+
+.PP
+Definition at line 878 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMACHTBAR"
+
+.PP
+Definition at line 879 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMACHTDR"
+
+.PP
+Definition at line 877 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMAIER"
+
+.PP
+Definition at line 874 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMAMFBOCR"
+
+.PP
+Definition at line 875 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMAOMR"
+
+.PP
+Definition at line 873 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMARDLAR"
+
+.PP
+Definition at line 870 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMARPDR"
+
+.PP
+Definition at line 869 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMASR"
+
+.PP
+Definition at line 872 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMATDLAR"
+
+.PP
+Definition at line 871 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::DMATPDR"
+
+.PP
+Definition at line 868 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA0HR"
+
+.PP
+Definition at line 832 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA0LR"
+
+.PP
+Definition at line 833 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA1HR"
+
+.PP
+Definition at line 834 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA1LR"
+
+.PP
+Definition at line 835 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA2HR"
+
+.PP
+Definition at line 836 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA2LR"
+
+.PP
+Definition at line 837 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA3HR"
+
+.PP
+Definition at line 838 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACA3LR"
+
+.PP
+Definition at line 839 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACCR"
+
+.PP
+Definition at line 818 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACFCR"
+
+.PP
+Definition at line 824 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACFFR"
+
+.PP
+Definition at line 819 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACHTHR"
+
+.PP
+Definition at line 820 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACHTLR"
+
+.PP
+Definition at line 821 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACIMR"
+
+.PP
+Definition at line 831 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACMIIAR"
+
+.PP
+Definition at line 822 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACMIIDR"
+
+.PP
+Definition at line 823 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACPMTCSR"
+
+.PP
+Definition at line 828 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACRWUFFR"
+
+.PP
+Definition at line 827 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACSR"
+
+.PP
+Definition at line 830 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MACVLANTR"
+
+.PP
+Definition at line 825 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCCR"
+
+.PP
+Definition at line 841 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCRFAECR"
+
+.PP
+Definition at line 853 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCRFCECR"
+
+.PP
+Definition at line 852 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCRGUFCR"
+
+.PP
+Definition at line 855 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCRIMR"
+
+.PP
+Definition at line 844 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCRIR"
+
+.PP
+Definition at line 842 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCTGFCR"
+
+.PP
+Definition at line 850 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCTGFMSCCR"
+
+.PP
+Definition at line 848 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCTGFSCCR"
+
+.PP
+Definition at line 847 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCTIMR"
+
+.PP
+Definition at line 845 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::MMCTIR"
+
+.PP
+Definition at line 843 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPSSIR"
+
+.PP
+Definition at line 858 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTSAR"
+
+.PP
+Definition at line 863 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTSCR"
+
+.PP
+Definition at line 857 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTSHR"
+
+.PP
+Definition at line 859 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTSHUR"
+
+.PP
+Definition at line 861 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTSLR"
+
+.PP
+Definition at line 860 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTSLUR"
+
+.PP
+Definition at line 862 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTTHR"
+
+.PP
+Definition at line 864 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t ETH_TypeDef::PTPTTLR"
+
+.PP
+Definition at line 865 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED0[2]"
+
+.PP
+Definition at line 826 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED1[2]"
+
+.PP
+Definition at line 829 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED2[40]"
+
+.PP
+Definition at line 840 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED3[14]"
+
+.PP
+Definition at line 846 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED4[5]"
+
+.PP
+Definition at line 849 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED5[10]"
+
+.PP
+Definition at line 851 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED6[10]"
+
+.PP
+Definition at line 854 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED7[334]"
+
+.PP
+Definition at line 856 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED8[567]"
+
+.PP
+Definition at line 866 of file stm32f10x\&.h\&.
+.SS "uint32_t ETH_TypeDef::RESERVED9[9]"
+
+.PP
+Definition at line 876 of file stm32f10x\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

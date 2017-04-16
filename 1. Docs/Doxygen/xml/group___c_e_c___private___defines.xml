@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_e_c___private___defines" kind="group">
+    <compoundname>CEC_Private_Defines</compoundname>
+    <title>CEC_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" prot="public" static="no">
+        <name>CEC_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaacb77bc44b3f8c87ab98f241e760e440" kindref="member">CEC_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="49" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" prot="public" static="no">
+        <name>CFGR_OFFSET</name>
+        <initializer>(<ref refid="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" kindref="member">CEC_OFFSET</ref> + 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga321e547b9574b065127c882e09a4f7e7" prot="public" static="no">
+        <name>PE_BitNumber</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga9d1f044508cda5ad8213bd7bc5c4363d" prot="public" static="no">
+        <name>CFGR_PE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" kindref="member">CFGR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1ga321e547b9574b065127c882e09a4f7e7" kindref="member">PE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="56" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga57731312db52f3498312a56e98166fad" prot="public" static="no">
+        <name>IE_BitNumber</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1gac7fe35cf912353ca51a56c5f1f25b2fb" prot="public" static="no">
+        <name>CFGR_IE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga8682298330c3b9bae1992e4f1a0af985" kindref="member">CFGR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1ga57731312db52f3498312a56e98166fad" kindref="member">IE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" prot="public" static="no">
+        <name>CSR_OFFSET</name>
+        <initializer>(<ref refid="group___c_e_c___private___defines_1ga675324bd8967b75f32554f50210821af" kindref="member">CEC_OFFSET</ref> + 0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga1a470abab836eba7b451950938708946" prot="public" static="no">
+        <name>TSOM_BitNumber</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga4971cc50b0ead4a493e2a9c03966c826" prot="public" static="no">
+        <name>CSR_TSOM_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1ga1a470abab836eba7b451950938708946" kindref="member">TSOM_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1gac86378eff7728e5cfca5480ab2dbef0b" prot="public" static="no">
+        <name>TEOM_BitNumber</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga9ac493d98ce1f6d82b778ace0f2bc7bb" prot="public" static="no">
+        <name>CSR_TEOM_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___c_e_c___private___defines_1gac86378eff7728e5cfca5480ab2dbef0b" kindref="member">TEOM_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1gaaedf9b8df17534f5eaf75ec1ca3fbd7a" prot="public" static="no">
+        <name>CFGR_CLEAR_Mask</name>
+        <initializer>(uint8_t)(0xF3)        /* CFGR register Mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" prot="public" static="no">
+        <name>FLAG_Mask</name>
+        <initializer>((uint32_t)0x00FFFFFF) /* CEC FLAG mask */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

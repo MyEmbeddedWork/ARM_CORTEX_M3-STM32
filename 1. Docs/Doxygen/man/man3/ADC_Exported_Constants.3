@@ -1,0 +1,100 @@
+.TH "ADC_Exported_Constants" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_Exported_Constants
+.SH SYNOPSIS
+.br
+.PP
+.SS "Modules"
+
+.in +1c
+.ti -1c
+.RI "\fBADC_mode\fP"
+.br
+.ti -1c
+.RI "\fBADC_external_trigger_sources_for_regular_channels_conversion\fP"
+.br
+.ti -1c
+.RI "\fBADC_data_align\fP"
+.br
+.ti -1c
+.RI "\fBADC_channels\fP"
+.br
+.ti -1c
+.RI "\fBADC_sampling_time\fP"
+.br
+.ti -1c
+.RI "\fBADC_external_trigger_sources_for_injected_channels_conversion\fP"
+.br
+.ti -1c
+.RI "\fBADC_injected_channel_selection\fP"
+.br
+.ti -1c
+.RI "\fBADC_analog_watchdog_selection\fP"
+.br
+.ti -1c
+.RI "\fBADC_interrupts_definition\fP"
+.br
+.ti -1c
+.RI "\fBADC_flags_definition\fP"
+.br
+.ti -1c
+.RI "\fBADC_thresholds\fP"
+.br
+.ti -1c
+.RI "\fBADC_injected_offset\fP"
+.br
+.ti -1c
+.RI "\fBADC_injected_length\fP"
+.br
+.ti -1c
+.RI "\fBADC_injected_rank\fP"
+.br
+.ti -1c
+.RI "\fBADC_regular_length\fP"
+.br
+.ti -1c
+.RI "\fBADC_regular_rank\fP"
+.br
+.ti -1c
+.RI "\fBADC_regular_discontinuous_mode_number\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_ADC_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_DMA_PERIPH\fP(PERIPH)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_ADC_ALL_PERIPH(PERIPH)"
+\fBValue:\fP
+.PP
+.nf
+(((PERIPH) == ADC1) || \
+                                   ((PERIPH) == ADC2) || \
+                                   ((PERIPH) == ADC3))
+.fi
+.PP
+Definition at line 89 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_DMA_PERIPH(PERIPH)"
+\fBValue:\fP
+.PP
+.nf
+(((PERIPH) == ADC1) || \
+                                   ((PERIPH) == ADC3))
+.fi
+.PP
+Definition at line 93 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

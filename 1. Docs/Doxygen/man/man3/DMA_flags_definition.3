@@ -1,0 +1,397 @@
+.TH "DMA_flags_definition" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_flags_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL1\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC1\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT1\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE1\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL2\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC2\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT2\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE2\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL3\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC3\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT3\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE3\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL4\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC4\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE4\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL5\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC5\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT5\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE5\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL6\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC6\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT6\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE6\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL7\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC7\fP   ((uint32_t)0x02000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT7\fP   ((uint32_t)0x04000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE7\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL1\fP   ((uint32_t)0x10000001)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC1\fP   ((uint32_t)0x10000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT1\fP   ((uint32_t)0x10000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE1\fP   ((uint32_t)0x10000008)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL2\fP   ((uint32_t)0x10000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC2\fP   ((uint32_t)0x10000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT2\fP   ((uint32_t)0x10000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE2\fP   ((uint32_t)0x10000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL3\fP   ((uint32_t)0x10000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC3\fP   ((uint32_t)0x10000200)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT3\fP   ((uint32_t)0x10000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE3\fP   ((uint32_t)0x10000800)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL4\fP   ((uint32_t)0x10001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC4\fP   ((uint32_t)0x10002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT4\fP   ((uint32_t)0x10004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE4\fP   ((uint32_t)0x10008000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL5\fP   ((uint32_t)0x10010000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC5\fP   ((uint32_t)0x10020000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT5\fP   ((uint32_t)0x10040000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE5\fP   ((uint32_t)0x10080000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_CLEAR_FLAG\fP(FLAG)   (((((FLAG) & 0xF0000000) == 0x00) || (((FLAG) & 0xEFF00000) == 0x00)) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_GET_FLAG\fP(FLAG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DMA1_FLAG_GL1   ((uint32_t)0x00000001)"
+
+.PP
+Definition at line 304 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_GL2   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 308 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_GL3   ((uint32_t)0x00000100)"
+
+.PP
+Definition at line 312 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_GL4   ((uint32_t)0x00001000)"
+
+.PP
+Definition at line 316 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_GL5   ((uint32_t)0x00010000)"
+
+.PP
+Definition at line 320 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_GL6   ((uint32_t)0x00100000)"
+
+.PP
+Definition at line 324 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_GL7   ((uint32_t)0x01000000)"
+
+.PP
+Definition at line 328 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT1   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 306 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT2   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 310 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT3   ((uint32_t)0x00000400)"
+
+.PP
+Definition at line 314 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT4   ((uint32_t)0x00004000)"
+
+.PP
+Definition at line 318 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT5   ((uint32_t)0x00040000)"
+
+.PP
+Definition at line 322 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT6   ((uint32_t)0x00400000)"
+
+.PP
+Definition at line 326 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_HT7   ((uint32_t)0x04000000)"
+
+.PP
+Definition at line 330 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC1   ((uint32_t)0x00000002)"
+
+.PP
+Definition at line 305 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC2   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 309 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC3   ((uint32_t)0x00000200)"
+
+.PP
+Definition at line 313 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC4   ((uint32_t)0x00002000)"
+
+.PP
+Definition at line 317 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC5   ((uint32_t)0x00020000)"
+
+.PP
+Definition at line 321 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC6   ((uint32_t)0x00200000)"
+
+.PP
+Definition at line 325 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TC7   ((uint32_t)0x02000000)"
+
+.PP
+Definition at line 329 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE1   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 307 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE2   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 311 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE3   ((uint32_t)0x00000800)"
+
+.PP
+Definition at line 315 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE4   ((uint32_t)0x00008000)"
+
+.PP
+Definition at line 319 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE5   ((uint32_t)0x00080000)"
+
+.PP
+Definition at line 323 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE6   ((uint32_t)0x00800000)"
+
+.PP
+Definition at line 327 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA1_FLAG_TE7   ((uint32_t)0x08000000)"
+
+.PP
+Definition at line 331 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_GL1   ((uint32_t)0x10000001)"
+
+.PP
+Definition at line 333 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_GL2   ((uint32_t)0x10000010)"
+
+.PP
+Definition at line 337 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_GL3   ((uint32_t)0x10000100)"
+
+.PP
+Definition at line 341 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_GL4   ((uint32_t)0x10001000)"
+
+.PP
+Definition at line 345 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_GL5   ((uint32_t)0x10010000)"
+
+.PP
+Definition at line 349 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_HT1   ((uint32_t)0x10000004)"
+
+.PP
+Definition at line 335 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_HT2   ((uint32_t)0x10000040)"
+
+.PP
+Definition at line 339 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_HT3   ((uint32_t)0x10000400)"
+
+.PP
+Definition at line 343 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_HT4   ((uint32_t)0x10004000)"
+
+.PP
+Definition at line 347 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_HT5   ((uint32_t)0x10040000)"
+
+.PP
+Definition at line 351 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TC1   ((uint32_t)0x10000002)"
+
+.PP
+Definition at line 334 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TC2   ((uint32_t)0x10000020)"
+
+.PP
+Definition at line 338 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TC3   ((uint32_t)0x10000200)"
+
+.PP
+Definition at line 342 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TC4   ((uint32_t)0x10002000)"
+
+.PP
+Definition at line 346 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TC5   ((uint32_t)0x10020000)"
+
+.PP
+Definition at line 350 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TE1   ((uint32_t)0x10000008)"
+
+.PP
+Definition at line 336 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TE2   ((uint32_t)0x10000080)"
+
+.PP
+Definition at line 340 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TE3   ((uint32_t)0x10000800)"
+
+.PP
+Definition at line 344 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TE4   ((uint32_t)0x10008000)"
+
+.PP
+Definition at line 348 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA2_FLAG_TE5   ((uint32_t)0x10080000)"
+
+.PP
+Definition at line 352 of file stm32f10x_dma\&.h\&.
+.SS "#define IS_DMA_CLEAR_FLAG(FLAG)   (((((FLAG) & 0xF0000000) == 0x00) || (((FLAG) & 0xEFF00000) == 0x00)) && ((FLAG) != 0x00))"
+
+.PP
+Definition at line 354 of file stm32f10x_dma\&.h\&.
+.SS "#define IS_DMA_GET_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == DMA1_FLAG_GL1) || ((FLAG) == DMA1_FLAG_TC1) || \
+                               ((FLAG) == DMA1_FLAG_HT1) || ((FLAG) == DMA1_FLAG_TE1) || \
+                               ((FLAG) == DMA1_FLAG_GL2) || ((FLAG) == DMA1_FLAG_TC2) || \
+                               ((FLAG) == DMA1_FLAG_HT2) || ((FLAG) == DMA1_FLAG_TE2) || \
+                               ((FLAG) == DMA1_FLAG_GL3) || ((FLAG) == DMA1_FLAG_TC3) || \
+                               ((FLAG) == DMA1_FLAG_HT3) || ((FLAG) == DMA1_FLAG_TE3) || \
+                               ((FLAG) == DMA1_FLAG_GL4) || ((FLAG) == DMA1_FLAG_TC4) || \
+                               ((FLAG) == DMA1_FLAG_HT4) || ((FLAG) == DMA1_FLAG_TE4) || \
+                               ((FLAG) == DMA1_FLAG_GL5) || ((FLAG) == DMA1_FLAG_TC5) || \
+                               ((FLAG) == DMA1_FLAG_HT5) || ((FLAG) == DMA1_FLAG_TE5) || \
+                               ((FLAG) == DMA1_FLAG_GL6) || ((FLAG) == DMA1_FLAG_TC6) || \
+                               ((FLAG) == DMA1_FLAG_HT6) || ((FLAG) == DMA1_FLAG_TE6) || \
+                               ((FLAG) == DMA1_FLAG_GL7) || ((FLAG) == DMA1_FLAG_TC7) || \
+                               ((FLAG) == DMA1_FLAG_HT7) || ((FLAG) == DMA1_FLAG_TE7) || \
+                               ((FLAG) == DMA2_FLAG_GL1) || ((FLAG) == DMA2_FLAG_TC1) || \
+                               ((FLAG) == DMA2_FLAG_HT1) || ((FLAG) == DMA2_FLAG_TE1) || \
+                               ((FLAG) == DMA2_FLAG_GL2) || ((FLAG) == DMA2_FLAG_TC2) || \
+                               ((FLAG) == DMA2_FLAG_HT2) || ((FLAG) == DMA2_FLAG_TE2) || \
+                               ((FLAG) == DMA2_FLAG_GL3) || ((FLAG) == DMA2_FLAG_TC3) || \
+                               ((FLAG) == DMA2_FLAG_HT3) || ((FLAG) == DMA2_FLAG_TE3) || \
+                               ((FLAG) == DMA2_FLAG_GL4) || ((FLAG) == DMA2_FLAG_TC4) || \
+                               ((FLAG) == DMA2_FLAG_HT4) || ((FLAG) == DMA2_FLAG_TE4) || \
+                               ((FLAG) == DMA2_FLAG_GL5) || ((FLAG) == DMA2_FLAG_TC5) || \
+                               ((FLAG) == DMA2_FLAG_HT5) || ((FLAG) == DMA2_FLAG_TE5))
+.fi
+.PP
+Definition at line 356 of file stm32f10x_dma\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

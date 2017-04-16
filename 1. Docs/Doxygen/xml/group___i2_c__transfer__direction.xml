@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c__transfer__direction" kind="group">
+    <compoundname>I2C_transfer_direction</compoundname>
+    <title>I2C_transfer_direction</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c__transfer__direction_1ga9895ee2d7d8cc8ba4daafafa1c3ce1ac" prot="public" static="no">
+        <name>I2C_Direction_Transmitter</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="130" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__transfer__direction_1gafe3b9b98552980ca56c8e21a90040fa0" prot="public" static="no">
+        <name>I2C_Direction_Receiver</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="131" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__transfer__direction_1ga33368efe652bc25b4f4b74f02ce0657e" prot="public" static="no">
+        <name>IS_I2C_DIRECTION</name>
+        <param><defname>DIRECTION</defname></param>
+        <initializer>(((DIRECTION) == <ref refid="group___i2_c__transfer__direction_1ga9895ee2d7d8cc8ba4daafafa1c3ce1ac" kindref="member">I2C_Direction_Transmitter</ref>) || \
+                                     ((DIRECTION) == <ref refid="group___i2_c__transfer__direction_1gafe3b9b98552980ca56c8e21a90040fa0" kindref="member">I2C_Direction_Receiver</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="132" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

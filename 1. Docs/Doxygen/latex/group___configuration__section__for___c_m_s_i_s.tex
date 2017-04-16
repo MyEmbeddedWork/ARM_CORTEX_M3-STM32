@@ -1,0 +1,238 @@
+\hypertarget{group___configuration__section__for___c_m_s_i_s}{}\section{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}
+\label{group___configuration__section__for___c_m_s_i_s}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}
+Collaboration diagram for Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{group___configuration__section__for___c_m_s_i_s}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___configuration__section__for___c_m_s_i_s_ga4127d1b31aaf336fab3d7329d117f448}{\+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT}~0
+\begin{DoxyCompactList}\small\item\em Configuration of the Cortex-\/\+M3 Processor and Core Peripherals. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___configuration__section__for___c_m_s_i_s_gae3fe3587d5100c787e02102ce3944460}{\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS}~4
+\item 
+\#define \hyperlink{group___configuration__section__for___c_m_s_i_s_gab58771b4ec03f9bdddc84770f7c95c68}{\+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config}~0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group___configuration__section__for___c_m_s_i_s_ga666eb0caeb12ec0e281415592ae89083}{I\+R\+Qn} \hyperlink{group___configuration__section__for___c_m_s_i_s_gac3af4a32370fb28c4ade8bf2add80251}{I\+R\+Qn\+\_\+\+Type}
+\begin{DoxyCompactList}\small\item\em S\+T\+M32\+F10x Interrupt Number Definition, according to the selected device in \hyperlink{group___library__configuration__section}{Library\+\_\+configuration\+\_\+section}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___configuration__section__for___c_m_s_i_s_ga666eb0caeb12ec0e281415592ae89083}{I\+R\+Qn} \{ \newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30}{Non\+Maskable\+Int\+\_\+\+I\+R\+Qn} = -\/14, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa}{Memory\+Management\+\_\+\+I\+R\+Qn} = -\/12, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af}{Bus\+Fault\+\_\+\+I\+R\+Qn} = -\/11, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf}{Usage\+Fault\+\_\+\+I\+R\+Qn} = -\/10, 
+\newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237}{S\+V\+Call\+\_\+\+I\+R\+Qn} = -\/5, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c}{Debug\+Monitor\+\_\+\+I\+R\+Qn} = -\/4, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2}{Pend\+S\+V\+\_\+\+I\+R\+Qn} = -\/2, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7}{Sys\+Tick\+\_\+\+I\+R\+Qn} = -\/1, 
+\newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a971089d7566ef902dfa0c80ac3a8fd52}{W\+W\+D\+G\+\_\+\+I\+R\+Qn} = 0, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab0b51ffcc4dcf5661141b79c8e5bd924}{P\+V\+D\+\_\+\+I\+R\+Qn} = 1, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a285d93ad54a43d831dc4955299c5b862}{T\+A\+M\+P\+E\+R\+\_\+\+I\+R\+Qn} = 2, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083adcc0f2770f7f57f75fac3d8bcac0e858}{R\+T\+C\+\_\+\+I\+R\+Qn} = 3, 
+\newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a91b73963ce243a1d031576d49e137fab}{F\+L\+A\+S\+H\+\_\+\+I\+R\+Qn} = 4, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a5710b22392997bac63daa5c999730f77}{R\+C\+C\+\_\+\+I\+R\+Qn} = 5, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab6aa6f87d26bbc6cf99b067b8d75c2f7}{E\+X\+T\+I0\+\_\+\+I\+R\+Qn} = 6, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ae4badcdecdb94eb10129c4c0577c5e19}{E\+X\+T\+I1\+\_\+\+I\+R\+Qn} = 7, 
+\newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a082cb3f7839069a0715fd76c7eacbbc9}{E\+X\+T\+I2\+\_\+\+I\+R\+Qn} = 8, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083add889c84ba5de466ced209069e05d602}{E\+X\+T\+I3\+\_\+\+I\+R\+Qn} = 9, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab70a40106ca4486770df5d2072d9ac0e}{E\+X\+T\+I4\+\_\+\+I\+R\+Qn} = 10, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a3ccf41a34f494246c67d3239afa9c97f}{D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Qn} = 11, 
+\newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a1c7824eed187b747bcf8a3b4cd22c8fc}{D\+M\+A1\+\_\+\+Channel2\+\_\+\+I\+R\+Qn} = 12, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a3d575a484e3cb668a42e6f9074112d23}{D\+M\+A1\+\_\+\+Channel3\+\_\+\+I\+R\+Qn} = 13, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ae36905d55d7cbb8ffb2de44c9b88bb31}{D\+M\+A1\+\_\+\+Channel4\+\_\+\+I\+R\+Qn} = 14, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083abf98e4379328f74686524faa05bf6177}{D\+M\+A1\+\_\+\+Channel5\+\_\+\+I\+R\+Qn} = 15, 
+\newline
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083aab3710849c919f2327eaa001d9e2a7a0}{D\+M\+A1\+\_\+\+Channel6\+\_\+\+I\+R\+Qn} = 16, 
+\hyperlink{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6617c3c1d75470b8bfcc48f82ff38fd1}{D\+M\+A1\+\_\+\+Channel7\+\_\+\+I\+R\+Qn} = 17
+ \}\begin{DoxyCompactList}\small\item\em S\+T\+M32\+F10x Interrupt Number Definition, according to the selected device in \hyperlink{group___library__configuration__section}{Library\+\_\+configuration\+\_\+section}. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_ga4127d1b31aaf336fab3d7329d117f448}\label{group___configuration__section__for___c_m_s_i_s_ga4127d1b31aaf336fab3d7329d117f448}} 
+\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!\+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT@{\+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT}}
+\index{\+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT@{\+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT}{\_\_MPU\_PRESENT}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+M\+P\+U\+\_\+\+P\+R\+E\+S\+E\+NT~0}
+
+
+
+Configuration of the Cortex-\/\+M3 Processor and Core Peripherals. 
+
+Other S\+T\+M32 devices does not provide an M\+PU 
+
+Definition at line 158 of file stm32f10x.\+h.
+
+\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gae3fe3587d5100c787e02102ce3944460}\label{group___configuration__section__for___c_m_s_i_s_gae3fe3587d5100c787e02102ce3944460}} 
+\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS@{\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS}}
+\index{\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS@{\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS}{\_\_NVIC\_PRIO\_BITS}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS~4}
+
+S\+T\+M32 uses 4 Bits for the Priority Levels 
+
+Definition at line 160 of file stm32f10x.\+h.
+
+\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gab58771b4ec03f9bdddc84770f7c95c68}\label{group___configuration__section__for___c_m_s_i_s_gab58771b4ec03f9bdddc84770f7c95c68}} 
+\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!\+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config@{\+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config}}
+\index{\+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config@{\+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config}{\_\_Vendor\_SysTickConfig}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+Vendor\+\_\+\+Sys\+Tick\+Config~0}
+
+Set to 1 if different Sys\+Tick Config is used 
+
+Definition at line 161 of file stm32f10x.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gac3af4a32370fb28c4ade8bf2add80251}\label{group___configuration__section__for___c_m_s_i_s_gac3af4a32370fb28c4ade8bf2add80251}} 
+\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!I\+R\+Qn\+\_\+\+Type@{I\+R\+Qn\+\_\+\+Type}}
+\index{I\+R\+Qn\+\_\+\+Type@{I\+R\+Qn\+\_\+\+Type}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}
+\subsubsection{\texorpdfstring{I\+R\+Qn\+\_\+\+Type}{IRQn\_Type}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group___configuration__section__for___c_m_s_i_s_ga666eb0caeb12ec0e281415592ae89083}{I\+R\+Qn}  \hyperlink{group___configuration__section__for___c_m_s_i_s_gac3af4a32370fb28c4ade8bf2add80251}{I\+R\+Qn\+\_\+\+Type}}
+
+
+
+S\+T\+M32\+F10x Interrupt Number Definition, according to the selected device in \hyperlink{group___library__configuration__section}{Library\+\_\+configuration\+\_\+section}. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_ga666eb0caeb12ec0e281415592ae89083}\label{group___configuration__section__for___c_m_s_i_s_ga666eb0caeb12ec0e281415592ae89083}} 
+\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!I\+R\+Qn@{I\+R\+Qn}}
+\index{I\+R\+Qn@{I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}
+\subsubsection{\texorpdfstring{I\+R\+Qn}{IRQn}}
+{\footnotesize\ttfamily enum \hyperlink{group___configuration__section__for___c_m_s_i_s_ga666eb0caeb12ec0e281415592ae89083}{I\+R\+Qn}}
+
+
+
+S\+T\+M32\+F10x Interrupt Number Definition, according to the selected device in \hyperlink{group___library__configuration__section}{Library\+\_\+configuration\+\_\+section}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Non\+Maskable\+Int\+\_\+\+I\+R\+Qn@{Non\+Maskable\+Int\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Non\+Maskable\+Int\+\_\+\+I\+R\+Qn@{Non\+Maskable\+Int\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30}} 
+Non\+Maskable\+Int\+\_\+\+I\+R\+Qn&2 Non Maskable Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Memory\+Management\+\_\+\+I\+R\+Qn@{Memory\+Management\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Memory\+Management\+\_\+\+I\+R\+Qn@{Memory\+Management\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa}} 
+Memory\+Management\+\_\+\+I\+R\+Qn&4 Cortex-\/\+M3 Memory Management Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bus\+Fault\+\_\+\+I\+R\+Qn@{Bus\+Fault\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Bus\+Fault\+\_\+\+I\+R\+Qn@{Bus\+Fault\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af}} 
+Bus\+Fault\+\_\+\+I\+R\+Qn&5 Cortex-\/\+M3 Bus Fault Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Usage\+Fault\+\_\+\+I\+R\+Qn@{Usage\+Fault\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Usage\+Fault\+\_\+\+I\+R\+Qn@{Usage\+Fault\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf}} 
+Usage\+Fault\+\_\+\+I\+R\+Qn&6 Cortex-\/\+M3 Usage Fault Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+V\+Call\+\_\+\+I\+R\+Qn@{S\+V\+Call\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!S\+V\+Call\+\_\+\+I\+R\+Qn@{S\+V\+Call\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237}} 
+S\+V\+Call\+\_\+\+I\+R\+Qn&11 Cortex-\/\+M3 SV Call Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Debug\+Monitor\+\_\+\+I\+R\+Qn@{Debug\+Monitor\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Debug\+Monitor\+\_\+\+I\+R\+Qn@{Debug\+Monitor\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c}} 
+Debug\+Monitor\+\_\+\+I\+R\+Qn&12 Cortex-\/\+M3 Debug Monitor Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pend\+S\+V\+\_\+\+I\+R\+Qn@{Pend\+S\+V\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Pend\+S\+V\+\_\+\+I\+R\+Qn@{Pend\+S\+V\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2}} 
+Pend\+S\+V\+\_\+\+I\+R\+Qn&14 Cortex-\/\+M3 Pend SV Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sys\+Tick\+\_\+\+I\+R\+Qn@{Sys\+Tick\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!Sys\+Tick\+\_\+\+I\+R\+Qn@{Sys\+Tick\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7}} 
+Sys\+Tick\+\_\+\+I\+R\+Qn&15 Cortex-\/\+M3 System Tick Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+W\+D\+G\+\_\+\+I\+R\+Qn@{W\+W\+D\+G\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!W\+W\+D\+G\+\_\+\+I\+R\+Qn@{W\+W\+D\+G\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a971089d7566ef902dfa0c80ac3a8fd52}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a971089d7566ef902dfa0c80ac3a8fd52}} 
+W\+W\+D\+G\+\_\+\+I\+R\+Qn&Window Watch\+Dog Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+V\+D\+\_\+\+I\+R\+Qn@{P\+V\+D\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!P\+V\+D\+\_\+\+I\+R\+Qn@{P\+V\+D\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab0b51ffcc4dcf5661141b79c8e5bd924}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab0b51ffcc4dcf5661141b79c8e5bd924}} 
+P\+V\+D\+\_\+\+I\+R\+Qn&P\+VD through E\+X\+TI Line detection Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+A\+M\+P\+E\+R\+\_\+\+I\+R\+Qn@{T\+A\+M\+P\+E\+R\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!T\+A\+M\+P\+E\+R\+\_\+\+I\+R\+Qn@{T\+A\+M\+P\+E\+R\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a285d93ad54a43d831dc4955299c5b862}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a285d93ad54a43d831dc4955299c5b862}} 
+T\+A\+M\+P\+E\+R\+\_\+\+I\+R\+Qn&Tamper Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+T\+C\+\_\+\+I\+R\+Qn@{R\+T\+C\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!R\+T\+C\+\_\+\+I\+R\+Qn@{R\+T\+C\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083adcc0f2770f7f57f75fac3d8bcac0e858}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083adcc0f2770f7f57f75fac3d8bcac0e858}} 
+R\+T\+C\+\_\+\+I\+R\+Qn&R\+TC global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+L\+A\+S\+H\+\_\+\+I\+R\+Qn@{F\+L\+A\+S\+H\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!F\+L\+A\+S\+H\+\_\+\+I\+R\+Qn@{F\+L\+A\+S\+H\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a91b73963ce243a1d031576d49e137fab}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a91b73963ce243a1d031576d49e137fab}} 
+F\+L\+A\+S\+H\+\_\+\+I\+R\+Qn&F\+L\+A\+SH global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+C\+C\+\_\+\+I\+R\+Qn@{R\+C\+C\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!R\+C\+C\+\_\+\+I\+R\+Qn@{R\+C\+C\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a5710b22392997bac63daa5c999730f77}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a5710b22392997bac63daa5c999730f77}} 
+R\+C\+C\+\_\+\+I\+R\+Qn&R\+CC global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+T\+I0\+\_\+\+I\+R\+Qn@{E\+X\+T\+I0\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!E\+X\+T\+I0\+\_\+\+I\+R\+Qn@{E\+X\+T\+I0\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab6aa6f87d26bbc6cf99b067b8d75c2f7}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab6aa6f87d26bbc6cf99b067b8d75c2f7}} 
+E\+X\+T\+I0\+\_\+\+I\+R\+Qn&E\+X\+TI Line0 Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+T\+I1\+\_\+\+I\+R\+Qn@{E\+X\+T\+I1\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!E\+X\+T\+I1\+\_\+\+I\+R\+Qn@{E\+X\+T\+I1\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ae4badcdecdb94eb10129c4c0577c5e19}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ae4badcdecdb94eb10129c4c0577c5e19}} 
+E\+X\+T\+I1\+\_\+\+I\+R\+Qn&E\+X\+TI Line1 Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+T\+I2\+\_\+\+I\+R\+Qn@{E\+X\+T\+I2\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!E\+X\+T\+I2\+\_\+\+I\+R\+Qn@{E\+X\+T\+I2\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a082cb3f7839069a0715fd76c7eacbbc9}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a082cb3f7839069a0715fd76c7eacbbc9}} 
+E\+X\+T\+I2\+\_\+\+I\+R\+Qn&E\+X\+TI Line2 Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+T\+I3\+\_\+\+I\+R\+Qn@{E\+X\+T\+I3\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!E\+X\+T\+I3\+\_\+\+I\+R\+Qn@{E\+X\+T\+I3\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083add889c84ba5de466ced209069e05d602}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083add889c84ba5de466ced209069e05d602}} 
+E\+X\+T\+I3\+\_\+\+I\+R\+Qn&E\+X\+TI Line3 Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+T\+I4\+\_\+\+I\+R\+Qn@{E\+X\+T\+I4\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!E\+X\+T\+I4\+\_\+\+I\+R\+Qn@{E\+X\+T\+I4\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab70a40106ca4486770df5d2072d9ac0e}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ab70a40106ca4486770df5d2072d9ac0e}} 
+E\+X\+T\+I4\+\_\+\+I\+R\+Qn&E\+X\+TI Line4 Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a3ccf41a34f494246c67d3239afa9c97f}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a3ccf41a34f494246c67d3239afa9c97f}} 
+D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 1 global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel2\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel2\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel2\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel2\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a1c7824eed187b747bcf8a3b4cd22c8fc}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a1c7824eed187b747bcf8a3b4cd22c8fc}} 
+D\+M\+A1\+\_\+\+Channel2\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 2 global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel3\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel3\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel3\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel3\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a3d575a484e3cb668a42e6f9074112d23}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a3d575a484e3cb668a42e6f9074112d23}} 
+D\+M\+A1\+\_\+\+Channel3\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 3 global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel4\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel4\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel4\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel4\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ae36905d55d7cbb8ffb2de44c9b88bb31}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083ae36905d55d7cbb8ffb2de44c9b88bb31}} 
+D\+M\+A1\+\_\+\+Channel4\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 4 global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel5\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel5\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel5\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel5\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083abf98e4379328f74686524faa05bf6177}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083abf98e4379328f74686524faa05bf6177}} 
+D\+M\+A1\+\_\+\+Channel5\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 5 global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel6\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel6\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel6\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel6\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083aab3710849c919f2327eaa001d9e2a7a0}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083aab3710849c919f2327eaa001d9e2a7a0}} 
+D\+M\+A1\+\_\+\+Channel6\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 6 global Interrupt \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+M\+A1\+\_\+\+Channel7\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel7\+\_\+\+I\+R\+Qn}!Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}}\index{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS@{Configuration\+\_\+section\+\_\+for\+\_\+\+C\+M\+S\+IS}!D\+M\+A1\+\_\+\+Channel7\+\_\+\+I\+R\+Qn@{D\+M\+A1\+\_\+\+Channel7\+\_\+\+I\+R\+Qn}}}\mbox{\Hypertarget{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6617c3c1d75470b8bfcc48f82ff38fd1}\label{group___configuration__section__for___c_m_s_i_s_gga666eb0caeb12ec0e281415592ae89083a6617c3c1d75470b8bfcc48f82ff38fd1}} 
+D\+M\+A1\+\_\+\+Channel7\+\_\+\+I\+R\+Qn&D\+M\+A1 Channel 7 global Interrupt \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 167 of file stm32f10x.\+h.
+

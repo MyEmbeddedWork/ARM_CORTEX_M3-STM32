@@ -1,0 +1,275 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h \- This file contains all the functions prototypes for the DAC firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDAC_InitTypeDef\fP"
+.br
+.RI "DAC Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDAC_Trigger_None\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T6_TRGO\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T8_TRGO\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T3_TRGO\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T7_TRGO\fP   ((uint32_t)0x00000014)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T5_TRGO\fP   ((uint32_t)0x0000001C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T15_TRGO\fP   ((uint32_t)0x0000001C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T2_TRGO\fP   ((uint32_t)0x00000024)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T4_TRGO\fP   ((uint32_t)0x0000002C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_Ext_IT9\fP   ((uint32_t)0x00000034)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_Software\fP   ((uint32_t)0x0000003C)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_TRIGGER\fP(TRIGGER)"
+.br
+.ti -1c
+.RI "#define \fBDAC_WaveGeneration_None\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_WaveGeneration_Noise\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDAC_WaveGeneration_Triangle\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_GENERATE_WAVE\fP(WAVE)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bit0\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits1_0\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits2_0\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits3_0\fP   ((uint32_t)0x00000300)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits4_0\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits5_0\fP   ((uint32_t)0x00000500)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits6_0\fP   ((uint32_t)0x00000600)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits7_0\fP   ((uint32_t)0x00000700)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits8_0\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits9_0\fP   ((uint32_t)0x00000900)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits10_0\fP   ((uint32_t)0x00000A00)"
+.br
+.ti -1c
+.RI "#define \fBDAC_LFSRUnmask_Bits11_0\fP   ((uint32_t)0x00000B00)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_3\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_7\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_15\fP   ((uint32_t)0x00000300)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_31\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_63\fP   ((uint32_t)0x00000500)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_127\fP   ((uint32_t)0x00000600)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_255\fP   ((uint32_t)0x00000700)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_511\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_1023\fP   ((uint32_t)0x00000900)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_2047\fP   ((uint32_t)0x00000A00)"
+.br
+.ti -1c
+.RI "#define \fBDAC_TriangleAmplitude_4095\fP   ((uint32_t)0x00000B00)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE\fP(VALUE)"
+.br
+.ti -1c
+.RI "#define \fBDAC_OutputBuffer_Enable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_OutputBuffer_Disable\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_OUTPUT_BUFFER_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Channel_1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Channel_2\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Align_12b_R\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Align_12b_L\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Align_8b_R\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_ALIGN\fP(ALIGN)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Wave_Noise\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Wave_Triangle\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_WAVE\fP(WAVE)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_DATA\fP(DATA)   ((DATA) <= 0xFFF0)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDAC_DeInit\fP (void)"
+.br
+.RI "Deinitializes the DAC peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBDAC_Init\fP (uint32_t DAC_Channel, \fBDAC_InitTypeDef\fP *DAC_InitStruct)"
+.br
+.RI "Initializes the DAC peripheral according to the specified parameters in the DAC_InitStruct\&. "
+.ti -1c
+.RI "void \fBDAC_StructInit\fP (\fBDAC_InitTypeDef\fP *DAC_InitStruct)"
+.br
+.RI "Fills each DAC_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBDAC_Cmd\fP (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DAC channel\&. "
+.ti -1c
+.RI "void \fBDAC_DMACmd\fP (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DAC channel DMA request\&. "
+.ti -1c
+.RI "void \fBDAC_SoftwareTriggerCmd\fP (uint32_t DAC_Channel, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected DAC channel software trigger\&. "
+.ti -1c
+.RI "void \fBDAC_DualSoftwareTriggerCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables simultaneously the two DAC channels software triggers\&. "
+.ti -1c
+.RI "void \fBDAC_WaveGenerationCmd\fP (uint32_t DAC_Channel, uint32_t DAC_Wave, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected DAC channel wave generation\&. "
+.ti -1c
+.RI "void \fBDAC_SetChannel1Data\fP (uint32_t DAC_Align, uint16_t Data)"
+.br
+.RI "Set the specified data holding register value for DAC channel1\&. "
+.ti -1c
+.RI "void \fBDAC_SetChannel2Data\fP (uint32_t DAC_Align, uint16_t Data)"
+.br
+.RI "Set the specified data holding register value for DAC channel2\&. "
+.ti -1c
+.RI "void \fBDAC_SetDualChannelData\fP (uint32_t DAC_Align, uint16_t Data2, uint16_t Data1)"
+.br
+.RI "Set the specified data holding register value for dual channel DAC\&. "
+.ti -1c
+.RI "uint16_t \fBDAC_GetDataOutputValue\fP (uint32_t DAC_Channel)"
+.br
+.RI "Returns the last data output value of the selected DAC channel\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the DAC firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_dac\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

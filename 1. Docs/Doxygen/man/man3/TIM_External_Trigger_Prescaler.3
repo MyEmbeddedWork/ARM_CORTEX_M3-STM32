@@ -1,0 +1,62 @@
+.TH "TIM_External_Trigger_Prescaler" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_External_Trigger_Prescaler
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_OFF\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_DIV2\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_DIV4\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_DIV8\fP   ((uint16_t)0x3000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EXT_PRESCALER\fP(PRESCALER)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_EXT_PRESCALER(PRESCALER)"
+\fBValue:\fP
+.PP
+.nf
+(((PRESCALER) == TIM_ExtTRGPSC_OFF) || \
+                                         ((PRESCALER) == TIM_ExtTRGPSC_DIV2) || \
+                                         ((PRESCALER) == TIM_ExtTRGPSC_DIV4) || \
+                                         ((PRESCALER) == TIM_ExtTRGPSC_DIV8))
+.fi
+.PP
+Definition at line 746 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ExtTRGPSC_DIV2   ((uint16_t)0x1000)"
+
+.PP
+Definition at line 743 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ExtTRGPSC_DIV4   ((uint16_t)0x2000)"
+
+.PP
+Definition at line 744 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ExtTRGPSC_DIV8   ((uint16_t)0x3000)"
+
+.PP
+Definition at line 745 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ExtTRGPSC_OFF   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 742 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

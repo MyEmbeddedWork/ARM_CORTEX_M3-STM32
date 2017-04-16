@@ -1,0 +1,207 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h \- This file contains all the functions prototypes for the CEC firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCEC_InitTypeDef\fP"
+.br
+.RI "CEC Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCEC_BitTimingStdMode\fP   ((uint16_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCEC_BitTimingErrFreeMode\fP   \fBCEC_CFGR_BTEM\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_BIT_TIMING_ERROR_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBCEC_BitPeriodStdMode\fP   ((uint16_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCEC_BitPeriodFlexibleMode\fP   \fBCEC_CFGR_BPEM\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_BIT_PERIOD_ERROR_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_TERR\fP   \fBCEC_CSR_TERR\fP"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_TBTRF\fP   \fBCEC_CSR_TBTRF\fP"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_RERR\fP   \fBCEC_CSR_RERR\fP"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_RBTF\fP   \fBCEC_CSR_RBTF\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_ADDRESS\fP(ADDRESS)   ((ADDRESS) < 0x10)"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_PRESCALER\fP(PRESCALER)   ((PRESCALER) <= 0x3FFF)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_BTE\fP   ((uint32_t)0x10010000)"
+.br
+.RI "ESR register flags\&. "
+.ti -1c
+.RI "#define \fBCEC_FLAG_BPE\fP   ((uint32_t)0x10020000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RBTFE\fP   ((uint32_t)0x10040000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_SBE\fP   ((uint32_t)0x10080000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_ACKE\fP   ((uint32_t)0x10100000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_LINE\fP   ((uint32_t)0x10200000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_TBTFE\fP   ((uint32_t)0x10400000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_TEOM\fP   ((uint32_t)0x00000002)"
+.br
+.RI "CSR register flags\&. "
+.ti -1c
+.RI "#define \fBCEC_FLAG_TERR\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_TBTRF\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RSOM\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_REOM\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RERR\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RBTF\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint32_t)0xFFFFFF03) == 0x00) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_GET_FLAG\fP(FLAG)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCEC_DeInit\fP (void)"
+.br
+.RI "Deinitializes the CEC peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBCEC_Init\fP (\fBCEC_InitTypeDef\fP *CEC_InitStruct)"
+.br
+.RI "Initializes the CEC peripheral according to the specified parameters in the CEC_InitStruct\&. "
+.ti -1c
+.RI "void \fBCEC_Cmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified CEC peripheral\&. "
+.ti -1c
+.RI "void \fBCEC_ITConfig\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CEC interrupt\&. "
+.ti -1c
+.RI "void \fBCEC_OwnAddressConfig\fP (uint8_t CEC_OwnAddress)"
+.br
+.RI "Defines the Own Address of the CEC device\&. "
+.ti -1c
+.RI "void \fBCEC_SetPrescaler\fP (uint16_t CEC_Prescaler)"
+.br
+.RI "Sets the CEC prescaler value\&. "
+.ti -1c
+.RI "void \fBCEC_SendDataByte\fP (uint8_t Data)"
+.br
+.RI "Transmits single data through the CEC peripheral\&. "
+.ti -1c
+.RI "uint8_t \fBCEC_ReceiveDataByte\fP (void)"
+.br
+.RI "Returns the most recent received data by the CEC peripheral\&. "
+.ti -1c
+.RI "void \fBCEC_StartOfMessage\fP (void)"
+.br
+.RI "Starts a new message\&. "
+.ti -1c
+.RI "void \fBCEC_EndOfMessageCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Transmits message with or without an EOM bit\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBCEC_GetFlagStatus\fP (uint32_t CEC_FLAG)"
+.br
+.RI "Gets the CEC flag status\&. "
+.ti -1c
+.RI "void \fBCEC_ClearFlag\fP (uint32_t CEC_FLAG)"
+.br
+.RI "Clears the CEC's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBCEC_GetITStatus\fP (uint8_t CEC_IT)"
+.br
+.RI "Checks whether the specified CEC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBCEC_ClearITPendingBit\fP (uint16_t CEC_IT)"
+.br
+.RI "Clears the CEC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the CEC firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_cec\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,54 @@
+.TH "TIM_Input_Capture_Selection" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Input_Capture_Selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_ICSelection_DirectTI\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICSelection_IndirectTI\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICSelection_TRC\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_SELECTION\fP(SELECTION)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_IC_SELECTION(SELECTION)"
+\fBValue:\fP
+.PP
+.nf
+(((SELECTION) == TIM_ICSelection_DirectTI) || \
+                                        ((SELECTION) == TIM_ICSelection_IndirectTI) || \
+                                        ((SELECTION) == TIM_ICSelection_TRC))
+.fi
+.PP
+Definition at line 582 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ICSelection_DirectTI   ((uint16_t)0x0001)"
+TIM Input 1, 2, 3 or 4 is selected to be connected to IC1, IC2, IC3 or IC4, respectively 
+.PP
+Definition at line 575 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ICSelection_IndirectTI   ((uint16_t)0x0002)"
+TIM Input 1, 2, 3 or 4 is selected to be connected to IC2, IC1, IC4 or IC3, respectively\&. 
+.PP
+Definition at line 578 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ICSelection_TRC   ((uint16_t)0x0003)"
+TIM Input 1, 2, 3 or 4 is selected to be connected to TRC\&. 
+.PP
+Definition at line 581 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

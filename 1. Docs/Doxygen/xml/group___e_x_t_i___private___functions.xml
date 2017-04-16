@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___e_x_t_i___private___functions" kind="group">
+    <compoundname>EXTI_Private_Functions</compoundname>
+    <title>EXTI_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga07072e339cb9ecb9cd9d4b94afc9f317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>EXTI_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the EXTI peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="85" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="85" bodyend="92"/>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_Init</definition>
+        <argsstring>(EXTI_InitTypeDef *EXTI_InitStruct)</argsstring>
+        <name>EXTI_Init</name>
+        <param>
+          <type><ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> *</type>
+          <declname>EXTI_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the EXTI peripheral according to the specified parameters in the EXTI_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> structure that contains the configuration information for the EXTI peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="101" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="101" bodyend="149"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___exported___types_1ga8429170f3320b90227f9f5b252c1c5eb" compoundref="stm32f10x__exti_8h" startline="62">IS_EXTI_MODE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" compoundref="stm32f10x__exti_8h" startline="87">EXTI_InitTypeDef::EXTI_Mode</references>
+        <references refid="group___e_x_t_i___exported___types_1gaee95ec6288944a6245696896604e509e" compoundref="stm32f10x__exti_8h" startline="75">IS_EXTI_TRIGGER</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" compoundref="stm32f10x__exti_8h" startline="90">EXTI_InitTypeDef::EXTI_Trigger</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" compoundref="stm32f10x__exti_8h" startline="84">EXTI_InitTypeDef::EXTI_Line</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" compoundref="stm32f10x__exti_8h" startline="93">EXTI_InitTypeDef::EXTI_LineCmd</references>
+        <references refid="group___peripheral__memory__map_1ga87371508b3bcdcd98cd1ec629be29061" compoundref="stm32f10x_8h" startline="1314">EXTI_BASE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb" compoundref="stm32f10x__exti_8h" startline="72">EXTI_Trigger_Rising_Falling</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_StructInit</definition>
+        <argsstring>(EXTI_InitTypeDef *EXTI_InitStruct)</argsstring>
+        <name>EXTI_StructInit</name>
+        <param>
+          <type><ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> *</type>
+          <declname>EXTI_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each EXTI_InitStruct member with its reset value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="157" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="157" bodyend="163"/>
+        <references refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" compoundref="stm32f10x__exti_8h" startline="84">EXTI_InitTypeDef::EXTI_Line</references>
+        <references refid="group___e_x_t_i___private___defines_1ga4451b67e337fc341394ee695273798af" compoundref="stm32f10x__exti_8c" startline="46">EXTI_LINENONE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" compoundref="stm32f10x__exti_8h" startline="87">EXTI_InitTypeDef::EXTI_Mode</references>
+        <references refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42" compoundref="stm32f10x__exti_8h" startline="58">EXTI_Mode_Interrupt</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" compoundref="stm32f10x__exti_8h" startline="90">EXTI_InitTypeDef::EXTI_Trigger</references>
+        <references refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5" compoundref="stm32f10x__exti_8h" startline="71">EXTI_Trigger_Falling</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" compoundref="stm32f10x__exti_8h" startline="93">EXTI_InitTypeDef::EXTI_LineCmd</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga897e8ea59f40a19e047fb9994876fc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_GenerateSWInterrupt</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_GenerateSWInterrupt</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Generates a Software interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI lines to be enabled or disabled. This parameter can be any combination of EXTI_Linex where x can be (0..19). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="171" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="171" bodyend="177"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga0ce06e6b312592df149800d63218cffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus EXTI_GetFlagStatus</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified EXTI line flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI line flag to check. This parameter can be: <itemizedlist>
+<listitem><para>EXTI_Linex: External interrupt line x where x(0..19) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of EXTI_Line (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="186" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="186" bodyend="201"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda" compoundref="stm32f10x__exti_8h" startline="133">IS_GET_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga8e07aaaa286dea4803605d5968850a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_ClearFlag</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Clears the EXTI&apos;s line pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI lines flags to clear. This parameter can be any combination of EXTI_Linex where x can be (0..19). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="209" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="209" bodyend="215"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1gaf7b51519062ae42fd27ee689cab364aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus EXTI_GetITStatus</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_GetITStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified EXTI line is asserted or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI line to check. This parameter can be: <itemizedlist>
+<listitem><para>EXTI_Linex: External interrupt line x where x(0..19) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of EXTI_Line (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="224" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="224" bodyend="241"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda" compoundref="stm32f10x__exti_8h" startline="133">IS_GET_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___private___functions_1ga3652a7e682728b310c124e7e974d1468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_ClearITPendingBit</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_ClearITPendingBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Clears the EXTI&apos;s line pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI lines to clear. This parameter can be any combination of EXTI_Linex where x can be (0..19). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" line="249" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="249" bodyend="255"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

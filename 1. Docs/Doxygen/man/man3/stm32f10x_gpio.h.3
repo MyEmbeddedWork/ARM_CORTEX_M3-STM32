@@ -1,0 +1,441 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h \- This file contains all the functions prototypes for the GPIO firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBGPIO_InitTypeDef\fP"
+.br
+.RI "GPIO Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_GPIO_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_SPEED\fP(SPEED)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_BIT_ACTION\fP(ACTION)   (((ACTION) == \fBBit_RESET\fP) || ((ACTION) == \fBBit_SET\fP))"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_0\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_1\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_5\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_6\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_7\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_8\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_9\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_10\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_11\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_12\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_13\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_14\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_15\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Pin_All\fP   ((uint16_t)0xFFFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_PIN\fP(PIN)   ((((PIN) & (uint16_t)0x00) == 0x00) && ((PIN) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_GET_GPIO_PIN\fP(PIN)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_SPI1\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_I2C1\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_USART1\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_USART2\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PartialRemap_USART3\fP   ((uint32_t)0x00140010)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_FullRemap_USART3\fP   ((uint32_t)0x00140030)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PartialRemap_TIM1\fP   ((uint32_t)0x00160040)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_FullRemap_TIM1\fP   ((uint32_t)0x001600C0)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PartialRemap1_TIM2\fP   ((uint32_t)0x00180100)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PartialRemap2_TIM2\fP   ((uint32_t)0x00180200)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_FullRemap_TIM2\fP   ((uint32_t)0x00180300)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PartialRemap_TIM3\fP   ((uint32_t)0x001A0800)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_FullRemap_TIM3\fP   ((uint32_t)0x001A0C00)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM4\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap1_CAN1\fP   ((uint32_t)0x001D4000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap2_CAN1\fP   ((uint32_t)0x001D6000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_PD01\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM5CH4_LSI\fP   ((uint32_t)0x00200001)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_ADC1_ETRGINJ\fP   ((uint32_t)0x00200002)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_ADC1_ETRGREG\fP   ((uint32_t)0x00200004)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_ADC2_ETRGINJ\fP   ((uint32_t)0x00200008)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_ADC2_ETRGREG\fP   ((uint32_t)0x00200010)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_ETH\fP   ((uint32_t)0x00200020)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_CAN2\fP   ((uint32_t)0x00200040)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_SWJ_NoJTRST\fP   ((uint32_t)0x00300100)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_SWJ_JTAGDisable\fP   ((uint32_t)0x00300200)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_SWJ_Disable\fP   ((uint32_t)0x00300400)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_SPI3\fP   ((uint32_t)0x00201100)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM2ITR1_PTP_SOF\fP   ((uint32_t)0x00202000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_PTP_PPS\fP   ((uint32_t)0x00204000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM15\fP   ((uint32_t)0x80000001)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM16\fP   ((uint32_t)0x80000002)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM17\fP   ((uint32_t)0x80000004)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_CEC\fP   ((uint32_t)0x80000008)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM1_DMA\fP   ((uint32_t)0x80000010)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM9\fP   ((uint32_t)0x80000020)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM10\fP   ((uint32_t)0x80000040)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM11\fP   ((uint32_t)0x80000080)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM13\fP   ((uint32_t)0x80000100)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM14\fP   ((uint32_t)0x80000200)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_FSMC_NADV\fP   ((uint32_t)0x80000400)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM67_DAC_DMA\fP   ((uint32_t)0x80000800)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_TIM12\fP   ((uint32_t)0x80001000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_Remap_MISC\fP   ((uint32_t)0x80002000)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_REMAP\fP(REMAP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOA\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOB\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOC\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOD\fP   ((uint8_t)0x03)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOE\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOF\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PortSourceGPIOG\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_EVENTOUT_PORT_SOURCE\fP(PORTSOURCE)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_EXTI_PORT_SOURCE\fP(PORTSOURCE)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource0\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource1\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource2\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource3\fP   ((uint8_t)0x03)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource4\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource5\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource6\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource7\fP   ((uint8_t)0x07)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource8\fP   ((uint8_t)0x08)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource9\fP   ((uint8_t)0x09)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource10\fP   ((uint8_t)0x0A)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource11\fP   ((uint8_t)0x0B)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource12\fP   ((uint8_t)0x0C)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource13\fP   ((uint8_t)0x0D)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource14\fP   ((uint8_t)0x0E)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PinSource15\fP   ((uint8_t)0x0F)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_PIN_SOURCE\fP(PINSOURCE)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_ETH_MediaInterface_MII\fP   ((\fBu32\fP)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_ETH_MediaInterface_RMII\fP   ((\fBu32\fP)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_ETH_MEDIA_INTERFACE\fP(INTERFACE)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGPIOSpeed_TypeDef\fP { \fBGPIO_Speed_10MHz\fP = 1, \fBGPIO_Speed_2MHz\fP, \fBGPIO_Speed_50MHz\fP }
+.RI "Output Maximum frequency selection\&. ""
+.br
+.ti -1c
+.RI "enum \fBGPIOMode_TypeDef\fP { \fBGPIO_Mode_AIN\fP = 0x0, \fBGPIO_Mode_IN_FLOATING\fP = 0x04, \fBGPIO_Mode_IPD\fP = 0x28, \fBGPIO_Mode_IPU\fP = 0x48, \fBGPIO_Mode_Out_OD\fP = 0x14, \fBGPIO_Mode_Out_PP\fP = 0x10, \fBGPIO_Mode_AF_OD\fP = 0x1C, \fBGPIO_Mode_AF_PP\fP = 0x18 }
+.RI "Configuration Mode enumeration\&. ""
+.br
+.ti -1c
+.RI "enum \fBBitAction\fP { \fBBit_RESET\fP = 0, \fBBit_SET\fP }
+.RI "Bit_SET and Bit_RESET enumeration\&. ""
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGPIO_DeInit\fP (\fBGPIO_TypeDef\fP *GPIOx)"
+.br
+.RI "Deinitializes the GPIOx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBGPIO_AFIODeInit\fP (void)"
+.br
+.RI "Deinitializes the Alternate Functions (remap, event control and EXTI configuration) registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBGPIO_Init\fP (\fBGPIO_TypeDef\fP *GPIOx, \fBGPIO_InitTypeDef\fP *GPIO_InitStruct)"
+.br
+.RI "Initializes the GPIOx peripheral according to the specified parameters in the GPIO_InitStruct\&. "
+.ti -1c
+.RI "void \fBGPIO_StructInit\fP (\fBGPIO_InitTypeDef\fP *GPIO_InitStruct)"
+.br
+.RI "Fills each GPIO_InitStruct member with its default value\&. "
+.ti -1c
+.RI "uint8_t \fBGPIO_ReadInputDataBit\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Reads the specified input port pin\&. "
+.ti -1c
+.RI "uint16_t \fBGPIO_ReadInputData\fP (\fBGPIO_TypeDef\fP *GPIOx)"
+.br
+.RI "Reads the specified GPIO input data port\&. "
+.ti -1c
+.RI "uint8_t \fBGPIO_ReadOutputDataBit\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Reads the specified output data port bit\&. "
+.ti -1c
+.RI "uint16_t \fBGPIO_ReadOutputData\fP (\fBGPIO_TypeDef\fP *GPIOx)"
+.br
+.RI "Reads the specified GPIO output data port\&. "
+.ti -1c
+.RI "void \fBGPIO_SetBits\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Sets the selected data port bits\&. "
+.ti -1c
+.RI "void \fBGPIO_ResetBits\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Clears the selected data port bits\&. "
+.ti -1c
+.RI "void \fBGPIO_WriteBit\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin, \fBBitAction\fP BitVal)"
+.br
+.RI "Sets or clears the selected data port bit\&. "
+.ti -1c
+.RI "void \fBGPIO_Write\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t PortVal)"
+.br
+.RI "Writes data to the specified GPIO data port\&. "
+.ti -1c
+.RI "void \fBGPIO_PinLockConfig\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.RI "Locks GPIO Pins configuration registers\&. "
+.ti -1c
+.RI "void \fBGPIO_EventOutputConfig\fP (uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)"
+.br
+.RI "Selects the GPIO pin used as Event output\&. "
+.ti -1c
+.RI "void \fBGPIO_EventOutputCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Event Output\&. "
+.ti -1c
+.RI "void \fBGPIO_PinRemapConfig\fP (uint32_t GPIO_Remap, \fBFunctionalState\fP NewState)"
+.br
+.RI "Changes the mapping of the specified pin\&. "
+.ti -1c
+.RI "void \fBGPIO_EXTILineConfig\fP (uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)"
+.br
+.RI "Selects the GPIO pin used as EXTI Line\&. "
+.ti -1c
+.RI "void \fBGPIO_ETH_MediaInterfaceConfig\fP (uint32_t GPIO_ETH_MediaInterface)"
+.br
+.RI "Selects the Ethernet media interface\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the GPIO firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_gpio\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

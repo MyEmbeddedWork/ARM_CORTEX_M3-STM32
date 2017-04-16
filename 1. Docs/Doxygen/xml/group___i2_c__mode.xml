@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c__mode" kind="group">
+    <compoundname>I2C_mode</compoundname>
+    <title>I2C_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c__mode_1ga8bc3b0555ca31b6f8423bc2ada45d1ac" prot="public" static="no">
+        <name>I2C_Mode_I2C</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="92" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__mode_1gaf0cf66bc1f4986ba8a9925da924e06da" prot="public" static="no">
+        <name>I2C_Mode_SMBusDevice</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="93" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__mode_1gacfd37619c8d91dea5dec2921840acede" prot="public" static="no">
+        <name>I2C_Mode_SMBusHost</name>
+        <initializer>((uint16_t)0x000A)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="94" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__mode_1ga58464e1fe94a79bab721137a544baf79" prot="public" static="no">
+        <name>IS_I2C_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___i2_c__mode_1ga8bc3b0555ca31b6f8423bc2ada45d1ac" kindref="member">I2C_Mode_I2C</ref>) || \
+                           ((MODE) == <ref refid="group___i2_c__mode_1gaf0cf66bc1f4986ba8a9925da924e06da" kindref="member">I2C_Mode_SMBusDevice</ref>) || \
+                           ((MODE) == <ref refid="group___i2_c__mode_1gacfd37619c8d91dea5dec2921840acede" kindref="member">I2C_Mode_SMBusHost</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="95" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

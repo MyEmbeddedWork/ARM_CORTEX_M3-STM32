@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="unionx_p_s_r___type" kind="union" language="C++" prot="public">
+    <compoundname>xPSR_Type</compoundname>
+    <includes refid="core__cm0_8h" local="no">core_cm0.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a3e9120dcf1a829fc8d2302b4d0673970" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="307" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1af438e0f407357e914a70b5bd4d6a97c5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::_reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved</para><para>bit: 9..15 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="308" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a7eed9fe24ae8d354cd76ae1c1110a658" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="309" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a790056bb6f20ea16cecc784b0dd19ad6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::_reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved</para><para>bit: 20..23 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="310" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1af14df16ea0690070c45b95f2116b7a0a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="311" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a40213a6b5620410cac83b0d89564609d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="312" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a1e5d9801013d5146f2e02d9b7b3da562" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="313" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a2db9a52f6d42809627d1a7a607c5dbc5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="314" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a3b1063bb5cdad67e037cba993b693b70" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@2</type>
+        <definition>struct xPSR_Type::@2  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a1a47176768f45f79076c4f5b1b534bc2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type used for word access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="316" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a477983eb9f0417d63288ddf538d7060b" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@6</type>
+        <definition>struct xPSR_Type::@6  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a3200966922a194d84425e2807a7f1328" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::IT</definition>
+        <argsstring></argsstring>
+        <name>IT</name>
+        <bitfield>2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..26 saved IT state (read 0) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="321" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1add7cbd2b0abd8954d62cd7831796ac7c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 27 Saturation condition flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="322" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a35f742ca1c07eab4859f2b004b7061c8" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@10</type>
+        <definition>struct xPSR_Type::@10  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="327" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a2d0ec4ccae337c1df5658f8cf4632e76" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xPSR_Type::GE</definition>
+        <argsstring></argsstring>
+        <name>GE</name>
+        <bitfield>4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 16..19 Greater than or Equal flags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="379" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a37909be48c1aeb4c53382e98e4a3fe4b" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@15</type>
+        <definition>struct xPSR_Type::@15  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1a77bf98b729cf318cc11a0e21fe6ce04f" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@20</type>
+        <definition>struct xPSR_Type::@20  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="403" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1aac24d2492d64a2f18dce38ad3d5bc6b9" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@25</type>
+        <definition>struct xPSR_Type::@25  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_p_s_r___type_1aadeab5e1061c379c66bd3e4c97c1c413" prot="public" static="no" mutable="no">
+        <type>struct xPSR_Type::@29</type>
+        <definition>struct xPSR_Type::@29  xPSR_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="319" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union type to access the Special-Purpose Program Status Registers (xPSR). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="304" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="303" bodyend="317"/>
+    <listofallmembers>
+      <member refid="unionx_p_s_r___type_1af438e0f407357e914a70b5bd4d6a97c5" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>_reserved0</name></member>
+      <member refid="unionx_p_s_r___type_1a790056bb6f20ea16cecc784b0dd19ad6" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>_reserved1</name></member>
+      <member refid="unionx_p_s_r___type_1a3b1063bb5cdad67e037cba993b693b70" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1a477983eb9f0417d63288ddf538d7060b" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1a35f742ca1c07eab4859f2b004b7061c8" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1a37909be48c1aeb4c53382e98e4a3fe4b" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1a77bf98b729cf318cc11a0e21fe6ce04f" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1aac24d2492d64a2f18dce38ad3d5bc6b9" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1aadeab5e1061c379c66bd3e4c97c1c413" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>b</name></member>
+      <member refid="unionx_p_s_r___type_1a40213a6b5620410cac83b0d89564609d" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>C</name></member>
+      <member refid="unionx_p_s_r___type_1a2d0ec4ccae337c1df5658f8cf4632e76" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>GE</name></member>
+      <member refid="unionx_p_s_r___type_1a3e9120dcf1a829fc8d2302b4d0673970" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>ISR</name></member>
+      <member refid="unionx_p_s_r___type_1a3200966922a194d84425e2807a7f1328" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>IT</name></member>
+      <member refid="unionx_p_s_r___type_1a2db9a52f6d42809627d1a7a607c5dbc5" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>N</name></member>
+      <member refid="unionx_p_s_r___type_1add7cbd2b0abd8954d62cd7831796ac7c" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>Q</name></member>
+      <member refid="unionx_p_s_r___type_1a7eed9fe24ae8d354cd76ae1c1110a658" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>T</name></member>
+      <member refid="unionx_p_s_r___type_1af14df16ea0690070c45b95f2116b7a0a" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>V</name></member>
+      <member refid="unionx_p_s_r___type_1a1a47176768f45f79076c4f5b1b534bc2" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>w</name></member>
+      <member refid="unionx_p_s_r___type_1a1e5d9801013d5146f2e02d9b7b3da562" prot="public" virt="non-virtual"><scope>xPSR_Type</scope><name>Z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

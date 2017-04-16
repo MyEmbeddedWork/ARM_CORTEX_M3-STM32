@@ -1,0 +1,54 @@
+.TH "FSMC_NAND_PCCARDTimingInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_NAND_PCCARDTimingInitTypeDef \- Timing parameters For FSMC NAND and PCCARD Banks\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_fsmc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBFSMC_SetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_WaitSetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_HoldSetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_HiZSetupTime\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Timing parameters For FSMC NAND and PCCARD Banks\&. 
+.PP
+Definition at line 151 of file stm32f10x_fsmc\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HiZSetupTime"
+Defines the number of HCLK clock cycles during which the databus is kept in HiZ after the start of a NAND-Flash write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured)\&. This parameter can be a number between 0x00 and 0xFF 
+.PP
+Definition at line 172 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HoldSetupTime"
+Defines the number of HCLK clock cycles to hold address (and data for write access) after the command deassertion for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured)\&. This parameter can be a number between 0x00 and 0xFF 
+.PP
+Definition at line 165 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_SetupTime"
+Defines the number of HCLK cycles to setup address before the command assertion for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured)\&. This parameter can be a value between 0 and 0xFF\&. 
+.PP
+Definition at line 153 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_WaitSetupTime"
+Defines the minimum number of HCLK cycles to assert the command for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured)\&. This parameter can be a number between 0x00 and 0xFF 
+.PP
+Definition at line 159 of file stm32f10x_fsmc\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

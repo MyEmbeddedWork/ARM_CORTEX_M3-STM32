@@ -1,0 +1,97 @@
+\hypertarget{stm32f10x__bkp_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+bkp.c File Reference}
+\label{stm32f10x__bkp_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+bkp.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+bkp.\+c}}
+
+
+This file provides all the B\+KP firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+bkp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+rcc.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+bkp.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__bkp_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gaaaf71f474657e7c0c5b0d6ba9697cf5d}{B\+K\+P\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___peripheral__memory__map_gaa15d5a9f40794105397ba5ea567c4ae1}{B\+K\+P\+\_\+\+B\+A\+SE} -\/ \hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___b_k_p___private___defines_gaaaf71f474657e7c0c5b0d6ba9697cf5d}{B\+K\+P\+\_\+\+O\+F\+F\+S\+ET} + 0x30)
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga4af1869d665b8804104b6754c787820a}{T\+P\+A\+L\+\_\+\+Bit\+Number}~0x01
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gaa36e52f37b9fa6982bd224a6dcb86f78}{C\+R\+\_\+\+T\+P\+A\+L\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___b_k_p___private___defines_ga4af1869d665b8804104b6754c787820a}{T\+P\+A\+L\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga8c68be900246b028ff4af93ad119eb98}{T\+P\+E\+\_\+\+Bit\+Number}~0x00
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga6c11e801c2c1aa87ec2feaefe12bbb96}{C\+R\+\_\+\+T\+P\+E\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___b_k_p___private___defines_ga8c68be900246b028ff4af93ad119eb98}{T\+P\+E\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___b_k_p___private___defines_gaaaf71f474657e7c0c5b0d6ba9697cf5d}{B\+K\+P\+\_\+\+O\+F\+F\+S\+ET} + 0x34)
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gac62e6ae9548498efa47fb72637545117}{T\+P\+I\+E\+\_\+\+Bit\+Number}~0x02
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga1f6dcf729994613b21f554ca371d393c}{C\+S\+R\+\_\+\+T\+P\+I\+E\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___b_k_p___private___defines_gac62e6ae9548498efa47fb72637545117}{T\+P\+I\+E\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gac8b1b82c7029c05e720c50585762bcf2}{T\+I\+F\+\_\+\+Bit\+Number}~0x09
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga8d9e7cac2321fae6d257e8c1316264e3}{C\+S\+R\+\_\+\+T\+I\+F\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___b_k_p___private___defines_gac8b1b82c7029c05e720c50585762bcf2}{T\+I\+F\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gaeb8676e7543d93df60cf7c63fd795672}{T\+E\+F\+\_\+\+Bit\+Number}~0x08
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_gad60539cc791a26701d414aee529ea203}{C\+S\+R\+\_\+\+T\+E\+F\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___b_k_p___private___defines_gaeb8676e7543d93df60cf7c63fd795672}{T\+E\+F\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga61a540c5dd9d18e936b8fd3e01f7f6ff}{R\+T\+C\+C\+R\+\_\+\+C\+A\+L\+\_\+\+M\+A\+SK}~((uint16\+\_\+t)0x\+F\+F80)
+\item 
+\#define \hyperlink{group___b_k_p___private___defines_ga4bda91755d5ae28e9e487e946917a1ec}{R\+T\+C\+C\+R\+\_\+\+M\+A\+SK}~((uint16\+\_\+t)0x\+F\+C7\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___b_k_p___private___functions_gaabff4d8f5ebf4fd9a840bcc9042ca226}{B\+K\+P\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the B\+KP peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_gae216446d641d075fb575ce6dbe2ff4c1}{B\+K\+P\+\_\+\+Tamper\+Pin\+Level\+Config} (uint16\+\_\+t B\+K\+P\+\_\+\+Tamper\+Pin\+Level)
+\begin{DoxyCompactList}\small\item\em Configures the Tamper Pin active level. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_ga3a0cdff9ad8238ade2c67e2b70f530ac}{B\+K\+P\+\_\+\+Tamper\+Pin\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Tamper Pin activation. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_gab8dbd0c4773f6edb98a28c8ff6a2ead0}{B\+K\+P\+\_\+\+I\+T\+Config} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Tamper Pin Interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_ga3d1b22b3c6a79f7b423616a0af1885bf}{B\+K\+P\+\_\+\+R\+T\+C\+Output\+Config} (uint16\+\_\+t B\+K\+P\+\_\+\+R\+T\+C\+Output\+Source)
+\begin{DoxyCompactList}\small\item\em Select the R\+TC output source to output on the Tamper pin. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_gad34db08a944450d2e7d56d0fd8db2bca}{B\+K\+P\+\_\+\+Set\+R\+T\+C\+Calibration\+Value} (uint8\+\_\+t Calibration\+Value)
+\begin{DoxyCompactList}\small\item\em Sets R\+TC Clock Calibration value. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_ga18d220387db651b3cb71fad5c092e041}{B\+K\+P\+\_\+\+Write\+Backup\+Register} (uint16\+\_\+t B\+K\+P\+\_\+\+DR, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Writes user data to the specified Data Backup Register. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___b_k_p___private___functions_ga359d8fbc945e0f4e34fedbe037d842c8}{B\+K\+P\+\_\+\+Read\+Backup\+Register} (uint16\+\_\+t B\+K\+P\+\_\+\+DR)
+\begin{DoxyCompactList}\small\item\em Reads data from the specified Data Backup Register. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___b_k_p___private___functions_gacc9aedde760383f0bd146f0d77a547db}{B\+K\+P\+\_\+\+Get\+Flag\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the Tamper Pin Event flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_ga3f3aea5b0a3d8d5d79b0b506928351ea}{B\+K\+P\+\_\+\+Clear\+Flag} (void)
+\begin{DoxyCompactList}\small\item\em Clears Tamper Pin Event pending flag. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___b_k_p___private___functions_ga99566c9f1f17f499020606cb63511494}{B\+K\+P\+\_\+\+Get\+I\+T\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the Tamper Pin Interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___b_k_p___private___functions_ga6a93ef8e40959bb10fea670e2040ad74}{B\+K\+P\+\_\+\+Clear\+I\+T\+Pending\+Bit} (void)
+\begin{DoxyCompactList}\small\item\em Clears Tamper Pin Interrupt pending bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the B\+KP firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

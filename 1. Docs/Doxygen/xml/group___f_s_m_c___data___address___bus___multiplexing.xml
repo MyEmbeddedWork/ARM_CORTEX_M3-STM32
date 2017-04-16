@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___data___address___bus___multiplexing" kind="group">
+    <compoundname>FSMC_Data_Address_Bus_Multiplexing</compoundname>
+    <title>FSMC_Data_Address_Bus_Multiplexing</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___data___address___bus___multiplexing_1ga62d92adbcbcc1d6ec9a04de1b343744a" prot="public" static="no">
+        <name>FSMC_DataAddressMux_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="298" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___data___address___bus___multiplexing_1ga1dd4d12e63aaf29dbb8ae4b613f2aa15" prot="public" static="no">
+        <name>FSMC_DataAddressMux_Enable</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="299" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___data___address___bus___multiplexing_1ga546fcab8c1b751b4a959ba2ce5b35d79" prot="public" static="no">
+        <name>IS_FSMC_MUX</name>
+        <param><defname>MUX</defname></param>
+        <initializer>(((MUX) == <ref refid="group___f_s_m_c___data___address___bus___multiplexing_1ga62d92adbcbcc1d6ec9a04de1b343744a" kindref="member">FSMC_DataAddressMux_Disable</ref>) || \
+                          ((MUX) == <ref refid="group___f_s_m_c___data___address___bus___multiplexing_1ga1dd4d12e63aaf29dbb8ae4b613f2aa15" kindref="member">FSMC_DataAddressMux_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="300" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

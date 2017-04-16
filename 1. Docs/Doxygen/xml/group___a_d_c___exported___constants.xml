@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___a_d_c___exported___constants" kind="group">
+    <compoundname>ADC_Exported_Constants</compoundname>
+    <title>ADC_Exported_Constants</title>
+    <innergroup refid="group___a_d_c__mode">ADC_mode</innergroup>
+    <innergroup refid="group___a_d_c__external__trigger__sources__for__regular__channels__conversion">ADC_external_trigger_sources_for_regular_channels_conversion</innergroup>
+    <innergroup refid="group___a_d_c__data__align">ADC_data_align</innergroup>
+    <innergroup refid="group___a_d_c__channels">ADC_channels</innergroup>
+    <innergroup refid="group___a_d_c__sampling__time">ADC_sampling_time</innergroup>
+    <innergroup refid="group___a_d_c__external__trigger__sources__for__injected__channels__conversion">ADC_external_trigger_sources_for_injected_channels_conversion</innergroup>
+    <innergroup refid="group___a_d_c__injected__channel__selection">ADC_injected_channel_selection</innergroup>
+    <innergroup refid="group___a_d_c__analog__watchdog__selection">ADC_analog_watchdog_selection</innergroup>
+    <innergroup refid="group___a_d_c__interrupts__definition">ADC_interrupts_definition</innergroup>
+    <innergroup refid="group___a_d_c__flags__definition">ADC_flags_definition</innergroup>
+    <innergroup refid="group___a_d_c__thresholds">ADC_thresholds</innergroup>
+    <innergroup refid="group___a_d_c__injected__offset">ADC_injected_offset</innergroup>
+    <innergroup refid="group___a_d_c__injected__length">ADC_injected_length</innergroup>
+    <innergroup refid="group___a_d_c__injected__rank">ADC_injected_rank</innergroup>
+    <innergroup refid="group___a_d_c__regular__length">ADC_regular_length</innergroup>
+    <innergroup refid="group___a_d_c__regular__rank">ADC_regular_rank</innergroup>
+    <innergroup refid="group___a_d_c__regular__discontinuous__mode__number">ADC_regular_discontinuous_mode_number</innergroup>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2" prot="public" static="no">
+        <name>IS_ADC_ALL_PERIPH</name>
+        <param><defname>PERIPH</defname></param>
+        <initializer>(((PERIPH) == <ref refid="group___peripheral__declaration_1ga90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>) || \
+                                   ((PERIPH) == <ref refid="group___peripheral__declaration_1gac5503ae96c26b4475226f96715a1bf1e" kindref="member">ADC2</ref>) || \
+                                   ((PERIPH) == <ref refid="group___peripheral__declaration_1gae917784606daf6b04c9b7b96b40c2f74" kindref="member">ADC3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="89" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c___exported___constants_1ga56ce1703cee9a93969fc507b985ee949" prot="public" static="no">
+        <name>IS_ADC_DMA_PERIPH</name>
+        <param><defname>PERIPH</defname></param>
+        <initializer>(((PERIPH) == <ref refid="group___peripheral__declaration_1ga90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>) || \
+                                   ((PERIPH) == <ref refid="group___peripheral__declaration_1gae917784606daf6b04c9b7b96b40c2f74" kindref="member">ADC3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="93" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

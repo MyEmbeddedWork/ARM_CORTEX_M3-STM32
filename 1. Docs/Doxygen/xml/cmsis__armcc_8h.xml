@@ -1,0 +1,1031 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cmsis__armcc_8h" kind="file" language="C++">
+    <compoundname>cmsis_armcc.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" prot="public" static="no">
+        <name>__NOP</name>
+        <initializer>__nop</initializer>
+        <briefdescription>
+<para>No Operation. </para>        </briefdescription>
+        <detaileddescription>
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="313" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" prot="public" static="no">
+        <name>__WFI</name>
+        <initializer>__wfi</initializer>
+        <briefdescription>
+<para>Wait For Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="320" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" prot="public" static="no">
+        <name>__WFE</name>
+        <initializer>__wfe</initializer>
+        <briefdescription>
+<para>Wait For Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="328" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9" prot="public" static="no">
+        <name>__SEV</name>
+        <initializer>__sev</initializer>
+        <briefdescription>
+<para>Send Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="335" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6" prot="public" static="no">
+        <name>__ISB</name>
+        <param></param>
+        <initializer>do {\
+                   __schedule_barrier();\
+                   __isb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)</initializer>
+        <briefdescription>
+<para>Instruction Synchronization Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="344" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" prot="public" static="no">
+        <name>__DSB</name>
+        <param></param>
+        <initializer>do {\
+                   __schedule_barrier();\
+                   __dsb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)</initializer>
+        <briefdescription>
+<para>Data Synchronization Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="355" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269" prot="public" static="no">
+        <name>__DMB</name>
+        <param></param>
+        <initializer>do {\
+                   __schedule_barrier();\
+                   __dmb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)</initializer>
+        <briefdescription>
+<para>Data Memory Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="366" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae" prot="public" static="no">
+        <name>__REV</name>
+        <initializer>__rev</initializer>
+        <briefdescription>
+<para>Reverse byte order (32 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in integer value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="378" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86" prot="public" static="no">
+        <name>__ROR</name>
+        <initializer>__ror</initializer>
+        <briefdescription>
+<para>Rotate Right in unsigned value (32 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to rotate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bits to rotate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="417" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397" prot="public" static="no">
+        <name>__BKPT</name>
+        <param><defname>value</defname></param>
+        <initializer>__breakpoint(<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)</initializer>
+        <briefdescription>
+<para>Breakpoint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="427" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248" prot="public" static="no">
+        <name>__CLZ</name>
+        <initializer>__clz</initializer>
+        <briefdescription>
+<para>Count leading zeros. </para>        </briefdescription>
+        <detaileddescription>
+<para>Counts the number of leading zeros of a data value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to count the leading zeros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of leading zeros in value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="463" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga5fe64567d5bf0a81c118374e9a3a4598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_CONTROL</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_CONTROL</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Control Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the Control Register. <simplesect kind="return"><para>Control Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="57" bodyend="61"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga558df7eeb0a34765e0b54d9853d08484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_CONTROL</definition>
+        <argsstring>(uint32_t control)</argsstring>
+        <name>__set_CONTROL</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>control</declname>
+        </param>
+        <briefdescription>
+<para>Set Control Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Writes the given value to the Control Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control Register value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="69" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="69" bodyend="73"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga2c18685a915eb9b7513a907c2b866636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_IPSR</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_IPSR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get IPSR Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the IPSR Register. <simplesect kind="return"><para>IPSR Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="81" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="81" bodyend="85"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gaf082254959c727c663f2334021f1a98a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_APSR</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_APSR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get APSR Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the APSR Register. <simplesect kind="return"><para>APSR Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="93" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="93" bodyend="97"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_xPSR</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_xPSR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get xPSR Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the xPSR Register. <simplesect kind="return"><para>xPSR Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="105" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="105" bodyend="109"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga0c569cbb49336f8d638686f9103047aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_PSP</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_PSP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Process Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current value of the Process Stack Pointer (PSP). <simplesect kind="return"><para>PSP Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="117" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="117" bodyend="121"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gab145e35dbaf6868d3a17a8ad360fe379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_PSP</definition>
+        <argsstring>(uint32_t topOfProcStack)</argsstring>
+        <name>__set_PSP</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>topOfProcStack</declname>
+        </param>
+        <briefdescription>
+<para>Set Process Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Assigns the given value to the Process Stack Pointer (PSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfProcStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process Stack Pointer value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="129" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="129" bodyend="133"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gac5267c10c9b15b5349eea0a959ea014c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_MSP</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_MSP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Main Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current value of the Main Stack Pointer (MSP). <simplesect kind="return"><para>MSP Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="141" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="141" bodyend="145"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga1ff33c0b5ed0e687dd7967a1dd283d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_MSP</definition>
+        <argsstring>(uint32_t topOfMainStack)</argsstring>
+        <name>__set_MSP</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>topOfMainStack</declname>
+        </param>
+        <briefdescription>
+<para>Set Main Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Assigns the given value to the Main Stack Pointer (MSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfMainStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main Stack Pointer value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="153" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="153" bodyend="157"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gac9e3a67ff722261b89c77ebe49b6f9a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_PRIMASK</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_PRIMASK</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Priority Mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current state of the priority mask bit from the Priority Mask Register. <simplesect kind="return"><para>Priority Mask value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="165" bodyend="169"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga42e74e3fffe1a2d93db1de04d9260929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_PRIMASK</definition>
+        <argsstring>(uint32_t priMask)</argsstring>
+        <name>__set_PRIMASK</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>priMask</declname>
+        </param>
+        <briefdescription>
+<para>Set Priority Mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Assigns the given value to the Priority Mask Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">priMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority Mask </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="177" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="177" bodyend="181"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((section(&quot;.rev16_text&quot;))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(section(&quot;.rev16_text&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Reverse byte order (16 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in two unsigned short values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="388" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="388" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___instruction_interface_1ga8e7a866927d3257a82b884ad14dbef4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((section(&quot;.revsh_text&quot;))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(section(&quot;.revsh_text&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Reverse byte order in signed short value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in a signed short value with sign extension to integer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="402" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="402" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___instruction_interface_1gade0870dc150fccdf0a5ae2d3300b2954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>void __attribute__</definition>
+        <argsstring>((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t value)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <initializer>{
+    return 0</initializer>
+        <briefdescription>
+<para>Reverse bit order of value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enable IRQ Interrupts.</para><para>Set Priority Mask.</para><para>Get Priority Mask.</para><para>Set Main Stack Pointer.</para><para>Get Main Stack Pointer.</para><para>Set Process Stack Pointer.</para><para>Get Process Stack Pointer.</para><para>Get xPSR Register.</para><para>Get APSR Register.</para><para>Get IPSR Register.</para><para>Set Control Register.</para><para>Get Control Register.</para><para>Disable IRQ Interrupts.</para><para>Reverse byte order (16 bit)</para><para>Reverse byte order (32 bit)</para><para>Data Memory Barrier.</para><para>Data Synchronization Barrier.</para><para>Instruction Synchronization Barrier.</para><para>Send Event.</para><para>Wait For Event.</para><para>Wait For Interrupt.</para><para>No Operation.</para><para>Rotate Right in unsigned value (32 bit)</para><para>Reverse byte order in signed short value.</para><para>Reverses the bit order of the given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Reverses the byte order in a signed short value with sign extension to integer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">op1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to rotate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">op2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bits to rotate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated value</para></simplesect>
+No Operation does nothing. This instruction can be used for code alignment purposes.</para><para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs.</para><para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs.</para><para>Send Event is a hint instruction. It causes an event to be signaled to the CPU.</para><para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed.</para><para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete.</para><para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion.</para><para>Reverses the byte order in integer value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Reverses the byte order in two unsigned short values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to rotate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bits to rotate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated value</para></simplesect>
+Disables IRQ interrupts by setting the I-bit in the CPSR. Can only be executed in Privileged modes.</para><para>Returns the content of the Control Register. <simplesect kind="return"><para>Control Register value</para></simplesect>
+Writes the given value to the Control Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control Register value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the content of the IPSR Register. <simplesect kind="return"><para>IPSR Register value</para></simplesect>
+Returns the content of the APSR Register. <simplesect kind="return"><para>APSR Register value</para></simplesect>
+Returns the content of the xPSR Register. <simplesect kind="return"><para>xPSR Register value</para></simplesect>
+Returns the current value of the Process Stack Pointer (PSP). <simplesect kind="return"><para>PSP Register value</para></simplesect>
+Assigns the given value to the Process Stack Pointer (PSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfProcStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process Stack Pointer value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the current value of the Main Stack Pointer (MSP). <simplesect kind="return"><para>MSP Register value</para></simplesect>
+Assigns the given value to the Main Stack Pointer (MSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfMainStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main Stack Pointer value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the current state of the priority mask bit from the Priority Mask Register. <simplesect kind="return"><para>Priority Mask value</para></simplesect>
+Assigns the given value to the Priority Mask Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">priMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority Mask</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Enables IRQ interrupts by clearing the I-bit in the CPSR. Can only be executed in Privileged modes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="439" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="439" bodyend="453"/>
+        <references refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" compoundref="semihosting_8h" startline="102">value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CMSIS Cortex-M Core Function/Instruction Header File. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>V4.30 </para></simplesect>
+<simplesect kind="date"><para>20. October 2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2009<sp/>-<sp/>2015<sp/>ARM<sp/>LIMITED</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>-<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>-<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>-<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>ARM<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>BE</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CMSIS_ARMCC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CMSIS_ARMCC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>400677)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#error<sp/>&quot;Please<sp/>use<sp/>ARM<sp/>Compiler<sp/>Toolchain<sp/>V4.0.677<sp/>or<sp/>later!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>###########################<sp/><sp/>Core<sp/>Function<sp/>Access<sp/><sp/>###########################<sp/>*/</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">/*<sp/>intrinsic<sp/>void<sp/>__enable_irq();<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>intrinsic<sp/>void<sp/>__disable_irq();<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga5fe64567d5bf0a81c118374e9a3a4598" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga5fe64567d5bf0a81c118374e9a3a4598" kindref="member">__get_CONTROL</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regControl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;control&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regControl);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga558df7eeb0a34765e0b54d9853d08484" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga558df7eeb0a34765e0b54d9853d08484" kindref="member">__set_CONTROL</ref>(uint32_t<sp/>control)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regControl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;control&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>__regControl<sp/>=<sp/>control;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga2c18685a915eb9b7513a907c2b866636" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga2c18685a915eb9b7513a907c2b866636" kindref="member">__get_IPSR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regIPSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;ipsr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regIPSR);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf082254959c727c663f2334021f1a98a" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf082254959c727c663f2334021f1a98a" kindref="member">__get_APSR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regAPSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;apsr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regAPSR);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11" kindref="member">__get_xPSR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regXPSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;xpsr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regXPSR);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga0c569cbb49336f8d638686f9103047aa" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga0c569cbb49336f8d638686f9103047aa" kindref="member">__get_PSP</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regProcessStackPointer<sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;psp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regProcessStackPointer);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="group___c_m_s_i_s___core___reg_acc_functions_1gab145e35dbaf6868d3a17a8ad360fe379" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gab145e35dbaf6868d3a17a8ad360fe379" kindref="member">__set_PSP</ref>(uint32_t<sp/>topOfProcStack)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regProcessStackPointer<sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;psp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>__regProcessStackPointer<sp/>=<sp/>topOfProcStack;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="group___c_m_s_i_s___core___reg_acc_functions_1gac5267c10c9b15b5349eea0a959ea014c" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gac5267c10c9b15b5349eea0a959ea014c" kindref="member">__get_MSP</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regMainStackPointer<sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;msp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regMainStackPointer);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga1ff33c0b5ed0e687dd7967a1dd283d5f" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga1ff33c0b5ed0e687dd7967a1dd283d5f" kindref="member">__set_MSP</ref>(uint32_t<sp/>topOfMainStack)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regMainStackPointer<sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;msp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>__regMainStackPointer<sp/>=<sp/>topOfMainStack;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="group___c_m_s_i_s___core___reg_acc_functions_1gac9e3a67ff722261b89c77ebe49b6f9a7" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gac9e3a67ff722261b89c77ebe49b6f9a7" kindref="member">__get_PRIMASK</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regPriMask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;primask&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regPriMask);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="group___c_m_s_i_s___core___reg_acc_functions_1ga42e74e3fffe1a2d93db1de04d9260929" refkind="member"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga42e74e3fffe1a2d93db1de04d9260929" kindref="member">__set_PRIMASK</ref>(uint32_t<sp/>priMask)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regPriMask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;primask&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>__regPriMask<sp/>=<sp/>(priMask);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x03U)<sp/>||<sp/>(__CORTEX_SC<sp/>&gt;=<sp/>300U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor">#define<sp/>__enable_fault_irq<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__enable_fiq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor">#define<sp/>__disable_fault_irq<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__disable_fiq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/><sp/>__get_BASEPRI(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regBasePri<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;basepri&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regBasePri);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__set_BASEPRI(uint32_t<sp/>basePri)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regBasePri<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;basepri&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>__regBasePri<sp/>=<sp/>(basePri<sp/>&amp;<sp/>0xFFU);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__set_BASEPRI_MAX(uint32_t<sp/>basePri)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regBasePriMax<sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;basepri_max&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>__regBasePriMax<sp/>=<sp/>(basePri<sp/>&amp;<sp/>0xFFU);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/>__get_FAULTMASK(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regFaultMask<sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;faultmask&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regFaultMask);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__set_FAULTMASK(uint32_t<sp/>faultMask)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regFaultMask<sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;faultmask&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>__regFaultMask<sp/>=<sp/>(faultMask<sp/>&amp;<sp/>(uint32_t)1);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x03U)<sp/>||<sp/>(__CORTEX_SC<sp/>&gt;=<sp/>300U)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__CORTEX_M<sp/>==<sp/>0x04U)<sp/>||<sp/>(__CORTEX_M<sp/>==<sp/>0x07U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">__STATIC_INLINE<sp/>uint32_t<sp/>__get_FPSCR(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(__FPU_PRESENT<sp/>==<sp/>1U)<sp/>&amp;&amp;<sp/>(__FPU_USED<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regfpscr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;fpscr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(__regfpscr);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(0U);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal">__STATIC_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__set_FPSCR(uint32_t<sp/>fpscr)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(__FPU_PRESENT<sp/>==<sp/>1U)<sp/>&amp;&amp;<sp/>(__FPU_USED<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">register</highlight><highlight class="normal"><sp/>uint32_t<sp/>__regfpscr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASM(</highlight><highlight class="stringliteral">&quot;fpscr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>__regfpscr<sp/>=<sp/>(fpscr);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>(__CORTEX_M<sp/>==<sp/>0x04U)<sp/>||<sp/>(__CORTEX_M<sp/>==<sp/>0x07U)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="comment">/*<sp/>##########################<sp/><sp/>Core<sp/>Instruction<sp/>Access<sp/><sp/>#########################<sp/>*/</highlight></codeline>
+<codeline lineno="313" refid="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" refkind="member"><highlight class="preprocessor">#define<sp/>__NOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__nop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" refkind="member"><highlight class="preprocessor">#define<sp/>__WFI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__wfi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" refkind="member"><highlight class="preprocessor">#define<sp/>__WFE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__wfe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9" refkind="member"><highlight class="preprocessor">#define<sp/>__SEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sev</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6" refkind="member"><highlight class="preprocessor">#define<sp/>__ISB()<sp/>do<sp/>{\</highlight></codeline>
+<codeline lineno="345"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__schedule_barrier();\</highlight></codeline>
+<codeline lineno="346"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__isb(0xF);\</highlight></codeline>
+<codeline lineno="347"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__schedule_barrier();\</highlight></codeline>
+<codeline lineno="348"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355" refid="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" refkind="member"><highlight class="preprocessor">#define<sp/>__DSB()<sp/>do<sp/>{\</highlight></codeline>
+<codeline lineno="356"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__schedule_barrier();\</highlight></codeline>
+<codeline lineno="357"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__dsb(0xF);\</highlight></codeline>
+<codeline lineno="358"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__schedule_barrier();\</highlight></codeline>
+<codeline lineno="359"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269" refkind="member"><highlight class="preprocessor">#define<sp/>__DMB()<sp/>do<sp/>{\</highlight></codeline>
+<codeline lineno="367"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__schedule_barrier();\</highlight></codeline>
+<codeline lineno="368"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__dmb(0xF);\</highlight></codeline>
+<codeline lineno="369"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__schedule_barrier();\</highlight></codeline>
+<codeline lineno="370"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae" refkind="member"><highlight class="preprocessor">#define<sp/>__REV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__rev</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="preprocessor">#ifndef<sp/>__NO_EMBEDDED_ASM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" refkind="member"><highlight class="normal"><ref refid="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" kindref="member">__attribute__</ref>((section(</highlight><highlight class="stringliteral">&quot;.rev16_text&quot;</highlight><highlight class="normal">)))<sp/>__STATIC_INLINE<sp/>__ASM<sp/>uint32_t<sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1ga4e3acd41e7667cdf65ffcd8c76a8613f" kindref="member">__REV16</ref>(uint32_t<sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/>rev16<sp/>r0,<sp/>r0</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/>bx<sp/>lr</highlight></codeline>
+<codeline lineno="392"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="preprocessor">#ifndef<sp/>__NO_EMBEDDED_ASM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="group___c_m_s_i_s___core___instruction_interface_1ga8e7a866927d3257a82b884ad14dbef4c" refkind="member"><highlight class="normal"><ref refid="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" kindref="member">__attribute__</ref>((section(</highlight><highlight class="stringliteral">&quot;.revsh_text&quot;</highlight><highlight class="normal">)))<sp/>__STATIC_INLINE<sp/>__ASM<sp/>int32_t<sp/>__REVSH(int32_t<sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)</highlight></codeline>
+<codeline lineno="403"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/>revsh<sp/>r0,<sp/>r0</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/>bx<sp/>lr</highlight></codeline>
+<codeline lineno="406"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417" refid="group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86" refkind="member"><highlight class="preprocessor">#define<sp/>__ROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ror</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397" refkind="member"><highlight class="preprocessor">#define<sp/>__BKPT(value)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__breakpoint(value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="preprocessor">#if<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x03U)<sp/>||<sp/>(__CORTEX_SC<sp/>&gt;=<sp/>300U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__RBIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__rbit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="439" refid="group___c_m_s_i_s___core___instruction_interface_1gade0870dc150fccdf0a5ae2d3300b2954" refkind="member"><highlight class="normal"><ref refid="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" kindref="member">__attribute__</ref>((always_inline))<sp/>__STATIC_INLINE<sp/>uint32_t<sp/>__RBIT(uint32_t<sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)</highlight></codeline>
+<codeline lineno="440"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/>uint32_t<sp/>result;</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/>int32_t<sp/>s<sp/>=<sp/>4<sp/></highlight><highlight class="comment">/*sizeof(v)*/</highlight><highlight class="normal"><sp/>*<sp/>8<sp/>-<sp/>1;<sp/></highlight><highlight class="comment">/*<sp/>extra<sp/>shift<sp/>needed<sp/>at<sp/>end<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/>result<sp/>=<sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>r<sp/>will<sp/>be<sp/>reversed<sp/>bits<sp/>of<sp/>v;<sp/>first<sp/>get<sp/>LSB<sp/>of<sp/>v<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(value<sp/>&gt;&gt;=<sp/>1U;<sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>;<sp/>value<sp/>&gt;&gt;=<sp/>1U)</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>&lt;&lt;=<sp/>1U;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>|=<sp/>value<sp/>&amp;<sp/>1U;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>s--;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/>result<sp/>&lt;&lt;=<sp/>s;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>shift<sp/>when<sp/>v&apos;s<sp/>highest<sp/>bits<sp/>are<sp/>zero<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(result);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463" refid="group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248" refkind="member"><highlight class="preprocessor">#define<sp/>__CLZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__clz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x03U)<sp/>||<sp/>(__CORTEX_SC<sp/>&gt;=<sp/>300U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>5060020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__LDREXB(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t<sp/>)<sp/>__ldrex(ptr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__LDREXB(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Pragma(&quot;push&quot;)<sp/>_Pragma(&quot;diag_suppress<sp/>3731&quot;)<sp/>((uint8_t<sp/>)<sp/>__ldrex(ptr))<sp/><sp/>_Pragma(&quot;pop&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>5060020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__LDREXH(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint16_t)<sp/>__ldrex(ptr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__LDREXH(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Pragma(&quot;push&quot;)<sp/>_Pragma(&quot;diag_suppress<sp/>3731&quot;)<sp/>((uint16_t)<sp/>__ldrex(ptr))<sp/><sp/>_Pragma(&quot;pop&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>5060020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__LDREXW(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t<sp/>)<sp/>__ldrex(ptr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__LDREXW(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Pragma(&quot;push&quot;)<sp/>_Pragma(&quot;diag_suppress<sp/>3731&quot;)<sp/>((uint32_t<sp/>)<sp/>__ldrex(ptr))<sp/><sp/>_Pragma(&quot;pop&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>5060020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__STREXB(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strex(value,<sp/>ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__STREXB(value,<sp/>ptr)<sp/><sp/><sp/>_Pragma(&quot;push&quot;)<sp/>_Pragma(&quot;diag_suppress<sp/>3731&quot;)<sp/>__strex(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Pragma(&quot;pop&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>5060020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__STREXH(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strex(value,<sp/>ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__STREXH(value,<sp/>ptr)<sp/><sp/><sp/>_Pragma(&quot;push&quot;)<sp/>_Pragma(&quot;diag_suppress<sp/>3731&quot;)<sp/>__strex(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Pragma(&quot;pop&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="preprocessor">#if<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&lt;<sp/>5060020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__STREXW(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strex(value,<sp/>ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>__STREXW(value,<sp/>ptr)<sp/><sp/><sp/>_Pragma(&quot;push&quot;)<sp/>_Pragma(&quot;diag_suppress<sp/>3731&quot;)<sp/>__strex(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Pragma(&quot;pop&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="preprocessor">#define<sp/>__CLREX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__clrex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="preprocessor">#define<sp/>__SSAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ssat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="preprocessor">#define<sp/>__USAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="preprocessor">#ifndef<sp/>__NO_EMBEDDED_ASM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><ref refid="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" kindref="member">__attribute__</ref>((section(</highlight><highlight class="stringliteral">&quot;.rrx_text&quot;</highlight><highlight class="normal">)))<sp/>__STATIC_INLINE<sp/>__ASM<sp/>uint32_t<sp/>__RRX(uint32_t<sp/><ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)</highlight></codeline>
+<codeline lineno="588"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>rrx<sp/>r0,<sp/>r0</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/>bx<sp/>lr</highlight></codeline>
+<codeline lineno="591"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="preprocessor">#define<sp/>__LDRBT(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t<sp/>)<sp/><sp/>__ldrt(ptr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="610"><highlight class="preprocessor">#define<sp/>__LDRHT(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint16_t)<sp/><sp/>__ldrt(ptr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="preprocessor">#define<sp/>__LDRT(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t<sp/>)<sp/>__ldrt(ptr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="628"><highlight class="preprocessor">#define<sp/>__STRBT(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strt(value,<sp/>ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="preprocessor">#define<sp/>__STRHT(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strt(value,<sp/>ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="preprocessor">#define<sp/>__STRT(value,<sp/>ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__strt(value,<sp/>ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x03U)<sp/>||<sp/>(__CORTEX_SC<sp/>&gt;=<sp/>300U)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>group<sp/>CMSIS_Core_InstructionInterface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>###################<sp/><sp/>Compiler<sp/>specific<sp/>Intrinsics<sp/><sp/>###########################<sp/>*/</highlight></codeline>
+<codeline lineno="659"><highlight class="preprocessor">#if<sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x04U)<sp/><sp/></highlight><highlight class="comment">/*<sp/>only<sp/>for<sp/>Cortex-M4<sp/>and<sp/>above<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SADD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sadd8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QADD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qadd8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SHADD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__shadd8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UADD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uadd8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UQADD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uqadd8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UHADD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uhadd8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SSUB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ssub8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QSUB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qsub8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SHSUB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__shsub8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__USUB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usub8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UQSUB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uqsub8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UHSUB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uhsub8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SADD16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sadd16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QADD16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qadd16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SHADD16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__shadd16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UADD16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uadd16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UQADD16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uqadd16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UHADD16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uhadd16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SSUB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ssub16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QSUB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qsub16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SHSUB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__shsub16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__USUB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usub16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UQSUB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uqsub16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UHSUB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uhsub16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sasx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qasx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SHASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__shasx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uasx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UQASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uqasx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UHASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uhasx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SSAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ssax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QSAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qsax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SHSAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__shsax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__USAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UQSAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uqsax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UHSAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uhsax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__USAD8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usad8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__USADA8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usada8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SSAT16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ssat16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__USAT16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__usat16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UXTB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uxtb16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UXTAB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__uxtab16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SXTB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sxtb16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SXTAB16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sxtab16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMUAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smuad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMUADX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smuadx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLADX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smladx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLALD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlald</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLALDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlaldx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMUSD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smusd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMUSDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smusdx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLSD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlsd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLSDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlsdx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLSLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlsld</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMLSLDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__smlsldx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__sel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QADD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qadd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__QSUB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qsub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PKHBT(ARG1,ARG2,ARG3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>((((uint32_t)(ARG1))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>&amp;<sp/>0x0000FFFFUL)<sp/>|<sp/><sp/>\</highlight></codeline>
+<codeline lineno="722"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((uint32_t)(ARG2))<sp/>&lt;&lt;<sp/>(ARG3))<sp/>&amp;<sp/>0xFFFF0000UL)<sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PKHTB(ARG1,ARG2,ARG3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>((((uint32_t)(ARG1))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>&amp;<sp/>0xFFFF0000UL)<sp/>|<sp/><sp/>\</highlight></codeline>
+<codeline lineno="725"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((uint32_t)(ARG2))<sp/>&gt;&gt;<sp/>(ARG3))<sp/>&amp;<sp/>0x0000FFFFUL)<sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"></highlight></codeline>
+<codeline lineno="727"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SMMLA(ARG1,ARG2,ARG3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(int32_t)((((int64_t)(ARG1)<sp/>*<sp/>(ARG2))<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="728"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((int64_t)(ARG3)<sp/>&lt;&lt;<sp/>32U)<sp/><sp/><sp/><sp/><sp/>)<sp/>&gt;&gt;<sp/>32U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight></codeline>
+<codeline lineno="730"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>(__CORTEX_M<sp/>&gt;=<sp/>0x04)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="731"><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__CMSIS_ARMCC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h"/>
+  </compounddef>
+</doxygen>

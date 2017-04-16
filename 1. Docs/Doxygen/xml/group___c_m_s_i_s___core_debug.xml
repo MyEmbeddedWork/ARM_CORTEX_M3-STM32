@@ -1,0 +1,2390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s___core_debug" kind="group">
+    <compoundname>CMSIS_CoreDebug</compoundname>
+    <title>Core Debug Registers (CoreDebug)</title>
+    <innerclass refid="struct_core_debug___type" prot="public">CoreDebug_Type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac91280edd0ce932665cf75a23d11d842" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1252" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1ce997cee15edaafe4aed77751816ffc" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Msk</name>
+        <initializer>(0xFFFFUL &lt;&lt; CoreDebug_DHCSR_DBGKEY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1253" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6f934c5427ea057394268e541fa97753" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Pos</name>
+        <initializer>25U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1255" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac474394bcceb31a8e09566c90b3f8922" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RESET_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1256" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2328118f8b3574c871a53605eb17e730" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1258" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga89dceb5325f6bcb36a0473d65fbfcfa6" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RETIRE_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1259" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2900dd56a988a4ed27ad664d5642807e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1261" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga7b67e4506d7f464ef5dafd6219739756" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_LOCKUP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1262" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga349ccea33accc705595624c2d334fbcb" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1264" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga98d51538e645c2c1a422279cd85a0a25" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_SLEEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1265" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga760a9a0d7f39951dc3f07d01f1f64772" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1267" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9f881ade3151a73bc5b02b73fe6473ca" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1268" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga20a71871ca8768019c51168c70c3f41d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1270" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac4cd6f3178de48f473d8903e8c847c07" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_REGRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1271" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga85747214e2656df6b05ec72e4d22bd6d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1273" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga53aa99b2e39a67622f3b9973e079c2b4" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_SNAPSTALL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1274" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga0d2907400eb948a4ea3886ca083ec8e3" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1276" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga77fe1ef3c4a729c1c82fb62a94a51c31" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_MASKINTS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1277" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae1fc39e80de54c0339cbb1b298a9f0f9" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1279" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6bda72fbd32cc5734ff3542170dc00d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1280" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaddf1d43f8857e4efc3dc4e6b15509692" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1282" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1d905a3aa594eb2e8bb78bcc4da05b3f" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1283" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab557abb5b172b74d2cf44efb9d824e4e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1285" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab815c741a4fc2a61988cd2fb7594210b" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DHCSR_C_DEBUGEN_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1286" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga51e75942fc0614bc9bb2c0e96fcdda9a" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1289" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1eef4992d8f84bc6c0dffed1c87f90a5" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DCRSR_REGWnR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1290" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga52182c8a9f63a52470244c0bc2064f7b" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1292" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga17cafbd72b55030219ce5609baa7c01d" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; CoreDebug_DCRSR_REGSEL_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1293" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6ff2102b98f86540224819a1b767ba39" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1296" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga5e99652c1df93b441257389f49407834" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_TRCENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1297" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga341020a3b7450416d72544eaf8e57a64" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1299" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6384cbe8045051186d13ef9cdeace95" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_REQ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1300" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9ae10710684e14a1a534e785ef390e1b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1302" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2ded814556de96fc369de7ae9a7ceb98" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1303" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1e2f706a59e0d8131279af1c7e152f8d" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1305" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga68ec55930269fab78e733dcfa32392f8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_PEND_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1306" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga802829678f6871863ae9ecf60a10425c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1308" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac2b46b9b65bf8d23027f255fc9641977" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_EN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1309" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaed9f42053031a9a30cd8054623304c0a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1311" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga803fc98c5bb85f10f0347b23794847d1" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_HARDERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1312" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga22079a6e436f23b90308be97e19cf07e" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1314" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad6815d8e3df302d2f0ff2c2c734ed29a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_INTERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1315" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab8e3d8f0f9590a51bbf10f6da3ad6933" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1317" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9d29546aefe3ca8662a7fe48dd4a5b2b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_BUSERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1318" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga16f0d3d2ce1e1e8cd762d938ac56c4ac" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Pos</name>
+        <initializer>7U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1320" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaa38b947d77672c48bba1280c0a642e19" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_STATERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1321" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga10fc7c53bca904c128bc8e1a03072d50" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1323" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2f98b461d19746ab2febfddebb73da6f" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_CHKERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1324" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac9d13eb2add61f610d5ced1f7ad2adf8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1326" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga03ee58b1b02fdbf21612809034562f1c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_NOCPERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1327" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga444454f7c7748e76cd76c3809c887c41" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1329" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad420a9b60620584faaca6289e83d3a87" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_MMERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1330" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9fcf09666f7063a7303117aa32a85d5a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1332" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga906476e53c1e1487c30f3a1181df9e30" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DEMCR_VC_CORERESET_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1333" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac91280edd0ce932665cf75a23d11d842" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1421" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1ce997cee15edaafe4aed77751816ffc" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Msk</name>
+        <initializer>(0xFFFFUL &lt;&lt; CoreDebug_DHCSR_DBGKEY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1422" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6f934c5427ea057394268e541fa97753" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Pos</name>
+        <initializer>25U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1424" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac474394bcceb31a8e09566c90b3f8922" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RESET_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1425" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2328118f8b3574c871a53605eb17e730" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1427" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga89dceb5325f6bcb36a0473d65fbfcfa6" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RETIRE_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1428" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2900dd56a988a4ed27ad664d5642807e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1430" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga7b67e4506d7f464ef5dafd6219739756" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_LOCKUP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1431" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga349ccea33accc705595624c2d334fbcb" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1433" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga98d51538e645c2c1a422279cd85a0a25" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_SLEEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1434" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga760a9a0d7f39951dc3f07d01f1f64772" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1436" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9f881ade3151a73bc5b02b73fe6473ca" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1437" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga20a71871ca8768019c51168c70c3f41d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1439" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac4cd6f3178de48f473d8903e8c847c07" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_REGRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1440" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga85747214e2656df6b05ec72e4d22bd6d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1442" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga53aa99b2e39a67622f3b9973e079c2b4" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_SNAPSTALL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1443" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga0d2907400eb948a4ea3886ca083ec8e3" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1445" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga77fe1ef3c4a729c1c82fb62a94a51c31" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_MASKINTS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1446" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae1fc39e80de54c0339cbb1b298a9f0f9" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1448" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6bda72fbd32cc5734ff3542170dc00d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1449" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaddf1d43f8857e4efc3dc4e6b15509692" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1451" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1d905a3aa594eb2e8bb78bcc4da05b3f" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1452" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab557abb5b172b74d2cf44efb9d824e4e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1454" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab815c741a4fc2a61988cd2fb7594210b" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DHCSR_C_DEBUGEN_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1455" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga51e75942fc0614bc9bb2c0e96fcdda9a" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1458" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1eef4992d8f84bc6c0dffed1c87f90a5" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DCRSR_REGWnR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1459" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga52182c8a9f63a52470244c0bc2064f7b" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1461" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga17cafbd72b55030219ce5609baa7c01d" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; CoreDebug_DCRSR_REGSEL_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1462" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6ff2102b98f86540224819a1b767ba39" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1465" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga5e99652c1df93b441257389f49407834" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_TRCENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1466" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga341020a3b7450416d72544eaf8e57a64" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1468" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6384cbe8045051186d13ef9cdeace95" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_REQ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1469" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9ae10710684e14a1a534e785ef390e1b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1471" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2ded814556de96fc369de7ae9a7ceb98" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1472" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1e2f706a59e0d8131279af1c7e152f8d" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1474" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga68ec55930269fab78e733dcfa32392f8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_PEND_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1475" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga802829678f6871863ae9ecf60a10425c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1477" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac2b46b9b65bf8d23027f255fc9641977" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_EN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1478" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaed9f42053031a9a30cd8054623304c0a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1480" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga803fc98c5bb85f10f0347b23794847d1" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_HARDERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1481" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga22079a6e436f23b90308be97e19cf07e" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1483" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad6815d8e3df302d2f0ff2c2c734ed29a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_INTERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1484" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab8e3d8f0f9590a51bbf10f6da3ad6933" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1486" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9d29546aefe3ca8662a7fe48dd4a5b2b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_BUSERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1487" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga16f0d3d2ce1e1e8cd762d938ac56c4ac" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Pos</name>
+        <initializer>7U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1489" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaa38b947d77672c48bba1280c0a642e19" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_STATERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1490" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga10fc7c53bca904c128bc8e1a03072d50" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1492" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2f98b461d19746ab2febfddebb73da6f" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_CHKERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1493" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac9d13eb2add61f610d5ced1f7ad2adf8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1495" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga03ee58b1b02fdbf21612809034562f1c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_NOCPERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1496" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga444454f7c7748e76cd76c3809c887c41" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1498" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad420a9b60620584faaca6289e83d3a87" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_MMERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1499" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9fcf09666f7063a7303117aa32a85d5a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1501" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga906476e53c1e1487c30f3a1181df9e30" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DEMCR_VC_CORERESET_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1502" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac91280edd0ce932665cf75a23d11d842" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1629" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1ce997cee15edaafe4aed77751816ffc" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Msk</name>
+        <initializer>(0xFFFFUL &lt;&lt; CoreDebug_DHCSR_DBGKEY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1630" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6f934c5427ea057394268e541fa97753" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Pos</name>
+        <initializer>25U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1632" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac474394bcceb31a8e09566c90b3f8922" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RESET_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1633" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2328118f8b3574c871a53605eb17e730" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1635" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga89dceb5325f6bcb36a0473d65fbfcfa6" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RETIRE_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1636" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2900dd56a988a4ed27ad664d5642807e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1638" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga7b67e4506d7f464ef5dafd6219739756" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_LOCKUP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1639" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga349ccea33accc705595624c2d334fbcb" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1641" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga98d51538e645c2c1a422279cd85a0a25" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_SLEEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1642" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga760a9a0d7f39951dc3f07d01f1f64772" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1644" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9f881ade3151a73bc5b02b73fe6473ca" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1645" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga20a71871ca8768019c51168c70c3f41d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1647" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac4cd6f3178de48f473d8903e8c847c07" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_REGRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1648" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga85747214e2656df6b05ec72e4d22bd6d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1650" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga53aa99b2e39a67622f3b9973e079c2b4" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_SNAPSTALL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1651" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga0d2907400eb948a4ea3886ca083ec8e3" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1653" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga77fe1ef3c4a729c1c82fb62a94a51c31" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_MASKINTS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1654" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae1fc39e80de54c0339cbb1b298a9f0f9" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1656" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6bda72fbd32cc5734ff3542170dc00d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1657" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaddf1d43f8857e4efc3dc4e6b15509692" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1659" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1d905a3aa594eb2e8bb78bcc4da05b3f" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1660" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab557abb5b172b74d2cf44efb9d824e4e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1662" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab815c741a4fc2a61988cd2fb7594210b" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DHCSR_C_DEBUGEN_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1663" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga51e75942fc0614bc9bb2c0e96fcdda9a" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1666" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1eef4992d8f84bc6c0dffed1c87f90a5" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DCRSR_REGWnR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1667" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga52182c8a9f63a52470244c0bc2064f7b" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1669" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga17cafbd72b55030219ce5609baa7c01d" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; CoreDebug_DCRSR_REGSEL_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1670" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6ff2102b98f86540224819a1b767ba39" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1673" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga5e99652c1df93b441257389f49407834" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_TRCENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1674" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga341020a3b7450416d72544eaf8e57a64" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1676" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6384cbe8045051186d13ef9cdeace95" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_REQ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1677" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9ae10710684e14a1a534e785ef390e1b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1679" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2ded814556de96fc369de7ae9a7ceb98" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1680" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1e2f706a59e0d8131279af1c7e152f8d" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1682" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga68ec55930269fab78e733dcfa32392f8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_PEND_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1683" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga802829678f6871863ae9ecf60a10425c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1685" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac2b46b9b65bf8d23027f255fc9641977" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_EN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1686" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaed9f42053031a9a30cd8054623304c0a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1688" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga803fc98c5bb85f10f0347b23794847d1" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_HARDERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1689" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga22079a6e436f23b90308be97e19cf07e" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1691" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad6815d8e3df302d2f0ff2c2c734ed29a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_INTERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1692" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab8e3d8f0f9590a51bbf10f6da3ad6933" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1694" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9d29546aefe3ca8662a7fe48dd4a5b2b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_BUSERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1695" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga16f0d3d2ce1e1e8cd762d938ac56c4ac" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Pos</name>
+        <initializer>7U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1697" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaa38b947d77672c48bba1280c0a642e19" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_STATERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1698" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga10fc7c53bca904c128bc8e1a03072d50" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1700" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2f98b461d19746ab2febfddebb73da6f" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_CHKERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1701" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac9d13eb2add61f610d5ced1f7ad2adf8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1703" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga03ee58b1b02fdbf21612809034562f1c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_NOCPERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1704" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga444454f7c7748e76cd76c3809c887c41" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1706" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad420a9b60620584faaca6289e83d3a87" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_MMERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1707" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9fcf09666f7063a7303117aa32a85d5a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1709" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga906476e53c1e1487c30f3a1181df9e30" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DEMCR_VC_CORERESET_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1710" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac91280edd0ce932665cf75a23d11d842" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1226" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1ce997cee15edaafe4aed77751816ffc" prot="public" static="no">
+        <name>CoreDebug_DHCSR_DBGKEY_Msk</name>
+        <initializer>(0xFFFFUL &lt;&lt; CoreDebug_DHCSR_DBGKEY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: DBGKEY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1227" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6f934c5427ea057394268e541fa97753" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Pos</name>
+        <initializer>25U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1229" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac474394bcceb31a8e09566c90b3f8922" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RESET_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RESET_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RESET_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1230" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2328118f8b3574c871a53605eb17e730" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1232" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga89dceb5325f6bcb36a0473d65fbfcfa6" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_RETIRE_ST_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_RETIRE_ST_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_RETIRE_ST Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1233" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2900dd56a988a4ed27ad664d5642807e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1235" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga7b67e4506d7f464ef5dafd6219739756" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_LOCKUP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_LOCKUP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_LOCKUP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1236" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga349ccea33accc705595624c2d334fbcb" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1238" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga98d51538e645c2c1a422279cd85a0a25" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_SLEEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_SLEEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_SLEEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1239" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga760a9a0d7f39951dc3f07d01f1f64772" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1241" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9f881ade3151a73bc5b02b73fe6473ca" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1242" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga20a71871ca8768019c51168c70c3f41d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1244" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac4cd6f3178de48f473d8903e8c847c07" prot="public" static="no">
+        <name>CoreDebug_DHCSR_S_REGRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_S_REGRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: S_REGRDY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1245" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga85747214e2656df6b05ec72e4d22bd6d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1247" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga53aa99b2e39a67622f3b9973e079c2b4" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_SNAPSTALL_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_SNAPSTALL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_SNAPSTALL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1248" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga0d2907400eb948a4ea3886ca083ec8e3" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1250" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga77fe1ef3c4a729c1c82fb62a94a51c31" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_MASKINTS_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_MASKINTS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_MASKINTS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1251" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae1fc39e80de54c0339cbb1b298a9f0f9" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1253" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6bda72fbd32cc5734ff3542170dc00d" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1254" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaddf1d43f8857e4efc3dc4e6b15509692" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1256" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1d905a3aa594eb2e8bb78bcc4da05b3f" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_HALT_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DHCSR_C_HALT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_HALT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1257" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab557abb5b172b74d2cf44efb9d824e4e" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1259" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab815c741a4fc2a61988cd2fb7594210b" prot="public" static="no">
+        <name>CoreDebug_DHCSR_C_DEBUGEN_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DHCSR_C_DEBUGEN_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DHCSR: C_DEBUGEN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1260" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga51e75942fc0614bc9bb2c0e96fcdda9a" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1263" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1eef4992d8f84bc6c0dffed1c87f90a5" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGWnR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DCRSR_REGWnR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGWnR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1264" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga52182c8a9f63a52470244c0bc2064f7b" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1266" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga17cafbd72b55030219ce5609baa7c01d" prot="public" static="no">
+        <name>CoreDebug_DCRSR_REGSEL_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; CoreDebug_DCRSR_REGSEL_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DCRSR: REGSEL Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1267" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga6ff2102b98f86540224819a1b767ba39" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1270" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga5e99652c1df93b441257389f49407834" prot="public" static="no">
+        <name>CoreDebug_DEMCR_TRCENA_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_TRCENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: TRCENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1271" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga341020a3b7450416d72544eaf8e57a64" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Pos</name>
+        <initializer>19U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1273" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gae6384cbe8045051186d13ef9cdeace95" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_REQ_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_REQ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_REQ Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1274" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9ae10710684e14a1a534e785ef390e1b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Pos</name>
+        <initializer>18U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1276" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2ded814556de96fc369de7ae9a7ceb98" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_STEP_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_STEP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_STEP Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1277" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga1e2f706a59e0d8131279af1c7e152f8d" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Pos</name>
+        <initializer>17U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1279" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga68ec55930269fab78e733dcfa32392f8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_PEND_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_PEND_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_PEND Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1280" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga802829678f6871863ae9ecf60a10425c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1282" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac2b46b9b65bf8d23027f255fc9641977" prot="public" static="no">
+        <name>CoreDebug_DEMCR_MON_EN_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_MON_EN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: MON_EN Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1283" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaed9f42053031a9a30cd8054623304c0a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1285" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga803fc98c5bb85f10f0347b23794847d1" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_HARDERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_HARDERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_HARDERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1286" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga22079a6e436f23b90308be97e19cf07e" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1288" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad6815d8e3df302d2f0ff2c2c734ed29a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_INTERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_INTERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_INTERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1289" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gab8e3d8f0f9590a51bbf10f6da3ad6933" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1291" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9d29546aefe3ca8662a7fe48dd4a5b2b" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_BUSERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_BUSERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_BUSERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1292" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga16f0d3d2ce1e1e8cd762d938ac56c4ac" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Pos</name>
+        <initializer>7U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1294" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gaa38b947d77672c48bba1280c0a642e19" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_STATERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_STATERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_STATERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1295" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga10fc7c53bca904c128bc8e1a03072d50" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1297" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga2f98b461d19746ab2febfddebb73da6f" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CHKERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_CHKERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CHKERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1298" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gac9d13eb2add61f610d5ced1f7ad2adf8" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1300" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga03ee58b1b02fdbf21612809034562f1c" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_NOCPERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_NOCPERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_NOCPERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1301" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga444454f7c7748e76cd76c3809c887c41" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1303" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1gad420a9b60620584faaca6289e83d3a87" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_MMERR_Msk</name>
+        <initializer>(1UL &lt;&lt; CoreDebug_DEMCR_VC_MMERR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_MMERR Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1304" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga9fcf09666f7063a7303117aa32a85d5a" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1306" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core_debug_1ga906476e53c1e1487c30f3a1181df9e30" prot="public" static="no">
+        <name>CoreDebug_DEMCR_VC_CORERESET_Msk</name>
+        <initializer>(1UL /*&lt;&lt; CoreDebug_DEMCR_VC_CORERESET_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreDebug DEMCR: VC_CORERESET Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1307" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cortex-M0 Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor. Therefore they are not covered by the Cortex-M0 header file. </para>    </briefdescription>
+    <detaileddescription>
+<para>SC000 Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor. Therefore they are not covered by the SC000 header file.</para><para>Type definitions for the Core Debug Registers.</para><para>Cortex-M0+ Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor. Therefore they are not covered by the Cortex-M0+ header file.</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

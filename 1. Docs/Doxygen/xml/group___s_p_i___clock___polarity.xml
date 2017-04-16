@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i___clock___polarity" kind="group">
+    <compoundname>SPI_Clock_Polarity</compoundname>
+    <title>SPI_Clock_Polarity</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___clock___polarity_1ga3dbc0234c4b4e7c37137e7c189f3c085" prot="public" static="no">
+        <name>SPI_CPOL_Low</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="174" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___clock___polarity_1ga4431f2edf42f8298d5bbe693351edbb0" prot="public" static="no">
+        <name>SPI_CPOL_High</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="175" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___clock___polarity_1gafc1cc5b1ff7e801a409a7a1e6047acf9" prot="public" static="no">
+        <name>IS_SPI_CPOL</name>
+        <param><defname>CPOL</defname></param>
+        <initializer>(((CPOL) == <ref refid="group___s_p_i___clock___polarity_1ga3dbc0234c4b4e7c37137e7c189f3c085" kindref="member">SPI_CPOL_Low</ref>) || \
+                           ((CPOL) == <ref refid="group___s_p_i___clock___polarity_1ga4431f2edf42f8298d5bbe693351edbb0" kindref="member">SPI_CPOL_High</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="176" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

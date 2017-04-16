@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_i2_c___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>I2C_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1030" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1030" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga7e1323c9133c2cb424dfb5b10b7d2f0b" compoundref="stm32f10x__i2c_8c" startline="335" endline="350">I2C_Cmd</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga36c522b471588be9779c878222ccb20f" compoundref="stm32f10x__i2c_8c" startline="407" endline="422">I2C_GenerateSTART</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga5c92cb573ca0ae58cc465e5400246561" compoundref="stm32f10x__i2c_8c" startline="431" endline="446">I2C_GenerateSTOP</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga7bb44e894d68a7991f564c43fb187486" compoundref="stm32f10x__i2c_8c" startline="455" endline="470">I2C_AcknowledgeConfig</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga65c740fc8d7b3b9f15cc432d8699d471" compoundref="stm32f10x__i2c_8c" startline="540" endline="555">I2C_GeneralCallCmd</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga1289c908aeb882443aba323b459c638b" compoundref="stm32f10x__i2c_8c" startline="691" endline="706">I2C_SoftwareResetCmd</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1gad08ebffc3a234d84e6405ec115bd74f1" compoundref="stm32f10x__i2c_8c" startline="729" endline="746">I2C_NACKPositionConfig</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga75a810776d9710d2f6d9c5d9e93241c6" compoundref="stm32f10x__i2c_8c" startline="757" endline="772">I2C_SMBusAlertConfig</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1gaa27d1440290fe601e730b6980999afe3" compoundref="stm32f10x__i2c_8c" startline="781" endline="796">I2C_TransmitPEC</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga5d0f939bdd45542502827bf408f24161" compoundref="stm32f10x__i2c_8c" startline="812" endline="827">I2C_PECPositionConfig</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1gae86801251359226c35745e0a258388b0" compoundref="stm32f10x__i2c_8c" startline="836" endline="851">I2C_CalculatePEC</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga66d86742bf1be58b17ef8779ffc79d02" compoundref="stm32f10x__i2c_8c" startline="883" endline="898">I2C_ARPCmd</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga7459feb3b1dfcd3e4f6574002ca7d3bd" compoundref="stm32f10x__i2c_8c" startline="907" endline="922">I2C_StretchClockCmd</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1aee6ec4cf81ee0bb5b038576ba0d738a2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1031" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1032" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1032" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga38502ce11e5ec923e0f6476aaa35b45c" compoundref="stm32f10x__i2c_8c" startline="359" endline="374">I2C_DMACmd</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1gab2e994c5681eb6ec7c26a03ffe1de060" compoundref="stm32f10x__i2c_8c" startline="383" endline="398">I2C_DMALastTransferCmd</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga58fed146a06cb81d2940604e460de047" compoundref="stm32f10x__i2c_8c" startline="569" endline="586">I2C_ITConfig</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" compoundref="stm32f10x__i2c_8c" startline="1289" endline="1317">I2C_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a6c3d147223993f2b832b508ee5a5178e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1033" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1ad218fdcb9606477c1d63f8ee38d3c5c9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::OAR1</definition>
+        <argsstring></argsstring>
+        <name>OAR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1034" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1034" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a5e98c83a176deeb4a8a68f9ca12fdfd2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1035" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a03189e2a57c81ae5d103739b72f52c93" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::OAR2</definition>
+        <argsstring></argsstring>
+        <name>OAR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1036" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1036" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1ga7be2cc634a613c8e3539137e897a22df" compoundref="stm32f10x__i2c_8c" startline="478" endline="507">I2C_OwnAddress2Config</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga02145a333a56e79557d6ef4ea03fc313" compoundref="stm32f10x__i2c_8c" startline="516" endline="531">I2C_DualAddressCmd</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a355b2c5aa0dd467de1f9dea4a9afe986" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1037" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a5c1551b886fbb8e801b9203f6d7dc7c5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1038" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1038" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9" compoundref="stm32f10x__i2c_8c" startline="594" endline="600">I2C_SendData</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1gaeaaa4b6f77f50eb57465148c55d27fb2" compoundref="stm32f10x__i2c_8c" startline="607" endline="613">I2C_ReceiveData</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga009fc2a5b2313c36da39ece39a1156a6" compoundref="stm32f10x__i2c_8c" startline="625" endline="652">I2C_Send7bitAddress</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a05a1a3482d9534ba9ef976e3277040f0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1039" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1039" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::SR1</definition>
+        <argsstring></argsstring>
+        <name>SR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1040" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1040" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" compoundref="stm32f10x__i2c_8c" startline="1073" endline="1104">I2C_CheckEvent</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga29237aea9b5a3ead33167e1d027e9f1a" compoundref="stm32f10x__i2c_8c" startline="1121" endline="1139">I2C_GetLastEvent</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga9d4f8fe9f7232696114b5578b1223963" compoundref="stm32f10x__i2c_8c" startline="1255" endline="1265">I2C_ClearFlag</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga447771fbbd94a56f3570b9f430a069ba" compoundref="stm32f10x__i2c_8c" startline="1289" endline="1317">I2C_GetITStatus</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga110dda440fa200b5f77349df19b3e6bb" compoundref="stm32f10x__i2c_8c" startline="1350" endline="1360">I2C_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1ae736412dcff4daa38bfa8bf8628df316" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED5</definition>
+        <argsstring></argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1041" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a95c7f729b10eb2acafe499d9c9a81a83" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::SR2</definition>
+        <argsstring></argsstring>
+        <name>SR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1042" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1042" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1ga7bf75e7c27c0e1d73e70fc0e1c7cd1dd" compoundref="stm32f10x__i2c_8c" startline="858" endline="874">I2C_GetPEC</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga2d5701342f9d4c1f09bf9d3cdcacc326" compoundref="stm32f10x__i2c_8c" startline="1073" endline="1104">I2C_CheckEvent</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga29237aea9b5a3ead33167e1d027e9f1a" compoundref="stm32f10x__i2c_8c" startline="1121" endline="1139">I2C_GetLastEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1aaf1b319262f53669f49e244d94955a60" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED6</definition>
+        <argsstring></argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1043" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a1775e779008da2b4d1807c2b5033b8a5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1044" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1044" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1gaa570f76bc34e5b0531b29b1a90af1275" compoundref="stm32f10x__i2c_8c" startline="933" endline="948">I2C_FastModeDutyCycleConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a0f398bdcc3f24e7547c3cb9343111fd0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED7</definition>
+        <argsstring></argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1045" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1aaba7a808e4dfae5cc06b197c298af206" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t I2C_TypeDef::TRISE</definition>
+        <argsstring></argsstring>
+        <name>TRISE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1046" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1046" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___type_def_1a6e762751c9d5a1e41efb6033a26d8ed8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_TypeDef::RESERVED8</definition>
+        <argsstring></argsstring>
+        <name>RESERVED8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1047" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inter Integrated Circuit Interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1029" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1028" bodyend="1048"/>
+    <listofallmembers>
+      <member refid="struct_i2_c___type_def_1a1775e779008da2b4d1807c2b5033b8a5" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>CCR</name></member>
+      <member refid="struct_i2_c___type_def_1ad35ea0b199cefb757de20e9b78168534" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_i2_c___type_def_1ac8bff45acc455489620d50e697a24c9d" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_i2_c___type_def_1a5c1551b886fbb8e801b9203f6d7dc7c5" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>DR</name></member>
+      <member refid="struct_i2_c___type_def_1ad218fdcb9606477c1d63f8ee38d3c5c9" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>OAR1</name></member>
+      <member refid="struct_i2_c___type_def_1a03189e2a57c81ae5d103739b72f52c93" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>OAR2</name></member>
+      <member refid="struct_i2_c___type_def_1aee6ec4cf81ee0bb5b038576ba0d738a2" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_i2_c___type_def_1a6c3d147223993f2b832b508ee5a5178e" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_i2_c___type_def_1a5e98c83a176deeb4a8a68f9ca12fdfd2" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_i2_c___type_def_1a355b2c5aa0dd467de1f9dea4a9afe986" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_i2_c___type_def_1a05a1a3482d9534ba9ef976e3277040f0" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_i2_c___type_def_1ae736412dcff4daa38bfa8bf8628df316" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED5</name></member>
+      <member refid="struct_i2_c___type_def_1aaf1b319262f53669f49e244d94955a60" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED6</name></member>
+      <member refid="struct_i2_c___type_def_1a0f398bdcc3f24e7547c3cb9343111fd0" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED7</name></member>
+      <member refid="struct_i2_c___type_def_1a6e762751c9d5a1e41efb6033a26d8ed8" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>RESERVED8</name></member>
+      <member refid="struct_i2_c___type_def_1ae1602cd1c9cad449523099c97138f991" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>SR1</name></member>
+      <member refid="struct_i2_c___type_def_1a95c7f729b10eb2acafe499d9c9a81a83" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>SR2</name></member>
+      <member refid="struct_i2_c___type_def_1aaba7a808e4dfae5cc06b197c298af206" prot="public" virt="non-virtual"><scope>I2C_TypeDef</scope><name>TRISE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

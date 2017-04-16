@@ -1,0 +1,94 @@
+.TH "ADC_sampling_time" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_sampling_time
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADC_SampleTime_1Cycles5\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_7Cycles5\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_13Cycles5\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_28Cycles5\fP   ((uint8_t)0x03)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_41Cycles5\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_55Cycles5\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_71Cycles5\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_239Cycles5\fP   ((uint8_t)0x07)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_SAMPLE_TIME\fP(TIME)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC_SampleTime_13Cycles5   ((uint8_t)0x02)"
+
+.PP
+Definition at line 221 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_1Cycles5   ((uint8_t)0x00)"
+
+.PP
+Definition at line 219 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_239Cycles5   ((uint8_t)0x07)"
+
+.PP
+Definition at line 226 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_28Cycles5   ((uint8_t)0x03)"
+
+.PP
+Definition at line 222 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_41Cycles5   ((uint8_t)0x04)"
+
+.PP
+Definition at line 223 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_55Cycles5   ((uint8_t)0x05)"
+
+.PP
+Definition at line 224 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_71Cycles5   ((uint8_t)0x06)"
+
+.PP
+Definition at line 225 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_SampleTime_7Cycles5   ((uint8_t)0x01)"
+
+.PP
+Definition at line 220 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_SAMPLE_TIME(TIME)"
+\fBValue:\fP
+.PP
+.nf
+(((TIME) == ADC_SampleTime_1Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_7Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_13Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_28Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_41Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_55Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_71Cycles5) || \
+                                  ((TIME) == ADC_SampleTime_239Cycles5))
+.fi
+.PP
+Definition at line 227 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,58 @@
+.TH "SDIO_CmdInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_CmdInitTypeDef
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_sdio\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBSDIO_Argument\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_CmdIndex\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_Response\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_Wait\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_CPSM\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 76 of file stm32f10x_sdio\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t SDIO_CmdInitTypeDef::SDIO_Argument"
+Specifies the SDIO command argument which is sent to a card as part of a command message\&. If a command contains an argument, it must be loaded into this register before writing the command to the command register 
+.PP
+Definition at line 78 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_CmdInitTypeDef::SDIO_CmdIndex"
+Specifies the SDIO command index\&. It must be lower than 0x40\&. 
+.PP
+Definition at line 83 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_CmdInitTypeDef::SDIO_CPSM"
+Specifies whether SDIO Command path state machine (CPSM) is enabled or disabled\&. This parameter can be a value of \fBSDIO_CPSM_State\fP 
+.PP
+Definition at line 91 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_CmdInitTypeDef::SDIO_Response"
+Specifies the SDIO response type\&. This parameter can be a value of \fBSDIO_Response_Type\fP 
+.PP
+Definition at line 85 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_CmdInitTypeDef::SDIO_Wait"
+Specifies whether SDIO wait-for-interrupt request is enabled or disabled\&. This parameter can be a value of \fBSDIO_Wait_Interrupt_State\fP 
+.PP
+Definition at line 88 of file stm32f10x_sdio\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,598 @@
+.TH "FSMC_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFSMC_NORSRAMDeInit\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Deinitializes the FSMC NOR/SRAM Banks registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDDeInit\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Deinitializes the FSMC NAND Banks registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDDeInit\fP (void)"
+.br
+.RI "Deinitializes the FSMC PCCARD Bank registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMInit\fP (\fBFSMC_NORSRAMInitTypeDef\fP *FSMC_NORSRAMInitStruct)"
+.br
+.RI "Initializes the FSMC NOR/SRAM Banks according to the specified parameters in the FSMC_NORSRAMInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDInit\fP (\fBFSMC_NANDInitTypeDef\fP *FSMC_NANDInitStruct)"
+.br
+.RI "Initializes the FSMC NAND Banks according to the specified parameters in the FSMC_NANDInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDInit\fP (\fBFSMC_PCCARDInitTypeDef\fP *FSMC_PCCARDInitStruct)"
+.br
+.RI "Initializes the FSMC PCCARD Bank according to the specified parameters in the FSMC_PCCARDInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMStructInit\fP (\fBFSMC_NORSRAMInitTypeDef\fP *FSMC_NORSRAMInitStruct)"
+.br
+.RI "Fills each FSMC_NORSRAMInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDStructInit\fP (\fBFSMC_NANDInitTypeDef\fP *FSMC_NANDInitStruct)"
+.br
+.RI "Fills each FSMC_NANDInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDStructInit\fP (\fBFSMC_PCCARDInitTypeDef\fP *FSMC_PCCARDInitStruct)"
+.br
+.RI "Fills each FSMC_PCCARDInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified NOR/SRAM Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified NAND Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the PCCARD Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDECCCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the FSMC NAND ECC feature\&. "
+.ti -1c
+.RI "uint32_t \fBFSMC_GetECC\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Returns the error correction code register value\&. "
+.ti -1c
+.RI "void \fBFSMC_ITConfig\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified FSMC interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFSMC_GetFlagStatus\fP (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+.br
+.RI "Checks whether the specified FSMC flag is set or not\&. "
+.ti -1c
+.RI "void \fBFSMC_ClearFlag\fP (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+.br
+.RI "Clears the FSMC's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBFSMC_GetITStatus\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+.br
+.RI "Checks whether the specified FSMC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBFSMC_ClearITPendingBit\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+.br
+.RI "Clears the FSMC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void FSMC_ClearFlag (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+
+.PP
+Clears the FSMC's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.IP "\(bu" 2
+FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD 
+.PP
+.br
+\fIFSMC_FLAG\fP specifies the flag to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_FLAG_RisingEdge: Rising egde detection Flag\&. 
+.IP "\(bu" 2
+FSMC_FLAG_Level: Level detection Flag\&. 
+.IP "\(bu" 2
+FSMC_FLAG_FallingEdge: Falling egde detection Flag\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 747 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_ClearITPendingBit (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+
+.PP
+Clears the FSMC's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.IP "\(bu" 2
+FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD 
+.PP
+.br
+\fIFSMC_IT\fP specifies the interrupt pending bit to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_IT_RisingEdge: Rising edge detection interrupt\&. 
+.IP "\(bu" 2
+FSMC_IT_Level: Level edge detection interrupt\&. 
+.IP "\(bu" 2
+FSMC_IT_FallingEdge: Falling edge detection interrupt\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 833 of file stm32f10x_fsmc\&.c\&.
+.SS "uint32_t FSMC_GetECC (uint32_t FSMC_Bank)"
+
+.PP
+Returns the error correction code register value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP Error Correction Code (ECC) value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 603 of file stm32f10x_fsmc\&.c\&.
+.SS "\fBFlagStatus\fP FSMC_GetFlagStatus (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+
+.PP
+Checks whether the specified FSMC flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.IP "\(bu" 2
+FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD 
+.PP
+.br
+\fIFSMC_FLAG\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_FLAG_RisingEdge: Rising egde detection Flag\&. 
+.IP "\(bu" 2
+FSMC_FLAG_Level: Level detection Flag\&. 
+.IP "\(bu" 2
+FSMC_FLAG_FallingEdge: Falling egde detection Flag\&. 
+.IP "\(bu" 2
+FSMC_FLAG_FEMPT: Fifo empty Flag\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of FSMC_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 697 of file stm32f10x_fsmc\&.c\&.
+.SS "\fBITStatus\fP FSMC_GetITStatus (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+
+.PP
+Checks whether the specified FSMC interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.IP "\(bu" 2
+FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD 
+.PP
+.br
+\fIFSMC_IT\fP specifies the FSMC interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_IT_RisingEdge: Rising edge detection interrupt\&. 
+.IP "\(bu" 2
+FSMC_IT_Level: Level edge detection interrupt\&. 
+.IP "\(bu" 2
+FSMC_IT_FallingEdge: Falling edge detection interrupt\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of FSMC_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 782 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_ITConfig (uint32_t FSMC_Bank, uint32_t FSMC_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified FSMC interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.IP "\(bu" 2
+FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD 
+.PP
+.br
+\fIFSMC_IT\fP specifies the FSMC interrupt sources to be enabled or disabled\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_IT_RisingEdge: Rising edge detection interrupt\&. 
+.IP "\(bu" 2
+FSMC_IT_Level: Level edge detection interrupt\&. 
+.IP "\(bu" 2
+FSMC_IT_FallingEdge: Falling edge detection interrupt\&. 
+.PP
+.br
+\fINewState\fP new state of the specified FSMC interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 637 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NANDCmd (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified NAND Memory Bank\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.PP
+.br
+\fINewState\fP new state of the FSMC_Bank\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 501 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NANDDeInit (uint32_t FSMC_Bank)"
+
+.PP
+Deinitializes the FSMC NAND Banks registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 129 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NANDECCCmd (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the FSMC NAND ECC feature\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank2_NAND: FSMC Bank2 NAND 
+.IP "\(bu" 2
+FSMC_Bank3_NAND: FSMC Bank3 NAND 
+.PP
+.br
+\fINewState\fP new state of the FSMC NAND ECC feature\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 564 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NANDInit (\fBFSMC_NANDInitTypeDef\fP * FSMC_NANDInitStruct)"
+
+.PP
+Initializes the FSMC NAND Banks according to the specified parameters in the FSMC_NANDInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_NANDInitStruct\fP : pointer to a \fBFSMC_NANDInitTypeDef\fP structure that contains the configuration information for the FSMC NAND specified Banks\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 262 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NANDStructInit (\fBFSMC_NANDInitTypeDef\fP * FSMC_NANDInitStruct)"
+
+.PP
+Fills each FSMC_NANDInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_NANDInitStruct\fP pointer to a \fBFSMC_NANDInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 418 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NORSRAMCmd (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified NOR/SRAM Memory Bank\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM1: FSMC Bank1 NOR/SRAM1 
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM2: FSMC Bank1 NOR/SRAM2 
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM3: FSMC Bank1 NOR/SRAM3 
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM4: FSMC Bank1 NOR/SRAM4 
+.PP
+.br
+\fINewState\fP new state of the FSMC_Bank\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 475 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NORSRAMDeInit (uint32_t FSMC_Bank)"
+
+.PP
+Deinitializes the FSMC NOR/SRAM Banks registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_Bank\fP specifies the FSMC Bank to be used This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM1: FSMC Bank1 NOR/SRAM1 
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM2: FSMC Bank1 NOR/SRAM2 
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM3: FSMC Bank1 NOR/SRAM3 
+.IP "\(bu" 2
+FSMC_Bank1_NORSRAM4: FSMC Bank1 NOR/SRAM4 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 102 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NORSRAMInit (\fBFSMC_NORSRAMInitTypeDef\fP * FSMC_NORSRAMInitStruct)"
+
+.PP
+Initializes the FSMC NOR/SRAM Banks according to the specified parameters in the FSMC_NORSRAMInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_NORSRAMInitStruct\fP : pointer to a \fBFSMC_NORSRAMInitTypeDef\fP structure that contains the configuration information for the FSMC NOR/SRAM specified Banks\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 176 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_NORSRAMStructInit (\fBFSMC_NORSRAMInitTypeDef\fP * FSMC_NORSRAMInitStruct)"
+
+.PP
+Fills each FSMC_NORSRAMInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_NORSRAMInitStruct\fP pointer to a \fBFSMC_NORSRAMInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 380 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_PCCARDCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the PCCARD Memory Bank\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the PCCARD Memory Bank\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 538 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_PCCARDDeInit (void)"
+
+.PP
+Deinitializes the FSMC PCCARD Bank registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_PCCARDInit (\fBFSMC_PCCARDInitTypeDef\fP * FSMC_PCCARDInitStruct)"
+
+.PP
+Initializes the FSMC PCCARD Bank according to the specified parameters in the FSMC_PCCARDInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_PCCARDInitStruct\fP : pointer to a \fBFSMC_PCCARDInitTypeDef\fP structure that contains the configuration information for the FSMC PCCARD Bank\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 328 of file stm32f10x_fsmc\&.c\&.
+.SS "void FSMC_PCCARDStructInit (\fBFSMC_PCCARDInitTypeDef\fP * FSMC_PCCARDInitStruct)"
+
+.PP
+Fills each FSMC_PCCARDInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIFSMC_PCCARDInitStruct\fP pointer to a \fBFSMC_PCCARDInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 444 of file stm32f10x_fsmc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___forced___action" kind="group">
+    <compoundname>TIM_Forced_Action</compoundname>
+    <title>TIM_Forced_Action</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___forced___action_1ga19d3769825f1dfdbdbde3edb60310b99" prot="public" static="no">
+        <name>TIM_ForcedAction_Active</name>
+        <initializer>((uint16_t)0x0050)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="821" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___forced___action_1ga79656f2193ec5e12a15d0ae5b025d273" prot="public" static="no">
+        <name>TIM_ForcedAction_InActive</name>
+        <initializer>((uint16_t)0x0040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="822" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___forced___action_1gaa2cb16f281d32c95ab974dc5157bfa63" prot="public" static="no">
+        <name>IS_TIM_FORCED_ACTION</name>
+        <param><defname>ACTION</defname></param>
+        <initializer>(((ACTION) == <ref refid="group___t_i_m___forced___action_1ga19d3769825f1dfdbdbde3edb60310b99" kindref="member">TIM_ForcedAction_Active</ref>) || \
+                                      ((ACTION) == <ref refid="group___t_i_m___forced___action_1ga79656f2193ec5e12a15d0ae5b025d273" kindref="member">TIM_ForcedAction_InActive</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="823" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

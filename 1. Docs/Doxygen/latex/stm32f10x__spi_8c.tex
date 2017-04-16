@@ -1,0 +1,123 @@
+\hypertarget{stm32f10x__spi_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+spi.c File Reference}
+\label{stm32f10x__spi_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+spi.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+spi.\+c}}
+
+
+This file provides all the S\+PI firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+spi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+rcc.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+spi.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__spi_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga74286f403309d32b56fed10aba2ebf91}{C\+R1\+\_\+\+S\+P\+E\+\_\+\+Set}~((uint16\+\_\+t)0x0040)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga7074d384e7f175968d1497a9275232bf}{C\+R1\+\_\+\+S\+P\+E\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+B\+F)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gaded516c1bc1f0cb578174af3e296621b}{I2\+S\+C\+F\+G\+R\+\_\+\+I2\+S\+E\+\_\+\+Set}~((uint16\+\_\+t)0x0400)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga0ba63ca824d68ed9a84eafd6f4d64a3a}{I2\+S\+C\+F\+G\+R\+\_\+\+I2\+S\+E\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+B\+F\+F)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gaed3a2181ca4095a6488cf6c0ad7a29c6}{C\+R1\+\_\+\+C\+R\+C\+Next\+\_\+\+Set}~((uint16\+\_\+t)0x1000)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gae0b545cdda02753c8e8863e883268011}{C\+R1\+\_\+\+C\+R\+C\+E\+N\+\_\+\+Set}~((uint16\+\_\+t)0x2000)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gadd72ac04e7b2ff17053db04d240e17b1}{C\+R1\+\_\+\+C\+R\+C\+E\+N\+\_\+\+Reset}~((uint16\+\_\+t)0x\+D\+F\+F\+F)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gaae3c2720c0b63d7cc26046969a45a6c1}{C\+R2\+\_\+\+S\+S\+O\+E\+\_\+\+Set}~((uint16\+\_\+t)0x0004)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga475caaaef8732d35e4c6fd3f21dc4e3c}{C\+R2\+\_\+\+S\+S\+O\+E\+\_\+\+Reset}~((uint16\+\_\+t)0x\+F\+F\+F\+B)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga67f7dd35ea3d1296677e5fc50b88fa90}{C\+R1\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~((uint16\+\_\+t)0x3040)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga6cd1ac4e83d8de8e32a407d1a7971389}{I2\+S\+C\+F\+G\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Mask}~((uint16\+\_\+t)0x\+F040)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga71da9dd90bf7bfb6ed1748a1e181677a}{S\+P\+I\+\_\+\+Mode\+\_\+\+Select}~((uint16\+\_\+t)0x\+F7\+F\+F)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga196b1b58421a7ee7dba0b46fb33c621b}{I2\+S\+\_\+\+Mode\+\_\+\+Select}~((uint16\+\_\+t)0x0800)
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gae1190efd6dbcd06a9c03f4d499d28e4c}{I2\+S2\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+RC}~((uint32\+\_\+t)(0x00020000))
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gabb67971448c15090f3372e3875db3d23}{I2\+S3\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+RC}~((uint32\+\_\+t)(0x00040000))
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_gaf9cca755995c8e8f7a4012709ca468f2}{I2\+S\+\_\+\+M\+U\+L\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)(0x0000\+F000))
+\item 
+\#define \hyperlink{group___s_p_i___private___defines_ga26cdb43c45ac655c792c5af0a6bbb0bf}{I2\+S\+\_\+\+D\+I\+V\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)(0x000000\+F0))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_p_i___private___functions_gabe36880945fa56785283a9c0092124cc}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+De\+Init} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Deinitializes the S\+P\+Ix peripheral registers to their default reset values (Affects also the I2\+Ss). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga8dacc1dc48bf08c0f12da409f4889037}{S\+P\+I\+\_\+\+Init} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} $\ast$S\+P\+I\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+P\+Ix peripheral according to the specified parameters in the S\+P\+I\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga53661884ae4a9640df7cbc59187782f7}{I2\+S\+\_\+\+Init} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+P\+Ix peripheral according to the specified parameters in the I2\+S\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga9a0116f88cc2c4478c270f05608703f1}{S\+P\+I\+\_\+\+Struct\+Init} (\hyperlink{struct_s_p_i___init_type_def}{S\+P\+I\+\_\+\+Init\+Type\+Def} $\ast$S\+P\+I\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+P\+I\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga7470ec1d0759fdeeb42c7fe71a3b41b7}{I2\+S\+\_\+\+Struct\+Init} (\hyperlink{struct_i2_s___init_type_def}{I2\+S\+\_\+\+Init\+Type\+Def} $\ast$I2\+S\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each I2\+S\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gaa31357879a65ee1ed7223f3b9114dcf3}{S\+P\+I\+\_\+\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\+PI peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gafe061c71bbc5b4224f3f2884dc53739e}{I2\+S\+\_\+\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\+PI peripheral (in I2S mode). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga17f4ef132e8ddbf94cb6b1688d181e41}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+I\+T\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\+P\+I/\+I2S interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gabed5b91a8576e6d578f364cc0e807e4a}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+D\+M\+A\+Req, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+P\+Ix/\+I2\+Sx D\+MA interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gad5af40bebe8dbe3fa8bd476489d7e3da}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Send\+Data} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Transmits a Data through the S\+P\+Ix/\+I2\+Sx peripheral. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___s_p_i___private___functions_gab77de76547f3bff403236b263b070a30}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Receive\+Data} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the S\+P\+Ix/\+I2\+Sx peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga56fc508a482f032f9eb80e4c63184126}{S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Software\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+N\+S\+S\+Internal\+Soft)
+\begin{DoxyCompactList}\small\item\em Configures internally by software the N\+SS pin for the selected S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga4ec54abdedf6cd17403d853a926d91c1}{S\+P\+I\+\_\+\+S\+S\+Output\+Cmd} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SS output for the selected S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gafc82e90841d7879535d655c035709cb1}{S\+P\+I\+\_\+\+Data\+Size\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_gace8b1058e09bab150b0dbe5978810273}{S\+P\+I\+\_\+\+Transmit\+C\+RC} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Transmit the S\+P\+Ix C\+RC value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga64f7276d119e6cb58afc100f8832adb0}{S\+P\+I\+\_\+\+Calculate\+C\+RC} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\+RC value calculation of the transferred bytes. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___s_p_i___private___functions_ga4c81c193516e82cf0a2fdc149ef20cc6}{S\+P\+I\+\_\+\+Get\+C\+RC} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+C\+RC)
+\begin{DoxyCompactList}\small\item\em Returns the transmit or the receive C\+RC register value for the specified S\+PI. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___s_p_i___private___functions_ga80fb9374cfce670f29128bb78568353f}{S\+P\+I\+\_\+\+Get\+C\+R\+C\+Polynomial} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix)
+\begin{DoxyCompactList}\small\item\em Returns the C\+RC Polynomial register value for the specified S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga166171c421fc51da7714723524d41b45}{S\+P\+I\+\_\+\+Bi\+Directional\+Line\+Config} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+Direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bi-\/directional mode for the specified S\+PI. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___s_p_i___private___functions_ga1bd785d129e09c5734a876c8f2767204}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+Flag\+Status} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+P\+I/\+I2S flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga3aabd9e2437e213056c0ed9bdfa1a724}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+Flag} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint16\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the S\+P\+Ix C\+RC Error (C\+R\+C\+E\+RR) flag. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___s_p_i___private___functions_ga72decbc1cd79f8fad92a2204beca6bc5}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Get\+I\+T\+Status} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+P\+I/\+I2S interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___private___functions_ga35a524a49ff3d058137060f751e8749f}{S\+P\+I\+\_\+\+I2\+S\+\_\+\+Clear\+I\+T\+Pending\+Bit} (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$S\+P\+Ix, uint8\+\_\+t S\+P\+I\+\_\+\+I2\+S\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the S\+P\+Ix C\+RC Error (C\+R\+C\+E\+RR) interrupt pending bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the S\+PI firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

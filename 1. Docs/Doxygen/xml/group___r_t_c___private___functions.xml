@@ -1,0 +1,564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___r_t_c___private___functions" kind="group">
+    <compoundname>RTC_Private_Functions</compoundname>
+    <title>RTC_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga175dfe88866234730c1ec40d2221c4f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_ITConfig</definition>
+        <argsstring>(uint16_t RTC_IT, FunctionalState NewState)</argsstring>
+        <name>RTC_ITConfig</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>RTC_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified RTC interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RTC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the RTC interrupts sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>RTC_IT_OW: Overflow interrupt </para></listitem>
+<listitem><para>RTC_IT_ALR: Alarm interrupt </para></listitem>
+<listitem><para>RTC_IT_SEC: Second interrupt </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified RTC interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="90" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="90" bodyend="104"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___r_t_c__interrupts__define_1ga5c941995b804ce4c7ef62e28e0133a83" compoundref="stm32f10x__rtc_8h" startline="61">IS_RTC_IT</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga23612d9da2fe057a0cd72c684e5b438a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_EnterConfigMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_EnterConfigMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enters the RTC configuration mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="111" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="111" bodyend="115"/>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga3829687c89579c020665c19b8937a820" compoundref="stm32f10x_8h" startline="4492">RTC_CRL_CNF</references>
+        <referencedby refid="group___r_t_c___private___functions_1gafa81ec17158de1d1a7740eca81b9fb65" compoundref="stm32f10x__rtc_8c" startline="151" endline="159">RTC_SetCounter</referencedby>
+        <referencedby refid="group___r_t_c___private___functions_1gaf76be6071d1ba65b009e0791069e602c" compoundref="stm32f10x__rtc_8c" startline="166" endline="177">RTC_SetPrescaler</referencedby>
+        <referencedby refid="group___r_t_c___private___functions_1gaec644c636a30ab5e287ba60ffc77132c" compoundref="stm32f10x__rtc_8c" startline="184" endline="192">RTC_SetAlarm</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga7585aa6e2dbb497173b2fd03bac0d304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_ExitConfigMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_ExitConfigMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Exits from the RTC configuration mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="122" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="122" bodyend="126"/>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga3829687c89579c020665c19b8937a820" compoundref="stm32f10x_8h" startline="4492">RTC_CRL_CNF</references>
+        <referencedby refid="group___r_t_c___private___functions_1gafa81ec17158de1d1a7740eca81b9fb65" compoundref="stm32f10x__rtc_8c" startline="151" endline="159">RTC_SetCounter</referencedby>
+        <referencedby refid="group___r_t_c___private___functions_1gaf76be6071d1ba65b009e0791069e602c" compoundref="stm32f10x__rtc_8c" startline="166" endline="177">RTC_SetPrescaler</referencedby>
+        <referencedby refid="group___r_t_c___private___functions_1gaec644c636a30ab5e287ba60ffc77132c" compoundref="stm32f10x__rtc_8c" startline="184" endline="192">RTC_SetAlarm</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga6edb19a0ad8414a40610341121c5ea6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RTC_GetCounter</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_GetCounter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the RTC counter value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>RTC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>counter value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="133" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="133" bodyend="138"/>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gafa81ec17158de1d1a7740eca81b9fb65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_SetCounter</definition>
+        <argsstring>(uint32_t CounterValue)</argsstring>
+        <name>RTC_SetCounter</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>CounterValue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the RTC counter value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CounterValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RTC counter new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="151" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="151" bodyend="159"/>
+        <references refid="group___r_t_c___private___functions_1ga23612d9da2fe057a0cd72c684e5b438a" compoundref="stm32f10x__rtc_8c" startline="111" endline="115">RTC_EnterConfigMode</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___r_t_c___private___defines_1gae19d75bb0ecb5e93d97e026a04d4854f" compoundref="stm32f10x__rtc_8c" startline="44">RTC_LSB_MASK</references>
+        <references refid="group___r_t_c___private___functions_1ga7585aa6e2dbb497173b2fd03bac0d304" compoundref="stm32f10x__rtc_8c" startline="122" endline="126">RTC_ExitConfigMode</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gaf76be6071d1ba65b009e0791069e602c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_SetPrescaler</definition>
+        <argsstring>(uint32_t PrescalerValue)</argsstring>
+        <name>RTC_SetPrescaler</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PrescalerValue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the RTC prescaler value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PrescalerValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RTC prescaler new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="166" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="166" bodyend="177"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___r_t_c__interrupts__flags_1ga483b9ec67246cbfb2874c5a85f0cb4d8" compoundref="stm32f10x__rtc_8h" startline="81">IS_RTC_PRESCALER</references>
+        <references refid="group___r_t_c___private___functions_1ga23612d9da2fe057a0cd72c684e5b438a" compoundref="stm32f10x__rtc_8c" startline="111" endline="115">RTC_EnterConfigMode</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___r_t_c___private___defines_1ga47b3eed8e018a9139bc7bb374c7ca125" compoundref="stm32f10x__rtc_8c" startline="45">PRLH_MSB_MASK</references>
+        <references refid="group___r_t_c___private___defines_1gae19d75bb0ecb5e93d97e026a04d4854f" compoundref="stm32f10x__rtc_8c" startline="44">RTC_LSB_MASK</references>
+        <references refid="group___r_t_c___private___functions_1ga7585aa6e2dbb497173b2fd03bac0d304" compoundref="stm32f10x__rtc_8c" startline="122" endline="126">RTC_ExitConfigMode</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gaec644c636a30ab5e287ba60ffc77132c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_SetAlarm</definition>
+        <argsstring>(uint32_t AlarmValue)</argsstring>
+        <name>RTC_SetAlarm</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>AlarmValue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the RTC alarm value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>AlarmValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RTC alarm new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="184" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="184" bodyend="192"/>
+        <references refid="group___r_t_c___private___functions_1ga23612d9da2fe057a0cd72c684e5b438a" compoundref="stm32f10x__rtc_8c" startline="111" endline="115">RTC_EnterConfigMode</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___r_t_c___private___defines_1gae19d75bb0ecb5e93d97e026a04d4854f" compoundref="stm32f10x__rtc_8c" startline="44">RTC_LSB_MASK</references>
+        <references refid="group___r_t_c___private___functions_1ga7585aa6e2dbb497173b2fd03bac0d304" compoundref="stm32f10x__rtc_8c" startline="122" endline="126">RTC_ExitConfigMode</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gaa4f00e0469fedcf6cbf23760e6d801ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RTC_GetDivider</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_GetDivider</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the RTC divider value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>RTC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Divider value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="204" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="204" bodyend="210"/>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gaa0a406ef860d5231748c5f0d82673036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_WaitForLastTask</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_WaitForLastTask</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Waits until last write operation on RTC registers has finished. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function must be called before any write to RTC registers. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="218" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="218" bodyend="224"/>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___r_t_c__interrupts__flags_1ga203dcbb991497e4d0e6722815f6db942" compoundref="stm32f10x__rtc_8h" startline="72">RTC_FLAG_RTOFF</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gaca4346e0dc15dccc15179786b28450db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_WaitForSynchro</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_WaitForSynchro</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Waits until the RTC registers (RTC_CNT, RTC_ALR and RTC_PRL) are synchronized with RTC APB clock. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function must be called before any read operation after an APB reset or an APB clock stop. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="234" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="234" bodyend="242"/>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___r_t_c__interrupts__flags_1ga78c4245996bef8d5f39226b6e37ed9c0" compoundref="stm32f10x__rtc_8h" startline="73">RTC_FLAG_RSF</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga21a85e5f846cb4552d5e76420779f3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus RTC_GetFlagStatus</definition>
+        <argsstring>(uint16_t RTC_FLAG)</argsstring>
+        <name>RTC_GetFlagStatus</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>RTC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified RTC flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RTC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one the following values: <itemizedlist>
+<listitem><para>RTC_FLAG_RTOFF: RTC Operation OFF flag </para></listitem>
+<listitem><para>RTC_FLAG_RSF: Registers Synchronized flag </para></listitem>
+<listitem><para>RTC_FLAG_OW: Overflow flag </para></listitem>
+<listitem><para>RTC_FLAG_ALR: Alarm flag </para></listitem>
+<listitem><para>RTC_FLAG_SEC: Second flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of RTC_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="255" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="255" bodyend="271"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___r_t_c__interrupts__flags_1ga2126725a0d48f1c40f42566e249620ef" compoundref="stm32f10x__rtc_8h" startline="78">IS_RTC_GET_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1gacefb05730a77ffaa273c1ac3ade1a22f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_ClearFlag</definition>
+        <argsstring>(uint16_t RTC_FLAG)</argsstring>
+        <name>RTC_ClearFlag</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>RTC_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the RTC&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RTC_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>RTC_FLAG_RSF: Registers Synchronized flag. This flag is cleared only after an APB reset or an APB Clock stop. </para></listitem>
+<listitem><para>RTC_FLAG_OW: Overflow flag </para></listitem>
+<listitem><para>RTC_FLAG_ALR: Alarm flag </para></listitem>
+<listitem><para>RTC_FLAG_SEC: Second flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="284" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="284" bodyend="291"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___r_t_c__interrupts__flags_1ga5f8a9327a258f16f29703fa3e3cc8af7" compoundref="stm32f10x__rtc_8h" startline="77">IS_RTC_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga23274ad8aa28e86d5b0d58eee295db21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus RTC_GetITStatus</definition>
+        <argsstring>(uint16_t RTC_IT)</argsstring>
+        <name>RTC_GetITStatus</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>RTC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified RTC interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RTC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the RTC interrupts sources to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>RTC_IT_OW: Overflow interrupt </para></listitem>
+<listitem><para>RTC_IT_ALR: Alarm interrupt </para></listitem>
+<listitem><para>RTC_IT_SEC: Second interrupt </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the RTC_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="302" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="302" bodyend="318"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___r_t_c__interrupts__define_1ga2e10d8ccb2aa398ac14bde526f98dbc9" compoundref="stm32f10x__rtc_8h" startline="62">IS_RTC_GET_IT</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___private___functions_1ga62b9a04d89a11f28db7dcfd50d9ee768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_ClearITPendingBit</definition>
+        <argsstring>(uint16_t RTC_IT)</argsstring>
+        <name>RTC_ClearITPendingBit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>RTC_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the RTC&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RTC_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>RTC_IT_OW: Overflow interrupt </para></listitem>
+<listitem><para>RTC_IT_ALR: Alarm interrupt </para></listitem>
+<listitem><para>RTC_IT_SEC: Second interrupt </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" line="329" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c" bodystart="329" bodyend="336"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___r_t_c__interrupts__define_1ga5c941995b804ce4c7ef62e28e0133a83" compoundref="stm32f10x__rtc_8h" startline="61">IS_RTC_IT</references>
+        <references refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" compoundref="stm32f10x_8h" startline="1389">RTC</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

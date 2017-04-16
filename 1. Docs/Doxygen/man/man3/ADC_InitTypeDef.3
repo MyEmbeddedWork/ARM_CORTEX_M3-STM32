@@ -1,0 +1,68 @@
+.TH "ADC_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_InitTypeDef \- ADC Init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_adc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBADC_Mode\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBADC_ScanConvMode\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBADC_ContinuousConvMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBADC_ExternalTrigConv\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBADC_DataAlign\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBADC_NbrOfChannel\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+ADC Init structure definition\&. 
+.PP
+Definition at line 56 of file stm32f10x_adc\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFunctionalState\fP ADC_InitTypeDef::ADC_ContinuousConvMode"
+Specifies whether the conversion is performed in Continuous or Single mode\&. This parameter can be set to ENABLE or DISABLE\&. 
+.PP
+Definition at line 66 of file stm32f10x_adc\&.h\&.
+.SS "uint32_t ADC_InitTypeDef::ADC_DataAlign"
+Specifies whether the ADC data alignment is left or right\&. This parameter can be a value of \fBADC_data_align\fP 
+.PP
+Definition at line 74 of file stm32f10x_adc\&.h\&.
+.SS "uint32_t ADC_InitTypeDef::ADC_ExternalTrigConv"
+Defines the external trigger used to start the analog to digital conversion of regular channels\&. This parameter can be a value of \fBADC_external_trigger_sources_for_regular_channels_conversion\fP 
+.PP
+Definition at line 70 of file stm32f10x_adc\&.h\&.
+.SS "uint32_t ADC_InitTypeDef::ADC_Mode"
+Configures the ADC to operate in independent or dual mode\&. This parameter can be a value of \fBADC_mode\fP 
+.PP
+Definition at line 58 of file stm32f10x_adc\&.h\&.
+.SS "uint8_t ADC_InitTypeDef::ADC_NbrOfChannel"
+Specifies the number of ADC channels that will be converted using the sequencer for regular channel group\&. This parameter must range from 1 to 16\&. 
+.PP
+Definition at line 77 of file stm32f10x_adc\&.h\&.
+.SS "\fBFunctionalState\fP ADC_InitTypeDef::ADC_ScanConvMode"
+Specifies whether the conversion is performed in Scan (multichannels) or Single (one channel) mode\&. This parameter can be set to ENABLE or DISABLE 
+.PP
+Definition at line 62 of file stm32f10x_adc\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

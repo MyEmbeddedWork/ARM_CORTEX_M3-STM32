@@ -1,0 +1,90 @@
+.TH "EXTI_Exported_Types" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Exported_Types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBEXTI_InitTypeDef\fP"
+.br
+.RI "EXTI Init Structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_EXTI_MODE\fP(MODE)   (((MODE) == \fBEXTI_Mode_Interrupt\fP) || ((MODE) == \fBEXTI_Mode_Event\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_TRIGGER\fP(TRIGGER)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBEXTIMode_TypeDef\fP { \fBEXTI_Mode_Interrupt\fP = 0x00, \fBEXTI_Mode_Event\fP = 0x04 }
+.RI "EXTI mode enumeration\&. ""
+.br
+.ti -1c
+.RI "enum \fBEXTITrigger_TypeDef\fP { \fBEXTI_Trigger_Rising\fP = 0x08, \fBEXTI_Trigger_Falling\fP = 0x0C, \fBEXTI_Trigger_Rising_Falling\fP = 0x10 }
+.RI "EXTI Trigger enumeration\&. ""
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_EXTI_MODE(MODE)   (((MODE) == \fBEXTI_Mode_Interrupt\fP) || ((MODE) == \fBEXTI_Mode_Event\fP))"
+
+.PP
+Definition at line 62 of file stm32f10x_exti\&.h\&.
+.SS "#define IS_EXTI_TRIGGER(TRIGGER)"
+\fBValue:\fP
+.PP
+.nf
+(((TRIGGER) == EXTI_Trigger_Rising) || \
+                                  ((TRIGGER) == EXTI_Trigger_Falling) || \
+                                  ((TRIGGER) == EXTI_Trigger_Rising_Falling))
+.fi
+.PP
+Definition at line 75 of file stm32f10x_exti\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBEXTIMode_TypeDef\fP"
+
+.PP
+EXTI mode enumeration\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIEXTI_Mode_Interrupt \fP\fP
+.TP
+\fB\fIEXTI_Mode_Event \fP\fP
+.PP
+Definition at line 56 of file stm32f10x_exti\&.h\&.
+.SS "enum \fBEXTITrigger_TypeDef\fP"
+
+.PP
+EXTI Trigger enumeration\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIEXTI_Trigger_Rising \fP\fP
+.TP
+\fB\fIEXTI_Trigger_Falling \fP\fP
+.TP
+\fB\fIEXTI_Trigger_Rising_Falling \fP\fP
+.PP
+Definition at line 68 of file stm32f10x_exti\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

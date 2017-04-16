@@ -1,0 +1,194 @@
+.TH "TPI_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TPI_Type \- Structure type to access the Trace Port Interface Register (TPI)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm3\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSSPSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCSPSR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [2U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBACPR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [55U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSPPR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [131U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBFFSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFFCR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBFSCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [759U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBTRIGGER\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBFIFO0\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBITATBCTR2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBITATBCTR0\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBFIFO1\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBITCTRL\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [39U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCLAIMSET\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCLAIMCLR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED7\fP [8U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBDEVID\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBDEVTYPE\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Trace Port Interface Register (TPI)\&. 
+.PP
+Definition at line 993 of file core_cm3\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t TPI_Type::ACPR"
+Offset: 0x010 (R/W) Asynchronous Clock Prescaler Register 
+.PP
+Definition at line 998 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::CLAIMCLR"
+Offset: 0xFA4 (R/W) Claim tag clear 
+.PP
+Definition at line 1015 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::CLAIMSET"
+Offset: 0xFA0 (R/W) Claim tag set 
+.PP
+Definition at line 1014 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::CSPSR"
+Offset: 0x004 (R/W) Current Parallel Port Size Register 
+.PP
+Definition at line 996 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::DEVID"
+Offset: 0xFC8 (R/ ) TPIU_DEVID 
+.PP
+Definition at line 1017 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::DEVTYPE"
+Offset: 0xFCC (R/ ) TPIU_DEVTYPE 
+.PP
+Definition at line 1018 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::FFCR"
+Offset: 0x304 (R/W) Formatter and Flush Control Register 
+.PP
+Definition at line 1003 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::FFSR"
+Offset: 0x300 (R/ ) Formatter and Flush Status Register 
+.PP
+Definition at line 1002 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::FIFO0"
+Offset: 0xEEC (R/ ) Integration ETM Data 
+.PP
+Definition at line 1007 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::FIFO1"
+Offset: 0xEFC (R/ ) Integration ITM Data 
+.PP
+Definition at line 1011 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::FSCR"
+Offset: 0x308 (R/ ) Formatter Synchronization Counter Register 
+.PP
+Definition at line 1004 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::ITATBCTR0"
+Offset: 0xEF8 (R/ ) ITATBCTR0 
+.PP
+Definition at line 1010 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::ITATBCTR2"
+Offset: 0xEF0 (R/ ) ITATBCTR2 
+.PP
+Definition at line 1008 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::ITCTRL"
+Offset: 0xF00 (R/W) Integration Mode Control 
+.PP
+Definition at line 1012 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED0"
+
+.PP
+Definition at line 997 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED1"
+
+.PP
+Definition at line 999 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED2"
+
+.PP
+Definition at line 1001 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED3"
+
+.PP
+Definition at line 1005 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED4"
+
+.PP
+Definition at line 1009 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED5"
+
+.PP
+Definition at line 1013 of file core_cm3\&.h\&.
+.SS "uint32_t TPI_Type::RESERVED7"
+
+.PP
+Definition at line 1016 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::SPPR"
+Offset: 0x0F0 (R/W) Selected Pin Protocol Register 
+.PP
+Definition at line 1000 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t TPI_Type::SSPSR"
+Offset: 0x000 (R/ ) Supported Parallel Port Size Register 
+.PP
+Definition at line 995 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t TPI_Type::TRIGGER"
+Offset: 0xEE8 (R/ ) TRIGGER 
+.PP
+Definition at line 1006 of file core_cm3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,68 @@
+.TH "arm_fir_sparse_instance_q15" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_fir_sparse_instance_q15 \- Instance structure for the Q15 sparse FIR filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBnumTaps\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBstateIndex\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpCoeffs\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBmaxDelay\fP"
+.br
+.ti -1c
+.RI "int32_t * \fBpTapDelay\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q15 sparse FIR filter\&. 
+.PP
+Definition at line 4456 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t arm_fir_sparse_instance_q15::maxDelay"
+maximum offset specified by the pTapDelay array\&. 
+.PP
+Definition at line 4462 of file arm_math\&.h\&.
+.SS "uint16_t arm_fir_sparse_instance_q15::numTaps"
+number of coefficients in the filter\&. 
+.PP
+Definition at line 4458 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_fir_sparse_instance_q15::pCoeffs"
+points to the coefficient array\&. The array is of length numTaps\&. 
+.PP
+Definition at line 4461 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_fir_sparse_instance_q15::pState"
+points to the state buffer array\&. The array is of length maxDelay+blockSize-1\&. 
+.PP
+Definition at line 4460 of file arm_math\&.h\&.
+.SS "int32_t* arm_fir_sparse_instance_q15::pTapDelay"
+points to the array of delay values\&. The array is of length numTaps\&. 
+.PP
+Definition at line 4463 of file arm_math\&.h\&.
+.SS "uint16_t arm_fir_sparse_instance_q15::stateIndex"
+state buffer index\&. Points to the oldest sample in the state buffer\&. 
+.PP
+Definition at line 4459 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

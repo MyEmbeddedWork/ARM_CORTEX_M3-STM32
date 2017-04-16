@@ -1,0 +1,91 @@
+.TH "Preemption_Priority_Group" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Preemption_Priority_Group
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBNVIC_PriorityGroup_0\fP   ((uint32_t)0x700)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_PriorityGroup_1\fP   ((uint32_t)0x600)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_PriorityGroup_2\fP   ((uint32_t)0x500)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_PriorityGroup_3\fP   ((uint32_t)0x400)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_PriorityGroup_4\fP   ((uint32_t)0x300)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_PRIORITY_GROUP\fP(GROUP)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_PREEMPTION_PRIORITY\fP(PRIORITY)   ((PRIORITY) < 0x10)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_SUB_PRIORITY\fP(PRIORITY)   ((PRIORITY) < 0x10)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_OFFSET\fP(OFFSET)   ((OFFSET) < 0x000FFFFF)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_NVIC_OFFSET(OFFSET)   ((OFFSET) < 0x000FFFFF)"
+
+.PP
+Definition at line 167 of file misc\&.h\&.
+.SS "#define IS_NVIC_PREEMPTION_PRIORITY(PRIORITY)   ((PRIORITY) < 0x10)"
+
+.PP
+Definition at line 163 of file misc\&.h\&.
+.SS "#define IS_NVIC_PRIORITY_GROUP(GROUP)"
+\fBValue:\fP
+.PP
+.nf
+(((GROUP) == NVIC_PriorityGroup_0) || \
+                                       ((GROUP) == NVIC_PriorityGroup_1) || \
+                                       ((GROUP) == NVIC_PriorityGroup_2) || \
+                                       ((GROUP) == NVIC_PriorityGroup_3) || \
+                                       ((GROUP) == NVIC_PriorityGroup_4))
+.fi
+.PP
+Definition at line 157 of file misc\&.h\&.
+.SS "#define IS_NVIC_SUB_PRIORITY(PRIORITY)   ((PRIORITY) < 0x10)"
+
+.PP
+Definition at line 165 of file misc\&.h\&.
+.SS "#define NVIC_PriorityGroup_0   ((uint32_t)0x700)"
+0 bits for pre-emption priority 4 bits for subpriority 
+.PP
+Definition at line 141 of file misc\&.h\&.
+.SS "#define NVIC_PriorityGroup_1   ((uint32_t)0x600)"
+1 bits for pre-emption priority 3 bits for subpriority 
+.PP
+Definition at line 144 of file misc\&.h\&.
+.SS "#define NVIC_PriorityGroup_2   ((uint32_t)0x500)"
+2 bits for pre-emption priority 2 bits for subpriority 
+.PP
+Definition at line 147 of file misc\&.h\&.
+.SS "#define NVIC_PriorityGroup_3   ((uint32_t)0x400)"
+3 bits for pre-emption priority 1 bits for subpriority 
+.PP
+Definition at line 150 of file misc\&.h\&.
+.SS "#define NVIC_PriorityGroup_4   ((uint32_t)0x300)"
+4 bits for pre-emption priority 0 bits for subpriority 
+.PP
+Definition at line 153 of file misc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

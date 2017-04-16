@@ -1,0 +1,149 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c \- This file provides all the BKP firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_bkp\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBKP_OFFSET\fP   (\fBBKP_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCR_OFFSET\fP   (\fBBKP_OFFSET\fP + 0x30)"
+.br
+.ti -1c
+.RI "#define \fBTPAL_BitNumber\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCR_TPAL_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBTPAL_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTPE_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCR_TPE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBTPE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSR_OFFSET\fP   (\fBBKP_OFFSET\fP + 0x34)"
+.br
+.ti -1c
+.RI "#define \fBTPIE_BitNumber\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCSR_TPIE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTPIE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTIF_BitNumber\fP   0x09"
+.br
+.ti -1c
+.RI "#define \fBCSR_TIF_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTIF_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBTEF_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCSR_TEF_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBTEF_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRTCCR_CAL_MASK\fP   ((uint16_t)0xFF80)"
+.br
+.ti -1c
+.RI "#define \fBRTCCR_MASK\fP   ((uint16_t)0xFC7F)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBKP_DeInit\fP (void)"
+.br
+.RI "Deinitializes the BKP peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBBKP_TamperPinLevelConfig\fP (uint16_t BKP_TamperPinLevel)"
+.br
+.RI "Configures the Tamper Pin active level\&. "
+.ti -1c
+.RI "void \fBBKP_TamperPinCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Tamper Pin activation\&. "
+.ti -1c
+.RI "void \fBBKP_ITConfig\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Tamper Pin Interrupt\&. "
+.ti -1c
+.RI "void \fBBKP_RTCOutputConfig\fP (uint16_t BKP_RTCOutputSource)"
+.br
+.RI "Select the RTC output source to output on the Tamper pin\&. "
+.ti -1c
+.RI "void \fBBKP_SetRTCCalibrationValue\fP (uint8_t CalibrationValue)"
+.br
+.RI "Sets RTC Clock Calibration value\&. "
+.ti -1c
+.RI "void \fBBKP_WriteBackupRegister\fP (uint16_t BKP_DR, uint16_t Data)"
+.br
+.RI "Writes user data to the specified Data Backup Register\&. "
+.ti -1c
+.RI "uint16_t \fBBKP_ReadBackupRegister\fP (uint16_t BKP_DR)"
+.br
+.RI "Reads data from the specified Data Backup Register\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBBKP_GetFlagStatus\fP (void)"
+.br
+.RI "Checks whether the Tamper Pin Event flag is set or not\&. "
+.ti -1c
+.RI "void \fBBKP_ClearFlag\fP (void)"
+.br
+.RI "Clears Tamper Pin Event pending flag\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBBKP_GetITStatus\fP (void)"
+.br
+.RI "Checks whether the Tamper Pin Interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBBKP_ClearITPendingBit\fP (void)"
+.br
+.RI "Clears Tamper Pin Interrupt pending bit\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the BKP firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_bkp\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

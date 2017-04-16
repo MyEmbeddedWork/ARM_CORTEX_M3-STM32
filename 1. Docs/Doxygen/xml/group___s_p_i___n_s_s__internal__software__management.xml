@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i___n_s_s__internal__software__management" kind="group">
+    <compoundname>SPI_NSS_internal_software_management</compoundname>
+    <title>SPI_NSS_internal_software_management</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___n_s_s__internal__software__management_1ga6b2102816167d12140648dba49a192a7" prot="public" static="no">
+        <name>SPI_NSSInternalSoft_Set</name>
+        <initializer>((uint16_t)0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="353" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___n_s_s__internal__software__management_1ga292ec7bc0cd362d61b3b5eed620522c2" prot="public" static="no">
+        <name>SPI_NSSInternalSoft_Reset</name>
+        <initializer>((uint16_t)0xFEFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="354" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___n_s_s__internal__software__management_1ga7036de442206fb8b365528c115345b36" prot="public" static="no">
+        <name>IS_SPI_NSS_INTERNAL</name>
+        <param><defname>INTERNAL</defname></param>
+        <initializer>(((INTERNAL) == <ref refid="group___s_p_i___n_s_s__internal__software__management_1ga6b2102816167d12140648dba49a192a7" kindref="member">SPI_NSSInternalSoft_Set</ref>) || \
+                                       ((INTERNAL) == <ref refid="group___s_p_i___n_s_s__internal__software__management_1ga292ec7bc0cd362d61b3b5eed620522c2" kindref="member">SPI_NSSInternalSoft_Reset</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="355" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

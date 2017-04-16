@@ -1,0 +1,46 @@
+.TH "TIM_Forced_Action" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Forced_Action
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_ForcedAction_Active\fP   ((uint16_t)0x0050)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ForcedAction_InActive\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_FORCED_ACTION\fP(ACTION)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_FORCED_ACTION(ACTION)"
+\fBValue:\fP
+.PP
+.nf
+(((ACTION) == TIM_ForcedAction_Active) || \
+                                      ((ACTION) == TIM_ForcedAction_InActive))
+.fi
+.PP
+Definition at line 825 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ForcedAction_Active   ((uint16_t)0x0050)"
+
+.PP
+Definition at line 823 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ForcedAction_InActive   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 824 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

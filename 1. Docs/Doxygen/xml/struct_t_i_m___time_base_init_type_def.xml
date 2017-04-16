@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_t_i_m___time_base_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_TimeBaseInitTypeDef</compoundname>
+    <includes refid="stm32f10x__tim_8h" local="no">stm32f10x_tim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___time_base_init_type_def_1a6d3c8632780db819b2eb811e71ce251e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TimeBaseInitTypeDef::TIM_Prescaler</definition>
+        <argsstring></argsstring>
+        <name>TIM_Prescaler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the prescaler value used to divide the TIM clock. This parameter can be a number between 0x0000 and 0xFFFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="59" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1556a0b9a5d53506875fd7de0cbc6b1f" compoundref="stm32f10x__tim_8c" startline="736" endline="744">TIM_TimeBaseStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___time_base_init_type_def_1a0de4138cd939566bc667f21df089e195" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TimeBaseInitTypeDef::TIM_CounterMode</definition>
+        <argsstring></argsstring>
+        <name>TIM_CounterMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the counter mode. This parameter can be a value of <ref refid="group___t_i_m___counter___mode" kindref="compound">TIM_Counter_Mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="62" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1556a0b9a5d53506875fd7de0cbc6b1f" compoundref="stm32f10x__tim_8c" startline="736" endline="744">TIM_TimeBaseStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___time_base_init_type_def_1aeb5b90dc8f8a1ab85584e732789b2ee4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TimeBaseInitTypeDef::TIM_Period</definition>
+        <argsstring></argsstring>
+        <name>TIM_Period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the period value to be loaded into the active Auto-Reload Register at the next update event. This parameter must be a number between 0x0000 and 0xFFFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="65" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1556a0b9a5d53506875fd7de0cbc6b1f" compoundref="stm32f10x__tim_8c" startline="736" endline="744">TIM_TimeBaseStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___time_base_init_type_def_1ab473f51adaa9474702e454fc8c24a407" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TimeBaseInitTypeDef::TIM_ClockDivision</definition>
+        <argsstring></argsstring>
+        <name>TIM_ClockDivision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the clock division. This parameter can be a value of <ref refid="group___t_i_m___clock___division___c_k_d" kindref="compound">TIM_Clock_Division_CKD</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="69" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1556a0b9a5d53506875fd7de0cbc6b1f" compoundref="stm32f10x__tim_8c" startline="736" endline="744">TIM_TimeBaseStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___time_base_init_type_def_1a81648259851390e090e1f507dfea7de8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TIM_TimeBaseInitTypeDef::TIM_RepetitionCounter</definition>
+        <argsstring></argsstring>
+        <name>TIM_RepetitionCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the repetition counter value. Each time the RCR downcounter reaches zero, an update event is generated and counting restarts from the RCR value (N). This means in PWM mode that (N+1) corresponds to:<itemizedlist>
+<listitem><para>the number of PWM periods in edge-aligned mode</para></listitem><listitem><para>the number of half PWM period in center-aligned mode This parameter must be a number between 0x00 and 0xFF. <simplesect kind="note"><para>This parameter is valid only for TIM1 and TIM8. </para></simplesect>
+</para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="72" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1556a0b9a5d53506875fd7de0cbc6b1f" compoundref="stm32f10x__tim_8c" startline="736" endline="744">TIM_TimeBaseStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TIM Time Base Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This structure is used with all TIMx except for TIM6 and TIM7. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="58" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="57" bodyend="80"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___time_base_init_type_def_1ab473f51adaa9474702e454fc8c24a407" prot="public" virt="non-virtual"><scope>TIM_TimeBaseInitTypeDef</scope><name>TIM_ClockDivision</name></member>
+      <member refid="struct_t_i_m___time_base_init_type_def_1a0de4138cd939566bc667f21df089e195" prot="public" virt="non-virtual"><scope>TIM_TimeBaseInitTypeDef</scope><name>TIM_CounterMode</name></member>
+      <member refid="struct_t_i_m___time_base_init_type_def_1aeb5b90dc8f8a1ab85584e732789b2ee4" prot="public" virt="non-virtual"><scope>TIM_TimeBaseInitTypeDef</scope><name>TIM_Period</name></member>
+      <member refid="struct_t_i_m___time_base_init_type_def_1a6d3c8632780db819b2eb811e71ce251e" prot="public" virt="non-virtual"><scope>TIM_TimeBaseInitTypeDef</scope><name>TIM_Prescaler</name></member>
+      <member refid="struct_t_i_m___time_base_init_type_def_1a81648259851390e090e1f507dfea7de8" prot="public" virt="non-virtual"><scope>TIM_TimeBaseInitTypeDef</scope><name>TIM_RepetitionCounter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

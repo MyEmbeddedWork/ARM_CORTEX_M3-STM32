@@ -1,0 +1,705 @@
+.TH "SPI_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSPI_I2S_DeInit\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Deinitializes the SPIx peripheral registers to their default reset values (Affects also the I2Ss)\&. "
+.ti -1c
+.RI "void \fBSPI_Init\fP (\fBSPI_TypeDef\fP *SPIx, \fBSPI_InitTypeDef\fP *SPI_InitStruct)"
+.br
+.RI "Initializes the SPIx peripheral according to the specified parameters in the SPI_InitStruct\&. "
+.ti -1c
+.RI "void \fBI2S_Init\fP (\fBSPI_TypeDef\fP *SPIx, \fBI2S_InitTypeDef\fP *I2S_InitStruct)"
+.br
+.RI "Initializes the SPIx peripheral according to the specified parameters in the I2S_InitStruct\&. "
+.ti -1c
+.RI "void \fBSPI_StructInit\fP (\fBSPI_InitTypeDef\fP *SPI_InitStruct)"
+.br
+.RI "Fills each SPI_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBI2S_StructInit\fP (\fBI2S_InitTypeDef\fP *I2S_InitStruct)"
+.br
+.RI "Fills each I2S_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBSPI_Cmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI peripheral\&. "
+.ti -1c
+.RI "void \fBI2S_Cmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI peripheral (in I2S mode)\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ITConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI/I2S interrupts\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_DMACmd\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_DMAReq, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SPIx/I2Sx DMA interface\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_SendData\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t Data)"
+.br
+.RI "Transmits a Data through the SPIx/I2Sx peripheral\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_I2S_ReceiveData\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Returns the most recent received data by the SPIx/I2Sx peripheral\&. "
+.ti -1c
+.RI "void \fBSPI_NSSInternalSoftwareConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_NSSInternalSoft)"
+.br
+.RI "Configures internally by software the NSS pin for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_SSOutputCmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SS output for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_DataSizeConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_DataSize)"
+.br
+.RI "Configures the data size for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_TransmitCRC\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Transmit the SPIx CRC value\&. "
+.ti -1c
+.RI "void \fBSPI_CalculateCRC\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CRC value calculation of the transferred bytes\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_GetCRC\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_CRC)"
+.br
+.RI "Returns the transmit or the receive CRC register value for the specified SPI\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_GetCRCPolynomial\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Returns the CRC Polynomial register value for the specified SPI\&. "
+.ti -1c
+.RI "void \fBSPI_BiDirectionalLineConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_Direction)"
+.br
+.RI "Selects the data transfer direction in bi-directional mode for the specified SPI\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBSPI_I2S_GetFlagStatus\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_FLAG)"
+.br
+.RI "Checks whether the specified SPI/I2S flag is set or not\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ClearFlag\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_FLAG)"
+.br
+.RI "Clears the SPIx CRC Error (CRCERR) flag\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBSPI_I2S_GetITStatus\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT)"
+.br
+.RI "Checks whether the specified SPI/I2S interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ClearITPendingBit\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT)"
+.br
+.RI "Clears the SPIx CRC Error (CRCERR) interrupt pending bit\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void I2S_Cmd (\fBSPI_TypeDef\fP * SPIx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified SPI peripheral (in I2S mode)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 2 or 3 to select the SPI peripheral\&. 
+.br
+\fINewState\fP new state of the SPIx peripheral\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 460 of file stm32f10x_spi\&.c\&.
+.SS "void I2S_Init (\fBSPI_TypeDef\fP * SPIx, \fBI2S_InitTypeDef\fP * I2S_InitStruct)"
+
+.PP
+Initializes the SPIx peripheral according to the specified parameters in the I2S_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 2 or 3 to select the SPI peripheral (configured in I2S mode)\&. 
+.br
+\fII2S_InitStruct\fP pointer to an \fBI2S_InitTypeDef\fP structure that contains the configuration information for the specified SPI peripheral configured in I2S mode\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The function calculates the optimal prescaler needed to obtain the most accurate audio frequency (depending on the I2S clock source, the PLL values and the product configuration)\&. But in case the prescaler value is greater than 511, the default value (0x02) will be configured instead\&. * 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 219 of file stm32f10x_spi\&.c\&.
+.SS "void I2S_StructInit (\fBI2S_InitTypeDef\fP * I2S_InitStruct)"
+
+.PP
+Fills each I2S_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fII2S_InitStruct\fP : pointer to a \fBI2S_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 407 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_BiDirectionalLineConfig (\fBSPI_TypeDef\fP * SPIx, uint16_t SPI_Direction)"
+
+.PP
+Selects the data transfer direction in bi-directional mode for the specified SPI\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fISPI_Direction\fP specifies the data transfer direction in bi-directional mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_Direction_Tx: Selects Tx transmission direction 
+.IP "\(bu" 2
+SPI_Direction_Rx: Selects Rx receive direction 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 752 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_CalculateCRC (\fBSPI_TypeDef\fP * SPIx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the CRC value calculation of the transferred bytes\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fINewState\fP new state of the SPIx CRC value calculation\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 683 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_Cmd (\fBSPI_TypeDef\fP * SPIx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified SPI peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fINewState\fP new state of the SPIx peripheral\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 436 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_DataSizeConfig (\fBSPI_TypeDef\fP * SPIx, uint16_t SPI_DataSize)"
+
+.PP
+Configures the data size for the selected SPI\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fISPI_DataSize\fP specifies the SPI data size\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_DataSize_16b: Set data frame format to 16bit 
+.IP "\(bu" 2
+SPI_DataSize_8b: Set data frame format to 8bit 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 651 of file stm32f10x_spi\&.c\&.
+.SS "uint16_t SPI_GetCRC (\fBSPI_TypeDef\fP * SPIx, uint8_t SPI_CRC)"
+
+.PP
+Returns the transmit or the receive CRC register value for the specified SPI\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fISPI_CRC\fP specifies the CRC register to be read\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_CRC_Tx: Selects Tx CRC register 
+.IP "\(bu" 2
+SPI_CRC_Rx: Selects Rx CRC register 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP selected CRC register value\&.\&. 
+.RE
+.PP
+
+.PP
+Definition at line 709 of file stm32f10x_spi\&.c\&.
+.SS "uint16_t SPI_GetCRCPolynomial (\fBSPI_TypeDef\fP * SPIx)"
+
+.PP
+Returns the CRC Polynomial register value for the specified SPI\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP CRC Polynomial register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 734 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_I2S_ClearFlag (\fBSPI_TypeDef\fP * SPIx, uint16_t SPI_I2S_FLAG)"
+
+.PP
+Clears the SPIx CRC Error (CRCERR) flag\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode 
+.PP
+.br
+\fISPI_I2S_FLAG\fP specifies the SPI flag to clear\&. This function clears only CRCERR flag\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+OVR (OverRun error) flag is cleared by software sequence: a read operation to SPI_DR register (\fBSPI_I2S_ReceiveData()\fP) followed by a read operation to SPI_SR register (\fBSPI_I2S_GetFlagStatus()\fP)\&.
+.IP "\(bu" 2
+UDR (UnderRun error) flag is cleared by a read operation to SPI_SR register (\fBSPI_I2S_GetFlagStatus()\fP)\&.
+.IP "\(bu" 2
+MODF (Mode Fault) flag is cleared by software sequence: a read/write operation to SPI_SR register (\fBSPI_I2S_GetFlagStatus()\fP) followed by a write operation to SPI_CR1 register (\fBSPI_Cmd()\fP to enable the SPI)\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 824 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_I2S_ClearITPendingBit (\fBSPI_TypeDef\fP * SPIx, uint8_t SPI_I2S_IT)"
+
+.PP
+Clears the SPIx CRC Error (CRCERR) interrupt pending bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode 
+.PP
+.br
+\fISPI_I2S_IT\fP specifies the SPI interrupt pending bit to clear\&. This function clears only CRCERR interrupt pending bit\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+.IP "\(bu" 2
+OVR (OverRun Error) interrupt pending bit is cleared by software sequence: a read operation to SPI_DR register (\fBSPI_I2S_ReceiveData()\fP) followed by a read operation to SPI_SR register (\fBSPI_I2S_GetITStatus()\fP)\&.
+.IP "\(bu" 2
+UDR (UnderRun Error) interrupt pending bit is cleared by a read operation to SPI_SR register (\fBSPI_I2S_GetITStatus()\fP)\&.
+.IP "\(bu" 2
+MODF (Mode Fault) interrupt pending bit is cleared by software sequence: a read/write operation to SPI_SR register (\fBSPI_I2S_GetITStatus()\fP) followed by a write operation to SPI_CR1 register (\fBSPI_Cmd()\fP to enable the SPI)\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 914 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_I2S_DeInit (\fBSPI_TypeDef\fP * SPIx)"
+
+.PP
+Deinitializes the SPIx peripheral registers to their default reset values (Affects also the I2Ss)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 119 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_I2S_DMACmd (\fBSPI_TypeDef\fP * SPIx, uint16_t SPI_I2S_DMAReq, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SPIx/I2Sx DMA interface\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode
+.IP "\(bu" 2
+2 or 3 in I2S mode 
+.PP
+.br
+\fISPI_I2S_DMAReq\fP specifies the SPI/I2S DMA transfer request to be enabled or disabled\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_I2S_DMAReq_Tx: Tx buffer DMA transfer request 
+.IP "\(bu" 2
+SPI_I2S_DMAReq_Rx: Rx buffer DMA transfer request 
+.PP
+.br
+\fINewState\fP new state of the selected SPI/I2S DMA transfer request\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 541 of file stm32f10x_spi\&.c\&.
+.SS "\fBFlagStatus\fP SPI_I2S_GetFlagStatus (\fBSPI_TypeDef\fP * SPIx, uint16_t SPI_I2S_FLAG)"
+
+.PP
+Checks whether the specified SPI/I2S flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode
+.IP "\(bu" 2
+2 or 3 in I2S mode 
+.PP
+.br
+\fISPI_I2S_FLAG\fP specifies the SPI/I2S flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_I2S_FLAG_TXE: Transmit buffer empty flag\&. 
+.IP "\(bu" 2
+SPI_I2S_FLAG_RXNE: Receive buffer not empty flag\&. 
+.IP "\(bu" 2
+SPI_I2S_FLAG_BSY: Busy flag\&. 
+.IP "\(bu" 2
+SPI_I2S_FLAG_OVR: Overrun flag\&. 
+.IP "\(bu" 2
+SPI_FLAG_MODF: Mode Fault flag\&. 
+.IP "\(bu" 2
+SPI_FLAG_CRCERR: CRC Error flag\&. 
+.IP "\(bu" 2
+I2S_FLAG_UDR: Underrun Error flag\&. 
+.IP "\(bu" 2
+I2S_FLAG_CHSIDE: Channel Side flag\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of SPI_I2S_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 786 of file stm32f10x_spi\&.c\&.
+.SS "\fBITStatus\fP SPI_I2S_GetITStatus (\fBSPI_TypeDef\fP * SPIx, uint8_t SPI_I2S_IT)"
+
+.PP
+Checks whether the specified SPI/I2S interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode
+.IP "\(bu" 2
+2 or 3 in I2S mode 
+.PP
+.br
+\fISPI_I2S_IT\fP specifies the SPI/I2S interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_I2S_IT_TXE: Transmit buffer empty interrupt\&. 
+.IP "\(bu" 2
+SPI_I2S_IT_RXNE: Receive buffer not empty interrupt\&. 
+.IP "\(bu" 2
+SPI_I2S_IT_OVR: Overrun interrupt\&. 
+.IP "\(bu" 2
+SPI_IT_MODF: Mode Fault interrupt\&. 
+.IP "\(bu" 2
+SPI_IT_CRCERR: CRC Error interrupt\&. 
+.IP "\(bu" 2
+I2S_IT_UDR: Underrun Error interrupt\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of SPI_I2S_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 849 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_I2S_ITConfig (\fBSPI_TypeDef\fP * SPIx, uint8_t SPI_I2S_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified SPI/I2S interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode
+.IP "\(bu" 2
+2 or 3 in I2S mode 
+.PP
+.br
+\fISPI_I2S_IT\fP specifies the SPI/I2S interrupt source to be enabled or disabled\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_I2S_IT_TXE: Tx buffer empty interrupt mask 
+.IP "\(bu" 2
+SPI_I2S_IT_RXNE: Rx buffer not empty interrupt mask 
+.IP "\(bu" 2
+SPI_I2S_IT_ERR: Error interrupt mask 
+.PP
+.br
+\fINewState\fP new state of the specified SPI/I2S interrupt\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 491 of file stm32f10x_spi\&.c\&.
+.SS "uint16_t SPI_I2S_ReceiveData (\fBSPI_TypeDef\fP * SPIx)"
+
+.PP
+Returns the most recent received data by the SPIx/I2Sx peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode
+.IP "\(bu" 2
+2 or 3 in I2S mode 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP value of the received data\&. 
+.RE
+.PP
+
+.PP
+Definition at line 583 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_I2S_SendData (\fBSPI_TypeDef\fP * SPIx, uint16_t Data)"
+
+.PP
+Transmits a Data through the SPIx/I2Sx peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be
+.IP "\(bu" 2
+1, 2 or 3 in SPI mode
+.IP "\(bu" 2
+2 or 3 in I2S mode 
+.PP
+.br
+\fIData\fP : Data to be transmitted\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 567 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_Init (\fBSPI_TypeDef\fP * SPIx, \fBSPI_InitTypeDef\fP * SPI_InitStruct)"
+
+.PP
+Initializes the SPIx peripheral according to the specified parameters in the SPI_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fISPI_InitStruct\fP pointer to a \fBSPI_InitTypeDef\fP structure that contains the configuration information for the specified SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_NSSInternalSoftwareConfig (\fBSPI_TypeDef\fP * SPIx, uint16_t SPI_NSSInternalSoft)"
+
+.PP
+Configures internally by software the NSS pin for the selected SPI\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fISPI_NSSInternalSoft\fP specifies the SPI NSS internal state\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SPI_NSSInternalSoft_Set: Set NSS pin internally 
+.IP "\(bu" 2
+SPI_NSSInternalSoft_Reset: Reset NSS pin internally 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 601 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_SSOutputCmd (\fBSPI_TypeDef\fP * SPIx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SS output for the selected SPI\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.br
+\fINewState\fP new state of the SPIx SS output\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 625 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_StructInit (\fBSPI_InitTypeDef\fP * SPI_InitStruct)"
+
+.PP
+Fills each SPI_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPI_InitStruct\fP : pointer to a \fBSPI_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 379 of file stm32f10x_spi\&.c\&.
+.SS "void SPI_TransmitCRC (\fBSPI_TypeDef\fP * SPIx)"
+
+.PP
+Transmit the SPIx CRC value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISPIx\fP where x can be 1, 2 or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 667 of file stm32f10x_spi\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

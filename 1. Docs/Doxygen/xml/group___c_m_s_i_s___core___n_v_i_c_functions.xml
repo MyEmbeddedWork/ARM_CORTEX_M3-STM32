@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s___core___n_v_i_c_functions" kind="group">
+    <compoundname>CMSIS_Core_NVICFunctions</compoundname>
+    <title>NVIC Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3349f2e3580d7ce22d6530b7294e5921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_EnableIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_EnableIRQ</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Enable External Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enables a device-specific interrupt in the NVIC interrupt controller. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External interrupt number. Value cannot be negative. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="637" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="637" bodyend="640"/>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga394f7ce2ca826c0da26284d17ac6524d" compoundref="core__cm3_8h" startline="1449" endline="1452">NVIC_GetPriorityGrouping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga260fba04ac8346855c57f091d4ee1e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_DisableIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_DisableIRQ</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Disable External Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Disables a device-specific interrupt in the NVIC interrupt controller. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External interrupt number. Value cannot be negative. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="648" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="648" bodyend="651"/>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga394f7ce2ca826c0da26284d17ac6524d" compoundref="core__cm3_8h" startline="1449" endline="1452">NVIC_GetPriorityGrouping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gafec8042db64c0f8ed432b6c8386a05d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t NVIC_GetPendingIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_GetPendingIRQ</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Pending Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the pending register in the NVIC and returns the pending bit for the specified interrupt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 Interrupt status is not pending. </para></simplesect>
+<simplesect kind="return"><para>1 Interrupt status is pending. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="661" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="661" bodyend="664"/>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga394f7ce2ca826c0da26284d17ac6524d" compoundref="core__cm3_8h" startline="1449" endline="1452">NVIC_GetPriorityGrouping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3ecf446519da33e1690deffbf5be505f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_SetPendingIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_SetPendingIRQ</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Set Pending Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the pending bit of an external interrupt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. Value cannot be negative. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="672" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="672" bodyend="675"/>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga394f7ce2ca826c0da26284d17ac6524d" compoundref="core__cm3_8h" startline="1449" endline="1452">NVIC_GetPriorityGrouping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga332e10ef9605dc6eb10b9e14511930f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_ClearPendingIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_ClearPendingIRQ</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Clear Pending Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clears the pending bit of an external interrupt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External interrupt number. Value cannot be negative. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="683" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="683" bodyend="686"/>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga394f7ce2ca826c0da26284d17ac6524d" compoundref="core__cm3_8h" startline="1449" endline="1452">NVIC_GetPriorityGrouping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2305cbd44aaad792e3a4e538bdaf14f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_SetPriority</definition>
+        <argsstring>(IRQn_Type IRQn, uint32_t priority)</argsstring>
+        <name>NVIC_SetPriority</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Set Interrupt Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the priority of an interrupt. <simplesect kind="note"><para>The priority cannot be set for every core interrupt. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="696" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="696" bodyend="708"/>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaee4f7eb5d7e770ad51489dbceabb1755" compoundref="core__cm0_8h" startline="628">_SHP_IDX</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga53c75b28823441c6153269f0ecbed878" compoundref="core__cm0_8h" startline="627">_BIT_SHIFT</references>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gae3fe3587d5100c787e02102ce3944460" compoundref="stm32f10x_8h" startline="160">__NVIC_PRIO_BITS</references>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga370ec4b1751a6a889d849747df3763a9" compoundref="core__cm0_8h" startline="629">_IP_IDX</references>
+        <referencedby refid="group___c_m_s_i_s___core___sys_tick_functions_1gae4e8f0238527c69f522029b93c8e5b78" compoundref="core__cm0_8h" startline="777" endline="791">SysTick_Config</referencedby>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga47a0f52794068d076c9147aa3cb8d8a6" compoundref="core__cm3_8h" startline="1519" endline="1522">NVIC_GetActive</referencedby>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3387607fd8a1a32cccd77d2ac672dd96" compoundref="core__cm3_8h" startline="1606" endline="1617">NVIC_DecodePriority</referencedby>
+        <referencedby refid="group___c_m_s_i_s___core___cache_functions_1ga630131b2572eaa16b569ed364dfc895e" compoundref="core__cm7_8h" startline="2367" endline="2385">SCB_CleanInvalidateDCache_by_Addr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1cbaf8e6abd4aa4885828e7f24fcfeb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t NVIC_GetPriority</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_GetPriority</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Interrupt Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the priority of an interrupt. The interrupt number can be positive to specify an external (device specific) interrupt, or negative to specify an internal (core) interrupt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Interrupt Priority. Value is aligned automatically to the implemented priority bits of the microcontroller. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="720" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="720" bodyend="731"/>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaee4f7eb5d7e770ad51489dbceabb1755" compoundref="core__cm0_8h" startline="628">_SHP_IDX</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga53c75b28823441c6153269f0ecbed878" compoundref="core__cm0_8h" startline="627">_BIT_SHIFT</references>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gae3fe3587d5100c787e02102ce3944460" compoundref="stm32f10x_8h" startline="160">__NVIC_PRIO_BITS</references>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm0_8h" startline="597">NVIC</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga370ec4b1751a6a889d849747df3763a9" compoundref="core__cm0_8h" startline="629">_IP_IDX</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga47a0f52794068d076c9147aa3cb8d8a6" compoundref="core__cm3_8h" startline="1519" endline="1522">NVIC_GetActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1143dec48d60a3d6f238c4798a87759c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_SystemReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>NVIC_SystemReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>System Reset. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initiates a system reset request to reset the MCU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="738" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="738" bodyend="750"/>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" compoundref="cmsis__armcc_8h" startline="355">__DSB</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1gaaa27c0ba600bf82c3da08c748845b640" compoundref="core__cm0_8h" startline="455">SCB_AIRCR_VECTKEY_Pos</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1gaae1181119559a5bd36e62afa373fa720" compoundref="core__cm0_8h" startline="465">SCB_AIRCR_SYSRESETREQ_Msk</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" compoundref="cmsis__armcc_8h" startline="313">__NOP</references>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3387607fd8a1a32cccd77d2ac672dd96" compoundref="core__cm3_8h" startline="1606" endline="1617">NVIC_DecodePriority</referencedby>
+        <referencedby refid="exception__handlers_8c_1ac9f575d200bdb35ff00bde695b1725e6" compoundref="exception__handlers_8c" startline="53" endline="62">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga77cfbb35a9d8027e392034321bed6904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_SetPriorityGrouping</definition>
+        <argsstring>(uint32_t PriorityGroup)</argsstring>
+        <name>NVIC_SetPriorityGrouping</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PriorityGroup</declname>
+        </param>
+        <briefdescription>
+<para>Set Priority Grouping. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the priority grouping field using the required unlock sequence. The parameter PriorityGroup is assigned to the field SCB-&gt;AIRCR [10:8] PRIGROUP field. Only values from 0..7 are used. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS), the smallest possible priority group is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">PriorityGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority grouping field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1430" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1430" bodyend="1441"/>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm3_8h" startline="1382">SCB</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1ga90c7cf0c490e7ae55f9503a7fda1dd22" compoundref="core__cm3_8h" startline="511">SCB_AIRCR_VECTKEY_Msk</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1ga8be60fff03f48d0d345868060dc6dae7" compoundref="core__cm3_8h" startline="520">SCB_AIRCR_PRIGROUP_Msk</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1gaaa27c0ba600bf82c3da08c748845b640" compoundref="core__cm3_8h" startline="510">SCB_AIRCR_VECTKEY_Pos</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga394f7ce2ca826c0da26284d17ac6524d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping</definition>
+        <argsstring>(void)</argsstring>
+        <name>NVIC_GetPriorityGrouping</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Priority Grouping. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the priority grouping field from the NVIC Interrupt Controller. <simplesect kind="return"><para>Priority grouping field (SCB-&gt;AIRCR [10:8] PRIGROUP field). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1449" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1449" bodyend="1452"/>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm3_8h" startline="1382">SCB</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1ga8be60fff03f48d0d345868060dc6dae7" compoundref="core__cm3_8h" startline="520">SCB_AIRCR_PRIGROUP_Msk</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1gaca155deccdeca0f2c76b8100d24196c8" compoundref="core__cm3_8h" startline="519">SCB_AIRCR_PRIGROUP_Pos</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3349f2e3580d7ce22d6530b7294e5921" compoundref="core__cm0_8h" startline="637" endline="640">NVIC_EnableIRQ</references>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm3_8h" startline="1384">NVIC</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga260fba04ac8346855c57f091d4ee1e71" compoundref="core__cm0_8h" startline="648" endline="651">NVIC_DisableIRQ</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gafec8042db64c0f8ed432b6c8386a05d8" compoundref="core__cm0_8h" startline="661" endline="664">NVIC_GetPendingIRQ</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3ecf446519da33e1690deffbf5be505f" compoundref="core__cm0_8h" startline="672" endline="675">NVIC_SetPendingIRQ</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga332e10ef9605dc6eb10b9e14511930f8" compoundref="core__cm0_8h" startline="683" endline="686">NVIC_ClearPendingIRQ</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga47a0f52794068d076c9147aa3cb8d8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t NVIC_GetActive</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>NVIC_GetActive</name>
+        <param>
+          <type><ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Active Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the active register in NVIC and returns the active bit. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 Interrupt status is not active. </para></simplesect>
+<simplesect kind="return"><para>1 Interrupt status is active. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1519" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1519" bodyend="1522"/>
+        <references refid="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" compoundref="core__cm3_8h" startline="1384">NVIC</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2305cbd44aaad792e3a4e538bdaf14f9" compoundref="core__cm0_8h" startline="696" endline="708">NVIC_SetPriority</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm3_8h" startline="1382">SCB</references>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gae3fe3587d5100c787e02102ce3944460" compoundref="stm32f10x_8h" startline="160">__NVIC_PRIO_BITS</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1cbaf8e6abd4aa4885828e7f24fcfeb4" compoundref="core__cm0_8h" startline="720" endline="731">NVIC_GetPriority</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gadb94ac5d892b376e4f3555ae0418ebac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t NVIC_EncodePriority</definition>
+        <argsstring>(uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)</argsstring>
+        <name>NVIC_EncodePriority</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PriorityGroup</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>PreemptPriority</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>SubPriority</declname>
+        </param>
+        <briefdescription>
+<para>Encode Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Encodes the priority for an interrupt with the given priority group, preemptive priority value, and subpriority value. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS), the smallest possible priority group is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">PriorityGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used priority group. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">PreemptPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Preemptive priority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SubPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subpriority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Encoded priority. Value can be used in the function <ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2305cbd44aaad792e3a4e538bdaf14f9" kindref="member">NVIC_SetPriority()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1579" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1579" bodyend="1592"/>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gae3fe3587d5100c787e02102ce3944460" compoundref="stm32f10x_8h" startline="160">__NVIC_PRIO_BITS</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3387607fd8a1a32cccd77d2ac672dd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void NVIC_DecodePriority</definition>
+        <argsstring>(uint32_t Priority, uint32_t PriorityGroup, uint32_t *const pPreemptPriority, uint32_t *const pSubPriority)</argsstring>
+        <name>NVIC_DecodePriority</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Priority</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>PriorityGroup</declname>
+        </param>
+        <param>
+          <type>uint32_t *const</type>
+          <declname>pPreemptPriority</declname>
+        </param>
+        <param>
+          <type>uint32_t *const</type>
+          <declname>pSubPriority</declname>
+        </param>
+        <briefdescription>
+<para>Decode Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Decodes an interrupt priority value with a given priority group to preemptive priority value and subpriority value. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS) the smallest possible priority group is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority value, which can be retrieved with the function <ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1cbaf8e6abd4aa4885828e7f24fcfeb4" kindref="member">NVIC_GetPriority()</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">PriorityGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used priority group. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pPreemptPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Preemptive priority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pSubPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subpriority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1606" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1606" bodyend="1617"/>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gae3fe3587d5100c787e02102ce3944460" compoundref="stm32f10x_8h" startline="160">__NVIC_PRIO_BITS</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga1143dec48d60a3d6f238c4798a87759c" compoundref="core__cm0_8h" startline="738" endline="750">NVIC_SystemReset</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" compoundref="cmsis__armcc_8h" startline="355">__DSB</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm3_8h" startline="1382">SCB</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1gaaa27c0ba600bf82c3da08c748845b640" compoundref="core__cm3_8h" startline="510">SCB_AIRCR_VECTKEY_Pos</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1ga8be60fff03f48d0d345868060dc6dae7" compoundref="core__cm3_8h" startline="520">SCB_AIRCR_PRIGROUP_Msk</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1gaae1181119559a5bd36e62afa373fa720" compoundref="core__cm3_8h" startline="523">SCB_AIRCR_SYSRESETREQ_Msk</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" compoundref="cmsis__armcc_8h" startline="313">__NOP</references>
+        <references refid="group___c_m_s_i_s___core___sys_tick_functions_1gae4e8f0238527c69f522029b93c8e5b78" compoundref="core__cm0_8h" startline="777" endline="791">SysTick_Config</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1ga265912a7962f0e1abd170336e579b1b1" compoundref="core__cm3_8h" startline="714">SysTick_LOAD_RELOAD_Msk</references>
+        <references refid="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" compoundref="core__cm3_8h" startline="1383">SysTick</references>
+        <references refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2305cbd44aaad792e3a4e538bdaf14f9" compoundref="core__cm0_8h" startline="696" endline="708">NVIC_SetPriority</references>
+        <references refid="group___configuration__section__for___c_m_s_i_s_1gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7" compoundref="stm32f10x_8h" startline="177">SysTick_IRQn</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1gaa41d06039797423a46596bd313d57373" compoundref="core__cm3_8h" startline="704">SysTick_CTRL_CLKSOURCE_Msk</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1ga95bb984266ca764024836a870238a027" compoundref="core__cm3_8h" startline="707">SysTick_CTRL_TICKINT_Msk</references>
+        <references refid="group___c_m_s_i_s___sys_tick_1ga16c9fee0ed0235524bdeb38af328fd1f" compoundref="core__cm3_8h" startline="710">SysTick_CTRL_ENABLE_Msk</references>
+        <references refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8">ITM_RxBuffer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga53c75b28823441c6153269f0ecbed878" prot="public" static="no">
+        <name>_BIT_SHIFT</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(  ((((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))         )      &amp;  0x03UL) * 8UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="627" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaee4f7eb5d7e770ad51489dbceabb1755" prot="public" static="no">
+        <name>_SHP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>( (((((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>)) &amp; 0x0FUL)-8UL) &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="628" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga370ec4b1751a6a889d849747df3763a9" prot="public" static="no">
+        <name>_IP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(   (((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))                &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="629" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga53c75b28823441c6153269f0ecbed878" prot="public" static="no">
+        <name>_BIT_SHIFT</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(  ((((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))         )      &amp;  0x03UL) * 8UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="743" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaee4f7eb5d7e770ad51489dbceabb1755" prot="public" static="no">
+        <name>_SHP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>( (((((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>)) &amp; 0x0FUL)-8UL) &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="744" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga370ec4b1751a6a889d849747df3763a9" prot="public" static="no">
+        <name>_IP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(   (((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))                &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="745" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga53c75b28823441c6153269f0ecbed878" prot="public" static="no">
+        <name>_BIT_SHIFT</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(  ((((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))         )      &amp;  0x03UL) * 8UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="747" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaee4f7eb5d7e770ad51489dbceabb1755" prot="public" static="no">
+        <name>_SHP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>( (((((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>)) &amp; 0x0FUL)-8UL) &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="748" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga370ec4b1751a6a889d849747df3763a9" prot="public" static="no">
+        <name>_IP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(   (((uint32_t)(int32_t)(<ref refid="group___configuration__section__for___c_m_s_i_s_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))                &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="749" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions that manage interrupts and exceptions via the NVIC. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

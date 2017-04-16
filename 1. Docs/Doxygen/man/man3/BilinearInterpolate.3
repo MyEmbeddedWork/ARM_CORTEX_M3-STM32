@@ -1,0 +1,72 @@
+.TH "BilinearInterpolate" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BilinearInterpolate
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Bilinear interpolation is an extension of linear interpolation applied to a two dimensional grid\&. The underlying function \fCf(x, y)\fP is sampled on a regular grid and the interpolation process determines values between the grid points\&. Bilinear interpolation is equivalent to two step linear interpolation, first in the x-dimension and then in the y-dimension\&. Bilinear interpolation is often used in image processing to rescale images\&. The CMSIS DSP library provides bilinear interpolation functions for Q7, Q15, Q31, and floating-point data types\&.
+.PP
+\fBAlgorithm\fP 
+.PP
+\fB\fP
+.RS 4
+The instance structure used by the bilinear interpolation functions describes a two dimensional data table\&. For floating-point, the instance structure is defined as: 
+.PP
+.nf
+
+  typedef struct
+  {
+    uint16_t numRows;
+    uint16_t numCols;
+    float32_t *pData;
+} \fBarm_bilinear_interp_instance_f32\fP;
+.fi
+.PP
+.RE
+.PP
+\fB\fP
+.RS 4
+where \fCnumRows\fP specifies the number of rows in the table; \fCnumCols\fP specifies the number of columns in the table; and \fCpData\fP points to an array of size \fCnumRows*numCols\fP values\&. The data table \fCpTable\fP is organized in row order and the supplied data values fall on integer indexes\&. That is, table element (x,y) is located at \fCpTable[x + y*numCols]\fP where x and y are integers\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+Let \fC(x, y)\fP specify the desired interpolation point\&. Then define: 
+.PP
+.nf
+
+    XF = floor(x)
+    YF = floor(y)
+.fi
+.PP
+ 
+.RE
+.PP
+\fB\fP
+.RS 4
+The interpolated output point is computed as: 
+.PP
+.nf
+
+ f(x, y) = f(XF, YF) * (1-(x-XF)) * (1-(y-YF))
+          + f(XF+1, YF) * (x-XF)*(1-(y-YF))
+          + f(XF, YF+1) * (1-(x-XF))*(y-YF)
+          + f(XF+1, YF+1) * (x-XF)*(y-YF)
+.fi
+.PP
+ Note that the coordinates (x, y) contain integer and fractional components\&. The integer components specify which portion of the table to use while the fractional components control the interpolation processor\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+if (x,y) are outside of the table boundary, Bilinear interpolation returns zero output\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

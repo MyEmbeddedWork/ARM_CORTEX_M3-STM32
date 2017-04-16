@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_a_n___exported___types" kind="group">
+    <compoundname>CAN_Exported_Types</compoundname>
+    <title>CAN_Exported_Types</title>
+    <innerclass refid="struct_c_a_n___init_type_def" prot="public">CAN_InitTypeDef</innerclass>
+    <innerclass refid="struct_c_a_n___filter_init_type_def" prot="public">CAN_FilterInitTypeDef</innerclass>
+    <innerclass refid="struct_can_tx_msg" prot="public">CanTxMsg</innerclass>
+    <innerclass refid="struct_can_rx_msg" prot="public">CanRxMsg</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" prot="public" static="no">
+        <name>IS_CAN_ALL_PERIPH</name>
+        <param><defname>PERIPH</defname></param>
+        <initializer>(((PERIPH) == <ref refid="group___peripheral__declaration_1ga4964ecb6a5c689aaf8ee2832b8093aac" kindref="member">CAN1</ref>) || \
+                                   ((PERIPH) == <ref refid="group___peripheral__declaration_1gac5e4c86ed487dc91418b156e24808033" kindref="member">CAN2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="52" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

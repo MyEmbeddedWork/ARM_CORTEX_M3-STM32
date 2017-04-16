@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_m_a__memory__incremented__mode" kind="group">
+    <compoundname>DMA_memory_incremented_mode</compoundname>
+    <title>DMA_memory_incremented_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a__memory__incremented__mode_1ga4e8cb23d039c74bbbf365d7678835bbb" prot="public" static="no">
+        <name>DMA_MemoryInc_Enable</name>
+        <initializer>((uint32_t)0x00000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="136" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__memory__incremented__mode_1ga795a277c997048783a383b026f19a5ab" prot="public" static="no">
+        <name>DMA_MemoryInc_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="137" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__memory__incremented__mode_1gaa880f39d499d1e80449cf80381e4eb67" prot="public" static="no">
+        <name>IS_DMA_MEMORY_INC_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___d_m_a__memory__incremented__mode_1ga4e8cb23d039c74bbbf365d7678835bbb" kindref="member">DMA_MemoryInc_Enable</ref>) || \
+                                        ((STATE) == <ref refid="group___d_m_a__memory__incremented__mode_1ga795a277c997048783a383b026f19a5ab" kindref="member">DMA_MemoryInc_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="138" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

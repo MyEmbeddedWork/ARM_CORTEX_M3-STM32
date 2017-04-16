@@ -1,0 +1,345 @@
+.TH "Data_Backup_Register" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Data_Backup_Register
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBKP_DR1\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR2\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR3\fP   ((uint16_t)0x000C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR5\fP   ((uint16_t)0x0014)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR6\fP   ((uint16_t)0x0018)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR7\fP   ((uint16_t)0x001C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR8\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR9\fP   ((uint16_t)0x0024)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR10\fP   ((uint16_t)0x0028)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR11\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR12\fP   ((uint16_t)0x0044)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR13\fP   ((uint16_t)0x0048)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR14\fP   ((uint16_t)0x004C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR15\fP   ((uint16_t)0x0050)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR16\fP   ((uint16_t)0x0054)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR17\fP   ((uint16_t)0x0058)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR18\fP   ((uint16_t)0x005C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR19\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR20\fP   ((uint16_t)0x0064)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR21\fP   ((uint16_t)0x0068)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR22\fP   ((uint16_t)0x006C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR23\fP   ((uint16_t)0x0070)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR24\fP   ((uint16_t)0x0074)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR25\fP   ((uint16_t)0x0078)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR26\fP   ((uint16_t)0x007C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR27\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR28\fP   ((uint16_t)0x0084)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR29\fP   ((uint16_t)0x0088)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR30\fP   ((uint16_t)0x008C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR31\fP   ((uint16_t)0x0090)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR32\fP   ((uint16_t)0x0094)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR33\fP   ((uint16_t)0x0098)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR34\fP   ((uint16_t)0x009C)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR35\fP   ((uint16_t)0x00A0)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR36\fP   ((uint16_t)0x00A4)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR37\fP   ((uint16_t)0x00A8)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR38\fP   ((uint16_t)0x00AC)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR39\fP   ((uint16_t)0x00B0)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR40\fP   ((uint16_t)0x00B4)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR41\fP   ((uint16_t)0x00B8)"
+.br
+.ti -1c
+.RI "#define \fBBKP_DR42\fP   ((uint16_t)0x00BC)"
+.br
+.ti -1c
+.RI "#define \fBIS_BKP_DR\fP(DR)"
+.br
+.ti -1c
+.RI "#define \fBIS_BKP_CALIBRATION_VALUE\fP(VALUE)   ((VALUE) <= 0x7F)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BKP_DR1   ((uint16_t)0x0004)"
+
+.PP
+Definition at line 86 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR10   ((uint16_t)0x0028)"
+
+.PP
+Definition at line 95 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR11   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 96 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR12   ((uint16_t)0x0044)"
+
+.PP
+Definition at line 97 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR13   ((uint16_t)0x0048)"
+
+.PP
+Definition at line 98 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR14   ((uint16_t)0x004C)"
+
+.PP
+Definition at line 99 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR15   ((uint16_t)0x0050)"
+
+.PP
+Definition at line 100 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR16   ((uint16_t)0x0054)"
+
+.PP
+Definition at line 101 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR17   ((uint16_t)0x0058)"
+
+.PP
+Definition at line 102 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR18   ((uint16_t)0x005C)"
+
+.PP
+Definition at line 103 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR19   ((uint16_t)0x0060)"
+
+.PP
+Definition at line 104 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR2   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 87 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR20   ((uint16_t)0x0064)"
+
+.PP
+Definition at line 105 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR21   ((uint16_t)0x0068)"
+
+.PP
+Definition at line 106 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR22   ((uint16_t)0x006C)"
+
+.PP
+Definition at line 107 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR23   ((uint16_t)0x0070)"
+
+.PP
+Definition at line 108 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR24   ((uint16_t)0x0074)"
+
+.PP
+Definition at line 109 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR25   ((uint16_t)0x0078)"
+
+.PP
+Definition at line 110 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR26   ((uint16_t)0x007C)"
+
+.PP
+Definition at line 111 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR27   ((uint16_t)0x0080)"
+
+.PP
+Definition at line 112 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR28   ((uint16_t)0x0084)"
+
+.PP
+Definition at line 113 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR29   ((uint16_t)0x0088)"
+
+.PP
+Definition at line 114 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR3   ((uint16_t)0x000C)"
+
+.PP
+Definition at line 88 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR30   ((uint16_t)0x008C)"
+
+.PP
+Definition at line 115 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR31   ((uint16_t)0x0090)"
+
+.PP
+Definition at line 116 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR32   ((uint16_t)0x0094)"
+
+.PP
+Definition at line 117 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR33   ((uint16_t)0x0098)"
+
+.PP
+Definition at line 118 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR34   ((uint16_t)0x009C)"
+
+.PP
+Definition at line 119 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR35   ((uint16_t)0x00A0)"
+
+.PP
+Definition at line 120 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR36   ((uint16_t)0x00A4)"
+
+.PP
+Definition at line 121 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR37   ((uint16_t)0x00A8)"
+
+.PP
+Definition at line 122 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR38   ((uint16_t)0x00AC)"
+
+.PP
+Definition at line 123 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR39   ((uint16_t)0x00B0)"
+
+.PP
+Definition at line 124 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR4   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 89 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR40   ((uint16_t)0x00B4)"
+
+.PP
+Definition at line 125 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR41   ((uint16_t)0x00B8)"
+
+.PP
+Definition at line 126 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR42   ((uint16_t)0x00BC)"
+
+.PP
+Definition at line 127 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR5   ((uint16_t)0x0014)"
+
+.PP
+Definition at line 90 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR6   ((uint16_t)0x0018)"
+
+.PP
+Definition at line 91 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR7   ((uint16_t)0x001C)"
+
+.PP
+Definition at line 92 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR8   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 93 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_DR9   ((uint16_t)0x0024)"
+
+.PP
+Definition at line 94 of file stm32f10x_bkp\&.h\&.
+.SS "#define IS_BKP_CALIBRATION_VALUE(VALUE)   ((VALUE) <= 0x7F)"
+
+.PP
+Definition at line 144 of file stm32f10x_bkp\&.h\&.
+.SS "#define IS_BKP_DR(DR)"
+\fBValue:\fP
+.PP
+.nf
+(((DR) == BKP_DR1)  || ((DR) == BKP_DR2)  || ((DR) == BKP_DR3)  || \
+                       ((DR) == BKP_DR4)  || ((DR) == BKP_DR5)  || ((DR) == BKP_DR6)  || \
+                       ((DR) == BKP_DR7)  || ((DR) == BKP_DR8)  || ((DR) == BKP_DR9)  || \
+                       ((DR) == BKP_DR10) || ((DR) == BKP_DR11) || ((DR) == BKP_DR12) || \
+                       ((DR) == BKP_DR13) || ((DR) == BKP_DR14) || ((DR) == BKP_DR15) || \
+                       ((DR) == BKP_DR16) || ((DR) == BKP_DR17) || ((DR) == BKP_DR18) || \
+                       ((DR) == BKP_DR19) || ((DR) == BKP_DR20) || ((DR) == BKP_DR21) || \
+                       ((DR) == BKP_DR22) || ((DR) == BKP_DR23) || ((DR) == BKP_DR24) || \
+                       ((DR) == BKP_DR25) || ((DR) == BKP_DR26) || ((DR) == BKP_DR27) || \
+                       ((DR) == BKP_DR28) || ((DR) == BKP_DR29) || ((DR) == BKP_DR30) || \
+                       ((DR) == BKP_DR31) || ((DR) == BKP_DR32) || ((DR) == BKP_DR33) || \
+                       ((DR) == BKP_DR34) || ((DR) == BKP_DR35) || ((DR) == BKP_DR36) || \
+                       ((DR) == BKP_DR37) || ((DR) == BKP_DR38) || ((DR) == BKP_DR39) || \
+                       ((DR) == BKP_DR40) || ((DR) == BKP_DR41) || ((DR) == BKP_DR42))
+.fi
+.PP
+Definition at line 129 of file stm32f10x_bkp\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

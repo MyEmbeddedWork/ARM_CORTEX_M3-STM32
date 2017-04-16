@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i___i2_s___d_m_a__transfer__requests" kind="group">
+    <compoundname>SPI_I2S_DMA_transfer_requests</compoundname>
+    <title>SPI_I2S_DMA_transfer_requests</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___i2_s___d_m_a__transfer__requests_1ga05f55a18c83aaa945d99200d012e5e2a" prot="public" static="no">
+        <name>SPI_I2S_DMAReq_Tx</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="342" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s___d_m_a__transfer__requests_1gaa7f680295cdc1af9b086bf51312f15f3" prot="public" static="no">
+        <name>SPI_I2S_DMAReq_Rx</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="343" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___i2_s___d_m_a__transfer__requests_1ga6a8f97093494f2331dbdf9295d7c2c6b" prot="public" static="no">
+        <name>IS_SPI_I2S_DMAREQ</name>
+        <param><defname>DMAREQ</defname></param>
+        <initializer>((((DMAREQ) &amp; (uint16_t)0xFFFC) == 0x00) &amp;&amp; ((DMAREQ) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="344" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

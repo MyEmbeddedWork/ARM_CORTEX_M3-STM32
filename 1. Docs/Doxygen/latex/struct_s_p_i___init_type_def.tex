@@ -1,0 +1,140 @@
+\hypertarget{struct_s_p_i___init_type_def}{}\section{S\+P\+I\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_s_p_i___init_type_def}\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+
+
+S\+PI Init structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f10x\+\_\+spi.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_a8cf0fefa76b9238a41997db14eac62a9}{S\+P\+I\+\_\+\+Direction}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_a578435d3b3a17baa5d5ff87447aa697f}{S\+P\+I\+\_\+\+Mode}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_a0e63950d46a6483f9b7048b8c97800b8}{S\+P\+I\+\_\+\+Data\+Size}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_a1fe46794d91fd950e06da06b0e488997}{S\+P\+I\+\_\+\+C\+P\+OL}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_acdaac9259c45f137e804f90122edb129}{S\+P\+I\+\_\+\+C\+P\+HA}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_a6c1ea4b5e3d147b74799efa42e3903c6}{S\+P\+I\+\_\+\+N\+SS}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_adfcf6178b6a117643111c13403f32e71}{S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_ace7ca292c290953f8a6ae86f79949f5b}{S\+P\+I\+\_\+\+First\+Bit}
+\item 
+uint16\+\_\+t \hyperlink{struct_s_p_i___init_type_def_aee6460416ade6c4016aac2bd64cae0eb}{S\+P\+I\+\_\+\+C\+R\+C\+Polynomial}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+PI Init structure definition. 
+
+Definition at line 56 of file stm32f10x\+\_\+spi.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_adfcf6178b6a117643111c13403f32e71}\label{struct_s_p_i___init_type_def_adfcf6178b6a117643111c13403f32e71}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler@{S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler}}
+\index{S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler@{S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler}{SPI\_BaudRatePrescaler}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+Baud\+Rate\+Prescaler}
+
+Specifies the Baud Rate prescaler value which will be used to configure the transmit and receive S\+CK clock. This parameter can be a value of \hyperlink{group___s_p_i___baud_rate___prescaler}{S\+P\+I\+\_\+\+Baud\+Rate\+\_\+\+Prescaler}. \begin{DoxyNote}{Note}
+The communication clock is derived from the master clock. The slave clock does not need to be set. 
+\end{DoxyNote}
+
+
+Definition at line 77 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_acdaac9259c45f137e804f90122edb129}\label{struct_s_p_i___init_type_def_acdaac9259c45f137e804f90122edb129}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+C\+P\+HA@{S\+P\+I\+\_\+\+C\+P\+HA}}
+\index{S\+P\+I\+\_\+\+C\+P\+HA@{S\+P\+I\+\_\+\+C\+P\+HA}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+C\+P\+HA}{SPI\_CPHA}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+C\+P\+HA}
+
+Specifies the clock active edge for the bit capture. This parameter can be a value of \hyperlink{group___s_p_i___clock___phase}{S\+P\+I\+\_\+\+Clock\+\_\+\+Phase} 
+
+Definition at line 70 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_a1fe46794d91fd950e06da06b0e488997}\label{struct_s_p_i___init_type_def_a1fe46794d91fd950e06da06b0e488997}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+C\+P\+OL@{S\+P\+I\+\_\+\+C\+P\+OL}}
+\index{S\+P\+I\+\_\+\+C\+P\+OL@{S\+P\+I\+\_\+\+C\+P\+OL}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+C\+P\+OL}{SPI\_CPOL}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+C\+P\+OL}
+
+Specifies the serial clock steady state. This parameter can be a value of \hyperlink{group___s_p_i___clock___polarity}{S\+P\+I\+\_\+\+Clock\+\_\+\+Polarity} 
+
+Definition at line 67 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_aee6460416ade6c4016aac2bd64cae0eb}\label{struct_s_p_i___init_type_def_aee6460416ade6c4016aac2bd64cae0eb}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+C\+R\+C\+Polynomial@{S\+P\+I\+\_\+\+C\+R\+C\+Polynomial}}
+\index{S\+P\+I\+\_\+\+C\+R\+C\+Polynomial@{S\+P\+I\+\_\+\+C\+R\+C\+Polynomial}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+C\+R\+C\+Polynomial}{SPI\_CRCPolynomial}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+C\+R\+C\+Polynomial}
+
+Specifies the polynomial used for the C\+RC calculation. 
+
+Definition at line 86 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_a0e63950d46a6483f9b7048b8c97800b8}\label{struct_s_p_i___init_type_def_a0e63950d46a6483f9b7048b8c97800b8}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+Data\+Size@{S\+P\+I\+\_\+\+Data\+Size}}
+\index{S\+P\+I\+\_\+\+Data\+Size@{S\+P\+I\+\_\+\+Data\+Size}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Data\+Size}{SPI\_DataSize}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+Data\+Size}
+
+Specifies the S\+PI data size. This parameter can be a value of \hyperlink{group___s_p_i__data__size}{S\+P\+I\+\_\+data\+\_\+size} 
+
+Definition at line 64 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_a8cf0fefa76b9238a41997db14eac62a9}\label{struct_s_p_i___init_type_def_a8cf0fefa76b9238a41997db14eac62a9}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+Direction@{S\+P\+I\+\_\+\+Direction}}
+\index{S\+P\+I\+\_\+\+Direction@{S\+P\+I\+\_\+\+Direction}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Direction}{SPI\_Direction}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+Direction}
+
+Specifies the S\+PI unidirectional or bidirectional data mode. This parameter can be a value of \hyperlink{group___s_p_i__data__direction}{S\+P\+I\+\_\+data\+\_\+direction} 
+
+Definition at line 58 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_ace7ca292c290953f8a6ae86f79949f5b}\label{struct_s_p_i___init_type_def_ace7ca292c290953f8a6ae86f79949f5b}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+First\+Bit@{S\+P\+I\+\_\+\+First\+Bit}}
+\index{S\+P\+I\+\_\+\+First\+Bit@{S\+P\+I\+\_\+\+First\+Bit}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+First\+Bit}{SPI\_FirstBit}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+First\+Bit}
+
+Specifies whether data transfers start from M\+SB or L\+SB bit. This parameter can be a value of \hyperlink{group___s_p_i___m_s_b___l_s_b__transmission}{S\+P\+I\+\_\+\+M\+S\+B\+\_\+\+L\+S\+B\+\_\+transmission} 
+
+Definition at line 83 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_a578435d3b3a17baa5d5ff87447aa697f}\label{struct_s_p_i___init_type_def_a578435d3b3a17baa5d5ff87447aa697f}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+Mode@{S\+P\+I\+\_\+\+Mode}}
+\index{S\+P\+I\+\_\+\+Mode@{S\+P\+I\+\_\+\+Mode}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+Mode}{SPI\_Mode}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+Mode}
+
+Specifies the S\+PI operating mode. This parameter can be a value of \hyperlink{group___s_p_i__mode}{S\+P\+I\+\_\+mode} 
+
+Definition at line 61 of file stm32f10x\+\_\+spi.\+h.
+
+\mbox{\Hypertarget{struct_s_p_i___init_type_def_a6c1ea4b5e3d147b74799efa42e3903c6}\label{struct_s_p_i___init_type_def_a6c1ea4b5e3d147b74799efa42e3903c6}} 
+\index{S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}!S\+P\+I\+\_\+\+N\+SS@{S\+P\+I\+\_\+\+N\+SS}}
+\index{S\+P\+I\+\_\+\+N\+SS@{S\+P\+I\+\_\+\+N\+SS}!S\+P\+I\+\_\+\+Init\+Type\+Def@{S\+P\+I\+\_\+\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+N\+SS}{SPI\_NSS}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+P\+I\+\_\+\+Init\+Type\+Def\+::\+S\+P\+I\+\_\+\+N\+SS}
+
+Specifies whether the N\+SS signal is managed by hardware (N\+SS pin) or by software using the S\+SI bit. This parameter can be a value of \hyperlink{group___s_p_i___slave___select__management}{S\+P\+I\+\_\+\+Slave\+\_\+\+Select\+\_\+management} 
+
+Definition at line 73 of file stm32f10x\+\_\+spi.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/\hyperlink{stm32f10x__spi_8h}{stm32f10x\+\_\+spi.\+h}\end{DoxyCompactItemize}

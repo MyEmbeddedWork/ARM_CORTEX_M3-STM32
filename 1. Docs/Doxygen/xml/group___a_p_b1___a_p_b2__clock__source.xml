@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___a_p_b1___a_p_b2__clock__source" kind="group">
+    <compoundname>APB1_APB2_clock_source</compoundname>
+    <title>APB1_APB2_clock_source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___a_p_b1___a_p_b2__clock__source_1gae62b4a39ae69cc221f2ab7d4518bfb76" prot="public" static="no">
+        <name>RCC_HCLK_Div1</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="325" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_p_b1___a_p_b2__clock__source_1ga177bb3648def9a961c16f93f15ca0f62" prot="public" static="no">
+        <name>RCC_HCLK_Div2</name>
+        <initializer>((uint32_t)0x00000400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="326" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_p_b1___a_p_b2__clock__source_1gafd8cf0e32a3ea5648cdc054766bc2017" prot="public" static="no">
+        <name>RCC_HCLK_Div4</name>
+        <initializer>((uint32_t)0x00000500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="327" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_p_b1___a_p_b2__clock__source_1gab2e2b6e0b8fe22d6638b672918b22097" prot="public" static="no">
+        <name>RCC_HCLK_Div8</name>
+        <initializer>((uint32_t)0x00000600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="328" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_p_b1___a_p_b2__clock__source_1ga6353aaa0b302fdd5d946fd21756e2273" prot="public" static="no">
+        <name>RCC_HCLK_Div16</name>
+        <initializer>((uint32_t)0x00000700)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="329" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_p_b1___a_p_b2__clock__source_1gab70f1257ea47c1da4def8e351af4d9f2" prot="public" static="no">
+        <name>IS_RCC_PCLK</name>
+        <param><defname>PCLK</defname></param>
+        <initializer>(((PCLK) == <ref refid="group___a_p_b1___a_p_b2__clock__source_1gae62b4a39ae69cc221f2ab7d4518bfb76" kindref="member">RCC_HCLK_Div1</ref>) || ((PCLK) == <ref refid="group___a_p_b1___a_p_b2__clock__source_1ga177bb3648def9a961c16f93f15ca0f62" kindref="member">RCC_HCLK_Div2</ref>) || \
+                           ((PCLK) == <ref refid="group___a_p_b1___a_p_b2__clock__source_1gafd8cf0e32a3ea5648cdc054766bc2017" kindref="member">RCC_HCLK_Div4</ref>) || ((PCLK) == <ref refid="group___a_p_b1___a_p_b2__clock__source_1gab2e2b6e0b8fe22d6638b672918b22097" kindref="member">RCC_HCLK_Div8</ref>) || \
+                           ((PCLK) == <ref refid="group___a_p_b1___a_p_b2__clock__source_1ga6353aaa0b302fdd5d946fd21756e2273" kindref="member">RCC_HCLK_Div16</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="330" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___option___bytes___i_watchdog" kind="group">
+    <compoundname>Option_Bytes_IWatchdog</compoundname>
+    <title>Option_Bytes_IWatchdog</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce" prot="public" static="no">
+        <name>OB_IWDG_SW</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Software IWDG selected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="228" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a" prot="public" static="no">
+        <name>OB_IWDG_HW</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hardware IWDG selected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="229" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___option___bytes___i_watchdog_1gaf2871652c08e76499d9449be6556f12c" prot="public" static="no">
+        <name>IS_OB_IWDG_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce" kindref="member">OB_IWDG_SW</ref>) || ((SOURCE) == <ref refid="group___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a" kindref="member">OB_IWDG_HW</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="230" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

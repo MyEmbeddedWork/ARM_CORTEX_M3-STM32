@@ -1,0 +1,46 @@
+.TH "TIM_One_Pulse_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_One_Pulse_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_OPMode_Single\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OPMode_Repetitive\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OPM_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_OPM_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == TIM_OPMode_Single) || \
+                               ((MODE) == TIM_OPMode_Repetitive))
+.fi
+.PP
+Definition at line 324 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OPMode_Repetitive   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 323 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OPMode_Single   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 322 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

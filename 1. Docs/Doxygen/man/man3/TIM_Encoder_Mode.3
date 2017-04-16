@@ -1,0 +1,54 @@
+.TH "TIM_Encoder_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Encoder_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_EncoderMode_TI1\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EncoderMode_TI2\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EncoderMode_TI12\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_ENCODER_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_ENCODER_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == TIM_EncoderMode_TI1) || \
+                                   ((MODE) == TIM_EncoderMode_TI2) || \
+                                   ((MODE) == TIM_EncoderMode_TI12))
+.fi
+.PP
+Definition at line 838 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EncoderMode_TI1   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 835 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EncoderMode_TI12   ((uint16_t)0x0003)"
+
+.PP
+Definition at line 837 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EncoderMode_TI2   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 836 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,155 @@
+.TH "Configuration_section_for_CMSIS" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Configuration_section_for_CMSIS
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__MPU_PRESENT\fP   0"
+.br
+.RI "Configuration of the Cortex-M3 Processor and Core Peripherals\&. "
+.ti -1c
+.RI "#define \fB__NVIC_PRIO_BITS\fP   4"
+.br
+.ti -1c
+.RI "#define \fB__Vendor_SysTickConfig\fP   0"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBIRQn\fP \fBIRQn_Type\fP"
+.br
+.RI "STM32F10x Interrupt Number Definition, according to the selected device in \fBLibrary_configuration_section\fP\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBIRQn\fP { \fBNonMaskableInt_IRQn\fP = -14, \fBMemoryManagement_IRQn\fP = -12, \fBBusFault_IRQn\fP = -11, \fBUsageFault_IRQn\fP = -10, \fBSVCall_IRQn\fP = -5, \fBDebugMonitor_IRQn\fP = -4, \fBPendSV_IRQn\fP = -2, \fBSysTick_IRQn\fP = -1, \fBWWDG_IRQn\fP = 0, \fBPVD_IRQn\fP = 1, \fBTAMPER_IRQn\fP = 2, \fBRTC_IRQn\fP = 3, \fBFLASH_IRQn\fP = 4, \fBRCC_IRQn\fP = 5, \fBEXTI0_IRQn\fP = 6, \fBEXTI1_IRQn\fP = 7, \fBEXTI2_IRQn\fP = 8, \fBEXTI3_IRQn\fP = 9, \fBEXTI4_IRQn\fP = 10, \fBDMA1_Channel1_IRQn\fP = 11, \fBDMA1_Channel2_IRQn\fP = 12, \fBDMA1_Channel3_IRQn\fP = 13, \fBDMA1_Channel4_IRQn\fP = 14, \fBDMA1_Channel5_IRQn\fP = 15, \fBDMA1_Channel6_IRQn\fP = 16, \fBDMA1_Channel7_IRQn\fP = 17 }
+.RI "STM32F10x Interrupt Number Definition, according to the selected device in \fBLibrary_configuration_section\fP\&. ""
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __MPU_PRESENT   0"
+
+.PP
+Configuration of the Cortex-M3 Processor and Core Peripherals\&. Other STM32 devices does not provide an MPU 
+.PP
+Definition at line 158 of file stm32f10x\&.h\&.
+.SS "#define __NVIC_PRIO_BITS   4"
+STM32 uses 4 Bits for the Priority Levels 
+.PP
+Definition at line 160 of file stm32f10x\&.h\&.
+.SS "#define __Vendor_SysTickConfig   0"
+Set to 1 if different SysTick Config is used 
+.PP
+Definition at line 161 of file stm32f10x\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBIRQn\fP  \fBIRQn_Type\fP"
+
+.PP
+STM32F10x Interrupt Number Definition, according to the selected device in \fBLibrary_configuration_section\fP\&. 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBIRQn\fP"
+
+.PP
+STM32F10x Interrupt Number Definition, according to the selected device in \fBLibrary_configuration_section\fP\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINonMaskableInt_IRQn \fP\fP
+2 Non Maskable Interrupt 
+.TP
+\fB\fIMemoryManagement_IRQn \fP\fP
+4 Cortex-M3 Memory Management Interrupt 
+.TP
+\fB\fIBusFault_IRQn \fP\fP
+5 Cortex-M3 Bus Fault Interrupt 
+.TP
+\fB\fIUsageFault_IRQn \fP\fP
+6 Cortex-M3 Usage Fault Interrupt 
+.TP
+\fB\fISVCall_IRQn \fP\fP
+11 Cortex-M3 SV Call Interrupt 
+.TP
+\fB\fIDebugMonitor_IRQn \fP\fP
+12 Cortex-M3 Debug Monitor Interrupt 
+.TP
+\fB\fIPendSV_IRQn \fP\fP
+14 Cortex-M3 Pend SV Interrupt 
+.TP
+\fB\fISysTick_IRQn \fP\fP
+15 Cortex-M3 System Tick Interrupt 
+.TP
+\fB\fIWWDG_IRQn \fP\fP
+Window WatchDog Interrupt 
+.TP
+\fB\fIPVD_IRQn \fP\fP
+PVD through EXTI Line detection Interrupt 
+.TP
+\fB\fITAMPER_IRQn \fP\fP
+Tamper Interrupt 
+.TP
+\fB\fIRTC_IRQn \fP\fP
+RTC global Interrupt 
+.TP
+\fB\fIFLASH_IRQn \fP\fP
+FLASH global Interrupt 
+.TP
+\fB\fIRCC_IRQn \fP\fP
+RCC global Interrupt 
+.TP
+\fB\fIEXTI0_IRQn \fP\fP
+EXTI Line0 Interrupt 
+.TP
+\fB\fIEXTI1_IRQn \fP\fP
+EXTI Line1 Interrupt 
+.TP
+\fB\fIEXTI2_IRQn \fP\fP
+EXTI Line2 Interrupt 
+.TP
+\fB\fIEXTI3_IRQn \fP\fP
+EXTI Line3 Interrupt 
+.TP
+\fB\fIEXTI4_IRQn \fP\fP
+EXTI Line4 Interrupt 
+.TP
+\fB\fIDMA1_Channel1_IRQn \fP\fP
+DMA1 Channel 1 global Interrupt 
+.TP
+\fB\fIDMA1_Channel2_IRQn \fP\fP
+DMA1 Channel 2 global Interrupt 
+.TP
+\fB\fIDMA1_Channel3_IRQn \fP\fP
+DMA1 Channel 3 global Interrupt 
+.TP
+\fB\fIDMA1_Channel4_IRQn \fP\fP
+DMA1 Channel 4 global Interrupt 
+.TP
+\fB\fIDMA1_Channel5_IRQn \fP\fP
+DMA1 Channel 5 global Interrupt 
+.TP
+\fB\fIDMA1_Channel6_IRQn \fP\fP
+DMA1 Channel 6 global Interrupt 
+.TP
+\fB\fIDMA1_Channel7_IRQn \fP\fP
+DMA1 Channel 7 global Interrupt 
+.PP
+Definition at line 167 of file stm32f10x\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

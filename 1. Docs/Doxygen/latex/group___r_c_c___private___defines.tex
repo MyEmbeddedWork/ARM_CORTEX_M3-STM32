@@ -1,0 +1,547 @@
+\hypertarget{group___r_c_c___private___defines}{}\section{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}
+\label{group___r_c_c___private___defines}\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+Collaboration diagram for R\+C\+C\+\_\+\+Private\+\_\+\+Defines\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{group___r_c_c___private___defines}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___peripheral__memory__map_ga0e681b03f364532055d88f63fec0d99d}{R\+C\+C\+\_\+\+B\+A\+SE} -\/ \hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x00)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga3d3085e491cbef815d223afbe5bf1930}{H\+S\+I\+O\+N\+\_\+\+Bit\+Number}~0x00
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gac3290a833c0e35ec17d32c2d494e6133}{C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga3d3085e491cbef815d223afbe5bf1930}{H\+S\+I\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gab24d7f5f8e4b3b717fd91b54f393f6a3}{P\+L\+L\+O\+N\+\_\+\+Bit\+Number}~0x18
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga3f1fb2589cb8b5ac2f7121aba1135a5f}{C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_gab24d7f5f8e4b3b717fd91b54f393f6a3}{P\+L\+L\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga253fa44d87aabc55f0cd6628e77a51fd}{C\+S\+S\+O\+N\+\_\+\+Bit\+Number}~0x13
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaca914aed10477ae4090fea0a9639b1ea}{C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga253fa44d87aabc55f0cd6628e77a51fd}{C\+S\+S\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x04)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gad758d602b6d2b93a04cb8ada87c20c82}{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number}~0x16
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gabde4e60349b8412a79611c0aeb27c3a2}{C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_gad758d602b6d2b93a04cb8ada87c20c82}{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x20)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga9302c551752124766afc4cee65436405}{R\+T\+C\+E\+N\+\_\+\+Bit\+Number}~0x0F
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaf70aaf70b0752ccb3a60307b2fb46038}{B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga9302c551752124766afc4cee65436405}{R\+T\+C\+E\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gae6718158034388d8fde8caaa28ffe8b9}{B\+D\+R\+S\+T\+\_\+\+Bit\+Number}~0x10
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga892fdf297b85b85cbaf0723649b31818}{B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_gae6718158034388d8fde8caaa28ffe8b9}{B\+D\+R\+S\+T\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x24)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga3f9dbe50769ce2a63ae12520433b9b40}{L\+S\+I\+O\+N\+\_\+\+Bit\+Number}~0x00
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaa253e36e7e5fb02998c0e4d0388abc52}{C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga3f9dbe50769ce2a63ae12520433b9b40}{L\+S\+I\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga98f5ef520febdb0a1cd8f407f8e5e62f}{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset}~((uint32\+\_\+t)0x\+F\+F\+F\+B\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga84972845ff646ce1d3902d54dd7b9bc6}{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set}~((uint32\+\_\+t)0x00040000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga8185e6ea6e9abafcdee0e5f58e62805e}{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset}~((uint32\+\_\+t)0x\+F\+F\+F\+E\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaca6ef9e2f11b921355809a5eccfec864}{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set}~((uint32\+\_\+t)0x00010000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gac6a6adccdfb5a34541e2cdf01daf98ce}{C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F07)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaea605b2eaea5332218130fc2d20d917c}{C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+C0\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga26ac4de307d4c081867dc0344f54c17a}{C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask}~((uint32\+\_\+t)0x003\+C0000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga8fd33db1092dfc565314b7bf395bba23}{C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask}~((uint32\+\_\+t)0x00010000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga025835ddeb698b8c119ddf355b2fbded}{C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask}~((uint32\+\_\+t)0x00020000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaefba904c88a72c7e2c12e8fcef38300a}{C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask}~((uint32\+\_\+t)0x0000000\+C)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga41e0b286664f76c2057cffb134809c51}{C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F\+F\+C)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga55937d93be56562243d92c507145112c}{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F0\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaca06c6cc484e08423a56cfca6928b9ae}{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}~((uint32\+\_\+t)0x000000\+F0)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gab02d8032f451eb5a1d139007ff57f22e}{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F8\+F\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga74838e1873c5e4c46eef61a81b1bd2c5}{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask}~((uint32\+\_\+t)0x00000700)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gab2ee73d52f48cb201e493e381928d1ae}{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+C7\+F\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga63883951c986cf6dc1d6a8775f821af7}{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask}~((uint32\+\_\+t)0x00003800)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga12eb3f1b37b9101bf3810374bad68703}{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F3\+F\+F\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaead9b35ba6e98274613c28d24bd228cc}{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}~((uint32\+\_\+t)0x0000\+C000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga415e9d29487f0ef4101a9c6e4f20151f}{C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set}~((uint32\+\_\+t)0x01000000)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga2be62bf481cd44de9ab604efe5595ff6}{F\+L\+A\+G\+\_\+\+Mask}~((uint8\+\_\+t)0x1\+F)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_gaab58c3f3f81bf1ab9a14cf3fececd8c4}{C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS}~((uint32\+\_\+t)0x40021009)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga43f47430582c9575970901533e525bb5}{C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS}~((uint32\+\_\+t)0x4002100\+A)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga5fea86b59ec4be059d922db57cca3b3f}{C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS}~((uint32\+\_\+t)0x40021007)
+\item 
+\#define \hyperlink{group___r_c_c___private___defines_ga40b5a415d697b6af7babd8a208c92435}{B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS}~(\hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE} + \hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga40b5a415d697b6af7babd8a208c92435}\label{group___r_c_c___private___defines_ga40b5a415d697b6af7babd8a208c92435}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS@{B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS@{B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS}{BDCR\_ADDRESS}}
+{\footnotesize\ttfamily \#define B\+D\+C\+R\+\_\+\+A\+D\+D\+R\+E\+SS~(\hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE} + \hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET})}
+
+
+
+Definition at line 175 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga892fdf297b85b85cbaf0723649b31818}\label{group___r_c_c___private___defines_ga892fdf297b85b85cbaf0723649b31818}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB@{B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB}}
+\index{B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB@{B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB}{BDCR\_BDRST\_BB}}
+{\footnotesize\ttfamily \#define B\+D\+C\+R\+\_\+\+B\+D\+R\+S\+T\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_gae6718158034388d8fde8caaa28ffe8b9}{B\+D\+R\+S\+T\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 96 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}\label{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET@{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET@{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET}{BDCR\_OFFSET}}
+{\footnotesize\ttfamily \#define B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x20)}
+
+
+
+Definition at line 90 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaf70aaf70b0752ccb3a60307b2fb46038}\label{group___r_c_c___private___defines_gaf70aaf70b0752ccb3a60307b2fb46038}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB@{B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB}}
+\index{B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB@{B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB}{BDCR\_RTCEN\_BB}}
+{\footnotesize\ttfamily \#define B\+D\+C\+R\+\_\+\+R\+T\+C\+E\+N\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga5f8a0c3cb5f5c835bf7eef09515138ad}{B\+D\+C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga9302c551752124766afc4cee65436405}{R\+T\+C\+E\+N\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 92 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gae6718158034388d8fde8caaa28ffe8b9}\label{group___r_c_c___private___defines_gae6718158034388d8fde8caaa28ffe8b9}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!B\+D\+R\+S\+T\+\_\+\+Bit\+Number@{B\+D\+R\+S\+T\+\_\+\+Bit\+Number}}
+\index{B\+D\+R\+S\+T\+\_\+\+Bit\+Number@{B\+D\+R\+S\+T\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{B\+D\+R\+S\+T\+\_\+\+Bit\+Number}{BDRST\_BitNumber}}
+{\footnotesize\ttfamily \#define B\+D\+R\+S\+T\+\_\+\+Bit\+Number~0x10}
+
+
+
+Definition at line 95 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga12eb3f1b37b9101bf3810374bad68703}\label{group___r_c_c___private___defines_ga12eb3f1b37b9101bf3810374bad68703}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}{CFGR\_ADCPRE\_Reset\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+F\+F3\+F\+F\+F)}
+
+
+
+Definition at line 145 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaead9b35ba6e98274613c28d24bd228cc}\label{group___r_c_c___private___defines_gaead9b35ba6e98274613c28d24bd228cc}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}{CFGR\_ADCPRE\_Set\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+A\+D\+C\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask~((uint32\+\_\+t)0x0000\+C000)}
+
+
+
+Definition at line 146 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga5fea86b59ec4be059d922db57cca3b3f}\label{group___r_c_c___private___defines_ga5fea86b59ec4be059d922db57cca3b3f}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS@{C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS@{C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS}{CFGR\_BYTE4\_ADDRESS}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+B\+Y\+T\+E4\+\_\+\+A\+D\+D\+R\+E\+SS~((uint32\+\_\+t)0x40021007)}
+
+
+
+Definition at line 172 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga55937d93be56562243d92c507145112c}\label{group___r_c_c___private___defines_ga55937d93be56562243d92c507145112c}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask}{CFGR\_HPRE\_Reset\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Reset\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F0\+F)}
+
+
+
+Definition at line 139 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaca06c6cc484e08423a56cfca6928b9ae}\label{group___r_c_c___private___defines_gaca06c6cc484e08423a56cfca6928b9ae}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask}{CFGR\_HPRE\_Set\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+H\+P\+R\+E\+\_\+\+Set\+\_\+\+Mask~((uint32\+\_\+t)0x000000\+F0)}
+
+
+
+Definition at line 140 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}\label{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET@{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET@{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}{CFGR\_OFFSET}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x04)}
+
+
+
+Definition at line 77 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaea605b2eaea5332218130fc2d20d917c}\label{group___r_c_c___private___defines_gaea605b2eaea5332218130fc2d20d917c}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask}{CFGR\_PLL\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+L\+L\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+C0\+F\+F\+F\+F)}
+
+
+
+Definition at line 131 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga26ac4de307d4c081867dc0344f54c17a}\label{group___r_c_c___private___defines_ga26ac4de307d4c081867dc0344f54c17a}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask}{CFGR\_PLLMull\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+L\+L\+Mull\+\_\+\+Mask~((uint32\+\_\+t)0x003\+C0000)}
+
+
+
+Definition at line 134 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga8fd33db1092dfc565314b7bf395bba23}\label{group___r_c_c___private___defines_ga8fd33db1092dfc565314b7bf395bba23}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask}{CFGR\_PLLSRC\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+L\+L\+S\+R\+C\+\_\+\+Mask~((uint32\+\_\+t)0x00010000)}
+
+
+
+Definition at line 135 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga025835ddeb698b8c119ddf355b2fbded}\label{group___r_c_c___private___defines_ga025835ddeb698b8c119ddf355b2fbded}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask}{CFGR\_PLLXTPRE\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+L\+L\+X\+T\+P\+R\+E\+\_\+\+Mask~((uint32\+\_\+t)0x00020000)}
+
+
+
+Definition at line 136 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gab02d8032f451eb5a1d139007ff57f22e}\label{group___r_c_c___private___defines_gab02d8032f451eb5a1d139007ff57f22e}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask}{CFGR\_PPRE1\_Reset\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Reset\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F8\+F\+F)}
+
+
+
+Definition at line 141 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga74838e1873c5e4c46eef61a81b1bd2c5}\label{group___r_c_c___private___defines_ga74838e1873c5e4c46eef61a81b1bd2c5}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask}{CFGR\_PPRE1\_Set\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+P\+R\+E1\+\_\+\+Set\+\_\+\+Mask~((uint32\+\_\+t)0x00000700)}
+
+
+
+Definition at line 142 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gab2ee73d52f48cb201e493e381928d1ae}\label{group___r_c_c___private___defines_gab2ee73d52f48cb201e493e381928d1ae}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask}{CFGR\_PPRE2\_Reset\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Reset\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+F\+F\+C7\+F\+F)}
+
+
+
+Definition at line 143 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga63883951c986cf6dc1d6a8775f821af7}\label{group___r_c_c___private___defines_ga63883951c986cf6dc1d6a8775f821af7}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask}{CFGR\_PPRE2\_Set\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+P\+P\+R\+E2\+\_\+\+Set\+\_\+\+Mask~((uint32\+\_\+t)0x00003800)}
+
+
+
+Definition at line 144 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga41e0b286664f76c2057cffb134809c51}\label{group___r_c_c___private___defines_ga41e0b286664f76c2057cffb134809c51}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask}{CFGR\_SW\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+S\+W\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F\+F\+C)}
+
+
+
+Definition at line 138 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaefba904c88a72c7e2c12e8fcef38300a}\label{group___r_c_c___private___defines_gaefba904c88a72c7e2c12e8fcef38300a}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask}}
+\index{C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask@{C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask}{CFGR\_SWS\_Mask}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+S\+W\+S\+\_\+\+Mask~((uint32\+\_\+t)0x0000000\+C)}
+
+
+
+Definition at line 137 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gabde4e60349b8412a79611c0aeb27c3a2}\label{group___r_c_c___private___defines_gabde4e60349b8412a79611c0aeb27c3a2}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB@{C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB}}
+\index{C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB@{C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB}{CFGR\_USBPRE\_BB}}
+{\footnotesize\ttfamily \#define C\+F\+G\+R\+\_\+\+U\+S\+B\+P\+R\+E\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga8682298330c3b9bae1992e4f1a0af985}{C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_gad758d602b6d2b93a04cb8ada87c20c82}{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 81 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaab58c3f3f81bf1ab9a14cf3fececd8c4}\label{group___r_c_c___private___defines_gaab58c3f3f81bf1ab9a14cf3fececd8c4}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS@{C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS@{C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS}{CIR\_BYTE2\_ADDRESS}}
+{\footnotesize\ttfamily \#define C\+I\+R\+\_\+\+B\+Y\+T\+E2\+\_\+\+A\+D\+D\+R\+E\+SS~((uint32\+\_\+t)0x40021009)}
+
+
+
+Definition at line 166 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga43f47430582c9575970901533e525bb5}\label{group___r_c_c___private___defines_ga43f47430582c9575970901533e525bb5}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS@{C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS@{C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS}{CIR\_BYTE3\_ADDRESS}}
+{\footnotesize\ttfamily \#define C\+I\+R\+\_\+\+B\+Y\+T\+E3\+\_\+\+A\+D\+D\+R\+E\+SS~((uint32\+\_\+t)0x4002100\+A)}
+
+
+
+Definition at line 169 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaca914aed10477ae4090fea0a9639b1ea}\label{group___r_c_c___private___defines_gaca914aed10477ae4090fea0a9639b1ea}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB@{C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB}}
+\index{C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB@{C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB}{CR\_CSSON\_BB}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+C\+S\+S\+O\+N\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga253fa44d87aabc55f0cd6628e77a51fd}{C\+S\+S\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 72 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga98f5ef520febdb0a1cd8f407f8e5e62f}\label{group___r_c_c___private___defines_ga98f5ef520febdb0a1cd8f407f8e5e62f}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset@{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset}}
+\index{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset@{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset}{CR\_HSEBYP\_Reset}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Reset~((uint32\+\_\+t)0x\+F\+F\+F\+B\+F\+F\+F\+F)}
+
+
+
+Definition at line 121 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga84972845ff646ce1d3902d54dd7b9bc6}\label{group___r_c_c___private___defines_ga84972845ff646ce1d3902d54dd7b9bc6}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set@{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set}}
+\index{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set@{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set}{CR\_HSEBYP\_Set}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+H\+S\+E\+B\+Y\+P\+\_\+\+Set~((uint32\+\_\+t)0x00040000)}
+
+
+
+Definition at line 122 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga8185e6ea6e9abafcdee0e5f58e62805e}\label{group___r_c_c___private___defines_ga8185e6ea6e9abafcdee0e5f58e62805e}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset@{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset}}
+\index{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset@{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset}{CR\_HSEON\_Reset}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Reset~((uint32\+\_\+t)0x\+F\+F\+F\+E\+F\+F\+F\+F)}
+
+
+
+Definition at line 123 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaca6ef9e2f11b921355809a5eccfec864}\label{group___r_c_c___private___defines_gaca6ef9e2f11b921355809a5eccfec864}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set@{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set}}
+\index{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set@{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set}{CR\_HSEON\_Set}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+H\+S\+E\+O\+N\+\_\+\+Set~((uint32\+\_\+t)0x00010000)}
+
+
+
+Definition at line 124 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gac3290a833c0e35ec17d32c2d494e6133}\label{group___r_c_c___private___defines_gac3290a833c0e35ec17d32c2d494e6133}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB@{C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB}}
+\index{C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB@{C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB}{CR\_HSION\_BB}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+H\+S\+I\+O\+N\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga3d3085e491cbef815d223afbe5bf1930}{H\+S\+I\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 54 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gac6a6adccdfb5a34541e2cdf01daf98ce}\label{group___r_c_c___private___defines_gac6a6adccdfb5a34541e2cdf01daf98ce}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask@{C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask}}
+\index{C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask@{C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask}{CR\_HSITRIM\_Mask}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+H\+S\+I\+T\+R\+I\+M\+\_\+\+Mask~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F07)}
+
+
+
+Definition at line 125 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}\label{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+O\+F\+F\+S\+ET@{C\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{C\+R\+\_\+\+O\+F\+F\+S\+ET@{C\+R\+\_\+\+O\+F\+F\+S\+ET}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+O\+F\+F\+S\+ET}{CR\_OFFSET}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+O\+F\+F\+S\+ET~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x00)}
+
+
+
+Definition at line 52 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga3f1fb2589cb8b5ac2f7121aba1135a5f}\label{group___r_c_c___private___defines_ga3f1fb2589cb8b5ac2f7121aba1135a5f}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB@{C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB}}
+\index{C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB@{C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB}{CR\_PLLON\_BB}}
+{\footnotesize\ttfamily \#define C\+R\+\_\+\+P\+L\+L\+O\+N\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_gafa1d3d0ea72132df651c76fc1bdffffc}{C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_gab24d7f5f8e4b3b717fd91b54f393f6a3}{P\+L\+L\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 58 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gaa253e36e7e5fb02998c0e4d0388abc52}\label{group___r_c_c___private___defines_gaa253e36e7e5fb02998c0e4d0388abc52}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB@{C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB}}
+\index{C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB@{C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB}{CSR\_LSION\_BB}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+L\+S\+I\+O\+N\+\_\+\+BB~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___r_c_c___private___defines_ga3f9dbe50769ce2a63ae12520433b9b40}{L\+S\+I\+O\+N\+\_\+\+Bit\+Number} $\ast$ 4))}
+
+
+
+Definition at line 103 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}\label{group___r_c_c___private___defines_ga984cbe73312b6d3d355c5053763d499a}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+S\+R\+\_\+\+O\+F\+F\+S\+ET@{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET@{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+S\+R\+\_\+\+O\+F\+F\+S\+ET}{CSR\_OFFSET}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+O\+F\+F\+S\+ET~(\hyperlink{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET} + 0x24)}
+
+
+
+Definition at line 101 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga415e9d29487f0ef4101a9c6e4f20151f}\label{group___r_c_c___private___defines_ga415e9d29487f0ef4101a9c6e4f20151f}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set@{C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set}}
+\index{C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set@{C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set}{CSR\_RMVF\_Set}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+R\+M\+V\+F\+\_\+\+Set~((uint32\+\_\+t)0x01000000)}
+
+
+
+Definition at line 149 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga253fa44d87aabc55f0cd6628e77a51fd}\label{group___r_c_c___private___defines_ga253fa44d87aabc55f0cd6628e77a51fd}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!C\+S\+S\+O\+N\+\_\+\+Bit\+Number@{C\+S\+S\+O\+N\+\_\+\+Bit\+Number}}
+\index{C\+S\+S\+O\+N\+\_\+\+Bit\+Number@{C\+S\+S\+O\+N\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{C\+S\+S\+O\+N\+\_\+\+Bit\+Number}{CSSON\_BitNumber}}
+{\footnotesize\ttfamily \#define C\+S\+S\+O\+N\+\_\+\+Bit\+Number~0x13}
+
+
+
+Definition at line 71 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga2be62bf481cd44de9ab604efe5595ff6}\label{group___r_c_c___private___defines_ga2be62bf481cd44de9ab604efe5595ff6}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!F\+L\+A\+G\+\_\+\+Mask@{F\+L\+A\+G\+\_\+\+Mask}}
+\index{F\+L\+A\+G\+\_\+\+Mask@{F\+L\+A\+G\+\_\+\+Mask}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{F\+L\+A\+G\+\_\+\+Mask}{FLAG\_Mask}}
+{\footnotesize\ttfamily \#define F\+L\+A\+G\+\_\+\+Mask~((uint8\+\_\+t)0x1\+F)}
+
+
+
+Definition at line 163 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga3d3085e491cbef815d223afbe5bf1930}\label{group___r_c_c___private___defines_ga3d3085e491cbef815d223afbe5bf1930}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!H\+S\+I\+O\+N\+\_\+\+Bit\+Number@{H\+S\+I\+O\+N\+\_\+\+Bit\+Number}}
+\index{H\+S\+I\+O\+N\+\_\+\+Bit\+Number@{H\+S\+I\+O\+N\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{H\+S\+I\+O\+N\+\_\+\+Bit\+Number}{HSION\_BitNumber}}
+{\footnotesize\ttfamily \#define H\+S\+I\+O\+N\+\_\+\+Bit\+Number~0x00}
+
+
+
+Definition at line 53 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga3f9dbe50769ce2a63ae12520433b9b40}\label{group___r_c_c___private___defines_ga3f9dbe50769ce2a63ae12520433b9b40}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!L\+S\+I\+O\+N\+\_\+\+Bit\+Number@{L\+S\+I\+O\+N\+\_\+\+Bit\+Number}}
+\index{L\+S\+I\+O\+N\+\_\+\+Bit\+Number@{L\+S\+I\+O\+N\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{L\+S\+I\+O\+N\+\_\+\+Bit\+Number}{LSION\_BitNumber}}
+{\footnotesize\ttfamily \#define L\+S\+I\+O\+N\+\_\+\+Bit\+Number~0x00}
+
+
+
+Definition at line 102 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gab24d7f5f8e4b3b717fd91b54f393f6a3}\label{group___r_c_c___private___defines_gab24d7f5f8e4b3b717fd91b54f393f6a3}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!P\+L\+L\+O\+N\+\_\+\+Bit\+Number@{P\+L\+L\+O\+N\+\_\+\+Bit\+Number}}
+\index{P\+L\+L\+O\+N\+\_\+\+Bit\+Number@{P\+L\+L\+O\+N\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{P\+L\+L\+O\+N\+\_\+\+Bit\+Number}{PLLON\_BitNumber}}
+{\footnotesize\ttfamily \#define P\+L\+L\+O\+N\+\_\+\+Bit\+Number~0x18}
+
+
+
+Definition at line 57 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}\label{group___r_c_c___private___defines_ga539e07c3b3c55f1f1d47231341fb11e1}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!R\+C\+C\+\_\+\+O\+F\+F\+S\+ET@{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET}}
+\index{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET@{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{R\+C\+C\+\_\+\+O\+F\+F\+S\+ET}{RCC\_OFFSET}}
+{\footnotesize\ttfamily \#define R\+C\+C\+\_\+\+O\+F\+F\+S\+ET~(\hyperlink{group___peripheral__memory__map_ga0e681b03f364532055d88f63fec0d99d}{R\+C\+C\+\_\+\+B\+A\+SE} -\/ \hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE})}
+
+
+
+Definition at line 47 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_ga9302c551752124766afc4cee65436405}\label{group___r_c_c___private___defines_ga9302c551752124766afc4cee65436405}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!R\+T\+C\+E\+N\+\_\+\+Bit\+Number@{R\+T\+C\+E\+N\+\_\+\+Bit\+Number}}
+\index{R\+T\+C\+E\+N\+\_\+\+Bit\+Number@{R\+T\+C\+E\+N\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{R\+T\+C\+E\+N\+\_\+\+Bit\+Number}{RTCEN\_BitNumber}}
+{\footnotesize\ttfamily \#define R\+T\+C\+E\+N\+\_\+\+Bit\+Number~0x0F}
+
+
+
+Definition at line 91 of file stm32f10x\+\_\+rcc.\+c.
+
+\mbox{\Hypertarget{group___r_c_c___private___defines_gad758d602b6d2b93a04cb8ada87c20c82}\label{group___r_c_c___private___defines_gad758d602b6d2b93a04cb8ada87c20c82}} 
+\index{R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}!U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number@{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number}}
+\index{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number@{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number}!R\+C\+C\+\_\+\+Private\+\_\+\+Defines@{R\+C\+C\+\_\+\+Private\+\_\+\+Defines}}
+\subsubsection{\texorpdfstring{U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number}{USBPRE\_BitNumber}}
+{\footnotesize\ttfamily \#define U\+S\+B\+P\+R\+E\+\_\+\+Bit\+Number~0x16}
+
+
+
+Definition at line 80 of file stm32f10x\+\_\+rcc.\+c.
+

@@ -1,0 +1,195 @@
+.TH "SDIO_Interrupt_sources" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Interrupt_sources
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_IT_CCRCFAIL\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DCRCFAIL\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CTIMEOUT\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DTIMEOUT\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXUNDERR\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXOVERR\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CMDREND\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CMDSENT\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DATAEND\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_STBITERR\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DBCKEND\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CMDACT\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXACT\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXACT\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXFIFOHE\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXFIFOHF\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXFIFOF\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXFIFOF\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXFIFOE\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXFIFOE\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXDAVL\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXDAVL\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_SDIOIT\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CEATAEND\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_IT\fP(IT)   ((((IT) & (uint32_t)0xFF000000) == 0x00) && ((IT) != (uint32_t)0x00))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SDIO_IT(IT)   ((((IT) & (uint32_t)0xFF000000) == 0x00) && ((IT) != (uint32_t)0x00))"
+
+.PP
+Definition at line 227 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_CCRCFAIL   ((uint32_t)0x00000001)"
+
+.PP
+Definition at line 203 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_CEATAEND   ((uint32_t)0x00800000)"
+
+.PP
+Definition at line 226 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_CMDACT   ((uint32_t)0x00000800)"
+
+.PP
+Definition at line 214 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_CMDREND   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 209 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_CMDSENT   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 210 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_CTIMEOUT   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 205 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_DATAEND   ((uint32_t)0x00000100)"
+
+.PP
+Definition at line 211 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_DBCKEND   ((uint32_t)0x00000400)"
+
+.PP
+Definition at line 213 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_DCRCFAIL   ((uint32_t)0x00000002)"
+
+.PP
+Definition at line 204 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_DTIMEOUT   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 206 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_RXACT   ((uint32_t)0x00002000)"
+
+.PP
+Definition at line 216 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_RXDAVL   ((uint32_t)0x00200000)"
+
+.PP
+Definition at line 224 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_RXFIFOE   ((uint32_t)0x00080000)"
+
+.PP
+Definition at line 222 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_RXFIFOF   ((uint32_t)0x00020000)"
+
+.PP
+Definition at line 220 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_RXFIFOHF   ((uint32_t)0x00008000)"
+
+.PP
+Definition at line 218 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_RXOVERR   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 208 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_SDIOIT   ((uint32_t)0x00400000)"
+
+.PP
+Definition at line 225 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_STBITERR   ((uint32_t)0x00000200)"
+
+.PP
+Definition at line 212 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_TXACT   ((uint32_t)0x00001000)"
+
+.PP
+Definition at line 215 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_TXDAVL   ((uint32_t)0x00100000)"
+
+.PP
+Definition at line 223 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_TXFIFOE   ((uint32_t)0x00040000)"
+
+.PP
+Definition at line 221 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_TXFIFOF   ((uint32_t)0x00010000)"
+
+.PP
+Definition at line 219 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_TXFIFOHE   ((uint32_t)0x00004000)"
+
+.PP
+Definition at line 217 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_IT_TXUNDERR   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 207 of file stm32f10x_sdio\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

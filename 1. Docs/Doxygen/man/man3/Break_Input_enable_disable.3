@@ -1,0 +1,46 @@
+.TH "Break_Input_enable_disable" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Break_Input_enable_disable
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_Break_Enable\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Break_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAK_STATE\fP(STATE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_BREAK_STATE(STATE)"
+\fBValue:\fP
+.PP
+.nf
+(((STATE) == TIM_Break_Enable) || \
+                                   ((STATE) == TIM_Break_Disable))
+.fi
+.PP
+Definition at line 461 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_Break_Disable   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 460 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_Break_Enable   ((uint16_t)0x1000)"
+
+.PP
+Definition at line 459 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

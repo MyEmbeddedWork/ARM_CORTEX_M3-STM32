@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c__duty__cycle__in__fast__mode" kind="group">
+    <compoundname>I2C_duty_cycle_in_fast_mode</compoundname>
+    <title>I2C_duty_cycle_in_fast_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1" prot="public" static="no">
+        <name>I2C_DutyCycle_16_9</name>
+        <initializer>((uint16_t)0x4000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C fast mode Tlow/Thigh = 16/9 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="106" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db" prot="public" static="no">
+        <name>I2C_DutyCycle_2</name>
+        <initializer>((uint16_t)0xBFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C fast mode Tlow/Thigh = 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="107" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__duty__cycle__in__fast__mode_1gae9b3276d9b6ec872ee4fafa2b2fafb83" prot="public" static="no">
+        <name>IS_I2C_DUTY_CYCLE</name>
+        <param><defname>CYCLE</defname></param>
+        <initializer>(((CYCLE) == <ref refid="group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1" kindref="member">I2C_DutyCycle_16_9</ref>) || \
+                                  ((CYCLE) == <ref refid="group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db" kindref="member">I2C_DutyCycle_2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="108" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

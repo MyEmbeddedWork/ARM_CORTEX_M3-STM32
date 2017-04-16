@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___update___source" kind="group">
+    <compoundname>TIM_Update_Source</compoundname>
+    <title>TIM_Update_Source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___update___source_1ga32c67bc3f8211a2c7b44ee9fe1523875" prot="public" static="no">
+        <name>TIM_UpdateSource_Global</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source of update is the counter overflow/underflow or the setting of UG bit, or an update generation through the slave mode controller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="868" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___update___source_1ga6f50423cdb011137ae8cd303ccd2080c" prot="public" static="no">
+        <name>TIM_UpdateSource_Regular</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source of update is counter overflow/underflow. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="869" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___update___source_1ga7c916798d8f5f4a828afadceb5d38a95" prot="public" static="no">
+        <name>IS_TIM_UPDATE_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___t_i_m___update___source_1ga32c67bc3f8211a2c7b44ee9fe1523875" kindref="member">TIM_UpdateSource_Global</ref>) || \
+                                      ((SOURCE) == <ref refid="group___t_i_m___update___source_1ga6f50423cdb011137ae8cd303ccd2080c" kindref="member">TIM_UpdateSource_Regular</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="870" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+.TH "SDIO_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_InitTypeDef
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_sdio\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBSDIO_ClockEdge\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_ClockBypass\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_ClockPowerSave\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_BusWide\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSDIO_HardwareFlowControl\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBSDIO_ClockDiv\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 52 of file stm32f10x_sdio\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t SDIO_InitTypeDef::SDIO_BusWide"
+Specifies the SDIO bus width\&. This parameter can be a value of \fBSDIO_Bus_Wide\fP 
+.PP
+Definition at line 65 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_InitTypeDef::SDIO_ClockBypass"
+Specifies whether the SDIO Clock divider bypass is enabled or disabled\&. This parameter can be a value of \fBSDIO_Clock_Bypass\fP 
+.PP
+Definition at line 57 of file stm32f10x_sdio\&.h\&.
+.SS "uint8_t SDIO_InitTypeDef::SDIO_ClockDiv"
+Specifies the clock frequency of the SDIO controller\&. This parameter can be a value between 0x00 and 0xFF\&. 
+.PP
+Definition at line 71 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_InitTypeDef::SDIO_ClockEdge"
+Specifies the clock transition on which the bit capture is made\&. This parameter can be a value of \fBSDIO_Clock_Edge\fP 
+.PP
+Definition at line 54 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_InitTypeDef::SDIO_ClockPowerSave"
+Specifies whether SDIO Clock output is enabled or disabled when the bus is idle\&. This parameter can be a value of \fBSDIO_Clock_Power_Save\fP 
+.PP
+Definition at line 61 of file stm32f10x_sdio\&.h\&.
+.SS "uint32_t SDIO_InitTypeDef::SDIO_HardwareFlowControl"
+Specifies whether the SDIO hardware flow control is enabled or disabled\&. This parameter can be a value of \fBSDIO_Hardware_Flow_Control\fP 
+.PP
+Definition at line 68 of file stm32f10x_sdio\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

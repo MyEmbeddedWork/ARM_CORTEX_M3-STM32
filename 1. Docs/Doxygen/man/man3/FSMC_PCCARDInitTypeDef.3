@@ -1,0 +1,68 @@
+.TH "FSMC_PCCARDInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_PCCARDInitTypeDef \- FSMC PCCARD Init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_fsmc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBFSMC_Waitfeature\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_TCLRSetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_TARSetupTime\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP * \fBFSMC_CommonSpaceTimingStruct\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP * \fBFSMC_AttributeSpaceTimingStruct\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP * \fBFSMC_IOSpaceTimingStruct\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+FSMC PCCARD Init structure definition\&. 
+.PP
+Definition at line 217 of file stm32f10x_fsmc\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP* FSMC_PCCARDInitTypeDef::FSMC_AttributeSpaceTimingStruct"
+FSMC Attribute Space Timing 
+.PP
+Definition at line 233 of file stm32f10x_fsmc\&.h\&.
+.SS "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP* FSMC_PCCARDInitTypeDef::FSMC_CommonSpaceTimingStruct"
+FSMC Common Space Timing 
+.PP
+Definition at line 231 of file stm32f10x_fsmc\&.h\&.
+.SS "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP* FSMC_PCCARDInitTypeDef::FSMC_IOSpaceTimingStruct"
+FSMC IO Space Timing 
+.PP
+Definition at line 235 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_PCCARDInitTypeDef::FSMC_TARSetupTime"
+Defines the number of HCLK cycles to configure the delay between ALE low and RE low\&. This parameter can be a number between 0x0 and 0xFF 
+.PP
+Definition at line 226 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_PCCARDInitTypeDef::FSMC_TCLRSetupTime"
+Defines the number of HCLK cycles to configure the delay between CLE low and RE low\&. This parameter can be a value between 0 and 0xFF\&. 
+.PP
+Definition at line 222 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_PCCARDInitTypeDef::FSMC_Waitfeature"
+Enables or disables the Wait feature for the Memory Bank\&. This parameter can be any value of \fBFSMC_Wait_feature\fP 
+.PP
+Definition at line 219 of file stm32f10x_fsmc\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

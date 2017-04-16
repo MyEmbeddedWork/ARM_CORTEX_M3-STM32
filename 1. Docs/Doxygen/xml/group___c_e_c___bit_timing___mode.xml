@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_e_c___bit_timing___mode" kind="group">
+    <compoundname>CEC_BitTiming_Mode</compoundname>
+    <title>CEC_BitTiming_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_e_c___bit_timing___mode_1gaf6866e5087bb01c1ea4e20a207a1f691" prot="public" static="no">
+        <name>CEC_BitTimingStdMode</name>
+        <initializer>((uint16_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit timing error Standard Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___bit_timing___mode_1ga4fd44675c774985d1f6cd8976b18c947" prot="public" static="no">
+        <name>CEC_BitTimingErrFreeMode</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga8b06cd4e47f4235d8880e1ba0e56e2d7" kindref="member">CEC_CFGR_BTEM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit timing error Free Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___bit_timing___mode_1ga55494269b2c9c55c11130a429f418a8d" prot="public" static="no">
+        <name>IS_CEC_BIT_TIMING_ERROR_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___c_e_c___bit_timing___mode_1gaf6866e5087bb01c1ea4e20a207a1f691" kindref="member">CEC_BitTimingStdMode</ref>) || \
+                                            ((MODE) == <ref refid="group___c_e_c___bit_timing___mode_1ga4fd44675c774985d1f6cd8976b18c947" kindref="member">CEC_BitTimingErrFreeMode</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

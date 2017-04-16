@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___asynchronous_wait" kind="group">
+    <compoundname>FSMC_AsynchronousWait</compoundname>
+    <title>FSMC_AsynchronousWait</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___asynchronous_wait_1ga36c0dad6fe6c0e01632d3312c8f4c4cb" prot="public" static="no">
+        <name>FSMC_AsynchronousWait_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="350" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___asynchronous_wait_1gaff524bfa697106ede7d4b557a5ad7d8c" prot="public" static="no">
+        <name>FSMC_AsynchronousWait_Enable</name>
+        <initializer>((uint32_t)0x00008000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="351" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___asynchronous_wait_1ga52d579de825316ee058baf11bfb749d6" prot="public" static="no">
+        <name>IS_FSMC_ASYNWAIT</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___f_s_m_c___asynchronous_wait_1ga36c0dad6fe6c0e01632d3312c8f4c4cb" kindref="member">FSMC_AsynchronousWait_Disable</ref>) || \
+                                 ((STATE) == <ref refid="group___f_s_m_c___asynchronous_wait_1gaff524bfa697106ede7d4b557a5ad7d8c" kindref="member">FSMC_AsynchronousWait_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="352" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

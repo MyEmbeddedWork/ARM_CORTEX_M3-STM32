@@ -1,0 +1,270 @@
+.TH "SDIO_Flags" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CCRCFAIL\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DCRCFAIL\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CTIMEOUT\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DTIMEOUT\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXUNDERR\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXOVERR\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CMDREND\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CMDSENT\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DATAEND\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_STBITERR\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DBCKEND\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CMDACT\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXACT\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXACT\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXFIFOHE\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXFIFOHF\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXFIFOF\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXFIFOF\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXFIFOE\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXFIFOE\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXDAVL\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXDAVL\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_SDIOIT\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CEATAEND\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint32_t)0xFF3FF800) == 0x00) && ((FLAG) != (uint32_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLEAR_IT\fP(IT)   ((((IT) & (uint32_t)0xFF3FF800) == 0x00) && ((IT) != (uint32_t)0x00))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SDIO_CLEAR_FLAG(FLAG)   ((((FLAG) & (uint32_t)0xFF3FF800) == 0x00) && ((FLAG) != (uint32_t)0x00))"
+
+.PP
+Definition at line 428 of file stm32f10x_sdio\&.h\&.
+.SS "#define IS_SDIO_CLEAR_IT(IT)   ((((IT) & (uint32_t)0xFF3FF800) == 0x00) && ((IT) != (uint32_t)0x00))"
+
+.PP
+Definition at line 455 of file stm32f10x_sdio\&.h\&.
+.SS "#define IS_SDIO_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG)  == SDIO_FLAG_CCRCFAIL) || \
+                            ((FLAG)  == SDIO_FLAG_DCRCFAIL) || \
+                            ((FLAG)  == SDIO_FLAG_CTIMEOUT) || \
+                            ((FLAG)  == SDIO_FLAG_DTIMEOUT) || \
+                            ((FLAG)  == SDIO_FLAG_TXUNDERR) || \
+                            ((FLAG)  == SDIO_FLAG_RXOVERR) || \
+                            ((FLAG)  == SDIO_FLAG_CMDREND) || \
+                            ((FLAG)  == SDIO_FLAG_CMDSENT) || \
+                            ((FLAG)  == SDIO_FLAG_DATAEND) || \
+                            ((FLAG)  == SDIO_FLAG_STBITERR) || \
+                            ((FLAG)  == SDIO_FLAG_DBCKEND) || \
+                            ((FLAG)  == SDIO_FLAG_CMDACT) || \
+                            ((FLAG)  == SDIO_FLAG_TXACT) || \
+                            ((FLAG)  == SDIO_FLAG_RXACT) || \
+                            ((FLAG)  == SDIO_FLAG_TXFIFOHE) || \
+                            ((FLAG)  == SDIO_FLAG_RXFIFOHF) || \
+                            ((FLAG)  == SDIO_FLAG_TXFIFOF) || \
+                            ((FLAG)  == SDIO_FLAG_RXFIFOF) || \
+                            ((FLAG)  == SDIO_FLAG_TXFIFOE) || \
+                            ((FLAG)  == SDIO_FLAG_RXFIFOE) || \
+                            ((FLAG)  == SDIO_FLAG_TXDAVL) || \
+                            ((FLAG)  == SDIO_FLAG_RXDAVL) || \
+                            ((FLAG)  == SDIO_FLAG_SDIOIT) || \
+                            ((FLAG)  == SDIO_FLAG_CEATAEND))
+.fi
+.PP
+Definition at line 403 of file stm32f10x_sdio\&.h\&.
+.SS "#define IS_SDIO_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT)  == SDIO_IT_CCRCFAIL) || \
+                            ((IT)  == SDIO_IT_DCRCFAIL) || \
+                            ((IT)  == SDIO_IT_CTIMEOUT) || \
+                            ((IT)  == SDIO_IT_DTIMEOUT) || \
+                            ((IT)  == SDIO_IT_TXUNDERR) || \
+                            ((IT)  == SDIO_IT_RXOVERR) || \
+                            ((IT)  == SDIO_IT_CMDREND) || \
+                            ((IT)  == SDIO_IT_CMDSENT) || \
+                            ((IT)  == SDIO_IT_DATAEND) || \
+                            ((IT)  == SDIO_IT_STBITERR) || \
+                            ((IT)  == SDIO_IT_DBCKEND) || \
+                            ((IT)  == SDIO_IT_CMDACT) || \
+                            ((IT)  == SDIO_IT_TXACT) || \
+                            ((IT)  == SDIO_IT_RXACT) || \
+                            ((IT)  == SDIO_IT_TXFIFOHE) || \
+                            ((IT)  == SDIO_IT_RXFIFOHF) || \
+                            ((IT)  == SDIO_IT_TXFIFOF) || \
+                            ((IT)  == SDIO_IT_RXFIFOF) || \
+                            ((IT)  == SDIO_IT_TXFIFOE) || \
+                            ((IT)  == SDIO_IT_RXFIFOE) || \
+                            ((IT)  == SDIO_IT_TXDAVL) || \
+                            ((IT)  == SDIO_IT_RXDAVL) || \
+                            ((IT)  == SDIO_IT_SDIOIT) || \
+                            ((IT)  == SDIO_IT_CEATAEND))
+.fi
+.PP
+Definition at line 430 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_CCRCFAIL   ((uint32_t)0x00000001)"
+
+.PP
+Definition at line 379 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_CEATAEND   ((uint32_t)0x00800000)"
+
+.PP
+Definition at line 402 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_CMDACT   ((uint32_t)0x00000800)"
+
+.PP
+Definition at line 390 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_CMDREND   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 385 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_CMDSENT   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 386 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_CTIMEOUT   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 381 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_DATAEND   ((uint32_t)0x00000100)"
+
+.PP
+Definition at line 387 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_DBCKEND   ((uint32_t)0x00000400)"
+
+.PP
+Definition at line 389 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_DCRCFAIL   ((uint32_t)0x00000002)"
+
+.PP
+Definition at line 380 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_DTIMEOUT   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 382 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_RXACT   ((uint32_t)0x00002000)"
+
+.PP
+Definition at line 392 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_RXDAVL   ((uint32_t)0x00200000)"
+
+.PP
+Definition at line 400 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_RXFIFOE   ((uint32_t)0x00080000)"
+
+.PP
+Definition at line 398 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_RXFIFOF   ((uint32_t)0x00020000)"
+
+.PP
+Definition at line 396 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_RXFIFOHF   ((uint32_t)0x00008000)"
+
+.PP
+Definition at line 394 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_RXOVERR   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 384 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_SDIOIT   ((uint32_t)0x00400000)"
+
+.PP
+Definition at line 401 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_STBITERR   ((uint32_t)0x00000200)"
+
+.PP
+Definition at line 388 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_TXACT   ((uint32_t)0x00001000)"
+
+.PP
+Definition at line 391 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_TXDAVL   ((uint32_t)0x00100000)"
+
+.PP
+Definition at line 399 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_TXFIFOE   ((uint32_t)0x00040000)"
+
+.PP
+Definition at line 397 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_TXFIFOF   ((uint32_t)0x00010000)"
+
+.PP
+Definition at line 395 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_TXFIFOHE   ((uint32_t)0x00004000)"
+
+.PP
+Definition at line 393 of file stm32f10x_sdio\&.h\&.
+.SS "#define SDIO_FLAG_TXUNDERR   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 383 of file stm32f10x_sdio\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

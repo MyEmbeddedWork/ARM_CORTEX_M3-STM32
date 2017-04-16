@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___r_c_c___interrupt__source" kind="group">
+    <compoundname>RCC_Interrupt_source</compoundname>
+    <title>RCC_Interrupt_source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga2b4ef277c1b71f96e0bef4b9a72fca94" prot="public" static="no">
+        <name>RCC_IT_LSIRDY</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="341" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1gad6b6e78a426850f595ef180d292a673d" prot="public" static="no">
+        <name>RCC_IT_LSERDY</name>
+        <initializer>((uint8_t)0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="342" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga69637e51b71f73f519c8c0a0613d042f" prot="public" static="no">
+        <name>RCC_IT_HSIRDY</name>
+        <initializer>((uint8_t)0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="343" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1gad13eaede352bca59611e6cae68665866" prot="public" static="no">
+        <name>RCC_IT_HSERDY</name>
+        <initializer>((uint8_t)0x08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="344" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga68d48e7811fb58f2649dce6cf0d823d9" prot="public" static="no">
+        <name>RCC_IT_PLLRDY</name>
+        <initializer>((uint8_t)0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="345" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga9bb34a4912d2084dc1c0834eb53aa7a3" prot="public" static="no">
+        <name>RCC_IT_CSS</name>
+        <initializer>((uint8_t)0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="346" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga710d72ccf88ddbec09b033c81a571a83" prot="public" static="no">
+        <name>IS_RCC_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint8_t)0xE0) == 0x00) &amp;&amp; ((IT) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="349" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga7a1b771d6d9c2d8346ab58a1f046f6a6" prot="public" static="no">
+        <name>IS_RCC_GET_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___r_c_c___interrupt__source_1ga2b4ef277c1b71f96e0bef4b9a72fca94" kindref="member">RCC_IT_LSIRDY</ref>) || ((IT) == <ref refid="group___r_c_c___interrupt__source_1gad6b6e78a426850f595ef180d292a673d" kindref="member">RCC_IT_LSERDY</ref>) || \
+                            ((IT) == <ref refid="group___r_c_c___interrupt__source_1ga69637e51b71f73f519c8c0a0613d042f" kindref="member">RCC_IT_HSIRDY</ref>) || ((IT) == <ref refid="group___r_c_c___interrupt__source_1gad13eaede352bca59611e6cae68665866" kindref="member">RCC_IT_HSERDY</ref>) || \
+                            ((IT) == <ref refid="group___r_c_c___interrupt__source_1ga68d48e7811fb58f2649dce6cf0d823d9" kindref="member">RCC_IT_PLLRDY</ref>) || ((IT) == <ref refid="group___r_c_c___interrupt__source_1ga9bb34a4912d2084dc1c0834eb53aa7a3" kindref="member">RCC_IT_CSS</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="350" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt__source_1ga8374741e47d696accd1a72647650ba63" prot="public" static="no">
+        <name>IS_RCC_CLEAR_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint8_t)0x60) == 0x00) &amp;&amp; ((IT) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="353" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+.TH "USART_Flags" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USART_Flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUSART_FLAG_CTS\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_LBD\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_TXE\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_TC\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_RXNE\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_IDLE\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_ORE\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_NE\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_FE\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_PE\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint16_t)0xFC9F) == 0x00) && ((FLAG) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_PERIPH_FLAG\fP(PERIPH,  USART_FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_BAUDRATE\fP(BAUDRATE)   (((BAUDRATE) > 0) && ((BAUDRATE) < 0x0044AA21))"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_ADDRESS\fP(ADDRESS)   ((ADDRESS) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_DATA\fP(DATA)   ((DATA) <= 0x1FF)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_USART_ADDRESS(ADDRESS)   ((ADDRESS) <= 0xF)"
+
+.PP
+Definition at line 348 of file stm32f10x_usart\&.h\&.
+.SS "#define IS_USART_BAUDRATE(BAUDRATE)   (((BAUDRATE) > 0) && ((BAUDRATE) < 0x0044AA21))"
+
+.PP
+Definition at line 347 of file stm32f10x_usart\&.h\&.
+.SS "#define IS_USART_CLEAR_FLAG(FLAG)   ((((FLAG) & (uint16_t)0xFC9F) == 0x00) && ((FLAG) != (uint16_t)0x00))"
+
+.PP
+Definition at line 343 of file stm32f10x_usart\&.h\&.
+.SS "#define IS_USART_DATA(DATA)   ((DATA) <= 0x1FF)"
+
+.PP
+Definition at line 349 of file stm32f10x_usart\&.h\&.
+.SS "#define IS_USART_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == USART_FLAG_PE) || ((FLAG) == USART_FLAG_TXE) || \
+                             ((FLAG) == USART_FLAG_TC) || ((FLAG) == USART_FLAG_RXNE) || \
+                             ((FLAG) == USART_FLAG_IDLE) || ((FLAG) == USART_FLAG_LBD) || \
+                             ((FLAG) == USART_FLAG_CTS) || ((FLAG) == USART_FLAG_ORE) || \
+                             ((FLAG) == USART_FLAG_NE) || ((FLAG) == USART_FLAG_FE))
+.fi
+.PP
+Definition at line 337 of file stm32f10x_usart\&.h\&.
+.SS "#define IS_USART_PERIPH_FLAG(PERIPH, USART_FLAG)"
+\fBValue:\fP
+.PP
+.nf
+((((*(uint32_t*)&(PERIPH)) != UART4_BASE) &&\
+                                                  ((*(uint32_t*)&(PERIPH)) != UART5_BASE)) \
+                                                  || ((USART_FLAG) != USART_FLAG_CTS))
+.fi
+.PP
+Definition at line 344 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_CTS   ((uint16_t)0x0200)"
+
+.PP
+Definition at line 327 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_FE   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 335 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_IDLE   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 332 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_LBD   ((uint16_t)0x0100)"
+
+.PP
+Definition at line 328 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_NE   ((uint16_t)0x0004)"
+
+.PP
+Definition at line 334 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_ORE   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 333 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_PE   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 336 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_RXNE   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 331 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_TC   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 330 of file stm32f10x_usart\&.h\&.
+.SS "#define USART_FLAG_TXE   ((uint16_t)0x0080)"
+
+.PP
+Definition at line 329 of file stm32f10x_usart\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

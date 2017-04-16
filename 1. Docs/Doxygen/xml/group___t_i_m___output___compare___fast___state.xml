@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___output___compare___fast___state" kind="group">
+    <compoundname>TIM_Output_Compare_Fast_State</compoundname>
+    <title>TIM_Output_Compare_Fast_State</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___output___compare___fast___state_1ga0cfb598c985363ee7004e52c97c524a3" prot="public" static="no">
+        <name>TIM_OCFast_Enable</name>
+        <initializer>((uint16_t)0x0004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="892" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare___fast___state_1gab3d39f8797953cb58754205169d8278e" prot="public" static="no">
+        <name>TIM_OCFast_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="893" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare___fast___state_1ga65ad85cb4ba48660e8f519a1f6c298d2" prot="public" static="no">
+        <name>IS_TIM_OCFAST_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___t_i_m___output___compare___fast___state_1ga0cfb598c985363ee7004e52c97c524a3" kindref="member">TIM_OCFast_Enable</ref>) || \
+                                    ((STATE) == <ref refid="group___t_i_m___output___compare___fast___state_1gab3d39f8797953cb58754205169d8278e" kindref="member">TIM_OCFast_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="894" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

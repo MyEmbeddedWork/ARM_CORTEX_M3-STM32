@@ -1,0 +1,46 @@
+.TH "I2C_SMBus_alert_pin_level" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_SMBus_alert_pin_level
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_SMBusAlert_Low\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMBusAlert_High\fP   ((uint16_t)0xDFFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2C_SMBUS_ALERT\fP(ALERT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2C_SMBusAlert_High   ((uint16_t)0xDFFF)"
+
+.PP
+Definition at line 181 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_SMBusAlert_Low   ((uint16_t)0x2000)"
+
+.PP
+Definition at line 180 of file stm32f10x_i2c\&.h\&.
+.SS "#define IS_I2C_SMBUS_ALERT(ALERT)"
+\fBValue:\fP
+.PP
+.nf
+(((ALERT) == I2C_SMBusAlert_Low) || \
+                                   ((ALERT) == I2C_SMBusAlert_High))
+.fi
+.PP
+Definition at line 182 of file stm32f10x_i2c\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

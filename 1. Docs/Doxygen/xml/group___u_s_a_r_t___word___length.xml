@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___u_s_a_r_t___word___length" kind="group">
+    <compoundname>USART_Word_Length</compoundname>
+    <title>USART_Word_Length</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_a_r_t___word___length_1ga08682faddc657df85a93627b5a146c25" prot="public" static="no">
+        <name>USART_WordLength_8b</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="131" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___word___length_1gae7dd162142660e09e2321aa3f33dc4d2" prot="public" static="no">
+        <name>USART_WordLength_9b</name>
+        <initializer>((uint16_t)0x1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="132" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___word___length_1ga5b07b29ee91f0bea4c10ec0fd74fbc04" prot="public" static="no">
+        <name>IS_USART_WORD_LENGTH</name>
+        <param><defname>LENGTH</defname></param>
+        <initializer>(((LENGTH) == <ref refid="group___u_s_a_r_t___word___length_1ga08682faddc657df85a93627b5a146c25" kindref="member">USART_WordLength_8b</ref>) || \
+                                      ((LENGTH) == <ref refid="group___u_s_a_r_t___word___length_1gae7dd162142660e09e2321aa3f33dc4d2" kindref="member">USART_WordLength_9b</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="134" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

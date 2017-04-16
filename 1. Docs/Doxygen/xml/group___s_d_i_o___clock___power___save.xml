@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___clock___power___save" kind="group">
+    <compoundname>SDIO_Clock_Power_Save</compoundname>
+    <title>SDIO_Clock_Power_Save</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___clock___power___save_1ga032aa5fb2dfd7ba5dbd60a3845c82ba0" prot="public" static="no">
+        <name>SDIO_ClockPowerSave_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="153" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___clock___power___save_1ga9f5b66a0044c4ff36a3eb1ec758f7ea7" prot="public" static="no">
+        <name>SDIO_ClockPowerSave_Enable</name>
+        <initializer>((uint32_t)0x00000200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="154" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___clock___power___save_1ga41988203e5d4e35a755aa604f1876cd3" prot="public" static="no">
+        <name>IS_SDIO_CLOCK_POWER_SAVE</name>
+        <param><defname>SAVE</defname></param>
+        <initializer>(((SAVE) == <ref refid="group___s_d_i_o___clock___power___save_1ga032aa5fb2dfd7ba5dbd60a3845c82ba0" kindref="member">SDIO_ClockPowerSave_Disable</ref>) || \
+                                        ((SAVE) == <ref refid="group___s_d_i_o___clock___power___save_1ga9f5b66a0044c4ff36a3eb1ec758f7ea7" kindref="member">SDIO_ClockPowerSave_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="155" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

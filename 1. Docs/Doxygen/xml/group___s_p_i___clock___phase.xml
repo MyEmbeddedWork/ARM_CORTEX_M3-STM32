@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_p_i___clock___phase" kind="group">
+    <compoundname>SPI_Clock_Phase</compoundname>
+    <title>SPI_Clock_Phase</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___clock___phase_1gaade9d9555fac8a302bde5c94da9c7292" prot="public" static="no">
+        <name>SPI_CPHA_1Edge</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="186" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___clock___phase_1ga7543f88bf05a08705eb4203862dcebdf" prot="public" static="no">
+        <name>SPI_CPHA_2Edge</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="187" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___clock___phase_1ga6441f08edf79dd5b243c54b888d3cbf7" prot="public" static="no">
+        <name>IS_SPI_CPHA</name>
+        <param><defname>CPHA</defname></param>
+        <initializer>(((CPHA) == <ref refid="group___s_p_i___clock___phase_1gaade9d9555fac8a302bde5c94da9c7292" kindref="member">SPI_CPHA_1Edge</ref>) || \
+                           ((CPHA) == <ref refid="group___s_p_i___clock___phase_1ga7543f88bf05a08705eb4203862dcebdf" kindref="member">SPI_CPHA_2Edge</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" line="188" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

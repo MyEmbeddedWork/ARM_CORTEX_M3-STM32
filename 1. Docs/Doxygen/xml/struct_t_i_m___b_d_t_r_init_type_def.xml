@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_t_i_m___b_d_t_r_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_BDTRInitTypeDef</compoundname>
+    <includes refid="stm32f10x__tim_8h" local="no">stm32f10x_tim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1a8f34ad7bc4764bd3ff372cadde468072" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_OSSRState</definition>
+        <argsstring></argsstring>
+        <name>TIM_OSSRState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Off-State selection used in Run mode. This parameter can be a value of <ref refid="group___o_s_s_r___off___state___selection__for___run__mode__state" kindref="compound">OSSR_Off_State_Selection_for_Run_mode_state</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="148" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1ad8891e3739a7db8a45343d4e2f9d2824" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_OSSIState</definition>
+        <argsstring></argsstring>
+        <name>TIM_OSSIState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Off-State used in Idle state. This parameter can be a value of <ref refid="group___o_s_s_i___off___state___selection__for___idle__mode__state" kindref="compound">OSSI_Off_State_Selection_for_Idle_mode_state</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="151" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="151" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1aa5296a7b194d25b16899f6a98da01f03" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_LOCKLevel</definition>
+        <argsstring></argsstring>
+        <name>TIM_LOCKLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the LOCK level parameters. This parameter can be a value of <ref refid="group___lock__level" kindref="compound">Lock_level</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="154" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1a01ccbaffccdb3068b8a60c912579b1a2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_DeadTime</definition>
+        <argsstring></argsstring>
+        <name>TIM_DeadTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the delay time between the switching-off and the switching-on of the outputs. This parameter can be a number between 0x00 and 0xFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="157" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="157" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1a9fcf20632d0377727476a98f7183be56" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_Break</definition>
+        <argsstring></argsstring>
+        <name>TIM_Break</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the TIM Break input is enabled or not. This parameter can be a value of <ref refid="group___break___input__enable__disable" kindref="compound">Break_Input_enable_disable</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="161" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="161" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1a5731e4e786b66f35cfe4798d6157619e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_BreakPolarity</definition>
+        <argsstring></argsstring>
+        <name>TIM_BreakPolarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM Break Input pin polarity. This parameter can be a value of <ref refid="group___break___polarity" kindref="compound">Break_Polarity</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="164" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="164" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___b_d_t_r_init_type_def_1a6c056e29af67fd8a32919104ea48eea2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_BDTRInitTypeDef::TIM_AutomaticOutput</definition>
+        <argsstring></argsstring>
+        <name>TIM_AutomaticOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the TIM Automatic Output feature is enabled or not. This parameter can be a value of <ref refid="group___t_i_m___a_o_e___bit___set___reset" kindref="compound">TIM_AOE_Bit_Set_Reset</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="167" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="167" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaea0f49938cda8ae0738162194798afc6" compoundref="stm32f10x__tim_8c" startline="787" endline="797">TIM_BDTRStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BDTR structure definition. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This structure is used only with TIM1 and TIM8. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="146" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="145" bodyend="169"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1a6c056e29af67fd8a32919104ea48eea2" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_AutomaticOutput</name></member>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1a9fcf20632d0377727476a98f7183be56" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_Break</name></member>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1a5731e4e786b66f35cfe4798d6157619e" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_BreakPolarity</name></member>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1a01ccbaffccdb3068b8a60c912579b1a2" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_DeadTime</name></member>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1aa5296a7b194d25b16899f6a98da01f03" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_LOCKLevel</name></member>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1ad8891e3739a7db8a45343d4e2f9d2824" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_OSSIState</name></member>
+      <member refid="struct_t_i_m___b_d_t_r_init_type_def_1a8f34ad7bc4764bd3ff372cadde468072" prot="public" virt="non-virtual"><scope>TIM_BDTRInitTypeDef</scope><name>TIM_OSSRState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

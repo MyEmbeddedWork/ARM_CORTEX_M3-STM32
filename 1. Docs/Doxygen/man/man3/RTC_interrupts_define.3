@@ -1,0 +1,60 @@
+.TH "RTC_interrupts_define" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RTC_interrupts_define
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRTC_IT_OW\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBRTC_IT_ALR\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBRTC_IT_SEC\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_IT\fP(IT)   ((((IT) & (uint16_t)0xFFF8) == 0x00) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_GET_IT\fP(IT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RTC_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == RTC_IT_OW) || ((IT) == RTC_IT_ALR) || \
+                           ((IT) == RTC_IT_SEC))
+.fi
+.PP
+Definition at line 62 of file stm32f10x_rtc\&.h\&.
+.SS "#define IS_RTC_IT(IT)   ((((IT) & (uint16_t)0xFFF8) == 0x00) && ((IT) != 0x00))"
+
+.PP
+Definition at line 61 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_IT_ALR   ((uint16_t)0x0002)"
+Alarm interrupt 
+.PP
+Definition at line 59 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_IT_OW   ((uint16_t)0x0004)"
+Overflow interrupt 
+.PP
+Definition at line 58 of file stm32f10x_rtc\&.h\&.
+.SS "#define RTC_IT_SEC   ((uint16_t)0x0001)"
+Second interrupt 
+.PP
+Definition at line 60 of file stm32f10x_rtc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

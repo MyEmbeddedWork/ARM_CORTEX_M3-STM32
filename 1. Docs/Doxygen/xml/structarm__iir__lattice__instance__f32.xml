@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__iir__lattice__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_iir_lattice_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__iir__lattice__instance__f32_1af8de449af5efe1f30be82f9ba35587ee" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_iir_lattice_instance_f32::numStages</definition>
+        <argsstring></argsstring>
+        <name>numStages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of stages in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3862" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__iir__lattice__instance__f32_1a30babe7815510219e6e3d28e6e4a5969" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_iir_lattice_instance_f32::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numStages+blockSize. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3863" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__iir__lattice__instance__f32_1aa69fcdd3775e828d450ce1bbd978fa31" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_iir_lattice_instance_f32::pkCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pkCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the reflection coefficient array. The array is of length numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3864" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__iir__lattice__instance__f32_1afc7c8f577e6f27d097fe55f57e707f72" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_iir_lattice_instance_f32::pvCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pvCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the ladder coefficient array. The array is of length numStages+1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3865" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3865" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point IIR lattice filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3861" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3860" bodyend="3866"/>
+    <listofallmembers>
+      <member refid="structarm__iir__lattice__instance__f32_1af8de449af5efe1f30be82f9ba35587ee" prot="public" virt="non-virtual"><scope>arm_iir_lattice_instance_f32</scope><name>numStages</name></member>
+      <member refid="structarm__iir__lattice__instance__f32_1aa69fcdd3775e828d450ce1bbd978fa31" prot="public" virt="non-virtual"><scope>arm_iir_lattice_instance_f32</scope><name>pkCoeffs</name></member>
+      <member refid="structarm__iir__lattice__instance__f32_1a30babe7815510219e6e3d28e6e4a5969" prot="public" virt="non-virtual"><scope>arm_iir_lattice_instance_f32</scope><name>pState</name></member>
+      <member refid="structarm__iir__lattice__instance__f32_1afc7c8f577e6f27d097fe55f57e707f72" prot="public" virt="non-virtual"><scope>arm_iir_lattice_instance_f32</scope><name>pvCoeffs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

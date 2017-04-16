@@ -1,0 +1,108 @@
+.TH "Library_configuration_section" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Library_configuration_section
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHSE_VALUE\fP   ((uint32_t)8000000)"
+.br
+.RI "Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. "
+.ti -1c
+.RI "#define \fBHSE_STARTUP_TIMEOUT\fP   ((uint16_t)0x0500)"
+.br
+.RI "In the following line adjust the External High Speed oscillator (HSE) Startup Timeout value\&. "
+.ti -1c
+.RI "#define \fBHSI_VALUE\fP   ((uint32_t)8000000)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F10X_STDPERIPH_VERSION_MAIN\fP   (0x03)"
+.br
+.RI "STM32F10x Standard Peripheral Library version number\&. "
+.ti -1c
+.RI "#define \fB__STM32F10X_STDPERIPH_VERSION_SUB1\fP   (0x05)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F10X_STDPERIPH_VERSION_SUB2\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F10X_STDPERIPH_VERSION_RC\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fB__STM32F10X_STDPERIPH_VERSION\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __STM32F10X_STDPERIPH_VERSION"
+\fBValue:\fP
+.PP
+.nf
+( (__STM32F10X_STDPERIPH_VERSION_MAIN << 24)\
+                                             |(__STM32F10X_STDPERIPH_VERSION_SUB1 << 16)\
+                                             |(__STM32F10X_STDPERIPH_VERSION_SUB2 << 8)\
+                                             |(__STM32F10X_STDPERIPH_VERSION_RC))
+.fi
+.PP
+Definition at line 139 of file stm32f10x\&.h\&.
+.SS "#define __STM32F10X_STDPERIPH_VERSION_MAIN   (0x03)"
+
+.PP
+STM32F10x Standard Peripheral Library version number\&. [31:24] main version 
+.PP
+Definition at line 135 of file stm32f10x\&.h\&.
+.SS "#define __STM32F10X_STDPERIPH_VERSION_RC   (0x00)"
+[7:0] release candidate 
+.PP
+Definition at line 138 of file stm32f10x\&.h\&.
+.SS "#define __STM32F10X_STDPERIPH_VERSION_SUB1   (0x05)"
+[23:16] sub1 version 
+.PP
+Definition at line 136 of file stm32f10x\&.h\&.
+.SS "#define __STM32F10X_STDPERIPH_VERSION_SUB2   (0x00)"
+[15:8] sub2 version 
+.PP
+Definition at line 137 of file stm32f10x\&.h\&.
+.SS "#define HSE_STARTUP_TIMEOUT   ((uint16_t)0x0500)"
+
+.PP
+In the following line adjust the External High Speed oscillator (HSE) Startup Timeout value\&. Time out for HSE start up 
+.PP
+Definition at line 128 of file stm32f10x\&.h\&.
+.SS "#define HSE_VALUE   ((uint32_t)8000000)"
+
+.PP
+Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. < STM32F10X_LD: STM32 Low density devices
+.PP
+< STM32F10X_LD_VL: STM32 Low density Value Line devices
+.PP
+< STM32F10X_MD: STM32 Medium density devices
+.PP
+< STM32F10X_MD_VL: STM32 Medium density Value Line devices
+.PP
+< STM32F10X_HD: STM32 High density devices
+.PP
+< STM32F10X_HD_VL: STM32 High density value line devices
+.PP
+< STM32F10X_XL: STM32 XL-density devices
+.PP
+< STM32F10X_CL: STM32 Connectivity line devices In the following line adjust the value of External High Speed oscillator (HSE) used in your application
+.PP
+Tip: To avoid modifying this file each time you need to use different HSE, you can define the HSE value in your toolchain compiler preprocessor\&.Value of the External oscillator in Hz 
+.PP
+Definition at line 119 of file stm32f10x\&.h\&.
+.SS "#define HSI_VALUE   ((uint32_t)8000000)"
+Value of the Internal oscillator in Hz 
+.PP
+Definition at line 130 of file stm32f10x\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

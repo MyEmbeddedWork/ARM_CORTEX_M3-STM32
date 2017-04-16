@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_m_a__peripheral__data__size" kind="group">
+    <compoundname>DMA_peripheral_data_size</compoundname>
+    <title>DMA_peripheral_data_size</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a__peripheral__data__size_1ga7577035ae4ff413164000227a8cea346" prot="public" static="no">
+        <name>DMA_PeripheralDataSize_Byte</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="148" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__peripheral__data__size_1gab1988e5005ee65c261018f62866e4585" prot="public" static="no">
+        <name>DMA_PeripheralDataSize_HalfWord</name>
+        <initializer>((uint32_t)0x00000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="149" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__peripheral__data__size_1ga516ea7a40945d8325fe73e079b245ea1" prot="public" static="no">
+        <name>DMA_PeripheralDataSize_Word</name>
+        <initializer>((uint32_t)0x00000200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="150" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__peripheral__data__size_1gad7916e0ae55cdf5efdfa68a09a028037" prot="public" static="no">
+        <name>IS_DMA_PERIPHERAL_DATA_SIZE</name>
+        <param><defname>SIZE</defname></param>
+        <initializer>(((SIZE) == <ref refid="group___d_m_a__peripheral__data__size_1ga7577035ae4ff413164000227a8cea346" kindref="member">DMA_PeripheralDataSize_Byte</ref>) || \
+                                           ((SIZE) == <ref refid="group___d_m_a__peripheral__data__size_1gab1988e5005ee65c261018f62866e4585" kindref="member">DMA_PeripheralDataSize_HalfWord</ref>) || \
+                                           ((SIZE) == <ref refid="group___d_m_a__peripheral__data__size_1ga516ea7a40945d8325fe73e079b245ea1" kindref="member">DMA_PeripheralDataSize_Word</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="151" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

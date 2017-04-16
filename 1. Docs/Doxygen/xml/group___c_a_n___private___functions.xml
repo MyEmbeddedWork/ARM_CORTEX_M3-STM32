@@ -1,0 +1,1357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_a_n___private___functions" kind="group">
+    <compoundname>CAN_Private_Functions</compoundname>
+    <title>CAN_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga002b74cd69574a14b17ad445090245cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_DeInit</definition>
+        <argsstring>(CAN_TypeDef *CANx)</argsstring>
+        <name>CAN_DeInit</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <briefdescription>
+<para>Deinitializes the CAN peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="122" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="122" bodyend="141"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___peripheral__declaration_1ga4964ecb6a5c689aaf8ee2832b8093aac" compoundref="stm32f10x_8h" startline="1400">CAN1</references>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1ga7f1d940739de0134ae89e9e04214989d" compoundref="stm32f10x__rcc_8h" startline="547">RCC_APB1Periph_CAN1</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___a_p_b1__peripheral_1ga62801597b97816751c038acb1466179c" compoundref="stm32f10x__rcc_8h" startline="548">RCC_APB1Periph_CAN2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga9023c35a9ab931ad4513fc5d19b4bd6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_Init</definition>
+        <argsstring>(CAN_TypeDef *CANx, CAN_InitTypeDef *CAN_InitStruct)</argsstring>
+        <name>CAN_Init</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_a_n___init_type_def" kindref="compound">CAN_InitTypeDef</ref> *</type>
+          <declname>CAN_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the CAN peripheral according to the specified parameters in the CAN_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CAN_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_c_a_n___init_type_def" kindref="compound">CAN_InitTypeDef</ref> structure that contains the configuration information for the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Constant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates initialization succeed which will be CAN_InitStatus_Failed or CAN_InitStatus_Success. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="154" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="154" bodyend="282"/>
+        <references refid="group___c_a_n__sleep__constants_1ga095c319e8c54c974eb2b6eeadf180d96" compoundref="stm32f10x__can_8h" startline="218">CAN_InitStatus_Failed</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="struct_c_a_n___init_type_def_1aa53ceafdcf1a9a5c9a6566006c9a4b60" compoundref="stm32f10x__can_8h" startline="83">CAN_InitTypeDef::CAN_TTCM</references>
+        <references refid="struct_c_a_n___init_type_def_1a70560646c27d96ca8adc4a62d24dafd9" compoundref="stm32f10x__can_8h" startline="87">CAN_InitTypeDef::CAN_ABOM</references>
+        <references refid="struct_c_a_n___init_type_def_1a10f873c858a7b0efc2d0ab41524320d3" compoundref="stm32f10x__can_8h" startline="91">CAN_InitTypeDef::CAN_AWUM</references>
+        <references refid="struct_c_a_n___init_type_def_1a5adeac1b7b47f2b91e667eddc181ac09" compoundref="stm32f10x__can_8h" startline="95">CAN_InitTypeDef::CAN_NART</references>
+        <references refid="struct_c_a_n___init_type_def_1aa63787683c0ad533b513fb60355d76f1" compoundref="stm32f10x__can_8h" startline="99">CAN_InitTypeDef::CAN_RFLM</references>
+        <references refid="struct_c_a_n___init_type_def_1a003de4b70fc93b4f820f320c6ea75a16" compoundref="stm32f10x__can_8h" startline="103">CAN_InitTypeDef::CAN_TXFP</references>
+        <references refid="group___c_a_n___mode_1ga5d6480c240edeba383b4e07d65814d98" compoundref="stm32f10x__can_8h" startline="234">IS_CAN_MODE</references>
+        <references refid="struct_c_a_n___init_type_def_1a24816ff18ae048a5ec4bbb22aa2c04f9" compoundref="stm32f10x__can_8h" startline="64">CAN_InitTypeDef::CAN_Mode</references>
+        <references refid="group___c_a_n__synchronisation__jump__width_1ga4e4f344712d3bcac1975318d4ab9a383" compoundref="stm32f10x__can_8h" startline="281">IS_CAN_SJW</references>
+        <references refid="struct_c_a_n___init_type_def_1addac271c43490cb37ac7293f7bf201c2" compoundref="stm32f10x__can_8h" startline="68">CAN_InitTypeDef::CAN_SJW</references>
+        <references refid="group___c_a_n__time__quantum__in__bit__segment__1_1ga225f1457e1c6b8fc3b5af0f463933152" compoundref="stm32f10x__can_8h" startline="308">IS_CAN_BS1</references>
+        <references refid="struct_c_a_n___init_type_def_1aecbd21b55dc88c3a18db93af2836cd58" compoundref="stm32f10x__can_8h" startline="74">CAN_InitTypeDef::CAN_BS1</references>
+        <references refid="group___c_a_n__time__quantum__in__bit__segment__2_1ga3f5620b1d094dbd7d2fb8d16f4b187a9" compoundref="stm32f10x__can_8h" startline="326">IS_CAN_BS2</references>
+        <references refid="struct_c_a_n___init_type_def_1a693eb00830d6e2aeb4d9fabdba85b9cf" compoundref="stm32f10x__can_8h" startline="78">CAN_InitTypeDef::CAN_BS2</references>
+        <references refid="group___c_a_n__clock__prescaler_1gacde6b8be6fe083a6302fc183b5ac1055" compoundref="stm32f10x__can_8h" startline="336">IS_CAN_PRESCALER</references>
+        <references refid="struct_c_a_n___init_type_def_1a3e91dbcbf30b893a9bd6a65606cb8fe9" compoundref="stm32f10x__can_8h" startline="61">CAN_InitTypeDef::CAN_Prescaler</references>
+        <references refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" compoundref="stm32f10x_8h" startline="705">CAN_TypeDef::MCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gadf9602dfb2f95b481b6e642b95991176" compoundref="stm32f10x_8h" startline="6220">CAN_MCR_SLEEP</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga0cf12be5661908dbe38aa14cd4c3a356" compoundref="stm32f10x_8h" startline="6219">CAN_MCR_INRQ</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga2871cee90ebecb760bab16e9c039b682" compoundref="stm32f10x_8h" startline="6230">CAN_MSR_INAK</references>
+        <references refid="group___c_a_n___private___defines_1ga60a32132df242146efd3e9f7a079f0f0" compoundref="stm32f10x__can_8c" startline="58">INAK_TIMEOUT</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga32b2eda9cad8a969c5d2349bd1d853bb" compoundref="stm32f10x_8h" startline="6226">CAN_MCR_TTCM</references>
+        <references refid="group___peripheral___registers___bits___definition_1gad7aff5c0a3ead7f937849ab66eba7490" compoundref="stm32f10x_8h" startline="6225">CAN_MCR_ABOM</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaa2745f1a565c3f2ec5b16612d1fd66e0" compoundref="stm32f10x_8h" startline="6224">CAN_MCR_AWUM</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga2774f04e286942d36a5b6135c8028049" compoundref="stm32f10x_8h" startline="6223">CAN_MCR_NART</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga501125ff257a7d02c35a0d6dcbaa2ba8" compoundref="stm32f10x_8h" startline="6222">CAN_MCR_RFLM</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga35e7e66f9cd8cb6efa6a80367d2294a9" compoundref="stm32f10x_8h" startline="6221">CAN_MCR_TXFP</references>
+        <references refid="struct_c_a_n___type_def_1accad1e4155459a13369f5ad0e7c6da29" compoundref="stm32f10x_8h" startline="712">CAN_TypeDef::BTR</references>
+        <references refid="group___c_a_n__sleep__constants_1ga6bed5957af8f2f6b00568e15ccac5772" compoundref="stm32f10x__can_8h" startline="219">CAN_InitStatus_Success</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga39476830280340363c51041be6b12647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_FilterInit</definition>
+        <argsstring>(CAN_FilterInitTypeDef *CAN_FilterInitStruct)</argsstring>
+        <name>CAN_FilterInit</name>
+        <param>
+          <type><ref refid="struct_c_a_n___filter_init_type_def" kindref="compound">CAN_FilterInitTypeDef</ref> *</type>
+          <declname>CAN_FilterInitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the CAN peripheral according to the specified parameters in the CAN_FilterInitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CAN_FilterInitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_c_a_n___filter_init_type_def" kindref="compound">CAN_FilterInitTypeDef</ref> structure that contains the configuration information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="292" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="292" bodyend="376"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n__filter__number_1ga28d6c98a160d71059ed9a5973de2a4ef" compoundref="stm32f10x__can_8h" startline="346">IS_CAN_FILTER_NUMBER</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1af94466e1138c2b4fe6a67cf556981193" compoundref="stm32f10x__can_8h" startline="135">CAN_FilterInitTypeDef::CAN_FilterNumber</references>
+        <references refid="group___c_a_n__filter__mode_1gae684565d5392c12fd333379e5ec840f8" compoundref="stm32f10x__can_8h" startline="361">IS_CAN_FILTER_MODE</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1a7cfb23c48aad13a058c2619dbc062d8a" compoundref="stm32f10x__can_8h" startline="137">CAN_FilterInitTypeDef::CAN_FilterMode</references>
+        <references refid="group___c_a_n__filter__scale_1gaf64c93166af0eb5ec7e804116f10783a" compoundref="stm32f10x__can_8h" startline="374">IS_CAN_FILTER_SCALE</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1a9d52661aca538dbfcafdda6f16dddc82" compoundref="stm32f10x__can_8h" startline="140">CAN_FilterInitTypeDef::CAN_FilterScale</references>
+        <references refid="group___c_a_n__filter___f_i_f_o_1ga2df5ae0de841fc80c969e9147991ec9d" compoundref="stm32f10x__can_8h" startline="387">IS_CAN_FILTER_FIFO</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1a01ba491f12097adcc9f0a3d627628d55" compoundref="stm32f10x__can_8h" startline="132">CAN_FilterInitTypeDef::CAN_FilterFIFOAssignment</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1a0225afda33b565f358ca75bdaa780074" compoundref="stm32f10x__can_8h" startline="143">CAN_FilterInitTypeDef::CAN_FilterActivation</references>
+        <references refid="group___peripheral__declaration_1ga4964ecb6a5c689aaf8ee2832b8093aac" compoundref="stm32f10x_8h" startline="1400">CAN1</references>
+        <references refid="group___c_a_n___private___defines_1ga6125d0273c466e402db1a8f5bf888857" compoundref="stm32f10x__can_8c" startline="55">FMR_FINIT</references>
+        <references refid="group___c_a_n__filter__scale_1ga9e0493937e73bcf9a4127eef2f255a95" compoundref="stm32f10x__can_8h" startline="371">CAN_FilterScale_16bit</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1a0f052daf04b0a481ecfa5c2cc8058089" compoundref="stm32f10x__can_8h" startline="127">CAN_FilterInitTypeDef::CAN_FilterMaskIdLow</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1ab8c56b48ac323e8c7a1b535c79a51f87" compoundref="stm32f10x__can_8h" startline="118">CAN_FilterInitTypeDef::CAN_FilterIdLow</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1a6f34539615e6484f266b46aa8f362a91" compoundref="stm32f10x__can_8h" startline="122">CAN_FilterInitTypeDef::CAN_FilterMaskIdHigh</references>
+        <references refid="struct_c_a_n___filter_init_type_def_1afc109aa8eedced09d296605f2eb871f7" compoundref="stm32f10x__can_8h" startline="114">CAN_FilterInitTypeDef::CAN_FilterIdHigh</references>
+        <references refid="group___c_a_n__filter__scale_1gac63dfb0e11713c59268ee9f4aebab60e" compoundref="stm32f10x__can_8h" startline="372">CAN_FilterScale_32bit</references>
+        <references refid="group___c_a_n__filter__mode_1ga8136e518fb31fd91079e4c7c4c19c94b" compoundref="stm32f10x__can_8h" startline="358">CAN_FilterMode_IdMask</references>
+        <references refid="group___c_a_n__filter___f_i_f_o_1ga8249c27978ca94676530540b88a6be8f" compoundref="stm32f10x__can_8h" startline="385">CAN_Filter_FIFO0</references>
+        <references refid="group___c_a_n__filter___f_i_f_o_1gaab8478c89a607c4b8baf68efc730e316" compoundref="stm32f10x__can_8h" startline="386">CAN_Filter_FIFO1</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gad77ad810868ed111755fc9e8ae0c7646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_StructInit</definition>
+        <argsstring>(CAN_InitTypeDef *CAN_InitStruct)</argsstring>
+        <name>CAN_StructInit</name>
+        <param>
+          <type><ref refid="struct_c_a_n___init_type_def" kindref="compound">CAN_InitTypeDef</ref> *</type>
+          <declname>CAN_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each CAN_InitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CAN_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_c_a_n___init_type_def" kindref="compound">CAN_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="384" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="384" bodyend="420"/>
+        <references refid="struct_c_a_n___init_type_def_1aa53ceafdcf1a9a5c9a6566006c9a4b60" compoundref="stm32f10x__can_8h" startline="83">CAN_InitTypeDef::CAN_TTCM</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_c_a_n___init_type_def_1a70560646c27d96ca8adc4a62d24dafd9" compoundref="stm32f10x__can_8h" startline="87">CAN_InitTypeDef::CAN_ABOM</references>
+        <references refid="struct_c_a_n___init_type_def_1a10f873c858a7b0efc2d0ab41524320d3" compoundref="stm32f10x__can_8h" startline="91">CAN_InitTypeDef::CAN_AWUM</references>
+        <references refid="struct_c_a_n___init_type_def_1a5adeac1b7b47f2b91e667eddc181ac09" compoundref="stm32f10x__can_8h" startline="95">CAN_InitTypeDef::CAN_NART</references>
+        <references refid="struct_c_a_n___init_type_def_1aa63787683c0ad533b513fb60355d76f1" compoundref="stm32f10x__can_8h" startline="99">CAN_InitTypeDef::CAN_RFLM</references>
+        <references refid="struct_c_a_n___init_type_def_1a003de4b70fc93b4f820f320c6ea75a16" compoundref="stm32f10x__can_8h" startline="103">CAN_InitTypeDef::CAN_TXFP</references>
+        <references refid="struct_c_a_n___init_type_def_1a24816ff18ae048a5ec4bbb22aa2c04f9" compoundref="stm32f10x__can_8h" startline="64">CAN_InitTypeDef::CAN_Mode</references>
+        <references refid="group___c_a_n___mode_1gaaf1f48ab4917ccfd5fd31dd781d59e29" compoundref="stm32f10x__can_8h" startline="229">CAN_Mode_Normal</references>
+        <references refid="struct_c_a_n___init_type_def_1addac271c43490cb37ac7293f7bf201c2" compoundref="stm32f10x__can_8h" startline="68">CAN_InitTypeDef::CAN_SJW</references>
+        <references refid="group___c_a_n__synchronisation__jump__width_1ga4e03d22ae683b63cb4df238449ec967c" compoundref="stm32f10x__can_8h" startline="276">CAN_SJW_1tq</references>
+        <references refid="struct_c_a_n___init_type_def_1aecbd21b55dc88c3a18db93af2836cd58" compoundref="stm32f10x__can_8h" startline="74">CAN_InitTypeDef::CAN_BS1</references>
+        <references refid="group___c_a_n__time__quantum__in__bit__segment__1_1ga7c5c668200f41991e14b31ca20235000" compoundref="stm32f10x__can_8h" startline="294">CAN_BS1_4tq</references>
+        <references refid="struct_c_a_n___init_type_def_1a693eb00830d6e2aeb4d9fabdba85b9cf" compoundref="stm32f10x__can_8h" startline="78">CAN_InitTypeDef::CAN_BS2</references>
+        <references refid="group___c_a_n__time__quantum__in__bit__segment__2_1gab3d325ce4a5d0eb1ee8ee50ad4ec7e49" compoundref="stm32f10x__can_8h" startline="319">CAN_BS2_3tq</references>
+        <references refid="struct_c_a_n___init_type_def_1a3e91dbcbf30b893a9bd6a65606cb8fe9" compoundref="stm32f10x__can_8h" startline="61">CAN_InitTypeDef::CAN_Prescaler</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga109ff8960bc59f44b984c9646f17b3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_SlaveStartBank</definition>
+        <argsstring>(uint8_t CAN_BankNumber)</argsstring>
+        <name>CAN_SlaveStartBank</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>CAN_BankNumber</declname>
+        </param>
+        <briefdescription>
+<para>Select the start bank filter for slave CAN. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function applies only to STM32 Connectivity line devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CAN_BankNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Select the start slave bank filter from 1..27. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="428" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="428" bodyend="442"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___start__bank__filter__for__slave___c_a_n_1ga7fb463088ff4cd584bba47e3d0a4f469" compoundref="stm32f10x__can_8h" startline="396">IS_CAN_BANKNUMBER</references>
+        <references refid="group___peripheral__declaration_1ga4964ecb6a5c689aaf8ee2832b8093aac" compoundref="stm32f10x_8h" startline="1400">CAN1</references>
+        <references refid="group___c_a_n___private___defines_1ga6125d0273c466e402db1a8f5bf888857" compoundref="stm32f10x__can_8c" startline="55">FMR_FINIT</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gac0e2d33e08caf49d1f1251f0dcc20213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_DBGFreeze</definition>
+        <argsstring>(CAN_TypeDef *CANx, FunctionalState NewState)</argsstring>
+        <name>CAN_DBGFreeze</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the DBG Freeze for CAN. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CAN peripheral. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="451" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="451" bodyend="467"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" compoundref="stm32f10x_8h" startline="705">CAN_TypeDef::MCR</references>
+        <references refid="group___c_a_n___private___defines_1ga1ded3736beb63c49281f2983fc68c36d" compoundref="stm32f10x__can_8c" startline="49">MCR_DBF</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga94740177bab153ca5b102d122f9a8cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_TTComModeCmd</definition>
+        <argsstring>(CAN_TypeDef *CANx, FunctionalState NewState)</argsstring>
+        <name>CAN_TTComModeCmd</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disabes the CAN Time TriggerOperation communication mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mode new state , can be one of <ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>when enabled, Time stamp (TIME[15:0]) value is sent in the last two data bytes of the 8-byte message: TIME[7:0] in data byte 6 and TIME[15:8] in data byte 7 </para></simplesect>
+<simplesect kind="note"><para>DLC must be programmed as 8 in order Time Stamp (2 bytes) to be sent over the CAN bus. </para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="481" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="481" bodyend="506"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" compoundref="stm32f10x_8h" startline="705">CAN_TypeDef::MCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga32b2eda9cad8a969c5d2349bd1d853bb" compoundref="stm32f10x_8h" startline="6226">CAN_MCR_TTCM</references>
+        <references refid="struct_c_a_n___type_def_1a328925e230f68a775f6f4ad1076c27ce" compoundref="stm32f10x_8h" startline="714">CAN_TypeDef::sTxMailBox</references>
+        <references refid="struct_c_a_n___tx_mail_box___type_def_1a2351cb865d064cf75f61642aaa887f76" compoundref="stm32f10x_8h" startline="672">CAN_TxMailBox_TypeDef::TDTR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gad2d329960b527a62fab099a084bfa906" compoundref="stm32f10x_8h" startline="6327">CAN_TDT0R_TGT</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga35757787e6481553885fdf4fd2738c4b" compoundref="stm32f10x_8h" startline="6351">CAN_TDT1R_TGT</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga4c51b43d309b56e8a64724ef1517033e" compoundref="stm32f10x_8h" startline="6375">CAN_TDT2R_TGT</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gaccfcb81f76f58400077c7b2d8641dd83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_Transmit</definition>
+        <argsstring>(CAN_TypeDef *CANx, CanTxMsg *TxMessage)</argsstring>
+        <name>CAN_Transmit</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_can_tx_msg" kindref="compound">CanTxMsg</ref> *</type>
+          <declname>TxMessage</declname>
+        </param>
+        <briefdescription>
+<para>Initiates the transmission of a message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TxMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a structure which contains CAN Id, CAN DLC and CAN data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the mailbox that is used for transmission or CAN_TxStatus_NoMailBox if there is no empty mailbox. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="515" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="515" bodyend="578"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__identifier__type_1gab845f7fbcf6ff8cf3d025210eb8900e4" compoundref="stm32f10x__can_8h" startline="420">IS_CAN_IDTYPE</references>
+        <references refid="struct_can_tx_msg_1aa4c8568a0e3250a17bd7e116b3e09670" compoundref="stm32f10x__can_8h" startline="159">CanTxMsg::IDE</references>
+        <references refid="group___c_a_n__remote__transmission__request_1ga3379997ad4da6fc4d7975c52b891bdc0" compoundref="stm32f10x__can_8h" startline="432">IS_CAN_RTR</references>
+        <references refid="struct_can_tx_msg_1a69f84255db38c6910058f290efdb7302" compoundref="stm32f10x__can_8h" startline="163">CanTxMsg::RTR</references>
+        <references refid="group___c_a_n___tx_1ga6109469a6a2792b3e7c6be520ea50d36" compoundref="stm32f10x__can_8h" startline="408">IS_CAN_DLC</references>
+        <references refid="struct_can_tx_msg_1ab49d0fa602aad2fd9cd007adafc11fc2" compoundref="stm32f10x__can_8h" startline="167">CanTxMsg::DLC</references>
+        <references refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" compoundref="stm32f10x_8h" startline="707">CAN_TypeDef::TSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gad7500e491fe82e67ed5d40759e8a50f0" compoundref="stm32f10x_8h" startline="6259">CAN_TSR_TME0</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga5ba2b51def4b1683fd050e43045306ea" compoundref="stm32f10x_8h" startline="6260">CAN_TSR_TME1</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaf6523fac51d3aed2e36de4c2f07c2a21" compoundref="stm32f10x_8h" startline="6261">CAN_TSR_TME2</references>
+        <references refid="group___c_a_n__transmit__constants_1ga2620e99debd51011d3569121f2e44690" compoundref="stm32f10x__can_8h" startline="445">CAN_TxStatus_NoMailBox</references>
+        <references refid="struct_c_a_n___type_def_1a328925e230f68a775f6f4ad1076c27ce" compoundref="stm32f10x_8h" startline="714">CAN_TypeDef::sTxMailBox</references>
+        <references refid="struct_c_a_n___tx_mail_box___type_def_1a22f525c909de2dcec1d4093fe1d562b8" compoundref="stm32f10x_8h" startline="671">CAN_TxMailBox_TypeDef::TIR</references>
+        <references refid="group___c_a_n___private___defines_1gabeb6db5ba5c01da5084ec1605f868e18" compoundref="stm32f10x__can_8c" startline="52">TMIDxR_TXRQ</references>
+        <references refid="group___c_a_n__identifier__type_1ga151d9df8a6f361d0a3231593726b5a13" compoundref="stm32f10x__can_8h" startline="418">CAN_Id_Standard</references>
+        <references refid="group___c_a_n___tx_1gaf059e4383fa69dec6e18216b22a87f51" compoundref="stm32f10x__can_8h" startline="406">IS_CAN_STDID</references>
+        <references refid="struct_can_tx_msg_1abfb50c8208227f8cf378f29cf9a3a6f3" compoundref="stm32f10x__can_8h" startline="153">CanTxMsg::StdId</references>
+        <references refid="group___c_a_n___tx_1ga62dbc2163ad6751b3f921e717b00e9f2" compoundref="stm32f10x__can_8h" startline="407">IS_CAN_EXTID</references>
+        <references refid="struct_can_tx_msg_1a33050a95a4cc463b589ff16bdd416f22" compoundref="stm32f10x__can_8h" startline="156">CanTxMsg::ExtId</references>
+        <references refid="struct_c_a_n___tx_mail_box___type_def_1a2351cb865d064cf75f61642aaa887f76" compoundref="stm32f10x_8h" startline="672">CAN_TxMailBox_TypeDef::TDTR</references>
+        <references refid="struct_c_a_n___tx_mail_box___type_def_1a408c96501b1cc8bd527432736d132a39" compoundref="stm32f10x_8h" startline="673">CAN_TxMailBox_TypeDef::TDLR</references>
+        <references refid="struct_can_tx_msg_1aabfbf718f627da26d9e3cf903dc0ad02" compoundref="stm32f10x__can_8h" startline="171">CanTxMsg::Data</references>
+        <references refid="struct_c_a_n___tx_mail_box___type_def_1a98c6bcd7c9bae378ebf83fd9f5b59020" compoundref="stm32f10x_8h" startline="674">CAN_TxMailBox_TypeDef::TDHR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga68ab05a0a6cdfcc2b6f6b6b2c10848e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_TransmitStatus</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint8_t TransmitMailbox)</argsstring>
+        <name>CAN_TransmitStatus</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>TransmitMailbox</declname>
+        </param>
+        <briefdescription>
+<para>Checks the transmission of a message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TransmitMailbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of the mailbox that is used for transmission. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>CAN_TxStatus_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the CAN driver transmits the message, CAN_TxStatus_Failed in an other case. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="589" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="589" bodyend="635"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n___tx_1ga218b3e1380c4d49163c91a1af904e44c" compoundref="stm32f10x__can_8h" startline="405">IS_CAN_TRANSMITMAILBOX</references>
+        <references refid="group___c_a_n___private___defines_1gaa62f09d0693681cb7576f61c93b7cf0f" compoundref="stm32f10x__can_8c" startline="76">CAN_TXMAILBOX_0</references>
+        <references refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" compoundref="stm32f10x_8h" startline="707">CAN_TypeDef::TSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga4a4809b8908618df57e6393cc7fe0f52" compoundref="stm32f10x_8h" startline="6241">CAN_TSR_RQCP0</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaacedb237b31d29aef7f38475e9a6b297" compoundref="stm32f10x_8h" startline="6242">CAN_TSR_TXOK0</references>
+        <references refid="group___peripheral___registers___bits___definition_1gad7500e491fe82e67ed5d40759e8a50f0" compoundref="stm32f10x_8h" startline="6259">CAN_TSR_TME0</references>
+        <references refid="group___c_a_n___private___defines_1ga4e20f0aac1ac940014a6c66971890943" compoundref="stm32f10x__can_8c" startline="77">CAN_TXMAILBOX_1</references>
+        <references refid="group___peripheral___registers___bits___definition_1gabd3118dec59c3a45d2f262b090699538" compoundref="stm32f10x_8h" startline="6246">CAN_TSR_RQCP1</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaea918e510c5471b1ac797350b7950151" compoundref="stm32f10x_8h" startline="6247">CAN_TSR_TXOK1</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga5ba2b51def4b1683fd050e43045306ea" compoundref="stm32f10x_8h" startline="6260">CAN_TSR_TME1</references>
+        <references refid="group___c_a_n___private___defines_1ga8a842aa352d72321930cc963b26bf6d7" compoundref="stm32f10x__can_8c" startline="78">CAN_TXMAILBOX_2</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga3cf9e83cec96164f1dadf4e43411ebf0" compoundref="stm32f10x_8h" startline="6251">CAN_TSR_RQCP2</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga782c591bb204d751b470dd53a37d240e" compoundref="stm32f10x_8h" startline="6252">CAN_TSR_TXOK2</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaf6523fac51d3aed2e36de4c2f07c2a21" compoundref="stm32f10x_8h" startline="6261">CAN_TSR_TME2</references>
+        <references refid="group___c_a_n__transmit__constants_1ga8d193002e76c04ec8caff6b110cd5983" compoundref="stm32f10x__can_8h" startline="442">CAN_TxStatus_Failed</references>
+        <references refid="group___c_a_n__transmit__constants_1ga9678a3a51379422868083608c7394409" compoundref="stm32f10x__can_8h" startline="444">CAN_TxStatus_Pending</references>
+        <references refid="group___c_a_n__transmit__constants_1ga0b401c61922b1449de9b486dcf475c97" compoundref="stm32f10x__can_8h" startline="443">CAN_TxStatus_Ok</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga81106cdf5395a1947bfc87ec1685829e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_CancelTransmit</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint8_t Mailbox)</argsstring>
+        <name>CAN_CancelTransmit</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Mailbox</declname>
+        </param>
+        <briefdescription>
+<para>Cancels a transmit request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Mailbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mailbox number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="643" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="643" bodyend="660"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n___tx_1ga218b3e1380c4d49163c91a1af904e44c" compoundref="stm32f10x__can_8h" startline="405">IS_CAN_TRANSMITMAILBOX</references>
+        <references refid="group___c_a_n___private___defines_1gaa62f09d0693681cb7576f61c93b7cf0f" compoundref="stm32f10x__can_8c" startline="76">CAN_TXMAILBOX_0</references>
+        <references refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" compoundref="stm32f10x_8h" startline="707">CAN_TypeDef::TSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gafdac6b87a303b0d0ec9b0d94a54ae31f" compoundref="stm32f10x_8h" startline="6245">CAN_TSR_ABRQ0</references>
+        <references refid="group___c_a_n___private___defines_1ga4e20f0aac1ac940014a6c66971890943" compoundref="stm32f10x__can_8c" startline="77">CAN_TXMAILBOX_1</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga4c44a4e585b3ab1c37a6c2c28c90d6cd" compoundref="stm32f10x_8h" startline="6250">CAN_TSR_ABRQ1</references>
+        <references refid="group___c_a_n___private___defines_1ga8a842aa352d72321930cc963b26bf6d7" compoundref="stm32f10x__can_8c" startline="78">CAN_TXMAILBOX_2</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga2a3b7e4be7cebb35ad66cb85b82901bb" compoundref="stm32f10x_8h" startline="6255">CAN_TSR_ABRQ2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga351b90bb8a3bb0c846f85bbd56ef4dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_Receive</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint8_t FIFONumber, CanRxMsg *RxMessage)</argsstring>
+        <name>CAN_Receive</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>FIFONumber</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_can_rx_msg" kindref="compound">CanRxMsg</ref> *</type>
+          <declname>RxMessage</declname>
+        </param>
+        <briefdescription>
+<para>Receives a message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FIFONumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receive FIFO number, CAN_FIFO0 or CAN_FIFO1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RxMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a structure receive message which contains CAN Id, CAN DLC, CAN datas and FMI number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="676" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="676" bodyend="717"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1gaeeb94bf58bd48b8928f964eaaa20a24a" compoundref="stm32f10x__can_8h" startline="458">IS_CAN_FIFO</references>
+        <references refid="struct_can_rx_msg_1a83a67d1a709cc01570ce956e5adc811f" compoundref="stm32f10x__can_8h" startline="187">CanRxMsg::IDE</references>
+        <references refid="struct_c_a_n___type_def_1aa6053bc607535d9ecf7a3d887c0cc053" compoundref="stm32f10x_8h" startline="715">CAN_TypeDef::sFIFOMailBox</references>
+        <references refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1a034504d43f7b16b320745a25b3a8f12d" compoundref="stm32f10x_8h" startline="683">CAN_FIFOMailBox_TypeDef::RIR</references>
+        <references refid="group___c_a_n__identifier__type_1ga151d9df8a6f361d0a3231593726b5a13" compoundref="stm32f10x__can_8h" startline="418">CAN_Id_Standard</references>
+        <references refid="struct_can_rx_msg_1a62769e18836146f71238bee6b43b531e" compoundref="stm32f10x__can_8h" startline="181">CanRxMsg::StdId</references>
+        <references refid="struct_can_rx_msg_1a1fdca10d31c81eea2ccef41d2aced562" compoundref="stm32f10x__can_8h" startline="184">CanRxMsg::ExtId</references>
+        <references refid="struct_can_rx_msg_1a9a183149a391a24f86da2ce895f0f1c9" compoundref="stm32f10x__can_8h" startline="191">CanRxMsg::RTR</references>
+        <references refid="struct_can_rx_msg_1abf77d3abf9ad290c08cdfd5d99ebc745" compoundref="stm32f10x__can_8h" startline="195">CanRxMsg::DLC</references>
+        <references refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1a49d74ca8b402c2b9596bfcbe4cd051a9" compoundref="stm32f10x_8h" startline="684">CAN_FIFOMailBox_TypeDef::RDTR</references>
+        <references refid="struct_can_rx_msg_1a5afe39d8e295659eeb3030593828b96a" compoundref="stm32f10x__can_8h" startline="201">CanRxMsg::FMI</references>
+        <references refid="struct_can_rx_msg_1ae8ecbad16622db30d63fda08bc478649" compoundref="stm32f10x__can_8h" startline="198">CanRxMsg::Data</references>
+        <references refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1ac7d62861de29d0b4fcf11fabbdbd76e7" compoundref="stm32f10x_8h" startline="685">CAN_FIFOMailBox_TypeDef::RDLR</references>
+        <references refid="struct_c_a_n___f_i_f_o_mail_box___type_def_1a95890984bd67845015d40e82fb091c93" compoundref="stm32f10x_8h" startline="686">CAN_FIFOMailBox_TypeDef::RDHR</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1ga8f52eeefb86b2af5b7c3b4b75fa4d114" compoundref="stm32f10x__can_8h" startline="455">CAN_FIFO0</references>
+        <references refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" compoundref="stm32f10x_8h" startline="708">CAN_TypeDef::RF0R</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga74d2db4b9b7d52712e47557dcc61964d" compoundref="stm32f10x_8h" startline="6272">CAN_RF0R_RFOM0</references>
+        <references refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" compoundref="stm32f10x_8h" startline="709">CAN_TypeDef::RF1R</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga6930f860de4a90e3344e63fbc209b9ab" compoundref="stm32f10x_8h" startline="6278">CAN_RF1R_RFOM1</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga1bc3b39471e579b4101624c33d27918b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_FIFORelease</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint8_t FIFONumber)</argsstring>
+        <name>CAN_FIFORelease</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>FIFONumber</declname>
+        </param>
+        <briefdescription>
+<para>Releases the specified FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FIFONumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FIFO to release, CAN_FIFO0 or CAN_FIFO1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="730" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="730" bodyend="745"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1gaeeb94bf58bd48b8928f964eaaa20a24a" compoundref="stm32f10x__can_8h" startline="458">IS_CAN_FIFO</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1ga8f52eeefb86b2af5b7c3b4b75fa4d114" compoundref="stm32f10x__can_8h" startline="455">CAN_FIFO0</references>
+        <references refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" compoundref="stm32f10x_8h" startline="708">CAN_TypeDef::RF0R</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga74d2db4b9b7d52712e47557dcc61964d" compoundref="stm32f10x_8h" startline="6272">CAN_RF0R_RFOM0</references>
+        <references refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" compoundref="stm32f10x_8h" startline="709">CAN_TypeDef::RF1R</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga6930f860de4a90e3344e63fbc209b9ab" compoundref="stm32f10x_8h" startline="6278">CAN_RF1R_RFOM1</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga7100459a95ce1b3cfe8ab15e112029fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_MessagePending</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint8_t FIFONumber)</argsstring>
+        <name>CAN_MessagePending</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>FIFONumber</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of pending messages. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FIFONumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receive FIFO number, CAN_FIFO0 or CAN_FIFO1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NbMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: which is the number of pending message. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="753" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="753" bodyend="772"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1gaeeb94bf58bd48b8928f964eaaa20a24a" compoundref="stm32f10x__can_8h" startline="458">IS_CAN_FIFO</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1ga8f52eeefb86b2af5b7c3b4b75fa4d114" compoundref="stm32f10x__can_8h" startline="455">CAN_FIFO0</references>
+        <references refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" compoundref="stm32f10x_8h" startline="708">CAN_TypeDef::RF0R</references>
+        <references refid="group___c_a_n__receive___f_i_f_o__number__constants_1gafbcf3f13dbf61030ab7a812595ba9850" compoundref="stm32f10x__can_8h" startline="456">CAN_FIFO1</references>
+        <references refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" compoundref="stm32f10x_8h" startline="709">CAN_TypeDef::RF1R</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gab2a3630e9e3024114eb117d14e514208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_OperatingModeRequest</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint8_t CAN_OperatingMode)</argsstring>
+        <name>CAN_OperatingModeRequest</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>CAN_OperatingMode</declname>
+        </param>
+        <briefdescription>
+<para>Select the CAN Operation mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CAN_OperatingMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CAN Operating Mode. This parameter can be one of CAN_OperatingMode_TypeDef enumeration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the requested mode which can be<itemizedlist>
+<listitem><para>CAN_ModeStatus_Failed CAN failed entering the specific mode</para></listitem><listitem><para>CAN_ModeStatus_Success CAN Succeed entering the specific mode </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="784" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="784" bodyend="858"/>
+        <references refid="group___c_a_n___mode___status_1ga9882944537945325ef08e1986838ea45" compoundref="stm32f10x__can_8h" startline="264">CAN_ModeStatus_Failed</references>
+        <references refid="group___c_a_n___private___defines_1ga60a32132df242146efd3e9f7a079f0f0" compoundref="stm32f10x__can_8c" startline="58">INAK_TIMEOUT</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n___operating___mode_1ga377f1598db9b0248ba83fa6e5a75db75" compoundref="stm32f10x__can_8h" startline="252">IS_CAN_OPERATING_MODE</references>
+        <references refid="group___c_a_n___operating___mode_1gace8a4b5c164aba6f473d6254ad1e8a36" compoundref="stm32f10x__can_8h" startline="247">CAN_OperatingMode_Initialization</references>
+        <references refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" compoundref="stm32f10x_8h" startline="705">CAN_TypeDef::MCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gadf9602dfb2f95b481b6e642b95991176" compoundref="stm32f10x_8h" startline="6220">CAN_MCR_SLEEP</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga0cf12be5661908dbe38aa14cd4c3a356" compoundref="stm32f10x_8h" startline="6219">CAN_MCR_INRQ</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+        <references refid="group___c_a_n___private___defines_1ga79094ce5a3a2f717140e8cc9b7c161b6" compoundref="stm32f10x__can_8c" startline="82">CAN_MODE_MASK</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga2871cee90ebecb760bab16e9c039b682" compoundref="stm32f10x_8h" startline="6230">CAN_MSR_INAK</references>
+        <references refid="group___c_a_n___mode___status_1ga7ca0ea503eb3b3a7c0abdfad27cb6579" compoundref="stm32f10x__can_8h" startline="265">CAN_ModeStatus_Success</references>
+        <references refid="group___c_a_n___operating___mode_1ga663ecffaa60d1a201a035dfa45325848" compoundref="stm32f10x__can_8h" startline="248">CAN_OperatingMode_Normal</references>
+        <references refid="group___c_a_n___operating___mode_1ga173b85d2baaa6249d966b8073e3ad8ca" compoundref="stm32f10x__can_8h" startline="249">CAN_OperatingMode_Sleep</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaf1611badb362f0fd9047af965509f074" compoundref="stm32f10x_8h" startline="6231">CAN_MSR_SLAK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga640215e38765759d7eceb8a039046667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_Sleep</definition>
+        <argsstring>(CAN_TypeDef *CANx)</argsstring>
+        <name>CAN_Sleep</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <briefdescription>
+<para>Enters the low power mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN_Sleep_Ok if sleep entered, CAN_Sleep_Failed in an other case. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="866" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="866" bodyend="884"/>
+        <references refid="group___c_a_n__sleep__constants_1ga169500ab7169c4e9c7e9e4ea34b3e070" compoundref="stm32f10x__can_8h" startline="468">CAN_Sleep_Failed</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" compoundref="stm32f10x_8h" startline="705">CAN_TypeDef::MCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga0cf12be5661908dbe38aa14cd4c3a356" compoundref="stm32f10x_8h" startline="6219">CAN_MCR_INRQ</references>
+        <references refid="group___peripheral___registers___bits___definition_1gadf9602dfb2f95b481b6e642b95991176" compoundref="stm32f10x_8h" startline="6220">CAN_MCR_SLEEP</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaf1611badb362f0fd9047af965509f074" compoundref="stm32f10x_8h" startline="6231">CAN_MSR_SLAK</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga2871cee90ebecb760bab16e9c039b682" compoundref="stm32f10x_8h" startline="6230">CAN_MSR_INAK</references>
+        <references refid="group___c_a_n__sleep__constants_1gaf5c4e9d32d4faff9d0bf61e153ed7998" compoundref="stm32f10x__can_8h" startline="469">CAN_Sleep_Ok</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga78cdfbf1884b9e33c552bcbca15bed10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_WakeUp</definition>
+        <argsstring>(CAN_TypeDef *CANx)</argsstring>
+        <name>CAN_WakeUp</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <briefdescription>
+<para>Wakes the CAN up. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN_WakeUp_Ok if sleep mode left, CAN_WakeUp_Failed in an other case. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="892" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="892" bodyend="915"/>
+        <references refid="group___c_a_n___private___defines_1ga1bb8107706c8b4039ac55a122f3c65bb" compoundref="stm32f10x__can_8c" startline="60">SLAK_TIMEOUT</references>
+        <references refid="group___c_a_n__wake__up__constants_1ga837fd7ad47fee78e43a186544e2b390b" compoundref="stm32f10x__can_8h" startline="479">CAN_WakeUp_Failed</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="struct_c_a_n___type_def_1a1282eee79a22003257a7a5daa7f4a35f" compoundref="stm32f10x_8h" startline="705">CAN_TypeDef::MCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gadf9602dfb2f95b481b6e642b95991176" compoundref="stm32f10x_8h" startline="6220">CAN_MCR_SLEEP</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gaf1611badb362f0fd9047af965509f074" compoundref="stm32f10x_8h" startline="6231">CAN_MSR_SLAK</references>
+        <references refid="group___c_a_n__wake__up__constants_1ga152e4935cf85bdfb803eb36b656cd690" compoundref="stm32f10x__can_8h" startline="480">CAN_WakeUp_Ok</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gaaee721a392b6b21bfd15dc160aeb6924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_GetLastErrorCode</definition>
+        <argsstring>(CAN_TypeDef *CANx)</argsstring>
+        <name>CAN_GetLastErrorCode</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the CANx&apos;s last error code (LEC). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>CAN_ErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the Error code :<itemizedlist>
+<listitem><para>CAN_ERRORCODE_NoErr No Error</para></listitem><listitem><para>CAN_ERRORCODE_StuffErr Stuff Error</para></listitem><listitem><para>CAN_ERRORCODE_FormErr Form Error</para></listitem><listitem><para>CAN_ERRORCODE_ACKErr Acknowledgment Error</para></listitem><listitem><para>CAN_ERRORCODE_BitRecessiveErr Bit Recessive Error</para></listitem><listitem><para>CAN_ERRORCODE_BitDominantErr Bit Dominant Error</para></listitem><listitem><para>CAN_ERRORCODE_CRCErr CRC Error</para></listitem><listitem><para>CAN_ERRORCODE_SoftwareSetErr Software Set Error </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="932" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="932" bodyend="944"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" compoundref="stm32f10x_8h" startline="711">CAN_TypeDef::ESR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gab9f86741dd89034900e300499ae2272e" compoundref="stm32f10x_8h" startline="6301">CAN_ESR_LEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga6903eecbec40eb1361d915ddde9a3274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_GetReceiveErrorCounter</definition>
+        <argsstring>(CAN_TypeDef *CANx)</argsstring>
+        <name>CAN_GetReceiveErrorCounter</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the CANx Receive Error Counter (REC). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>In case of an error during reception, this counter is incremented by 1 or by 8 depending on the error condition as defined by the CAN standard. After every successful reception, the counter is decremented by 1 or reset to 120 if its value was higher than 128. When the counter value exceeds 127, the CAN controller enters the error passive state. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>CAN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receive Error Counter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="956" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="956" bodyend="968"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" compoundref="stm32f10x_8h" startline="711">CAN_TypeDef::ESR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga0df5b2ea3f419182e9bd885f55ee5dc9" compoundref="stm32f10x_8h" startline="6307">CAN_ESR_REC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga85ee0c35bf7ca15d4e4c862eef534843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_GetLSBTransmitErrorCounter</definition>
+        <argsstring>(CAN_TypeDef *CANx)</argsstring>
+        <name>CAN_GetLSBTransmitErrorCounter</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the LSB of the 9-bit CANx Transmit Error Counter(TEC). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>LSB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the 9-bit CAN Transmit Error Counter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="976" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="976" bodyend="988"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" compoundref="stm32f10x_8h" startline="711">CAN_TypeDef::ESR</references>
+        <references refid="group___peripheral___registers___bits___definition_1gae3de2080f48cc851c20d920acfd1737d" compoundref="stm32f10x_8h" startline="6306">CAN_ESR_TEC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gad1a8b2499a780b5bfa4accb3597b02f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_ITConfig</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint32_t CAN_IT, FunctionalState NewState)</argsstring>
+        <name>CAN_ITConfig</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CAN_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified CANx interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CAN_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CAN interrupt sources to be enabled or disabled. This parameter can be:<itemizedlist>
+<listitem><para>CAN_IT_TME,</para></listitem><listitem><para>CAN_IT_FMP0,</para></listitem><listitem><para>CAN_IT_FF0,</para></listitem><listitem><para>CAN_IT_FOV0,</para></listitem><listitem><para>CAN_IT_FMP1,</para></listitem><listitem><para>CAN_IT_FF1,</para></listitem><listitem><para>CAN_IT_FOV1,</para></listitem><listitem><para>CAN_IT_EWG,</para></listitem><listitem><para>CAN_IT_EPV,</para></listitem><listitem><para>CAN_IT_LEC,</para></listitem><listitem><para>CAN_IT_ERR,</para></listitem><listitem><para>CAN_IT_WKU or</para></listitem><listitem><para>CAN_IT_SLK. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CAN interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="1013" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="1013" bodyend="1030"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__interrupts_1gac0a9467bb0028c5fcd15a8a0ec6aaecb" compoundref="stm32f10x__can_8h" startline="589">IS_CAN_IT</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_c_a_n___type_def_1a530babbc4b9584c93a1bf87d6ce8b8dc" compoundref="stm32f10x_8h" startline="710">CAN_TypeDef::IER</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga2faad96caf823ef463cc5b5b25c480bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus CAN_GetFlagStatus</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint32_t CAN_FLAG)</argsstring>
+        <name>CAN_GetFlagStatus</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CAN_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified CAN flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CAN_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following flags:<itemizedlist>
+<listitem><para>CAN_FLAG_EWG</para></listitem><listitem><para>CAN_FLAG_EPV</para></listitem><listitem><para>CAN_FLAG_BOF</para></listitem><listitem><para>CAN_FLAG_RQCP0</para></listitem><listitem><para>CAN_FLAG_RQCP1</para></listitem><listitem><para>CAN_FLAG_RQCP2</para></listitem><listitem><para>CAN_FLAG_FMP1</para></listitem><listitem><para>CAN_FLAG_FF1</para></listitem><listitem><para>CAN_FLAG_FOV1</para></listitem><listitem><para>CAN_FLAG_FMP0</para></listitem><listitem><para>CAN_FLAG_FF0</para></listitem><listitem><para>CAN_FLAG_FOV0</para></listitem><listitem><para>CAN_FLAG_WKU</para></listitem><listitem><para>CAN_FLAG_SLAK</para></listitem><listitem><para>CAN_FLAG_LEC </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of CAN_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="1053" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="1053" bodyend="1134"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__flags_1ga38d33d1762ed3a331d214cdb3249866e" compoundref="stm32f10x__can_8h" startline="537">IS_CAN_GET_FLAG</references>
+        <references refid="group___c_a_n___private___defines_1ga14f7bb0b320da21443c9bd60b1f86b5d" compoundref="stm32f10x__can_8c" startline="73">CAN_FLAGS_ESR</references>
+        <references refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" compoundref="stm32f10x_8h" startline="711">CAN_TypeDef::ESR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+        <references refid="group___c_a_n___private___defines_1ga3aaa7df395ce1a90cb6e2ff3d2c4b24e" compoundref="stm32f10x__can_8c" startline="71">CAN_FLAGS_MSR</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+        <references refid="group___c_a_n___private___defines_1gac67e7d905ba11441bf9e14180805cf3a" compoundref="stm32f10x__can_8c" startline="65">CAN_FLAGS_TSR</references>
+        <references refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" compoundref="stm32f10x_8h" startline="707">CAN_TypeDef::TSR</references>
+        <references refid="group___c_a_n___private___defines_1ga4b22b2552759778ac07825240823a45f" compoundref="stm32f10x__can_8c" startline="69">CAN_FLAGS_RF0R</references>
+        <references refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" compoundref="stm32f10x_8h" startline="708">CAN_TypeDef::RF0R</references>
+        <references refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" compoundref="stm32f10x_8h" startline="709">CAN_TypeDef::RF1R</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga2c01646d5d3a2d7045e8dd71f58f8742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_ClearFlag</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint32_t CAN_FLAG)</argsstring>
+        <name>CAN_ClearFlag</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CAN_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the CAN&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CAN_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be one of the following flags:<itemizedlist>
+<listitem><para>CAN_FLAG_RQCP0</para></listitem><listitem><para>CAN_FLAG_RQCP1</para></listitem><listitem><para>CAN_FLAG_RQCP2</para></listitem><listitem><para>CAN_FLAG_FF1</para></listitem><listitem><para>CAN_FLAG_FOV1</para></listitem><listitem><para>CAN_FLAG_FF0</para></listitem><listitem><para>CAN_FLAG_FOV0</para></listitem><listitem><para>CAN_FLAG_WKU</para></listitem><listitem><para>CAN_FLAG_SLAK</para></listitem><listitem><para>CAN_FLAG_LEC </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="1153" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="1153" bodyend="1190"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__flags_1gac46f5fb953efb6163cf3b2e33a514d0c" compoundref="stm32f10x__can_8h" startline="546">IS_CAN_CLEAR_FLAG</references>
+        <references refid="group___c_a_n__flags_1ga73a774fa4d391aec0ea6552bf9372917" compoundref="stm32f10x__can_8h" startline="535">CAN_FLAG_LEC</references>
+        <references refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" compoundref="stm32f10x_8h" startline="711">CAN_TypeDef::ESR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___c_a_n___private___defines_1ga4b22b2552759778ac07825240823a45f" compoundref="stm32f10x__can_8c" startline="69">CAN_FLAGS_RF0R</references>
+        <references refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" compoundref="stm32f10x_8h" startline="708">CAN_TypeDef::RF0R</references>
+        <references refid="group___c_a_n___private___defines_1ga2a03d73273ab353c8deb3a4730431977" compoundref="stm32f10x__can_8c" startline="67">CAN_FLAGS_RF1R</references>
+        <references refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" compoundref="stm32f10x_8h" startline="709">CAN_TypeDef::RF1R</references>
+        <references refid="group___c_a_n___private___defines_1gac67e7d905ba11441bf9e14180805cf3a" compoundref="stm32f10x__can_8c" startline="65">CAN_FLAGS_TSR</references>
+        <references refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" compoundref="stm32f10x_8h" startline="707">CAN_TypeDef::TSR</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga9aca05b3013e1b3438f3559f80b33c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus CAN_GetITStatus</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint32_t CAN_IT)</argsstring>
+        <name>CAN_GetITStatus</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CAN_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified CANx interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CAN_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CAN interrupt source to check. This parameter can be one of the following flags:<itemizedlist>
+<listitem><para>CAN_IT_TME</para></listitem><listitem><para>CAN_IT_FMP0</para></listitem><listitem><para>CAN_IT_FF0</para></listitem><listitem><para>CAN_IT_FOV0</para></listitem><listitem><para>CAN_IT_FMP1</para></listitem><listitem><para>CAN_IT_FF1</para></listitem><listitem><para>CAN_IT_FOV1</para></listitem><listitem><para>CAN_IT_WKU</para></listitem><listitem><para>CAN_IT_SLK</para></listitem><listitem><para>CAN_IT_EWG</para></listitem><listitem><para>CAN_IT_EPV</para></listitem><listitem><para>CAN_IT_BOF</para></listitem><listitem><para>CAN_IT_LEC</para></listitem><listitem><para>CAN_IT_ERR </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current state of CAN_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="1213" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="1213" bodyend="1296"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__interrupts_1gac0a9467bb0028c5fcd15a8a0ec6aaecb" compoundref="stm32f10x__can_8h" startline="589">IS_CAN_IT</references>
+        <references refid="struct_c_a_n___type_def_1a530babbc4b9584c93a1bf87d6ce8b8dc" compoundref="stm32f10x_8h" startline="710">CAN_TypeDef::IER</references>
+        <references refid="group___c_a_n__interrupts_1ga619e36230fa2eb089a7c1936b5004eb9" compoundref="stm32f10x__can_8h" startline="562">CAN_IT_TME</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_ClearITPendingBit</definition>
+        <argsstring>(CAN_TypeDef *CANx, uint32_t CAN_IT)</argsstring>
+        <name>CAN_ClearITPendingBit</name>
+        <param>
+          <type><ref refid="struct_c_a_n___type_def" kindref="compound">CAN_TypeDef</ref> *</type>
+          <declname>CANx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CAN_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the CANx&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CANx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CAN_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt pending bit to clear.<itemizedlist>
+<listitem><para>CAN_IT_TME</para></listitem><listitem><para>CAN_IT_FF0</para></listitem><listitem><para>CAN_IT_FOV0</para></listitem><listitem><para>CAN_IT_FF1</para></listitem><listitem><para>CAN_IT_FOV1</para></listitem><listitem><para>CAN_IT_WKU</para></listitem><listitem><para>CAN_IT_SLK</para></listitem><listitem><para>CAN_IT_EWG</para></listitem><listitem><para>CAN_IT_EPV</para></listitem><listitem><para>CAN_IT_BOF</para></listitem><listitem><para>CAN_IT_LEC</para></listitem><listitem><para>CAN_IT_ERR </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="1316" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="1316" bodyend="1387"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___c_a_n___exported___types_1gaf471a53f52a02078ffd842658d932f63" compoundref="stm32f10x__can_8h" startline="52">IS_CAN_ALL_PERIPH</references>
+        <references refid="group___c_a_n__interrupts_1ga8b6e5fd6ddfe0141925f1e22cfbe7b85" compoundref="stm32f10x__can_8h" startline="597">IS_CAN_CLEAR_IT</references>
+        <references refid="group___c_a_n__interrupts_1ga619e36230fa2eb089a7c1936b5004eb9" compoundref="stm32f10x__can_8h" startline="562">CAN_IT_TME</references>
+        <references refid="struct_c_a_n___type_def_1acbc82ac4e87e75350fc586be5e56d95b" compoundref="stm32f10x_8h" startline="707">CAN_TypeDef::TSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga4a4809b8908618df57e6393cc7fe0f52" compoundref="stm32f10x_8h" startline="6241">CAN_TSR_RQCP0</references>
+        <references refid="group___peripheral___registers___bits___definition_1gabd3118dec59c3a45d2f262b090699538" compoundref="stm32f10x_8h" startline="6246">CAN_TSR_RQCP1</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga3cf9e83cec96164f1dadf4e43411ebf0" compoundref="stm32f10x_8h" startline="6251">CAN_TSR_RQCP2</references>
+        <references refid="group___c_a_n__interrupts_1gabf63043d9216de80ddc7ffe57b23ef67" compoundref="stm32f10x__can_8h" startline="566">CAN_IT_FF0</references>
+        <references refid="struct_c_a_n___type_def_1ad8e858479e26ab075ee2ddb630e8769d" compoundref="stm32f10x_8h" startline="708">CAN_TypeDef::RF0R</references>
+        <references refid="group___peripheral___registers___bits___definition_1gae934674f6e22a758e430f32cfc386d70" compoundref="stm32f10x_8h" startline="6270">CAN_RF0R_FULL0</references>
+        <references refid="group___c_a_n__interrupts_1ga066a4317f95669e5b5931c9a759cf248" compoundref="stm32f10x__can_8h" startline="567">CAN_IT_FOV0</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga2a3d15b3abab8199c16e26a3dffdc8b8" compoundref="stm32f10x_8h" startline="6271">CAN_RF0R_FOVR0</references>
+        <references refid="group___c_a_n__interrupts_1ga93b86d884ce0624b4b36c991fd75fc1c" compoundref="stm32f10x__can_8h" startline="569">CAN_IT_FF1</references>
+        <references refid="struct_c_a_n___type_def_1a69a528d1288c1de666df68655af1d20e" compoundref="stm32f10x_8h" startline="709">CAN_TypeDef::RF1R</references>
+        <references refid="group___peripheral___registers___bits___definition_1gabdaa12fe4d14254cc4a6a4de749a7d0a" compoundref="stm32f10x_8h" startline="6276">CAN_RF1R_FULL1</references>
+        <references refid="group___c_a_n__interrupts_1ga963301fdbede5f9a9665dc5b6210eaec" compoundref="stm32f10x__can_8h" startline="570">CAN_IT_FOV1</references>
+        <references refid="group___peripheral___registers___bits___definition_1gab5eeaabd4db3825bc53d860aca8d7590" compoundref="stm32f10x_8h" startline="6277">CAN_RF1R_FOVR1</references>
+        <references refid="group___c_a_n__interrupts_1gac9c8767770d94de753dda9ad31f9af15" compoundref="stm32f10x__can_8h" startline="573">CAN_IT_WKU</references>
+        <references refid="struct_c_a_n___type_def_1af98b957a4e887751fbd407d3e2cf93b5" compoundref="stm32f10x_8h" startline="706">CAN_TypeDef::MSR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga0f4c753b96d21c5001b39ad5b08519fc" compoundref="stm32f10x_8h" startline="6233">CAN_MSR_WKUI</references>
+        <references refid="group___c_a_n__interrupts_1ga639d4ab2777d9a2f8b7e67071b091059" compoundref="stm32f10x__can_8h" startline="574">CAN_IT_SLK</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga47ab62ae123c791de27ad05dde5bee91" compoundref="stm32f10x_8h" startline="6234">CAN_MSR_SLAKI</references>
+        <references refid="group___c_a_n__interrupts_1ga8a9f04ddf6ebe169d32b951a8ea135b3" compoundref="stm32f10x__can_8h" startline="577">CAN_IT_EWG</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga9c424768e9e963402f37cb95ae87a1ae" compoundref="stm32f10x_8h" startline="6232">CAN_MSR_ERRI</references>
+        <references refid="group___c_a_n__interrupts_1ga006b7b641d337a599ceac64b483e75dd" compoundref="stm32f10x__can_8h" startline="578">CAN_IT_EPV</references>
+        <references refid="group___c_a_n__interrupts_1gad63c39e6237aa07681a1f8ce2ff9e167" compoundref="stm32f10x__can_8h" startline="579">CAN_IT_BOF</references>
+        <references refid="group___c_a_n__interrupts_1gad670b6f001bf67f24e17d91ada50a61c" compoundref="stm32f10x__can_8h" startline="580">CAN_IT_LEC</references>
+        <references refid="struct_c_a_n___type_def_1ab1a1b6a7c587443a03d654d3b9a94423" compoundref="stm32f10x_8h" startline="711">CAN_TypeDef::ESR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___c_a_n__interrupts_1ga65f1781c9165a2e9b5f77f1ed3990741" compoundref="stm32f10x__can_8h" startline="581">CAN_IT_ERR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_a_n___private___functions_1gaed56e0c694fbf4dc2fd3244d4e4e269a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>static ITStatus CheckITStatus</definition>
+        <argsstring>(uint32_t CAN_Reg, uint32_t It_Bit)</argsstring>
+        <name>CheckITStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>CAN_Reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>It_Bit</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the CAN interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CAN_Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the CAN interrupt register to check. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>It_Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt source bit to check. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the CAN Interrupt (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" line="107" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" bodystart="1395" bodyend="1410"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,270 @@
+\hypertarget{semihosting_8h}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/arm/semihosting.h File Reference}
+\label{semihosting_8h}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/arm/semihosting.\+h@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/arm/semihosting.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{semihosting_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{semihosting_8h_a799889dbbe0f2a2ba0fd045ab9155c0d}{Angel\+S\+W\+I\+\_\+\+A\+RM}~0x123456
+\item 
+\#define \hyperlink{semihosting_8h_a52405d1acc07639f9f6cb1693d5437e0}{Angel\+S\+WI}~\hyperlink{semihosting_8h_a799889dbbe0f2a2ba0fd045ab9155c0d}{Angel\+S\+W\+I\+\_\+\+A\+RM}
+\item 
+\#define \hyperlink{semihosting_8h_a0096307232da04e85affd90d3753e5c1}{Angel\+S\+W\+I\+Insn}~\char`\"{}swi\char`\"{}
+\item 
+\#define \hyperlink{semihosting_8h_ad6e808da9f5f2ccdc14571bb3be30030}{Angel\+S\+W\+I\+Asm}~swi
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955}{Operation\+Number} \{ \newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a1e8010ad9e6d1ff29a2c309dcce562c4}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Enter\+S\+VC} = 0x17, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Report\+Exception} = 0x18, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ad3510bf376f9de79b96cf64c5086c191}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+SE} = 0x02, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9926f9916a67ac06dca9dd4a37d287d1}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+CK} = 0x10, 
+\newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ac4622cd6487037d89c296e82e37345ac}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+L\+A\+P\+S\+ED} = 0x30, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aa3a31b77abd833dde82fa4e0b8611bc9}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+NO} = 0x13, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a3e949e38172269f893161095c65220dd}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+F\+L\+EN} = 0x0C, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a437a9a0c4a70dbedcb11851511357ab6}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+G\+E\+T\+\_\+\+C\+M\+D\+L\+I\+NE} = 0x15, 
+\newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ab3771abdb14db38b2c8499744f08cf90}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+P\+I\+N\+FO} = 0x16, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a17d1ea71fea7dda5950e8a40ad83ab99}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+E\+R\+R\+OR} = 0x08, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aab298cac69009bc12c76335c5f0c6293}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+T\+TY} = 0x09, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ae1ed8ed0ec82d76628671bfc6b96c2d8}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+O\+P\+EN} = 0x01, 
+\newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ac778e8c9d34312cc374e6c3944739585}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+AD} = 0x06, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ad660d6a7ee480d67538657ec1cf3dd22}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+A\+DC} = 0x07, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a6967f75e9d753f6be0a79fab3c21847c}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+M\+O\+VE} = 0x0E, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aeeb2d6fbf5175ae3573d46080f9034f8}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+N\+A\+ME} = 0x0F, 
+\newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a6bc8a00c58c3d3d70d816ae494772058}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+E\+EK} = 0x0A, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955acfe3855bb6707f6223f63f3561b48c4b}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+Y\+S\+T\+EM} = 0x12, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a096d055933d76014c5c7bcf479a46cc0}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+C\+K\+F\+R\+EQ} = 0x31, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9771471947fe184e3eb3a1eb02a862e9}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME} = 0x11, 
+\newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a95055a5c7298611a40cd227e3b394d93}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+M\+P\+N\+AM} = 0x0D, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a383c529db53a8cc54631bf18bb9531d3}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+TE} = 0x05, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9c57b8c9baa11c43e0396bdc3339e9d6}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+EC} = 0x03, 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955abf5f7cab3b1a63f29116542674042a51}{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+E0} = 0x04, 
+\newline
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a97308e2a5471b6725e9198f057870cb2}{A\+D\+P\+\_\+\+Stopped\+\_\+\+Application\+Exit} = ((2 $<$$<$ 16) + 38), 
+\hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a09774fa193a1c79327c02f3c5f26d393}{A\+D\+P\+\_\+\+Stopped\+\_\+\+Run\+Time\+Error} = ((2 $<$$<$ 16) + 35)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+asm \hyperlink{semihosting_8h_a65e6ad7ed1b130fda2cf7f6a0861fca9}{volatile} (\char`\"{} mov r0, \%\mbox{[}rsn\mbox{]}  \textbackslash{} \char`\"{} mov r1, \%\mbox{[}\hyperlink{semihosting_8h_a40c15747aa7d502fffebb8862d494b52}{arg}\mbox{]} \textbackslash{}\char`\"{} \char`\"{} \char`\"{} Angel\+S\+W\+I\+Insn \char`\"{} \%\mbox{[}swi\mbox{]} \textbackslash{}\char`\"{} \char`\"{} mov \%\mbox{[}val\mbox{]}, r0\char`\"{} \+:\mbox{[}val\mbox{]} \char`\"{}=r\char`\"{}(value) \+:\mbox{[}rsn\mbox{]} \char`\"{}r\char`\"{}(reason), \mbox{[}\hyperlink{semihosting_8h_a40c15747aa7d502fffebb8862d494b52}{arg}\mbox{]} \char`\"{}r\char`\"{}(arg), \mbox{[}swi\mbox{]} \char`\"{}i\char`\"{}(Angel\+S\+WI) \+:\char`\"{}r0\char`\"{}, \char`\"{}r1\char`\"{}, \char`\"{}r2\char`\"{}, \char`\"{}r3\char`\"{}, \char`\"{}ip\char`\"{}, \char`\"{}lr\char`\"{}, \char`\"{}memory\char`\"{}, \char`\"{}cc\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int void $\ast$ \hyperlink{semihosting_8h_a40c15747aa7d502fffebb8862d494b52}{arg}
+\item 
+return \hyperlink{semihosting_8h_aacce635d68067370c70caa2381ea1040}{value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{semihosting_8h_a52405d1acc07639f9f6cb1693d5437e0}\label{semihosting_8h_a52405d1acc07639f9f6cb1693d5437e0}} 
+\index{semihosting.\+h@{semihosting.\+h}!Angel\+S\+WI@{Angel\+S\+WI}}
+\index{Angel\+S\+WI@{Angel\+S\+WI}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{Angel\+S\+WI}{AngelSWI}}
+{\footnotesize\ttfamily \#define Angel\+S\+WI~\hyperlink{semihosting_8h_a799889dbbe0f2a2ba0fd045ab9155c0d}{Angel\+S\+W\+I\+\_\+\+A\+RM}}
+
+
+
+Definition at line 53 of file semihosting.\+h.
+
+\mbox{\Hypertarget{semihosting_8h_a799889dbbe0f2a2ba0fd045ab9155c0d}\label{semihosting_8h_a799889dbbe0f2a2ba0fd045ab9155c0d}} 
+\index{semihosting.\+h@{semihosting.\+h}!Angel\+S\+W\+I\+\_\+\+A\+RM@{Angel\+S\+W\+I\+\_\+\+A\+RM}}
+\index{Angel\+S\+W\+I\+\_\+\+A\+RM@{Angel\+S\+W\+I\+\_\+\+A\+RM}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{Angel\+S\+W\+I\+\_\+\+A\+RM}{AngelSWI\_ARM}}
+{\footnotesize\ttfamily \#define Angel\+S\+W\+I\+\_\+\+A\+RM~0x123456}
+
+
+
+Definition at line 49 of file semihosting.\+h.
+
+\mbox{\Hypertarget{semihosting_8h_ad6e808da9f5f2ccdc14571bb3be30030}\label{semihosting_8h_ad6e808da9f5f2ccdc14571bb3be30030}} 
+\index{semihosting.\+h@{semihosting.\+h}!Angel\+S\+W\+I\+Asm@{Angel\+S\+W\+I\+Asm}}
+\index{Angel\+S\+W\+I\+Asm@{Angel\+S\+W\+I\+Asm}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{Angel\+S\+W\+I\+Asm}{AngelSWIAsm}}
+{\footnotesize\ttfamily \#define Angel\+S\+W\+I\+Asm~swi}
+
+
+
+Definition at line 63 of file semihosting.\+h.
+
+\mbox{\Hypertarget{semihosting_8h_a0096307232da04e85affd90d3753e5c1}\label{semihosting_8h_a0096307232da04e85affd90d3753e5c1}} 
+\index{semihosting.\+h@{semihosting.\+h}!Angel\+S\+W\+I\+Insn@{Angel\+S\+W\+I\+Insn}}
+\index{Angel\+S\+W\+I\+Insn@{Angel\+S\+W\+I\+Insn}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{Angel\+S\+W\+I\+Insn}{AngelSWIInsn}}
+{\footnotesize\ttfamily \#define Angel\+S\+W\+I\+Insn~\char`\"{}swi\char`\"{}}
+
+
+
+Definition at line 62 of file semihosting.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955}} 
+\index{semihosting.\+h@{semihosting.\+h}!Operation\+Number@{Operation\+Number}}
+\index{Operation\+Number@{Operation\+Number}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{Operation\+Number}{OperationNumber}}
+{\footnotesize\ttfamily enum \hyperlink{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955}{Operation\+Number}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Enter\+S\+VC@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Enter\+S\+VC}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Enter\+S\+VC@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Enter\+S\+VC}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a1e8010ad9e6d1ff29a2c309dcce562c4}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a1e8010ad9e6d1ff29a2c309dcce562c4}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Enter\+S\+VC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Report\+Exception@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Report\+Exception}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Report\+Exception@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Report\+Exception}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a0ec256df1f87ed648561fc9af71e607f}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+Report\+Exception&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+SE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+SE}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+SE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+SE}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ad3510bf376f9de79b96cf64c5086c191}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ad3510bf376f9de79b96cf64c5086c191}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+CK@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+CK}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+CK@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+CK}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9926f9916a67ac06dca9dd4a37d287d1}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9926f9916a67ac06dca9dd4a37d287d1}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+C\+L\+O\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+L\+A\+P\+S\+ED@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+L\+A\+P\+S\+ED}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+L\+A\+P\+S\+ED@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+L\+A\+P\+S\+ED}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ac4622cd6487037d89c296e82e37345ac}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ac4622cd6487037d89c296e82e37345ac}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+L\+A\+P\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+NO@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+NO}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+NO@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+NO}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aa3a31b77abd833dde82fa4e0b8611bc9}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aa3a31b77abd833dde82fa4e0b8611bc9}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+NO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+F\+L\+EN@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+F\+L\+EN}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+F\+L\+EN@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+F\+L\+EN}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a3e949e38172269f893161095c65220dd}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a3e949e38172269f893161095c65220dd}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+F\+L\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+G\+E\+T\+\_\+\+C\+M\+D\+L\+I\+NE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+G\+E\+T\+\_\+\+C\+M\+D\+L\+I\+NE}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+G\+E\+T\+\_\+\+C\+M\+D\+L\+I\+NE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+G\+E\+T\+\_\+\+C\+M\+D\+L\+I\+NE}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a437a9a0c4a70dbedcb11851511357ab6}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a437a9a0c4a70dbedcb11851511357ab6}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+G\+E\+T\+\_\+\+C\+M\+D\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+P\+I\+N\+FO@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+P\+I\+N\+FO}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+P\+I\+N\+FO@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+P\+I\+N\+FO}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ab3771abdb14db38b2c8499744f08cf90}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ab3771abdb14db38b2c8499744f08cf90}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+P\+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+E\+R\+R\+OR@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+E\+R\+R\+OR}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+E\+R\+R\+OR@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+E\+R\+R\+OR}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a17d1ea71fea7dda5950e8a40ad83ab99}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a17d1ea71fea7dda5950e8a40ad83ab99}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+T\+TY@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+T\+TY}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+T\+TY@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+T\+TY}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aab298cac69009bc12c76335c5f0c6293}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aab298cac69009bc12c76335c5f0c6293}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+I\+S\+T\+TY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+O\+P\+EN@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+O\+P\+EN}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+O\+P\+EN@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+O\+P\+EN}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ae1ed8ed0ec82d76628671bfc6b96c2d8}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ae1ed8ed0ec82d76628671bfc6b96c2d8}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+O\+P\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+AD@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+AD}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+AD@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+AD}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ac778e8c9d34312cc374e6c3944739585}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ac778e8c9d34312cc374e6c3944739585}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+A\+DC@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+A\+DC}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+A\+DC@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+A\+DC}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ad660d6a7ee480d67538657ec1cf3dd22}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955ad660d6a7ee480d67538657ec1cf3dd22}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+A\+DC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+M\+O\+VE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+M\+O\+VE}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+M\+O\+VE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+M\+O\+VE}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a6967f75e9d753f6be0a79fab3c21847c}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a6967f75e9d753f6be0a79fab3c21847c}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+M\+O\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+N\+A\+ME@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+N\+A\+ME}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+N\+A\+ME@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+N\+A\+ME}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aeeb2d6fbf5175ae3573d46080f9034f8}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955aeeb2d6fbf5175ae3573d46080f9034f8}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+N\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+E\+EK@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+E\+EK}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+E\+EK@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+E\+EK}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a6bc8a00c58c3d3d70d816ae494772058}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a6bc8a00c58c3d3d70d816ae494772058}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+E\+EK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+Y\+S\+T\+EM@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+Y\+S\+T\+EM}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+Y\+S\+T\+EM@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+Y\+S\+T\+EM}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955acfe3855bb6707f6223f63f3561b48c4b}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955acfe3855bb6707f6223f63f3561b48c4b}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+S\+Y\+S\+T\+EM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+C\+K\+F\+R\+EQ@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+C\+K\+F\+R\+EQ}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+C\+K\+F\+R\+EQ@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+C\+K\+F\+R\+EQ}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a096d055933d76014c5c7bcf479a46cc0}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a096d055933d76014c5c7bcf479a46cc0}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+C\+K\+F\+R\+EQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9771471947fe184e3eb3a1eb02a862e9}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9771471947fe184e3eb3a1eb02a862e9}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+M\+P\+N\+AM@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+M\+P\+N\+AM}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+M\+P\+N\+AM@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+M\+P\+N\+AM}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a95055a5c7298611a40cd227e3b394d93}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a95055a5c7298611a40cd227e3b394d93}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+T\+M\+P\+N\+AM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+TE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+TE}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+TE@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+TE}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a383c529db53a8cc54631bf18bb9531d3}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a383c529db53a8cc54631bf18bb9531d3}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+EC@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+EC}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+EC@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+EC}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9c57b8c9baa11c43e0396bdc3339e9d6}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a9c57b8c9baa11c43e0396bdc3339e9d6}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+EC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+E0@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+E0}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+E0@{S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+E0}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955abf5f7cab3b1a63f29116542674042a51}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955abf5f7cab3b1a63f29116542674042a51}} 
+S\+E\+M\+I\+H\+O\+S\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+\_\+\+W\+R\+I\+T\+E0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+D\+P\+\_\+\+Stopped\+\_\+\+Application\+Exit@{A\+D\+P\+\_\+\+Stopped\+\_\+\+Application\+Exit}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!A\+D\+P\+\_\+\+Stopped\+\_\+\+Application\+Exit@{A\+D\+P\+\_\+\+Stopped\+\_\+\+Application\+Exit}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a97308e2a5471b6725e9198f057870cb2}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a97308e2a5471b6725e9198f057870cb2}} 
+A\+D\+P\+\_\+\+Stopped\+\_\+\+Application\+Exit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+D\+P\+\_\+\+Stopped\+\_\+\+Run\+Time\+Error@{A\+D\+P\+\_\+\+Stopped\+\_\+\+Run\+Time\+Error}!semihosting.\+h@{semihosting.\+h}}\index{semihosting.\+h@{semihosting.\+h}!A\+D\+P\+\_\+\+Stopped\+\_\+\+Run\+Time\+Error@{A\+D\+P\+\_\+\+Stopped\+\_\+\+Run\+Time\+Error}}}\mbox{\Hypertarget{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a09774fa193a1c79327c02f3c5f26d393}\label{semihosting_8h_a368e5417dfc8239b696ecf3233a6a955a09774fa193a1c79327c02f3c5f26d393}} 
+A\+D\+P\+\_\+\+Stopped\+\_\+\+Run\+Time\+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 12 of file semihosting.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{semihosting_8h_a65e6ad7ed1b130fda2cf7f6a0861fca9}\label{semihosting_8h_a65e6ad7ed1b130fda2cf7f6a0861fca9}} 
+\index{semihosting.\+h@{semihosting.\+h}!volatile@{volatile}}
+\index{volatile@{volatile}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{volatile()}{volatile()}}
+{\footnotesize\ttfamily asm volatile (\begin{DoxyParamCaption}\item[{\char`\"{} mov}]{r0,  }\item[{\% \textbackslash{} \char`\"{} mov}]{r1\mbox{[}rsn\mbox{]},  }\item[{\% \textbackslash{}\char`\"{} \char`\"{} \char`\"{} Angel\+S\+W\+I\+Insn \char`\"{} \% \textbackslash{}\char`\"{} \char`\"{} mov \%}]{\mbox{[}arg\mbox{]}\mbox{[}swi\mbox{]}\mbox{[}val\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{semihosting_8h_a40c15747aa7d502fffebb8862d494b52}\label{semihosting_8h_a40c15747aa7d502fffebb8862d494b52}} 
+\index{semihosting.\+h@{semihosting.\+h}!arg@{arg}}
+\index{arg@{arg}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{arg}{arg}}
+{\footnotesize\ttfamily int void$\ast$ arg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+  \textcolor{keywordtype}{int} \hyperlink{semihosting_8h_aacce635d68067370c70caa2381ea1040}{value}
+\end{DoxyCode}
+
+
+Definition at line 78 of file semihosting.\+h.
+
+\mbox{\Hypertarget{semihosting_8h_aacce635d68067370c70caa2381ea1040}\label{semihosting_8h_aacce635d68067370c70caa2381ea1040}} 
+\index{semihosting.\+h@{semihosting.\+h}!value@{value}}
+\index{value@{value}!semihosting.\+h@{semihosting.\+h}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily return value}
+
+
+
+Definition at line 102 of file semihosting.\+h.
+

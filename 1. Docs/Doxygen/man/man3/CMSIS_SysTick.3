@@ -1,0 +1,913 @@
+.TH "CMSIS_SysTick" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_SysTick \- Type definitions for the System \fBTimer\fP Registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSysTick_Type\fP"
+.br
+.RI "Structure type to access the System \fBTimer\fP (SysTick)\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_COUNTFLAG_Msk\fP   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_CLKSOURCE_Msk\fP   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_TICKINT_Msk\fP   (1UL << SysTick_CTRL_TICKINT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CTRL_ENABLE_Msk\fP   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_LOAD_RELOAD_Msk\fP   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_VAL_CURRENT_Msk\fP   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_NOREF_Msk\fP   (1UL << SysTick_CALIB_NOREF_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_SKEW_Msk\fP   (1UL << SysTick_CALIB_SKEW_Pos)"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBSysTick_CALIB_TENMS_Msk\fP   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Type definitions for the System \fBTimer\fP Registers\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 535 of file core_cm0\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 559 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 562 of file core_sc000\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 696 of file core_sc300\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 722 of file core_cm3\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 783 of file core_cm4\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Msk   (1UL << SysTick_CALIB_NOREF_Pos)"
+SysTick CALIB: NOREF Mask 
+.PP
+Definition at line 985 of file core_cm7\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 534 of file core_cm0\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 558 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 561 of file core_sc000\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 695 of file core_sc300\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 721 of file core_cm3\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 782 of file core_cm4\&.h\&.
+.SS "#define SysTick_CALIB_NOREF_Pos   31U"
+SysTick CALIB: NOREF Position 
+.PP
+Definition at line 984 of file core_cm7\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 538 of file core_cm0\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 562 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 565 of file core_sc000\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 699 of file core_sc300\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 725 of file core_cm3\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 786 of file core_cm4\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Msk   (1UL << SysTick_CALIB_SKEW_Pos)"
+SysTick CALIB: SKEW Mask 
+.PP
+Definition at line 988 of file core_cm7\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 537 of file core_cm0\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 561 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 564 of file core_sc000\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 698 of file core_sc300\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 724 of file core_cm3\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 785 of file core_cm4\&.h\&.
+.SS "#define SysTick_CALIB_SKEW_Pos   30U"
+SysTick CALIB: SKEW Position 
+.PP
+Definition at line 987 of file core_cm7\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 541 of file core_cm0\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 565 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 568 of file core_sc000\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 702 of file core_sc300\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 728 of file core_cm3\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 789 of file core_cm4\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Msk   (0xFFFFFFUL /*<< SysTick_CALIB_TENMS_Pos*/)"
+SysTick CALIB: TENMS Mask 
+.PP
+Definition at line 991 of file core_cm7\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 540 of file core_cm0\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 564 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 567 of file core_sc000\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 701 of file core_sc300\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 727 of file core_cm3\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 788 of file core_cm4\&.h\&.
+.SS "#define SysTick_CALIB_TENMS_Pos   0U"
+SysTick CALIB: TENMS Position 
+.PP
+Definition at line 990 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 517 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 541 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 544 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 678 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 704 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 765 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Msk   (1UL << SysTick_CTRL_CLKSOURCE_Pos)"
+SysTick CTRL: CLKSOURCE Mask 
+.PP
+Definition at line 967 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 516 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 540 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 543 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 677 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 703 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 764 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_CLKSOURCE_Pos   2U"
+SysTick CTRL: CLKSOURCE Position 
+.PP
+Definition at line 966 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 514 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 538 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 541 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 675 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 701 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 762 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Msk   (1UL << SysTick_CTRL_COUNTFLAG_Pos)"
+SysTick CTRL: COUNTFLAG Mask 
+.PP
+Definition at line 964 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 513 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 537 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 540 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 674 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 700 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 761 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_COUNTFLAG_Pos   16U"
+SysTick CTRL: COUNTFLAG Position 
+.PP
+Definition at line 963 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 523 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 547 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 550 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 684 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 710 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 771 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Msk   (1UL /*<< SysTick_CTRL_ENABLE_Pos*/)"
+SysTick CTRL: ENABLE Mask 
+.PP
+Definition at line 973 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 522 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 546 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 549 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 683 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 709 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 770 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_ENABLE_Pos   0U"
+SysTick CTRL: ENABLE Position 
+.PP
+Definition at line 972 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 520 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 544 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 547 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 681 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 707 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 768 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Msk   (1UL << SysTick_CTRL_TICKINT_Pos)"
+SysTick CTRL: TICKINT Mask 
+.PP
+Definition at line 970 of file core_cm7\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 519 of file core_cm0\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 543 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 546 of file core_sc000\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 680 of file core_sc300\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 706 of file core_cm3\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 767 of file core_cm4\&.h\&.
+.SS "#define SysTick_CTRL_TICKINT_Pos   1U"
+SysTick CTRL: TICKINT Position 
+.PP
+Definition at line 969 of file core_cm7\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 527 of file core_cm0\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 551 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 554 of file core_sc000\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 688 of file core_sc300\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 714 of file core_cm3\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 775 of file core_cm4\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Msk   (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)"
+SysTick LOAD: RELOAD Mask 
+.PP
+Definition at line 977 of file core_cm7\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 526 of file core_cm0\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 550 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 553 of file core_sc000\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 687 of file core_sc300\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 713 of file core_cm3\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 774 of file core_cm4\&.h\&.
+.SS "#define SysTick_LOAD_RELOAD_Pos   0U"
+SysTick LOAD: RELOAD Position 
+.PP
+Definition at line 976 of file core_cm7\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 531 of file core_cm0\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 555 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 558 of file core_sc000\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 692 of file core_sc300\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 718 of file core_cm3\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 779 of file core_cm4\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Msk   (0xFFFFFFUL /*<< SysTick_VAL_CURRENT_Pos*/)"
+SysTick VAL: CURRENT Mask 
+.PP
+Definition at line 981 of file core_cm7\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 530 of file core_cm0\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 554 of file core_cm0plus\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 557 of file core_sc000\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 691 of file core_sc300\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 717 of file core_cm3\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 778 of file core_cm4\&.h\&.
+.SS "#define SysTick_VAL_CURRENT_Pos   0U"
+SysTick VAL: CURRENT Position 
+.PP
+Definition at line 980 of file core_cm7\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

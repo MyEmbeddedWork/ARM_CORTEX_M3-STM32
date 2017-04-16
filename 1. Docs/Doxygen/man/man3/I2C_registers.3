@@ -1,0 +1,102 @@
+.TH "I2C_registers" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_registers
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_Register_CR1\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_CR2\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_OAR1\fP   ((uint8_t)0x08)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_OAR2\fP   ((uint8_t)0x0C)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_DR\fP   ((uint8_t)0x10)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_SR1\fP   ((uint8_t)0x14)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_SR2\fP   ((uint8_t)0x18)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_CCR\fP   ((uint8_t)0x1C)"
+.br
+.ti -1c
+.RI "#define \fBI2C_Register_TRISE\fP   ((uint8_t)0x20)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2C_REGISTER\fP(REGISTER)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2C_Register_CCR   ((uint8_t)0x1C)"
+
+.PP
+Definition at line 161 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_CR1   ((uint8_t)0x00)"
+
+.PP
+Definition at line 154 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_CR2   ((uint8_t)0x04)"
+
+.PP
+Definition at line 155 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_DR   ((uint8_t)0x10)"
+
+.PP
+Definition at line 158 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_OAR1   ((uint8_t)0x08)"
+
+.PP
+Definition at line 156 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_OAR2   ((uint8_t)0x0C)"
+
+.PP
+Definition at line 157 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_SR1   ((uint8_t)0x14)"
+
+.PP
+Definition at line 159 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_SR2   ((uint8_t)0x18)"
+
+.PP
+Definition at line 160 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_Register_TRISE   ((uint8_t)0x20)"
+
+.PP
+Definition at line 162 of file stm32f10x_i2c\&.h\&.
+.SS "#define IS_I2C_REGISTER(REGISTER)"
+\fBValue:\fP
+.PP
+.nf
+(((REGISTER) == I2C_Register_CR1) || \
+                                   ((REGISTER) == I2C_Register_CR2) || \
+                                   ((REGISTER) == I2C_Register_OAR1) || \
+                                   ((REGISTER) == I2C_Register_OAR2) || \
+                                   ((REGISTER) == I2C_Register_DR) || \
+                                   ((REGISTER) == I2C_Register_SR1) || \
+                                   ((REGISTER) == I2C_Register_SR2) || \
+                                   ((REGISTER) == I2C_Register_CCR) || \
+                                   ((REGISTER) == I2C_Register_TRISE))
+.fi
+.PP
+Definition at line 163 of file stm32f10x_i2c\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

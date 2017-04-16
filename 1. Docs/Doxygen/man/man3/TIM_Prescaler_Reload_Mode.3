@@ -1,0 +1,46 @@
+.TH "TIM_Prescaler_Reload_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Prescaler_Reload_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_PSCReloadMode_Update\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_PSCReloadMode_Immediate\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_PRESCALER_RELOAD\fP(RELOAD)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_PRESCALER_RELOAD(RELOAD)"
+\fBValue:\fP
+.PP
+.nf
+(((RELOAD) == TIM_PSCReloadMode_Update) || \
+                                         ((RELOAD) == TIM_PSCReloadMode_Immediate))
+.fi
+.PP
+Definition at line 813 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_PSCReloadMode_Immediate   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 812 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_PSCReloadMode_Update   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 811 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

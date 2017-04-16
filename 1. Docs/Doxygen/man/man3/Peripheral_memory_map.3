@@ -1,0 +1,629 @@
+.TH "Peripheral_memory_map" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral_memory_map
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_BASE\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBSRAM_BASE\fP   ((uint32_t)0x20000000)"
+.br
+.ti -1c
+.RI "#define \fBPERIPH_BASE\fP   ((uint32_t)0x40000000)"
+.br
+.ti -1c
+.RI "#define \fBSRAM_BB_BASE\fP   ((uint32_t)0x22000000)"
+.br
+.ti -1c
+.RI "#define \fBPERIPH_BB_BASE\fP   ((uint32_t)0x42000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_R_BASE\fP   ((uint32_t)0xA0000000)"
+.br
+.ti -1c
+.RI "#define \fBAPB1PERIPH_BASE\fP   \fBPERIPH_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBAPB2PERIPH_BASE\fP   (\fBPERIPH_BASE\fP + 0x10000)"
+.br
+.ti -1c
+.RI "#define \fBAHBPERIPH_BASE\fP   (\fBPERIPH_BASE\fP + 0x20000)"
+.br
+.ti -1c
+.RI "#define \fBTIM2_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM3_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x0400)"
+.br
+.ti -1c
+.RI "#define \fBTIM4_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x0800)"
+.br
+.ti -1c
+.RI "#define \fBTIM5_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x0C00)"
+.br
+.ti -1c
+.RI "#define \fBTIM6_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM7_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x1400)"
+.br
+.ti -1c
+.RI "#define \fBTIM12_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x1800)"
+.br
+.ti -1c
+.RI "#define \fBTIM13_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x1C00)"
+.br
+.ti -1c
+.RI "#define \fBTIM14_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x2000)"
+.br
+.ti -1c
+.RI "#define \fBRTC_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x2800)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x2C00)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x3000)"
+.br
+.ti -1c
+.RI "#define \fBSPI2_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x3800)"
+.br
+.ti -1c
+.RI "#define \fBSPI3_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x3C00)"
+.br
+.ti -1c
+.RI "#define \fBUSART2_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x4400)"
+.br
+.ti -1c
+.RI "#define \fBUSART3_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x4800)"
+.br
+.ti -1c
+.RI "#define \fBUART4_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x4C00)"
+.br
+.ti -1c
+.RI "#define \fBUART5_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x5000)"
+.br
+.ti -1c
+.RI "#define \fBI2C1_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x5400)"
+.br
+.ti -1c
+.RI "#define \fBI2C2_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x5800)"
+.br
+.ti -1c
+.RI "#define \fBCAN1_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x6400)"
+.br
+.ti -1c
+.RI "#define \fBCAN2_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x6800)"
+.br
+.ti -1c
+.RI "#define \fBBKP_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x6C00)"
+.br
+.ti -1c
+.RI "#define \fBPWR_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x7000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x7400)"
+.br
+.ti -1c
+.RI "#define \fBCEC_BASE\fP   (\fBAPB1PERIPH_BASE\fP + 0x7800)"
+.br
+.ti -1c
+.RI "#define \fBAFIO_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x0000)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x0400)"
+.br
+.ti -1c
+.RI "#define \fBGPIOA_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x0800)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x0C00)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x1000)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x1400)"
+.br
+.ti -1c
+.RI "#define \fBGPIOE_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x1800)"
+.br
+.ti -1c
+.RI "#define \fBGPIOF_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x1C00)"
+.br
+.ti -1c
+.RI "#define \fBGPIOG_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x2000)"
+.br
+.ti -1c
+.RI "#define \fBADC1_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x2400)"
+.br
+.ti -1c
+.RI "#define \fBADC2_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x2800)"
+.br
+.ti -1c
+.RI "#define \fBTIM1_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x2C00)"
+.br
+.ti -1c
+.RI "#define \fBSPI1_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x3000)"
+.br
+.ti -1c
+.RI "#define \fBTIM8_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x3400)"
+.br
+.ti -1c
+.RI "#define \fBUSART1_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x3800)"
+.br
+.ti -1c
+.RI "#define \fBADC3_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x3C00)"
+.br
+.ti -1c
+.RI "#define \fBTIM15_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x4000)"
+.br
+.ti -1c
+.RI "#define \fBTIM16_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x4400)"
+.br
+.ti -1c
+.RI "#define \fBTIM17_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x4800)"
+.br
+.ti -1c
+.RI "#define \fBTIM9_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x4C00)"
+.br
+.ti -1c
+.RI "#define \fBTIM10_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x5000)"
+.br
+.ti -1c
+.RI "#define \fBTIM11_BASE\fP   (\fBAPB2PERIPH_BASE\fP + 0x5400)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_BASE\fP   (\fBPERIPH_BASE\fP + 0x18000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel1_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0008)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel2_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x001C)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel3_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0030)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel4_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0044)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel5_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0058)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel6_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x006C)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel7_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0080)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0400)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel1_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0408)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel2_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x041C)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel3_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0430)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel4_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0444)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel5_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x0458)"
+.br
+.ti -1c
+.RI "#define \fBRCC_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x1000)"
+.br
+.ti -1c
+.RI "#define \fBCRC_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x3000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_R_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x2000)"
+.br
+.ti -1c
+.RI "#define \fBOB_BASE\fP   ((uint32_t)0x1FFFF800)"
+.br
+.ti -1c
+.RI "#define \fBETH_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x8000)"
+.br
+.ti -1c
+.RI "#define \fBETH_MAC_BASE\fP   (\fBETH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBETH_MMC_BASE\fP   (\fBETH_BASE\fP + 0x0100)"
+.br
+.ti -1c
+.RI "#define \fBETH_PTP_BASE\fP   (\fBETH_BASE\fP + 0x0700)"
+.br
+.ti -1c
+.RI "#define \fBETH_DMA_BASE\fP   (\fBETH_BASE\fP + 0x1000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1_R_BASE\fP   (\fBFSMC_R_BASE\fP + 0x0000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1E_R_BASE\fP   (\fBFSMC_R_BASE\fP + 0x0104)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank2_R_BASE\fP   (\fBFSMC_R_BASE\fP + 0x0060)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank3_R_BASE\fP   (\fBFSMC_R_BASE\fP + 0x0080)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank4_R_BASE\fP   (\fBFSMC_R_BASE\fP + 0x00A0)"
+.br
+.ti -1c
+.RI "#define \fBDBGMCU_BASE\fP   ((uint32_t)0xE0042000)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC1_BASE   (\fBAPB2PERIPH_BASE\fP + 0x2400)"
+
+.PP
+Definition at line 1322 of file stm32f10x\&.h\&.
+.SS "#define ADC2_BASE   (\fBAPB2PERIPH_BASE\fP + 0x2800)"
+
+.PP
+Definition at line 1323 of file stm32f10x\&.h\&.
+.SS "#define ADC3_BASE   (\fBAPB2PERIPH_BASE\fP + 0x3C00)"
+
+.PP
+Definition at line 1328 of file stm32f10x\&.h\&.
+.SS "#define AFIO_BASE   (\fBAPB2PERIPH_BASE\fP + 0x0000)"
+
+.PP
+Definition at line 1313 of file stm32f10x\&.h\&.
+.SS "#define AHBPERIPH_BASE   (\fBPERIPH_BASE\fP + 0x20000)"
+
+.PP
+Definition at line 1284 of file stm32f10x\&.h\&.
+.SS "#define APB1PERIPH_BASE   \fBPERIPH_BASE\fP"
+
+.PP
+Definition at line 1282 of file stm32f10x\&.h\&.
+.SS "#define APB2PERIPH_BASE   (\fBPERIPH_BASE\fP + 0x10000)"
+
+.PP
+Definition at line 1283 of file stm32f10x\&.h\&.
+.SS "#define BKP_BASE   (\fBAPB1PERIPH_BASE\fP + 0x6C00)"
+
+.PP
+Definition at line 1308 of file stm32f10x\&.h\&.
+.SS "#define CAN1_BASE   (\fBAPB1PERIPH_BASE\fP + 0x6400)"
+
+.PP
+Definition at line 1306 of file stm32f10x\&.h\&.
+.SS "#define CAN2_BASE   (\fBAPB1PERIPH_BASE\fP + 0x6800)"
+
+.PP
+Definition at line 1307 of file stm32f10x\&.h\&.
+.SS "#define CEC_BASE   (\fBAPB1PERIPH_BASE\fP + 0x7800)"
+
+.PP
+Definition at line 1311 of file stm32f10x\&.h\&.
+.SS "#define CRC_BASE   (\fBAHBPERIPH_BASE\fP + 0x3000)"
+
+.PP
+Definition at line 1353 of file stm32f10x\&.h\&.
+.SS "#define DAC_BASE   (\fBAPB1PERIPH_BASE\fP + 0x7400)"
+
+.PP
+Definition at line 1310 of file stm32f10x\&.h\&.
+.SS "#define DBGMCU_BASE   ((uint32_t)0xE0042000)"
+Debug MCU registers base address 
+.PP
+Definition at line 1370 of file stm32f10x\&.h\&.
+.SS "#define DMA1_BASE   (\fBAHBPERIPH_BASE\fP + 0x0000)"
+
+.PP
+Definition at line 1338 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel1_BASE   (\fBAHBPERIPH_BASE\fP + 0x0008)"
+
+.PP
+Definition at line 1339 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel2_BASE   (\fBAHBPERIPH_BASE\fP + 0x001C)"
+
+.PP
+Definition at line 1340 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel3_BASE   (\fBAHBPERIPH_BASE\fP + 0x0030)"
+
+.PP
+Definition at line 1341 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel4_BASE   (\fBAHBPERIPH_BASE\fP + 0x0044)"
+
+.PP
+Definition at line 1342 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel5_BASE   (\fBAHBPERIPH_BASE\fP + 0x0058)"
+
+.PP
+Definition at line 1343 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel6_BASE   (\fBAHBPERIPH_BASE\fP + 0x006C)"
+
+.PP
+Definition at line 1344 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel7_BASE   (\fBAHBPERIPH_BASE\fP + 0x0080)"
+
+.PP
+Definition at line 1345 of file stm32f10x\&.h\&.
+.SS "#define DMA2_BASE   (\fBAHBPERIPH_BASE\fP + 0x0400)"
+
+.PP
+Definition at line 1346 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel1_BASE   (\fBAHBPERIPH_BASE\fP + 0x0408)"
+
+.PP
+Definition at line 1347 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel2_BASE   (\fBAHBPERIPH_BASE\fP + 0x041C)"
+
+.PP
+Definition at line 1348 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel3_BASE   (\fBAHBPERIPH_BASE\fP + 0x0430)"
+
+.PP
+Definition at line 1349 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel4_BASE   (\fBAHBPERIPH_BASE\fP + 0x0444)"
+
+.PP
+Definition at line 1350 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel5_BASE   (\fBAHBPERIPH_BASE\fP + 0x0458)"
+
+.PP
+Definition at line 1351 of file stm32f10x\&.h\&.
+.SS "#define ETH_BASE   (\fBAHBPERIPH_BASE\fP + 0x8000)"
+
+.PP
+Definition at line 1358 of file stm32f10x\&.h\&.
+.SS "#define ETH_DMA_BASE   (\fBETH_BASE\fP + 0x1000)"
+
+.PP
+Definition at line 1362 of file stm32f10x\&.h\&.
+.SS "#define ETH_MAC_BASE   (\fBETH_BASE\fP)"
+
+.PP
+Definition at line 1359 of file stm32f10x\&.h\&.
+.SS "#define ETH_MMC_BASE   (\fBETH_BASE\fP + 0x0100)"
+
+.PP
+Definition at line 1360 of file stm32f10x\&.h\&.
+.SS "#define ETH_PTP_BASE   (\fBETH_BASE\fP + 0x0700)"
+
+.PP
+Definition at line 1361 of file stm32f10x\&.h\&.
+.SS "#define EXTI_BASE   (\fBAPB2PERIPH_BASE\fP + 0x0400)"
+
+.PP
+Definition at line 1314 of file stm32f10x\&.h\&.
+.SS "#define FLASH_BASE   ((uint32_t)0x08000000)"
+FLASH base address in the alias region 
+.PP
+Definition at line 1272 of file stm32f10x\&.h\&.
+.SS "#define FLASH_R_BASE   (\fBAHBPERIPH_BASE\fP + 0x2000)"
+Flash registers base address 
+.PP
+Definition at line 1355 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank1_R_BASE   (\fBFSMC_R_BASE\fP + 0x0000)"
+FSMC Bank1 registers base address 
+.PP
+Definition at line 1364 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank1E_R_BASE   (\fBFSMC_R_BASE\fP + 0x0104)"
+FSMC Bank1E registers base address 
+.PP
+Definition at line 1365 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank2_R_BASE   (\fBFSMC_R_BASE\fP + 0x0060)"
+FSMC Bank2 registers base address 
+.PP
+Definition at line 1366 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank3_R_BASE   (\fBFSMC_R_BASE\fP + 0x0080)"
+FSMC Bank3 registers base address 
+.PP
+Definition at line 1367 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank4_R_BASE   (\fBFSMC_R_BASE\fP + 0x00A0)"
+FSMC Bank4 registers base address 
+.PP
+Definition at line 1368 of file stm32f10x\&.h\&.
+.SS "#define FSMC_R_BASE   ((uint32_t)0xA0000000)"
+FSMC registers base address Peripheral memory map 
+.PP
+Definition at line 1279 of file stm32f10x\&.h\&.
+.SS "#define GPIOA_BASE   (\fBAPB2PERIPH_BASE\fP + 0x0800)"
+
+.PP
+Definition at line 1315 of file stm32f10x\&.h\&.
+.SS "#define GPIOB_BASE   (\fBAPB2PERIPH_BASE\fP + 0x0C00)"
+
+.PP
+Definition at line 1316 of file stm32f10x\&.h\&.
+.SS "#define GPIOC_BASE   (\fBAPB2PERIPH_BASE\fP + 0x1000)"
+
+.PP
+Definition at line 1317 of file stm32f10x\&.h\&.
+.SS "#define GPIOD_BASE   (\fBAPB2PERIPH_BASE\fP + 0x1400)"
+
+.PP
+Definition at line 1318 of file stm32f10x\&.h\&.
+.SS "#define GPIOE_BASE   (\fBAPB2PERIPH_BASE\fP + 0x1800)"
+
+.PP
+Definition at line 1319 of file stm32f10x\&.h\&.
+.SS "#define GPIOF_BASE   (\fBAPB2PERIPH_BASE\fP + 0x1C00)"
+
+.PP
+Definition at line 1320 of file stm32f10x\&.h\&.
+.SS "#define GPIOG_BASE   (\fBAPB2PERIPH_BASE\fP + 0x2000)"
+
+.PP
+Definition at line 1321 of file stm32f10x\&.h\&.
+.SS "#define I2C1_BASE   (\fBAPB1PERIPH_BASE\fP + 0x5400)"
+
+.PP
+Definition at line 1304 of file stm32f10x\&.h\&.
+.SS "#define I2C2_BASE   (\fBAPB1PERIPH_BASE\fP + 0x5800)"
+
+.PP
+Definition at line 1305 of file stm32f10x\&.h\&.
+.SS "#define IWDG_BASE   (\fBAPB1PERIPH_BASE\fP + 0x3000)"
+
+.PP
+Definition at line 1297 of file stm32f10x\&.h\&.
+.SS "#define OB_BASE   ((uint32_t)0x1FFFF800)"
+Flash Option Bytes base address 
+.PP
+Definition at line 1356 of file stm32f10x\&.h\&.
+.SS "#define PERIPH_BASE   ((uint32_t)0x40000000)"
+Peripheral base address in the alias region 
+.PP
+Definition at line 1274 of file stm32f10x\&.h\&.
+.SS "#define PERIPH_BB_BASE   ((uint32_t)0x42000000)"
+Peripheral base address in the bit-band region 
+.PP
+Definition at line 1277 of file stm32f10x\&.h\&.
+.SS "#define PWR_BASE   (\fBAPB1PERIPH_BASE\fP + 0x7000)"
+
+.PP
+Definition at line 1309 of file stm32f10x\&.h\&.
+.SS "#define RCC_BASE   (\fBAHBPERIPH_BASE\fP + 0x1000)"
+
+.PP
+Definition at line 1352 of file stm32f10x\&.h\&.
+.SS "#define RTC_BASE   (\fBAPB1PERIPH_BASE\fP + 0x2800)"
+
+.PP
+Definition at line 1295 of file stm32f10x\&.h\&.
+.SS "#define SDIO_BASE   (\fBPERIPH_BASE\fP + 0x18000)"
+
+.PP
+Definition at line 1336 of file stm32f10x\&.h\&.
+.SS "#define SPI1_BASE   (\fBAPB2PERIPH_BASE\fP + 0x3000)"
+
+.PP
+Definition at line 1325 of file stm32f10x\&.h\&.
+.SS "#define SPI2_BASE   (\fBAPB1PERIPH_BASE\fP + 0x3800)"
+
+.PP
+Definition at line 1298 of file stm32f10x\&.h\&.
+.SS "#define SPI3_BASE   (\fBAPB1PERIPH_BASE\fP + 0x3C00)"
+
+.PP
+Definition at line 1299 of file stm32f10x\&.h\&.
+.SS "#define SRAM_BASE   ((uint32_t)0x20000000)"
+SRAM base address in the alias region 
+.PP
+Definition at line 1273 of file stm32f10x\&.h\&.
+.SS "#define SRAM_BB_BASE   ((uint32_t)0x22000000)"
+SRAM base address in the bit-band region 
+.PP
+Definition at line 1276 of file stm32f10x\&.h\&.
+.SS "#define TIM10_BASE   (\fBAPB2PERIPH_BASE\fP + 0x5000)"
+
+.PP
+Definition at line 1333 of file stm32f10x\&.h\&.
+.SS "#define TIM11_BASE   (\fBAPB2PERIPH_BASE\fP + 0x5400)"
+
+.PP
+Definition at line 1334 of file stm32f10x\&.h\&.
+.SS "#define TIM12_BASE   (\fBAPB1PERIPH_BASE\fP + 0x1800)"
+
+.PP
+Definition at line 1292 of file stm32f10x\&.h\&.
+.SS "#define TIM13_BASE   (\fBAPB1PERIPH_BASE\fP + 0x1C00)"
+
+.PP
+Definition at line 1293 of file stm32f10x\&.h\&.
+.SS "#define TIM14_BASE   (\fBAPB1PERIPH_BASE\fP + 0x2000)"
+
+.PP
+Definition at line 1294 of file stm32f10x\&.h\&.
+.SS "#define TIM15_BASE   (\fBAPB2PERIPH_BASE\fP + 0x4000)"
+
+.PP
+Definition at line 1329 of file stm32f10x\&.h\&.
+.SS "#define TIM16_BASE   (\fBAPB2PERIPH_BASE\fP + 0x4400)"
+
+.PP
+Definition at line 1330 of file stm32f10x\&.h\&.
+.SS "#define TIM17_BASE   (\fBAPB2PERIPH_BASE\fP + 0x4800)"
+
+.PP
+Definition at line 1331 of file stm32f10x\&.h\&.
+.SS "#define TIM1_BASE   (\fBAPB2PERIPH_BASE\fP + 0x2C00)"
+
+.PP
+Definition at line 1324 of file stm32f10x\&.h\&.
+.SS "#define TIM2_BASE   (\fBAPB1PERIPH_BASE\fP + 0x0000)"
+
+.PP
+Definition at line 1286 of file stm32f10x\&.h\&.
+.SS "#define TIM3_BASE   (\fBAPB1PERIPH_BASE\fP + 0x0400)"
+
+.PP
+Definition at line 1287 of file stm32f10x\&.h\&.
+.SS "#define TIM4_BASE   (\fBAPB1PERIPH_BASE\fP + 0x0800)"
+
+.PP
+Definition at line 1288 of file stm32f10x\&.h\&.
+.SS "#define TIM5_BASE   (\fBAPB1PERIPH_BASE\fP + 0x0C00)"
+
+.PP
+Definition at line 1289 of file stm32f10x\&.h\&.
+.SS "#define TIM6_BASE   (\fBAPB1PERIPH_BASE\fP + 0x1000)"
+
+.PP
+Definition at line 1290 of file stm32f10x\&.h\&.
+.SS "#define TIM7_BASE   (\fBAPB1PERIPH_BASE\fP + 0x1400)"
+
+.PP
+Definition at line 1291 of file stm32f10x\&.h\&.
+.SS "#define TIM8_BASE   (\fBAPB2PERIPH_BASE\fP + 0x3400)"
+
+.PP
+Definition at line 1326 of file stm32f10x\&.h\&.
+.SS "#define TIM9_BASE   (\fBAPB2PERIPH_BASE\fP + 0x4C00)"
+
+.PP
+Definition at line 1332 of file stm32f10x\&.h\&.
+.SS "#define UART4_BASE   (\fBAPB1PERIPH_BASE\fP + 0x4C00)"
+
+.PP
+Definition at line 1302 of file stm32f10x\&.h\&.
+.SS "#define UART5_BASE   (\fBAPB1PERIPH_BASE\fP + 0x5000)"
+
+.PP
+Definition at line 1303 of file stm32f10x\&.h\&.
+.SS "#define USART1_BASE   (\fBAPB2PERIPH_BASE\fP + 0x3800)"
+
+.PP
+Definition at line 1327 of file stm32f10x\&.h\&.
+.SS "#define USART2_BASE   (\fBAPB1PERIPH_BASE\fP + 0x4400)"
+
+.PP
+Definition at line 1300 of file stm32f10x\&.h\&.
+.SS "#define USART3_BASE   (\fBAPB1PERIPH_BASE\fP + 0x4800)"
+
+.PP
+Definition at line 1301 of file stm32f10x\&.h\&.
+.SS "#define WWDG_BASE   (\fBAPB1PERIPH_BASE\fP + 0x2C00)"
+
+.PP
+Definition at line 1296 of file stm32f10x\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

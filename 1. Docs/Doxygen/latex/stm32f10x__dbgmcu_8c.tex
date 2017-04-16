@@ -1,0 +1,50 @@
+\hypertarget{stm32f10x__dbgmcu_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+dbgmcu.c File Reference}
+\label{stm32f10x__dbgmcu_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+dbgmcu.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+dbgmcu.\+c}}
+
+
+This file provides all the D\+B\+G\+M\+CU firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+dbgmcu.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+dbgmcu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__dbgmcu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___d_b_g_m_c_u___private___defines_gaeeece10cca80f3c632d3d77c3f2917b6}{I\+D\+C\+O\+D\+E\+\_\+\+D\+E\+V\+I\+D\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x00000\+F\+F\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group___d_b_g_m_c_u___private___functions_ga47419e9ca75ab7be4c70feb82faa0511}{D\+B\+G\+M\+C\+U\+\_\+\+Get\+R\+E\+V\+ID} (void)
+\begin{DoxyCompactList}\small\item\em Returns the device revision identifier. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___d_b_g_m_c_u___private___functions_gac34193c34dbce759bf424957a31b3266}{D\+B\+G\+M\+C\+U\+\_\+\+Get\+D\+E\+V\+ID} (void)
+\begin{DoxyCompactList}\small\item\em Returns the device identifier. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_b_g_m_c_u___private___functions_gadf2f267f855ac1e4c03905c5dcfbd28b}{D\+B\+G\+M\+C\+U\+\_\+\+Config} (uint32\+\_\+t D\+B\+G\+M\+C\+U\+\_\+\+Periph, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Configures the specified peripheral and low power mode behavior when the M\+CU under Debug mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the D\+B\+G\+M\+CU firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

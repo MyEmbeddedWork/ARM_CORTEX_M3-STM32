@@ -1,0 +1,206 @@
+.TH "EXTI_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBEXTI_DeInit\fP (void)"
+.br
+.RI "Deinitializes the EXTI peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBEXTI_Init\fP (\fBEXTI_InitTypeDef\fP *EXTI_InitStruct)"
+.br
+.RI "Initializes the EXTI peripheral according to the specified parameters in the EXTI_InitStruct\&. "
+.ti -1c
+.RI "void \fBEXTI_StructInit\fP (\fBEXTI_InitTypeDef\fP *EXTI_InitStruct)"
+.br
+.RI "Fills each EXTI_InitStruct member with its reset value\&. "
+.ti -1c
+.RI "void \fBEXTI_GenerateSWInterrupt\fP (uint32_t EXTI_Line)"
+.br
+.RI "Generates a Software interrupt\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBEXTI_GetFlagStatus\fP (uint32_t EXTI_Line)"
+.br
+.RI "Checks whether the specified EXTI line flag is set or not\&. "
+.ti -1c
+.RI "void \fBEXTI_ClearFlag\fP (uint32_t EXTI_Line)"
+.br
+.RI "Clears the EXTI's line pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBEXTI_GetITStatus\fP (uint32_t EXTI_Line)"
+.br
+.RI "Checks whether the specified EXTI line is asserted or not\&. "
+.ti -1c
+.RI "void \fBEXTI_ClearITPendingBit\fP (uint32_t EXTI_Line)"
+.br
+.RI "Clears the EXTI's line pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void EXTI_ClearFlag (uint32_t EXTI_Line)"
+
+.PP
+Clears the EXTI's line pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_Line\fP specifies the EXTI lines flags to clear\&. This parameter can be any combination of EXTI_Linex where x can be (0\&.\&.19)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 209 of file stm32f10x_exti\&.c\&.
+.SS "void EXTI_ClearITPendingBit (uint32_t EXTI_Line)"
+
+.PP
+Clears the EXTI's line pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_Line\fP specifies the EXTI lines to clear\&. This parameter can be any combination of EXTI_Linex where x can be (0\&.\&.19)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 249 of file stm32f10x_exti\&.c\&.
+.SS "void EXTI_DeInit (void)"
+
+.PP
+Deinitializes the EXTI peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 85 of file stm32f10x_exti\&.c\&.
+.SS "void EXTI_GenerateSWInterrupt (uint32_t EXTI_Line)"
+
+.PP
+Generates a Software interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_Line\fP specifies the EXTI lines to be enabled or disabled\&. This parameter can be any combination of EXTI_Linex where x can be (0\&.\&.19)\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 171 of file stm32f10x_exti\&.c\&.
+.SS "\fBFlagStatus\fP EXTI_GetFlagStatus (uint32_t EXTI_Line)"
+
+.PP
+Checks whether the specified EXTI line flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_Line\fP specifies the EXTI line flag to check\&. This parameter can be: 
+.PD 0
+
+.IP "\(bu" 2
+EXTI_Linex: External interrupt line x where x(0\&.\&.19) 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of EXTI_Line (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 186 of file stm32f10x_exti\&.c\&.
+.SS "\fBITStatus\fP EXTI_GetITStatus (uint32_t EXTI_Line)"
+
+.PP
+Checks whether the specified EXTI line is asserted or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_Line\fP specifies the EXTI line to check\&. This parameter can be: 
+.PD 0
+
+.IP "\(bu" 2
+EXTI_Linex: External interrupt line x where x(0\&.\&.19) 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of EXTI_Line (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 224 of file stm32f10x_exti\&.c\&.
+.SS "void EXTI_Init (\fBEXTI_InitTypeDef\fP * EXTI_InitStruct)"
+
+.PP
+Initializes the EXTI peripheral according to the specified parameters in the EXTI_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_InitStruct\fP pointer to a \fBEXTI_InitTypeDef\fP structure that contains the configuration information for the EXTI peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 101 of file stm32f10x_exti\&.c\&.
+.SS "void EXTI_StructInit (\fBEXTI_InitTypeDef\fP * EXTI_InitStruct)"
+
+.PP
+Fills each EXTI_InitStruct member with its reset value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEXTI_InitStruct\fP pointer to a \fBEXTI_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 157 of file stm32f10x_exti\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

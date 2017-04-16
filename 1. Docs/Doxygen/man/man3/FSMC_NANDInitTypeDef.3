@@ -1,0 +1,89 @@
+.TH "FSMC_NANDInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_NANDInitTypeDef \- FSMC NAND Init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_fsmc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBFSMC_Bank\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_Waitfeature\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_MemoryDataWidth\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_ECC\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_ECCPageSize\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_TCLRSetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_TARSetupTime\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP * \fBFSMC_CommonSpaceTimingStruct\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP * \fBFSMC_AttributeSpaceTimingStruct\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+FSMC NAND Init structure definition\&. 
+.PP
+Definition at line 183 of file stm32f10x_fsmc\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP* FSMC_NANDInitTypeDef::FSMC_AttributeSpaceTimingStruct"
+FSMC Attribute Space Timing 
+.PP
+Definition at line 210 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_Bank"
+Specifies the NAND memory bank that will be used\&. This parameter can be a value of \fBFSMC_NAND_Bank\fP 
+.PP
+Definition at line 185 of file stm32f10x_fsmc\&.h\&.
+.SS "\fBFSMC_NAND_PCCARDTimingInitTypeDef\fP* FSMC_NANDInitTypeDef::FSMC_CommonSpaceTimingStruct"
+FSMC Common Space Timing 
+.PP
+Definition at line 208 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_ECC"
+Enables or disables the ECC computation\&. This parameter can be any value of \fBFSMC_ECC\fP 
+.PP
+Definition at line 194 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_ECCPageSize"
+Defines the page size for the extended ECC\&. This parameter can be any value of \fBFSMC_ECC_Page_Size\fP 
+.PP
+Definition at line 197 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_MemoryDataWidth"
+Specifies the external memory device width\&. This parameter can be any value of \fBFSMC_Data_Width\fP 
+.PP
+Definition at line 191 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_TARSetupTime"
+Defines the number of HCLK cycles to configure the delay between ALE low and RE low\&. This parameter can be a number between 0x0 and 0xFF 
+.PP
+Definition at line 204 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_TCLRSetupTime"
+Defines the number of HCLK cycles to configure the delay between CLE low and RE low\&. This parameter can be a value between 0 and 0xFF\&. 
+.PP
+Definition at line 200 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NANDInitTypeDef::FSMC_Waitfeature"
+Enables or disables the Wait feature for the NAND Memory Bank\&. This parameter can be any value of \fBFSMC_Wait_feature\fP 
+.PP
+Definition at line 188 of file stm32f10x_fsmc\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

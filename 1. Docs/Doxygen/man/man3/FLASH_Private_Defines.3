@@ -1,0 +1,216 @@
+.TH "FLASH_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBACR_LATENCY_Mask\fP   ((uint32_t)0x00000038)"
+.br
+.ti -1c
+.RI "#define \fBACR_HLFCYA_Mask\fP   ((uint32_t)0xFFFFFFF7)"
+.br
+.ti -1c
+.RI "#define \fBACR_PRFTBE_Mask\fP   ((uint32_t)0xFFFFFFEF)"
+.br
+.ti -1c
+.RI "#define \fBACR_PRFTBS_Mask\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCR_PG_Set\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBCR_PG_Reset\fP   ((uint32_t)0x00001FFE)"
+.br
+.ti -1c
+.RI "#define \fBCR_PER_Set\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBCR_PER_Reset\fP   ((uint32_t)0x00001FFD)"
+.br
+.ti -1c
+.RI "#define \fBCR_MER_Set\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBCR_MER_Reset\fP   ((uint32_t)0x00001FFB)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTPG_Set\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTPG_Reset\fP   ((uint32_t)0x00001FEF)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTER_Set\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTER_Reset\fP   ((uint32_t)0x00001FDF)"
+.br
+.ti -1c
+.RI "#define \fBCR_STRT_Set\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBCR_LOCK_Set\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBRDPRT_Mask\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBWRP0_Mask\fP   ((uint32_t)0x000000FF)"
+.br
+.ti -1c
+.RI "#define \fBWRP1_Mask\fP   ((uint32_t)0x0000FF00)"
+.br
+.ti -1c
+.RI "#define \fBWRP2_Mask\fP   ((uint32_t)0x00FF0000)"
+.br
+.ti -1c
+.RI "#define \fBWRP3_Mask\fP   ((uint32_t)0xFF000000)"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_BFB2\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBRDP_Key\fP   ((uint16_t)0x00A5)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_KEY1\fP   ((uint32_t)0x45670123)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_KEY2\fP   ((uint32_t)0xCDEF89AB)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_BANK1_END_ADDRESS\fP   ((uint32_t)0x807FFFF)"
+.br
+.ti -1c
+.RI "#define \fBEraseTimeout\fP   ((uint32_t)0x000B0000)"
+.br
+.ti -1c
+.RI "#define \fBProgramTimeout\fP   ((uint32_t)0x00002000)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ACR_HLFCYA_Mask   ((uint32_t)0xFFFFFFF7)"
+
+.PP
+Definition at line 48 of file stm32f10x_flash\&.c\&.
+.SS "#define ACR_LATENCY_Mask   ((uint32_t)0x00000038)"
+
+.PP
+Definition at line 47 of file stm32f10x_flash\&.c\&.
+.SS "#define ACR_PRFTBE_Mask   ((uint32_t)0xFFFFFFEF)"
+
+.PP
+Definition at line 49 of file stm32f10x_flash\&.c\&.
+.SS "#define ACR_PRFTBS_Mask   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 52 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_LOCK_Set   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 66 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_MER_Reset   ((uint32_t)0x00001FFB)"
+
+.PP
+Definition at line 60 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_MER_Set   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 59 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_OPTER_Reset   ((uint32_t)0x00001FDF)"
+
+.PP
+Definition at line 64 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_OPTER_Set   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 63 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_OPTPG_Reset   ((uint32_t)0x00001FEF)"
+
+.PP
+Definition at line 62 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_OPTPG_Set   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 61 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_PER_Reset   ((uint32_t)0x00001FFD)"
+
+.PP
+Definition at line 58 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_PER_Set   ((uint32_t)0x00000002)"
+
+.PP
+Definition at line 57 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_PG_Reset   ((uint32_t)0x00001FFE)"
+
+.PP
+Definition at line 56 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_PG_Set   ((uint32_t)0x00000001)"
+
+.PP
+Definition at line 55 of file stm32f10x_flash\&.c\&.
+.SS "#define CR_STRT_Set   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 65 of file stm32f10x_flash\&.c\&.
+.SS "#define EraseTimeout   ((uint32_t)0x000B0000)"
+
+.PP
+Definition at line 85 of file stm32f10x_flash\&.c\&.
+.SS "#define FLASH_BANK1_END_ADDRESS   ((uint32_t)0x807FFFF)"
+
+.PP
+Definition at line 82 of file stm32f10x_flash\&.c\&.
+.SS "#define FLASH_KEY1   ((uint32_t)0x45670123)"
+
+.PP
+Definition at line 78 of file stm32f10x_flash\&.c\&.
+.SS "#define FLASH_KEY2   ((uint32_t)0xCDEF89AB)"
+
+.PP
+Definition at line 79 of file stm32f10x_flash\&.c\&.
+.SS "#define OB_USER_BFB2   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 74 of file stm32f10x_flash\&.c\&.
+.SS "#define ProgramTimeout   ((uint32_t)0x00002000)"
+
+.PP
+Definition at line 86 of file stm32f10x_flash\&.c\&.
+.SS "#define RDP_Key   ((uint16_t)0x00A5)"
+
+.PP
+Definition at line 77 of file stm32f10x_flash\&.c\&.
+.SS "#define RDPRT_Mask   ((uint32_t)0x00000002)"
+
+.PP
+Definition at line 69 of file stm32f10x_flash\&.c\&.
+.SS "#define WRP0_Mask   ((uint32_t)0x000000FF)"
+
+.PP
+Definition at line 70 of file stm32f10x_flash\&.c\&.
+.SS "#define WRP1_Mask   ((uint32_t)0x0000FF00)"
+
+.PP
+Definition at line 71 of file stm32f10x_flash\&.c\&.
+.SS "#define WRP2_Mask   ((uint32_t)0x00FF0000)"
+
+.PP
+Definition at line 72 of file stm32f10x_flash\&.c\&.
+.SS "#define WRP3_Mask   ((uint32_t)0xFF000000)"
+
+.PP
+Definition at line 73 of file stm32f10x_flash\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

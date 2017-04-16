@@ -1,0 +1,161 @@
+\hypertarget{stm32f10x__sdio_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+sdio.c File Reference}
+\label{stm32f10x__sdio_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+sdio.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+sdio.\+c}}
+
+
+This file provides all the S\+D\+IO firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+sdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+rcc.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+sdio.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__sdio_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gabf07aced03df5f46d57cea1d4f56d1e3}{S\+D\+I\+O\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___peripheral__memory__map_ga95dd0abbc6767893b4b02935fa846f52}{S\+D\+I\+O\+\_\+\+B\+A\+SE} -\/ \hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{P\+E\+R\+I\+P\+H\+\_\+\+B\+A\+SE})
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gac5d642be874338519fdec175204ca8ed}{C\+L\+K\+C\+R\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___s_d_i_o___private___types_definitions_gabf07aced03df5f46d57cea1d4f56d1e3}{S\+D\+I\+O\+\_\+\+O\+F\+F\+S\+ET} + 0x04)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga6ad1da47f9d84c54eb620b9231ebec86}{C\+L\+K\+E\+N\+\_\+\+Bit\+Number}~0x08
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gabfb5772b9b734972b576309f7ca8bf92}{C\+L\+K\+C\+R\+\_\+\+C\+L\+K\+E\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_gac5d642be874338519fdec175204ca8ed}{C\+L\+K\+C\+R\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_ga6ad1da47f9d84c54eb620b9231ebec86}{C\+L\+K\+E\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gaf12d26702ce7a88d2a3dae87f000b75e}{C\+M\+D\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___s_d_i_o___private___types_definitions_gabf07aced03df5f46d57cea1d4f56d1e3}{S\+D\+I\+O\+\_\+\+O\+F\+F\+S\+ET} + 0x0\+C)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gaf88f03a42d76974b55dfb8bda65ade97}{S\+D\+I\+O\+S\+U\+S\+P\+E\+N\+D\+\_\+\+Bit\+Number}~0x0B
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga931e48aa282e2a937308f57f807e0781}{C\+M\+D\+\_\+\+S\+D\+I\+O\+S\+U\+S\+P\+E\+N\+D\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_gaf12d26702ce7a88d2a3dae87f000b75e}{C\+M\+D\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_gaf88f03a42d76974b55dfb8bda65ade97}{S\+D\+I\+O\+S\+U\+S\+P\+E\+N\+D\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga1d1112c7b804791a0fffd8b317085aeb}{E\+N\+C\+M\+D\+C\+O\+M\+P\+L\+\_\+\+Bit\+Number}~0x0C
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gade06098d1616639ce5f1b70675280b7c}{C\+M\+D\+\_\+\+E\+N\+C\+M\+D\+C\+O\+M\+P\+L\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_gaf12d26702ce7a88d2a3dae87f000b75e}{C\+M\+D\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_ga1d1112c7b804791a0fffd8b317085aeb}{E\+N\+C\+M\+D\+C\+O\+M\+P\+L\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gab6d83a7ccd4a0d9ea9a09fec263fb25f}{N\+I\+E\+N\+\_\+\+Bit\+Number}~0x0D
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga08623f1d053677de8b20a6f5f5090edd}{C\+M\+D\+\_\+\+N\+I\+E\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_gaf12d26702ce7a88d2a3dae87f000b75e}{C\+M\+D\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_gab6d83a7ccd4a0d9ea9a09fec263fb25f}{N\+I\+E\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gabd4fd3bb700b879f843ccc867db1832e}{A\+T\+A\+C\+M\+D\+\_\+\+Bit\+Number}~0x0E
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gabb7e537f931b6fdd3b49e826f2e19d7c}{C\+M\+D\+\_\+\+A\+T\+A\+C\+M\+D\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_gaf12d26702ce7a88d2a3dae87f000b75e}{C\+M\+D\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_gabd4fd3bb700b879f843ccc867db1832e}{A\+T\+A\+C\+M\+D\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga948c1382c4cfd3af3e406c4d0cdd4240}{D\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}~(\hyperlink{group___s_d_i_o___private___types_definitions_gabf07aced03df5f46d57cea1d4f56d1e3}{S\+D\+I\+O\+\_\+\+O\+F\+F\+S\+ET} + 0x2\+C)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gab2af311e327213503f0dbf3d013b7944}{D\+M\+A\+E\+N\+\_\+\+Bit\+Number}~0x03
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga43f7336d4f955c6cf1f676ccbc043fe9}{D\+C\+T\+R\+L\+\_\+\+D\+M\+A\+E\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_ga948c1382c4cfd3af3e406c4d0cdd4240}{D\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_gab2af311e327213503f0dbf3d013b7944}{D\+M\+A\+E\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga773045c51d3e8daee0c181517c44a2df}{R\+W\+S\+T\+A\+R\+T\+\_\+\+Bit\+Number}~0x08
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gac776c39dfac0e1ed007217133e1145c3}{D\+C\+T\+R\+L\+\_\+\+R\+W\+S\+T\+A\+R\+T\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_ga948c1382c4cfd3af3e406c4d0cdd4240}{D\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_ga773045c51d3e8daee0c181517c44a2df}{R\+W\+S\+T\+A\+R\+T\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gae8c0654ad5cba23281bcfa77ef19b9cf}{R\+W\+S\+T\+O\+P\+\_\+\+Bit\+Number}~0x09
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga678da1db835676b0fb1976cf3408e2d1}{D\+C\+T\+R\+L\+\_\+\+R\+W\+S\+T\+O\+P\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_ga948c1382c4cfd3af3e406c4d0cdd4240}{D\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_gae8c0654ad5cba23281bcfa77ef19b9cf}{R\+W\+S\+T\+O\+P\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gad7b722671f65e79d1be2899b643278ad}{R\+W\+M\+O\+D\+\_\+\+Bit\+Number}~0x0A
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gad34bfe8650534ce24320ae83886c91e3}{D\+C\+T\+R\+L\+\_\+\+R\+W\+M\+O\+D\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_ga948c1382c4cfd3af3e406c4d0cdd4240}{D\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_gad7b722671f65e79d1be2899b643278ad}{R\+W\+M\+O\+D\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga37f3e1612e0dae8160be978ebfa54301}{S\+D\+I\+O\+E\+N\+\_\+\+Bit\+Number}~0x0B
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga894f7da62b89ddd9f4b79d066056a3c7}{D\+C\+T\+R\+L\+\_\+\+S\+D\+I\+O\+E\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (\hyperlink{group___s_d_i_o___private___types_definitions_ga948c1382c4cfd3af3e406c4d0cdd4240}{D\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET} $\ast$ 32) + (\hyperlink{group___s_d_i_o___private___types_definitions_ga37f3e1612e0dae8160be978ebfa54301}{S\+D\+I\+O\+E\+N\+\_\+\+Bit\+Number} $\ast$ 4))
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_gac8d10dd1e49ca9e8a6954146654e9a01}{C\+L\+K\+C\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x\+F\+F\+F\+F8100)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga7e6ec7be68d0fbb8fb4e3725cca9a05c}{P\+W\+R\+\_\+\+P\+W\+R\+C\+T\+R\+L\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F\+F\+C)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga9e9fc7810b95805aeeb760bbdd87fa9b}{D\+C\+T\+R\+L\+\_\+\+C\+L\+E\+A\+R\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F08)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga2325d77090e44221b07f8fba5bc9217e}{C\+M\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F800)
+\item 
+\#define \hyperlink{group___s_d_i_o___private___types_definitions_ga4285ce49b005e3d03ddf9fdc491c4d70}{S\+D\+I\+O\+\_\+\+R\+E\+S\+P\+\_\+\+A\+D\+DR}~((uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_ga95dd0abbc6767893b4b02935fa846f52}{S\+D\+I\+O\+\_\+\+B\+A\+SE} + 0x14))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_d_i_o___private___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}{S\+D\+I\+O\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the S\+D\+IO peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gad40764a8e37c0ed5c9141ae338ff0203}{S\+D\+I\+O\+\_\+\+Init} (\hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+IO peripheral according to the specified parameters in the S\+D\+I\+O\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga778d338c29df4fae9ef69432e6df32ad}{S\+D\+I\+O\+\_\+\+Struct\+Init} (\hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+D\+I\+O\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga7243b857d6b323748ff3a493b265bedc}{S\+D\+I\+O\+\_\+\+Clock\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+D\+IO Clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga36ecca32b904de74218fbe65cd5f5270}{S\+D\+I\+O\+\_\+\+Set\+Power\+State} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+Power\+State)
+\begin{DoxyCompactList}\small\item\em Sets the power status of the controller. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___private___functions_ga3a19de2c7cd51645702213f64a1758ed}{S\+D\+I\+O\+\_\+\+Get\+Power\+State} (void)
+\begin{DoxyCompactList}\small\item\em Gets the power status of the controller. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga208f51237ef43288735829dbaed37f00}{S\+D\+I\+O\+\_\+\+I\+T\+Config} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+D\+IO interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gad36fde5ec0ce0c2089b9d971c2271e6e}{S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+D\+IO D\+MA request. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga7117d2f702703f6c0a66bc07707cab23}{S\+D\+I\+O\+\_\+\+Send\+Command} (\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+IO Command according to the specified parameters in the S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct and send the command. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga09d9e89f49c87c82aec79c97b7068e24}{S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init} (\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group___s_d_i_o___private___functions_ga9badf271c818e09da301d715c4ad0e5b}{S\+D\+I\+O\+\_\+\+Get\+Command\+Response} (void)
+\begin{DoxyCompactList}\small\item\em Returns command index of last command for which response received. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___private___functions_ga5c1e859511840e8cca6a9a768bce220b}{S\+D\+I\+O\+\_\+\+Get\+Response} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+R\+E\+SP)
+\begin{DoxyCompactList}\small\item\em Returns response received from the card for the last command. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gad65d896ae919683585bda44a1e2afae4}{S\+D\+I\+O\+\_\+\+Data\+Config} (\hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Data\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+IO data path according to the specified parameters in the S\+D\+I\+O\+\_\+\+Data\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gaa83209c09e921521aca2587fb5b22ea2}{S\+D\+I\+O\+\_\+\+Data\+Struct\+Init} (\hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Data\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+D\+I\+O\+\_\+\+Data\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___private___functions_ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a}{S\+D\+I\+O\+\_\+\+Get\+Data\+Counter} (void)
+\begin{DoxyCompactList}\small\item\em Returns number of remaining data bytes to be transferred. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___private___functions_ga4e8ac755ef3c31ecd4ed2708df19187e}{S\+D\+I\+O\+\_\+\+Read\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from Rx F\+I\+FO. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga361008b5252aa33b5f2b5823ee3d7240}{S\+D\+I\+O\+\_\+\+Write\+Data} (uint32\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Write one data word to Tx F\+I\+FO. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___private___functions_ga9a3343983a2d68b5164a1c89797d2dd6}{S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count} (void)
+\begin{DoxyCompactList}\small\item\em Returns the number of words left to be written to or read from F\+I\+FO. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gac88f914d9a68a83abc2265ec8a7b79fc}{S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Starts the SD I/O Read Wait operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gaca6b25eb2debb73ac827c66f0ebcf837}{S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Stops the SD I/O Read Wait operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga2baac4ea1bb6c2d94345d2712604338a}{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+Read\+Wait\+Mode)
+\begin{DoxyCompactList}\small\item\em Sets one of the two options of inserting read wait interval. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga24e210c185d5a7855cbaff4472a8f8d1}{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SD I/O Mode Operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga9264137a01a1ab81d03bc80a3b3120fc}{S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SD I/O Mode suspend command sending. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga1bbe98c629812bc62121d9c8b2c5e21b}{S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the command completion signal. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_gab44b8cbc21be000a291563076159503b}{S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\+E-\/\+A\+TA interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga8dc7f17804bdb745b42f6647c8487b4c}{S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Sends C\+E-\/\+A\+TA command (C\+M\+D61). \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___s_d_i_o___private___functions_ga644514b4b3c95c5c4326d99cd166f6f9}{S\+D\+I\+O\+\_\+\+Get\+Flag\+Status} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+D\+IO flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga7aff4efdeb528229135f9f285e53518a}{S\+D\+I\+O\+\_\+\+Clear\+Flag} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the S\+D\+IO\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___s_d_i_o___private___functions_ga2d64af1f3df0f99cb518f9a89bbd02ac}{S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+D\+IO interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___private___functions_ga048e07fd86321cd01b2a22c071c3149b}{S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the S\+D\+IO\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the S\+D\+IO firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

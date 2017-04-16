@@ -1,0 +1,54 @@
+.TH "DAC_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DAC_InitTypeDef \- DAC Init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_dac\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBDAC_Trigger\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDAC_WaveGeneration\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDAC_LFSRUnmask_TriangleAmplitude\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDAC_OutputBuffer\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+DAC Init structure definition\&. 
+.PP
+Definition at line 50 of file stm32f10x_dac\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t DAC_InitTypeDef::DAC_LFSRUnmask_TriangleAmplitude"
+Specifies the LFSR mask for noise wave generation or the maximum amplitude triangle generation for the DAC channel\&. This parameter can be a value of \fBDAC_lfsrunmask_triangleamplitude\fP 
+.PP
+Definition at line 59 of file stm32f10x_dac\&.h\&.
+.SS "uint32_t DAC_InitTypeDef::DAC_OutputBuffer"
+Specifies whether the DAC channel output buffer is enabled or disabled\&. This parameter can be a value of \fBDAC_output_buffer\fP 
+.PP
+Definition at line 63 of file stm32f10x_dac\&.h\&.
+.SS "uint32_t DAC_InitTypeDef::DAC_Trigger"
+Specifies the external trigger for the selected DAC channel\&. This parameter can be a value of \fBDAC_trigger_selection\fP 
+.PP
+Definition at line 52 of file stm32f10x_dac\&.h\&.
+.SS "uint32_t DAC_InitTypeDef::DAC_WaveGeneration"
+Specifies whether DAC channel noise waves or triangle waves are generated, or whether no wave is generated\&. This parameter can be a value of \fBDAC_wave_generation\fP 
+.PP
+Definition at line 55 of file stm32f10x_dac\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

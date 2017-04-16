@@ -1,0 +1,68 @@
+.TH "Clock_source_to_output_on_MCO_pin" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Clock_source_to_output_on_MCO_pin
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_MCO_NoClock\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO_SYSCLK\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO_HSI\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO_HSE\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO_PLLCLK_Div2\fP   ((uint8_t)0x07)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_MCO\fP(MCO)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RCC_MCO(MCO)"
+\fBValue:\fP
+.PP
+.nf
+(((MCO) == RCC_MCO_NoClock) || ((MCO) == RCC_MCO_HSI) || \
+                          ((MCO) == RCC_MCO_SYSCLK)  || ((MCO) == RCC_MCO_HSE) || \
+                          ((MCO) == RCC_MCO_PLLCLK_Div2))
+.fi
+.PP
+Definition at line 571 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_MCO_HSE   ((uint8_t)0x06)"
+
+.PP
+Definition at line 567 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_MCO_HSI   ((uint8_t)0x05)"
+
+.PP
+Definition at line 566 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_MCO_NoClock   ((uint8_t)0x00)"
+
+.PP
+Definition at line 564 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_MCO_PLLCLK_Div2   ((uint8_t)0x07)"
+
+.PP
+Definition at line 568 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_MCO_SYSCLK   ((uint8_t)0x04)"
+
+.PP
+Definition at line 565 of file stm32f10x_rcc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___c_p_s_m___state" kind="group">
+    <compoundname>SDIO_CPSM_State</compoundname>
+    <title>SDIO_CPSM_State</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___c_p_s_m___state_1ga996751273ad238e255a740f7c2844c6c" prot="public" static="no">
+        <name>SDIO_CPSM_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="272" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___c_p_s_m___state_1gad437cefe89d6175aa074a1c40b909ebc" prot="public" static="no">
+        <name>SDIO_CPSM_Enable</name>
+        <initializer>((uint32_t)0x00000400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="273" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___c_p_s_m___state_1ga58cf04903dab015106e4e0937bef443b" prot="public" static="no">
+        <name>IS_SDIO_CPSM</name>
+        <param><defname>CPSM</defname></param>
+        <initializer>(((CPSM) == <ref refid="group___s_d_i_o___c_p_s_m___state_1gad437cefe89d6175aa074a1c40b909ebc" kindref="member">SDIO_CPSM_Enable</ref>) || ((CPSM) == <ref refid="group___s_d_i_o___c_p_s_m___state_1ga996751273ad238e255a740f7c2844c6c" kindref="member">SDIO_CPSM_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="274" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+.TH "arm_fir_instance_f32" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_fir_instance_f32 \- Instance structure for the floating-point FIR filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBnumTaps\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpCoeffs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the floating-point FIR filter\&. 
+.PP
+Definition at line 1059 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t arm_fir_instance_f32::numTaps"
+number of filter coefficients in the filter\&. 
+.PP
+Definition at line 1061 of file arm_math\&.h\&.
+.SS "\fBfloat32_t\fP* arm_fir_instance_f32::pCoeffs"
+points to the coefficient array\&. The array is of length numTaps\&. 
+.PP
+Definition at line 1063 of file arm_math\&.h\&.
+.SS "\fBfloat32_t\fP* arm_fir_instance_f32::pState"
+points to the state variable array\&. The array is of length numTaps+blockSize-1\&. 
+.PP
+Definition at line 1062 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

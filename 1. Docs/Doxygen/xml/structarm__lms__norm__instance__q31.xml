@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__lms__norm__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_lms_norm_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a28e4c085af69c9c3e2e95dacf8004c3e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_lms_norm_instance_q31::numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4170" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a6b25c96cf048b77078d62f4252a01ec4" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_lms_norm_instance_q31::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4171" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a57a64c1ff102d033c1bd05043f1d9955" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_lms_norm_instance_q31::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4172" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1ad3dd2a2406e02fdaa7782ba6c3940a64" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t arm_lms_norm_instance_q31::mu</definition>
+        <argsstring></argsstring>
+        <name>mu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>step size that controls filter coefficient updates. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4173" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a28d7b9e437817f83397e081967e90f3c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_lms_norm_instance_q31::postShift</definition>
+        <argsstring></argsstring>
+        <name>postShift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit shift applied to coefficients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4174" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a85836d0907077b9ac660f7bbbaa9d694" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_lms_norm_instance_q31::recipTable</definition>
+        <argsstring></argsstring>
+        <name>recipTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the reciprocal initial value table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4175" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a3c0ae42869afec8555dc8e3a7ef9b386" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t arm_lms_norm_instance_q31::energy</definition>
+        <argsstring></argsstring>
+        <name>energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>saves previous frame energy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4176" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a47c4466d644e0d8ba407995adfa9b917" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t arm_lms_norm_instance_q31::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>saves previous input sample. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4177" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 normalized LMS filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4169" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4168" bodyend="4178"/>
+    <listofallmembers>
+      <member refid="structarm__lms__norm__instance__q31_1a3c0ae42869afec8555dc8e3a7ef9b386" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>energy</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1ad3dd2a2406e02fdaa7782ba6c3940a64" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>mu</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a28e4c085af69c9c3e2e95dacf8004c3e" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>numTaps</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a57a64c1ff102d033c1bd05043f1d9955" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>pCoeffs</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a28d7b9e437817f83397e081967e90f3c" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>postShift</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a6b25c96cf048b77078d62f4252a01ec4" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>pState</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a85836d0907077b9ac660f7bbbaa9d694" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>recipTable</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a47c4466d644e0d8ba407995adfa9b917" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>x0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

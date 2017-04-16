@@ -1,0 +1,682 @@
+.TH "DMA_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDMA_DeInit\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx)"
+.br
+.RI "Deinitializes the DMAy Channelx registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBDMA_Init\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, \fBDMA_InitTypeDef\fP *DMA_InitStruct)"
+.br
+.RI "Initializes the DMAy Channelx according to the specified parameters in the DMA_InitStruct\&. "
+.ti -1c
+.RI "void \fBDMA_StructInit\fP (\fBDMA_InitTypeDef\fP *DMA_InitStruct)"
+.br
+.RI "Fills each DMA_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBDMA_Cmd\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DMAy Channelx\&. "
+.ti -1c
+.RI "void \fBDMA_ITConfig\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, uint32_t DMA_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DMAy Channelx interrupts\&. "
+.ti -1c
+.RI "void \fBDMA_SetCurrDataCounter\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, uint16_t DataNumber)"
+.br
+.RI "Sets the number of data units in the current DMAy Channelx transfer\&. "
+.ti -1c
+.RI "uint16_t \fBDMA_GetCurrDataCounter\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx)"
+.br
+.RI "Returns the number of remaining data units in the current DMAy Channelx transfer\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBDMA_GetFlagStatus\fP (uint32_t DMAy_FLAG)"
+.br
+.RI "Checks whether the specified DMAy Channelx flag is set or not\&. "
+.ti -1c
+.RI "void \fBDMA_ClearFlag\fP (uint32_t DMAy_FLAG)"
+.br
+.RI "Clears the DMAy Channelx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBDMA_GetITStatus\fP (uint32_t DMAy_IT)"
+.br
+.RI "Checks whether the specified DMAy Channelx interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBDMA_ClearITPendingBit\fP (uint32_t DMAy_IT)"
+.br
+.RI "Clears the DMAy Channelx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void DMA_ClearFlag (uint32_t DMAy_FLAG)"
+
+.PP
+Clears the DMAy Channelx's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_FLAG\fP specifies the flag to clear\&. This parameter can be any combination (for the same DMA) of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DMA1_FLAG_GL1: DMA1 Channel1 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC1: DMA1 Channel1 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT1: DMA1 Channel1 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE1: DMA1 Channel1 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL2: DMA1 Channel2 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC2: DMA1 Channel2 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT2: DMA1 Channel2 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE2: DMA1 Channel2 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL3: DMA1 Channel3 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC3: DMA1 Channel3 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT3: DMA1 Channel3 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE3: DMA1 Channel3 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL4: DMA1 Channel4 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC4: DMA1 Channel4 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT4: DMA1 Channel4 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE4: DMA1 Channel4 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL5: DMA1 Channel5 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC5: DMA1 Channel5 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT5: DMA1 Channel5 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE5: DMA1 Channel5 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL6: DMA1 Channel6 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC6: DMA1 Channel6 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT6: DMA1 Channel6 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE6: DMA1 Channel6 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL7: DMA1 Channel7 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC7: DMA1 Channel7 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT7: DMA1 Channel7 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE7: DMA1 Channel7 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL1: DMA2 Channel1 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC1: DMA2 Channel1 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT1: DMA2 Channel1 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE1: DMA2 Channel1 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL2: DMA2 Channel2 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC2: DMA2 Channel2 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT2: DMA2 Channel2 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE2: DMA2 Channel2 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL3: DMA2 Channel3 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC3: DMA2 Channel3 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT3: DMA2 Channel3 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE3: DMA2 Channel3 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL4: DMA2 Channel4 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC4: DMA2 Channel4 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT4: DMA2 Channel4 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE4: DMA2 Channel4 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL5: DMA2 Channel5 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC5: DMA2 Channel5 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT5: DMA2 Channel5 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE5: DMA2 Channel5 transfer error flag\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 523 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_ClearITPendingBit (uint32_t DMAy_IT)"
+
+.PP
+Clears the DMAy Channelx's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_IT\fP specifies the DMAy interrupt pending bit to clear\&. This parameter can be any combination (for the same DMA) of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DMA1_IT_GL1: DMA1 Channel1 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC1: DMA1 Channel1 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT1: DMA1 Channel1 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE1: DMA1 Channel1 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL2: DMA1 Channel2 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC2: DMA1 Channel2 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT2: DMA1 Channel2 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE2: DMA1 Channel2 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL3: DMA1 Channel3 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC3: DMA1 Channel3 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT3: DMA1 Channel3 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE3: DMA1 Channel3 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL4: DMA1 Channel4 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC4: DMA1 Channel4 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT4: DMA1 Channel4 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE4: DMA1 Channel4 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL5: DMA1 Channel5 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC5: DMA1 Channel5 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT5: DMA1 Channel5 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE5: DMA1 Channel5 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL6: DMA1 Channel6 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC6: DMA1 Channel6 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT6: DMA1 Channel6 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE6: DMA1 Channel6 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL7: DMA1 Channel7 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC7: DMA1 Channel7 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT7: DMA1 Channel7 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE7: DMA1 Channel7 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL1: DMA2 Channel1 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC1: DMA2 Channel1 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT1: DMA2 Channel1 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE1: DMA2 Channel1 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL2: DMA2 Channel2 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC2: DMA2 Channel2 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT2: DMA2 Channel2 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE2: DMA2 Channel2 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL3: DMA2 Channel3 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC3: DMA2 Channel3 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT3: DMA2 Channel3 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE3: DMA2 Channel3 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL4: DMA2 Channel4 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC4: DMA2 Channel4 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT4: DMA2 Channel4 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE4: DMA2 Channel4 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL5: DMA2 Channel5 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC5: DMA2 Channel5 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT5: DMA2 Channel5 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE5: DMA2 Channel5 transfer error interrupt\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 684 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_Cmd (\fBDMA_Channel_TypeDef\fP * DMAy_Channelx, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified DMAy Channelx\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_Channelx\fP where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel\&. 
+.br
+\fINewState\fP new state of the DMAy Channelx\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 294 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_DeInit (\fBDMA_Channel_TypeDef\fP * DMAy_Channelx)"
+
+.PP
+Deinitializes the DMAy Channelx registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_Channelx\fP where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file stm32f10x_dma\&.c\&.
+.SS "uint16_t DMA_GetCurrDataCounter (\fBDMA_Channel_TypeDef\fP * DMAy_Channelx)"
+
+.PP
+Returns the number of remaining data units in the current DMAy Channelx transfer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_Channelx\fP where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP number of remaining data units in the current DMAy Channelx transfer\&. 
+.RE
+.PP
+
+.PP
+Definition at line 371 of file stm32f10x_dma\&.c\&.
+.SS "\fBFlagStatus\fP DMA_GetFlagStatus (uint32_t DMAy_FLAG)"
+
+.PP
+Checks whether the specified DMAy Channelx flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_FLAG\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DMA1_FLAG_GL1: DMA1 Channel1 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC1: DMA1 Channel1 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT1: DMA1 Channel1 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE1: DMA1 Channel1 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL2: DMA1 Channel2 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC2: DMA1 Channel2 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT2: DMA1 Channel2 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE2: DMA1 Channel2 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL3: DMA1 Channel3 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC3: DMA1 Channel3 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT3: DMA1 Channel3 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE3: DMA1 Channel3 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL4: DMA1 Channel4 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC4: DMA1 Channel4 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT4: DMA1 Channel4 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE4: DMA1 Channel4 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL5: DMA1 Channel5 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC5: DMA1 Channel5 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT5: DMA1 Channel5 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE5: DMA1 Channel5 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL6: DMA1 Channel6 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC6: DMA1 Channel6 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT6: DMA1 Channel6 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE6: DMA1 Channel6 transfer error flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_GL7: DMA1 Channel7 global flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TC7: DMA1 Channel7 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_HT7: DMA1 Channel7 half transfer flag\&. 
+.IP "\(bu" 2
+DMA1_FLAG_TE7: DMA1 Channel7 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL1: DMA2 Channel1 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC1: DMA2 Channel1 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT1: DMA2 Channel1 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE1: DMA2 Channel1 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL2: DMA2 Channel2 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC2: DMA2 Channel2 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT2: DMA2 Channel2 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE2: DMA2 Channel2 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL3: DMA2 Channel3 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC3: DMA2 Channel3 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT3: DMA2 Channel3 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE3: DMA2 Channel3 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL4: DMA2 Channel4 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC4: DMA2 Channel4 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT4: DMA2 Channel4 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE4: DMA2 Channel4 transfer error flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_GL5: DMA2 Channel5 global flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TC5: DMA2 Channel5 transfer complete flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_HT5: DMA2 Channel5 half transfer flag\&. 
+.IP "\(bu" 2
+DMA2_FLAG_TE5: DMA2 Channel5 transfer error flag\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of DMAy_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 433 of file stm32f10x_dma\&.c\&.
+.SS "\fBITStatus\fP DMA_GetITStatus (uint32_t DMAy_IT)"
+
+.PP
+Checks whether the specified DMAy Channelx interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_IT\fP specifies the DMAy interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DMA1_IT_GL1: DMA1 Channel1 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC1: DMA1 Channel1 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT1: DMA1 Channel1 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE1: DMA1 Channel1 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL2: DMA1 Channel2 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC2: DMA1 Channel2 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT2: DMA1 Channel2 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE2: DMA1 Channel2 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL3: DMA1 Channel3 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC3: DMA1 Channel3 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT3: DMA1 Channel3 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE3: DMA1 Channel3 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL4: DMA1 Channel4 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC4: DMA1 Channel4 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT4: DMA1 Channel4 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE4: DMA1 Channel4 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL5: DMA1 Channel5 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC5: DMA1 Channel5 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT5: DMA1 Channel5 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE5: DMA1 Channel5 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL6: DMA1 Channel6 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC6: DMA1 Channel6 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT6: DMA1 Channel6 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE6: DMA1 Channel6 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_GL7: DMA1 Channel7 global interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TC7: DMA1 Channel7 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_HT7: DMA1 Channel7 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA1_IT_TE7: DMA1 Channel7 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL1: DMA2 Channel1 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC1: DMA2 Channel1 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT1: DMA2 Channel1 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE1: DMA2 Channel1 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL2: DMA2 Channel2 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC2: DMA2 Channel2 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT2: DMA2 Channel2 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE2: DMA2 Channel2 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL3: DMA2 Channel3 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC3: DMA2 Channel3 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT3: DMA2 Channel3 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE3: DMA2 Channel3 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL4: DMA2 Channel4 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC4: DMA2 Channel4 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT4: DMA2 Channel4 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE4: DMA2 Channel4 transfer error interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_GL5: DMA2 Channel5 global interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TC5: DMA2 Channel5 transfer complete interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_HT5: DMA2 Channel5 half transfer interrupt\&. 
+.IP "\(bu" 2
+DMA2_IT_TE5: DMA2 Channel5 transfer error interrupt\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of DMAy_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 595 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_Init (\fBDMA_Channel_TypeDef\fP * DMAy_Channelx, \fBDMA_InitTypeDef\fP * DMA_InitStruct)"
+
+.PP
+Initializes the DMAy Channelx according to the specified parameters in the DMA_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_Channelx\fP where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel\&. 
+.br
+\fIDMA_InitStruct\fP pointer to a \fBDMA_InitTypeDef\fP structure that contains the configuration information for the specified DMA Channel\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 202 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_ITConfig (\fBDMA_Channel_TypeDef\fP * DMAy_Channelx, uint32_t DMA_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified DMAy Channelx interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_Channelx\fP where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel\&. 
+.br
+\fIDMA_IT\fP specifies the DMA interrupts sources to be enabled or disabled\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DMA_IT_TC: Transfer complete interrupt mask 
+.IP "\(bu" 2
+DMA_IT_HT: Half transfer interrupt mask 
+.IP "\(bu" 2
+DMA_IT_TE: Transfer error interrupt mask 
+.PP
+.br
+\fINewState\fP new state of the specified DMA interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 326 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_SetCurrDataCounter (\fBDMA_Channel_TypeDef\fP * DMAy_Channelx, uint16_t DataNumber)"
+
+.PP
+Sets the number of data units in the current DMAy Channelx transfer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMAy_Channelx\fP where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel\&. 
+.br
+\fIDataNumber\fP The number of data units in the current DMAy Channelx transfer\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+This function can only be used when the DMAy_Channelx is disabled\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\&.\fP 
+.RE
+.PP
+
+.PP
+Definition at line 353 of file stm32f10x_dma\&.c\&.
+.SS "void DMA_StructInit (\fBDMA_InitTypeDef\fP * DMA_InitStruct)"
+
+.PP
+Fills each DMA_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDMA_InitStruct\fP : pointer to a \fBDMA_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 259 of file stm32f10x_dma\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

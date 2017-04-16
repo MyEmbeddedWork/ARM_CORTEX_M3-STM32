@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___counter___mode" kind="group">
+    <compoundname>TIM_Counter_Mode</compoundname>
+    <title>TIM_Counter_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___counter___mode_1gaf4cd3ce74af3122507b77c8f6e79c832" prot="public" static="no">
+        <name>TIM_CounterMode_Up</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="369" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___counter___mode_1gadd7c4200d185bdcd9e64ae80e6b200b0" prot="public" static="no">
+        <name>TIM_CounterMode_Down</name>
+        <initializer>((uint16_t)0x0010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="370" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___counter___mode_1gac07392e9637f8a0d115d4ba9a002ae93" prot="public" static="no">
+        <name>TIM_CounterMode_CenterAligned1</name>
+        <initializer>((uint16_t)0x0020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="371" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___counter___mode_1ga3793122e4c123a99e46fc2f04acea0d4" prot="public" static="no">
+        <name>TIM_CounterMode_CenterAligned2</name>
+        <initializer>((uint16_t)0x0040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="372" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___counter___mode_1ga65d9bc01ffa287cd7cf200d08c20a1ce" prot="public" static="no">
+        <name>TIM_CounterMode_CenterAligned3</name>
+        <initializer>((uint16_t)0x0060)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="373" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___counter___mode_1ga9543fec190793e800d5d1b1b853636f5" prot="public" static="no">
+        <name>IS_TIM_COUNTER_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___t_i_m___counter___mode_1gaf4cd3ce74af3122507b77c8f6e79c832" kindref="member">TIM_CounterMode_Up</ref>) ||  \
+                                   ((MODE) == <ref refid="group___t_i_m___counter___mode_1gadd7c4200d185bdcd9e64ae80e6b200b0" kindref="member">TIM_CounterMode_Down</ref>) || \
+                                   ((MODE) == <ref refid="group___t_i_m___counter___mode_1gac07392e9637f8a0d115d4ba9a002ae93" kindref="member">TIM_CounterMode_CenterAligned1</ref>) || \
+                                   ((MODE) == <ref refid="group___t_i_m___counter___mode_1ga3793122e4c123a99e46fc2f04acea0d4" kindref="member">TIM_CounterMode_CenterAligned2</ref>) || \
+                                   ((MODE) == <ref refid="group___t_i_m___counter___mode_1ga65d9bc01ffa287cd7cf200d08c20a1ce" kindref="member">TIM_CounterMode_CenterAligned3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="374" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

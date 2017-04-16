@@ -1,0 +1,46 @@
+.TH "CEC_BitPeriod_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEC_BitPeriod_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCEC_BitPeriodStdMode\fP   ((uint16_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCEC_BitPeriodFlexibleMode\fP   \fBCEC_CFGR_BPEM\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_BIT_PERIOD_ERROR_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CEC_BitPeriodFlexibleMode   \fBCEC_CFGR_BPEM\fP"
+Bit period error Flexible Mode 
+.PP
+Definition at line 82 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_BitPeriodStdMode   ((uint16_t)0x00)"
+Bit period error Standard Mode 
+.PP
+Definition at line 81 of file stm32f10x_cec\&.h\&.
+.SS "#define IS_CEC_BIT_PERIOD_ERROR_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == CEC_BitPeriodStdMode) || \
+                                            ((MODE) == CEC_BitPeriodFlexibleMode))
+.fi
+.PP
+Definition at line 84 of file stm32f10x_cec\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

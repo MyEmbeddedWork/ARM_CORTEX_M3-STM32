@@ -1,0 +1,96 @@
+.TH "SPI_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_InitTypeDef \- SPI Init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_spi\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBSPI_Direction\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_Mode\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_DataSize\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_CPOL\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_CPHA\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_NSS\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_BaudRatePrescaler\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_FirstBit\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBSPI_CRCPolynomial\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+SPI Init structure definition\&. 
+.PP
+Definition at line 56 of file stm32f10x_spi\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t SPI_InitTypeDef::SPI_BaudRatePrescaler"
+Specifies the Baud Rate prescaler value which will be used to configure the transmit and receive SCK clock\&. This parameter can be a value of \fBSPI_BaudRate_Prescaler\fP\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The communication clock is derived from the master clock\&. The slave clock does not need to be set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 77 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_CPHA"
+Specifies the clock active edge for the bit capture\&. This parameter can be a value of \fBSPI_Clock_Phase\fP 
+.PP
+Definition at line 70 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_CPOL"
+Specifies the serial clock steady state\&. This parameter can be a value of \fBSPI_Clock_Polarity\fP 
+.PP
+Definition at line 67 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_CRCPolynomial"
+Specifies the polynomial used for the CRC calculation\&. 
+.PP
+Definition at line 86 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_DataSize"
+Specifies the SPI data size\&. This parameter can be a value of \fBSPI_data_size\fP 
+.PP
+Definition at line 64 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_Direction"
+Specifies the SPI unidirectional or bidirectional data mode\&. This parameter can be a value of \fBSPI_data_direction\fP 
+.PP
+Definition at line 58 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_FirstBit"
+Specifies whether data transfers start from MSB or LSB bit\&. This parameter can be a value of \fBSPI_MSB_LSB_transmission\fP 
+.PP
+Definition at line 83 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_Mode"
+Specifies the SPI operating mode\&. This parameter can be a value of \fBSPI_mode\fP 
+.PP
+Definition at line 61 of file stm32f10x_spi\&.h\&.
+.SS "uint16_t SPI_InitTypeDef::SPI_NSS"
+Specifies whether the NSS signal is managed by hardware (NSS pin) or by software using the SSI bit\&. This parameter can be a value of \fBSPI_Slave_Select_management\fP 
+.PP
+Definition at line 73 of file stm32f10x_spi\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

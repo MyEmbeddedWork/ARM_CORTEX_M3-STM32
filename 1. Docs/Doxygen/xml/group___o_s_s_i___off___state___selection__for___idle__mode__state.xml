@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___o_s_s_i___off___state___selection__for___idle__mode__state" kind="group">
+    <compoundname>OSSI_Off_State_Selection_for_Idle_mode_state</compoundname>
+    <title>OSSI_Off_State_Selection_for_Idle_mode_state</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___o_s_s_i___off___state___selection__for___idle__mode__state_1gaf643ec0d2edb6c8fb725d00210b3d071" prot="public" static="no">
+        <name>TIM_OSSIState_Enable</name>
+        <initializer>((uint16_t)0x0400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="511" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___o_s_s_i___off___state___selection__for___idle__mode__state_1gae1962736fd5cad82e97a5814ef6758bd" prot="public" static="no">
+        <name>TIM_OSSIState_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="512" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___o_s_s_i___off___state___selection__for___idle__mode__state_1gad24fc8836152903b408239284cecfab1" prot="public" static="no">
+        <name>IS_TIM_OSSI_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___o_s_s_i___off___state___selection__for___idle__mode__state_1gaf643ec0d2edb6c8fb725d00210b3d071" kindref="member">TIM_OSSIState_Enable</ref>) || \
+                                  ((STATE) == <ref refid="group___o_s_s_i___off___state___selection__for___idle__mode__state_1gae1962736fd5cad82e97a5814ef6758bd" kindref="member">TIM_OSSIState_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="513" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

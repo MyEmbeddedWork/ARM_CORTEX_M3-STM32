@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___g_p_i_o___private___defines" kind="group">
+    <compoundname>GPIO_Private_Defines</compoundname>
+    <title>GPIO_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga0ecdd0dd5180e1ee385c22f66a2cd660" prot="public" static="no">
+        <name>AFIO_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1ga5f7e3eacfcf4c313c25012795148a680" kindref="member">AFIO_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1gaf8c24f39392c89142f1b97a418669d5d" prot="public" static="no">
+        <name>EVCR_OFFSET</name>
+        <initializer>(<ref refid="group___g_p_i_o___private___defines_1ga0ecdd0dd5180e1ee385c22f66a2cd660" kindref="member">AFIO_OFFSET</ref> + 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga8e4fdee57fe3447cdbc5d00ccab60c18" prot="public" static="no">
+        <name>EVOE_BitNumber</name>
+        <initializer>((uint8_t)0x07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga6e4f8c4e3def38811ac6c03b4f64240b" prot="public" static="no">
+        <name>EVCR_EVOE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___g_p_i_o___private___defines_1gaf8c24f39392c89142f1b97a418669d5d" kindref="member">EVCR_OFFSET</ref> * 32) + (<ref refid="group___g_p_i_o___private___defines_1ga8e4fdee57fe3447cdbc5d00ccab60c18" kindref="member">EVOE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga472f80f63d09e365d283675f3466c8a1" prot="public" static="no">
+        <name>MAPR_OFFSET</name>
+        <initializer>(<ref refid="group___g_p_i_o___private___defines_1ga0ecdd0dd5180e1ee385c22f66a2cd660" kindref="member">AFIO_OFFSET</ref> + 0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1gad4a9bbd669109039291f942d923ff8ae" prot="public" static="no">
+        <name>MII_RMII_SEL_BitNumber</name>
+        <initializer>((<ref refid="group___exported__types_1ga92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>)0x17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga00e75433e8a45d7a55c021397cb85aa9" prot="public" static="no">
+        <name>MAPR_MII_RMII_SEL_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___g_p_i_o___private___defines_1ga472f80f63d09e365d283675f3466c8a1" kindref="member">MAPR_OFFSET</ref> * 32) + (<ref refid="group___g_p_i_o___private___defines_1gad4a9bbd669109039291f942d923ff8ae" kindref="member">MII_RMII_SEL_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga97d20e77a588a767e1a775dd4299d1c5" prot="public" static="no">
+        <name>EVCR_PORTPINCONFIG_MASK</name>
+        <initializer>((uint16_t)0xFF80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga338d54179ac0da2af2363e3a930bf374" prot="public" static="no">
+        <name>LSB_MASK</name>
+        <initializer>((uint16_t)0xFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1gafa4eba58b1839413acb4591da00e7559" prot="public" static="no">
+        <name>DBGAFR_POSITION_MASK</name>
+        <initializer>((uint32_t)0x000F0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1ga47a1cd3c0505a7be3e161671237d8460" prot="public" static="no">
+        <name>DBGAFR_SWJCFG_MASK</name>
+        <initializer>((uint32_t)0xF0FFFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="68" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1gaab83406f875057e96458940ca9519b7d" prot="public" static="no">
+        <name>DBGAFR_LOCATION_MASK</name>
+        <initializer>((uint32_t)0x00200000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___defines_1gaea2fa480dea4d6e061eaa1417a9196dc" prot="public" static="no">
+        <name>DBGAFR_NUMBITS_MASK</name>
+        <initializer>((uint32_t)0x00100000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

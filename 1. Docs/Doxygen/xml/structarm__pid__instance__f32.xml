@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__pid__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_pid_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1ad7b0bed64915d0a25a3409fa2dc45556" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::A0</definition>
+        <argsstring></argsstring>
+        <name>A0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derived gain, A0 = Kp + Ki + Kd . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1771" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1a7def89571c50f7137a213326a396e560" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::A1</definition>
+        <argsstring></argsstring>
+        <name>A1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derived gain, A1 = -Kp - 2Kd. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1772" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1a155acf642ba2f521869f19d694cd7fa0" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::A2</definition>
+        <argsstring></argsstring>
+        <name>A2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derived gain, A2 = Kd . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1773" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1afd394e1e52fb1d526aa472c83b8f2464" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::state[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state array of length 3. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1774" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1aa9b9aa9e413c6cec376a9dddc9f01ebe" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::Kp</definition>
+        <argsstring></argsstring>
+        <name>Kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The proportional gain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1775" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1ac0feffde05fe391eeab3bf78e953830a" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::Ki</definition>
+        <argsstring></argsstring>
+        <name>Ki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The integral gain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1776" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__pid__instance__f32_1ad5b68fbf84d16188ae4747ff91f6f088" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_pid_instance_f32::Kd</definition>
+        <argsstring></argsstring>
+        <name>Kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The derivative gain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1777" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1777" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point PID Control. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1770" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1769" bodyend="1778"/>
+    <listofallmembers>
+      <member refid="structarm__pid__instance__f32_1ad7b0bed64915d0a25a3409fa2dc45556" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>A0</name></member>
+      <member refid="structarm__pid__instance__f32_1a7def89571c50f7137a213326a396e560" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>A1</name></member>
+      <member refid="structarm__pid__instance__f32_1a155acf642ba2f521869f19d694cd7fa0" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>A2</name></member>
+      <member refid="structarm__pid__instance__f32_1ad5b68fbf84d16188ae4747ff91f6f088" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>Kd</name></member>
+      <member refid="structarm__pid__instance__f32_1ac0feffde05fe391eeab3bf78e953830a" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>Ki</name></member>
+      <member refid="structarm__pid__instance__f32_1aa9b9aa9e413c6cec376a9dddc9f01ebe" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>Kp</name></member>
+      <member refid="structarm__pid__instance__f32_1afd394e1e52fb1d526aa472c83b8f2464" prot="public" virt="non-virtual"><scope>arm_pid_instance_f32</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

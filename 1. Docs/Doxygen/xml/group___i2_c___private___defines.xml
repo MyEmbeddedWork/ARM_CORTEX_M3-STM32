@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c___private___defines" kind="group">
+    <compoundname>I2C_Private_Defines</compoundname>
+    <title>I2C_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga913b708338087f3ffc2fba2b05a38917" prot="public" static="no">
+        <name>CR1_PE_Set</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="49" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga21dc289f16c502a2bc0a88e1514a8ee0" prot="public" static="no">
+        <name>CR1_PE_Reset</name>
+        <initializer>((uint16_t)0xFFFE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="50" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga53820dd338da9779d039718148184ef9" prot="public" static="no">
+        <name>CR1_START_Set</name>
+        <initializer>((uint16_t)0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gacc62242e31a380aec2ef9f836b3cf19d" prot="public" static="no">
+        <name>CR1_START_Reset</name>
+        <initializer>((uint16_t)0xFEFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gac14ffc5548d2c30d21c49612c57e52be" prot="public" static="no">
+        <name>CR1_STOP_Set</name>
+        <initializer>((uint16_t)0x0200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="57" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gac44124bc7b468c7dee8188712e407e02" prot="public" static="no">
+        <name>CR1_STOP_Reset</name>
+        <initializer>((uint16_t)0xFDFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga1f74487a0fbffdcd8a4c440c732dc316" prot="public" static="no">
+        <name>CR1_ACK_Set</name>
+        <initializer>((uint16_t)0x0400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gaa8bcbe2f6089d896aff8e7770368aada" prot="public" static="no">
+        <name>CR1_ACK_Reset</name>
+        <initializer>((uint16_t)0xFBFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gadcd99a681046a2315f4bc72c9f461f0e" prot="public" static="no">
+        <name>CR1_ENGC_Set</name>
+        <initializer>((uint16_t)0x0040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gab51161052b055a5eecb0aad447a776e5" prot="public" static="no">
+        <name>CR1_ENGC_Reset</name>
+        <initializer>((uint16_t)0xFFBF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga0e067bb108052ea0e8e49feb194c2ca0" prot="public" static="no">
+        <name>CR1_SWRST_Set</name>
+        <initializer>((uint16_t)0x8000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gab41b615034ed8f830ef4900a0fcefc39" prot="public" static="no">
+        <name>CR1_SWRST_Reset</name>
+        <initializer>((uint16_t)0x7FFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gad0ab853d291338d4cf3aee736353f0b8" prot="public" static="no">
+        <name>CR1_PEC_Set</name>
+        <initializer>((uint16_t)0x1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gabb6969dfa44c3539ef93f04f8136c3c7" prot="public" static="no">
+        <name>CR1_PEC_Reset</name>
+        <initializer>((uint16_t)0xEFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga7fdf69341e5debc3244812012ae332e6" prot="public" static="no">
+        <name>CR1_ENPEC_Set</name>
+        <initializer>((uint16_t)0x0020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="77" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gabd33104d7b8e4673fa330f4ca3a97e44" prot="public" static="no">
+        <name>CR1_ENPEC_Reset</name>
+        <initializer>((uint16_t)0xFFDF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="78" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga73cfd7b486b4279fc6a83de64ab23985" prot="public" static="no">
+        <name>CR1_ENARP_Set</name>
+        <initializer>((uint16_t)0x0010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga173b065ec9b7b33c0fa0bf71c0fa2207" prot="public" static="no">
+        <name>CR1_ENARP_Reset</name>
+        <initializer>((uint16_t)0xFFEF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="82" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gac4abee43c3523527780f200adf465bc0" prot="public" static="no">
+        <name>CR1_NOSTRETCH_Set</name>
+        <initializer>((uint16_t)0x0080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="85" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga9a1609fd4bbcc38fc6423836730c8fa0" prot="public" static="no">
+        <name>CR1_NOSTRETCH_Reset</name>
+        <initializer>((uint16_t)0xFF7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="86" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga67f7dd35ea3d1296677e5fc50b88fa90" prot="public" static="no">
+        <name>CR1_CLEAR_Mask</name>
+        <initializer>((uint16_t)0xFBF5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="89" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gafe82da50fa03bd5ecb36340da64c87ca" prot="public" static="no">
+        <name>CR2_DMAEN_Set</name>
+        <initializer>((uint16_t)0x0800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="92" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gabe742f89a768e29b9a2d86f7782991a6" prot="public" static="no">
+        <name>CR2_DMAEN_Reset</name>
+        <initializer>((uint16_t)0xF7FF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="93" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga3604dd2f23b0f15a088ef6fe9731485a" prot="public" static="no">
+        <name>CR2_LAST_Set</name>
+        <initializer>((uint16_t)0x1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="96" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga904e044226182269485936bad8314f84" prot="public" static="no">
+        <name>CR2_LAST_Reset</name>
+        <initializer>((uint16_t)0xEFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="97" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga2bcf74bd8fc3aaa931faf750d1afe405" prot="public" static="no">
+        <name>CR2_FREQ_Reset</name>
+        <initializer>((uint16_t)0xFFC0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="100" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gaeb56bf422fd13e68c82783df63f425ab" prot="public" static="no">
+        <name>OAR1_ADD0_Set</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="103" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gac5c2ac4577b70e1d7618b7fa1d715e3a" prot="public" static="no">
+        <name>OAR1_ADD0_Reset</name>
+        <initializer>((uint16_t)0xFFFE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="104" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga859551657f688e5efdb3f573e78ee979" prot="public" static="no">
+        <name>OAR2_ENDUAL_Set</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="107" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gaae86eb7689c73e34388cfbd03b8d9ecd" prot="public" static="no">
+        <name>OAR2_ENDUAL_Reset</name>
+        <initializer>((uint16_t)0xFFFE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="108" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga243036db699954e290f48e6743323054" prot="public" static="no">
+        <name>OAR2_ADD2_Reset</name>
+        <initializer>((uint16_t)0xFF01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="111" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga3af49180596b283514782708ac85606e" prot="public" static="no">
+        <name>CCR_FS_Set</name>
+        <initializer>((uint16_t)0x8000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="114" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga07695fd4c06df54def77840118f83a0d" prot="public" static="no">
+        <name>CCR_CCR_Set</name>
+        <initializer>((uint16_t)0x0FFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="117" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" prot="public" static="no">
+        <name>FLAG_Mask</name>
+        <initializer>((uint32_t)0x00FFFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="120" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___private___defines_1gab99e12994e073c2a681a6cf68492b3e2" prot="public" static="no">
+        <name>ITEN_Mask</name>
+        <initializer>((uint32_t)0x07000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" line="123" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

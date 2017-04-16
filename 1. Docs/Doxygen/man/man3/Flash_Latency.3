@@ -1,0 +1,54 @@
+.TH "Flash_Latency" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Flash_Latency
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_Latency_0\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_Latency_1\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_Latency_2\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_LATENCY\fP(LATENCY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_Latency_0   ((uint32_t)0x00000000)"
+FLASH Zero Latency cycle 
+.PP
+Definition at line 71 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_Latency_1   ((uint32_t)0x00000001)"
+FLASH One Latency cycle 
+.PP
+Definition at line 72 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_Latency_2   ((uint32_t)0x00000002)"
+FLASH Two Latency cycles 
+.PP
+Definition at line 73 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_FLASH_LATENCY(LATENCY)"
+\fBValue:\fP
+.PP
+.nf
+(((LATENCY) == FLASH_Latency_0) || \
+                                   ((LATENCY) == FLASH_Latency_1) || \
+                                   ((LATENCY) == FLASH_Latency_2))
+.fi
+.PP
+Definition at line 74 of file stm32f10x_flash\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

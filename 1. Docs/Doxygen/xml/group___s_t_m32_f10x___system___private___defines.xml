@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_t_m32_f10x___system___private___defines" kind="group">
+    <compoundname>STM32F10x_System_Private_Defines</compoundname>
+    <title>STM32F10x_System_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_t_m32_f10x___system___private___defines_1ga69649cc38f34627cfb48b51062ebd390" prot="public" static="no">
+        <name>SYSCLK_FREQ_72MHz</name>
+        <initializer>72000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Uncomment the line corresponding to the desired System clock (SYSCLK) frequency (after reset the HSI is used as SYSCLK source)</para><para><heading level="1">IMPORTANT NOTE: </heading>
+</para><para><orderedlist>
+<listitem><para>After each device reset the HSI is used as System clock source.</para></listitem><listitem><para>Please make sure that the selected System clock doesn&apos;t exceed your device&apos;s maximum frequency.</para></listitem><listitem><para>If none of the define below is enabled, the HSI is used as System clock source.</para></listitem><listitem><para>The System clock configuration functions provided within this file assume that:<itemizedlist>
+<listitem><para>For Low, Medium and High density Value line devices an external 8MHz crystal is used to drive the System clock.</para></listitem><listitem><para>For Low, Medium and High density devices an external 8MHz crystal is used to drive the System clock.</para></listitem><listitem><para>For Connectivity line devices an external 25MHz crystal is used to drive the System clock. If you are using different crystal you have to adapt those functions accordingly.Uncomment the following line if you need to use external SRAM mounted on STM3210E-EVAL board (STM32 High density and XL-density devices) or on STM32100E-EVAL board (STM32 High-density value line devices) as data memory Uncomment the following line if you need to relocate your vector Table in Internal SRAM. </para></listitem></itemizedlist>
+</para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" line="115" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_t_m32_f10x___system___private___defines_1ga40e1495541cbb4acbe3f1819bd87a9fe" prot="public" static="no">
+        <name>VECT_TAB_OFFSET</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vector Table base offset field. This value must be a multiple of 0x200. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" line="129" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

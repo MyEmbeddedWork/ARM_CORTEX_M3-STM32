@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___memory___type" kind="group">
+    <compoundname>FSMC_Memory_Type</compoundname>
+    <title>FSMC_Memory_Type</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___memory___type_1ga8a24e8da42e67dcf6fb2f43659aa49cf" prot="public" static="no">
+        <name>FSMC_MemoryType_SRAM</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="311" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___memory___type_1gae3e680998b2fee8d56222634f5268a75" prot="public" static="no">
+        <name>FSMC_MemoryType_PSRAM</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="312" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___memory___type_1ga8b9390abe7c281947c550bf4365649e5" prot="public" static="no">
+        <name>FSMC_MemoryType_NOR</name>
+        <initializer>((uint32_t)0x00000008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="313" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___memory___type_1ga255cd500e141f4ac024cf5f896921233" prot="public" static="no">
+        <name>IS_FSMC_MEMORY</name>
+        <param><defname>MEMORY</defname></param>
+        <initializer>(((MEMORY) == <ref refid="group___f_s_m_c___memory___type_1ga8a24e8da42e67dcf6fb2f43659aa49cf" kindref="member">FSMC_MemoryType_SRAM</ref>) || \
+                                ((MEMORY) == <ref refid="group___f_s_m_c___memory___type_1gae3e680998b2fee8d56222634f5268a75" kindref="member">FSMC_MemoryType_PSRAM</ref>)|| \
+                                ((MEMORY) == <ref refid="group___f_s_m_c___memory___type_1ga8b9390abe7c281947c550bf4365649e5" kindref="member">FSMC_MemoryType_NOR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="314" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

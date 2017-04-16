@@ -1,0 +1,54 @@
+.TH "USART_ClockInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USART_ClockInitTypeDef \- USART Clock Init Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_usart\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBUSART_Clock\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBUSART_CPOL\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBUSART_CPHA\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBUSART_LastBit\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+USART Clock Init Structure definition\&. 
+.PP
+Definition at line 88 of file stm32f10x_usart\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t USART_ClockInitTypeDef::USART_Clock"
+Specifies whether the USART clock is enabled or disabled\&. This parameter can be a value of \fBUSART_Clock\fP 
+.PP
+Definition at line 91 of file stm32f10x_usart\&.h\&.
+.SS "uint16_t USART_ClockInitTypeDef::USART_CPHA"
+Specifies the clock transition on which the bit capture is made\&. This parameter can be a value of \fBUSART_Clock_Phase\fP 
+.PP
+Definition at line 97 of file stm32f10x_usart\&.h\&.
+.SS "uint16_t USART_ClockInitTypeDef::USART_CPOL"
+Specifies the steady state value of the serial clock\&. This parameter can be a value of \fBUSART_Clock_Polarity\fP 
+.PP
+Definition at line 94 of file stm32f10x_usart\&.h\&.
+.SS "uint16_t USART_ClockInitTypeDef::USART_LastBit"
+Specifies whether the clock pulse corresponding to the last transmitted data bit (MSB) has to be output on the SCLK pin in synchronous mode\&. This parameter can be a value of \fBUSART_Last_Bit\fP 
+.PP
+Definition at line 100 of file stm32f10x_usart\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

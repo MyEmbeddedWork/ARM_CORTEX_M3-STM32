@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___private___types_definitions" kind="group">
+    <compoundname>SDIO_Private_TypesDefinitions</compoundname>
+    <title>SDIO_Private_TypesDefinitions</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gabf07aced03df5f46d57cea1d4f56d1e3" prot="public" static="no">
+        <name>SDIO_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1ga95dd0abbc6767893b4b02935fa846f52" kindref="member">SDIO_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="40" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gac5d642be874338519fdec175204ca8ed" prot="public" static="no">
+        <name>CLKCR_OFFSET</name>
+        <initializer>(<ref refid="group___s_d_i_o___private___types_definitions_1gabf07aced03df5f46d57cea1d4f56d1e3" kindref="member">SDIO_OFFSET</ref> + 0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="45" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga6ad1da47f9d84c54eb620b9231ebec86" prot="public" static="no">
+        <name>CLKEN_BitNumber</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="46" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gabfb5772b9b734972b576309f7ca8bf92" prot="public" static="no">
+        <name>CLKCR_CLKEN_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1gac5d642be874338519fdec175204ca8ed" kindref="member">CLKCR_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1ga6ad1da47f9d84c54eb620b9231ebec86" kindref="member">CLKEN_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="47" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gaf12d26702ce7a88d2a3dae87f000b75e" prot="public" static="no">
+        <name>CMD_OFFSET</name>
+        <initializer>(<ref refid="group___s_d_i_o___private___types_definitions_1gabf07aced03df5f46d57cea1d4f56d1e3" kindref="member">SDIO_OFFSET</ref> + 0x0C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="52" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gaf88f03a42d76974b55dfb8bda65ade97" prot="public" static="no">
+        <name>SDIOSUSPEND_BitNumber</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga931e48aa282e2a937308f57f807e0781" prot="public" static="no">
+        <name>CMD_SDIOSUSPEND_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1gaf12d26702ce7a88d2a3dae87f000b75e" kindref="member">CMD_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1gaf88f03a42d76974b55dfb8bda65ade97" kindref="member">SDIOSUSPEND_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga1d1112c7b804791a0fffd8b317085aeb" prot="public" static="no">
+        <name>ENCMDCOMPL_BitNumber</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="57" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gade06098d1616639ce5f1b70675280b7c" prot="public" static="no">
+        <name>CMD_ENCMDCOMPL_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1gaf12d26702ce7a88d2a3dae87f000b75e" kindref="member">CMD_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1ga1d1112c7b804791a0fffd8b317085aeb" kindref="member">ENCMDCOMPL_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gab6d83a7ccd4a0d9ea9a09fec263fb25f" prot="public" static="no">
+        <name>NIEN_BitNumber</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga08623f1d053677de8b20a6f5f5090edd" prot="public" static="no">
+        <name>CMD_NIEN_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1gaf12d26702ce7a88d2a3dae87f000b75e" kindref="member">CMD_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1gab6d83a7ccd4a0d9ea9a09fec263fb25f" kindref="member">NIEN_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gabd4fd3bb700b879f843ccc867db1832e" prot="public" static="no">
+        <name>ATACMD_BitNumber</name>
+        <initializer>0x0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gabb7e537f931b6fdd3b49e826f2e19d7c" prot="public" static="no">
+        <name>CMD_ATACMD_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1gaf12d26702ce7a88d2a3dae87f000b75e" kindref="member">CMD_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1gabd4fd3bb700b879f843ccc867db1832e" kindref="member">ATACMD_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga948c1382c4cfd3af3e406c4d0cdd4240" prot="public" static="no">
+        <name>DCTRL_OFFSET</name>
+        <initializer>(<ref refid="group___s_d_i_o___private___types_definitions_1gabf07aced03df5f46d57cea1d4f56d1e3" kindref="member">SDIO_OFFSET</ref> + 0x2C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gab2af311e327213503f0dbf3d013b7944" prot="public" static="no">
+        <name>DMAEN_BitNumber</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga43f7336d4f955c6cf1f676ccbc043fe9" prot="public" static="no">
+        <name>DCTRL_DMAEN_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1ga948c1382c4cfd3af3e406c4d0cdd4240" kindref="member">DCTRL_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1gab2af311e327213503f0dbf3d013b7944" kindref="member">DMAEN_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga773045c51d3e8daee0c181517c44a2df" prot="public" static="no">
+        <name>RWSTART_BitNumber</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="76" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gac776c39dfac0e1ed007217133e1145c3" prot="public" static="no">
+        <name>DCTRL_RWSTART_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1ga948c1382c4cfd3af3e406c4d0cdd4240" kindref="member">DCTRL_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1ga773045c51d3e8daee0c181517c44a2df" kindref="member">RWSTART_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="77" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gae8c0654ad5cba23281bcfa77ef19b9cf" prot="public" static="no">
+        <name>RWSTOP_BitNumber</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="80" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga678da1db835676b0fb1976cf3408e2d1" prot="public" static="no">
+        <name>DCTRL_RWSTOP_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1ga948c1382c4cfd3af3e406c4d0cdd4240" kindref="member">DCTRL_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1gae8c0654ad5cba23281bcfa77ef19b9cf" kindref="member">RWSTOP_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gad7b722671f65e79d1be2899b643278ad" prot="public" static="no">
+        <name>RWMOD_BitNumber</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="84" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gad34bfe8650534ce24320ae83886c91e3" prot="public" static="no">
+        <name>DCTRL_RWMOD_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1ga948c1382c4cfd3af3e406c4d0cdd4240" kindref="member">DCTRL_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1gad7b722671f65e79d1be2899b643278ad" kindref="member">RWMOD_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="85" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga37f3e1612e0dae8160be978ebfa54301" prot="public" static="no">
+        <name>SDIOEN_BitNumber</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="88" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga894f7da62b89ddd9f4b79d066056a3c7" prot="public" static="no">
+        <name>DCTRL_SDIOEN_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___s_d_i_o___private___types_definitions_1ga948c1382c4cfd3af3e406c4d0cdd4240" kindref="member">DCTRL_OFFSET</ref> * 32) + (<ref refid="group___s_d_i_o___private___types_definitions_1ga37f3e1612e0dae8160be978ebfa54301" kindref="member">SDIOEN_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="89" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1gac8d10dd1e49ca9e8a6954146654e9a01" prot="public" static="no">
+        <name>CLKCR_CLEAR_MASK</name>
+        <initializer>((uint32_t)0xFFFF8100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="96" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga7e6ec7be68d0fbb8fb4e3725cca9a05c" prot="public" static="no">
+        <name>PWR_PWRCTRL_MASK</name>
+        <initializer>((uint32_t)0xFFFFFFFC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="101" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga9e9fc7810b95805aeeb760bbdd87fa9b" prot="public" static="no">
+        <name>DCTRL_CLEAR_MASK</name>
+        <initializer>((uint32_t)0xFFFFFF08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="106" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga2325d77090e44221b07f8fba5bc9217e" prot="public" static="no">
+        <name>CMD_CLEAR_MASK</name>
+        <initializer>((uint32_t)0xFFFFF800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="111" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___private___types_definitions_1ga4285ce49b005e3d03ddf9fdc491c4d70" prot="public" static="no">
+        <name>SDIO_RESP_ADDR</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral__memory__map_1ga95dd0abbc6767893b4b02935fa846f52" kindref="member">SDIO_BASE</ref> + 0x14))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" line="114" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

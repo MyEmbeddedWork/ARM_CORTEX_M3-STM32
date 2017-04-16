@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___response___type" kind="group">
+    <compoundname>SDIO_Response_Type</compoundname>
+    <title>SDIO_Response_Type</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___response___type_1ga308b8ef0e79ba451644dda923bb3ac41" prot="public" static="no">
+        <name>SDIO_Response_No</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="245" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___response___type_1ga1f61768f90641648fd5c12e8d2f7e508" prot="public" static="no">
+        <name>SDIO_Response_Short</name>
+        <initializer>((uint32_t)0x00000040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="246" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___response___type_1ga1a11a8750612b344214f846784046bb0" prot="public" static="no">
+        <name>SDIO_Response_Long</name>
+        <initializer>((uint32_t)0x000000C0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="247" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___response___type_1gae4df2359c9b637694b9baa220c16e062" prot="public" static="no">
+        <name>IS_SDIO_RESPONSE</name>
+        <param><defname>RESPONSE</defname></param>
+        <initializer>(((RESPONSE) == <ref refid="group___s_d_i_o___response___type_1ga308b8ef0e79ba451644dda923bb3ac41" kindref="member">SDIO_Response_No</ref>) || \
+                                    ((RESPONSE) == <ref refid="group___s_d_i_o___response___type_1ga1f61768f90641648fd5c12e8d2f7e508" kindref="member">SDIO_Response_Short</ref>) || \
+                                    ((RESPONSE) == <ref refid="group___s_d_i_o___response___type_1ga1a11a8750612b344214f846784046bb0" kindref="member">SDIO_Response_Long</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="248" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

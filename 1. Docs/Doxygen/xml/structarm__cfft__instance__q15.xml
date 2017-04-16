@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__cfft__instance__q15" kind="struct" language="C++" prot="public">
+    <compoundname>arm_cfft_instance_q15</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__cfft__instance__q15_1a5f9e1d3a8c127ee323b5e6929aeb90df" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_cfft_instance_q15::fftLen</definition>
+        <argsstring></argsstring>
+        <name>fftLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2109" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__instance__q15_1afdaf12ce4687cec021c5ae73d0987a3f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>const q15_t* arm_cfft_instance_q15::pTwiddle</definition>
+        <argsstring></argsstring>
+        <name>pTwiddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the Twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2110" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__instance__q15_1ac9160b80243b99a0b6e2f75ddb5cf0ae" prot="public" static="no" mutable="no">
+        <type>const uint16_t *</type>
+        <definition>const uint16_t* arm_cfft_instance_q15::pBitRevTable</definition>
+        <argsstring></argsstring>
+        <name>pBitRevTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the bit reversal table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2111" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__instance__q15_1a738907cf34bdbbaf724414ac2decbc3c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_cfft_instance_q15::bitRevLength</definition>
+        <argsstring></argsstring>
+        <name>bitRevLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit reversal table length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2112" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the fixed-point CFFT/CIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2108" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2107" bodyend="2113"/>
+    <listofallmembers>
+      <member refid="structarm__cfft__instance__q15_1a738907cf34bdbbaf724414ac2decbc3c" prot="public" virt="non-virtual"><scope>arm_cfft_instance_q15</scope><name>bitRevLength</name></member>
+      <member refid="structarm__cfft__instance__q15_1a5f9e1d3a8c127ee323b5e6929aeb90df" prot="public" virt="non-virtual"><scope>arm_cfft_instance_q15</scope><name>fftLen</name></member>
+      <member refid="structarm__cfft__instance__q15_1ac9160b80243b99a0b6e2f75ddb5cf0ae" prot="public" virt="non-virtual"><scope>arm_cfft_instance_q15</scope><name>pBitRevTable</name></member>
+      <member refid="structarm__cfft__instance__q15_1afdaf12ce4687cec021c5ae73d0987a3f" prot="public" virt="non-virtual"><scope>arm_cfft_instance_q15</scope><name>pTwiddle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

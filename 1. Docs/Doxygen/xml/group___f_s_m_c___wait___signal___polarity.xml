@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___wait___signal___polarity" kind="group">
+    <compoundname>FSMC_Wait_Signal_Polarity</compoundname>
+    <title>FSMC_Wait_Signal_Polarity</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___wait___signal___polarity_1ga7dc72fdfc6225e5daa9b8efee8dff49f" prot="public" static="no">
+        <name>FSMC_WaitSignalPolarity_Low</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="363" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___wait___signal___polarity_1ga3418f29249a261edb1359d1bcdc43661" prot="public" static="no">
+        <name>FSMC_WaitSignalPolarity_High</name>
+        <initializer>((uint32_t)0x00000200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="364" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___wait___signal___polarity_1gabc5321807d5184fe5cdb7848e1be7bc6" prot="public" static="no">
+        <name>IS_FSMC_WAIT_POLARITY</name>
+        <param><defname>POLARITY</defname></param>
+        <initializer>(((POLARITY) == <ref refid="group___f_s_m_c___wait___signal___polarity_1ga7dc72fdfc6225e5daa9b8efee8dff49f" kindref="member">FSMC_WaitSignalPolarity_Low</ref>) || \
+                                         ((POLARITY) == <ref refid="group___f_s_m_c___wait___signal___polarity_1ga3418f29249a261edb1359d1bcdc43661" kindref="member">FSMC_WaitSignalPolarity_High</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="365" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

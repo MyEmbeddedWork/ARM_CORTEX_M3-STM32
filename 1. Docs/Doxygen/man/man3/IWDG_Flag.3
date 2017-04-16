@@ -1,0 +1,48 @@
+.TH "IWDG_Flag" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IWDG_Flag
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIWDG_FLAG_PVU\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_FLAG_RVU\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBIS_IWDG_FLAG\fP(FLAG)   (((FLAG) == \fBIWDG_FLAG_PVU\fP) || ((FLAG) == \fBIWDG_FLAG_RVU\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_IWDG_RELOAD\fP(RELOAD)   ((RELOAD) <= 0xFFF)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_IWDG_FLAG(FLAG)   (((FLAG) == \fBIWDG_FLAG_PVU\fP) || ((FLAG) == \fBIWDG_FLAG_RVU\fP))"
+
+.PP
+Definition at line 94 of file stm32f10x_iwdg\&.h\&.
+.SS "#define IS_IWDG_RELOAD(RELOAD)   ((RELOAD) <= 0xFFF)"
+
+.PP
+Definition at line 95 of file stm32f10x_iwdg\&.h\&.
+.SS "#define IWDG_FLAG_PVU   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 92 of file stm32f10x_iwdg\&.h\&.
+.SS "#define IWDG_FLAG_RVU   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 93 of file stm32f10x_iwdg\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

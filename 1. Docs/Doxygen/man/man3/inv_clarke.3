@@ -1,0 +1,28 @@
+.TH "inv_clarke" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inv_clarke
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Inverse Clarke transform converts the two-coordinate time invariant vector into instantaneous stator phases\&.
+.PP
+The function operates on a single sample of data and each call to the function returns the processed output\&. The library provides separate functions for Q31 and floating-point data types\&. 
+.PP
+\fBAlgorithm\fP
+.RS 4
+ where \fCpIa\fP and \fCpIb\fP are the instantaneous stator phases and \fCIalpha\fP and \fCIbeta\fP are the two coordinates of time invariant vector\&. 
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the Q31 version of the Clarke transform\&. In particular, the overflow and saturation behavior of the accumulator used must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

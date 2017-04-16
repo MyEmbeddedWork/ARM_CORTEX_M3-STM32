@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__bilinear__interp__instance__q15" kind="struct" language="C++" prot="public">
+    <compoundname>arm_bilinear_interp_instance_q15</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__q15_1a2130ae30a804995a9f5d0e2189e08565" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_bilinear_interp_instance_q15::numRows</definition>
+        <argsstring></argsstring>
+        <name>numRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of rows in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1873" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__q15_1a7fa8772d01583374ff8ac18205a26a37" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_bilinear_interp_instance_q15::numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of columns in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1874" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__q15_1a50d75b1316cee3e0dfad6dcc4c9a2954" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>q15_t* arm_bilinear_interp_instance_q15::pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1875" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1875" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q15 bilinear interpolation function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="1872" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="1871" bodyend="1876"/>
+    <listofallmembers>
+      <member refid="structarm__bilinear__interp__instance__q15_1a7fa8772d01583374ff8ac18205a26a37" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_q15</scope><name>numCols</name></member>
+      <member refid="structarm__bilinear__interp__instance__q15_1a2130ae30a804995a9f5d0e2189e08565" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_q15</scope><name>numRows</name></member>
+      <member refid="structarm__bilinear__interp__instance__q15_1a50d75b1316cee3e0dfad6dcc4c9a2954" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_q15</scope><name>pData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

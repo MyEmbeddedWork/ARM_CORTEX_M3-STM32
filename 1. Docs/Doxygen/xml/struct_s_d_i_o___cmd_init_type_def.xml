@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_s_d_i_o___cmd_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>SDIO_CmdInitTypeDef</compoundname>
+    <includes refid="stm32f10x__sdio_8h" local="no">stm32f10x_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_d_i_o___cmd_init_type_def_1a37dfc4d7191ec10cffdb05ecf58d4807" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_CmdInitTypeDef::SDIO_Argument</definition>
+        <argsstring></argsstring>
+        <name>SDIO_Argument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SDIO command argument which is sent to a card as part of a command message. If a command contains an argument, it must be loaded into this register before writing the command to the command register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="78" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga7117d2f702703f6c0a66bc07707cab23" compoundref="stm32f10x__sdio_8c" startline="346" endline="374">SDIO_SendCommand</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga09d9e89f49c87c82aec79c97b7068e24" compoundref="stm32f10x__sdio_8c" startline="382" endline="390">SDIO_CmdStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___cmd_init_type_def_1ab5e1df1f0e8d48a308edfb59a6f80fb4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_CmdInitTypeDef::SDIO_CmdIndex</definition>
+        <argsstring></argsstring>
+        <name>SDIO_CmdIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SDIO command index. It must be lower than 0x40. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="83" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga7117d2f702703f6c0a66bc07707cab23" compoundref="stm32f10x__sdio_8c" startline="346" endline="374">SDIO_SendCommand</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga09d9e89f49c87c82aec79c97b7068e24" compoundref="stm32f10x__sdio_8c" startline="382" endline="390">SDIO_CmdStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___cmd_init_type_def_1aecb203e21321126d5f05c34787cacfd2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_CmdInitTypeDef::SDIO_Response</definition>
+        <argsstring></argsstring>
+        <name>SDIO_Response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SDIO response type. This parameter can be a value of <ref refid="group___s_d_i_o___response___type" kindref="compound">SDIO_Response_Type</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="85" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga7117d2f702703f6c0a66bc07707cab23" compoundref="stm32f10x__sdio_8c" startline="346" endline="374">SDIO_SendCommand</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga09d9e89f49c87c82aec79c97b7068e24" compoundref="stm32f10x__sdio_8c" startline="382" endline="390">SDIO_CmdStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___cmd_init_type_def_1a582258554233ff8550bd04d2d790c67c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_CmdInitTypeDef::SDIO_Wait</definition>
+        <argsstring></argsstring>
+        <name>SDIO_Wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether SDIO wait-for-interrupt request is enabled or disabled. This parameter can be a value of <ref refid="group___s_d_i_o___wait___interrupt___state" kindref="compound">SDIO_Wait_Interrupt_State</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="88" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga7117d2f702703f6c0a66bc07707cab23" compoundref="stm32f10x__sdio_8c" startline="346" endline="374">SDIO_SendCommand</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga09d9e89f49c87c82aec79c97b7068e24" compoundref="stm32f10x__sdio_8c" startline="382" endline="390">SDIO_CmdStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___cmd_init_type_def_1ab0e869ae285cc132478dd743c28cd8e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_CmdInitTypeDef::SDIO_CPSM</definition>
+        <argsstring></argsstring>
+        <name>SDIO_CPSM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether SDIO Command path state machine (CPSM) is enabled or disabled. This parameter can be a value of <ref refid="group___s_d_i_o___c_p_s_m___state" kindref="compound">SDIO_CPSM_State</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="91" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga7117d2f702703f6c0a66bc07707cab23" compoundref="stm32f10x__sdio_8c" startline="346" endline="374">SDIO_SendCommand</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga09d9e89f49c87c82aec79c97b7068e24" compoundref="stm32f10x__sdio_8c" startline="382" endline="390">SDIO_CmdStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="77" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="76" bodyend="94"/>
+    <listofallmembers>
+      <member refid="struct_s_d_i_o___cmd_init_type_def_1a37dfc4d7191ec10cffdb05ecf58d4807" prot="public" virt="non-virtual"><scope>SDIO_CmdInitTypeDef</scope><name>SDIO_Argument</name></member>
+      <member refid="struct_s_d_i_o___cmd_init_type_def_1ab5e1df1f0e8d48a308edfb59a6f80fb4" prot="public" virt="non-virtual"><scope>SDIO_CmdInitTypeDef</scope><name>SDIO_CmdIndex</name></member>
+      <member refid="struct_s_d_i_o___cmd_init_type_def_1ab0e869ae285cc132478dd743c28cd8e2" prot="public" virt="non-virtual"><scope>SDIO_CmdInitTypeDef</scope><name>SDIO_CPSM</name></member>
+      <member refid="struct_s_d_i_o___cmd_init_type_def_1aecb203e21321126d5f05c34787cacfd2" prot="public" virt="non-virtual"><scope>SDIO_CmdInitTypeDef</scope><name>SDIO_Response</name></member>
+      <member refid="struct_s_d_i_o___cmd_init_type_def_1a582258554233ff8550bd04d2d790c67c" prot="public" virt="non-virtual"><scope>SDIO_CmdInitTypeDef</scope><name>SDIO_Wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+.TH "arm_pid_instance_q31" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_pid_instance_q31 \- Instance structure for the Q31 PID Control\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBq31_t\fP \fBA0\fP"
+.br
+.ti -1c
+.RI "\fBq31_t\fP \fBA1\fP"
+.br
+.ti -1c
+.RI "\fBq31_t\fP \fBA2\fP"
+.br
+.ti -1c
+.RI "\fBq31_t\fP \fBstate\fP [3]"
+.br
+.ti -1c
+.RI "\fBq31_t\fP \fBKp\fP"
+.br
+.ti -1c
+.RI "\fBq31_t\fP \fBKi\fP"
+.br
+.ti -1c
+.RI "\fBq31_t\fP \fBKd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q31 PID Control\&. 
+.PP
+Definition at line 1755 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBq31_t\fP arm_pid_instance_q31::A0"
+The derived gain, A0 = Kp + Ki + Kd \&. 
+.PP
+Definition at line 1757 of file arm_math\&.h\&.
+.SS "\fBq31_t\fP arm_pid_instance_q31::A1"
+The derived gain, A1 = -Kp - 2Kd\&. 
+.PP
+Definition at line 1758 of file arm_math\&.h\&.
+.SS "\fBq31_t\fP arm_pid_instance_q31::A2"
+The derived gain, A2 = Kd \&. 
+.PP
+Definition at line 1759 of file arm_math\&.h\&.
+.SS "\fBq31_t\fP arm_pid_instance_q31::Kd"
+The derivative gain\&. 
+.PP
+Definition at line 1763 of file arm_math\&.h\&.
+.SS "\fBq31_t\fP arm_pid_instance_q31::Ki"
+The integral gain\&. 
+.PP
+Definition at line 1762 of file arm_math\&.h\&.
+.SS "\fBq31_t\fP arm_pid_instance_q31::Kp"
+The proportional gain\&. 
+.PP
+Definition at line 1761 of file arm_math\&.h\&.
+.SS "\fBq31_t\fP arm_pid_instance_q31::state[3]"
+The state array of length 3\&. 
+.PP
+Definition at line 1760 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

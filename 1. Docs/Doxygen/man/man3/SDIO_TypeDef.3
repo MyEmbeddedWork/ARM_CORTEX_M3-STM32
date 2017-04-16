@@ -1,0 +1,166 @@
+.TH "SDIO_TypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_TypeDef \- SD host Interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPOWER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCLKCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBARG\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCMD\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRESPCMD\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRESP1\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRESP2\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRESP3\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRESP4\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDTIMER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDLEN\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDCTRL\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBDCOUNT\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBSTA\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBICR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMASK\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [2]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBFIFOCNT\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [13]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBFIFO\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+SD host Interface\&. 
+.PP
+Definition at line 1132 of file stm32f10x\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::ARG"
+
+.PP
+Definition at line 1136 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::CLKCR"
+
+.PP
+Definition at line 1135 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::CMD"
+
+.PP
+Definition at line 1137 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::DCOUNT"
+
+.PP
+Definition at line 1146 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::DCTRL"
+
+.PP
+Definition at line 1145 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::DLEN"
+
+.PP
+Definition at line 1144 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::DTIMER"
+
+.PP
+Definition at line 1143 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::FIFO"
+
+.PP
+Definition at line 1153 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::FIFOCNT"
+
+.PP
+Definition at line 1151 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::ICR"
+
+.PP
+Definition at line 1148 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::MASK"
+
+.PP
+Definition at line 1149 of file stm32f10x\&.h\&.
+.SS "\fB__IO\fP uint32_t SDIO_TypeDef::POWER"
+
+.PP
+Definition at line 1134 of file stm32f10x\&.h\&.
+.SS "uint32_t SDIO_TypeDef::RESERVED0[2]"
+
+.PP
+Definition at line 1150 of file stm32f10x\&.h\&.
+.SS "uint32_t SDIO_TypeDef::RESERVED1[13]"
+
+.PP
+Definition at line 1152 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::RESP1"
+
+.PP
+Definition at line 1139 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::RESP2"
+
+.PP
+Definition at line 1140 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::RESP3"
+
+.PP
+Definition at line 1141 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::RESP4"
+
+.PP
+Definition at line 1142 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::RESPCMD"
+
+.PP
+Definition at line 1138 of file stm32f10x\&.h\&.
+.SS "\fB__I\fP uint32_t SDIO_TypeDef::STA"
+
+.PP
+Definition at line 1147 of file stm32f10x\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

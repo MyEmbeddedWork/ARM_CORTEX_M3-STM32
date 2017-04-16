@@ -1,0 +1,62 @@
+.TH "ADC_injected_channel_selection" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_injected_channel_selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_1\fP   ((uint8_t)0x14)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_2\fP   ((uint8_t)0x18)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_3\fP   ((uint8_t)0x1C)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_4\fP   ((uint8_t)0x20)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_INJECTED_CHANNEL\fP(CHANNEL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC_InjectedChannel_1   ((uint8_t)0x14)"
+
+.PP
+Definition at line 280 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_InjectedChannel_2   ((uint8_t)0x18)"
+
+.PP
+Definition at line 281 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_InjectedChannel_3   ((uint8_t)0x1C)"
+
+.PP
+Definition at line 282 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_InjectedChannel_4   ((uint8_t)0x20)"
+
+.PP
+Definition at line 283 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_INJECTED_CHANNEL(CHANNEL)"
+\fBValue:\fP
+.PP
+.nf
+(((CHANNEL) == ADC_InjectedChannel_1) || \
+                                          ((CHANNEL) == ADC_InjectedChannel_2) || \
+                                          ((CHANNEL) == ADC_InjectedChannel_3) || \
+                                          ((CHANNEL) == ADC_InjectedChannel_4))
+.fi
+.PP
+Definition at line 284 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,123 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h \- This file contains all the functions prototypes for the IWDG firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIWDG_WriteAccess_Enable\fP   ((uint16_t)0x5555)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_WriteAccess_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_IWDG_WRITE_ACCESS\fP(ACCESS)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_4\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_8\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_16\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_32\fP   ((uint8_t)0x03)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_64\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_128\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_Prescaler_256\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBIS_IWDG_PRESCALER\fP(PRESCALER)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_FLAG_PVU\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_FLAG_RVU\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBIS_IWDG_FLAG\fP(FLAG)   (((FLAG) == \fBIWDG_FLAG_PVU\fP) || ((FLAG) == \fBIWDG_FLAG_RVU\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_IWDG_RELOAD\fP(RELOAD)   ((RELOAD) <= 0xFFF)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBIWDG_WriteAccessCmd\fP (uint16_t IWDG_WriteAccess)"
+.br
+.RI "Enables or disables write access to IWDG_PR and IWDG_RLR registers\&. "
+.ti -1c
+.RI "void \fBIWDG_SetPrescaler\fP (uint8_t IWDG_Prescaler)"
+.br
+.RI "Sets IWDG Prescaler value\&. "
+.ti -1c
+.RI "void \fBIWDG_SetReload\fP (uint16_t Reload)"
+.br
+.RI "Sets IWDG Reload value\&. "
+.ti -1c
+.RI "void \fBIWDG_ReloadCounter\fP (void)"
+.br
+.RI "Reloads IWDG counter with value defined in the reload register (write access to IWDG_PR and IWDG_RLR registers disabled)\&. "
+.ti -1c
+.RI "void \fBIWDG_Enable\fP (void)"
+.br
+.RI "Enables IWDG (write access to IWDG_PR and IWDG_RLR registers disabled)\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBIWDG_GetFlagStatus\fP (uint16_t IWDG_FLAG)"
+.br
+.RI "Checks whether the specified IWDG flag is set or not\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the IWDG firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_iwdg\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

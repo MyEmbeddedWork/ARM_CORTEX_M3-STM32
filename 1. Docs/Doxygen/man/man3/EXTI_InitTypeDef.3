@@ -1,0 +1,54 @@
+.TH "EXTI_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_InitTypeDef \- EXTI Init Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_exti\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBEXTI_Line\fP"
+.br
+.ti -1c
+.RI "\fBEXTIMode_TypeDef\fP \fBEXTI_Mode\fP"
+.br
+.ti -1c
+.RI "\fBEXTITrigger_TypeDef\fP \fBEXTI_Trigger\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBEXTI_LineCmd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+EXTI Init Structure definition\&. 
+.PP
+Definition at line 82 of file stm32f10x_exti\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t EXTI_InitTypeDef::EXTI_Line"
+Specifies the EXTI lines to be enabled or disabled\&. This parameter can be any combination of \fBEXTI_Lines\fP 
+.PP
+Definition at line 84 of file stm32f10x_exti\&.h\&.
+.SS "\fBFunctionalState\fP EXTI_InitTypeDef::EXTI_LineCmd"
+Specifies the new state of the selected EXTI lines\&. This parameter can be set either to ENABLE or DISABLE 
+.PP
+Definition at line 93 of file stm32f10x_exti\&.h\&.
+.SS "\fBEXTIMode_TypeDef\fP EXTI_InitTypeDef::EXTI_Mode"
+Specifies the mode for the EXTI lines\&. This parameter can be a value of \fBEXTIMode_TypeDef\fP 
+.PP
+Definition at line 87 of file stm32f10x_exti\&.h\&.
+.SS "\fBEXTITrigger_TypeDef\fP EXTI_InitTypeDef::EXTI_Trigger"
+Specifies the trigger signal active edge for the EXTI lines\&. This parameter can be a value of \fBEXTIMode_TypeDef\fP 
+.PP
+Definition at line 90 of file stm32f10x_exti\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

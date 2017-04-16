@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_s_d_i_o___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>SDIO_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__sdio_8h" local="no">stm32f10x_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_d_i_o___init_type_def_1a3252c846b68988b8ae70ca0d40030a52" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_InitTypeDef::SDIO_ClockEdge</definition>
+        <argsstring></argsstring>
+        <name>SDIO_ClockEdge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the clock transition on which the bit capture is made. This parameter can be a value of <ref refid="group___s_d_i_o___clock___edge" kindref="compound">SDIO_Clock_Edge</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="54" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" compoundref="stm32f10x__sdio_8c" startline="181" endline="211">SDIO_Init</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" compoundref="stm32f10x__sdio_8c" startline="219" endline="228">SDIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___init_type_def_1a6a06a65a5630b21da261f46125cb20b1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_InitTypeDef::SDIO_ClockBypass</definition>
+        <argsstring></argsstring>
+        <name>SDIO_ClockBypass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the SDIO Clock divider bypass is enabled or disabled. This parameter can be a value of <ref refid="group___s_d_i_o___clock___bypass" kindref="compound">SDIO_Clock_Bypass</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" compoundref="stm32f10x__sdio_8c" startline="181" endline="211">SDIO_Init</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" compoundref="stm32f10x__sdio_8c" startline="219" endline="228">SDIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___init_type_def_1ac236cc5a376a65b9de64a31dab816364" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_InitTypeDef::SDIO_ClockPowerSave</definition>
+        <argsstring></argsstring>
+        <name>SDIO_ClockPowerSave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether SDIO Clock output is enabled or disabled when the bus is idle. This parameter can be a value of <ref refid="group___s_d_i_o___clock___power___save" kindref="compound">SDIO_Clock_Power_Save</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="61" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" compoundref="stm32f10x__sdio_8c" startline="181" endline="211">SDIO_Init</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" compoundref="stm32f10x__sdio_8c" startline="219" endline="228">SDIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___init_type_def_1a0540529f615c2b29933b442bc326f0a7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_InitTypeDef::SDIO_BusWide</definition>
+        <argsstring></argsstring>
+        <name>SDIO_BusWide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the SDIO bus width. This parameter can be a value of <ref refid="group___s_d_i_o___bus___wide" kindref="compound">SDIO_Bus_Wide</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="65" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" compoundref="stm32f10x__sdio_8c" startline="181" endline="211">SDIO_Init</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" compoundref="stm32f10x__sdio_8c" startline="219" endline="228">SDIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___init_type_def_1a5f57f8aca913de9aed47ef708c05f34f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_InitTypeDef::SDIO_HardwareFlowControl</definition>
+        <argsstring></argsstring>
+        <name>SDIO_HardwareFlowControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the SDIO hardware flow control is enabled or disabled. This parameter can be a value of <ref refid="group___s_d_i_o___hardware___flow___control" kindref="compound">SDIO_Hardware_Flow_Control</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="68" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" compoundref="stm32f10x__sdio_8c" startline="181" endline="211">SDIO_Init</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" compoundref="stm32f10x__sdio_8c" startline="219" endline="228">SDIO_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___init_type_def_1a4166ee534e6cf8ac2c6a6a03bec45b06" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SDIO_InitTypeDef::SDIO_ClockDiv</definition>
+        <argsstring></argsstring>
+        <name>SDIO_ClockDiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the clock frequency of the SDIO controller. This parameter can be a value between 0x00 and 0xFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="71" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad40764a8e37c0ed5c9141ae338ff0203" compoundref="stm32f10x__sdio_8c" startline="181" endline="211">SDIO_Init</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1ga778d338c29df4fae9ef69432e6df32ad" compoundref="stm32f10x__sdio_8c" startline="219" endline="228">SDIO_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="53" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="52" bodyend="74"/>
+    <listofallmembers>
+      <member refid="struct_s_d_i_o___init_type_def_1a0540529f615c2b29933b442bc326f0a7" prot="public" virt="non-virtual"><scope>SDIO_InitTypeDef</scope><name>SDIO_BusWide</name></member>
+      <member refid="struct_s_d_i_o___init_type_def_1a6a06a65a5630b21da261f46125cb20b1" prot="public" virt="non-virtual"><scope>SDIO_InitTypeDef</scope><name>SDIO_ClockBypass</name></member>
+      <member refid="struct_s_d_i_o___init_type_def_1a4166ee534e6cf8ac2c6a6a03bec45b06" prot="public" virt="non-virtual"><scope>SDIO_InitTypeDef</scope><name>SDIO_ClockDiv</name></member>
+      <member refid="struct_s_d_i_o___init_type_def_1a3252c846b68988b8ae70ca0d40030a52" prot="public" virt="non-virtual"><scope>SDIO_InitTypeDef</scope><name>SDIO_ClockEdge</name></member>
+      <member refid="struct_s_d_i_o___init_type_def_1ac236cc5a376a65b9de64a31dab816364" prot="public" virt="non-virtual"><scope>SDIO_InitTypeDef</scope><name>SDIO_ClockPowerSave</name></member>
+      <member refid="struct_s_d_i_o___init_type_def_1a5f57f8aca913de9aed47ef708c05f34f" prot="public" virt="non-virtual"><scope>SDIO_InitTypeDef</scope><name>SDIO_HardwareFlowControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

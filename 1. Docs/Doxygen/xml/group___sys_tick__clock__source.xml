@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___sys_tick__clock__source" kind="group">
+    <compoundname>SysTick_clock_source</compoundname>
+    <title>SysTick_clock_source</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___sys_tick__clock__source_1ga545c387ce43db90f15faad5f354f890d" prot="public" static="no">
+        <name>SysTick_CLKSource_HCLK_Div8</name>
+        <initializer>((uint32_t)0xFFFFFFFB)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="172" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sys_tick__clock__source_1ga8a885ce2632ad4c35e229bb7c6e60191" prot="public" static="no">
+        <name>SysTick_CLKSource_HCLK</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="173" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sys_tick__clock__source_1ga22d6291f6aed29442cf4cd9098fa0784" prot="public" static="no">
+        <name>IS_SYSTICK_CLK_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___sys_tick__clock__source_1ga8a885ce2632ad4c35e229bb7c6e60191" kindref="member">SysTick_CLKSource_HCLK</ref>) || \
+                                       ((SOURCE) == <ref refid="group___sys_tick__clock__source_1ga545c387ce43db90f15faad5f354f890d" kindref="member">SysTick_CLKSource_HCLK_Div8</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="174" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

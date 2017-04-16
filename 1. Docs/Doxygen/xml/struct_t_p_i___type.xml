@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_t_p_i___type" kind="struct" language="C++" prot="public">
+    <compoundname>TPI_Type</compoundname>
+    <includes refid="core__cm3_8h" local="no">core_cm3.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_p_i___type_1a7b72598e20066133e505bb781690dc22" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::SSPSR</definition>
+        <argsstring></argsstring>
+        <name>SSPSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 (R/ ) Supported Parallel Port Size Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="995" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a8826aa84e5806053395a742d38d59d0f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::CSPSR</definition>
+        <argsstring></argsstring>
+        <name>CSPSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x004 (R/W) Current Parallel Port Size Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="996" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a409fb08ad6d58c17fcb7f59d65db6f93" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED0</definition>
+        <argsstring>[2U]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="997" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a9e5e4421ef9c3d5b7ff8b24abd4e99b3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::ACPR</definition>
+        <argsstring></argsstring>
+        <name>ACPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x010 (R/W) Asynchronous Clock Prescaler Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="998" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="998" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1abc2f542560b78ccbbf0a44aadb5651fb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED1</definition>
+        <argsstring>[55U]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="999" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a12f79d4e3ddc69893ba8bff890d04cc5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::SPPR</definition>
+        <argsstring></argsstring>
+        <name>SPPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x0F0 (R/W) Selected Pin Protocol Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1000" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1ae6a238467f129df7440d97de8b58fe03" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED2</definition>
+        <argsstring>[131U]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1001" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a6c47a0b4c7ffc66093ef993d36bb441c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::FFSR</definition>
+        <argsstring></argsstring>
+        <name>FFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x300 (R/ ) Formatter and Flush Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1002" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a3f68b6e73561b4849ebf953a894df8d2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::FFCR</definition>
+        <argsstring></argsstring>
+        <name>FFCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x304 (R/W) Formatter and Flush Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1003" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1ad6901bfd8a0089ca7e8a20475cf494a8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::FSCR</definition>
+        <argsstring></argsstring>
+        <name>FSCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x308 (R/ ) Formatter Synchronization Counter Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1004" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1aba65c646f0447ebda95bf09b726ff78a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED3</definition>
+        <argsstring>[759U]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1005" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a4d4cd2357f72333a82a1313228287bbd" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::TRIGGER</definition>
+        <argsstring></argsstring>
+        <name>TRIGGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEE8 (R/ ) TRIGGER </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1006" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1aa4d7b5cf39dff9f53bf7f69bc287a814" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::FIFO0</definition>
+        <argsstring></argsstring>
+        <name>FIFO0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEEC (R/ ) Integration ETM Data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1007" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1ab358319b969d3fed0f89bbe33e9f1652" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::ITATBCTR2</definition>
+        <argsstring></argsstring>
+        <name>ITATBCTR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEF0 (R/ ) ITATBCTR2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1008" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1aad2125842c9abfbfc7db9e440ecf4280" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED4</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1009" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1aaa573b2e073e76e93c51ecec79c616d0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::ITATBCTR0</definition>
+        <argsstring></argsstring>
+        <name>ITATBCTR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEF8 (R/ ) ITATBCTR0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1010" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a061372fcd72f1eea871e2d9c1be849bc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::FIFO1</definition>
+        <argsstring></argsstring>
+        <name>FIFO1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEFC (R/ ) Integration ITM Data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1011" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1aaa4c823c10f115f7517c82ef86a5a68d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::ITCTRL</definition>
+        <argsstring></argsstring>
+        <name>ITCTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xF00 (R/W) Integration Mode Control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1012" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a9c1ac143e09b64b1f6eb92ecd65d60d0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED5</definition>
+        <argsstring>[39U]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1013" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1af8b7d15fa5252b733dd4b11fa1b5730a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::CLAIMSET</definition>
+        <argsstring></argsstring>
+        <name>CLAIMSET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFA0 (R/W) Claim tag set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1014" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1014" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a0e10e292cb019a832b03ddd055b2f6ac" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPI_Type::CLAIMCLR</definition>
+        <argsstring></argsstring>
+        <name>CLAIMCLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFA4 (R/W) Claim tag clear </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1015" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1015" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1a33bb14730a444fdeeb91ea9cb7218e62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TPI_Type::RESERVED7</definition>
+        <argsstring>[8U]</argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1016" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1016" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1abc0ecda8a5446bc754080276bad77514" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::DEVID</definition>
+        <argsstring></argsstring>
+        <name>DEVID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFC8 (R/ ) TPIU_DEVID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1017" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_p_i___type_1ad98855854a719bbea33061e71529a472" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TPI_Type::DEVTYPE</definition>
+        <argsstring></argsstring>
+        <name>DEVTYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFCC (R/ ) TPIU_DEVTYPE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1018" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1018" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Trace Port Interface Register (TPI). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="994" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="993" bodyend="1019"/>
+    <listofallmembers>
+      <member refid="struct_t_p_i___type_1a9e5e4421ef9c3d5b7ff8b24abd4e99b3" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>ACPR</name></member>
+      <member refid="struct_t_p_i___type_1a0e10e292cb019a832b03ddd055b2f6ac" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>CLAIMCLR</name></member>
+      <member refid="struct_t_p_i___type_1af8b7d15fa5252b733dd4b11fa1b5730a" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>CLAIMSET</name></member>
+      <member refid="struct_t_p_i___type_1a8826aa84e5806053395a742d38d59d0f" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>CSPSR</name></member>
+      <member refid="struct_t_p_i___type_1abc0ecda8a5446bc754080276bad77514" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>DEVID</name></member>
+      <member refid="struct_t_p_i___type_1ad98855854a719bbea33061e71529a472" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>DEVTYPE</name></member>
+      <member refid="struct_t_p_i___type_1a3f68b6e73561b4849ebf953a894df8d2" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>FFCR</name></member>
+      <member refid="struct_t_p_i___type_1a6c47a0b4c7ffc66093ef993d36bb441c" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>FFSR</name></member>
+      <member refid="struct_t_p_i___type_1aa4d7b5cf39dff9f53bf7f69bc287a814" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>FIFO0</name></member>
+      <member refid="struct_t_p_i___type_1a061372fcd72f1eea871e2d9c1be849bc" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>FIFO1</name></member>
+      <member refid="struct_t_p_i___type_1ad6901bfd8a0089ca7e8a20475cf494a8" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>FSCR</name></member>
+      <member refid="struct_t_p_i___type_1aaa573b2e073e76e93c51ecec79c616d0" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>ITATBCTR0</name></member>
+      <member refid="struct_t_p_i___type_1ab358319b969d3fed0f89bbe33e9f1652" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>ITATBCTR2</name></member>
+      <member refid="struct_t_p_i___type_1aaa4c823c10f115f7517c82ef86a5a68d" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>ITCTRL</name></member>
+      <member refid="struct_t_p_i___type_1a409fb08ad6d58c17fcb7f59d65db6f93" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED0</name></member>
+      <member refid="struct_t_p_i___type_1abc2f542560b78ccbbf0a44aadb5651fb" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED1</name></member>
+      <member refid="struct_t_p_i___type_1ae6a238467f129df7440d97de8b58fe03" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED2</name></member>
+      <member refid="struct_t_p_i___type_1aba65c646f0447ebda95bf09b726ff78a" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED3</name></member>
+      <member refid="struct_t_p_i___type_1aad2125842c9abfbfc7db9e440ecf4280" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED4</name></member>
+      <member refid="struct_t_p_i___type_1a9c1ac143e09b64b1f6eb92ecd65d60d0" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED5</name></member>
+      <member refid="struct_t_p_i___type_1a33bb14730a444fdeeb91ea9cb7218e62" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>RESERVED7</name></member>
+      <member refid="struct_t_p_i___type_1a12f79d4e3ddc69893ba8bff890d04cc5" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>SPPR</name></member>
+      <member refid="struct_t_p_i___type_1a7b72598e20066133e505bb781690dc22" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>SSPSR</name></member>
+      <member refid="struct_t_p_i___type_1a4d4cd2357f72333a82a1313228287bbd" prot="public" virt="non-virtual"><scope>TPI_Type</scope><name>TRIGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

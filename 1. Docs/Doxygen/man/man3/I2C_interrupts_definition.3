@@ -1,0 +1,170 @@
+.TH "I2C_interrupts_definition" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_interrupts_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_IT_BUF\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_EVT\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_ERR\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2C_CONFIG_IT\fP(IT)   ((((IT) & (uint16_t)0xF8FF) == 0x00) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_SMBALERT\fP   ((uint32_t)0x01008000)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_TIMEOUT\fP   ((uint32_t)0x01004000)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_PECERR\fP   ((uint32_t)0x01001000)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_OVR\fP   ((uint32_t)0x01000800)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_AF\fP   ((uint32_t)0x01000400)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_ARLO\fP   ((uint32_t)0x01000200)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_BERR\fP   ((uint32_t)0x01000100)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_TXE\fP   ((uint32_t)0x06000080)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_RXNE\fP   ((uint32_t)0x06000040)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_STOPF\fP   ((uint32_t)0x02000010)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_ADD10\fP   ((uint32_t)0x02000008)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_BTF\fP   ((uint32_t)0x02000004)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_ADDR\fP   ((uint32_t)0x02000002)"
+.br
+.ti -1c
+.RI "#define \fBI2C_IT_SB\fP   ((uint32_t)0x02000001)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2C_CLEAR_IT\fP(IT)   ((((IT) & (uint16_t)0x20FF) == 0x00) && ((IT) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_I2C_GET_IT\fP(IT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2C_IT_ADD10   ((uint32_t)0x02000008)"
+
+.PP
+Definition at line 238 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_ADDR   ((uint32_t)0x02000002)"
+
+.PP
+Definition at line 240 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_AF   ((uint32_t)0x01000400)"
+
+.PP
+Definition at line 232 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_ARLO   ((uint32_t)0x01000200)"
+
+.PP
+Definition at line 233 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_BERR   ((uint32_t)0x01000100)"
+
+.PP
+Definition at line 234 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_BTF   ((uint32_t)0x02000004)"
+
+.PP
+Definition at line 239 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_BUF   ((uint16_t)0x0400)"
+
+.PP
+Definition at line 216 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_ERR   ((uint16_t)0x0100)"
+
+.PP
+Definition at line 218 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_EVT   ((uint16_t)0x0200)"
+
+.PP
+Definition at line 217 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_OVR   ((uint32_t)0x01000800)"
+
+.PP
+Definition at line 231 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_PECERR   ((uint32_t)0x01001000)"
+
+.PP
+Definition at line 230 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_RXNE   ((uint32_t)0x06000040)"
+
+.PP
+Definition at line 236 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_SB   ((uint32_t)0x02000001)"
+
+.PP
+Definition at line 241 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_SMBALERT   ((uint32_t)0x01008000)"
+
+.PP
+Definition at line 228 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_STOPF   ((uint32_t)0x02000010)"
+
+.PP
+Definition at line 237 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_TIMEOUT   ((uint32_t)0x01004000)"
+
+.PP
+Definition at line 229 of file stm32f10x_i2c\&.h\&.
+.SS "#define I2C_IT_TXE   ((uint32_t)0x06000080)"
+
+.PP
+Definition at line 235 of file stm32f10x_i2c\&.h\&.
+.SS "#define IS_I2C_CLEAR_IT(IT)   ((((IT) & (uint16_t)0x20FF) == 0x00) && ((IT) != (uint16_t)0x00))"
+
+.PP
+Definition at line 243 of file stm32f10x_i2c\&.h\&.
+.SS "#define IS_I2C_CONFIG_IT(IT)   ((((IT) & (uint16_t)0xF8FF) == 0x00) && ((IT) != 0x00))"
+
+.PP
+Definition at line 219 of file stm32f10x_i2c\&.h\&.
+.SS "#define IS_I2C_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == I2C_IT_SMBALERT) || ((IT) == I2C_IT_TIMEOUT) || \
+                           ((IT) == I2C_IT_PECERR) || ((IT) == I2C_IT_OVR) || \
+                           ((IT) == I2C_IT_AF) || ((IT) == I2C_IT_ARLO) || \
+                           ((IT) == I2C_IT_BERR) || ((IT) == I2C_IT_TXE) || \
+                           ((IT) == I2C_IT_RXNE) || ((IT) == I2C_IT_STOPF) || \
+                           ((IT) == I2C_IT_ADD10) || ((IT) == I2C_IT_BTF) || \
+                           ((IT) == I2C_IT_ADDR) || ((IT) == I2C_IT_SB))
+.fi
+.PP
+Definition at line 245 of file stm32f10x_i2c\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

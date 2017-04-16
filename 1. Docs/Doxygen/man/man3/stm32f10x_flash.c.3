@@ -1,0 +1,250 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c \- This file provides all the FLASH firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_flash\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBACR_LATENCY_Mask\fP   ((uint32_t)0x00000038)"
+.br
+.ti -1c
+.RI "#define \fBACR_HLFCYA_Mask\fP   ((uint32_t)0xFFFFFFF7)"
+.br
+.ti -1c
+.RI "#define \fBACR_PRFTBE_Mask\fP   ((uint32_t)0xFFFFFFEF)"
+.br
+.ti -1c
+.RI "#define \fBACR_PRFTBS_Mask\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCR_PG_Set\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBCR_PG_Reset\fP   ((uint32_t)0x00001FFE)"
+.br
+.ti -1c
+.RI "#define \fBCR_PER_Set\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBCR_PER_Reset\fP   ((uint32_t)0x00001FFD)"
+.br
+.ti -1c
+.RI "#define \fBCR_MER_Set\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBCR_MER_Reset\fP   ((uint32_t)0x00001FFB)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTPG_Set\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTPG_Reset\fP   ((uint32_t)0x00001FEF)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTER_Set\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCR_OPTER_Reset\fP   ((uint32_t)0x00001FDF)"
+.br
+.ti -1c
+.RI "#define \fBCR_STRT_Set\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBCR_LOCK_Set\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBRDPRT_Mask\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBWRP0_Mask\fP   ((uint32_t)0x000000FF)"
+.br
+.ti -1c
+.RI "#define \fBWRP1_Mask\fP   ((uint32_t)0x0000FF00)"
+.br
+.ti -1c
+.RI "#define \fBWRP2_Mask\fP   ((uint32_t)0x00FF0000)"
+.br
+.ti -1c
+.RI "#define \fBWRP3_Mask\fP   ((uint32_t)0xFF000000)"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_BFB2\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBRDP_Key\fP   ((uint16_t)0x00A5)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_KEY1\fP   ((uint32_t)0x45670123)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_KEY2\fP   ((uint32_t)0xCDEF89AB)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_BANK1_END_ADDRESS\fP   ((uint32_t)0x807FFFF)"
+.br
+.ti -1c
+.RI "#define \fBEraseTimeout\fP   ((uint32_t)0x000B0000)"
+.br
+.ti -1c
+.RI "#define \fBProgramTimeout\fP   ((uint32_t)0x00002000)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFLASH_SetLatency\fP (uint32_t FLASH_Latency)"
+.br
+.RI "Sets the code latency value\&. "
+.ti -1c
+.RI "void \fBFLASH_HalfCycleAccessCmd\fP (uint32_t FLASH_HalfCycleAccess)"
+.br
+.RI "Enables or disables the Half cycle flash access\&. "
+.ti -1c
+.RI "void \fBFLASH_PrefetchBufferCmd\fP (uint32_t FLASH_PrefetchBuffer)"
+.br
+.RI "Enables or disables the Prefetch Buffer\&. "
+.ti -1c
+.RI "void \fBFLASH_Unlock\fP (void)"
+.br
+.RI "Unlocks the FLASH Program Erase Controller\&. "
+.ti -1c
+.RI "void \fBFLASH_UnlockBank1\fP (void)"
+.br
+.RI "Unlocks the FLASH Bank1 Program Erase Controller\&. "
+.ti -1c
+.RI "void \fBFLASH_Lock\fP (void)"
+.br
+.RI "Locks the FLASH Program Erase Controller\&. "
+.ti -1c
+.RI "void \fBFLASH_LockBank1\fP (void)"
+.br
+.RI "Locks the FLASH Bank1 Program Erase Controller\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ErasePage\fP (uint32_t Page_Address)"
+.br
+.RI "Erases a specified FLASH page\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EraseAllPages\fP (void)"
+.br
+.RI "Erases all FLASH pages\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EraseAllBank1Pages\fP (void)"
+.br
+.RI "Erases all Bank1 FLASH pages\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EraseOptionBytes\fP (void)"
+.br
+.RI "Erases the FLASH option bytes\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ProgramWord\fP (uint32_t Address, uint32_t Data)"
+.br
+.RI "Programs a word at a specified address\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ProgramHalfWord\fP (uint32_t Address, uint16_t Data)"
+.br
+.RI "Programs a half word at a specified address\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ProgramOptionByteData\fP (uint32_t Address, uint8_t Data)"
+.br
+.RI "Programs a half word at a specified Option Byte Data address\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_EnableWriteProtection\fP (uint32_t FLASH_Pages)"
+.br
+.RI "Write protects the desired pages\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_ReadOutProtection\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the read out protection\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_UserOptionByteConfig\fP (uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY)"
+.br
+.RI "Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY\&. "
+.ti -1c
+.RI "uint32_t \fBFLASH_GetUserOptionByte\fP (void)"
+.br
+.RI "Returns the FLASH User Option Bytes values\&. "
+.ti -1c
+.RI "uint32_t \fBFLASH_GetWriteProtectionOptionByte\fP (void)"
+.br
+.RI "Returns the FLASH Write Protection Option Bytes Register value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFLASH_GetReadOutProtectionStatus\fP (void)"
+.br
+.RI "Checks whether the FLASH Read Out Protection Status is set or not\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFLASH_GetPrefetchBufferStatus\fP (void)"
+.br
+.RI "Checks whether the FLASH Prefetch Buffer status is set or not\&. "
+.ti -1c
+.RI "void \fBFLASH_ITConfig\fP (uint32_t FLASH_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified FLASH interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFLASH_GetFlagStatus\fP (uint32_t FLASH_FLAG)"
+.br
+.RI "Checks whether the specified FLASH flag is set or not\&. "
+.ti -1c
+.RI "void \fBFLASH_ClearFlag\fP (uint32_t FLASH_FLAG)"
+.br
+.RI "Clears the FLASH's pending flags\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_GetStatus\fP (void)"
+.br
+.RI "Returns the FLASH Status\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_GetBank1Status\fP (void)"
+.br
+.RI "Returns the FLASH Bank1 Status\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_WaitForLastOperation\fP (uint32_t Timeout)"
+.br
+.RI "Waits for a Flash operation to complete or a TIMEOUT to occur\&. "
+.ti -1c
+.RI "\fBFLASH_Status\fP \fBFLASH_WaitForLastBank1Operation\fP (uint32_t Timeout)"
+.br
+.RI "Waits for a Flash operation on Bank1 to complete or a TIMEOUT to occur\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the FLASH firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_flash\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

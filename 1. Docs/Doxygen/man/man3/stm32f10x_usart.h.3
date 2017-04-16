@@ -1,0 +1,413 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h \- This file contains all the functions prototypes for the USART firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBUSART_InitTypeDef\fP"
+.br
+.RI "USART Init Structure definition\&. "
+.ti -1c
+.RI "struct \fBUSART_ClockInitTypeDef\fP"
+.br
+.RI "USART Clock Init Structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_USART_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_123_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_1234_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBUSART_WordLength_8b\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_WordLength_9b\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_WORD_LENGTH\fP(LENGTH)"
+.br
+.ti -1c
+.RI "#define \fBUSART_StopBits_1\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_StopBits_0_5\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_StopBits_2\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_StopBits_1_5\fP   ((uint16_t)0x3000)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_STOPBITS\fP(STOPBITS)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Parity_No\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Parity_Even\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Parity_Odd\fP   ((uint16_t)0x0600)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_PARITY\fP(PARITY)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Mode_Rx\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Mode_Tx\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_MODE\fP(MODE)   ((((MODE) & (uint16_t)0xFFF3) == 0x00) && ((MODE) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBUSART_HardwareFlowControl_None\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_HardwareFlowControl_RTS\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBUSART_HardwareFlowControl_CTS\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBUSART_HardwareFlowControl_RTS_CTS\fP   ((uint16_t)0x0300)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_HARDWARE_FLOW_CONTROL\fP(CONTROL)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Clock_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_Clock_Enable\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CLOCK\fP(CLOCK)"
+.br
+.ti -1c
+.RI "#define \fBUSART_CPOL_Low\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_CPOL_High\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CPOL\fP(CPOL)   (((CPOL) == \fBUSART_CPOL_Low\fP) || ((CPOL) == \fBUSART_CPOL_High\fP))"
+.br
+.ti -1c
+.RI "#define \fBUSART_CPHA_1Edge\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_CPHA_2Edge\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CPHA\fP(CPHA)   (((CPHA) == \fBUSART_CPHA_1Edge\fP) || ((CPHA) == \fBUSART_CPHA_2Edge\fP))"
+.br
+.ti -1c
+.RI "#define \fBUSART_LastBit_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_LastBit_Enable\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_LASTBIT\fP(LASTBIT)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_PE\fP   ((uint16_t)0x0028)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_TXE\fP   ((uint16_t)0x0727)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_TC\fP   ((uint16_t)0x0626)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_RXNE\fP   ((uint16_t)0x0525)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_IDLE\fP   ((uint16_t)0x0424)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_LBD\fP   ((uint16_t)0x0846)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_CTS\fP   ((uint16_t)0x096A)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_ERR\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_ORE\fP   ((uint16_t)0x0360)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_NE\fP   ((uint16_t)0x0260)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IT_FE\fP   ((uint16_t)0x0160)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CONFIG_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CLEAR_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBUSART_DMAReq_Tx\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBUSART_DMAReq_Rx\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_DMAREQ\fP(DMAREQ)   ((((DMAREQ) & (uint16_t)0xFF3F) == 0x00) && ((DMAREQ) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBUSART_WakeUp_IdleLine\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_WakeUp_AddressMark\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_WAKEUP\fP(WAKEUP)"
+.br
+.ti -1c
+.RI "#define \fBUSART_LINBreakDetectLength_10b\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBUSART_LINBreakDetectLength_11b\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_LIN_BREAK_DETECT_LENGTH\fP(LENGTH)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IrDAMode_LowPower\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBUSART_IrDAMode_Normal\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_IRDA_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_CTS\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_LBD\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_TXE\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_TC\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_RXNE\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_IDLE\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_ORE\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_NE\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_FE\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBUSART_FLAG_PE\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint16_t)0xFC9F) == 0x00) && ((FLAG) != (uint16_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_PERIPH_FLAG\fP(PERIPH,  USART_FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_BAUDRATE\fP(BAUDRATE)   (((BAUDRATE) > 0) && ((BAUDRATE) < 0x0044AA21))"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_ADDRESS\fP(ADDRESS)   ((ADDRESS) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_USART_DATA\fP(DATA)   ((DATA) <= 0x1FF)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUSART_DeInit\fP (\fBUSART_TypeDef\fP *USARTx)"
+.br
+.RI "Deinitializes the USARTx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBUSART_Init\fP (\fBUSART_TypeDef\fP *USARTx, \fBUSART_InitTypeDef\fP *USART_InitStruct)"
+.br
+.RI "Initializes the USARTx peripheral according to the specified parameters in the USART_InitStruct \&. "
+.ti -1c
+.RI "void \fBUSART_StructInit\fP (\fBUSART_InitTypeDef\fP *USART_InitStruct)"
+.br
+.RI "Fills each USART_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBUSART_ClockInit\fP (\fBUSART_TypeDef\fP *USARTx, \fBUSART_ClockInitTypeDef\fP *USART_ClockInitStruct)"
+.br
+.RI "Initializes the USARTx peripheral Clock according to the specified parameters in the USART_ClockInitStruct \&. "
+.ti -1c
+.RI "void \fBUSART_ClockStructInit\fP (\fBUSART_ClockInitTypeDef\fP *USART_ClockInitStruct)"
+.br
+.RI "Fills each USART_ClockInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBUSART_Cmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified USART peripheral\&. "
+.ti -1c
+.RI "void \fBUSART_ITConfig\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified USART interrupts\&. "
+.ti -1c
+.RI "void \fBUSART_DMACmd\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_DMAReq, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART�s DMA interface\&. "
+.ti -1c
+.RI "void \fBUSART_SetAddress\fP (\fBUSART_TypeDef\fP *USARTx, uint8_t USART_Address)"
+.br
+.RI "Sets the address of the USART node\&. "
+.ti -1c
+.RI "void \fBUSART_WakeUpConfig\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_WakeUp)"
+.br
+.RI "Selects the USART WakeUp method\&. "
+.ti -1c
+.RI "void \fBUSART_ReceiverWakeUpCmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Determines if the USART is in mute mode or not\&. "
+.ti -1c
+.RI "void \fBUSART_LINBreakDetectLengthConfig\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_LINBreakDetectLength)"
+.br
+.RI "Sets the USART LIN Break detection length\&. "
+.ti -1c
+.RI "void \fBUSART_LINCmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART�s LIN mode\&. "
+.ti -1c
+.RI "void \fBUSART_SendData\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t Data)"
+.br
+.RI "Transmits single data through the USARTx peripheral\&. "
+.ti -1c
+.RI "uint16_t \fBUSART_ReceiveData\fP (\fBUSART_TypeDef\fP *USARTx)"
+.br
+.RI "Returns the most recent received data by the USARTx peripheral\&. "
+.ti -1c
+.RI "void \fBUSART_SendBreak\fP (\fBUSART_TypeDef\fP *USARTx)"
+.br
+.RI "Transmits break characters\&. "
+.ti -1c
+.RI "void \fBUSART_SetGuardTime\fP (\fBUSART_TypeDef\fP *USARTx, uint8_t USART_GuardTime)"
+.br
+.RI "Sets the specified USART guard time\&. "
+.ti -1c
+.RI "void \fBUSART_SetPrescaler\fP (\fBUSART_TypeDef\fP *USARTx, uint8_t USART_Prescaler)"
+.br
+.RI "Sets the system clock prescaler\&. "
+.ti -1c
+.RI "void \fBUSART_SmartCardCmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART�s Smart Card mode\&. "
+.ti -1c
+.RI "void \fBUSART_SmartCardNACKCmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables NACK transmission\&. "
+.ti -1c
+.RI "void \fBUSART_HalfDuplexCmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART�s Half Duplex communication\&. "
+.ti -1c
+.RI "void \fBUSART_OverSampling8Cmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART's 8x oversampling mode\&. "
+.ti -1c
+.RI "void \fBUSART_OneBitMethodCmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART's one bit sampling method\&. "
+.ti -1c
+.RI "void \fBUSART_IrDAConfig\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_IrDAMode)"
+.br
+.RI "Configures the USART's IrDA interface\&. "
+.ti -1c
+.RI "void \fBUSART_IrDACmd\fP (\fBUSART_TypeDef\fP *USARTx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the USART's IrDA interface\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBUSART_GetFlagStatus\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_FLAG)"
+.br
+.RI "Checks whether the specified USART flag is set or not\&. "
+.ti -1c
+.RI "void \fBUSART_ClearFlag\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_FLAG)"
+.br
+.RI "Clears the USARTx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBUSART_GetITStatus\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_IT)"
+.br
+.RI "Checks whether the specified USART interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBUSART_ClearITPendingBit\fP (\fBUSART_TypeDef\fP *USARTx, uint16_t USART_IT)"
+.br
+.RI "Clears the USARTx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the USART firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_usart\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

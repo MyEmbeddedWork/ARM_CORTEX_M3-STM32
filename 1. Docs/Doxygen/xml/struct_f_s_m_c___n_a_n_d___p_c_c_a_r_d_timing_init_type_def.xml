@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FSMC_NAND_PCCARDTimingInitTypeDef</compoundname>
+    <includes refid="stm32f10x__fsmc_8h" local="no">stm32f10x_fsmc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a31632aeb49269a29a39e3b191590b6dc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_SetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_SetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK cycles to setup address before the command assertion for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a value between 0 and 0xFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="153" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a99a7d54ed2674faa5a4e0f2669812855" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_WaitSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_WaitSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the minimum number of HCLK cycles to assert the command for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between 0x00 and 0xFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="159" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="159" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1ae2b53c2cfd55ff277f453613dcf7c8b2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HoldSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_HoldSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK clock cycles to hold address (and data for write access) after the command deassertion for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between 0x00 and 0xFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="165" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a8a2a2a9e71dbf276fddad2bb32c0d256" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NAND_PCCARDTimingInitTypeDef::FSMC_HiZSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_HiZSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK clock cycles during which the databus is kept in HiZ after the start of a NAND-Flash write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between 0x00 and 0xFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="172" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="172" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Timing parameters For FSMC NAND and PCCARD Banks. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="152" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="151" bodyend="177"/>
+    <listofallmembers>
+      <member refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a8a2a2a9e71dbf276fddad2bb32c0d256" prot="public" virt="non-virtual"><scope>FSMC_NAND_PCCARDTimingInitTypeDef</scope><name>FSMC_HiZSetupTime</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1ae2b53c2cfd55ff277f453613dcf7c8b2" prot="public" virt="non-virtual"><scope>FSMC_NAND_PCCARDTimingInitTypeDef</scope><name>FSMC_HoldSetupTime</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a31632aeb49269a29a39e3b191590b6dc" prot="public" virt="non-virtual"><scope>FSMC_NAND_PCCARDTimingInitTypeDef</scope><name>FSMC_SetupTime</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def_1a99a7d54ed2674faa5a4e0f2669812855" prot="public" virt="non-virtual"><scope>FSMC_NAND_PCCARDTimingInitTypeDef</scope><name>FSMC_WaitSetupTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

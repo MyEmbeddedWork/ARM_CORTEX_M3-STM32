@@ -1,0 +1,1334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__dma_8c" kind="file" language="C++">
+    <compoundname>stm32f10x_dma.c</compoundname>
+    <includes refid="stm32f10x__dma_8h" local="yes">stm32f10x_dma.h</includes>
+    <includes refid="stm32f10x__rcc_8h" local="yes">stm32f10x_rcc.h</includes>
+    <incdepgraph>
+      <node id="914">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="911">
+        <label>stdint.h</label>
+      </node>
+      <node id="910">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+      </node>
+      <node id="913">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="908">
+        <label>stm32f10x_dma.h</label>
+        <link refid="stm32f10x__dma_8h"/>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="907">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c</label>
+        <link refid="stm32f10x__dma_8c"/>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+      </node>
+      <node id="915">
+        <label>stm32f10x_rcc.h</label>
+        <link refid="stm32f10x__rcc_8h"/>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="912">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="909">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+        <childnode refid="911" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga76177263f2b9878765606f3bb8b9cc64" prot="public" static="no">
+        <name>DMA1_Channel1_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga3475228c998897d0f408a4c5da066186" kindref="member">DMA_ISR_GIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga1a1522414af27c7fff2cc27edac1d680" kindref="member">DMA_ISR_TCIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5f83359698adf05854b55705f78d8a5c" kindref="member">DMA_ISR_HTIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga26bfd55e965445ae253a5c5fa8f1769a" kindref="member">DMA_ISR_TEIF1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga255d8869e69919c3b5c434088239ae8c" prot="public" static="no">
+        <name>DMA1_Channel2_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga44fa823dbb15b829621961efc60d6a95" kindref="member">DMA_ISR_GIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga631741eb4843eda3578808a3d8b527b2" kindref="member">DMA_ISR_TCIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga8ee1947aef188f437f37d3ff444f8646" kindref="member">DMA_ISR_HTIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5bcd07efcadd5fef598edec1cca70e38" kindref="member">DMA_ISR_TEIF2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="49" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gabbe4f28c48dc0c3b678cbf4a4fd79e54" prot="public" static="no">
+        <name>DMA1_Channel3_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gacb0bd8fb0e580688c5cf617b618bbc17" kindref="member">DMA_ISR_GIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga28664595df654d9d8052fb6f9cc48495" kindref="member">DMA_ISR_TCIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga53bb9a00737c52faffaaa91ff08b34a1" kindref="member">DMA_ISR_HTIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaa624379143a2535d7a60d87d59834d10" kindref="member">DMA_ISR_TEIF3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="50" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga6b67cd69dbebc4d39a13b3d863a4122b" prot="public" static="no">
+        <name>DMA1_Channel4_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gaf4f69823d44810c353af1f0a89eaf180" kindref="member">DMA_ISR_GIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1gad7d4e46949a35cf037a303bd65a0c87a" kindref="member">DMA_ISR_TCIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga684cf326c770f1ab21c604a5f62907ad" kindref="member">DMA_ISR_HTIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga12fcc1471918f3e7b293b2d825177253" kindref="member">DMA_ISR_TEIF4</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="51" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga44192309991b50231e3af515bf27bef7" prot="public" static="no">
+        <name>DMA1_Channel5_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga83d4d9cba635d1e33e3477b773379cfd" kindref="member">DMA_ISR_GIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5ea57d09f13edbd6ad8afe9465e0fa70" kindref="member">DMA_ISR_TCIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga3d1f2b8c82b1e20b4311af8ca9576736" kindref="member">DMA_ISR_HTIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga42f9b12c4c80cbb7cd0f94f139c73de3" kindref="member">DMA_ISR_TEIF5</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="52" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga4d6e7845da3456440a947a86e1827244" prot="public" static="no">
+        <name>DMA1_Channel6_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gac55f4836aa8e6cfc9bdcadfabf65b5d8" kindref="member">DMA_ISR_GIF6</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga2d76395cf6c6ef50e05c96d7ae723058" kindref="member">DMA_ISR_TCIF6</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga41b6d9787aeff76a51581d9488b4604f" kindref="member">DMA_ISR_HTIF6</ref> | <ref refid="group___peripheral___registers___bits___definition_1gae47d914969922381708ae06c1c71123a" kindref="member">DMA_ISR_TEIF6</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga510bb442153092ff35e73dcaa845d8d1" prot="public" static="no">
+        <name>DMA1_Channel7_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga86f178e879b2d8ceeea351e4750272dd" kindref="member">DMA_ISR_GIF7</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga4528af54928542c09502c01827418732" kindref="member">DMA_ISR_TCIF7</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga769016c2b0bf22ff3ad6967b3dc0e2bb" kindref="member">DMA_ISR_HTIF7</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaf8333b3c78b7d0a07bd4b1e91e902b31" kindref="member">DMA_ISR_TEIF7</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga1a8a861830805d87d8f487920525125d" prot="public" static="no">
+        <name>DMA2_Channel1_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga3475228c998897d0f408a4c5da066186" kindref="member">DMA_ISR_GIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga1a1522414af27c7fff2cc27edac1d680" kindref="member">DMA_ISR_TCIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5f83359698adf05854b55705f78d8a5c" kindref="member">DMA_ISR_HTIF1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga26bfd55e965445ae253a5c5fa8f1769a" kindref="member">DMA_ISR_TEIF1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="57" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga93ffc8595a8b0f1410b9e8a348fcd480" prot="public" static="no">
+        <name>DMA2_Channel2_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga44fa823dbb15b829621961efc60d6a95" kindref="member">DMA_ISR_GIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga631741eb4843eda3578808a3d8b527b2" kindref="member">DMA_ISR_TCIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga8ee1947aef188f437f37d3ff444f8646" kindref="member">DMA_ISR_HTIF2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5bcd07efcadd5fef598edec1cca70e38" kindref="member">DMA_ISR_TEIF2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga96bd8d986420e19b3ce94bd67a48b24a" prot="public" static="no">
+        <name>DMA2_Channel3_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gacb0bd8fb0e580688c5cf617b618bbc17" kindref="member">DMA_ISR_GIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga28664595df654d9d8052fb6f9cc48495" kindref="member">DMA_ISR_TCIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga53bb9a00737c52faffaaa91ff08b34a1" kindref="member">DMA_ISR_HTIF3</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaa624379143a2535d7a60d87d59834d10" kindref="member">DMA_ISR_TEIF3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gae844f9b933a07a6f75472c3f849cbb5c" prot="public" static="no">
+        <name>DMA2_Channel4_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1gaf4f69823d44810c353af1f0a89eaf180" kindref="member">DMA_ISR_GIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1gad7d4e46949a35cf037a303bd65a0c87a" kindref="member">DMA_ISR_TCIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga684cf326c770f1ab21c604a5f62907ad" kindref="member">DMA_ISR_HTIF4</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga12fcc1471918f3e7b293b2d825177253" kindref="member">DMA_ISR_TEIF4</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gaedaf3e94d362754266807d6ccbab2e3e" prot="public" static="no">
+        <name>DMA2_Channel5_IT_Mask</name>
+        <initializer>((uint32_t)(<ref refid="group___peripheral___registers___bits___definition_1ga83d4d9cba635d1e33e3477b773379cfd" kindref="member">DMA_ISR_GIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5ea57d09f13edbd6ad8afe9465e0fa70" kindref="member">DMA_ISR_TCIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga3d1f2b8c82b1e20b4311af8ca9576736" kindref="member">DMA_ISR_HTIF5</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga42f9b12c4c80cbb7cd0f94f139c73de3" kindref="member">DMA_ISR_TEIF5</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" prot="public" static="no">
+        <name>FLAG_Mask</name>
+        <initializer>((uint32_t)0x10000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="64" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___private___defines_1gac2c71cc75907c7c3467907e766dc4188" prot="public" static="no">
+        <name>CCR_CLEAR_Mask</name>
+        <initializer>((uint32_t)0xFFFF800F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_DeInit</definition>
+        <argsstring>(DMA_Channel_TypeDef *DMAy_Channelx)</argsstring>
+        <name>DMA_DeInit</name>
+        <param>
+          <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+          <declname>DMAy_Channelx</declname>
+        </param>
+        <briefdescription>
+<para>Deinitializes the DMAy Channelx registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_Channelx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="108" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="108" bodyend="191"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" compoundref="stm32f10x__dma_8h" startline="95">IS_DMA_ALL_PERIPH</references>
+        <references refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" compoundref="stm32f10x_8h" startline="800">DMA_Channel_TypeDef::CCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga387640bb30564cbc9479b9e4207d75a9" compoundref="stm32f10x_8h" startline="3463">DMA_CCR1_EN</references>
+        <references refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" compoundref="stm32f10x_8h" startline="801">DMA_Channel_TypeDef::CNDTR</references>
+        <references refid="struct_d_m_a___channel___type_def_1a8ce1c9c2742eaaa0e97ddbb3a06154cc" compoundref="stm32f10x_8h" startline="802">DMA_Channel_TypeDef::CPAR</references>
+        <references refid="struct_d_m_a___channel___type_def_1a7a9886b5f9e0edaf5ced3d1870b33ad7" compoundref="stm32f10x_8h" startline="803">DMA_Channel_TypeDef::CMAR</references>
+        <references refid="group___peripheral__declaration_1gac83c5be824be1c02716e2522e80ddf7a" compoundref="stm32f10x_8h" startline="1431">DMA1_Channel1</references>
+        <references refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" compoundref="stm32f10x_8h" startline="1429">DMA1</references>
+        <references refid="group___d_m_a___private___defines_1ga76177263f2b9878765606f3bb8b9cc64" compoundref="stm32f10x__dma_8c" startline="48">DMA1_Channel1_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga23d7631dd10c645e06971b2543ba2949" compoundref="stm32f10x_8h" startline="1432">DMA1_Channel2</references>
+        <references refid="group___d_m_a___private___defines_1ga255d8869e69919c3b5c434088239ae8c" compoundref="stm32f10x__dma_8c" startline="49">DMA1_Channel2_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1gacf7b6093a37b306d7f1f50b2f200f0d0" compoundref="stm32f10x_8h" startline="1433">DMA1_Channel3</references>
+        <references refid="group___d_m_a___private___defines_1gabbe4f28c48dc0c3b678cbf4a4fd79e54" compoundref="stm32f10x__dma_8c" startline="50">DMA1_Channel3_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1gad2c42743316bf64da557130061b1f56a" compoundref="stm32f10x_8h" startline="1434">DMA1_Channel4</references>
+        <references refid="group___d_m_a___private___defines_1ga6b67cd69dbebc4d39a13b3d863a4122b" compoundref="stm32f10x__dma_8c" startline="51">DMA1_Channel4_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga06ff98ddef3c962795d2e2444004abff" compoundref="stm32f10x_8h" startline="1435">DMA1_Channel5</references>
+        <references refid="group___d_m_a___private___defines_1ga44192309991b50231e3af515bf27bef7" compoundref="stm32f10x__dma_8c" startline="52">DMA1_Channel5_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1gac013c4376e4797831b5ddd2a09519df8" compoundref="stm32f10x_8h" startline="1436">DMA1_Channel6</references>
+        <references refid="group___d_m_a___private___defines_1ga4d6e7845da3456440a947a86e1827244" compoundref="stm32f10x__dma_8c" startline="53">DMA1_Channel6_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga4f9c23b3d1add93ed206b5c9afa5cda3" compoundref="stm32f10x_8h" startline="1437">DMA1_Channel7</references>
+        <references refid="group___d_m_a___private___defines_1ga510bb442153092ff35e73dcaa845d8d1" compoundref="stm32f10x__dma_8c" startline="54">DMA1_Channel7_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1gad86c75e1ff89e03e15570f47962865c8" compoundref="stm32f10x_8h" startline="1438">DMA2_Channel1</references>
+        <references refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" compoundref="stm32f10x_8h" startline="1430">DMA2</references>
+        <references refid="group___d_m_a___private___defines_1ga1a8a861830805d87d8f487920525125d" compoundref="stm32f10x__dma_8c" startline="57">DMA2_Channel1_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga316024020799373b9d8e35c316c74f24" compoundref="stm32f10x_8h" startline="1439">DMA2_Channel2</references>
+        <references refid="group___d_m_a___private___defines_1ga93ffc8595a8b0f1410b9e8a348fcd480" compoundref="stm32f10x__dma_8c" startline="58">DMA2_Channel2_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga6dca52a79587e0ca9a5d669048b4c7eb" compoundref="stm32f10x_8h" startline="1440">DMA2_Channel3</references>
+        <references refid="group___d_m_a___private___defines_1ga96bd8d986420e19b3ce94bd67a48b24a" compoundref="stm32f10x__dma_8c" startline="59">DMA2_Channel3_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga612b396657695191ad740b0b59bc9f12" compoundref="stm32f10x_8h" startline="1441">DMA2_Channel4</references>
+        <references refid="group___d_m_a___private___defines_1gae844f9b933a07a6f75472c3f849cbb5c" compoundref="stm32f10x__dma_8c" startline="60">DMA2_Channel4_IT_Mask</references>
+        <references refid="group___peripheral__declaration_1ga521c13b7d0f82a6897d47995da392750" compoundref="stm32f10x_8h" startline="1442">DMA2_Channel5</references>
+        <references refid="group___d_m_a___private___defines_1gaedaf3e94d362754266807d6ccbab2e3e" compoundref="stm32f10x__dma_8c" startline="61">DMA2_Channel5_IT_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_Init</definition>
+        <argsstring>(DMA_Channel_TypeDef *DMAy_Channelx, DMA_InitTypeDef *DMA_InitStruct)</argsstring>
+        <name>DMA_Init</name>
+        <param>
+          <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+          <declname>DMAy_Channelx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref> *</type>
+          <declname>DMA_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the DMAy Channelx according to the specified parameters in the DMA_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_Channelx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref> structure that contains the configuration information for the specified DMA Channel. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="202" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="202" bodyend="251"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" compoundref="stm32f10x__dma_8h" startline="95">IS_DMA_ALL_PERIPH</references>
+        <references refid="group___d_m_a__data__transfer__direction_1gaaad13d2b5808e32a35a2d21bcdbb2296" compoundref="stm32f10x__dma_8h" startline="114">IS_DMA_DIR</references>
+        <references refid="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" compoundref="stm32f10x__dma_8h" startline="56">DMA_InitTypeDef::DMA_DIR</references>
+        <references refid="group___d_m_a___buffer___size_1ga72ef4033bb3bc2cdfdbe579083b05e32" compoundref="stm32f10x__dma_8h" startline="388">IS_DMA_BUFFER_SIZE</references>
+        <references refid="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" compoundref="stm32f10x__dma_8h" startline="59">DMA_InitTypeDef::DMA_BufferSize</references>
+        <references refid="group___d_m_a__peripheral__incremented__mode_1ga28762105b3f567c16ba79a47e68ff0fa" compoundref="stm32f10x__dma_8h" startline="126">IS_DMA_PERIPHERAL_INC_STATE</references>
+        <references refid="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" compoundref="stm32f10x__dma_8h" startline="63">DMA_InitTypeDef::DMA_PeripheralInc</references>
+        <references refid="group___d_m_a__memory__incremented__mode_1gaa880f39d499d1e80449cf80381e4eb67" compoundref="stm32f10x__dma_8h" startline="138">IS_DMA_MEMORY_INC_STATE</references>
+        <references refid="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" compoundref="stm32f10x__dma_8h" startline="66">DMA_InitTypeDef::DMA_MemoryInc</references>
+        <references refid="group___d_m_a__peripheral__data__size_1gad7916e0ae55cdf5efdfa68a09a028037" compoundref="stm32f10x__dma_8h" startline="151">IS_DMA_PERIPHERAL_DATA_SIZE</references>
+        <references refid="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" compoundref="stm32f10x__dma_8h" startline="69">DMA_InitTypeDef::DMA_PeripheralDataSize</references>
+        <references refid="group___d_m_a__memory__data__size_1gac9e3748cebcb16d4ae4206d562bc804c" compoundref="stm32f10x__dma_8h" startline="165">IS_DMA_MEMORY_DATA_SIZE</references>
+        <references refid="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" compoundref="stm32f10x__dma_8h" startline="72">DMA_InitTypeDef::DMA_MemoryDataSize</references>
+        <references refid="group___d_m_a__circular__normal__mode_1gad88ee5030574d6a573904378fb62c7ac" compoundref="stm32f10x__dma_8h" startline="178">IS_DMA_MODE</references>
+        <references refid="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" compoundref="stm32f10x__dma_8h" startline="75">DMA_InitTypeDef::DMA_Mode</references>
+        <references refid="group___d_m_a__priority__level_1gaa1cae2ab458948511596467c87cd02b6" compoundref="stm32f10x__dma_8h" startline="191">IS_DMA_PRIORITY</references>
+        <references refid="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" compoundref="stm32f10x__dma_8h" startline="80">DMA_InitTypeDef::DMA_Priority</references>
+        <references refid="group___d_m_a__memory__to__memory_1gae0241d6265efc45f87b113cf44e50c06" compoundref="stm32f10x__dma_8h" startline="205">IS_DMA_M2M_STATE</references>
+        <references refid="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" compoundref="stm32f10x__dma_8h" startline="83">DMA_InitTypeDef::DMA_M2M</references>
+        <references refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" compoundref="stm32f10x_8h" startline="800">DMA_Channel_TypeDef::CCR</references>
+        <references refid="group___d_m_a___private___defines_1gac2c71cc75907c7c3467907e766dc4188" compoundref="stm32f10x__dma_8c" startline="67">CCR_CLEAR_Mask</references>
+        <references refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" compoundref="stm32f10x_8h" startline="801">DMA_Channel_TypeDef::CNDTR</references>
+        <references refid="struct_d_m_a___channel___type_def_1a8ce1c9c2742eaaa0e97ddbb3a06154cc" compoundref="stm32f10x_8h" startline="802">DMA_Channel_TypeDef::CPAR</references>
+        <references refid="struct_d_m_a___init_type_def_1a232af556de7c2eec9a82d448730bd86d" compoundref="stm32f10x__dma_8h" startline="52">DMA_InitTypeDef::DMA_PeripheralBaseAddr</references>
+        <references refid="struct_d_m_a___channel___type_def_1a7a9886b5f9e0edaf5ced3d1870b33ad7" compoundref="stm32f10x_8h" startline="803">DMA_Channel_TypeDef::CMAR</references>
+        <references refid="struct_d_m_a___init_type_def_1a41e7d463f0cfbcedf3170d7d27d088df" compoundref="stm32f10x__dma_8h" startline="54">DMA_InitTypeDef::DMA_MemoryBaseAddr</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_StructInit</definition>
+        <argsstring>(DMA_InitTypeDef *DMA_InitStruct)</argsstring>
+        <name>DMA_StructInit</name>
+        <param>
+          <type><ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref> *</type>
+          <declname>DMA_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each DMA_InitStruct member with its default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMA_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to a <ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="259" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="259" bodyend="284"/>
+        <references refid="struct_d_m_a___init_type_def_1a232af556de7c2eec9a82d448730bd86d" compoundref="stm32f10x__dma_8h" startline="52">DMA_InitTypeDef::DMA_PeripheralBaseAddr</references>
+        <references refid="struct_d_m_a___init_type_def_1a41e7d463f0cfbcedf3170d7d27d088df" compoundref="stm32f10x__dma_8h" startline="54">DMA_InitTypeDef::DMA_MemoryBaseAddr</references>
+        <references refid="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" compoundref="stm32f10x__dma_8h" startline="56">DMA_InitTypeDef::DMA_DIR</references>
+        <references refid="group___d_m_a__data__transfer__direction_1ga5ce120a044359410136695a2c05df68e" compoundref="stm32f10x__dma_8h" startline="113">DMA_DIR_PeripheralSRC</references>
+        <references refid="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" compoundref="stm32f10x__dma_8h" startline="59">DMA_InitTypeDef::DMA_BufferSize</references>
+        <references refid="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" compoundref="stm32f10x__dma_8h" startline="63">DMA_InitTypeDef::DMA_PeripheralInc</references>
+        <references refid="group___d_m_a__peripheral__incremented__mode_1ga0fe3ff9c67bec802dd239fd17c3dbd31" compoundref="stm32f10x__dma_8h" startline="125">DMA_PeripheralInc_Disable</references>
+        <references refid="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" compoundref="stm32f10x__dma_8h" startline="66">DMA_InitTypeDef::DMA_MemoryInc</references>
+        <references refid="group___d_m_a__memory__incremented__mode_1ga795a277c997048783a383b026f19a5ab" compoundref="stm32f10x__dma_8h" startline="137">DMA_MemoryInc_Disable</references>
+        <references refid="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" compoundref="stm32f10x__dma_8h" startline="69">DMA_InitTypeDef::DMA_PeripheralDataSize</references>
+        <references refid="group___d_m_a__peripheral__data__size_1ga7577035ae4ff413164000227a8cea346" compoundref="stm32f10x__dma_8h" startline="148">DMA_PeripheralDataSize_Byte</references>
+        <references refid="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" compoundref="stm32f10x__dma_8h" startline="72">DMA_InitTypeDef::DMA_MemoryDataSize</references>
+        <references refid="group___d_m_a__memory__data__size_1gad6093bccb60ff9adf81e21c73c58ba17" compoundref="stm32f10x__dma_8h" startline="162">DMA_MemoryDataSize_Byte</references>
+        <references refid="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" compoundref="stm32f10x__dma_8h" startline="75">DMA_InitTypeDef::DMA_Mode</references>
+        <references refid="group___d_m_a__circular__normal__mode_1ga36400f5b5095f1102ede4760d7a5959c" compoundref="stm32f10x__dma_8h" startline="177">DMA_Mode_Normal</references>
+        <references refid="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" compoundref="stm32f10x__dma_8h" startline="80">DMA_InitTypeDef::DMA_Priority</references>
+        <references refid="group___d_m_a__priority__level_1gaf414e0aa8dd42aee6f83f88ab6175179" compoundref="stm32f10x__dma_8h" startline="190">DMA_Priority_Low</references>
+        <references refid="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" compoundref="stm32f10x__dma_8h" startline="83">DMA_InitTypeDef::DMA_M2M</references>
+        <references refid="group___d_m_a__memory__to__memory_1ga86e0a7076f0badd509fac6576f3b5355" compoundref="stm32f10x__dma_8h" startline="204">DMA_M2M_Disable</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga8e7cb6b9ae5f142e2961df879cdaba65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_Cmd</definition>
+        <argsstring>(DMA_Channel_TypeDef *DMAy_Channelx, FunctionalState NewState)</argsstring>
+        <name>DMA_Cmd</name>
+        <param>
+          <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+          <declname>DMAy_Channelx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified DMAy Channelx. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_Channelx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the DMAy Channelx. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="294" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="294" bodyend="310"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" compoundref="stm32f10x__dma_8h" startline="95">IS_DMA_ALL_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" compoundref="stm32f10x_8h" startline="800">DMA_Channel_TypeDef::CCR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga387640bb30564cbc9479b9e4207d75a9" compoundref="stm32f10x_8h" startline="3463">DMA_CCR1_EN</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga0bb60360be9cd57f96399be2f3b5eb2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_ITConfig</definition>
+        <argsstring>(DMA_Channel_TypeDef *DMAy_Channelx, uint32_t DMA_IT, FunctionalState NewState)</argsstring>
+        <name>DMA_ITConfig</name>
+        <param>
+          <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+          <declname>DMAy_Channelx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>DMA_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified DMAy Channelx interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_Channelx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the DMA interrupts sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>DMA_IT_TC: Transfer complete interrupt mask </para></listitem>
+<listitem><para>DMA_IT_HT: Half transfer interrupt mask </para></listitem>
+<listitem><para>DMA_IT_TE: Transfer error interrupt mask </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified DMA interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="326" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="326" bodyend="342"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" compoundref="stm32f10x__dma_8h" startline="95">IS_DMA_ALL_PERIPH</references>
+        <references refid="group___d_m_a__interrupts__definition_1ga47f6af7da302c19aba24516037d305e7" compoundref="stm32f10x__dma_8h" startline="218">IS_DMA_CONFIG_IT</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" compoundref="stm32f10x_8h" startline="800">DMA_Channel_TypeDef::CCR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1gade5d9e532814eaa46514cb385fdff709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_SetCurrDataCounter</definition>
+        <argsstring>(DMA_Channel_TypeDef *DMAy_Channelx, uint16_t DataNumber)</argsstring>
+        <name>DMA_SetCurrDataCounter</name>
+        <param>
+          <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+          <declname>DMAy_Channelx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>DataNumber</declname>
+        </param>
+        <briefdescription>
+<para>Sets the number of data units in the current DMAy Channelx transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_Channelx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DataNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of data units in the current DMAy Channelx transfer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function can only be used when the DMAy_Channelx is disabled. </para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="353" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="353" bodyend="361"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" compoundref="stm32f10x__dma_8h" startline="95">IS_DMA_ALL_PERIPH</references>
+        <references refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" compoundref="stm32f10x_8h" startline="801">DMA_Channel_TypeDef::CNDTR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga511b4c402d1ff32d53f28736956cac5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t DMA_GetCurrDataCounter</definition>
+        <argsstring>(DMA_Channel_TypeDef *DMAy_Channelx)</argsstring>
+        <name>DMA_GetCurrDataCounter</name>
+        <param>
+          <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+          <declname>DMAy_Channelx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of remaining data units in the current DMAy Channelx transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_Channelx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where y can be 1 or 2 to select the DMA and x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of remaining data units in the current DMAy Channelx transfer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="371" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="371" bodyend="377"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" compoundref="stm32f10x__dma_8h" startline="95">IS_DMA_ALL_PERIPH</references>
+        <references refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" compoundref="stm32f10x_8h" startline="801">DMA_Channel_TypeDef::CNDTR</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1gafb30b7a891834c267eefd5d30b688a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus DMA_GetFlagStatus</definition>
+        <argsstring>(uint32_t DMAy_FLAG)</argsstring>
+        <name>DMA_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>DMAy_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified DMAy Channelx flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>DMA1_FLAG_GL1: DMA1 Channel1 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC1: DMA1 Channel1 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT1: DMA1 Channel1 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE1: DMA1 Channel1 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL2: DMA1 Channel2 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC2: DMA1 Channel2 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT2: DMA1 Channel2 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE2: DMA1 Channel2 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL3: DMA1 Channel3 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC3: DMA1 Channel3 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT3: DMA1 Channel3 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE3: DMA1 Channel3 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL4: DMA1 Channel4 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC4: DMA1 Channel4 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT4: DMA1 Channel4 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE4: DMA1 Channel4 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL5: DMA1 Channel5 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC5: DMA1 Channel5 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT5: DMA1 Channel5 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE5: DMA1 Channel5 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL6: DMA1 Channel6 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC6: DMA1 Channel6 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT6: DMA1 Channel6 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE6: DMA1 Channel6 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL7: DMA1 Channel7 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC7: DMA1 Channel7 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT7: DMA1 Channel7 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE7: DMA1 Channel7 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL1: DMA2 Channel1 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC1: DMA2 Channel1 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT1: DMA2 Channel1 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE1: DMA2 Channel1 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL2: DMA2 Channel2 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC2: DMA2 Channel2 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT2: DMA2 Channel2 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE2: DMA2 Channel2 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL3: DMA2 Channel3 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC3: DMA2 Channel3 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT3: DMA2 Channel3 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE3: DMA2 Channel3 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL4: DMA2 Channel4 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC4: DMA2 Channel4 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT4: DMA2 Channel4 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE4: DMA2 Channel4 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL5: DMA2 Channel5 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC5: DMA2 Channel5 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT5: DMA2 Channel5 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE5: DMA2 Channel5 transfer error flag. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of DMAy_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="433" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="433" bodyend="467"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a__flags__definition_1ga98e421aa0a15fbeecb4cab3612985676" compoundref="stm32f10x__dma_8h" startline="356">IS_DMA_GET_FLAG</references>
+        <references refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__dma_8c" startline="64">FLAG_Mask</references>
+        <references refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" compoundref="stm32f10x_8h" startline="1430">DMA2</references>
+        <references refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" compoundref="stm32f10x_8h" startline="1429">DMA1</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga25cdca360f309c8ceb7c206cd9ad9119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_ClearFlag</definition>
+        <argsstring>(uint32_t DMAy_FLAG)</argsstring>
+        <name>DMA_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>DMAy_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the DMAy Channelx&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be any combination (for the same DMA) of the following values: <itemizedlist>
+<listitem><para>DMA1_FLAG_GL1: DMA1 Channel1 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC1: DMA1 Channel1 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT1: DMA1 Channel1 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE1: DMA1 Channel1 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL2: DMA1 Channel2 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC2: DMA1 Channel2 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT2: DMA1 Channel2 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE2: DMA1 Channel2 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL3: DMA1 Channel3 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC3: DMA1 Channel3 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT3: DMA1 Channel3 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE3: DMA1 Channel3 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL4: DMA1 Channel4 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC4: DMA1 Channel4 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT4: DMA1 Channel4 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE4: DMA1 Channel4 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL5: DMA1 Channel5 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC5: DMA1 Channel5 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT5: DMA1 Channel5 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE5: DMA1 Channel5 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL6: DMA1 Channel6 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC6: DMA1 Channel6 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT6: DMA1 Channel6 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE6: DMA1 Channel6 transfer error flag. </para></listitem>
+<listitem><para>DMA1_FLAG_GL7: DMA1 Channel7 global flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TC7: DMA1 Channel7 transfer complete flag. </para></listitem>
+<listitem><para>DMA1_FLAG_HT7: DMA1 Channel7 half transfer flag. </para></listitem>
+<listitem><para>DMA1_FLAG_TE7: DMA1 Channel7 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL1: DMA2 Channel1 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC1: DMA2 Channel1 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT1: DMA2 Channel1 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE1: DMA2 Channel1 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL2: DMA2 Channel2 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC2: DMA2 Channel2 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT2: DMA2 Channel2 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE2: DMA2 Channel2 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL3: DMA2 Channel3 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC3: DMA2 Channel3 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT3: DMA2 Channel3 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE3: DMA2 Channel3 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL4: DMA2 Channel4 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC4: DMA2 Channel4 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT4: DMA2 Channel4 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE4: DMA2 Channel4 transfer error flag. </para></listitem>
+<listitem><para>DMA2_FLAG_GL5: DMA2 Channel5 global flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TC5: DMA2 Channel5 transfer complete flag. </para></listitem>
+<listitem><para>DMA2_FLAG_HT5: DMA2 Channel5 half transfer flag. </para></listitem>
+<listitem><para>DMA2_FLAG_TE5: DMA2 Channel5 transfer error flag. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="523" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="523" bodyend="539"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a__flags__definition_1ga4b33e418489c9a3c9adcbdbaca93e4a3" compoundref="stm32f10x__dma_8h" startline="354">IS_DMA_CLEAR_FLAG</references>
+        <references refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__dma_8c" startline="64">FLAG_Mask</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" compoundref="stm32f10x_8h" startline="1430">DMA2</references>
+        <references refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" compoundref="stm32f10x_8h" startline="1429">DMA1</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga9287331247150fe84d03ecd7ad8adb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus DMA_GetITStatus</definition>
+        <argsstring>(uint32_t DMAy_IT)</argsstring>
+        <name>DMA_GetITStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>DMAy_IT</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified DMAy Channelx interrupt has occurred or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the DMAy interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>DMA1_IT_GL1: DMA1 Channel1 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC1: DMA1 Channel1 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT1: DMA1 Channel1 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE1: DMA1 Channel1 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL2: DMA1 Channel2 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC2: DMA1 Channel2 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT2: DMA1 Channel2 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE2: DMA1 Channel2 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL3: DMA1 Channel3 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC3: DMA1 Channel3 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT3: DMA1 Channel3 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE3: DMA1 Channel3 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL4: DMA1 Channel4 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC4: DMA1 Channel4 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT4: DMA1 Channel4 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE4: DMA1 Channel4 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL5: DMA1 Channel5 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC5: DMA1 Channel5 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT5: DMA1 Channel5 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE5: DMA1 Channel5 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL6: DMA1 Channel6 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC6: DMA1 Channel6 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT6: DMA1 Channel6 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE6: DMA1 Channel6 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL7: DMA1 Channel7 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC7: DMA1 Channel7 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT7: DMA1 Channel7 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE7: DMA1 Channel7 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL1: DMA2 Channel1 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC1: DMA2 Channel1 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT1: DMA2 Channel1 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE1: DMA2 Channel1 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL2: DMA2 Channel2 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC2: DMA2 Channel2 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT2: DMA2 Channel2 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE2: DMA2 Channel2 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL3: DMA2 Channel3 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC3: DMA2 Channel3 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT3: DMA2 Channel3 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE3: DMA2 Channel3 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL4: DMA2 Channel4 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC4: DMA2 Channel4 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT4: DMA2 Channel4 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE4: DMA2 Channel4 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL5: DMA2 Channel5 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC5: DMA2 Channel5 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT5: DMA2 Channel5 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE5: DMA2 Channel5 transfer error interrupt. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of DMAy_IT (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="595" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="595" bodyend="628"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a__interrupts__definition_1gaaafa1bd74bc5e78e276c731faa8eed22" compoundref="stm32f10x__dma_8h" startline="272">IS_DMA_GET_IT</references>
+        <references refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__dma_8c" startline="64">FLAG_Mask</references>
+        <references refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" compoundref="stm32f10x_8h" startline="1430">DMA2</references>
+        <references refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" compoundref="stm32f10x_8h" startline="1429">DMA1</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a___private___functions_1ga91a7340e5b334a942f3eb1e05ed5f67a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA_ClearITPendingBit</definition>
+        <argsstring>(uint32_t DMAy_IT)</argsstring>
+        <name>DMA_ClearITPendingBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>DMAy_IT</declname>
+        </param>
+        <briefdescription>
+<para>Clears the DMAy Channelx&apos;s interrupt pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DMAy_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the DMAy interrupt pending bit to clear. This parameter can be any combination (for the same DMA) of the following values: <itemizedlist>
+<listitem><para>DMA1_IT_GL1: DMA1 Channel1 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC1: DMA1 Channel1 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT1: DMA1 Channel1 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE1: DMA1 Channel1 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL2: DMA1 Channel2 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC2: DMA1 Channel2 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT2: DMA1 Channel2 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE2: DMA1 Channel2 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL3: DMA1 Channel3 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC3: DMA1 Channel3 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT3: DMA1 Channel3 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE3: DMA1 Channel3 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL4: DMA1 Channel4 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC4: DMA1 Channel4 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT4: DMA1 Channel4 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE4: DMA1 Channel4 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL5: DMA1 Channel5 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC5: DMA1 Channel5 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT5: DMA1 Channel5 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE5: DMA1 Channel5 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL6: DMA1 Channel6 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC6: DMA1 Channel6 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT6: DMA1 Channel6 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE6: DMA1 Channel6 transfer error interrupt. </para></listitem>
+<listitem><para>DMA1_IT_GL7: DMA1 Channel7 global interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TC7: DMA1 Channel7 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA1_IT_HT7: DMA1 Channel7 half transfer interrupt. </para></listitem>
+<listitem><para>DMA1_IT_TE7: DMA1 Channel7 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL1: DMA2 Channel1 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC1: DMA2 Channel1 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT1: DMA2 Channel1 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE1: DMA2 Channel1 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL2: DMA2 Channel2 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC2: DMA2 Channel2 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT2: DMA2 Channel2 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE2: DMA2 Channel2 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL3: DMA2 Channel3 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC3: DMA2 Channel3 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT3: DMA2 Channel3 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE3: DMA2 Channel3 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL4: DMA2 Channel4 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC4: DMA2 Channel4 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT4: DMA2 Channel4 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE4: DMA2 Channel4 transfer error interrupt. </para></listitem>
+<listitem><para>DMA2_IT_GL5: DMA2 Channel5 global interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TC5: DMA2 Channel5 transfer complete interrupt. </para></listitem>
+<listitem><para>DMA2_IT_HT5: DMA2 Channel5 half transfer interrupt. </para></listitem>
+<listitem><para>DMA2_IT_TE5: DMA2 Channel5 transfer error interrupt. </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" line="684" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" bodystart="684" bodyend="700"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_m_a__interrupts__definition_1ga390481b083355ed774b04f70a42f0dfb" compoundref="stm32f10x__dma_8h" startline="270">IS_DMA_CLEAR_IT</references>
+        <references refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" compoundref="stm32f10x__dma_8c" startline="64">FLAG_Mask</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" compoundref="stm32f10x_8h" startline="1430">DMA2</references>
+        <references refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" compoundref="stm32f10x_8h" startline="1429">DMA1</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file provides all the DMA firmware functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__dma_8h" kindref="compound">stm32f10x_dma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__rcc_8h" kindref="compound">stm32f10x_rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment">/*<sp/>DMA1<sp/>Channelx<sp/>interrupt<sp/>pending<sp/>bit<sp/>masks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="group___d_m_a___private___defines_1ga76177263f2b9878765606f3bb8b9cc64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel1_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF1<sp/>|<sp/>DMA_ISR_TCIF1<sp/>|<sp/>DMA_ISR_HTIF1<sp/>|<sp/>DMA_ISR_TEIF1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="group___d_m_a___private___defines_1ga255d8869e69919c3b5c434088239ae8c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel2_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF2<sp/>|<sp/>DMA_ISR_TCIF2<sp/>|<sp/>DMA_ISR_HTIF2<sp/>|<sp/>DMA_ISR_TEIF2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="group___d_m_a___private___defines_1gabbe4f28c48dc0c3b678cbf4a4fd79e54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel3_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF3<sp/>|<sp/>DMA_ISR_TCIF3<sp/>|<sp/>DMA_ISR_HTIF3<sp/>|<sp/>DMA_ISR_TEIF3))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="group___d_m_a___private___defines_1ga6b67cd69dbebc4d39a13b3d863a4122b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel4_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF4<sp/>|<sp/>DMA_ISR_TCIF4<sp/>|<sp/>DMA_ISR_HTIF4<sp/>|<sp/>DMA_ISR_TEIF4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="group___d_m_a___private___defines_1ga44192309991b50231e3af515bf27bef7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel5_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF5<sp/>|<sp/>DMA_ISR_TCIF5<sp/>|<sp/>DMA_ISR_HTIF5<sp/>|<sp/>DMA_ISR_TEIF5))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="group___d_m_a___private___defines_1ga4d6e7845da3456440a947a86e1827244" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel6_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF6<sp/>|<sp/>DMA_ISR_TCIF6<sp/>|<sp/>DMA_ISR_HTIF6<sp/>|<sp/>DMA_ISR_TEIF6))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="group___d_m_a___private___defines_1ga510bb442153092ff35e73dcaa845d8d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_Channel7_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF7<sp/>|<sp/>DMA_ISR_TCIF7<sp/>|<sp/>DMA_ISR_HTIF7<sp/>|<sp/>DMA_ISR_TEIF7))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>DMA2<sp/>Channelx<sp/>interrupt<sp/>pending<sp/>bit<sp/>masks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group___d_m_a___private___defines_1ga1a8a861830805d87d8f487920525125d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA2_Channel1_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF1<sp/>|<sp/>DMA_ISR_TCIF1<sp/>|<sp/>DMA_ISR_HTIF1<sp/>|<sp/>DMA_ISR_TEIF1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___d_m_a___private___defines_1ga93ffc8595a8b0f1410b9e8a348fcd480" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA2_Channel2_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF2<sp/>|<sp/>DMA_ISR_TCIF2<sp/>|<sp/>DMA_ISR_HTIF2<sp/>|<sp/>DMA_ISR_TEIF2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___d_m_a___private___defines_1ga96bd8d986420e19b3ce94bd67a48b24a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA2_Channel3_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF3<sp/>|<sp/>DMA_ISR_TCIF3<sp/>|<sp/>DMA_ISR_HTIF3<sp/>|<sp/>DMA_ISR_TEIF3))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group___d_m_a___private___defines_1gae844f9b933a07a6f75472c3f849cbb5c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA2_Channel4_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF4<sp/>|<sp/>DMA_ISR_TCIF4<sp/>|<sp/>DMA_ISR_HTIF4<sp/>|<sp/>DMA_ISR_TEIF4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="group___d_m_a___private___defines_1gaedaf3e94d362754266807d6ccbab2e3e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA2_Channel5_IT_Mask<sp/><sp/><sp/><sp/>((uint32_t)(DMA_ISR_GIF5<sp/>|<sp/>DMA_ISR_TCIF5<sp/>|<sp/>DMA_ISR_HTIF5<sp/>|<sp/>DMA_ISR_TEIF5))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>DMA2<sp/>FLAG<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLAG_Mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x10000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>DMA<sp/>registers<sp/>Masks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___d_m_a___private___defines_1gac2c71cc75907c7c3467907e766dc4188" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CCR_CLEAR_Mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0xFFFF800F)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" kindref="member">DMA_DeInit</ref>(<ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref>*<sp/>DMAy_Channelx)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" kindref="member">IS_DMA_ALL_PERIPH</ref>(DMAy_Channelx));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>the<sp/>selected<sp/>DMAy<sp/>Channelx<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/>&amp;=<sp/>(uint16_t)(~<ref refid="group___peripheral___registers___bits___definition_1ga387640bb30564cbc9479b9e4207d75a9" kindref="member">DMA_CCR1_EN</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>DMAy<sp/>Channelx<sp/>control<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>DMAy<sp/>Channelx<sp/>remaining<sp/>bytes<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" kindref="member">CNDTR</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>DMAy<sp/>Channelx<sp/>peripheral<sp/>address<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1a8ce1c9c2742eaaa0e97ddbb3a06154cc" kindref="member">CPAR</ref><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>DMAy<sp/>Channelx<sp/>memory<sp/>address<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1a7a9886b5f9e0edaf5ced3d1870b33ad7" kindref="member">CMAR</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1gac83c5be824be1c02716e2522e80ddf7a" kindref="member">DMA1_Channel1</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga76177263f2b9878765606f3bb8b9cc64" kindref="member">DMA1_Channel1_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga23d7631dd10c645e06971b2543ba2949" kindref="member">DMA1_Channel2</ref>)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga255d8869e69919c3b5c434088239ae8c" kindref="member">DMA1_Channel2_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1gacf7b6093a37b306d7f1f50b2f200f0d0" kindref="member">DMA1_Channel3</ref>)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1gabbe4f28c48dc0c3b678cbf4a4fd79e54" kindref="member">DMA1_Channel3_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1gad2c42743316bf64da557130061b1f56a" kindref="member">DMA1_Channel4</ref>)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga6b67cd69dbebc4d39a13b3d863a4122b" kindref="member">DMA1_Channel4_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga06ff98ddef3c962795d2e2444004abff" kindref="member">DMA1_Channel5</ref>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga44192309991b50231e3af515bf27bef7" kindref="member">DMA1_Channel5_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1gac013c4376e4797831b5ddd2a09519df8" kindref="member">DMA1_Channel6</ref>)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga4d6e7845da3456440a947a86e1827244" kindref="member">DMA1_Channel6_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga4f9c23b3d1add93ed206b5c9afa5cda3" kindref="member">DMA1_Channel7</ref>)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA1<sp/>Channel7<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga510bb442153092ff35e73dcaa845d8d1" kindref="member">DMA1_Channel7_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1gad86c75e1ff89e03e15570f47962865c8" kindref="member">DMA2_Channel1</ref>)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA2<sp/>Channel1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga1a8a861830805d87d8f487920525125d" kindref="member">DMA2_Channel1_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga316024020799373b9d8e35c316c74f24" kindref="member">DMA2_Channel2</ref>)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA2<sp/>Channel2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga93ffc8595a8b0f1410b9e8a348fcd480" kindref="member">DMA2_Channel2_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga6dca52a79587e0ca9a5d669048b4c7eb" kindref="member">DMA2_Channel3</ref>)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA2<sp/>Channel3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1ga96bd8d986420e19b3ce94bd67a48b24a" kindref="member">DMA2_Channel3_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga612b396657695191ad740b0b59bc9f12" kindref="member">DMA2_Channel4</ref>)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA2<sp/>Channel4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1gae844f9b933a07a6f75472c3f849cbb5c" kindref="member">DMA2_Channel4_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DMAy_Channelx<sp/>==<sp/><ref refid="group___peripheral__declaration_1ga521c13b7d0f82a6897d47995da392750" kindref="member">DMA2_Channel5</ref>)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>interrupt<sp/>pending<sp/>bits<sp/>for<sp/>DMA2<sp/>Channel5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>|=<sp/><ref refid="group___d_m_a___private___defines_1gaedaf3e94d362754266807d6ccbab2e3e" kindref="member">DMA2_Channel5_IT_Mask</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" kindref="member">DMA_Init</ref>(<ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref>*<sp/>DMAy_Channelx,<sp/><ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref>*<sp/>DMA_InitStruct)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmpreg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" kindref="member">IS_DMA_ALL_PERIPH</ref>(DMAy_Channelx));</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__data__transfer__direction_1gaaad13d2b5808e32a35a2d21bcdbb2296" kindref="member">IS_DMA_DIR</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" kindref="member">DMA_DIR</ref>));</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___buffer___size_1ga72ef4033bb3bc2cdfdbe579083b05e32" kindref="member">IS_DMA_BUFFER_SIZE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" kindref="member">DMA_BufferSize</ref>));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__peripheral__incremented__mode_1ga28762105b3f567c16ba79a47e68ff0fa" kindref="member">IS_DMA_PERIPHERAL_INC_STATE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" kindref="member">DMA_PeripheralInc</ref>));</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__memory__incremented__mode_1gaa880f39d499d1e80449cf80381e4eb67" kindref="member">IS_DMA_MEMORY_INC_STATE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" kindref="member">DMA_MemoryInc</ref>));<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__peripheral__data__size_1gad7916e0ae55cdf5efdfa68a09a028037" kindref="member">IS_DMA_PERIPHERAL_DATA_SIZE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" kindref="member">DMA_PeripheralDataSize</ref>));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__memory__data__size_1gac9e3748cebcb16d4ae4206d562bc804c" kindref="member">IS_DMA_MEMORY_DATA_SIZE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" kindref="member">DMA_MemoryDataSize</ref>));</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__circular__normal__mode_1gad88ee5030574d6a573904378fb62c7ac" kindref="member">IS_DMA_MODE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" kindref="member">DMA_Mode</ref>));</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__priority__level_1gaa1cae2ab458948511596467c87cd02b6" kindref="member">IS_DMA_PRIORITY</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" kindref="member">DMA_Priority</ref>));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__memory__to__memory_1gae0241d6265efc45f87b113cf44e50c06" kindref="member">IS_DMA_M2M_STATE</ref>(DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" kindref="member">DMA_M2M</ref>));</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------<sp/>DMAy<sp/>Channelx<sp/>CCR<sp/>Configuration<sp/>-----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>DMAy_Channelx<sp/>CCR<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>tmpreg<sp/>=<sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>MEM2MEM,<sp/>PL,<sp/>MSIZE,<sp/>PSIZE,<sp/>MINC,<sp/>PINC,<sp/>CIRC<sp/>and<sp/>DIR<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>tmpreg<sp/>&amp;=<sp/><ref refid="group___d_m_a___private___defines_1gac2c71cc75907c7c3467907e766dc4188" kindref="member">CCR_CLEAR_Mask</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>DMAy<sp/>Channelx:<sp/>data<sp/>transfer,<sp/>data<sp/>size,<sp/>priority<sp/>level<sp/>and<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>DIR<sp/>bit<sp/>according<sp/>to<sp/>DMA_DIR<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>CIRC<sp/>bit<sp/>according<sp/>to<sp/>DMA_Mode<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PINC<sp/>bit<sp/>according<sp/>to<sp/>DMA_PeripheralInc<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>MINC<sp/>bit<sp/>according<sp/>to<sp/>DMA_MemoryInc<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PSIZE<sp/>bits<sp/>according<sp/>to<sp/>DMA_PeripheralDataSize<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>MSIZE<sp/>bits<sp/>according<sp/>to<sp/>DMA_MemoryDataSize<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PL<sp/>bits<sp/>according<sp/>to<sp/>DMA_Priority<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>MEM2MEM<sp/>bit<sp/>according<sp/>to<sp/>DMA_M2M<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>tmpreg<sp/>|=<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" kindref="member">DMA_DIR</ref><sp/>|<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" kindref="member">DMA_Mode</ref><sp/>|</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" kindref="member">DMA_PeripheralInc</ref><sp/>|<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" kindref="member">DMA_MemoryInc</ref><sp/>|</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" kindref="member">DMA_PeripheralDataSize</ref><sp/>|<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" kindref="member">DMA_MemoryDataSize</ref><sp/>|</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" kindref="member">DMA_Priority</ref><sp/>|<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" kindref="member">DMA_M2M</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>to<sp/>DMAy<sp/>Channelx<sp/>CCR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/>=<sp/>tmpreg;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------<sp/>DMAy<sp/>Channelx<sp/>CNDTR<sp/>Configuration<sp/>---------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>to<sp/>DMAy<sp/>Channelx<sp/>CNDTR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" kindref="member">CNDTR</ref><sp/>=<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" kindref="member">DMA_BufferSize</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------<sp/>DMAy<sp/>Channelx<sp/>CPAR<sp/>Configuration<sp/>----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>to<sp/>DMAy<sp/>Channelx<sp/>CPAR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1a8ce1c9c2742eaaa0e97ddbb3a06154cc" kindref="member">CPAR</ref><sp/>=<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a232af556de7c2eec9a82d448730bd86d" kindref="member">DMA_PeripheralBaseAddr</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------<sp/>DMAy<sp/>Channelx<sp/>CMAR<sp/>Configuration<sp/>----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>to<sp/>DMAy<sp/>Channelx<sp/>CMAR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1a7a9886b5f9e0edaf5ced3d1870b33ad7" kindref="member">CMAR</ref><sp/>=<sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a41e7d463f0cfbcedf3170d7d27d088df" kindref="member">DMA_MemoryBaseAddr</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga0f7f95f750a90a6824f4e9b6f58adc7e" kindref="member">DMA_StructInit</ref>(<ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref>*<sp/>DMA_InitStruct)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">/*--------------<sp/>Reset<sp/>DMA<sp/>init<sp/>structure<sp/>parameters<sp/>values<sp/>------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_PeripheralBaseAddr<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a232af556de7c2eec9a82d448730bd86d" kindref="member">DMA_PeripheralBaseAddr</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_MemoryBaseAddr<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a41e7d463f0cfbcedf3170d7d27d088df" kindref="member">DMA_MemoryBaseAddr</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_DIR<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a91b47435ccf4a40efa97bbbe631789e1" kindref="member">DMA_DIR</ref><sp/>=<sp/><ref refid="group___d_m_a__data__transfer__direction_1ga5ce120a044359410136695a2c05df68e" kindref="member">DMA_DIR_PeripheralSRC</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_BufferSize<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a999df57215b28b3b1b3b6836c4952ca5" kindref="member">DMA_BufferSize</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_PeripheralInc<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1ad4d427790f9a089ca0257a358fc263c2" kindref="member">DMA_PeripheralInc</ref><sp/>=<sp/><ref refid="group___d_m_a__peripheral__incremented__mode_1ga0fe3ff9c67bec802dd239fd17c3dbd31" kindref="member">DMA_PeripheralInc_Disable</ref>;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_MemoryInc<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1aaf69c680a297ec01a2ed613289e691a1" kindref="member">DMA_MemoryInc</ref><sp/>=<sp/><ref refid="group___d_m_a__memory__incremented__mode_1ga795a277c997048783a383b026f19a5ab" kindref="member">DMA_MemoryInc_Disable</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_PeripheralDataSize<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1afb46aaadfb80a7e19277c868bd252554" kindref="member">DMA_PeripheralDataSize</ref><sp/>=<sp/><ref refid="group___d_m_a__peripheral__data__size_1ga7577035ae4ff413164000227a8cea346" kindref="member">DMA_PeripheralDataSize_Byte</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_MemoryDataSize<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a74bb71921c4d198d6cf1979c120f694f" kindref="member">DMA_MemoryDataSize</ref><sp/>=<sp/><ref refid="group___d_m_a__memory__data__size_1gad6093bccb60ff9adf81e21c73c58ba17" kindref="member">DMA_MemoryDataSize_Byte</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_Mode<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a8adbe6f3e46471d109afaa3111dce220" kindref="member">DMA_Mode</ref><sp/>=<sp/><ref refid="group___d_m_a__circular__normal__mode_1ga36400f5b5095f1102ede4760d7a5959c" kindref="member">DMA_Mode_Normal</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_Priority<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1ab9a17bd51778478cbd728c868206dca0" kindref="member">DMA_Priority</ref><sp/>=<sp/><ref refid="group___d_m_a__priority__level_1gaf414e0aa8dd42aee6f83f88ab6175179" kindref="member">DMA_Priority_Low</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>DMA_M2M<sp/>member<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>DMA_InitStruct-&gt;<ref refid="struct_d_m_a___init_type_def_1a57944cc447e6fcde4e9aa6229d3b4c5d" kindref="member">DMA_M2M</ref><sp/>=<sp/><ref refid="group___d_m_a__memory__to__memory_1ga86e0a7076f0badd509fac6576f3b5355" kindref="member">DMA_M2M_Disable</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="group___d_m_a___private___functions_1ga8e7cb6b9ae5f142e2961df879cdaba65" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga8e7cb6b9ae5f142e2961df879cdaba65" kindref="member">DMA_Cmd</ref>(<ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref>*<sp/>DMAy_Channelx,<sp/><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" kindref="member">IS_DMA_ALL_PERIPH</ref>(DMAy_Channelx));</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NewState<sp/>!=<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" kindref="member">DISABLE</ref>)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>the<sp/>selected<sp/>DMAy<sp/>Channelx<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/>|=<sp/><ref refid="group___peripheral___registers___bits___definition_1ga387640bb30564cbc9479b9e4207d75a9" kindref="member">DMA_CCR1_EN</ref>;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>the<sp/>selected<sp/>DMAy<sp/>Channelx<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/>&amp;=<sp/>(uint16_t)(~<ref refid="group___peripheral___registers___bits___definition_1ga387640bb30564cbc9479b9e4207d75a9" kindref="member">DMA_CCR1_EN</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="group___d_m_a___private___functions_1ga0bb60360be9cd57f96399be2f3b5eb2b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga0bb60360be9cd57f96399be2f3b5eb2b" kindref="member">DMA_ITConfig</ref>(<ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref>*<sp/>DMAy_Channelx,<sp/>uint32_t<sp/>DMA_IT,<sp/><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" kindref="member">IS_DMA_ALL_PERIPH</ref>(DMAy_Channelx));</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__interrupts__definition_1ga47f6af7da302c19aba24516037d305e7" kindref="member">IS_DMA_CONFIG_IT</ref>(DMA_IT));</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NewState<sp/>!=<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" kindref="member">DISABLE</ref>)</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>the<sp/>selected<sp/>DMA<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/>|=<sp/>DMA_IT;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>the<sp/>selected<sp/>DMA<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" kindref="member">CCR</ref><sp/>&amp;=<sp/>~DMA_IT;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="group___d_m_a___private___functions_1gade5d9e532814eaa46514cb385fdff709" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1gade5d9e532814eaa46514cb385fdff709" kindref="member">DMA_SetCurrDataCounter</ref>(<ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref>*<sp/>DMAy_Channelx,<sp/>uint16_t<sp/>DataNumber)</highlight></codeline>
+<codeline lineno="354"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" kindref="member">IS_DMA_ALL_PERIPH</ref>(DMAy_Channelx));</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------<sp/>DMAy<sp/>Channelx<sp/>CNDTR<sp/>Configuration<sp/>---------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>to<sp/>DMAy<sp/>Channelx<sp/>CNDTR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/>DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" kindref="member">CNDTR</ref><sp/>=<sp/>DataNumber;<sp/><sp/></highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="group___d_m_a___private___functions_1ga511b4c402d1ff32d53f28736956cac5d" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="group___d_m_a___private___functions_1ga511b4c402d1ff32d53f28736956cac5d" kindref="member">DMA_GetCurrDataCounter</ref>(<ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref>*<sp/>DMAy_Channelx)</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8" kindref="member">IS_DMA_ALL_PERIPH</ref>(DMAy_Channelx));</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>number<sp/>of<sp/>remaining<sp/>data<sp/>units<sp/>for<sp/>DMAy<sp/>Channelx<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((uint16_t)(DMAy_Channelx-&gt;<ref refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" kindref="member">CNDTR</ref>));</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433" refid="group___d_m_a___private___functions_1gafb30b7a891834c267eefd5d30b688a9f" refkind="member"><highlight class="normal"><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/><ref refid="group___d_m_a___private___functions_1gafb30b7a891834c267eefd5d30b688a9f" kindref="member">DMA_GetFlagStatus</ref>(uint32_t<sp/>DMAy_FLAG)</highlight></codeline>
+<codeline lineno="434"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmpreg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__flags__definition_1ga98e421aa0a15fbeecb4cab3612985676" kindref="member">IS_DMA_GET_FLAG</ref>(DMAy_FLAG));</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calculate<sp/>the<sp/>used<sp/>DMAy<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((DMAy_FLAG<sp/>&amp;<sp/><ref refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" kindref="member">FLAG_Mask</ref>)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>DMA2<sp/>ISR<sp/>register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;ISR<sp/>;</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>DMA1<sp/>ISR<sp/>register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;ISR<sp/>;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>status<sp/>of<sp/>the<sp/>specified<sp/>DMAy<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tmpreg<sp/>&amp;<sp/>DMAy_FLAG)<sp/>!=<sp/>(uint32_t)RESET)</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DMAy_FLAG<sp/>is<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" kindref="member">SET</ref>;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DMAy_FLAG<sp/>is<sp/>reset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>DMAy_FLAG<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523" refid="group___d_m_a___private___functions_1ga25cdca360f309c8ceb7c206cd9ad9119" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga25cdca360f309c8ceb7c206cd9ad9119" kindref="member">DMA_ClearFlag</ref>(uint32_t<sp/>DMAy_FLAG)</highlight></codeline>
+<codeline lineno="524"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__flags__definition_1ga4b33e418489c9a3c9adcbdbaca93e4a3" kindref="member">IS_DMA_CLEAR_FLAG</ref>(DMAy_FLAG));</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calculate<sp/>the<sp/>used<sp/>DMAy<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((DMAy_FLAG<sp/>&amp;<sp/><ref refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" kindref="member">FLAG_Mask</ref>)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>selected<sp/>DMAy<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>=<sp/>DMAy_FLAG;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>selected<sp/>DMAy<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>=<sp/>DMAy_FLAG;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="539"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="595" refid="group___d_m_a___private___functions_1ga9287331247150fe84d03ecd7ad8adb52" refkind="member"><highlight class="normal"><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref><sp/><ref refid="group___d_m_a___private___functions_1ga9287331247150fe84d03ecd7ad8adb52" kindref="member">DMA_GetITStatus</ref>(uint32_t<sp/>DMAy_IT)</highlight></codeline>
+<codeline lineno="596"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmpreg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__interrupts__definition_1gaaafa1bd74bc5e78e276c731faa8eed22" kindref="member">IS_DMA_GET_IT</ref>(DMAy_IT));</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calculate<sp/>the<sp/>used<sp/>DMA<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((DMAy_IT<sp/>&amp;<sp/><ref refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" kindref="member">FLAG_Mask</ref>)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>DMA2<sp/>ISR<sp/>register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;ISR;</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>DMA1<sp/>ISR<sp/>register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;ISR;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>status<sp/>of<sp/>the<sp/>specified<sp/>DMAy<sp/>interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tmpreg<sp/>&amp;<sp/>DMAy_IT)<sp/>!=<sp/>(uint32_t)RESET)</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DMAy_IT<sp/>is<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" kindref="member">SET</ref>;</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DMAy_IT<sp/>is<sp/>reset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>DMA_IT<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="628"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684" refid="group___d_m_a___private___functions_1ga91a7340e5b334a942f3eb1e05ed5f67a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_m_a___private___functions_1ga91a7340e5b334a942f3eb1e05ed5f67a" kindref="member">DMA_ClearITPendingBit</ref>(uint32_t<sp/>DMAy_IT)</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___d_m_a__interrupts__definition_1ga390481b083355ed774b04f70a42f0dfb" kindref="member">IS_DMA_CLEAR_IT</ref>(DMAy_IT));</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calculate<sp/>the<sp/>used<sp/>DMAy<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((DMAy_IT<sp/>&amp;<sp/><ref refid="group___d_m_a___private___defines_1ga2be62bf481cd44de9ab604efe5595ff6" kindref="member">FLAG_Mask</ref>)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>selected<sp/>DMAy<sp/>interrupt<sp/>pending<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga506520140eec1708bc7570c49bdf972d" kindref="member">DMA2</ref>-&gt;IFCR<sp/>=<sp/>DMAy_IT;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>selected<sp/>DMAy<sp/>interrupt<sp/>pending<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1gacc16d2a5937f7585320a98f7f6b578f9" kindref="member">DMA1</ref>-&gt;IFCR<sp/>=<sp/>DMAy_IT;</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="700"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c"/>
+  </compounddef>
+</doxygen>

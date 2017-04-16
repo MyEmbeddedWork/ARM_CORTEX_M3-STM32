@@ -1,0 +1,84 @@
+.TH "TIM_BDTRInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_BDTRInitTypeDef \- BDTR structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_tim\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBTIM_OSSRState\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTIM_OSSIState\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTIM_LOCKLevel\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTIM_DeadTime\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTIM_Break\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTIM_BreakPolarity\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTIM_AutomaticOutput\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+BDTR structure definition\&. 
+
+
+.PP
+\fBNote:\fP
+.RS 4
+This structure is used only with TIM1 and TIM8\&. 
+.RE
+.PP
+
+.PP
+Definition at line 145 of file stm32f10x_tim\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_AutomaticOutput"
+Specifies whether the TIM Automatic Output feature is enabled or not\&. This parameter can be a value of \fBTIM_AOE_Bit_Set_Reset\fP 
+.PP
+Definition at line 167 of file stm32f10x_tim\&.h\&.
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_Break"
+Specifies whether the TIM Break input is enabled or not\&. This parameter can be a value of \fBBreak_Input_enable_disable\fP 
+.PP
+Definition at line 161 of file stm32f10x_tim\&.h\&.
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_BreakPolarity"
+Specifies the TIM Break Input pin polarity\&. This parameter can be a value of \fBBreak_Polarity\fP 
+.PP
+Definition at line 164 of file stm32f10x_tim\&.h\&.
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_DeadTime"
+Specifies the delay time between the switching-off and the switching-on of the outputs\&. This parameter can be a number between 0x00 and 0xFF 
+.PP
+Definition at line 157 of file stm32f10x_tim\&.h\&.
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_LOCKLevel"
+Specifies the LOCK level parameters\&. This parameter can be a value of \fBLock_level\fP 
+.PP
+Definition at line 154 of file stm32f10x_tim\&.h\&.
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_OSSIState"
+Specifies the Off-State used in Idle state\&. This parameter can be a value of \fBOSSI_Off_State_Selection_for_Idle_mode_state\fP 
+.PP
+Definition at line 151 of file stm32f10x_tim\&.h\&.
+.SS "uint16_t TIM_BDTRInitTypeDef::TIM_OSSRState"
+Specifies the Off-State selection used in Run mode\&. This parameter can be a value of \fBOSSR_Off_State_Selection_for_Run_mode_state\fP 
+.PP
+Definition at line 148 of file stm32f10x_tim\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

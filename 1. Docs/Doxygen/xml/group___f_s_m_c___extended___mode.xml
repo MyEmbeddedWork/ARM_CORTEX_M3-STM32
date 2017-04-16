@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___extended___mode" kind="group">
+    <compoundname>FSMC_Extended_Mode</compoundname>
+    <title>FSMC_Extended_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___extended___mode_1ga5a1f1acdc44328158f59012748980dd3" prot="public" static="no">
+        <name>FSMC_ExtendedMode_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="427" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___extended___mode_1gaef9ff4c81a52fdb0471d2c4422271d2a" prot="public" static="no">
+        <name>FSMC_ExtendedMode_Enable</name>
+        <initializer>((uint32_t)0x00004000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="428" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___extended___mode_1ga79849ea07bf2a8f09989a6babd9e66e2" prot="public" static="no">
+        <name>IS_FSMC_EXTENDED_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___f_s_m_c___extended___mode_1ga5a1f1acdc44328158f59012748980dd3" kindref="member">FSMC_ExtendedMode_Disable</ref>) || \
+                                     ((MODE) == <ref refid="group___f_s_m_c___extended___mode_1gaef9ff4c81a52fdb0471d2c4422271d2a" kindref="member">FSMC_ExtendedMode_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="430" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

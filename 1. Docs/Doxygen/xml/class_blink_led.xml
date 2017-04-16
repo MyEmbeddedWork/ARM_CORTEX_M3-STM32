@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_blink_led" kind="class" language="C++" prot="public">
+    <compoundname>BlinkLed</compoundname>
+    <includes refid="_blink_led_8h" local="no">BlinkLed.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_blink_led_1a97362f01ff940033431d666f7798dce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BlinkLed::BlinkLed</definition>
+        <argsstring>()=default</argsstring>
+        <name>BlinkLed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BlinkLed::powerUp</definition>
+        <argsstring>()</argsstring>
+        <name>powerUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="34" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/src/BlinkLed.cpp" bodystart="11" bodyend="26"/>
+        <references refid="group___r_c_c___exported___functions_1ga56ff55caf8d835351916b40dd030bc87" compoundref="stm32f10x__rcc_8c" startline="1095" endline="1108">RCC_APB2PeriphClockCmd</references>
+        <references refid="_blink_led_8h_1a3ac41105ecbde5b7a1dacfd82c36d857" compoundref="_blink_led_8h" startline="25">BLINK_RCC_MASKx</references>
+        <references refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" compoundref="_blink_led_8h" startline="19">BLINK_PORT_NUMBER</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="struct_g_p_i_o___init_type_def_1a35fc26fc58226126c5b99478a472e5e9" compoundref="stm32f10x__gpio_8h" startline="93">GPIO_InitTypeDef::GPIO_Pin</references>
+        <references refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" compoundref="_blink_led_8h" startline="24">BLINK_PIN_MASK</references>
+        <references refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" compoundref="_blink_led_8h" startline="20">BLINK_PIN_NUMBER</references>
+        <references refid="struct_g_p_i_o___init_type_def_1ac05832cacebc861a9acf5294d702c16b" compoundref="stm32f10x__gpio_8h" startline="96">GPIO_InitTypeDef::GPIO_Speed</references>
+        <references refid="group___g_p_i_o___exported___types_1gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581" compoundref="stm32f10x__gpio_8h" startline="62">GPIO_Speed_50MHz</references>
+        <references refid="struct_g_p_i_o___init_type_def_1a55bd77e335c2bfeec9caa5dc922b791b" compoundref="stm32f10x__gpio_8h" startline="99">GPIO_InitTypeDef::GPIO_Mode</references>
+        <references refid="group___g_p_i_o___exported___types_1gga1347339e1c84a196fabbb31205eec5d4a0eee8242abb8f2f8a97bbdf0f1dc59b2" compoundref="stm32f10x__gpio_8h" startline="77">GPIO_Mode_Out_PP</references>
+        <references refid="group___g_p_i_o___exported___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</references>
+        <references refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" compoundref="_blink_led_8h" startline="23">BLINK_GPIOx</references>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_blink_led_1ae5768d48c161e9150c97e19c369b64de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BlinkLed::__attribute__</definition>
+        <argsstring>((always_inline)) turnOn()</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="37" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="37" bodyend="47"/>
+        <references refid="group___g_p_i_o___exported___functions_1ga6fcd35b207a66608dd2c9d7de9247dc8" compoundref="stm32f10x__gpio_8c" startline="374" endline="381">GPIO_ResetBits</references>
+        <references refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" compoundref="_blink_led_8h" startline="23">BLINK_GPIOx</references>
+        <references refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" compoundref="_blink_led_8h" startline="19">BLINK_PORT_NUMBER</references>
+        <references refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" compoundref="_blink_led_8h" startline="24">BLINK_PIN_MASK</references>
+        <references refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" compoundref="_blink_led_8h" startline="20">BLINK_PIN_NUMBER</references>
+        <references refid="group___g_p_i_o___exported___functions_1ga9e1352eed7c6620e18af2d86f6b6ff8e" compoundref="stm32f10x__gpio_8c" startline="358" endline="365">GPIO_SetBits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_blink_led_1a9f8f662f733e131e6477161ac785f665" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BlinkLed::__attribute__</definition>
+        <argsstring>((always_inline)) turnOff()</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="50" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="50" bodyend="60"/>
+        <references refid="group___g_p_i_o___exported___functions_1ga9e1352eed7c6620e18af2d86f6b6ff8e" compoundref="stm32f10x__gpio_8c" startline="358" endline="365">GPIO_SetBits</references>
+        <references refid="_blink_led_8h_1ae33d9eec36eda04d9dcab64b88087fbb" compoundref="_blink_led_8h" startline="23">BLINK_GPIOx</references>
+        <references refid="_blink_led_8h_1a23f303591a2ee1fbbdc690b3f9440027" compoundref="_blink_led_8h" startline="19">BLINK_PORT_NUMBER</references>
+        <references refid="_blink_led_8h_1af091155a3d1b0ce24cb4f5ea9627e863" compoundref="_blink_led_8h" startline="24">BLINK_PIN_MASK</references>
+        <references refid="_blink_led_8h_1ae904f69d4c5d518ebdb78f55531b685d" compoundref="_blink_led_8h" startline="20">BLINK_PIN_NUMBER</references>
+        <references refid="group___g_p_i_o___exported___functions_1ga6fcd35b207a66608dd2c9d7de9247dc8" compoundref="stm32f10x__gpio_8c" startline="374" endline="381">GPIO_ResetBits</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" line="29" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" bodystart="28" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_blink_led_1ae5768d48c161e9150c97e19c369b64de" prot="public" virt="non-virtual"><scope>BlinkLed</scope><name>__attribute__</name></member>
+      <member refid="class_blink_led_1a9f8f662f733e131e6477161ac785f665" prot="public" virt="non-virtual"><scope>BlinkLed</scope><name>__attribute__</name></member>
+      <member refid="class_blink_led_1a97362f01ff940033431d666f7798dce1" prot="public" virt="non-virtual"><scope>BlinkLed</scope><name>BlinkLed</name></member>
+      <member refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" prot="public" virt="non-virtual"><scope>BlinkLed</scope><name>powerUp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

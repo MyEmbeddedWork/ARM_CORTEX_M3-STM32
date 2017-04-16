@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___a_d_c__interrupts__definition" kind="group">
+    <compoundname>ADC_interrupts_definition</compoundname>
+    <title>ADC_interrupts_definition</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___a_d_c__interrupts__definition_1ga0ad335d835f54415194d448019569e00" prot="public" static="no">
+        <name>ADC_IT_EOC</name>
+        <initializer>((uint16_t)0x0220)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="319" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__interrupts__definition_1ga2f5c7f9900c24250a0c6ccaa7cbca946" prot="public" static="no">
+        <name>ADC_IT_AWD</name>
+        <initializer>((uint16_t)0x0140)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="320" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__interrupts__definition_1gad439fc0cd69706704d47aeabfeddb631" prot="public" static="no">
+        <name>ADC_IT_JEOC</name>
+        <initializer>((uint16_t)0x0480)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="321" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__interrupts__definition_1gaf5f8d35930becff402eeb8220641432f" prot="public" static="no">
+        <name>IS_ADC_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint16_t)0xF81F) == 0x00) &amp;&amp; ((IT) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="323" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c__interrupts__definition_1gacae69f04de1a0033f065864d868c006e" prot="public" static="no">
+        <name>IS_ADC_GET_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___a_d_c__interrupts__definition_1ga0ad335d835f54415194d448019569e00" kindref="member">ADC_IT_EOC</ref>) || ((IT) == <ref refid="group___a_d_c__interrupts__definition_1ga2f5c7f9900c24250a0c6ccaa7cbca946" kindref="member">ADC_IT_AWD</ref>) || \
+                           ((IT) == <ref refid="group___a_d_c__interrupts__definition_1gad439fc0cd69706704d47aeabfeddb631" kindref="member">ADC_IT_JEOC</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" line="325" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

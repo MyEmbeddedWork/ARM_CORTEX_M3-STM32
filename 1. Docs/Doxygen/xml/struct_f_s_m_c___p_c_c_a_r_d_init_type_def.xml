@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FSMC_PCCARDInitTypeDef</compoundname>
+    <includes refid="stm32f10x__fsmc_8h" local="no">stm32f10x_fsmc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a3ffd8c627ffe3ac90dfbfe93a8b97c26" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_PCCARDInitTypeDef::FSMC_Waitfeature</definition>
+        <argsstring></argsstring>
+        <name>FSMC_Waitfeature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables or disables the Wait feature for the Memory Bank. This parameter can be any value of <ref refid="group___f_s_m_c___wait__feature" kindref="compound">FSMC_Wait_feature</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="219" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="219" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a15db9675791f6f9c7fd82fe1084ff694" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_PCCARDInitTypeDef::FSMC_TCLRSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_TCLRSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK cycles to configure the delay between CLE low and RE low. This parameter can be a value between 0 and 0xFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="222" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="222" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1ac83f977e01623595e0aa8dd0b1eb3fcc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_PCCARDInitTypeDef::FSMC_TARSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_TARSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK cycles to configure the delay between ALE low and RE low. This parameter can be a number between 0x0 and 0xFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="226" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="226" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a87cb99ebe9b5ed570c6467abc9c2ef6d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def" kindref="compound">FSMC_NAND_PCCARDTimingInitTypeDef</ref> *</type>
+        <definition>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_PCCARDInitTypeDef::FSMC_CommonSpaceTimingStruct</definition>
+        <argsstring></argsstring>
+        <name>FSMC_CommonSpaceTimingStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FSMC Common Space Timing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="231" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="231" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1aee510f2e6e6ef18e7f5eedfed702f697" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def" kindref="compound">FSMC_NAND_PCCARDTimingInitTypeDef</ref> *</type>
+        <definition>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_PCCARDInitTypeDef::FSMC_AttributeSpaceTimingStruct</definition>
+        <argsstring></argsstring>
+        <name>FSMC_AttributeSpaceTimingStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FSMC Attribute Space Timing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="233" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="233" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1abd9b9e8d7623829a40e5255b0949a3a1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def" kindref="compound">FSMC_NAND_PCCARDTimingInitTypeDef</ref> *</type>
+        <definition>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_PCCARDInitTypeDef::FSMC_IOSpaceTimingStruct</definition>
+        <argsstring></argsstring>
+        <name>FSMC_IOSpaceTimingStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FSMC IO Space Timing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="235" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="235" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1gacee1351363e7700a296faa1734a910aa" compoundref="stm32f10x__fsmc_8c" startline="328" endline="372">FSMC_PCCARDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga7a64ba0e0545b3f1913c9d1d28c05e62" compoundref="stm32f10x__fsmc_8c" startline="444" endline="462">FSMC_PCCARDStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FSMC PCCARD Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="221">
+        <label>FSMC_NAND_PCCARDTimingInitTypeDef</label>
+        <link refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def"/>
+      </node>
+      <node id="220">
+        <label>FSMC_PCCARDInitTypeDef</label>
+        <link refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def"/>
+        <childnode refid="221" relation="usage">
+          <edgelabel>FSMC_AttributeSpaceTimingStruct</edgelabel>
+          <edgelabel>FSMC_CommonSpaceTimingStruct</edgelabel>
+          <edgelabel>FSMC_IOSpaceTimingStruct</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="218" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="217" bodyend="236"/>
+    <listofallmembers>
+      <member refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1aee510f2e6e6ef18e7f5eedfed702f697" prot="public" virt="non-virtual"><scope>FSMC_PCCARDInitTypeDef</scope><name>FSMC_AttributeSpaceTimingStruct</name></member>
+      <member refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a87cb99ebe9b5ed570c6467abc9c2ef6d" prot="public" virt="non-virtual"><scope>FSMC_PCCARDInitTypeDef</scope><name>FSMC_CommonSpaceTimingStruct</name></member>
+      <member refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1abd9b9e8d7623829a40e5255b0949a3a1" prot="public" virt="non-virtual"><scope>FSMC_PCCARDInitTypeDef</scope><name>FSMC_IOSpaceTimingStruct</name></member>
+      <member refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1ac83f977e01623595e0aa8dd0b1eb3fcc" prot="public" virt="non-virtual"><scope>FSMC_PCCARDInitTypeDef</scope><name>FSMC_TARSetupTime</name></member>
+      <member refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a15db9675791f6f9c7fd82fe1084ff694" prot="public" virt="non-virtual"><scope>FSMC_PCCARDInitTypeDef</scope><name>FSMC_TCLRSetupTime</name></member>
+      <member refid="struct_f_s_m_c___p_c_c_a_r_d_init_type_def_1a3ffd8c627ffe3ac90dfbfe93a8b97c26" prot="public" virt="non-virtual"><scope>FSMC_PCCARDInitTypeDef</scope><name>FSMC_Waitfeature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

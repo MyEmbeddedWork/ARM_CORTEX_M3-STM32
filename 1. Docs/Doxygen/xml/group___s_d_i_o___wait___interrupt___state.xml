@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___wait___interrupt___state" kind="group">
+    <compoundname>SDIO_Wait_Interrupt_State</compoundname>
+    <title>SDIO_Wait_Interrupt_State</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___wait___interrupt___state_1ga266294e1ffd7a4b45e62bff753ca44b2" prot="public" static="no">
+        <name>SDIO_Wait_No</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDIO No Wait, TimeOut is enabled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="259" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___wait___interrupt___state_1ga3914bbe26a656c8e151272ccdc12c71c" prot="public" static="no">
+        <name>SDIO_Wait_IT</name>
+        <initializer>((uint32_t)0x00000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDIO Wait Interrupt Request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="260" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___wait___interrupt___state_1ga2a4104023a7f8403ddd159ec3bbb8592" prot="public" static="no">
+        <name>SDIO_Wait_Pend</name>
+        <initializer>((uint32_t)0x00000200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDIO Wait End of transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="261" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___wait___interrupt___state_1ga7ee5c289c8e06a76b849808d15b03810" prot="public" static="no">
+        <name>IS_SDIO_WAIT</name>
+        <param><defname>WAIT</defname></param>
+        <initializer>(((WAIT) == <ref refid="group___s_d_i_o___wait___interrupt___state_1ga266294e1ffd7a4b45e62bff753ca44b2" kindref="member">SDIO_Wait_No</ref>) || ((WAIT) == <ref refid="group___s_d_i_o___wait___interrupt___state_1ga3914bbe26a656c8e151272ccdc12c71c" kindref="member">SDIO_Wait_IT</ref>) || \
+                            ((WAIT) == <ref refid="group___s_d_i_o___wait___interrupt___state_1ga2a4104023a7f8403ddd159ec3bbb8592" kindref="member">SDIO_Wait_Pend</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="262" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

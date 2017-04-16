@@ -1,0 +1,263 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c \- This file provides all the SDIO firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_sdio\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_OFFSET\fP   (\fBSDIO_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCLKCR_OFFSET\fP   (\fBSDIO_OFFSET\fP + 0x04)"
+.br
+.ti -1c
+.RI "#define \fBCLKEN_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCLKCR_CLKEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCLKCR_OFFSET\fP * 32) + (\fBCLKEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCMD_OFFSET\fP   (\fBSDIO_OFFSET\fP + 0x0C)"
+.br
+.ti -1c
+.RI "#define \fBSDIOSUSPEND_BitNumber\fP   0x0B"
+.br
+.ti -1c
+.RI "#define \fBCMD_SDIOSUSPEND_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBSDIOSUSPEND_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBENCMDCOMPL_BitNumber\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBCMD_ENCMDCOMPL_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBENCMDCOMPL_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBNIEN_BitNumber\fP   0x0D"
+.br
+.ti -1c
+.RI "#define \fBCMD_NIEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBNIEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBATACMD_BitNumber\fP   0x0E"
+.br
+.ti -1c
+.RI "#define \fBCMD_ATACMD_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCMD_OFFSET\fP * 32) + (\fBATACMD_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_OFFSET\fP   (\fBSDIO_OFFSET\fP + 0x2C)"
+.br
+.ti -1c
+.RI "#define \fBDMAEN_BitNumber\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_DMAEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBDMAEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRWSTART_BitNumber\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_RWSTART_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWSTART_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRWSTOP_BitNumber\fP   0x09"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_RWSTOP_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWSTOP_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBRWMOD_BitNumber\fP   0x0A"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_RWMOD_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBRWMOD_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBSDIOEN_BitNumber\fP   0x0B"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_SDIOEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBDCTRL_OFFSET\fP * 32) + (\fBSDIOEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCLKCR_CLEAR_MASK\fP   ((uint32_t)0xFFFF8100)"
+.br
+.ti -1c
+.RI "#define \fBPWR_PWRCTRL_MASK\fP   ((uint32_t)0xFFFFFFFC)"
+.br
+.ti -1c
+.RI "#define \fBDCTRL_CLEAR_MASK\fP   ((uint32_t)0xFFFFFF08)"
+.br
+.ti -1c
+.RI "#define \fBCMD_CLEAR_MASK\fP   ((uint32_t)0xFFFFF800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP_ADDR\fP   ((uint32_t)(\fBSDIO_BASE\fP + 0x14))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSDIO_DeInit\fP (void)"
+.br
+.RI "Deinitializes the SDIO peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBSDIO_Init\fP (\fBSDIO_InitTypeDef\fP *SDIO_InitStruct)"
+.br
+.RI "Initializes the SDIO peripheral according to the specified parameters in the SDIO_InitStruct\&. "
+.ti -1c
+.RI "void \fBSDIO_StructInit\fP (\fBSDIO_InitTypeDef\fP *SDIO_InitStruct)"
+.br
+.RI "Fills each SDIO_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBSDIO_ClockCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO Clock\&. "
+.ti -1c
+.RI "void \fBSDIO_SetPowerState\fP (uint32_t SDIO_PowerState)"
+.br
+.RI "Sets the power status of the controller\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetPowerState\fP (void)"
+.br
+.RI "Gets the power status of the controller\&. "
+.ti -1c
+.RI "void \fBSDIO_ITConfig\fP (uint32_t SDIO_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO interrupts\&. "
+.ti -1c
+.RI "void \fBSDIO_DMACmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO DMA request\&. "
+.ti -1c
+.RI "void \fBSDIO_SendCommand\fP (\fBSDIO_CmdInitTypeDef\fP *SDIO_CmdInitStruct)"
+.br
+.RI "Initializes the SDIO Command according to the specified parameters in the SDIO_CmdInitStruct and send the command\&. "
+.ti -1c
+.RI "void \fBSDIO_CmdStructInit\fP (\fBSDIO_CmdInitTypeDef\fP *SDIO_CmdInitStruct)"
+.br
+.RI "Fills each SDIO_CmdInitStruct member with its default value\&. "
+.ti -1c
+.RI "uint8_t \fBSDIO_GetCommandResponse\fP (void)"
+.br
+.RI "Returns command index of last command for which response received\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetResponse\fP (uint32_t SDIO_RESP)"
+.br
+.RI "Returns response received from the card for the last command\&. "
+.ti -1c
+.RI "void \fBSDIO_DataConfig\fP (\fBSDIO_DataInitTypeDef\fP *SDIO_DataInitStruct)"
+.br
+.RI "Initializes the SDIO data path according to the specified parameters in the SDIO_DataInitStruct\&. "
+.ti -1c
+.RI "void \fBSDIO_DataStructInit\fP (\fBSDIO_DataInitTypeDef\fP *SDIO_DataInitStruct)"
+.br
+.RI "Fills each SDIO_DataInitStruct member with its default value\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetDataCounter\fP (void)"
+.br
+.RI "Returns number of remaining data bytes to be transferred\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_ReadData\fP (void)"
+.br
+.RI "Read one data word from Rx FIFO\&. "
+.ti -1c
+.RI "void \fBSDIO_WriteData\fP (uint32_t Data)"
+.br
+.RI "Write one data word to Tx FIFO\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetFIFOCount\fP (void)"
+.br
+.RI "Returns the number of words left to be written to or read from FIFO\&. "
+.ti -1c
+.RI "void \fBSDIO_StartSDIOReadWait\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Starts the SD I/O Read Wait operation\&. "
+.ti -1c
+.RI "void \fBSDIO_StopSDIOReadWait\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Stops the SD I/O Read Wait operation\&. "
+.ti -1c
+.RI "void \fBSDIO_SetSDIOReadWaitMode\fP (uint32_t SDIO_ReadWaitMode)"
+.br
+.RI "Sets one of the two options of inserting read wait interval\&. "
+.ti -1c
+.RI "void \fBSDIO_SetSDIOOperation\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SD I/O Mode Operation\&. "
+.ti -1c
+.RI "void \fBSDIO_SendSDIOSuspendCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SD I/O Mode suspend command sending\&. "
+.ti -1c
+.RI "void \fBSDIO_CommandCompletionCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the command completion signal\&. "
+.ti -1c
+.RI "void \fBSDIO_CEATAITCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CE-ATA interrupt\&. "
+.ti -1c
+.RI "void \fBSDIO_SendCEATACmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Sends CE-ATA command (CMD61)\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBSDIO_GetFlagStatus\fP (uint32_t SDIO_FLAG)"
+.br
+.RI "Checks whether the specified SDIO flag is set or not\&. "
+.ti -1c
+.RI "void \fBSDIO_ClearFlag\fP (uint32_t SDIO_FLAG)"
+.br
+.RI "Clears the SDIO's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBSDIO_GetITStatus\fP (uint32_t SDIO_IT)"
+.br
+.RI "Checks whether the specified SDIO interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBSDIO_ClearITPendingBit\fP (uint32_t SDIO_IT)"
+.br
+.RI "Clears the SDIO's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the SDIO firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_sdio\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

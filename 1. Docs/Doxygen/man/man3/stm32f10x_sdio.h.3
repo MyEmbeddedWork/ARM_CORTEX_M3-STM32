@@ -1,0 +1,541 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h \- This file contains all the functions prototypes for the SDIO firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSDIO_InitTypeDef\fP"
+.br
+.ti -1c
+.RI "struct \fBSDIO_CmdInitTypeDef\fP"
+.br
+.ti -1c
+.RI "struct \fBSDIO_DataInitTypeDef\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSDIO_ClockEdge_Rising\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ClockEdge_Falling\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLOCK_EDGE\fP(EDGE)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ClockBypass_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ClockBypass_Enable\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLOCK_BYPASS\fP(BYPASS)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ClockPowerSave_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ClockPowerSave_Enable\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLOCK_POWER_SAVE\fP(SAVE)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_BusWide_1b\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_BusWide_4b\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_BusWide_8b\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_BUS_WIDE\fP(WIDE)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_HardwareFlowControl_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_HardwareFlowControl_Enable\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_HARDWARE_FLOW_CONTROL\fP(CONTROL)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_PowerState_OFF\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_PowerState_ON\fP   ((uint32_t)0x00000003)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_POWER_STATE\fP(STATE)   (((STATE) == \fBSDIO_PowerState_OFF\fP) || ((STATE) == \fBSDIO_PowerState_ON\fP))"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CCRCFAIL\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DCRCFAIL\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CTIMEOUT\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DTIMEOUT\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXUNDERR\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXOVERR\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CMDREND\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CMDSENT\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DATAEND\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_STBITERR\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_DBCKEND\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CMDACT\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXACT\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXACT\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXFIFOHE\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXFIFOHF\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXFIFOF\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXFIFOF\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXFIFOE\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXFIFOE\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_TXDAVL\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_RXDAVL\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_SDIOIT\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_IT_CEATAEND\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_IT\fP(IT)   ((((IT) & (uint32_t)0xFF000000) == 0x00) && ((IT) != (uint32_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CMD_INDEX\fP(INDEX)   ((INDEX) < 0x40)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_Response_No\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_Response_Short\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_Response_Long\fP   ((uint32_t)0x000000C0)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_RESPONSE\fP(RESPONSE)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_Wait_No\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_Wait_IT\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_Wait_Pend\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_WAIT\fP(WAIT)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_CPSM_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_CPSM_Enable\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CPSM\fP(CPSM)   (((CPSM) == \fBSDIO_CPSM_Enable\fP) || ((CPSM) == \fBSDIO_CPSM_Disable\fP))"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP2\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP3\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_RESP4\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_RESP\fP(RESP)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_DATA_LENGTH\fP(LENGTH)   ((LENGTH) <= 0x01FFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_1b\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_2b\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_4b\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_8b\fP   ((uint32_t)0x00000030)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_16b\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_32b\fP   ((uint32_t)0x00000050)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_64b\fP   ((uint32_t)0x00000060)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_128b\fP   ((uint32_t)0x00000070)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_256b\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_512b\fP   ((uint32_t)0x00000090)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_1024b\fP   ((uint32_t)0x000000A0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_2048b\fP   ((uint32_t)0x000000B0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_4096b\fP   ((uint32_t)0x000000C0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_8192b\fP   ((uint32_t)0x000000D0)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DataBlockSize_16384b\fP   ((uint32_t)0x000000E0)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_BLOCK_SIZE\fP(SIZE)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_TransferDir_ToCard\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_TransferDir_ToSDIO\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_TRANSFER_DIR\fP(DIR)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_TransferMode_Block\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_TransferMode_Stream\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_TRANSFER_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DPSM_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_DPSM_Enable\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_DPSM\fP(DPSM)   (((DPSM) == \fBSDIO_DPSM_Enable\fP) || ((DPSM) == \fBSDIO_DPSM_Disable\fP))"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CCRCFAIL\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DCRCFAIL\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CTIMEOUT\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DTIMEOUT\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXUNDERR\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXOVERR\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CMDREND\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CMDSENT\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DATAEND\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_STBITERR\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_DBCKEND\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CMDACT\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXACT\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXACT\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXFIFOHE\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXFIFOHF\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXFIFOF\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXFIFOF\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXFIFOE\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXFIFOE\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_TXDAVL\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_RXDAVL\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_SDIOIT\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_FLAG_CEATAEND\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint32_t)0xFF3FF800) == 0x00) && ((FLAG) != (uint32_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_CLEAR_IT\fP(IT)   ((((IT) & (uint32_t)0xFF3FF800) == 0x00) && ((IT) != (uint32_t)0x00))"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ReadWaitMode_CLK\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBSDIO_ReadWaitMode_DATA2\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SDIO_READWAIT_MODE\fP(MODE)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSDIO_DeInit\fP (void)"
+.br
+.RI "Deinitializes the SDIO peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBSDIO_Init\fP (\fBSDIO_InitTypeDef\fP *SDIO_InitStruct)"
+.br
+.RI "Initializes the SDIO peripheral according to the specified parameters in the SDIO_InitStruct\&. "
+.ti -1c
+.RI "void \fBSDIO_StructInit\fP (\fBSDIO_InitTypeDef\fP *SDIO_InitStruct)"
+.br
+.RI "Fills each SDIO_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBSDIO_ClockCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO Clock\&. "
+.ti -1c
+.RI "void \fBSDIO_SetPowerState\fP (uint32_t SDIO_PowerState)"
+.br
+.RI "Sets the power status of the controller\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetPowerState\fP (void)"
+.br
+.RI "Gets the power status of the controller\&. "
+.ti -1c
+.RI "void \fBSDIO_ITConfig\fP (uint32_t SDIO_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO interrupts\&. "
+.ti -1c
+.RI "void \fBSDIO_DMACmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO DMA request\&. "
+.ti -1c
+.RI "void \fBSDIO_SendCommand\fP (\fBSDIO_CmdInitTypeDef\fP *SDIO_CmdInitStruct)"
+.br
+.RI "Initializes the SDIO Command according to the specified parameters in the SDIO_CmdInitStruct and send the command\&. "
+.ti -1c
+.RI "void \fBSDIO_CmdStructInit\fP (\fBSDIO_CmdInitTypeDef\fP *SDIO_CmdInitStruct)"
+.br
+.RI "Fills each SDIO_CmdInitStruct member with its default value\&. "
+.ti -1c
+.RI "uint8_t \fBSDIO_GetCommandResponse\fP (void)"
+.br
+.RI "Returns command index of last command for which response received\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetResponse\fP (uint32_t SDIO_RESP)"
+.br
+.RI "Returns response received from the card for the last command\&. "
+.ti -1c
+.RI "void \fBSDIO_DataConfig\fP (\fBSDIO_DataInitTypeDef\fP *SDIO_DataInitStruct)"
+.br
+.RI "Initializes the SDIO data path according to the specified parameters in the SDIO_DataInitStruct\&. "
+.ti -1c
+.RI "void \fBSDIO_DataStructInit\fP (\fBSDIO_DataInitTypeDef\fP *SDIO_DataInitStruct)"
+.br
+.RI "Fills each SDIO_DataInitStruct member with its default value\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetDataCounter\fP (void)"
+.br
+.RI "Returns number of remaining data bytes to be transferred\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_ReadData\fP (void)"
+.br
+.RI "Read one data word from Rx FIFO\&. "
+.ti -1c
+.RI "void \fBSDIO_WriteData\fP (uint32_t Data)"
+.br
+.RI "Write one data word to Tx FIFO\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetFIFOCount\fP (void)"
+.br
+.RI "Returns the number of words left to be written to or read from FIFO\&. "
+.ti -1c
+.RI "void \fBSDIO_StartSDIOReadWait\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Starts the SD I/O Read Wait operation\&. "
+.ti -1c
+.RI "void \fBSDIO_StopSDIOReadWait\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Stops the SD I/O Read Wait operation\&. "
+.ti -1c
+.RI "void \fBSDIO_SetSDIOReadWaitMode\fP (uint32_t SDIO_ReadWaitMode)"
+.br
+.RI "Sets one of the two options of inserting read wait interval\&. "
+.ti -1c
+.RI "void \fBSDIO_SetSDIOOperation\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SD I/O Mode Operation\&. "
+.ti -1c
+.RI "void \fBSDIO_SendSDIOSuspendCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SD I/O Mode suspend command sending\&. "
+.ti -1c
+.RI "void \fBSDIO_CommandCompletionCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the command completion signal\&. "
+.ti -1c
+.RI "void \fBSDIO_CEATAITCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CE-ATA interrupt\&. "
+.ti -1c
+.RI "void \fBSDIO_SendCEATACmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Sends CE-ATA command (CMD61)\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBSDIO_GetFlagStatus\fP (uint32_t SDIO_FLAG)"
+.br
+.RI "Checks whether the specified SDIO flag is set or not\&. "
+.ti -1c
+.RI "void \fBSDIO_ClearFlag\fP (uint32_t SDIO_FLAG)"
+.br
+.RI "Clears the SDIO's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBSDIO_GetITStatus\fP (uint32_t SDIO_IT)"
+.br
+.RI "Checks whether the specified SDIO interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBSDIO_ClearITPendingBit\fP (uint32_t SDIO_IT)"
+.br
+.RI "Clears the SDIO's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the SDIO firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_sdio\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="__initialize__hardware_8c" kind="file" language="C++">
+    <compoundname>_initialize_hardware.c</compoundname>
+    <includes refid="cmsis__device_8h" local="yes">cmsis_device.h</includes>
+    <incdepgraph>
+      <node id="765">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="762">
+        <label>stdint.h</label>
+      </node>
+      <node id="758">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c</label>
+        <link refid="__initialize__hardware_8c"/>
+        <childnode refid="759" relation="include">
+        </childnode>
+      </node>
+      <node id="761">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="759">
+        <label>cmsis_device.h</label>
+        <link refid="cmsis__device_8h"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="760">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="__initialize__hardware_8c_1a12a66c62f83c5a480a60a6e3fb6e2f66" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int __vectors_start</definition>
+        <argsstring></argsstring>
+        <name>__vectors_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c" line="12" column="1"/>
+        <referencedby refid="__initialize__hardware_8c_1a201468129b483039afc5a619e2d31097" compoundref="__initialize__hardware_8c" startline="34" endline="68">__attribute__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="__initialize__hardware_8c_1a7fc8815552bed9f58a072ed05a4e23d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __initialize_hardware_early</definition>
+        <argsstring>(void)</argsstring>
+        <name>__initialize_hardware_early</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c" line="17" column="1"/>
+        <referencedby refid="__startup_8c_1adc4b6e73e00d1d61b37d4e2cabdd7971" compoundref="__startup_8c" startline="222" endline="325">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="__initialize__hardware_8c_1a7cdac479c838de78c7a65a9cce5a5343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __initialize_hardware</definition>
+        <argsstring>(void)</argsstring>
+        <name>__initialize_hardware</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c" line="20" column="1"/>
+        <referencedby refid="__initialize__hardware_8c_1a201468129b483039afc5a619e2d31097" compoundref="__initialize__hardware_8c" startline="34" endline="68">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="__initialize__hardware_8c_1a201468129b483039afc5a619e2d31097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __attribute__</definition>
+        <argsstring>((weak))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(weak)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c" line="34" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c" bodystart="34" bodyend="68"/>
+        <references refid="group___s_t_m32_f10x___system___exported___functions_1ga93f514700ccf00d08dbdcff7f1224eb2" compoundref="system__stm32f10x_8c" startline="213" endline="270">SystemInit</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="__initialize__hardware_8c_1a12a66c62f83c5a480a60a6e3fb6e2f66">__vectors_start</references>
+        <references refid="group___c_m_s_i_s___s_c_b_1ga056fb6be590857bbc029bed48b21dd79" compoundref="core__cm3_8h" startline="562">SCB_SHCSR_USGFAULTENA_Msk</references>
+        <references refid="__initialize__hardware_8c_1a7cdac479c838de78c7a65a9cce5a5343">__initialize_hardware</references>
+        <references refid="group___s_t_m32_f10x___system___exported___functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f" compoundref="system__stm32f10x_8c" startline="307" endline="413">SystemCoreClockUpdate</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>µOS++<sp/>III<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmsis__device_8h" kindref="compound">cmsis_device.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="__initialize__hardware_8c_1a12a66c62f83c5a480a60a6e3fb6e2f66" kindref="member">__vectors_start</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="__initialize__hardware_8c_1a7fc8815552bed9f58a072ed05a4e23d2" kindref="member">__initialize_hardware_early</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="__initialize__hardware_8c_1a7cdac479c838de78c7a65a9cce5a5343" kindref="member">__initialize_hardware</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>early<sp/>hardware<sp/>initialisation<sp/>routine,<sp/>it<sp/>can<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>redefined<sp/>in<sp/>the<sp/>application<sp/>for<sp/>more<sp/>complex<sp/>cases<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>require<sp/>early<sp/>inits<sp/>(before<sp/>BSS<sp/>init).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>early<sp/>from<sp/>_start(),<sp/>right<sp/>before<sp/>data<sp/>&amp;<sp/>bss<sp/>init.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>After<sp/>Reset<sp/>the<sp/>Cortex-M<sp/>processor<sp/>is<sp/>in<sp/>Thread<sp/>mode,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>priority<sp/>is<sp/>Privileged,<sp/>and<sp/>the<sp/>Stack<sp/>is<sp/>set<sp/>to<sp/>Main.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="__initialize__hardware_8c_1a201468129b483039afc5a619e2d31097" refkind="member"><highlight class="normal"><ref refid="__initialize__hardware_8c_1a201468129b483039afc5a619e2d31097" kindref="member">__attribute__</ref>((weak))</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="__initialize__hardware_8c_1a7fc8815552bed9f58a072ed05a4e23d2" kindref="member">__initialize_hardware_early</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>the<sp/>CSMSIS<sp/>system<sp/>initialisation<sp/>routine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="group___s_t_m32_f10x___system___exported___functions_1ga93f514700ccf00d08dbdcff7f1224eb2" kindref="member">SystemInit</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__ARM_ARCH_7M__)<sp/>||<sp/>defined(__ARM_ARCH_7EM__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>VTOR<sp/>to<sp/>the<sp/>actual<sp/>address,<sp/>provided<sp/>by<sp/>the<sp/>linker<sp/>script.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Override<sp/>the<sp/>manual,<sp/>possibly<sp/>wrong,<sp/>SystemInit()<sp/>setting.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;VTOR<sp/>=<sp/>(uint32_t)(&amp;<ref refid="__initialize__hardware_8c_1a12a66c62f83c5a480a60a6e3fb6e2f66" kindref="member">__vectors_start</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>version<sp/>of<sp/>SystemInit()<sp/>leaves<sp/>the<sp/>value<sp/>of<sp/>the<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>a<sp/>RAM<sp/>variable<sp/>(SystemCoreClock),<sp/>which<sp/>will<sp/>be<sp/>cleared<sp/>shortly,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>it<sp/>needs<sp/>to<sp/>be<sp/>recomputed<sp/>after<sp/>the<sp/>RAM<sp/>initialisations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>are<sp/>completed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(OS_INCLUDE_STARTUP_INIT_FP)<sp/>||<sp/>(defined<sp/>(__VFP_FP__)<sp/>&amp;&amp;<sp/>!defined<sp/>(__SOFTFP__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Normally<sp/>FP<sp/>init<sp/>is<sp/>done<sp/>by<sp/>SystemInit().<sp/>In<sp/>case<sp/>this<sp/>is<sp/>not<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>there,<sp/>it<sp/>is<sp/>possible<sp/>to<sp/>force<sp/>its<sp/>inclusion<sp/>by<sp/>defining</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>OS_INCLUDE_STARTUP_INIT_FP.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>the<sp/>Cortex-M4<sp/>FPU<sp/>only<sp/>when<sp/>-mfloat-abi=hard.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Code<sp/>taken<sp/>from<sp/>Section<sp/>7.1,<sp/>Cortex-M4<sp/>TRM<sp/>(DDI0439C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>bits<sp/>20-23<sp/>to<sp/>enable<sp/>CP10<sp/>and<sp/>CP11<sp/>coprocessor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;CPACR<sp/>|=<sp/>(0xF<sp/>&lt;&lt;<sp/>20);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>(__VFP_FP__)<sp/>&amp;&amp;<sp/>!(__SOFTFP__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(OS_DEBUG_SEMIHOSTING_FAULTS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;SHCSR<sp/>|=<sp/><ref refid="group___c_m_s_i_s___s_c_b_1ga056fb6be590857bbc029bed48b21dd79" kindref="member">SCB_SHCSR_USGFAULTENA_Msk</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>second<sp/>hardware<sp/>initialisation<sp/>routine,<sp/>it<sp/>can<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>redefined<sp/>in<sp/>the<sp/>application<sp/>for<sp/>more<sp/>complex<sp/>cases<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>require<sp/>custom<sp/>inits<sp/>(before<sp/>constructors),<sp/>otherwise<sp/>these<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>be<sp/>done<sp/>in<sp/>main().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>from<sp/>_start(),<sp/>right<sp/>after<sp/>data<sp/>&amp;<sp/>bss<sp/>init,<sp/>before</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>constructors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="__initialize__hardware_8c_1a201468129b483039afc5a619e2d31097" kindref="member">__attribute__</ref>((weak))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="__initialize__hardware_8c_1a7cdac479c838de78c7a65a9cce5a5343" kindref="member">__initialize_hardware</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>the<sp/>CSMSIS<sp/>system<sp/>clock<sp/>routine<sp/>to<sp/>store<sp/>the<sp/>clock<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>SystemCoreClock<sp/>global<sp/>RAM<sp/>location.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="group___s_t_m32_f10x___system___exported___functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f" kindref="member">SystemCoreClockUpdate</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c"/>
+  </compounddef>
+</doxygen>

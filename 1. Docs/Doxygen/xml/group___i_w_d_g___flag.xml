@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i_w_d_g___flag" kind="group">
+    <compoundname>IWDG_Flag</compoundname>
+    <title>IWDG_Flag</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c" prot="public" static="no">
+        <name>IWDG_FLAG_PVU</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="92" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca" prot="public" static="no">
+        <name>IWDG_FLAG_RVU</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="93" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1ga5be9ae9ba267cf09a00523ef3e219293" prot="public" static="no">
+        <name>IS_IWDG_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c" kindref="member">IWDG_FLAG_PVU</ref>) || ((FLAG) == <ref refid="group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca" kindref="member">IWDG_FLAG_RVU</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="94" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_w_d_g___flag_1ga7c319e96bded8e3c38c6a42a1b335c68" prot="public" static="no">
+        <name>IS_IWDG_RELOAD</name>
+        <param><defname>RELOAD</defname></param>
+        <initializer>((RELOAD) &lt;= 0xFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" line="95" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

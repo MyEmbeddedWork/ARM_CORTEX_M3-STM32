@@ -1,0 +1,60 @@
+.TH "CEC_interrupts_definition" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEC_interrupts_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCEC_IT_TERR\fP   \fBCEC_CSR_TERR\fP"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_TBTRF\fP   \fBCEC_CSR_TBTRF\fP"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_RERR\fP   \fBCEC_CSR_RERR\fP"
+.br
+.ti -1c
+.RI "#define \fBCEC_IT_RBTF\fP   \fBCEC_CSR_RBTF\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_GET_IT\fP(IT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CEC_IT_RBTF   \fBCEC_CSR_RBTF\fP"
+
+.PP
+Definition at line 97 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_IT_RERR   \fBCEC_CSR_RERR\fP"
+
+.PP
+Definition at line 96 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_IT_TBTRF   \fBCEC_CSR_TBTRF\fP"
+
+.PP
+Definition at line 95 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_IT_TERR   \fBCEC_CSR_TERR\fP"
+
+.PP
+Definition at line 94 of file stm32f10x_cec\&.h\&.
+.SS "#define IS_CEC_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == CEC_IT_TERR) || ((IT) == CEC_IT_TBTRF) || \
+                           ((IT) == CEC_IT_RERR) || ((IT) == CEC_IT_RBTF))
+.fi
+.PP
+Definition at line 98 of file stm32f10x_cec\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

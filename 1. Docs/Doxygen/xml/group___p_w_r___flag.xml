@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___p_w_r___flag" kind="group">
+    <compoundname>PWR_Flag</compoundname>
+    <title>PWR_Flag</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r___flag_1ga2d06760a5769e729b06d41e37036d58e" prot="public" static="no">
+        <name>PWR_FLAG_WU</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="102" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df" prot="public" static="no">
+        <name>PWR_FLAG_SB</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="103" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1gaefd05d58cc050eeef83a1b5c520b2c2a" prot="public" static="no">
+        <name>PWR_FLAG_PVDO</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="104" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1gadc822638d0dd52d2f920808dd96c00a1" prot="public" static="no">
+        <name>IS_PWR_GET_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___p_w_r___flag_1ga2d06760a5769e729b06d41e37036d58e" kindref="member">PWR_FLAG_WU</ref>) || ((FLAG) == <ref refid="group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df" kindref="member">PWR_FLAG_SB</ref>) || \
+                               ((FLAG) == <ref refid="group___p_w_r___flag_1gaefd05d58cc050eeef83a1b5c520b2c2a" kindref="member">PWR_FLAG_PVDO</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="105" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga36d35a770e683e4a0baf3aac350fcb5a" prot="public" static="no">
+        <name>IS_PWR_CLEAR_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___p_w_r___flag_1ga2d06760a5769e729b06d41e37036d58e" kindref="member">PWR_FLAG_WU</ref>) || ((FLAG) == <ref refid="group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df" kindref="member">PWR_FLAG_SB</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="108" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

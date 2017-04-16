@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_a_n__filter__mode" kind="group">
+    <compoundname>CAN_filter_mode</compoundname>
+    <title>CAN_filter_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_n__filter__mode_1ga8136e518fb31fd91079e4c7c4c19c94b" prot="public" static="no">
+        <name>CAN_FilterMode_IdMask</name>
+        <initializer>((uint8_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>identifier/mask mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="358" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n__filter__mode_1ga91e9144f71b15ac345ee89314711c158" prot="public" static="no">
+        <name>CAN_FilterMode_IdList</name>
+        <initializer>((uint8_t)0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>identifier list mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="359" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_n__filter__mode_1gae684565d5392c12fd333379e5ec840f8" prot="public" static="no">
+        <name>IS_CAN_FILTER_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___c_a_n__filter__mode_1ga8136e518fb31fd91079e4c7c4c19c94b" kindref="member">CAN_FilterMode_IdMask</ref>) || \
+                                  ((MODE) == <ref refid="group___c_a_n__filter__mode_1ga91e9144f71b15ac345ee89314711c158" kindref="member">CAN_FilterMode_IdList</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" line="361" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

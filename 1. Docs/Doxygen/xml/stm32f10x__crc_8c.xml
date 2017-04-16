@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__crc_8c" kind="file" language="C++">
+    <compoundname>stm32f10x_crc.c</compoundname>
+    <includes refid="stm32f10x__crc_8h" local="yes">stm32f10x_crc.h</includes>
+    <incdepgraph>
+      <node id="886">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="883">
+        <label>stdint.h</label>
+      </node>
+      <node id="882">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+      </node>
+      <node id="885">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="880">
+        <label>stm32f10x_crc.h</label>
+        <link refid="stm32f10x__crc_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+      </node>
+      <node id="884">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="881">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+      </node>
+      <node id="879">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c</label>
+        <link refid="stm32f10x__crc_8c"/>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_r_c___private___functions_1ga506467d5ef873a5a4ade4ae83cb110f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CRC_ResetDR</definition>
+        <argsstring>(void)</argsstring>
+        <name>CRC_ResetDR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Resets the CRC Data register (DR). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" line="83" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" bodystart="83" bodyend="87"/>
+        <references refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" compoundref="stm32f10x_8h" startline="1444">CRC</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga7d57481fb891a0964b40f721354c56d7" compoundref="stm32f10x_8h" startline="1486">CRC_CR_RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_r_c___private___functions_1ga5407fdbb8e8c9be6322cc8856ae5db3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t CRC_CalcCRC</definition>
+        <argsstring>(uint32_t Data)</argsstring>
+        <name>CRC_CalcCRC</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Computes the 32-bit CRC of a given data word(32-bit). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data word(32-bit) to compute its CRC </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>32-bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CRC </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" line="94" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" bodystart="94" bodyend="99"/>
+        <references refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" compoundref="stm32f10x_8h" startline="1444">CRC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_r_c___private___functions_1gab15ebf620615c360048fb4f45b15fae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t CRC_CalcBlockCRC</definition>
+        <argsstring>(uint32_t pBuffer[], uint32_t BufferLength)</argsstring>
+        <name>CRC_CalcBlockCRC</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>pBuffer</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>BufferLength</declname>
+        </param>
+        <briefdescription>
+<para>Computes the 32-bit CRC of a given buffer of data word(32-bit). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer containing the data to be computed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BufferLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the buffer to be computed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>32-bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CRC </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" line="107" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" bodystart="107" bodyend="116"/>
+        <references refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" compoundref="stm32f10x_8h" startline="1444">CRC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_r_c___private___functions_1gab62db4561b0558f3c8ed53887fe7de8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t CRC_GetCRC</definition>
+        <argsstring>(void)</argsstring>
+        <name>CRC_GetCRC</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current CRC value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>32-bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CRC </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" line="123" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" bodystart="123" bodyend="126"/>
+        <references refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" compoundref="stm32f10x_8h" startline="1444">CRC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_r_c___private___functions_1ga769c9a42be57b972ae61bbada0f2e46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CRC_SetIDRegister</definition>
+        <argsstring>(uint8_t IDValue)</argsstring>
+        <name>CRC_SetIDRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>IDValue</declname>
+        </param>
+        <briefdescription>
+<para>Stores a 8-bit data in the Independent Data(ID) register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IDValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-bit value to be stored in the ID register </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" line="133" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" bodystart="133" bodyend="136"/>
+        <references refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" compoundref="stm32f10x_8h" startline="1444">CRC</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_r_c___private___functions_1gaf869f6e9c3ca0ae0822cfad1abea7e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CRC_GetIDRegister</definition>
+        <argsstring>(void)</argsstring>
+        <name>CRC_GetIDRegister</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the 8-bit data stored in the Independent Data(ID) register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>8-bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the ID register </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" line="143" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c" bodystart="143" bodyend="146"/>
+        <references refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" compoundref="stm32f10x_8h" startline="1444">CRC</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file provides all the CRC firmware functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__crc_8h" kindref="compound">stm32f10x_crc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="group___c_r_c___private___functions_1ga506467d5ef873a5a4ade4ae83cb110f6" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_r_c___private___functions_1ga506467d5ef873a5a4ade4ae83cb110f6" kindref="member">CRC_ResetDR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>CRC<sp/>generator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;CR<sp/>=<sp/><ref refid="group___peripheral___registers___bits___definition_1ga7d57481fb891a0964b40f721354c56d7" kindref="member">CRC_CR_RESET</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group___c_r_c___private___functions_1ga5407fdbb8e8c9be6322cc8856ae5db3b" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="group___c_r_c___private___functions_1ga5407fdbb8e8c9be6322cc8856ae5db3b" kindref="member">CRC_CalcCRC</ref>(uint32_t<sp/>Data)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;DR<sp/>=<sp/>Data;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;DR);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="group___c_r_c___private___functions_1gab15ebf620615c360048fb4f45b15fae6" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="group___c_r_c___private___functions_1gab15ebf620615c360048fb4f45b15fae6" kindref="member">CRC_CalcBlockCRC</ref>(uint32_t<sp/>pBuffer[],<sp/>uint32_t<sp/>BufferLength)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>uint32_t<sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>BufferLength;<sp/>index++)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;DR<sp/>=<sp/>pBuffer[index];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;DR);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="group___c_r_c___private___functions_1gab62db4561b0558f3c8ed53887fe7de8b" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="group___c_r_c___private___functions_1gab62db4561b0558f3c8ed53887fe7de8b" kindref="member">CRC_GetCRC</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;DR);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="group___c_r_c___private___functions_1ga769c9a42be57b972ae61bbada0f2e46a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_r_c___private___functions_1ga769c9a42be57b972ae61bbada0f2e46a" kindref="member">CRC_SetIDRegister</ref>(uint8_t<sp/>IDValue)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;IDR<sp/>=<sp/>IDValue;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="group___c_r_c___private___functions_1gaf869f6e9c3ca0ae0822cfad1abea7e5f" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="group___c_r_c___private___functions_1gaf869f6e9c3ca0ae0822cfad1abea7e5f" kindref="member">CRC_GetIDRegister</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>-&gt;IDR);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c"/>
+  </compounddef>
+</doxygen>

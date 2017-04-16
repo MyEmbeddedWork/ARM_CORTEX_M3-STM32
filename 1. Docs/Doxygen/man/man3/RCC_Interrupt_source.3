@@ -1,0 +1,89 @@
+.TH "RCC_Interrupt_source" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Interrupt_source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_IT_LSIRDY\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_LSERDY\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_HSIRDY\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_HSERDY\fP   ((uint8_t)0x08)"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_PLLRDY\fP   ((uint8_t)0x10)"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_CSS\fP   ((uint8_t)0x80)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_IT\fP(IT)   ((((IT) & (uint8_t)0xE0) == 0x00) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_CLEAR_IT\fP(IT)   ((((IT) & (uint8_t)0x60) == 0x00) && ((IT) != 0x00))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RCC_CLEAR_IT(IT)   ((((IT) & (uint8_t)0x60) == 0x00) && ((IT) != 0x00))"
+
+.PP
+Definition at line 353 of file stm32f10x_rcc\&.h\&.
+.SS "#define IS_RCC_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == RCC_IT_LSIRDY) || ((IT) == RCC_IT_LSERDY) || \
+                            ((IT) == RCC_IT_HSIRDY) || ((IT) == RCC_IT_HSERDY) || \
+                            ((IT) == RCC_IT_PLLRDY) || ((IT) == RCC_IT_CSS))
+.fi
+.PP
+Definition at line 350 of file stm32f10x_rcc\&.h\&.
+.SS "#define IS_RCC_IT(IT)   ((((IT) & (uint8_t)0xE0) == 0x00) && ((IT) != 0x00))"
+
+.PP
+Definition at line 349 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_IT_CSS   ((uint8_t)0x80)"
+
+.PP
+Definition at line 346 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_IT_HSERDY   ((uint8_t)0x08)"
+
+.PP
+Definition at line 344 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_IT_HSIRDY   ((uint8_t)0x04)"
+
+.PP
+Definition at line 343 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_IT_LSERDY   ((uint8_t)0x02)"
+
+.PP
+Definition at line 342 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_IT_LSIRDY   ((uint8_t)0x01)"
+
+.PP
+Definition at line 341 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_IT_PLLRDY   ((uint8_t)0x10)"
+
+.PP
+Definition at line 345 of file stm32f10x_rcc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

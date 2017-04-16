@@ -1,0 +1,143 @@
+.TH "DBGMCU_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBGMCU_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBDBGMCU_GetREVID\fP (void)"
+.br
+.RI "Returns the device revision identifier\&. "
+.ti -1c
+.RI "uint32_t \fBDBGMCU_GetDEVID\fP (void)"
+.br
+.RI "Returns the device identifier\&. "
+.ti -1c
+.RI "void \fBDBGMCU_Config\fP (uint32_t DBGMCU_Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Configures the specified peripheral and low power mode behavior when the MCU under Debug mode\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void DBGMCU_Config (uint32_t DBGMCU_Periph, \fBFunctionalState\fP NewState)"
+
+.PP
+Configures the specified peripheral and low power mode behavior when the MCU under Debug mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDBGMCU_Periph\fP specifies the peripheral and low power mode\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+DBGMCU_SLEEP: Keep debugger connection during SLEEP mode 
+.IP "\(bu" 2
+DBGMCU_STOP: Keep debugger connection during STOP mode 
+.IP "\(bu" 2
+DBGMCU_STANDBY: Keep debugger connection during STANDBY mode 
+.IP "\(bu" 2
+DBGMCU_IWDG_STOP: Debug IWDG stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_WWDG_STOP: Debug WWDG stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM1_STOP: TIM1 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM2_STOP: TIM2 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM3_STOP: TIM3 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM4_STOP: TIM4 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_CAN1_STOP: Debug CAN2 stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_I2C1_SMBUS_TIMEOUT: I2C1 SMBUS timeout mode stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_I2C2_SMBUS_TIMEOUT: I2C2 SMBUS timeout mode stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM5_STOP: TIM5 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM6_STOP: TIM6 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM7_STOP: TIM7 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM8_STOP: TIM8 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_CAN2_STOP: Debug CAN2 stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM15_STOP: TIM15 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM16_STOP: TIM16 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM17_STOP: TIM17 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM9_STOP: TIM9 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM10_STOP: TIM10 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM11_STOP: TIM11 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM12_STOP: TIM12 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM13_STOP: TIM13 counter stopped when Core is halted 
+.IP "\(bu" 2
+DBGMCU_TIM14_STOP: TIM14 counter stopped when Core is halted 
+.PP
+.br
+\fINewState\fP new state of the specified peripheral in Debug mode\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 134 of file stm32f10x_dbgmcu\&.c\&.
+.SS "uint32_t DBGMCU_GetDEVID (void)"
+
+.PP
+Returns the device identifier\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIDevice\fP identifier 
+.RE
+.PP
+
+.PP
+Definition at line 94 of file stm32f10x_dbgmcu\&.c\&.
+.SS "uint32_t DBGMCU_GetREVID (void)"
+
+.PP
+Returns the device revision identifier\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIDevice\fP revision identifier 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file stm32f10x_dbgmcu\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

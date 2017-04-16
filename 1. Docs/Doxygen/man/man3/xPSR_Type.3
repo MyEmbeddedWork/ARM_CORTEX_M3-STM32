@@ -1,0 +1,329 @@
+.TH "xPSR_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+xPSR_Type \- Union type to access the Special-Purpose Program Status Registers (xPSR)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm0\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBw\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBIT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBQ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:7"
+.br
+.ti -1c
+.RI "   uint32_t \fBGE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBIT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBQ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:7"
+.br
+.ti -1c
+.RI "   uint32_t \fBGE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBIT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBQ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fB_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBT\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBIT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBQ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBV\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBC\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBZ\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBN\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Union type to access the Special-Purpose Program Status Registers (xPSR)\&. 
+.PP
+Definition at line 303 of file core_cm0\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t xPSR_Type::_reserved0"
+bit: 9\&.\&.23 Reserved
+.PP
+bit: 9\&.\&.15 Reserved 
+.PP
+Definition at line 308 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::_reserved1"
+bit: 25\&.\&.27 Reserved
+.PP
+bit: 20\&.\&.23 Reserved 
+.PP
+Definition at line 310 of file core_cm0\&.h\&.
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "struct { \&.\&.\&. }   xPSR_Type::b"
+Structure used for bit access 
+.SS "uint32_t xPSR_Type::C"
+bit: 29 Carry condition code flag 
+.PP
+Definition at line 312 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::GE"
+bit: 16\&.\&.19 Greater than or Equal flags 
+.PP
+Definition at line 379 of file core_cm4\&.h\&.
+.SS "uint32_t xPSR_Type::ISR"
+bit: 0\&.\&. 8 Exception number 
+.PP
+Definition at line 307 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::IT"
+bit: 25\&.\&.26 saved IT state (read 0) 
+.PP
+Definition at line 321 of file core_cm3\&.h\&.
+.SS "uint32_t xPSR_Type::N"
+bit: 31 Negative condition code flag 
+.PP
+Definition at line 314 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::Q"
+bit: 27 Saturation condition flag 
+.PP
+Definition at line 322 of file core_cm3\&.h\&.
+.SS "uint32_t xPSR_Type::T"
+bit: 24 Thumb bit (read 0) 
+.PP
+Definition at line 309 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::V"
+bit: 28 Overflow condition code flag 
+.PP
+Definition at line 311 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::w"
+Type used for word access 
+.PP
+Definition at line 316 of file core_cm0\&.h\&.
+.SS "uint32_t xPSR_Type::Z"
+bit: 30 Zero condition code flag 
+.PP
+Definition at line 313 of file core_cm0\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

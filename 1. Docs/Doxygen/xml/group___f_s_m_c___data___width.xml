@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___data___width" kind="group">
+    <compoundname>FSMC_Data_Width</compoundname>
+    <title>FSMC_Data_Width</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___data___width_1ga5753e089830f19af70a724766e3c329f" prot="public" static="no">
+        <name>FSMC_MemoryDataWidth_8b</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="326" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___data___width_1ga65d85c3072e6790ae760ca2248e46df6" prot="public" static="no">
+        <name>FSMC_MemoryDataWidth_16b</name>
+        <initializer>((uint32_t)0x00000010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="327" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___data___width_1ga003d52b62f5950fb041f73f15ce20171" prot="public" static="no">
+        <name>IS_FSMC_MEMORY_WIDTH</name>
+        <param><defname>WIDTH</defname></param>
+        <initializer>(((WIDTH) == <ref refid="group___f_s_m_c___data___width_1ga5753e089830f19af70a724766e3c329f" kindref="member">FSMC_MemoryDataWidth_8b</ref>) || \
+                                     ((WIDTH) == <ref refid="group___f_s_m_c___data___width_1ga65d85c3072e6790ae760ca2248e46df6" kindref="member">FSMC_MemoryDataWidth_16b</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="328" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

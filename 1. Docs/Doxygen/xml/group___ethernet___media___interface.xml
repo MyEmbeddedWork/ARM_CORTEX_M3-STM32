@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___ethernet___media___interface" kind="group">
+    <compoundname>Ethernet_Media_Interface</compoundname>
+    <title>Ethernet_Media_Interface</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___ethernet___media___interface_1gae11ff25c61c4f22f55118f9f88f6d465" prot="public" static="no">
+        <name>GPIO_ETH_MediaInterface_MII</name>
+        <initializer>((<ref refid="group___exported__types_1gafaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="324" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___ethernet___media___interface_1ga5ee3d057ee58149b1d1abdacfacd4a4e" prot="public" static="no">
+        <name>GPIO_ETH_MediaInterface_RMII</name>
+        <initializer>((<ref refid="group___exported__types_1gafaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="325" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___ethernet___media___interface_1gaaba662c046aed61cb28aa10918bfd4c4" prot="public" static="no">
+        <name>IS_GPIO_ETH_MEDIA_INTERFACE</name>
+        <param><defname>INTERFACE</defname></param>
+        <initializer>(((INTERFACE) == <ref refid="group___ethernet___media___interface_1gae11ff25c61c4f22f55118f9f88f6d465" kindref="member">GPIO_ETH_MediaInterface_MII</ref>) || \
+                                                ((INTERFACE) == <ref refid="group___ethernet___media___interface_1ga5ee3d057ee58149b1d1abdacfacd4a4e" kindref="member">GPIO_ETH_MediaInterface_RMII</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" line="327" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

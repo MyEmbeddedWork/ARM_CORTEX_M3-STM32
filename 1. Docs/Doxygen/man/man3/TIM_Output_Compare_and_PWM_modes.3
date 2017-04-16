@@ -1,0 +1,96 @@
+.TH "TIM_Output_Compare_and_PWM_modes" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Output_Compare_and_PWM_modes
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_OCMode_Timing\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Active\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Inactive\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Toggle\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_PWM1\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_PWM2\fP   ((uint16_t)0x0070)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OC_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCM\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_OC_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == TIM_OCMode_Timing) || \
+                              ((MODE) == TIM_OCMode_Active) || \
+                              ((MODE) == TIM_OCMode_Inactive) || \
+                              ((MODE) == TIM_OCMode_Toggle)|| \
+                              ((MODE) == TIM_OCMode_PWM1) || \
+                              ((MODE) == TIM_OCMode_PWM2))
+.fi
+.PP
+Definition at line 300 of file stm32f10x_tim\&.h\&.
+.SS "#define IS_TIM_OCM(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == TIM_OCMode_Timing) || \
+                          ((MODE) == TIM_OCMode_Active) || \
+                          ((MODE) == TIM_OCMode_Inactive) || \
+                          ((MODE) == TIM_OCMode_Toggle)|| \
+                          ((MODE) == TIM_OCMode_PWM1) || \
+                          ((MODE) == TIM_OCMode_PWM2) ||    \
+                          ((MODE) == TIM_ForcedAction_Active) || \
+                          ((MODE) == TIM_ForcedAction_InActive))
+.fi
+.PP
+Definition at line 306 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OCMode_Active   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 295 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OCMode_Inactive   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 296 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OCMode_PWM1   ((uint16_t)0x0060)"
+
+.PP
+Definition at line 298 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OCMode_PWM2   ((uint16_t)0x0070)"
+
+.PP
+Definition at line 299 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OCMode_Timing   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 294 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_OCMode_Toggle   ((uint16_t)0x0030)"
+
+.PP
+Definition at line 297 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

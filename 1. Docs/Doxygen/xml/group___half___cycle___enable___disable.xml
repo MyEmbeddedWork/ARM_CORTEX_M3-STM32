@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___half___cycle___enable___disable" kind="group">
+    <compoundname>Half_Cycle_Enable_Disable</compoundname>
+    <title>Half_Cycle_Enable_Disable</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___half___cycle___enable___disable_1ga95adf58ccf48094a9648085ac8d8af13" prot="public" static="no">
+        <name>FLASH_HalfCycleAccess_Enable</name>
+        <initializer>((uint32_t)0x00000008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Half Cycle Enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="85" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___half___cycle___enable___disable_1gad1ec816fa04b9a45e51c1cc9f1ba8f42" prot="public" static="no">
+        <name>FLASH_HalfCycleAccess_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Half Cycle Disable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="86" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___half___cycle___enable___disable_1gad1b9e84a20436dcfe1a1ade4c26dc028" prot="public" static="no">
+        <name>IS_FLASH_HALFCYCLEACCESS_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___half___cycle___enable___disable_1ga95adf58ccf48094a9648085ac8d8af13" kindref="member">FLASH_HalfCycleAccess_Enable</ref>) || \
+                                               ((STATE) == <ref refid="group___half___cycle___enable___disable_1gad1ec816fa04b9a45e51c1cc9f1ba8f42" kindref="member">FLASH_HalfCycleAccess_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="87" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/arm/semihosting.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAngelSWI_ARM\fP   0x123456"
+.br
+.ti -1c
+.RI "#define \fBAngelSWI\fP   \fBAngelSWI_ARM\fP"
+.br
+.ti -1c
+.RI "#define \fBAngelSWIInsn\fP   'swi'"
+.br
+.ti -1c
+.RI "#define \fBAngelSWIAsm\fP   swi"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBOperationNumber\fP { \fBSEMIHOSTING_EnterSVC\fP = 0x17, \fBSEMIHOSTING_ReportException\fP = 0x18, \fBSEMIHOSTING_SYS_CLOSE\fP = 0x02, \fBSEMIHOSTING_SYS_CLOCK\fP = 0x10, \fBSEMIHOSTING_SYS_ELAPSED\fP = 0x30, \fBSEMIHOSTING_SYS_ERRNO\fP = 0x13, \fBSEMIHOSTING_SYS_FLEN\fP = 0x0C, \fBSEMIHOSTING_SYS_GET_CMDLINE\fP = 0x15, \fBSEMIHOSTING_SYS_HEAPINFO\fP = 0x16, \fBSEMIHOSTING_SYS_ISERROR\fP = 0x08, \fBSEMIHOSTING_SYS_ISTTY\fP = 0x09, \fBSEMIHOSTING_SYS_OPEN\fP = 0x01, \fBSEMIHOSTING_SYS_READ\fP = 0x06, \fBSEMIHOSTING_SYS_READC\fP = 0x07, \fBSEMIHOSTING_SYS_REMOVE\fP = 0x0E, \fBSEMIHOSTING_SYS_RENAME\fP = 0x0F, \fBSEMIHOSTING_SYS_SEEK\fP = 0x0A, \fBSEMIHOSTING_SYS_SYSTEM\fP = 0x12, \fBSEMIHOSTING_SYS_TICKFREQ\fP = 0x31, \fBSEMIHOSTING_SYS_TIME\fP = 0x11, \fBSEMIHOSTING_SYS_TMPNAM\fP = 0x0D, \fBSEMIHOSTING_SYS_WRITE\fP = 0x05, \fBSEMIHOSTING_SYS_WRITEC\fP = 0x03, \fBSEMIHOSTING_SYS_WRITE0\fP = 0x04, \fBADP_Stopped_ApplicationExit\fP = ((2 << 16) + 38), \fBADP_Stopped_RunTimeError\fP = ((2 << 16) + 35) }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "asm \fBvolatile\fP (' mov r0, %[rsn]  \\ ' mov r1, %[\fBarg\fP] \\' ' ' AngelSWIInsn ' %[swi] \\' ' mov %[val], r0' :[val] '=r'(value) :[rsn] 'r'(reason), [\fBarg\fP] 'r'(arg), [swi] 'i'(AngelSWI) :'r0', 'r1', 'r2', 'r3', 'ip', 'lr', 'memory', 'cc')"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "static int void * \fBarg\fP"
+.br
+.ti -1c
+.RI "return \fBvalue\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define AngelSWI   \fBAngelSWI_ARM\fP"
+
+.PP
+Definition at line 53 of file semihosting\&.h\&.
+.SS "#define AngelSWI_ARM   0x123456"
+
+.PP
+Definition at line 49 of file semihosting\&.h\&.
+.SS "#define AngelSWIAsm   swi"
+
+.PP
+Definition at line 63 of file semihosting\&.h\&.
+.SS "#define AngelSWIInsn   'swi'"
+
+.PP
+Definition at line 62 of file semihosting\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBOperationNumber\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISEMIHOSTING_EnterSVC \fP\fP
+.TP
+\fB\fISEMIHOSTING_ReportException \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_CLOSE \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_CLOCK \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_ELAPSED \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_ERRNO \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_FLEN \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_GET_CMDLINE \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_HEAPINFO \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_ISERROR \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_ISTTY \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_OPEN \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_READ \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_READC \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_REMOVE \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_RENAME \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_SEEK \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_SYSTEM \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_TICKFREQ \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_TIME \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_TMPNAM \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_WRITE \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_WRITEC \fP\fP
+.TP
+\fB\fISEMIHOSTING_SYS_WRITE0 \fP\fP
+.TP
+\fB\fIADP_Stopped_ApplicationExit \fP\fP
+.TP
+\fB\fIADP_Stopped_RunTimeError \fP\fP
+.PP
+Definition at line 12 of file semihosting\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "asm volatile (' mov r0, % \\ ' mov r1[rsn], % \\' ' ' AngelSWIInsn ' % \\' ' mov %[arg][swi][val])"
+
+.SH "Variable Documentation"
+.PP 
+.SS "int void* arg"
+\fBInitial value:\fP
+.PP
+.nf
+{
+  int value
+.fi
+.PP
+Definition at line 78 of file semihosting\&.h\&.
+.SS "return value"
+
+.PP
+Definition at line 102 of file semihosting\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

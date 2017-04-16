@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__lms__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_lms_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__lms__instance__q31_1ac0d84f7d054555931ef8a62511fbcb8a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_lms_instance_q31::numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4069" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__q31_1a206d47b49de6f357f933ebe61520753c" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_lms_instance_q31::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4070" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__q31_1a4afe56e991a5416adfd462aa88bda500" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_lms_instance_q31::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4071" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__q31_1acb6ca9996b3c5f740d5d6c8e9f4f1d46" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t arm_lms_instance_q31::mu</definition>
+        <argsstring></argsstring>
+        <name>mu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>step size that controls filter coefficient updates. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4072" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__instance__q31_1a4705a8f0011bb9166e09bf5bd51e595e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arm_lms_instance_q31::postShift</definition>
+        <argsstring></argsstring>
+        <name>postShift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit shift applied to coefficients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4073" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4073" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 LMS filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="4068" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="4067" bodyend="4074"/>
+    <listofallmembers>
+      <member refid="structarm__lms__instance__q31_1acb6ca9996b3c5f740d5d6c8e9f4f1d46" prot="public" virt="non-virtual"><scope>arm_lms_instance_q31</scope><name>mu</name></member>
+      <member refid="structarm__lms__instance__q31_1ac0d84f7d054555931ef8a62511fbcb8a" prot="public" virt="non-virtual"><scope>arm_lms_instance_q31</scope><name>numTaps</name></member>
+      <member refid="structarm__lms__instance__q31_1a4afe56e991a5416adfd462aa88bda500" prot="public" virt="non-virtual"><scope>arm_lms_instance_q31</scope><name>pCoeffs</name></member>
+      <member refid="structarm__lms__instance__q31_1a4705a8f0011bb9166e09bf5bd51e595e" prot="public" virt="non-virtual"><scope>arm_lms_instance_q31</scope><name>postShift</name></member>
+      <member refid="structarm__lms__instance__q31_1a206d47b49de6f357f933ebe61520753c" prot="public" virt="non-virtual"><scope>arm_lms_instance_q31</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

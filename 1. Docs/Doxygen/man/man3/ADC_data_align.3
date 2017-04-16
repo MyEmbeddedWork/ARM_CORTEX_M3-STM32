@@ -1,0 +1,46 @@
+.TH "ADC_data_align" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_data_align
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADC_DataAlign_Right\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_DataAlign_Left\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_DATA_ALIGN\fP(ALIGN)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC_DataAlign_Left   ((uint32_t)0x00000800)"
+
+.PP
+Definition at line 169 of file stm32f10x_adc\&.h\&.
+.SS "#define ADC_DataAlign_Right   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 168 of file stm32f10x_adc\&.h\&.
+.SS "#define IS_ADC_DATA_ALIGN(ALIGN)"
+\fBValue:\fP
+.PP
+.nf
+(((ALIGN) == ADC_DataAlign_Right) || \
+                                  ((ALIGN) == ADC_DataAlign_Left))
+.fi
+.PP
+Definition at line 170 of file stm32f10x_adc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

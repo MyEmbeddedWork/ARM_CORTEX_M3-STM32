@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__cfft__radix4__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_cfft_radix4_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1a7e6a6d290ce158ce9a15a45e364b021a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_cfft_radix4_instance_f32::fftLen</definition>
+        <argsstring></argsstring>
+        <name>fftLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2082" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2082" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1a25d1da64dd6487c291f04d226f9acc66" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_cfft_radix4_instance_f32::ifftFlag</definition>
+        <argsstring></argsstring>
+        <name>ifftFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that selects forward (ifftFlag=0) or inverse (ifftFlag=1) transform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2083" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2083" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1ac10927a1620195a88649ce63dab66120" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_cfft_radix4_instance_f32::bitReverseFlag</definition>
+        <argsstring></argsstring>
+        <name>bitReverseFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that enables (bitReverseFlag=1) or disables (bitReverseFlag=0) bit reversal of output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2084" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2084" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1a14860c7544911702ca1fa0bf78204ef3" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* arm_cfft_radix4_instance_f32::pTwiddle</definition>
+        <argsstring></argsstring>
+        <name>pTwiddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the Twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2085" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2085" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1a8da0d2ca69749fde8cbb95caeac6fe6a" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* arm_cfft_radix4_instance_f32::pBitRevTable</definition>
+        <argsstring></argsstring>
+        <name>pBitRevTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the bit reversal table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2086" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2086" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1abe31ea2157dfa233e389cdfd3b9993ee" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_cfft_radix4_instance_f32::twidCoefModifier</definition>
+        <argsstring></argsstring>
+        <name>twidCoefModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2087" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2087" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1acc8cb18a8b901b8321ab9d86491e41a3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_cfft_radix4_instance_f32::bitRevFactor</definition>
+        <argsstring></argsstring>
+        <name>bitRevFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit reversal modifier that supports different size FFTs with the same bit reversal table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2088" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2088" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix4__instance__f32_1ab9eed39e40b8d7c16381fbccf84467cd" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t arm_cfft_radix4_instance_f32::onebyfftLen</definition>
+        <argsstring></argsstring>
+        <name>onebyfftLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value of 1/fftLen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2089" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2089" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point CFFT/CIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2081" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2080" bodyend="2090"/>
+    <listofallmembers>
+      <member refid="structarm__cfft__radix4__instance__f32_1ac10927a1620195a88649ce63dab66120" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>bitReverseFlag</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1acc8cb18a8b901b8321ab9d86491e41a3" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>bitRevFactor</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1a7e6a6d290ce158ce9a15a45e364b021a" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>fftLen</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1a25d1da64dd6487c291f04d226f9acc66" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>ifftFlag</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1ab9eed39e40b8d7c16381fbccf84467cd" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>onebyfftLen</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1a8da0d2ca69749fde8cbb95caeac6fe6a" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>pBitRevTable</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1a14860c7544911702ca1fa0bf78204ef3" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>pTwiddle</name></member>
+      <member refid="structarm__cfft__radix4__instance__f32_1abe31ea2157dfa233e389cdfd3b9993ee" prot="public" virt="non-virtual"><scope>arm_cfft_radix4_instance_f32</scope><name>twidCoefModifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

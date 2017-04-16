@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_i2_c___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>I2C_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__i2c_8h" local="no">stm32f10x_i2c.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_c___init_type_def_1a737c289f4515ae4cb642db0412762169" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2C_InitTypeDef::I2C_ClockSpeed</definition>
+        <argsstring></argsstring>
+        <name>I2C_ClockSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the clock frequency. This parameter must be set to a value lower than 400kHz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="58" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" compoundref="stm32f10x__i2c_8c" startline="311" endline="326">I2C_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___init_type_def_1ad5cf353c5b6968b3610b70ca593cec52" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_InitTypeDef::I2C_Mode</definition>
+        <argsstring></argsstring>
+        <name>I2C_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the I2C mode. This parameter can be a value of <ref refid="group___i2_c__mode" kindref="compound">I2C_mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="61" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" compoundref="stm32f10x__i2c_8c" startline="311" endline="326">I2C_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___init_type_def_1aff23b28652359513dfd268dee54c3279" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_InitTypeDef::I2C_DutyCycle</definition>
+        <argsstring></argsstring>
+        <name>I2C_DutyCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the I2C fast mode duty cycle. This parameter can be a value of <ref refid="group___i2_c__duty__cycle__in__fast__mode" kindref="compound">I2C_duty_cycle_in_fast_mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="64" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" compoundref="stm32f10x__i2c_8c" startline="311" endline="326">I2C_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___init_type_def_1a08543cb71b4b2a89ad81a2cefff12b53" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_InitTypeDef::I2C_OwnAddress1</definition>
+        <argsstring></argsstring>
+        <name>I2C_OwnAddress1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the first device own address. This parameter can be a 7-bit or 10-bit address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="67" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" compoundref="stm32f10x__i2c_8c" startline="311" endline="326">I2C_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___init_type_def_1a7bcae26f098e897832e5e42b055f8c98" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_InitTypeDef::I2C_Ack</definition>
+        <argsstring></argsstring>
+        <name>I2C_Ack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables or disables the acknowledgement. This parameter can be a value of <ref refid="group___i2_c__acknowledgement" kindref="compound">I2C_acknowledgement</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="70" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" compoundref="stm32f10x__i2c_8c" startline="311" endline="326">I2C_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___init_type_def_1a300e847972f50b0d25c4f13be5d93d79" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2C_InitTypeDef::I2C_AcknowledgedAddress</definition>
+        <argsstring></argsstring>
+        <name>I2C_AcknowledgedAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies if 7-bit or 10-bit address is acknowledged. This parameter can be a value of <ref refid="group___i2_c__acknowledged__address" kindref="compound">I2C_acknowledged_address</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="73" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___i2_c___private___functions_1ga08582aca6d7d7910cd5cbff0d9def350" compoundref="stm32f10x__i2c_8c" startline="311" endline="326">I2C_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2C Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="56" bodyend="75"/>
+    <listofallmembers>
+      <member refid="struct_i2_c___init_type_def_1a7bcae26f098e897832e5e42b055f8c98" prot="public" virt="non-virtual"><scope>I2C_InitTypeDef</scope><name>I2C_Ack</name></member>
+      <member refid="struct_i2_c___init_type_def_1a300e847972f50b0d25c4f13be5d93d79" prot="public" virt="non-virtual"><scope>I2C_InitTypeDef</scope><name>I2C_AcknowledgedAddress</name></member>
+      <member refid="struct_i2_c___init_type_def_1a737c289f4515ae4cb642db0412762169" prot="public" virt="non-virtual"><scope>I2C_InitTypeDef</scope><name>I2C_ClockSpeed</name></member>
+      <member refid="struct_i2_c___init_type_def_1aff23b28652359513dfd268dee54c3279" prot="public" virt="non-virtual"><scope>I2C_InitTypeDef</scope><name>I2C_DutyCycle</name></member>
+      <member refid="struct_i2_c___init_type_def_1ad5cf353c5b6968b3610b70ca593cec52" prot="public" virt="non-virtual"><scope>I2C_InitTypeDef</scope><name>I2C_Mode</name></member>
+      <member refid="struct_i2_c___init_type_def_1a08543cb71b4b2a89ad81a2cefff12b53" prot="public" virt="non-virtual"><scope>I2C_InitTypeDef</scope><name>I2C_OwnAddress1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

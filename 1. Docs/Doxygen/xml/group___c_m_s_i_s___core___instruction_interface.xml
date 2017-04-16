@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s___core___instruction_interface" kind="group">
+    <compoundname>CMSIS_Core_InstructionInterface</compoundname>
+    <title>CMSIS Core Instruction Interface</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___instruction_interface_1gadb2bb33809b6f35ba4d176cbec7c7b75" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t op2</definition>
+        <argsstring></argsstring>
+        <name>op2</name>
+        <initializer>{
+  return (op1 &gt;&gt; op2) | (op1 &lt;&lt; (32U - op2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="852" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___instruction_interface_1gadb2bb33809b6f35ba4d176cbec7c7b75" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t op2</definition>
+        <argsstring></argsstring>
+        <name>op2</name>
+        <initializer>{
+  return (op1 &gt;&gt; op2) | (op1 &lt;&lt; (32U - op2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" line="504" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s___core___instruction_interface_1gae84a2733711339c5eefeb0d899506b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((section(&quot;.rev16_text&quot;))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(section(&quot;.rev16_text&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Reverse byte order (16 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in two unsigned short values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="388" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="388" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___instruction_interface_1ga8e7a866927d3257a82b884ad14dbef4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((section(&quot;.revsh_text&quot;))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(section(&quot;.revsh_text&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Reverse byte order in signed short value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in a signed short value with sign extension to integer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="402" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="402" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___instruction_interface_1gade0870dc150fccdf0a5ae2d3300b2954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>void __attribute__</definition>
+        <argsstring>((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t value)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <initializer>{
+    return 0</initializer>
+        <briefdescription>
+<para>Reverse bit order of value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enable IRQ Interrupts.</para><para>Set Priority Mask.</para><para>Get Priority Mask.</para><para>Set Main Stack Pointer.</para><para>Get Main Stack Pointer.</para><para>Set Process Stack Pointer.</para><para>Get Process Stack Pointer.</para><para>Get xPSR Register.</para><para>Get APSR Register.</para><para>Get IPSR Register.</para><para>Set Control Register.</para><para>Get Control Register.</para><para>Disable IRQ Interrupts.</para><para>Reverse byte order (16 bit)</para><para>Reverse byte order (32 bit)</para><para>Data Memory Barrier.</para><para>Data Synchronization Barrier.</para><para>Instruction Synchronization Barrier.</para><para>Send Event.</para><para>Wait For Event.</para><para>Wait For Interrupt.</para><para>No Operation.</para><para>Rotate Right in unsigned value (32 bit)</para><para>Reverse byte order in signed short value.</para><para>Reverses the bit order of the given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Reverses the byte order in a signed short value with sign extension to integer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">op1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to rotate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">op2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bits to rotate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated value</para></simplesect>
+No Operation does nothing. This instruction can be used for code alignment purposes.</para><para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs.</para><para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs.</para><para>Send Event is a hint instruction. It causes an event to be signaled to the CPU.</para><para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed.</para><para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete.</para><para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion.</para><para>Reverses the byte order in integer value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Reverses the byte order in two unsigned short values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value</para></simplesect>
+Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to rotate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bits to rotate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated value</para></simplesect>
+Disables IRQ interrupts by setting the I-bit in the CPSR. Can only be executed in Privileged modes.</para><para>Returns the content of the Control Register. <simplesect kind="return"><para>Control Register value</para></simplesect>
+Writes the given value to the Control Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control Register value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the content of the IPSR Register. <simplesect kind="return"><para>IPSR Register value</para></simplesect>
+Returns the content of the APSR Register. <simplesect kind="return"><para>APSR Register value</para></simplesect>
+Returns the content of the xPSR Register. <simplesect kind="return"><para>xPSR Register value</para></simplesect>
+Returns the current value of the Process Stack Pointer (PSP). <simplesect kind="return"><para>PSP Register value</para></simplesect>
+Assigns the given value to the Process Stack Pointer (PSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfProcStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process Stack Pointer value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the current value of the Main Stack Pointer (MSP). <simplesect kind="return"><para>MSP Register value</para></simplesect>
+Assigns the given value to the Main Stack Pointer (MSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfMainStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main Stack Pointer value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the current state of the priority mask bit from the Priority Mask Register. <simplesect kind="return"><para>Priority Mask value</para></simplesect>
+Assigns the given value to the Priority Mask Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">priMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority Mask</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Enables IRQ interrupts by clearing the I-bit in the CPSR. Can only be executed in Privileged modes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="439" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="439" bodyend="453"/>
+        <references refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" compoundref="semihosting_8h" startline="102">value</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" prot="public" static="no">
+        <name>__NOP</name>
+        <initializer>__nop</initializer>
+        <briefdescription>
+<para>No Operation. </para>        </briefdescription>
+        <detaileddescription>
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="313" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" prot="public" static="no">
+        <name>__WFI</name>
+        <initializer>__wfi</initializer>
+        <briefdescription>
+<para>Wait For Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="320" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" prot="public" static="no">
+        <name>__WFE</name>
+        <initializer>__wfe</initializer>
+        <briefdescription>
+<para>Wait For Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="328" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9" prot="public" static="no">
+        <name>__SEV</name>
+        <initializer>__sev</initializer>
+        <briefdescription>
+<para>Send Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="335" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6" prot="public" static="no">
+        <name>__ISB</name>
+        <param></param>
+        <initializer>do {\
+                   __schedule_barrier();\
+                   __isb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)</initializer>
+        <briefdescription>
+<para>Instruction Synchronization Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="344" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" prot="public" static="no">
+        <name>__DSB</name>
+        <param></param>
+        <initializer>do {\
+                   __schedule_barrier();\
+                   __dsb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)</initializer>
+        <briefdescription>
+<para>Data Synchronization Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="355" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269" prot="public" static="no">
+        <name>__DMB</name>
+        <param></param>
+        <initializer>do {\
+                   __schedule_barrier();\
+                   __dmb(0xF);\
+                   __schedule_barrier();\
+                } while (0U)</initializer>
+        <briefdescription>
+<para>Data Memory Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="366" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae" prot="public" static="no">
+        <name>__REV</name>
+        <initializer>__rev</initializer>
+        <briefdescription>
+<para>Reverse byte order (32 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in integer value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="378" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga95b9bd281ddeda378b85afdb8f2ced86" prot="public" static="no">
+        <name>__ROR</name>
+        <initializer>__ror</initializer>
+        <briefdescription>
+<para>Rotate Right in unsigned value (32 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Rotate Right (immediate) provides the value of the contents of a register rotated by a variable number of bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to rotate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bits to rotate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="417" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397" prot="public" static="no">
+        <name>__BKPT</name>
+        <param><defname>value</defname></param>
+        <initializer>__breakpoint(<ref refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" kindref="member">value</ref>)</initializer>
+        <briefdescription>
+<para>Breakpoint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="427" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248" prot="public" static="no">
+        <name>__CLZ</name>
+        <initializer>__clz</initializer>
+        <briefdescription>
+<para>Count leading zeros. </para>        </briefdescription>
+        <detaileddescription>
+<para>Counts the number of leading zeros of a data value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to count the leading zeros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of leading zeros in value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="463" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276" prot="public" static="no">
+        <name>__CMSIS_GCC_OUT_REG</name>
+        <param><defname>r</defname></param>
+        <initializer>&quot;=r&quot; (r)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="746" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97" prot="public" static="no">
+        <name>__CMSIS_GCC_USE_REG</name>
+        <param><defname>r</defname></param>
+        <initializer>&quot;r&quot; (r)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="747" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" prot="public" static="no">
+        <name>__NOP</name>
+        <initializer>__builtin_arm_nop</initializer>
+        <briefdescription>
+<para>No Operation. </para>        </briefdescription>
+        <detaileddescription>
+<para>No Operation does nothing. This instruction can be used for code alignment purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="754" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" prot="public" static="no">
+        <name>__WFI</name>
+        <initializer>__builtin_arm_wfi</initializer>
+        <briefdescription>
+<para>Wait For Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait For Interrupt is a hint instruction that suspends execution until one of a number of events occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="760" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" prot="public" static="no">
+        <name>__WFE</name>
+        <initializer>__builtin_arm_wfe</initializer>
+        <briefdescription>
+<para>Wait For Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wait For Event is a hint instruction that permits the processor to enter a low-power state until one of a number of events occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="768" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaab4f296d0022b4b10dc0976eb22052f9" prot="public" static="no">
+        <name>__SEV</name>
+        <initializer>__builtin_arm_sev</initializer>
+        <briefdescription>
+<para>Send Event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Send Event is a hint instruction. It causes an event to be signaled to the CPU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="775" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6" prot="public" static="no">
+        <name>__ISB</name>
+        <param></param>
+        <initializer>__builtin_arm_isb(0xF);</initializer>
+        <briefdescription>
+<para>Instruction Synchronization Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Instruction Synchronization Barrier flushes the pipeline in the processor, so that all instructions following the ISB are fetched from cache or memory, after the instruction has been completed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="784" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" prot="public" static="no">
+        <name>__DSB</name>
+        <param></param>
+        <initializer>__builtin_arm_dsb(0xF);</initializer>
+        <briefdescription>
+<para>Data Synchronization Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Acts as a special kind of Data Memory Barrier. It completes when all explicit memory accesses before this instruction complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="791" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269" prot="public" static="no">
+        <name>__DMB</name>
+        <param></param>
+        <initializer>__builtin_arm_dmb(0xF);</initializer>
+        <briefdescription>
+<para>Data Memory Barrier. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ensures the apparent order of the explicit memory operations before and after the instruction, without ensuring their completion. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="799" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga14f54807872c0f5e05604c4924abfdae" prot="public" static="no">
+        <name>__REV</name>
+        <initializer>__builtin_bswap32</initializer>
+        <briefdescription>
+<para>Reverse byte order (32 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in integer value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="808" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga4e3acd41e7667cdf65ffcd8c76a8613f" prot="public" static="no">
+        <name>__REV16</name>
+        <initializer>__builtin_bswap16                           /* ToDo:  ARMCC_V6: check if __builtin_bswap16 could be used */</initializer>
+        <briefdescription>
+<para>Reverse byte order (16 bit) </para>        </briefdescription>
+        <detaileddescription>
+<para>Reverses the byte order in two unsigned short values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to reverse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reversed value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="817" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397" prot="public" static="no">
+        <name>__BKPT</name>
+        <param><defname>value</defname></param>
+        <initializer>__ASM <ref refid="semihosting_8h_1a65e6ad7ed1b130fda2cf7f6a0861fca9" kindref="member">volatile</ref> (&quot;bkpt &quot;#value)</initializer>
+        <briefdescription>
+<para>Breakpoint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="865" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248" prot="public" static="no">
+        <name>__CLZ</name>
+        <initializer>__builtin_clz</initializer>
+        <briefdescription>
+<para>Count leading zeros. </para>        </briefdescription>
+        <detaileddescription>
+<para>Counts the number of leading zeros of a data value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to count the leading zeros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of leading zeros in value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="903" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1gabc17e391c13c71702366c67cba39c276" prot="public" static="no">
+        <name>__CMSIS_GCC_OUT_REG</name>
+        <param><defname>r</defname></param>
+        <initializer>&quot;=r&quot; (r)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" line="365" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga9d94dee7402367961d2cf0accc00fd97" prot="public" static="no">
+        <name>__CMSIS_GCC_USE_REG</name>
+        <param><defname>r</defname></param>
+        <initializer>&quot;r&quot; (r)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" line="366" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga15ea6bd3c507d3e81c3b3a1258e46397" prot="public" static="no">
+        <name>__BKPT</name>
+        <param><defname>value</defname></param>
+        <initializer>__ASM <ref refid="semihosting_8h_1a65e6ad7ed1b130fda2cf7f6a0861fca9" kindref="member">volatile</ref> (&quot;bkpt &quot;#value)</initializer>
+        <briefdescription>
+<para>Breakpoint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Causes the processor to enter Debug state. Debug tools can use this to investigate system state when the instruction at a particular address is reached. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is ignored by the processor. If required, a debugger can use it to store additional information about the breakpoint. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" line="517" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___instruction_interface_1ga5d5bb1527e042be4a9fa5a33f65cc248" prot="public" static="no">
+        <name>__CLZ</name>
+        <initializer>__builtin_clz</initializer>
+        <briefdescription>
+<para>Count leading zeros. </para>        </briefdescription>
+        <detaileddescription>
+<para>Counts the number of leading zeros of a data value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to count the leading zeros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of leading zeros in value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" line="554" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_gcc.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access to dedicated instructions </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

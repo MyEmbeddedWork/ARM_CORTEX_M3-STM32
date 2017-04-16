@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___prefetch___buffer___enable___disable" kind="group">
+    <compoundname>Prefetch_Buffer_Enable_Disable</compoundname>
+    <title>Prefetch_Buffer_Enable_Disable</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___prefetch___buffer___enable___disable_1gad0fac43d078a77794f22840f326a6ed9" prot="public" static="no">
+        <name>FLASH_PrefetchBuffer_Enable</name>
+        <initializer>((uint32_t)0x00000010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Prefetch Buffer Enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="97" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___prefetch___buffer___enable___disable_1ga2feb631ad85449f83517f05aaf4ba26c" prot="public" static="no">
+        <name>FLASH_PrefetchBuffer_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Prefetch Buffer Disable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="98" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___prefetch___buffer___enable___disable_1ga5fd6932c4f4e157a1d6e73d433df092f" prot="public" static="no">
+        <name>IS_FLASH_PREFETCHBUFFER_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___prefetch___buffer___enable___disable_1gad0fac43d078a77794f22840f326a6ed9" kindref="member">FLASH_PrefetchBuffer_Enable</ref>) || \
+                                              ((STATE) == <ref refid="group___prefetch___buffer___enable___disable_1ga2feb631ad85449f83517f05aaf4ba26c" kindref="member">FLASH_PrefetchBuffer_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" line="99" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

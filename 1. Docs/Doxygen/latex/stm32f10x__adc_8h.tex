@@ -1,0 +1,341 @@
+\hypertarget{stm32f10x__adc_8h}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+adc.h File Reference}
+\label{stm32f10x__adc_8h}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+adc.\+h@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+adc.\+h}}
+
+
+This file contains all the functions prototypes for the A\+DC firmware library.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+adc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__adc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f10x__adc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_d_c___init_type_def}{A\+D\+C\+\_\+\+Init\+Type\+Def}
+\begin{DoxyCompactList}\small\item\em A\+DC Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___a_d_c___exported___constants_gaf5d6bd0153464912e0eaccb1af1aefb2}{I\+S\+\_\+\+A\+D\+C\+\_\+\+A\+L\+L\+\_\+\+P\+E\+R\+I\+PH}(P\+E\+R\+I\+PH)
+\item 
+\#define \hyperlink{group___a_d_c___exported___constants_ga56ce1703cee9a93969fc507b985ee949}{I\+S\+\_\+\+A\+D\+C\+\_\+\+D\+M\+A\+\_\+\+P\+E\+R\+I\+PH}(P\+E\+R\+I\+PH)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga2754d3a35559dc10e3d6a7d920e83432}{A\+D\+C\+\_\+\+Mode\+\_\+\+Independent}~((uint32\+\_\+t)0x00000000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga487d5f0c506291c5d37b53198396fd1c}{A\+D\+C\+\_\+\+Mode\+\_\+\+Reg\+Injec\+Simult}~((uint32\+\_\+t)0x00010000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_gae3d5fbf93f60d75534364bf9db78f632}{A\+D\+C\+\_\+\+Mode\+\_\+\+Reg\+Simult\+\_\+\+Alter\+Trig}~((uint32\+\_\+t)0x00020000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga2fc8a737f7b2375309bccbcb7fdbbfeb}{A\+D\+C\+\_\+\+Mode\+\_\+\+Injec\+Simult\+\_\+\+Fast\+Interl}~((uint32\+\_\+t)0x00030000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_gacb72230cb48a577907729d426be69c22}{A\+D\+C\+\_\+\+Mode\+\_\+\+Injec\+Simult\+\_\+\+Slow\+Interl}~((uint32\+\_\+t)0x00040000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga2339cc471aaf2db02daa4aeb49e9f0d9}{A\+D\+C\+\_\+\+Mode\+\_\+\+Injec\+Simult}~((uint32\+\_\+t)0x00050000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga71298f7453c2b4392a9c622328b3c93d}{A\+D\+C\+\_\+\+Mode\+\_\+\+Reg\+Simult}~((uint32\+\_\+t)0x00060000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga843ecdd53625e2088e91819e43106a7a}{A\+D\+C\+\_\+\+Mode\+\_\+\+Fast\+Interl}~((uint32\+\_\+t)0x00070000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga8b81e27e98dbc3d1e31452dbad167cd5}{A\+D\+C\+\_\+\+Mode\+\_\+\+Slow\+Interl}~((uint32\+\_\+t)0x00080000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga5595f12dc485e301ba3bad0e165586c1}{A\+D\+C\+\_\+\+Mode\+\_\+\+Alter\+Trig}~((uint32\+\_\+t)0x00090000)
+\item 
+\#define \hyperlink{group___a_d_c__mode_ga4abf4c7de28a42d7b124c9e403a6e537}{I\+S\+\_\+\+A\+D\+C\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga303f24361ea930f8214e9e68b63b244e}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T1\+\_\+\+C\+C1}~((uint32\+\_\+t)0x00000000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga8bf9fd9ad4e4c12ef41520ded2c3c332}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T1\+\_\+\+C\+C2}~((uint32\+\_\+t)0x00020000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_gadfeb40c1735b0ee50f8a5aafdd840cc6}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T2\+\_\+\+C\+C2}~((uint32\+\_\+t)0x00060000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga1cf4549534a00fe2f5527ad783204098}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T3\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x00080000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga8f6a764b7de878c2e09bbb0d1061d69c}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T4\+\_\+\+C\+C4}~((uint32\+\_\+t)0x000\+A0000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga640de59aeac8cc3d96b6db3497975d02}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+Ext\+\_\+\+I\+T11\+\_\+\+T\+I\+M8\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x000\+C0000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga41ad03e2921f6de0fb75ae06d6046e63}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T1\+\_\+\+C\+C3}~((uint32\+\_\+t)0x00040000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga433a3845ed1792fa6359b763c955e9c2}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+None}~((uint32\+\_\+t)0x000\+E0000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga3c73d5c8bb0f898dbbc74bcc536f6ec1}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T3\+\_\+\+C\+C1}~((uint32\+\_\+t)0x00000000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga16ae1b335f2c2b4facf3d4bedc2ce27f}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T2\+\_\+\+C\+C3}~((uint32\+\_\+t)0x00020000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga97af875d12e77a67e84f3aaf1f8033ed}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T8\+\_\+\+C\+C1}~((uint32\+\_\+t)0x00060000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_gab26d94590d47ae6ec46841652741abf3}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T8\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x00080000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga6bd1ad69cb455afeabf6759b640378d3}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T5\+\_\+\+C\+C1}~((uint32\+\_\+t)0x000\+A0000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_ga95b58981aff35d6d5fa229925cd6315d}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+\_\+\+T5\+\_\+\+C\+C3}~((uint32\+\_\+t)0x000\+C0000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__regular__channels__conversion_gac74e6054adbedd72822cacde69105318}{I\+S\+\_\+\+A\+D\+C\+\_\+\+E\+X\+T\+\_\+\+T\+R\+IG}(R\+E\+G\+T\+R\+IG)
+\item 
+\#define \hyperlink{group___a_d_c__data__align_ga80b5d2f2b6b058bc498f58e0a92ad035}{A\+D\+C\+\_\+\+Data\+Align\+\_\+\+Right}~((uint32\+\_\+t)0x00000000)
+\item 
+\#define \hyperlink{group___a_d_c__data__align_ga87c2b7021bc288174d5d6175dc267251}{A\+D\+C\+\_\+\+Data\+Align\+\_\+\+Left}~((uint32\+\_\+t)0x00000800)
+\item 
+\#define \hyperlink{group___a_d_c__data__align_ga2903b620e3c61dc47ed8c0fbf4197801}{I\+S\+\_\+\+A\+D\+C\+\_\+\+D\+A\+T\+A\+\_\+\+A\+L\+I\+GN}(A\+L\+I\+GN)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga40ec353803e9470a5721ef5bf0b1ab24}{A\+D\+C\+\_\+\+Channel\+\_\+0}~((uint8\+\_\+t)0x00)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga0b04cebf8d62085eca6dc7daa3d5d3f0}{A\+D\+C\+\_\+\+Channel\+\_\+1}~((uint8\+\_\+t)0x01)
+\item 
+\#define \hyperlink{group___a_d_c__channels_gabc66e2529583e11b591efd2df7070571}{A\+D\+C\+\_\+\+Channel\+\_\+2}~((uint8\+\_\+t)0x02)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga9f93cbacd030f1c79f96f8889b0cdee6}{A\+D\+C\+\_\+\+Channel\+\_\+3}~((uint8\+\_\+t)0x03)
+\item 
+\#define \hyperlink{group___a_d_c__channels_gafc7218417f729659dd8f06185cc2eafa}{A\+D\+C\+\_\+\+Channel\+\_\+4}~((uint8\+\_\+t)0x04)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga42822abae41faabde2a2da877e0cc854}{A\+D\+C\+\_\+\+Channel\+\_\+5}~((uint8\+\_\+t)0x05)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga7e24a73eec4aeb7d8e2f9008825ceacb}{A\+D\+C\+\_\+\+Channel\+\_\+6}~((uint8\+\_\+t)0x06)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga9723aa5fe6b9f4af1ffd3b90e6eef8d1}{A\+D\+C\+\_\+\+Channel\+\_\+7}~((uint8\+\_\+t)0x07)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga99b2c662d4068152e0e80a048036cc48}{A\+D\+C\+\_\+\+Channel\+\_\+8}~((uint8\+\_\+t)0x08)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga01a61c428be0cb69327e428e32a42aa1}{A\+D\+C\+\_\+\+Channel\+\_\+9}~((uint8\+\_\+t)0x09)
+\item 
+\#define \hyperlink{group___a_d_c__channels_gabfa98b580f49a82a83dcb1df32efceca}{A\+D\+C\+\_\+\+Channel\+\_\+10}~((uint8\+\_\+t)0x0\+A)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga5bfc40d938f384f22665f6e2dd945cfd}{A\+D\+C\+\_\+\+Channel\+\_\+11}~((uint8\+\_\+t)0x0\+B)
+\item 
+\#define \hyperlink{group___a_d_c__channels_gaa1e35f7870ae8f05013a681293175299}{A\+D\+C\+\_\+\+Channel\+\_\+12}~((uint8\+\_\+t)0x0\+C)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga517cda911256f722eb067d7140663230}{A\+D\+C\+\_\+\+Channel\+\_\+13}~((uint8\+\_\+t)0x0\+D)
+\item 
+\#define \hyperlink{group___a_d_c__channels_gaf1830a03fe4a3820fde4f41ba907c394}{A\+D\+C\+\_\+\+Channel\+\_\+14}~((uint8\+\_\+t)0x0\+E)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga01431a7b4e388beb241328874abdf88c}{A\+D\+C\+\_\+\+Channel\+\_\+15}~((uint8\+\_\+t)0x0\+F)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga52fb09ae9a0333a0e071da106466c659}{A\+D\+C\+\_\+\+Channel\+\_\+16}~((uint8\+\_\+t)0x10)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga58cdfe3a5625f198116d163b09698cea}{A\+D\+C\+\_\+\+Channel\+\_\+17}~((uint8\+\_\+t)0x11)
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga1efc096b8d4a8d15c4a7d91f5c03c6c7}{A\+D\+C\+\_\+\+Channel\+\_\+\+Temp\+Sensor}~((uint8\+\_\+t)\hyperlink{group___a_d_c__channels_ga52fb09ae9a0333a0e071da106466c659}{A\+D\+C\+\_\+\+Channel\+\_\+16})
+\item 
+\#define \hyperlink{group___a_d_c__channels_ga5d48ded5138e6f1efe3a7634eff4d125}{A\+D\+C\+\_\+\+Channel\+\_\+\+Vrefint}~((uint8\+\_\+t)\hyperlink{group___a_d_c__channels_ga58cdfe3a5625f198116d163b09698cea}{A\+D\+C\+\_\+\+Channel\+\_\+17})
+\item 
+\#define \hyperlink{group___a_d_c__channels_gaba41910dcb2b449c613a5ef638862e77}{I\+S\+\_\+\+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+EL}(C\+H\+A\+N\+N\+EL)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_gad085065e48857ada890863a7db575c6e}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+1\+Cycles5}~((uint8\+\_\+t)0x00)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_gac4101073619c4d79efa28a477696b3f5}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+7\+Cycles5}~((uint8\+\_\+t)0x01)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_gaef37e223e826ac5e6ee5ef30881f9b27}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+13\+Cycles5}~((uint8\+\_\+t)0x02)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_ga6251e64783f7a6562e17e71f7edd68d8}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+28\+Cycles5}~((uint8\+\_\+t)0x03)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_gadc3d26f9bf5fa6589889cc938c66e0e7}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+41\+Cycles5}~((uint8\+\_\+t)0x04)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_ga6a6fbbadc0e35a719fb749bf6b0704d6}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+55\+Cycles5}~((uint8\+\_\+t)0x05)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_gae46e8978ac3160969156739ddb867dae}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+71\+Cycles5}~((uint8\+\_\+t)0x06)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_ga93117dc4090dc4e3e84e0eef6d6ab073}{A\+D\+C\+\_\+\+Sample\+Time\+\_\+239\+Cycles5}~((uint8\+\_\+t)0x07)
+\item 
+\#define \hyperlink{group___a_d_c__sampling__time_ga30e0307fa009e1c383d3047b48e94644}{I\+S\+\_\+\+A\+D\+C\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME}(T\+I\+ME)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gaaad112b2b035dfd77c9743197c51b16f}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T2\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x00002000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_ga49089501c5bf2a2c22019fbca4b688e9}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T2\+\_\+\+C\+C1}~((uint32\+\_\+t)0x00003000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_ga6c9ddf9bba0cefe77dbcd601aed24f7b}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T3\+\_\+\+C\+C4}~((uint32\+\_\+t)0x00004000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gab12e5503085cdb9dde4a59614e421284}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T4\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x00005000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gaa23965b742e08142e5d1c453166dbcc2}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+Ext\+\_\+\+I\+T15\+\_\+\+T\+I\+M8\+\_\+\+C\+C4}~((uint32\+\_\+t)0x00006000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gabf47f66e60c166f6b63b805f72ad94b0}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T1\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x00000000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gabd27bcc6ff5af6713a124b3801759bcf}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T1\+\_\+\+C\+C4}~((uint32\+\_\+t)0x00001000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gaad11a68fca76d97b97dc2554dac5cb16}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+None}~((uint32\+\_\+t)0x00007000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gae342ca48595f0b2bf866943969026581}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T4\+\_\+\+C\+C3}~((uint32\+\_\+t)0x00002000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gac0320df9aa5e2d378b05f8e4dcc1616a}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T8\+\_\+\+C\+C2}~((uint32\+\_\+t)0x00003000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_ga6724679fe75f87c029f268ef47841a3e}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T8\+\_\+\+C\+C4}~((uint32\+\_\+t)0x00004000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_ga1d92236e9eb9f3adf69371f3f698192e}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T5\+\_\+\+T\+R\+GO}~((uint32\+\_\+t)0x00005000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_gade68a960ba05714e5f0a1f11a086884e}{A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv\+\_\+\+T5\+\_\+\+C\+C4}~((uint32\+\_\+t)0x00006000)
+\item 
+\#define \hyperlink{group___a_d_c__external__trigger__sources__for__injected__channels__conversion_ga3cb8cadbff46e432b5e000c3a7489a0b}{I\+S\+\_\+\+A\+D\+C\+\_\+\+E\+X\+T\+\_\+\+I\+N\+J\+E\+C\+\_\+\+T\+R\+IG}(I\+N\+J\+T\+R\+IG)
+\item 
+\#define \hyperlink{group___a_d_c__injected__channel__selection_ga8792d4ae0fa82dd317252c72815684ba}{A\+D\+C\+\_\+\+Injected\+Channel\+\_\+1}~((uint8\+\_\+t)0x14)
+\item 
+\#define \hyperlink{group___a_d_c__injected__channel__selection_ga2e322fccc7de16a0e79be573f5b1211c}{A\+D\+C\+\_\+\+Injected\+Channel\+\_\+2}~((uint8\+\_\+t)0x18)
+\item 
+\#define \hyperlink{group___a_d_c__injected__channel__selection_ga6bf03d805645b942bdcc53504e772cf1}{A\+D\+C\+\_\+\+Injected\+Channel\+\_\+3}~((uint8\+\_\+t)0x1\+C)
+\item 
+\#define \hyperlink{group___a_d_c__injected__channel__selection_ga31d18bbcfa7b685e90c3a1313d9c6406}{A\+D\+C\+\_\+\+Injected\+Channel\+\_\+4}~((uint8\+\_\+t)0x20)
+\item 
+\#define \hyperlink{group___a_d_c__injected__channel__selection_gae0bbfb5dbad0fbac8b672db6f63cf8d0}{I\+S\+\_\+\+A\+D\+C\+\_\+\+I\+N\+J\+E\+C\+T\+E\+D\+\_\+\+C\+H\+A\+N\+N\+EL}(C\+H\+A\+N\+N\+EL)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_ga2975552a752f44085d9da54b4e76121e}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+Single\+Reg\+Enable}~((uint32\+\_\+t)0x00800200)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_gaa9904271617ab69593ac68ae540047fb}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+Single\+Injec\+Enable}~((uint32\+\_\+t)0x00400200)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_gaffd35fc6ceb226ec3fb61fb52227820c}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+Single\+Reg\+Or\+Injec\+Enable}~((uint32\+\_\+t)0x00\+C00200)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_ga37f08e1a4a452a2c148341b3cfcdeb1e}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+All\+Reg\+Enable}~((uint32\+\_\+t)0x00800000)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_gae4d6a7ebb136d924f0c8bad2cbac0574}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+All\+Injec\+Enable}~((uint32\+\_\+t)0x00400000)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_ga25a299f4493aaae316521351198df084}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+All\+Reg\+All\+Injec\+Enable}~((uint32\+\_\+t)0x00\+C00000)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_ga91f69979e0e449fef5a8b225a21e3eb9}{A\+D\+C\+\_\+\+Analog\+Watchdog\+\_\+\+None}~((uint32\+\_\+t)0x00000000)
+\item 
+\#define \hyperlink{group___a_d_c__analog__watchdog__selection_ga53ffa30f756569194342bfba80165544}{I\+S\+\_\+\+A\+D\+C\+\_\+\+A\+N\+A\+L\+O\+G\+\_\+\+W\+A\+T\+C\+H\+D\+OG}(W\+A\+T\+C\+H\+D\+OG)
+\item 
+\#define \hyperlink{group___a_d_c__interrupts__definition_ga0ad335d835f54415194d448019569e00}{A\+D\+C\+\_\+\+I\+T\+\_\+\+E\+OC}~((uint16\+\_\+t)0x0220)
+\item 
+\#define \hyperlink{group___a_d_c__interrupts__definition_ga2f5c7f9900c24250a0c6ccaa7cbca946}{A\+D\+C\+\_\+\+I\+T\+\_\+\+A\+WD}~((uint16\+\_\+t)0x0140)
+\item 
+\#define \hyperlink{group___a_d_c__interrupts__definition_gad439fc0cd69706704d47aeabfeddb631}{A\+D\+C\+\_\+\+I\+T\+\_\+\+J\+E\+OC}~((uint16\+\_\+t)0x0480)
+\item 
+\#define \hyperlink{group___a_d_c__interrupts__definition_gaf5f8d35930becff402eeb8220641432f}{I\+S\+\_\+\+A\+D\+C\+\_\+\+IT}(IT)~((((IT) \& (uint16\+\_\+t)0x\+F81\+F) == 0x00) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___a_d_c__interrupts__definition_gacae69f04de1a0033f065864d868c006e}{I\+S\+\_\+\+A\+D\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_gadb75a4b430fb84950232b7a8f3a6a877}{A\+D\+C\+\_\+\+F\+L\+A\+G\+\_\+\+A\+WD}~((uint8\+\_\+t)0x01)
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_gaf2c6fdf7e9ab63b778149e5fb56413d4}{A\+D\+C\+\_\+\+F\+L\+A\+G\+\_\+\+E\+OC}~((uint8\+\_\+t)0x02)
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_ga4df8eea8ab83d98104ee15a339743a4e}{A\+D\+C\+\_\+\+F\+L\+A\+G\+\_\+\+J\+E\+OC}~((uint8\+\_\+t)0x04)
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_ga278f4e866f4322c1120bf0db5301c432}{A\+D\+C\+\_\+\+F\+L\+A\+G\+\_\+\+J\+S\+T\+RT}~((uint8\+\_\+t)0x08)
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_gad0c59ae7749c69b5b91f2c533db1b619}{A\+D\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+RT}~((uint8\+\_\+t)0x10)
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_gac5b6fb60ec921255b05261ec04573470}{I\+S\+\_\+\+A\+D\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(F\+L\+AG)~((((F\+L\+AG) \& (uint8\+\_\+t)0x\+E0) == 0x00) \&\& ((\+F\+L\+A\+G) != 0x00))
+\item 
+\#define \hyperlink{group___a_d_c__flags__definition_ga597eb68dfef9dbe0928ed14a1aedc710}{I\+S\+\_\+\+A\+D\+C\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(F\+L\+AG)
+\item 
+\#define \hyperlink{group___a_d_c__thresholds_gaa71cdff6dafddfccff8a7e88768bfb54}{I\+S\+\_\+\+A\+D\+C\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}(T\+H\+R\+E\+S\+H\+O\+LD)~((T\+H\+R\+E\+S\+H\+O\+LD) $<$= 0x\+F\+F\+F)
+\item 
+\#define \hyperlink{group___a_d_c__injected__offset_ga252eaf5d2552f0d11b1bcca7dc48950a}{I\+S\+\_\+\+A\+D\+C\+\_\+\+O\+F\+F\+S\+ET}(O\+F\+F\+S\+ET)~((O\+F\+F\+S\+ET) $<$= 0x\+F\+F\+F)
+\item 
+\#define \hyperlink{group___a_d_c__injected__length_gaecdddab7424a697722683296ca70e176}{I\+S\+\_\+\+A\+D\+C\+\_\+\+I\+N\+J\+E\+C\+T\+E\+D\+\_\+\+L\+E\+N\+G\+TH}(L\+E\+N\+G\+TH)~(((L\+E\+N\+G\+TH) $>$= 0x1) \&\& ((\+L\+E\+N\+G\+T\+H) $<$= 0x4))
+\item 
+\#define \hyperlink{group___a_d_c__injected__rank_ga63f95f9a45f4d718aabc9e429d860e9d}{I\+S\+\_\+\+A\+D\+C\+\_\+\+I\+N\+J\+E\+C\+T\+E\+D\+\_\+\+R\+A\+NK}(R\+A\+NK)~(((R\+A\+NK) $>$= 0x1) \&\& ((\+R\+A\+N\+K) $<$= 0x4))
+\item 
+\#define \hyperlink{group___a_d_c__regular__length_ga1ea82167f6dccdef1d160675f4534584}{I\+S\+\_\+\+A\+D\+C\+\_\+\+R\+E\+G\+U\+L\+A\+R\+\_\+\+L\+E\+N\+G\+TH}(L\+E\+N\+G\+TH)~(((L\+E\+N\+G\+TH) $>$= 0x1) \&\& ((\+L\+E\+N\+G\+T\+H) $<$= 0x10))
+\item 
+\#define \hyperlink{group___a_d_c__regular__rank_ga5928a1e9315f798e27220b91f1bae7f2}{I\+S\+\_\+\+A\+D\+C\+\_\+\+R\+E\+G\+U\+L\+A\+R\+\_\+\+R\+A\+NK}(R\+A\+NK)~(((R\+A\+NK) $>$= 0x1) \&\& ((\+R\+A\+N\+K) $<$= 0x10))
+\item 
+\#define \hyperlink{group___a_d_c__regular__discontinuous__mode__number_gab8dfaacb2f25e65ca755de71050ff270}{I\+S\+\_\+\+A\+D\+C\+\_\+\+R\+E\+G\+U\+L\+A\+R\+\_\+\+D\+I\+S\+C\+\_\+\+N\+U\+M\+B\+ER}(N\+U\+M\+B\+ER)~(((N\+U\+M\+B\+ER) $>$= 0x1) \&\& ((\+N\+U\+M\+B\+E\+R) $<$= 0x8))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___a_d_c___exported___functions_ga31fa6bc09de17125e9db2830ce77c09b}{A\+D\+C\+\_\+\+De\+Init} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Deinitializes the A\+D\+Cx peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gabbab6038cf8691404350625e477254f9}{A\+D\+C\+\_\+\+Init} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{struct_a_d_c___init_type_def}{A\+D\+C\+\_\+\+Init\+Type\+Def} $\ast$A\+D\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the A\+D\+Cx peripheral according to the specified parameters in the A\+D\+C\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga6c6e754d1d0a98d56e465efaf73272ec}{A\+D\+C\+\_\+\+Struct\+Init} (\hyperlink{struct_a_d_c___init_type_def}{A\+D\+C\+\_\+\+Init\+Type\+Def} $\ast$A\+D\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each A\+D\+C\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga40882d399e3371755ed610c1134e634e}{A\+D\+C\+\_\+\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified A\+DC peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gac5881d5995818001584b27b137a8dbcb}{A\+D\+C\+\_\+\+D\+M\+A\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified A\+DC D\+MA request. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gad4c84b54b539944f555488bf979f82b6}{A\+D\+C\+\_\+\+I\+T\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint16\+\_\+t A\+D\+C\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified A\+DC interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga3d542020ba28c1d16238a0defbee6d8f}{A\+D\+C\+\_\+\+Reset\+Calibration} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Resets the selected A\+DC calibration registers. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___a_d_c___exported___functions_ga113be9fe25add8d7496bed659c68e02b}{A\+D\+C\+\_\+\+Get\+Reset\+Calibration\+Status} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Gets the selected A\+DC reset calibration registers status. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gadcba6341124a6aabfd2dd885ca8e5f14}{A\+D\+C\+\_\+\+Start\+Calibration} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Starts the selected A\+DC calibration process. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___a_d_c___exported___functions_ga7a728f699b487c7fa1694d7424967122}{A\+D\+C\+\_\+\+Get\+Calibration\+Status} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Gets the selected A\+DC calibration status. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga694130a8d1ad3c8877b7eddb29611b30}{A\+D\+C\+\_\+\+Software\+Start\+Conv\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected A\+DC software start conversion . \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___a_d_c___exported___functions_gaf1119583782ecbcec380efcb7eb74883}{A\+D\+C\+\_\+\+Get\+Software\+Start\+Conv\+Status} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Gets the selected A\+DC Software start conversion Status. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga6eb241ba82d67d1371136c9132083937}{A\+D\+C\+\_\+\+Disc\+Mode\+Channel\+Count\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t Number)
+\begin{DoxyCompactList}\small\item\em Configures the discontinuous mode for the selected A\+DC regular group channel. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga1909649d10253ce88d986ffbb94a4be6}{A\+D\+C\+\_\+\+Disc\+Mode\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the discontinuous mode on regular group channel for the specified A\+DC. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gac531adb577b648d4bb8881f2ed627d52}{A\+D\+C\+\_\+\+Regular\+Channel\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+Channel, uint8\+\_\+t Rank, uint8\+\_\+t A\+D\+C\+\_\+\+Sample\+Time)
+\begin{DoxyCompactList}\small\item\em Configures for the selected A\+DC regular channel its corresponding rank in the sequencer and its sample time. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga3ae92d7940a16c898223374a5857f509}{A\+D\+C\+\_\+\+External\+Trig\+Conv\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\+D\+Cx conversion through external trigger. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___a_d_c___exported___functions_gaaf74221c285ec5dab5e66baf7bec6bd3}{A\+D\+C\+\_\+\+Get\+Conversion\+Value} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Returns the last A\+D\+Cx conversion result data for regular channel. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___a_d_c___exported___functions_gac5a4792dc29ef7ff6bfbce9f37e8a668}{A\+D\+C\+\_\+\+Get\+Dual\+Mode\+Conversion\+Value} (void)
+\begin{DoxyCompactList}\small\item\em Returns the last A\+D\+C1 and A\+D\+C2 conversion result data in dual mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga1ff9c3b8e4bbdd2addfd227f1a506a66}{A\+D\+C\+\_\+\+Auto\+Injected\+Conv\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected A\+DC automatic injected group conversion after regular one. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga0b583b94183fa4ff287177b9ee808092}{A\+D\+C\+\_\+\+Injected\+Disc\+Mode\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the discontinuous mode for injected group channel for the specified A\+DC. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gafc02ce1e84e96b692adf085f61a0bca6}{A\+D\+C\+\_\+\+External\+Trig\+Injected\+Conv\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint32\+\_\+t A\+D\+C\+\_\+\+External\+Trig\+Injec\+Conv)
+\begin{DoxyCompactList}\small\item\em Configures the A\+D\+Cx external trigger for injected channels conversion. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gad81d134c083d8f407c819e6f4722d553}{A\+D\+C\+\_\+\+External\+Trig\+Injected\+Conv\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\+D\+Cx injected channels conversion through external trigger. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga5b141d5dbf5f417a11dfa622c8c149d3}{A\+D\+C\+\_\+\+Software\+Start\+Injected\+Conv\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected A\+DC start of the injected channels conversion. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___a_d_c___exported___functions_ga8765f8835b8cfed13dce3d8d71767dcc}{A\+D\+C\+\_\+\+Get\+Software\+Start\+Injected\+Conv\+Cmd\+Status} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx)
+\begin{DoxyCompactList}\small\item\em Gets the selected A\+DC Software start injected conversion Status. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gae2b44bff080184e1cf6f2cb6b9bb3e59}{A\+D\+C\+\_\+\+Injected\+Channel\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+Channel, uint8\+\_\+t Rank, uint8\+\_\+t A\+D\+C\+\_\+\+Sample\+Time)
+\begin{DoxyCompactList}\small\item\em Configures for the selected A\+DC injected channel its corresponding rank in the sequencer and its sample time. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga24eba90bc3ee955e07659a605011710d}{A\+D\+C\+\_\+\+Injected\+Sequencer\+Length\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t Length)
+\begin{DoxyCompactList}\small\item\em Configures the sequencer length for injected channels. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga07a942613088ab3ecfc3d97a20475920}{A\+D\+C\+\_\+\+Set\+Injected\+Offset} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+Injected\+Channel, uint16\+\_\+t Offset)
+\begin{DoxyCompactList}\small\item\em Set the injected channels conversion value offset. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group___a_d_c___exported___functions_ga1dea5ed24571a2e0ce4cbd41c9c1ec46}{A\+D\+C\+\_\+\+Get\+Injected\+Conversion\+Value} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+Injected\+Channel)
+\begin{DoxyCompactList}\small\item\em Returns the A\+DC injected channel conversion result. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gad017d69bec6e497afd35ba25ea22d86e}{A\+D\+C\+\_\+\+Analog\+Watchdog\+Cmd} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint32\+\_\+t A\+D\+C\+\_\+\+Analog\+Watchdog)
+\begin{DoxyCompactList}\small\item\em Enables or disables the analog watchdog on single/all regular or injected channels. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga79588d02aa8e4147f21cb90a4708366d}{A\+D\+C\+\_\+\+Analog\+Watchdog\+Thresholds\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint16\+\_\+t High\+Threshold, uint16\+\_\+t Low\+Threshold)
+\begin{DoxyCompactList}\small\item\em Configures the high and low thresholds of the analog watchdog. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga03cef3d12292ffa2b8520524d5b0226c}{A\+D\+C\+\_\+\+Analog\+Watchdog\+Single\+Channel\+Config} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+Channel)
+\begin{DoxyCompactList}\small\item\em Configures the analog watchdog guarded single channel. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga848682e2d7d3de9f8cf03ffa4c11f0b5}{A\+D\+C\+\_\+\+Temp\+Sensor\+Vrefint\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the temperature sensor and Vrefint channel. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___a_d_c___exported___functions_gaa12546e51ec905c90a3aada432bd4633}{A\+D\+C\+\_\+\+Get\+Flag\+Status} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified A\+DC flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_gaf34f36798f811b4a41321ea2d12118d4}{A\+D\+C\+\_\+\+Clear\+Flag} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint8\+\_\+t A\+D\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the A\+D\+Cx\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___a_d_c___exported___functions_gaa1d3b910a83dbf14d4f68c8eef058612}{A\+D\+C\+\_\+\+Get\+I\+T\+Status} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint16\+\_\+t A\+D\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified A\+DC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___exported___functions_ga601c6a67bd883eb631ecc7aa5e999b9c}{A\+D\+C\+\_\+\+Clear\+I\+T\+Pending\+Bit} (\hyperlink{struct_a_d_c___type_def}{A\+D\+C\+\_\+\+Type\+Def} $\ast$A\+D\+Cx, uint16\+\_\+t A\+D\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the A\+D\+Cx\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains all the functions prototypes for the A\+DC firmware library. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

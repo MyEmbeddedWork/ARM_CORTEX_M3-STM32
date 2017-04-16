@@ -1,0 +1,304 @@
+.TH "BKP_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BKP_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBKP_DeInit\fP (void)"
+.br
+.RI "Deinitializes the BKP peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBBKP_TamperPinLevelConfig\fP (uint16_t BKP_TamperPinLevel)"
+.br
+.RI "Configures the Tamper Pin active level\&. "
+.ti -1c
+.RI "void \fBBKP_TamperPinCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Tamper Pin activation\&. "
+.ti -1c
+.RI "void \fBBKP_ITConfig\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Tamper Pin Interrupt\&. "
+.ti -1c
+.RI "void \fBBKP_RTCOutputConfig\fP (uint16_t BKP_RTCOutputSource)"
+.br
+.RI "Select the RTC output source to output on the Tamper pin\&. "
+.ti -1c
+.RI "void \fBBKP_SetRTCCalibrationValue\fP (uint8_t CalibrationValue)"
+.br
+.RI "Sets RTC Clock Calibration value\&. "
+.ti -1c
+.RI "void \fBBKP_WriteBackupRegister\fP (uint16_t BKP_DR, uint16_t Data)"
+.br
+.RI "Writes user data to the specified Data Backup Register\&. "
+.ti -1c
+.RI "uint16_t \fBBKP_ReadBackupRegister\fP (uint16_t BKP_DR)"
+.br
+.RI "Reads data from the specified Data Backup Register\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBBKP_GetFlagStatus\fP (void)"
+.br
+.RI "Checks whether the Tamper Pin Event flag is set or not\&. "
+.ti -1c
+.RI "void \fBBKP_ClearFlag\fP (void)"
+.br
+.RI "Clears Tamper Pin Event pending flag\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBBKP_GetITStatus\fP (void)"
+.br
+.RI "Checks whether the Tamper Pin Interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBBKP_ClearITPendingBit\fP (void)"
+.br
+.RI "Clears Tamper Pin Interrupt pending bit\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void BKP_ClearFlag (void)"
+
+.PP
+Clears Tamper Pin Event pending flag\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 282 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_ClearITPendingBit (void)"
+
+.PP
+Clears Tamper Pin Interrupt pending bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 303 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_DeInit (void)"
+
+.PP
+Deinitializes the BKP peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 120 of file stm32f10x_bkp\&.c\&.
+.SS "\fBFlagStatus\fP BKP_GetFlagStatus (void)"
+
+.PP
+Checks whether the Tamper Pin Event flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of the Tamper Pin Event flag (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 272 of file stm32f10x_bkp\&.c\&.
+.SS "\fBITStatus\fP BKP_GetITStatus (void)"
+
+.PP
+Checks whether the Tamper Pin Interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of the Tamper Pin Interrupt (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 293 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_ITConfig (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Tamper Pin Interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Tamper Pin Interrupt\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 160 of file stm32f10x_bkp\&.c\&.
+.SS "uint16_t BKP_ReadBackupRegister (uint16_t BKP_DR)"
+
+.PP
+Reads data from the specified Data Backup Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIBKP_DR\fP specifies the Data Backup Register\&. This parameter can be BKP_DRx where x:[1, 42] 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP content of the specified Data Backup Register 
+.RE
+.PP
+
+.PP
+Definition at line 254 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_RTCOutputConfig (uint16_t BKP_RTCOutputSource)"
+
+.PP
+Select the RTC output source to output on the Tamper pin\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIBKP_RTCOutputSource\fP specifies the RTC output source\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+BKP_RTCOutputSource_None: no RTC output on the Tamper pin\&. 
+.IP "\(bu" 2
+BKP_RTCOutputSource_CalibClock: output the RTC clock with frequency divided by 64 on the Tamper pin\&. 
+.IP "\(bu" 2
+BKP_RTCOutputSource_Alarm: output the RTC Alarm pulse signal on the Tamper pin\&. 
+.IP "\(bu" 2
+BKP_RTCOutputSource_Second: output the RTC Second pulse signal on the Tamper pin\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 180 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_SetRTCCalibrationValue (uint8_t CalibrationValue)"
+
+.PP
+Sets RTC Clock Calibration value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICalibrationValue\fP specifies the RTC Clock Calibration value\&. This parameter must be a number between 0 and 0x7F\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 201 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_TamperPinCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Tamper Pin activation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Tamper Pin activation\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_TamperPinLevelConfig (uint16_t BKP_TamperPinLevel)"
+
+.PP
+Configures the Tamper Pin active level\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIBKP_TamperPinLevel\fP specifies the Tamper Pin active level\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+BKP_TamperPinLevel_High: Tamper pin active on high level 
+.IP "\(bu" 2
+BKP_TamperPinLevel_Low: Tamper pin active on low level 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 134 of file stm32f10x_bkp\&.c\&.
+.SS "void BKP_WriteBackupRegister (uint16_t BKP_DR, uint16_t Data)"
+
+.PP
+Writes user data to the specified Data Backup Register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIBKP_DR\fP specifies the Data Backup Register\&. This parameter can be BKP_DRx where x:[1, 42] 
+.br
+\fIData\fP data to write 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 235 of file stm32f10x_bkp\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

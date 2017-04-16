@@ -1,0 +1,112 @@
+.TH "SPI_Exported_Constants" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Exported_Constants
+.SH SYNOPSIS
+.br
+.PP
+.SS "Modules"
+
+.in +1c
+.ti -1c
+.RI "\fBSPI_data_direction\fP"
+.br
+.ti -1c
+.RI "\fBSPI_mode\fP"
+.br
+.ti -1c
+.RI "\fBSPI_data_size\fP"
+.br
+.ti -1c
+.RI "\fBSPI_Clock_Polarity\fP"
+.br
+.ti -1c
+.RI "\fBSPI_Clock_Phase\fP"
+.br
+.ti -1c
+.RI "\fBSPI_Slave_Select_management\fP"
+.br
+.ti -1c
+.RI "\fBSPI_BaudRate_Prescaler\fP"
+.br
+.ti -1c
+.RI "\fBSPI_MSB_LSB_transmission\fP"
+.br
+.ti -1c
+.RI "\fBI2S_Mode\fP"
+.br
+.ti -1c
+.RI "\fBI2S_Standard\fP"
+.br
+.ti -1c
+.RI "\fBI2S_Data_Format\fP"
+.br
+.ti -1c
+.RI "\fBI2S_MCLK_Output\fP"
+.br
+.ti -1c
+.RI "\fBI2S_Audio_Frequency\fP"
+.br
+.ti -1c
+.RI "\fBI2S_Clock_Polarity\fP"
+.br
+.ti -1c
+.RI "\fBSPI_I2S_DMA_transfer_requests\fP"
+.br
+.ti -1c
+.RI "\fBSPI_NSS_internal_software_management\fP"
+.br
+.ti -1c
+.RI "\fBSPI_CRC_Transmit_Receive\fP"
+.br
+.ti -1c
+.RI "\fBSPI_direction_transmit_receive\fP"
+.br
+.ti -1c
+.RI "\fBSPI_I2S_interrupts_definition\fP"
+.br
+.ti -1c
+.RI "\fBSPI_I2S_flags_definition\fP"
+.br
+.ti -1c
+.RI "\fBSPI_CRC_polynomial\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_SPI_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_23_PERIPH\fP(PERIPH)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SPI_23_PERIPH(PERIPH)"
+\fBValue:\fP
+.PP
+.nf
+(((PERIPH) == SPI2) || \
+                                  ((PERIPH) == SPI3))
+.fi
+.PP
+Definition at line 127 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_SPI_ALL_PERIPH(PERIPH)"
+\fBValue:\fP
+.PP
+.nf
+(((PERIPH) == SPI1) || \
+                                   ((PERIPH) == SPI2) || \
+                                   ((PERIPH) == SPI3))
+.fi
+.PP
+Definition at line 123 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

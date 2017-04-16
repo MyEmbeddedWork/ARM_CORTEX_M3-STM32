@@ -1,0 +1,54 @@
+\hypertarget{misc_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/misc.c File Reference}
+\label{misc_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/misc.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/misc.\+c}}
+
+
+This file provides all the miscellaneous firmware functions (add-\/on to C\+M\+S\+IS functions).  
+
+
+{\ttfamily \#include \char`\"{}misc.\+h\char`\"{}}\newline
+Include dependency graph for misc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{misc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___m_i_s_c___private___defines_gad6905141fba3a2d8d5570db40805dc6a}{A\+I\+R\+C\+R\+\_\+\+V\+E\+C\+T\+K\+E\+Y\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x05\+F\+A0000)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___m_i_s_c___private___functions_gadfb1f34f803ce54c976643db8c484442}{N\+V\+I\+C\+\_\+\+Priority\+Group\+Config} (uint32\+\_\+t N\+V\+I\+C\+\_\+\+Priority\+Group)
+\begin{DoxyCompactList}\small\item\em Configures the priority grouping\+: pre-\/emption priority and subpriority. \end{DoxyCompactList}\item 
+void \hyperlink{group___m_i_s_c___private___functions_ga4ab373ed0870c06fca5eb51d639adf41}{N\+V\+I\+C\+\_\+\+Init} (\hyperlink{struct_n_v_i_c___init_type_def}{N\+V\+I\+C\+\_\+\+Init\+Type\+Def} $\ast$N\+V\+I\+C\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the N\+V\+IC peripheral according to the specified parameters in the N\+V\+I\+C\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___m_i_s_c___private___functions_ga1145208ad70edfc2fab19b8b8ef1b1a1}{N\+V\+I\+C\+\_\+\+Set\+Vector\+Table} (uint32\+\_\+t N\+V\+I\+C\+\_\+\+Vect\+Tab, uint32\+\_\+t Offset)
+\begin{DoxyCompactList}\small\item\em Sets the vector table location and Offset. \end{DoxyCompactList}\item 
+void \hyperlink{group___m_i_s_c___private___functions_gae21011c5232f5b8f366acbecd12a1d4a}{N\+V\+I\+C\+\_\+\+System\+L\+P\+Config} (uint8\+\_\+t Low\+Power\+Mode, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Selects the condition for the system to enter low power mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___m_i_s_c___private___functions_ga2777d255bb06ad62bb6372a9db1ff385}{Sys\+Tick\+\_\+\+C\+L\+K\+Source\+Config} (uint32\+\_\+t Sys\+Tick\+\_\+\+C\+L\+K\+Source)
+\begin{DoxyCompactList}\small\item\em Configures the Sys\+Tick clock source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the miscellaneous firmware functions (add-\/on to C\+M\+S\+IS functions). 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

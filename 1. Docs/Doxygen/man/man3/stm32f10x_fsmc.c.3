@@ -1,0 +1,156 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c \- This file provides all the FSMC firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_fsmc\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBCR_MBKEN_Set\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBBCR_MBKEN_Reset\fP   ((uint32_t)0x000FFFFE)"
+.br
+.ti -1c
+.RI "#define \fBBCR_FACCEN_Set\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBPCR_PBKEN_Set\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBPCR_PBKEN_Reset\fP   ((uint32_t)0x000FFFFB)"
+.br
+.ti -1c
+.RI "#define \fBPCR_ECCEN_Set\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBPCR_ECCEN_Reset\fP   ((uint32_t)0x000FFFBF)"
+.br
+.ti -1c
+.RI "#define \fBPCR_MemoryType_NAND\fP   ((uint32_t)0x00000008)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFSMC_NORSRAMDeInit\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Deinitializes the FSMC NOR/SRAM Banks registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDDeInit\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Deinitializes the FSMC NAND Banks registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDDeInit\fP (void)"
+.br
+.RI "Deinitializes the FSMC PCCARD Bank registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMInit\fP (\fBFSMC_NORSRAMInitTypeDef\fP *FSMC_NORSRAMInitStruct)"
+.br
+.RI "Initializes the FSMC NOR/SRAM Banks according to the specified parameters in the FSMC_NORSRAMInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDInit\fP (\fBFSMC_NANDInitTypeDef\fP *FSMC_NANDInitStruct)"
+.br
+.RI "Initializes the FSMC NAND Banks according to the specified parameters in the FSMC_NANDInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDInit\fP (\fBFSMC_PCCARDInitTypeDef\fP *FSMC_PCCARDInitStruct)"
+.br
+.RI "Initializes the FSMC PCCARD Bank according to the specified parameters in the FSMC_PCCARDInitStruct\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMStructInit\fP (\fBFSMC_NORSRAMInitTypeDef\fP *FSMC_NORSRAMInitStruct)"
+.br
+.RI "Fills each FSMC_NORSRAMInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDStructInit\fP (\fBFSMC_NANDInitTypeDef\fP *FSMC_NANDInitStruct)"
+.br
+.RI "Fills each FSMC_NANDInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDStructInit\fP (\fBFSMC_PCCARDInitTypeDef\fP *FSMC_PCCARDInitStruct)"
+.br
+.RI "Fills each FSMC_PCCARDInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBFSMC_NORSRAMCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified NOR/SRAM Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified NAND Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_PCCARDCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the PCCARD Memory Bank\&. "
+.ti -1c
+.RI "void \fBFSMC_NANDECCCmd\fP (uint32_t FSMC_Bank, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the FSMC NAND ECC feature\&. "
+.ti -1c
+.RI "uint32_t \fBFSMC_GetECC\fP (uint32_t FSMC_Bank)"
+.br
+.RI "Returns the error correction code register value\&. "
+.ti -1c
+.RI "void \fBFSMC_ITConfig\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified FSMC interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBFSMC_GetFlagStatus\fP (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+.br
+.RI "Checks whether the specified FSMC flag is set or not\&. "
+.ti -1c
+.RI "void \fBFSMC_ClearFlag\fP (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)"
+.br
+.RI "Clears the FSMC's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBFSMC_GetITStatus\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+.br
+.RI "Checks whether the specified FSMC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBFSMC_ClearITPendingBit\fP (uint32_t FSMC_Bank, uint32_t FSMC_IT)"
+.br
+.RI "Clears the FSMC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the FSMC firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_fsmc\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

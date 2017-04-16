@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c___p_e_c__position" kind="group">
+    <compoundname>I2C_PEC_position</compoundname>
+    <title>I2C_PEC_position</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c___p_e_c__position_1ga74d0996efe6e278fb28d053ba78fccc5" prot="public" static="no">
+        <name>I2C_PECPosition_Next</name>
+        <initializer>((uint16_t)0x0800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="192" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___p_e_c__position_1ga8a393364dd651f88bcaebac71c1c52c7" prot="public" static="no">
+        <name>I2C_PECPosition_Current</name>
+        <initializer>((uint16_t)0xF7FF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="193" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___p_e_c__position_1gac8611a62b06256b1b3c60d4859a016ef" prot="public" static="no">
+        <name>IS_I2C_PEC_POSITION</name>
+        <param><defname>POSITION</defname></param>
+        <initializer>(((POSITION) == <ref refid="group___i2_c___p_e_c__position_1ga74d0996efe6e278fb28d053ba78fccc5" kindref="member">I2C_PECPosition_Next</ref>) || \
+                                       ((POSITION) == <ref refid="group___i2_c___p_e_c__position_1ga8a393364dd651f88bcaebac71c1c52c7" kindref="member">I2C_PECPosition_Current</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="194" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

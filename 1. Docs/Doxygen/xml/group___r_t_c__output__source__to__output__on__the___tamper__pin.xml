@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___r_t_c__output__source__to__output__on__the___tamper__pin" kind="group">
+    <compoundname>RTC_output_source_to_output_on_the_Tamper_pin</compoundname>
+    <title>RTC_output_source_to_output_on_the_Tamper_pin</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_t_c__output__source__to__output__on__the___tamper__pin_1ga8a18950396b2db70311480ab76464c6e" prot="public" static="no">
+        <name>BKP_RTCOutputSource_None</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__output__source__to__output__on__the___tamper__pin_1ga6fd7cb80bb52bca65641cbe6aa2c4590" prot="public" static="no">
+        <name>BKP_RTCOutputSource_CalibClock</name>
+        <initializer>((uint16_t)0x0080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__output__source__to__output__on__the___tamper__pin_1gac016224386421d0cb1c0cd0ee201d65a" prot="public" static="no">
+        <name>BKP_RTCOutputSource_Alarm</name>
+        <initializer>((uint16_t)0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__output__source__to__output__on__the___tamper__pin_1ga23cb72635820331317ee4ee5a7897a70" prot="public" static="no">
+        <name>BKP_RTCOutputSource_Second</name>
+        <initializer>((uint16_t)0x0300)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__output__source__to__output__on__the___tamper__pin_1gac59454ee255feb55b5e14c34b70c99da" prot="public" static="no">
+        <name>IS_BKP_RTC_OUTPUT_SOURCE</name>
+        <param><defname>SOURCE</defname></param>
+        <initializer>(((SOURCE) == <ref refid="group___r_t_c__output__source__to__output__on__the___tamper__pin_1ga8a18950396b2db70311480ab76464c6e" kindref="member">BKP_RTCOutputSource_None</ref>) || \
+                                          ((SOURCE) == <ref refid="group___r_t_c__output__source__to__output__on__the___tamper__pin_1ga6fd7cb80bb52bca65641cbe6aa2c4590" kindref="member">BKP_RTCOutputSource_CalibClock</ref>) || \
+                                          ((SOURCE) == <ref refid="group___r_t_c__output__source__to__output__on__the___tamper__pin_1gac016224386421d0cb1c0cd0ee201d65a" kindref="member">BKP_RTCOutputSource_Alarm</ref>) || \
+                                          ((SOURCE) == <ref refid="group___r_t_c__output__source__to__output__on__the___tamper__pin_1ga23cb72635820331317ee4ee5a7897a70" kindref="member">BKP_RTCOutputSource_Second</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

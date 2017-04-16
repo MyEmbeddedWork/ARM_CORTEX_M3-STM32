@@ -1,0 +1,103 @@
+.TH "CAN_InitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_InitTypeDef \- CAN init structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_can\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBCAN_Prescaler\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBCAN_Mode\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBCAN_SJW\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBCAN_BS1\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBCAN_BS2\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBCAN_TTCM\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBCAN_ABOM\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBCAN_AWUM\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBCAN_NART\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBCAN_RFLM\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBCAN_TXFP\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CAN init structure definition\&. 
+.PP
+Definition at line 59 of file stm32f10x_can\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFunctionalState\fP CAN_InitTypeDef::CAN_ABOM"
+Enable or disable the automatic bus-off management\&. This parameter can be set either to ENABLE or DISABLE\&. 
+.PP
+Definition at line 87 of file stm32f10x_can\&.h\&.
+.SS "\fBFunctionalState\fP CAN_InitTypeDef::CAN_AWUM"
+Enable or disable the automatic wake-up mode\&. This parameter can be set either to ENABLE or DISABLE\&. 
+.PP
+Definition at line 91 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CAN_InitTypeDef::CAN_BS1"
+Specifies the number of time quanta in Bit Segment 1\&. This parameter can be a value of \fBCAN_time_quantum_in_bit_segment_1\fP 
+.PP
+Definition at line 74 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CAN_InitTypeDef::CAN_BS2"
+Specifies the number of time quanta in Bit Segment 2\&. This parameter can be a value of \fBCAN_time_quantum_in_bit_segment_2\fP 
+.PP
+Definition at line 78 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CAN_InitTypeDef::CAN_Mode"
+Specifies the CAN operating mode\&. This parameter can be a value of \fBCAN_operating_mode\fP 
+.PP
+Definition at line 64 of file stm32f10x_can\&.h\&.
+.SS "\fBFunctionalState\fP CAN_InitTypeDef::CAN_NART"
+Enable or disable the no-automatic retransmission mode\&. This parameter can be set either to ENABLE or DISABLE\&. 
+.PP
+Definition at line 95 of file stm32f10x_can\&.h\&.
+.SS "uint16_t CAN_InitTypeDef::CAN_Prescaler"
+Specifies the length of a time quantum\&. It ranges from 1 to 1024\&. 
+.PP
+Definition at line 61 of file stm32f10x_can\&.h\&.
+.SS "\fBFunctionalState\fP CAN_InitTypeDef::CAN_RFLM"
+Enable or disable the Receive FIFO Locked mode\&. This parameter can be set either to ENABLE or DISABLE\&. 
+.PP
+Definition at line 99 of file stm32f10x_can\&.h\&.
+.SS "uint8_t CAN_InitTypeDef::CAN_SJW"
+Specifies the maximum number of time quanta the CAN hardware is allowed to lengthen or shorten a bit to perform resynchronization\&. This parameter can be a value of \fBCAN_synchronisation_jump_width\fP 
+.PP
+Definition at line 68 of file stm32f10x_can\&.h\&.
+.SS "\fBFunctionalState\fP CAN_InitTypeDef::CAN_TTCM"
+Enable or disable the time triggered communication mode\&. This parameter can be set either to ENABLE or DISABLE\&. 
+.PP
+Definition at line 83 of file stm32f10x_can\&.h\&.
+.SS "\fBFunctionalState\fP CAN_InitTypeDef::CAN_TXFP"
+Enable or disable the transmit FIFO priority\&. This parameter can be set either to ENABLE or DISABLE\&. 
+.PP
+Definition at line 103 of file stm32f10x_can\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

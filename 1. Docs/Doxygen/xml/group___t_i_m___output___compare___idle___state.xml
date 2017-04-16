@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___output___compare___idle___state" kind="group">
+    <compoundname>TIM_Output_Compare_Idle_State</compoundname>
+    <title>TIM_Output_Compare_Idle_State</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___output___compare___idle___state_1ga86d8f895a1ec584323f6c02c7edfad4c" prot="public" static="no">
+        <name>TIM_OCIdleState_Set</name>
+        <initializer>((uint16_t)0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="535" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare___idle___state_1gace5465bc9e90ba7862b3af9e6cc9b97e" prot="public" static="no">
+        <name>TIM_OCIdleState_Reset</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="536" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare___idle___state_1ga69c62dcc15f9d39108b19b64205d689e" prot="public" static="no">
+        <name>IS_TIM_OCIDLE_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___t_i_m___output___compare___idle___state_1ga86d8f895a1ec584323f6c02c7edfad4c" kindref="member">TIM_OCIdleState_Set</ref>) || \
+                                    ((STATE) == <ref refid="group___t_i_m___output___compare___idle___state_1gace5465bc9e90ba7862b3af9e6cc9b97e" kindref="member">TIM_OCIdleState_Reset</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="537" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

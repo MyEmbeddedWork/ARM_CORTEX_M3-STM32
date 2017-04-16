@@ -1,0 +1,149 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h \- This file contains all the functions prototypes for the RTC firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRTC_IT_OW\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBRTC_IT_ALR\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBRTC_IT_SEC\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_IT\fP(IT)   ((((IT) & (uint16_t)0xFFF8) == 0x00) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_RTOFF\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_RSF\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_OW\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_ALR\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBRTC_FLAG_SEC\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint16_t)0xFFF0) == 0x00) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_RTC_PRESCALER\fP(PRESCALER)   ((PRESCALER) <= 0xFFFFF)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRTC_ITConfig\fP (uint16_t RTC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified RTC interrupts\&. "
+.ti -1c
+.RI "void \fBRTC_EnterConfigMode\fP (void)"
+.br
+.RI "Enters the RTC configuration mode\&. "
+.ti -1c
+.RI "void \fBRTC_ExitConfigMode\fP (void)"
+.br
+.RI "Exits from the RTC configuration mode\&. "
+.ti -1c
+.RI "uint32_t \fBRTC_GetCounter\fP (void)"
+.br
+.RI "Gets the RTC counter value\&. "
+.ti -1c
+.RI "void \fBRTC_SetCounter\fP (uint32_t CounterValue)"
+.br
+.RI "Sets the RTC counter value\&. "
+.ti -1c
+.RI "void \fBRTC_SetPrescaler\fP (uint32_t PrescalerValue)"
+.br
+.RI "Sets the RTC prescaler value\&. "
+.ti -1c
+.RI "void \fBRTC_SetAlarm\fP (uint32_t AlarmValue)"
+.br
+.RI "Sets the RTC alarm value\&. "
+.ti -1c
+.RI "uint32_t \fBRTC_GetDivider\fP (void)"
+.br
+.RI "Gets the RTC divider value\&. "
+.ti -1c
+.RI "void \fBRTC_WaitForLastTask\fP (void)"
+.br
+.RI "Waits until last write operation on RTC registers has finished\&. "
+.ti -1c
+.RI "void \fBRTC_WaitForSynchro\fP (void)"
+.br
+.RI "Waits until the RTC registers (RTC_CNT, RTC_ALR and RTC_PRL) are synchronized with RTC APB clock\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBRTC_GetFlagStatus\fP (uint16_t RTC_FLAG)"
+.br
+.RI "Checks whether the specified RTC flag is set or not\&. "
+.ti -1c
+.RI "void \fBRTC_ClearFlag\fP (uint16_t RTC_FLAG)"
+.br
+.RI "Clears the RTC's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBRTC_GetITStatus\fP (uint16_t RTC_IT)"
+.br
+.RI "Checks whether the specified RTC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBRTC_ClearITPendingBit\fP (uint16_t RTC_IT)"
+.br
+.RI "Clears the RTC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the RTC firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_rtc\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

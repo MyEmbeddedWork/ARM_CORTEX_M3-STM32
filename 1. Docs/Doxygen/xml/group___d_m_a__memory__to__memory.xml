@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_m_a__memory__to__memory" kind="group">
+    <compoundname>DMA_memory_to_memory</compoundname>
+    <title>DMA_memory_to_memory</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a__memory__to__memory_1ga046a1de15235c254c0511c08cae3065a" prot="public" static="no">
+        <name>DMA_M2M_Enable</name>
+        <initializer>((uint32_t)0x00004000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="203" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__memory__to__memory_1ga86e0a7076f0badd509fac6576f3b5355" prot="public" static="no">
+        <name>DMA_M2M_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="204" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__memory__to__memory_1gae0241d6265efc45f87b113cf44e50c06" prot="public" static="no">
+        <name>IS_DMA_M2M_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___d_m_a__memory__to__memory_1ga046a1de15235c254c0511c08cae3065a" kindref="member">DMA_M2M_Enable</ref>) || ((STATE) == <ref refid="group___d_m_a__memory__to__memory_1ga86e0a7076f0badd509fac6576f3b5355" kindref="member">DMA_M2M_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="205" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

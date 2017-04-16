@@ -1,0 +1,60 @@
+.TH "ADC_clock_source" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_clock_source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_PCLK2_Div2\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PCLK2_Div4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PCLK2_Div6\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PCLK2_Div8\fP   ((uint32_t)0x0000C000)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_ADCCLK\fP(ADCCLK)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RCC_ADCCLK(ADCCLK)"
+\fBValue:\fP
+.PP
+.nf
+(((ADCCLK) == RCC_PCLK2_Div2) || ((ADCCLK) == RCC_PCLK2_Div4) || \
+                               ((ADCCLK) == RCC_PCLK2_Div6) || ((ADCCLK) == RCC_PCLK2_Div8))
+.fi
+.PP
+Definition at line 433 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_PCLK2_Div2   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 429 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_PCLK2_Div4   ((uint32_t)0x00004000)"
+
+.PP
+Definition at line 430 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_PCLK2_Div6   ((uint32_t)0x00008000)"
+
+.PP
+Definition at line 431 of file stm32f10x_rcc\&.h\&.
+.SS "#define RCC_PCLK2_Div8   ((uint32_t)0x0000C000)"
+
+.PP
+Definition at line 432 of file stm32f10x_rcc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,458 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h \- This file contains all the functions prototypes for the SPI firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSPI_InitTypeDef\fP"
+.br
+.RI "SPI Init structure definition\&. "
+.ti -1c
+.RI "struct \fBI2S_InitTypeDef\fP"
+.br
+.RI "I2S Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_SPI_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_23_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_2Lines_FullDuplex\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_2Lines_RxOnly\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_1Line_Rx\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_1Line_Tx\fP   ((uint16_t)0xC000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Mode_Master\fP   ((uint16_t)0x0104)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Mode_Slave\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DataSize_16b\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DataSize_8b\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_DATASIZE\fP(DATASIZE)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CPOL_Low\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CPOL_High\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_CPOL\fP(CPOL)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CPHA_1Edge\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CPHA_2Edge\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_CPHA\fP(CPHA)"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_Soft\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_Hard\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_NSS\fP(NSS)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_2\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_4\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_8\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_16\fP   ((uint16_t)0x0018)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_32\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_64\fP   ((uint16_t)0x0028)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_128\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BaudRatePrescaler_256\fP   ((uint16_t)0x0038)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_BAUDRATE_PRESCALER\fP(PRESCALER)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FirstBit_MSB\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FirstBit_LSB\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_FIRST_BIT\fP(BIT)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Mode_SlaveTx\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Mode_SlaveRx\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Mode_MasterTx\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Mode_MasterRx\fP   ((uint16_t)0x0300)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_Phillips\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_MSB\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_LSB\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_PCMShort\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBI2S_Standard_PCMLong\fP   ((uint16_t)0x00B0)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_STANDARD\fP(STANDARD)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_16b\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_16bextended\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_24b\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_32b\fP   ((uint16_t)0x0005)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_DATA_FORMAT\fP(FORMAT)"
+.br
+.ti -1c
+.RI "#define \fBI2S_MCLKOutput_Enable\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBI2S_MCLKOutput_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_MCLK_OUTPUT\fP(OUTPUT)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_192k\fP   ((uint32_t)192000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_96k\fP   ((uint32_t)96000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_48k\fP   ((uint32_t)48000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_44k\fP   ((uint32_t)44100)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_32k\fP   ((uint32_t)32000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_22k\fP   ((uint32_t)22050)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_16k\fP   ((uint32_t)16000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_11k\fP   ((uint32_t)11025)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_8k\fP   ((uint32_t)8000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_Default\fP   ((uint32_t)2)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_AUDIO_FREQ\fP(FREQ)"
+.br
+.ti -1c
+.RI "#define \fBI2S_CPOL_Low\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_CPOL_High\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_CPOL\fP(CPOL)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_DMAReq_Tx\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_DMAReq_Rx\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_DMAREQ\fP(DMAREQ)   ((((DMAREQ) & (uint16_t)0xFFFC) == 0x00) && ((DMAREQ) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSSInternalSoft_Set\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSSInternalSoft_Reset\fP   ((uint16_t)0xFEFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_NSS_INTERNAL\fP(INTERNAL)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRC_Tx\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRC_Rx\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_CRC\fP(\fBCRC\fP)   (((\fBCRC\fP) == \fBSPI_CRC_Tx\fP) || ((\fBCRC\fP) == \fBSPI_CRC_Rx\fP))"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_Rx\fP   ((uint16_t)0xBFFF)"
+.br
+.ti -1c
+.RI "#define \fBSPI_Direction_Tx\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION\fP(DIRECTION)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_TXE\fP   ((uint8_t)0x71)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_RXNE\fP   ((uint8_t)0x60)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_ERR\fP   ((uint8_t)0x50)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_CONFIG_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_OVR\fP   ((uint8_t)0x56)"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_MODF\fP   ((uint8_t)0x55)"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_CRCERR\fP   ((uint8_t)0x54)"
+.br
+.ti -1c
+.RI "#define \fBI2S_IT_UDR\fP   ((uint8_t)0x53)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_CLEAR_IT\fP(IT)   (((IT) == \fBSPI_IT_CRCERR\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_FLAG_RXNE\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_FLAG_TXE\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBI2S_FLAG_CHSIDE\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBI2S_FLAG_UDR\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_CRCERR\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_MODF\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_FLAG_OVR\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_FLAG_BSY\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_CLEAR_FLAG\fP(FLAG)   (((FLAG) == \fBSPI_FLAG_CRCERR\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_POLYNOMIAL\fP(POLYNOMIAL)   ((POLYNOMIAL) >= 0x1)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSPI_I2S_DeInit\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Deinitializes the SPIx peripheral registers to their default reset values (Affects also the I2Ss)\&. "
+.ti -1c
+.RI "void \fBSPI_Init\fP (\fBSPI_TypeDef\fP *SPIx, \fBSPI_InitTypeDef\fP *SPI_InitStruct)"
+.br
+.RI "Initializes the SPIx peripheral according to the specified parameters in the SPI_InitStruct\&. "
+.ti -1c
+.RI "void \fBI2S_Init\fP (\fBSPI_TypeDef\fP *SPIx, \fBI2S_InitTypeDef\fP *I2S_InitStruct)"
+.br
+.RI "Initializes the SPIx peripheral according to the specified parameters in the I2S_InitStruct\&. "
+.ti -1c
+.RI "void \fBSPI_StructInit\fP (\fBSPI_InitTypeDef\fP *SPI_InitStruct)"
+.br
+.RI "Fills each SPI_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBI2S_StructInit\fP (\fBI2S_InitTypeDef\fP *I2S_InitStruct)"
+.br
+.RI "Fills each I2S_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBSPI_Cmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI peripheral\&. "
+.ti -1c
+.RI "void \fBI2S_Cmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI peripheral (in I2S mode)\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ITConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified SPI/I2S interrupts\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_DMACmd\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_DMAReq, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SPIx/I2Sx DMA interface\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_SendData\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t Data)"
+.br
+.RI "Transmits a Data through the SPIx/I2Sx peripheral\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_I2S_ReceiveData\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Returns the most recent received data by the SPIx/I2Sx peripheral\&. "
+.ti -1c
+.RI "void \fBSPI_NSSInternalSoftwareConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_NSSInternalSoft)"
+.br
+.RI "Configures internally by software the NSS pin for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_SSOutputCmd\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SS output for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_DataSizeConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_DataSize)"
+.br
+.RI "Configures the data size for the selected SPI\&. "
+.ti -1c
+.RI "void \fBSPI_TransmitCRC\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Transmit the SPIx CRC value\&. "
+.ti -1c
+.RI "void \fBSPI_CalculateCRC\fP (\fBSPI_TypeDef\fP *SPIx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CRC value calculation of the transferred bytes\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_GetCRC\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_CRC)"
+.br
+.RI "Returns the transmit or the receive CRC register value for the specified SPI\&. "
+.ti -1c
+.RI "uint16_t \fBSPI_GetCRCPolynomial\fP (\fBSPI_TypeDef\fP *SPIx)"
+.br
+.RI "Returns the CRC Polynomial register value for the specified SPI\&. "
+.ti -1c
+.RI "void \fBSPI_BiDirectionalLineConfig\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_Direction)"
+.br
+.RI "Selects the data transfer direction in bi-directional mode for the specified SPI\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBSPI_I2S_GetFlagStatus\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_FLAG)"
+.br
+.RI "Checks whether the specified SPI/I2S flag is set or not\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ClearFlag\fP (\fBSPI_TypeDef\fP *SPIx, uint16_t SPI_I2S_FLAG)"
+.br
+.RI "Clears the SPIx CRC Error (CRCERR) flag\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBSPI_I2S_GetITStatus\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT)"
+.br
+.RI "Checks whether the specified SPI/I2S interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBSPI_I2S_ClearITPendingBit\fP (\fBSPI_TypeDef\fP *SPIx, uint8_t SPI_I2S_IT)"
+.br
+.RI "Clears the SPIx CRC Error (CRCERR) interrupt pending bit\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the SPI firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_spi\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

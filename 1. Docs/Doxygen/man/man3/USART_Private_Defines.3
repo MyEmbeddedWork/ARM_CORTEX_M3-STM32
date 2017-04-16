@@ -1,0 +1,230 @@
+.TH "USART_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+USART_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCR1_UE_Set\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBCR1_UE_Reset\fP   ((uint16_t)0xDFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_WAKE_Mask\fP   ((uint16_t)0xF7FF)"
+.br
+.ti -1c
+.RI "#define \fBCR1_RWU_Set\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBCR1_RWU_Reset\fP   ((uint16_t)0xFFFD)"
+.br
+.ti -1c
+.RI "#define \fBCR1_SBK_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBCR1_CLEAR_Mask\fP   ((uint16_t)0xE9F3)"
+.br
+.ti -1c
+.RI "#define \fBCR2_Address_Mask\fP   ((uint16_t)0xFFF0)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LINEN_Set\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LINEN_Reset\fP   ((uint16_t)0xBFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_LBDL_Mask\fP   ((uint16_t)0xFFDF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_STOP_CLEAR_Mask\fP   ((uint16_t)0xCFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR2_CLOCK_CLEAR_Mask\fP   ((uint16_t)0xF0FF)"
+.br
+.ti -1c
+.RI "#define \fBCR3_SCEN_Set\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBCR3_SCEN_Reset\fP   ((uint16_t)0xFFDF)"
+.br
+.ti -1c
+.RI "#define \fBCR3_NACK_Set\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBCR3_NACK_Reset\fP   ((uint16_t)0xFFEF)"
+.br
+.ti -1c
+.RI "#define \fBCR3_HDSEL_Set\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBCR3_HDSEL_Reset\fP   ((uint16_t)0xFFF7)"
+.br
+.ti -1c
+.RI "#define \fBCR3_IRLP_Mask\fP   ((uint16_t)0xFFFB)"
+.br
+.ti -1c
+.RI "#define \fBCR3_CLEAR_Mask\fP   ((uint16_t)0xFCFF)"
+.br
+.ti -1c
+.RI "#define \fBCR3_IREN_Set\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBCR3_IREN_Reset\fP   ((uint16_t)0xFFFD)"
+.br
+.ti -1c
+.RI "#define \fBGTPR_LSB_Mask\fP   ((uint16_t)0x00FF)"
+.br
+.ti -1c
+.RI "#define \fBGTPR_MSB_Mask\fP   ((uint16_t)0xFF00)"
+.br
+.ti -1c
+.RI "#define \fBIT_Mask\fP   ((uint16_t)0x001F)"
+.br
+.ti -1c
+.RI "#define \fBCR1_OVER8_Set\fP   ((\fBu16\fP)0x8000)  /* USART OVER8 mode Enable Mask */"
+.br
+.ti -1c
+.RI "#define \fBCR1_OVER8_Reset\fP   ((\fBu16\fP)0x7FFF)  /* USART OVER8 mode Disable Mask */"
+.br
+.ti -1c
+.RI "#define \fBCR3_ONEBITE_Set\fP   ((\fBu16\fP)0x0800)  /* USART ONEBITE mode Enable Mask */"
+.br
+.ti -1c
+.RI "#define \fBCR3_ONEBITE_Reset\fP   ((\fBu16\fP)0xF7FF)  /* USART ONEBITE mode Disable Mask */"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CR1_CLEAR_Mask   ((uint16_t)0xE9F3)"
+USART CR1 Mask 
+.PP
+Definition at line 55 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_OVER8_Reset   ((\fBu16\fP)0x7FFF)  /* USART OVER8 mode Disable Mask */"
+
+.PP
+Definition at line 85 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_OVER8_Set   ((\fBu16\fP)0x8000)  /* USART OVER8 mode Enable Mask */"
+
+.PP
+Definition at line 84 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_RWU_Reset   ((uint16_t)0xFFFD)"
+USART mute mode Enable Mask 
+.PP
+Definition at line 53 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_RWU_Set   ((uint16_t)0x0002)"
+USART mute mode Enable Mask 
+.PP
+Definition at line 52 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_SBK_Set   ((uint16_t)0x0001)"
+USART Break Character send Mask 
+.PP
+Definition at line 54 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_UE_Reset   ((uint16_t)0xDFFF)"
+USART Disable Mask 
+.PP
+Definition at line 48 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_UE_Set   ((uint16_t)0x2000)"
+USART Enable Mask 
+.PP
+Definition at line 47 of file stm32f10x_usart\&.c\&.
+.SS "#define CR1_WAKE_Mask   ((uint16_t)0xF7FF)"
+USART WakeUp Method Mask 
+.PP
+Definition at line 50 of file stm32f10x_usart\&.c\&.
+.SS "#define CR2_Address_Mask   ((uint16_t)0xFFF0)"
+USART address Mask 
+.PP
+Definition at line 56 of file stm32f10x_usart\&.c\&.
+.SS "#define CR2_CLOCK_CLEAR_Mask   ((uint16_t)0xF0FF)"
+USART CR2 Clock Mask 
+.PP
+Definition at line 63 of file stm32f10x_usart\&.c\&.
+.SS "#define CR2_LBDL_Mask   ((uint16_t)0xFFDF)"
+USART LIN Break detection Mask 
+.PP
+Definition at line 61 of file stm32f10x_usart\&.c\&.
+.SS "#define CR2_LINEN_Reset   ((uint16_t)0xBFFF)"
+USART LIN Disable Mask 
+.PP
+Definition at line 59 of file stm32f10x_usart\&.c\&.
+.SS "#define CR2_LINEN_Set   ((uint16_t)0x4000)"
+USART LIN Enable Mask 
+.PP
+Definition at line 58 of file stm32f10x_usart\&.c\&.
+.SS "#define CR2_STOP_CLEAR_Mask   ((uint16_t)0xCFFF)"
+USART CR2 STOP Bits Mask 
+.PP
+Definition at line 62 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_CLEAR_Mask   ((uint16_t)0xFCFF)"
+USART CR3 Mask 
+.PP
+Definition at line 75 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_HDSEL_Reset   ((uint16_t)0xFFF7)"
+USART Half-Duplex Disable Mask 
+.PP
+Definition at line 72 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_HDSEL_Set   ((uint16_t)0x0008)"
+USART Half-Duplex Enable Mask 
+.PP
+Definition at line 71 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_IREN_Reset   ((uint16_t)0xFFFD)"
+USART IrDA Disable Mask 
+.PP
+Definition at line 78 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_IREN_Set   ((uint16_t)0x0002)"
+USART IrDA Enable Mask 
+.PP
+Definition at line 77 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_IRLP_Mask   ((uint16_t)0xFFFB)"
+USART IrDA LowPower mode Mask 
+.PP
+Definition at line 74 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_NACK_Reset   ((uint16_t)0xFFEF)"
+USART SC NACK Disable Mask 
+.PP
+Definition at line 69 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_NACK_Set   ((uint16_t)0x0010)"
+USART SC NACK Enable Mask 
+.PP
+Definition at line 68 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_ONEBITE_Reset   ((\fBu16\fP)0xF7FF)  /* USART ONEBITE mode Disable Mask */"
+
+.PP
+Definition at line 89 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_ONEBITE_Set   ((\fBu16\fP)0x0800)  /* USART ONEBITE mode Enable Mask */"
+
+.PP
+Definition at line 88 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_SCEN_Reset   ((uint16_t)0xFFDF)"
+USART SC Disable Mask 
+.PP
+Definition at line 66 of file stm32f10x_usart\&.c\&.
+.SS "#define CR3_SCEN_Set   ((uint16_t)0x0020)"
+USART SC Enable Mask 
+.PP
+Definition at line 65 of file stm32f10x_usart\&.c\&.
+.SS "#define GTPR_LSB_Mask   ((uint16_t)0x00FF)"
+Guard Time Register LSB Mask 
+.PP
+Definition at line 79 of file stm32f10x_usart\&.c\&.
+.SS "#define GTPR_MSB_Mask   ((uint16_t)0xFF00)"
+Guard Time Register MSB Mask 
+.PP
+Definition at line 80 of file stm32f10x_usart\&.c\&.
+.SS "#define IT_Mask   ((uint16_t)0x001F)"
+USART Interrupt Mask 
+.PP
+Definition at line 81 of file stm32f10x_usart\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

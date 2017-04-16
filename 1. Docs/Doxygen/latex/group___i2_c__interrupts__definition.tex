@@ -1,0 +1,274 @@
+\hypertarget{group___i2_c__interrupts__definition}{}\section{I2\+C\+\_\+interrupts\+\_\+definition}
+\label{group___i2_c__interrupts__definition}\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+Collaboration diagram for I2\+C\+\_\+interrupts\+\_\+definition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___i2_c__interrupts__definition}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gad3ff3f405b882aa4d2f91310aa1cc0df}{I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF}~((uint16\+\_\+t)0x0400)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gadd59efa313e1598a084a1e5ec3905b02}{I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT}~((uint16\+\_\+t)0x0200)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gadba3667b439cbf4ba1e6e9aec961ab03}{I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR}~((uint16\+\_\+t)0x0100)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gae2695a081871336881f9105d6c847c4f}{I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}(IT)~((((IT) \& (uint16\+\_\+t)0x\+F8\+F\+F) == 0x00) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gab6049d4dd856a085127752e01ebb8120}{I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT}~((uint32\+\_\+t)0x01008000)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga45ce34b163b456a5fb3833f1264d93b4}{I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}~((uint32\+\_\+t)0x01004000)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga23069e7787c4f052f34887c02bc44100}{I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR}~((uint32\+\_\+t)0x01001000)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga8e1e9e73d9057ccfce3493b5cf672833}{I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR}~((uint32\+\_\+t)0x01000800)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gabfb721ac5783336e6d2334f635e2e91b}{I2\+C\+\_\+\+I\+T\+\_\+\+AF}~((uint32\+\_\+t)0x01000400)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga2439154bee2a45a4147921cec18177d1}{I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO}~((uint32\+\_\+t)0x01000200)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gad9aec016c98df6dbb95a5c10b180c202}{I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR}~((uint32\+\_\+t)0x01000100)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gacb41229da2cd9460c3272cfb13aa29d3}{I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE}~((uint32\+\_\+t)0x06000080)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gac95135720c0de2fd01c44c3f7b6c81d4}{I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE}~((uint32\+\_\+t)0x06000040)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga741e098abb485b327c7668518117e415}{I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF}~((uint32\+\_\+t)0x02000010)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga8a9bc5a1dee3bbd41347b19cf117c0f3}{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10}~((uint32\+\_\+t)0x02000008)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gaef469fef934f655614b7cffd00b87ceb}{I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF}~((uint32\+\_\+t)0x02000004)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gaf68f1eda33dcb13626597f477d044025}{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR}~((uint32\+\_\+t)0x02000002)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gaec2fb9bbd0e1b128b4450b2a7b312896}{I2\+C\+\_\+\+I\+T\+\_\+\+SB}~((uint32\+\_\+t)0x02000001)
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_ga368c05fc9aadd7bb4d23280791b5a751}{I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}(IT)~((((IT) \& (uint16\+\_\+t)0x20\+F\+F) == 0x00) \&\& ((\+I\+T) != (uint16\+\_\+t)0x00))
+\item 
+\#define \hyperlink{group___i2_c__interrupts__definition_gab3d113f3d6b6e6f7896c5d7a8d8c2d01}{I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga8a9bc5a1dee3bbd41347b19cf117c0f3}\label{group___i2_c__interrupts__definition_ga8a9bc5a1dee3bbd41347b19cf117c0f3}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10@{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10@{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10}{I2C\_IT\_ADD10}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+D10~((uint32\+\_\+t)0x02000008)}
+
+
+
+Definition at line 238 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gaf68f1eda33dcb13626597f477d044025}\label{group___i2_c__interrupts__definition_gaf68f1eda33dcb13626597f477d044025}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR@{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR@{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR}{I2C\_IT\_ADDR}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+A\+D\+DR~((uint32\+\_\+t)0x02000002)}
+
+
+
+Definition at line 240 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gabfb721ac5783336e6d2334f635e2e91b}\label{group___i2_c__interrupts__definition_gabfb721ac5783336e6d2334f635e2e91b}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+AF@{I2\+C\+\_\+\+I\+T\+\_\+\+AF}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+AF@{I2\+C\+\_\+\+I\+T\+\_\+\+AF}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+AF}{I2C\_IT\_AF}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+AF~((uint32\+\_\+t)0x01000400)}
+
+
+
+Definition at line 232 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga2439154bee2a45a4147921cec18177d1}\label{group___i2_c__interrupts__definition_ga2439154bee2a45a4147921cec18177d1}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO@{I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO@{I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO}{I2C\_IT\_ARLO}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+A\+R\+LO~((uint32\+\_\+t)0x01000200)}
+
+
+
+Definition at line 233 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gad9aec016c98df6dbb95a5c10b180c202}\label{group___i2_c__interrupts__definition_gad9aec016c98df6dbb95a5c10b180c202}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR@{I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR@{I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR}{I2C\_IT\_BERR}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+B\+E\+RR~((uint32\+\_\+t)0x01000100)}
+
+
+
+Definition at line 234 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gaef469fef934f655614b7cffd00b87ceb}\label{group___i2_c__interrupts__definition_gaef469fef934f655614b7cffd00b87ceb}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF@{I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF@{I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF}{I2C\_IT\_BTF}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+B\+TF~((uint32\+\_\+t)0x02000004)}
+
+
+
+Definition at line 239 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gad3ff3f405b882aa4d2f91310aa1cc0df}\label{group___i2_c__interrupts__definition_gad3ff3f405b882aa4d2f91310aa1cc0df}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF@{I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF@{I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF}{I2C\_IT\_BUF}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+B\+UF~((uint16\+\_\+t)0x0400)}
+
+
+
+Definition at line 216 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gadba3667b439cbf4ba1e6e9aec961ab03}\label{group___i2_c__interrupts__definition_gadba3667b439cbf4ba1e6e9aec961ab03}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR@{I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR@{I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR}{I2C\_IT\_ERR}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+E\+RR~((uint16\+\_\+t)0x0100)}
+
+
+
+Definition at line 218 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gadd59efa313e1598a084a1e5ec3905b02}\label{group___i2_c__interrupts__definition_gadd59efa313e1598a084a1e5ec3905b02}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT@{I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT@{I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT}{I2C\_IT\_EVT}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+E\+VT~((uint16\+\_\+t)0x0200)}
+
+
+
+Definition at line 217 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga8e1e9e73d9057ccfce3493b5cf672833}\label{group___i2_c__interrupts__definition_ga8e1e9e73d9057ccfce3493b5cf672833}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR@{I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR@{I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR}{I2C\_IT\_OVR}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+O\+VR~((uint32\+\_\+t)0x01000800)}
+
+
+
+Definition at line 231 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga23069e7787c4f052f34887c02bc44100}\label{group___i2_c__interrupts__definition_ga23069e7787c4f052f34887c02bc44100}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR@{I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR@{I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR}{I2C\_IT\_PECERR}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+P\+E\+C\+E\+RR~((uint32\+\_\+t)0x01001000)}
+
+
+
+Definition at line 230 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gac95135720c0de2fd01c44c3f7b6c81d4}\label{group___i2_c__interrupts__definition_gac95135720c0de2fd01c44c3f7b6c81d4}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE@{I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE@{I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE}{I2C\_IT\_RXNE}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+R\+X\+NE~((uint32\+\_\+t)0x06000040)}
+
+
+
+Definition at line 236 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gaec2fb9bbd0e1b128b4450b2a7b312896}\label{group___i2_c__interrupts__definition_gaec2fb9bbd0e1b128b4450b2a7b312896}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+SB@{I2\+C\+\_\+\+I\+T\+\_\+\+SB}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+SB@{I2\+C\+\_\+\+I\+T\+\_\+\+SB}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+SB}{I2C\_IT\_SB}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+SB~((uint32\+\_\+t)0x02000001)}
+
+
+
+Definition at line 241 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gab6049d4dd856a085127752e01ebb8120}\label{group___i2_c__interrupts__definition_gab6049d4dd856a085127752e01ebb8120}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT@{I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT@{I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT}{I2C\_IT\_SMBALERT}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+S\+M\+B\+A\+L\+E\+RT~((uint32\+\_\+t)0x01008000)}
+
+
+
+Definition at line 228 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga741e098abb485b327c7668518117e415}\label{group___i2_c__interrupts__definition_ga741e098abb485b327c7668518117e415}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF@{I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF@{I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF}{I2C\_IT\_STOPF}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+S\+T\+O\+PF~((uint32\+\_\+t)0x02000010)}
+
+
+
+Definition at line 237 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga45ce34b163b456a5fb3833f1264d93b4}\label{group___i2_c__interrupts__definition_ga45ce34b163b456a5fb3833f1264d93b4}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}{I2C\_IT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT~((uint32\+\_\+t)0x01004000)}
+
+
+
+Definition at line 229 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gacb41229da2cd9460c3272cfb13aa29d3}\label{group___i2_c__interrupts__definition_gacb41229da2cd9460c3272cfb13aa29d3}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE@{I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE}}
+\index{I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE@{I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE}{I2C\_IT\_TXE}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+I\+T\+\_\+\+T\+XE~((uint32\+\_\+t)0x06000080)}
+
+
+
+Definition at line 235 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_ga368c05fc9aadd7bb4d23280791b5a751}\label{group___i2_c__interrupts__definition_ga368c05fc9aadd7bb4d23280791b5a751}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT@{I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}}
+\index{I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT@{I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}{IS\_I2C\_CLEAR\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+I2\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~((((IT) \& (uint16\+\_\+t)0x20\+F\+F) == 0x00) \&\& ((\+I\+T) != (uint16\+\_\+t)0x00))}
+
+
+
+Definition at line 243 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gae2695a081871336881f9105d6c847c4f}\label{group___i2_c__interrupts__definition_gae2695a081871336881f9105d6c847c4f}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT@{I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}}
+\index{I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT@{I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT}{IS\_I2C\_CONFIG\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+I2\+C\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})~((((IT) \& (uint16\+\_\+t)0x\+F8\+F\+F) == 0x00) \&\& ((\+I\+T) != 0x00))}
+
+
+
+Definition at line 219 of file stm32f10x\+\_\+i2c.\+h.
+
+\mbox{\Hypertarget{group___i2_c__interrupts__definition_gab3d113f3d6b6e6f7896c5d7a8d8c2d01}\label{group___i2_c__interrupts__definition_gab3d113f3d6b6e6f7896c5d7a8d8c2d01}} 
+\index{I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}!I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT}}
+\index{I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT@{I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT}!I2\+C\+\_\+interrupts\+\_\+definition@{I2\+C\+\_\+interrupts\+\_\+definition}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT}{IS\_I2C\_GET\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+I2\+C\+\_\+\+G\+E\+T\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((IT) == \hyperlink{group___i2_c__interrupts__definition_gab6049d4dd856a085127752e01ebb8120}{I2C\_IT\_SMBALERT}) || ((IT) == \hyperlink{group___i2_c__interrupts__definition_ga45ce34b163b456a5fb3833f1264d93b4}{I2C\_IT\_TIMEOUT}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___i2_c__interrupts__definition_ga23069e7787c4f052f34887c02bc44100}{I2C\_IT\_PECERR}) || ((IT) == 
+      \hyperlink{group___i2_c__interrupts__definition_ga8e1e9e73d9057ccfce3493b5cf672833}{I2C\_IT\_OVR}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___i2_c__interrupts__definition_gabfb721ac5783336e6d2334f635e2e91b}{I2C\_IT\_AF}) || ((IT) == \hyperlink{group___i2_c__interrupts__definition_ga2439154bee2a45a4147921cec18177d1}{I2C\_IT\_ARLO}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___i2_c__interrupts__definition_gad9aec016c98df6dbb95a5c10b180c202}{I2C\_IT\_BERR}) || ((IT) == 
+      \hyperlink{group___i2_c__interrupts__definition_gacb41229da2cd9460c3272cfb13aa29d3}{I2C\_IT\_TXE}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___i2_c__interrupts__definition_gac95135720c0de2fd01c44c3f7b6c81d4}{I2C\_IT\_RXNE}) || ((IT) == 
+      \hyperlink{group___i2_c__interrupts__definition_ga741e098abb485b327c7668518117e415}{I2C\_IT\_STOPF}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___i2_c__interrupts__definition_ga8a9bc5a1dee3bbd41347b19cf117c0f3}{I2C\_IT\_ADD10}) || ((IT) == 
+      \hyperlink{group___i2_c__interrupts__definition_gaef469fef934f655614b7cffd00b87ceb}{I2C\_IT\_BTF}) || \(\backslash\)
+                           ((IT) == \hyperlink{group___i2_c__interrupts__definition_gaf68f1eda33dcb13626597f477d044025}{I2C\_IT\_ADDR}) || ((IT) == 
+      \hyperlink{group___i2_c__interrupts__definition_gaec2fb9bbd0e1b128b4450b2a7b312896}{I2C\_IT\_SB}))
+\end{DoxyCode}
+
+
+Definition at line 245 of file stm32f10x\+\_\+i2c.\+h.
+

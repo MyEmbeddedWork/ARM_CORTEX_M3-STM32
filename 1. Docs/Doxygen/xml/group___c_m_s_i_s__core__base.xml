@@ -1,0 +1,959 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s__core__base" kind="group">
+    <compoundname>CMSIS_core_base</compoundname>
+    <title>Core Definitions</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="590" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="591" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="592" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="593" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="595" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="596" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="597" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="702" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="703" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="704" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="705" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="707" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="708" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="709" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1372" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" prot="public" static="no">
+        <name>ITM_BASE</name>
+        <initializer>(0xE0000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1373" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" prot="public" static="no">
+        <name>DWT_BASE</name>
+        <initializer>(0xE0001000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1374" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" prot="public" static="no">
+        <name>TPI_BASE</name>
+        <initializer>(0xE0040000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1375" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" prot="public" static="no">
+        <name>CoreDebug_BASE</name>
+        <initializer>(0xE000EDF0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1376" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1377" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1378" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1379" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga9fe0cd2eef83a8adad94490d9ecca63f" prot="public" static="no">
+        <name>SCnSCB</name>
+        <initializer>((<ref refid="struct_s_cn_s_c_b___type" kindref="compound">SCnSCB_Type</ref>    *)     <ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System control Register not in SCB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1381" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1382" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1383" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1384" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabae7cdf882def602cb787bb039ff6a43" prot="public" static="no">
+        <name>ITM</name>
+        <initializer>((<ref refid="struct_i_t_m___type" kindref="compound">ITM_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" kindref="member">ITM_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1385" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabbe5a060185e1d5afa3f85b14e10a6ce" prot="public" static="no">
+        <name>DWT</name>
+        <initializer>((<ref refid="struct_d_w_t___type" kindref="compound">DWT_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" kindref="member">DWT_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1386" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga8b4dd00016aed25a0ea54e9a9acd1239" prot="public" static="no">
+        <name>TPI</name>
+        <initializer>((<ref refid="struct_t_p_i___type" kindref="compound">TPI_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" kindref="member">TPI_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1387" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gab6e30a2b802d9021619dbb0be7f5d63d" prot="public" static="no">
+        <name>CoreDebug</name>
+        <initializer>((<ref refid="struct_core_debug___type" kindref="compound">CoreDebug_Type</ref> *)     <ref refid="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" kindref="member">CoreDebug_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1388" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1541" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" prot="public" static="no">
+        <name>ITM_BASE</name>
+        <initializer>(0xE0000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1542" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" prot="public" static="no">
+        <name>DWT_BASE</name>
+        <initializer>(0xE0001000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1543" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" prot="public" static="no">
+        <name>TPI_BASE</name>
+        <initializer>(0xE0040000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1544" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" prot="public" static="no">
+        <name>CoreDebug_BASE</name>
+        <initializer>(0xE000EDF0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1545" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1546" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1547" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1548" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga9fe0cd2eef83a8adad94490d9ecca63f" prot="public" static="no">
+        <name>SCnSCB</name>
+        <initializer>((<ref refid="struct_s_cn_s_c_b___type" kindref="compound">SCnSCB_Type</ref>    *)     <ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System control Register not in SCB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1550" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1551" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1552" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1553" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabae7cdf882def602cb787bb039ff6a43" prot="public" static="no">
+        <name>ITM</name>
+        <initializer>((<ref refid="struct_i_t_m___type" kindref="compound">ITM_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" kindref="member">ITM_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1554" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabbe5a060185e1d5afa3f85b14e10a6ce" prot="public" static="no">
+        <name>DWT</name>
+        <initializer>((<ref refid="struct_d_w_t___type" kindref="compound">DWT_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" kindref="member">DWT_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1555" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga8b4dd00016aed25a0ea54e9a9acd1239" prot="public" static="no">
+        <name>TPI</name>
+        <initializer>((<ref refid="struct_t_p_i___type" kindref="compound">TPI_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" kindref="member">TPI_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1556" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gab6e30a2b802d9021619dbb0be7f5d63d" prot="public" static="no">
+        <name>CoreDebug</name>
+        <initializer>((<ref refid="struct_core_debug___type" kindref="compound">CoreDebug_Type</ref> *)     <ref refid="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" kindref="member">CoreDebug_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1557" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1749" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" prot="public" static="no">
+        <name>ITM_BASE</name>
+        <initializer>(0xE0000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1750" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" prot="public" static="no">
+        <name>DWT_BASE</name>
+        <initializer>(0xE0001000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1751" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" prot="public" static="no">
+        <name>TPI_BASE</name>
+        <initializer>(0xE0040000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1752" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" prot="public" static="no">
+        <name>CoreDebug_BASE</name>
+        <initializer>(0xE000EDF0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1753" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1754" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1755" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1756" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga9fe0cd2eef83a8adad94490d9ecca63f" prot="public" static="no">
+        <name>SCnSCB</name>
+        <initializer>((<ref refid="struct_s_cn_s_c_b___type" kindref="compound">SCnSCB_Type</ref>    *)     <ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System control Register not in SCB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1758" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1759" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1760" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1761" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabae7cdf882def602cb787bb039ff6a43" prot="public" static="no">
+        <name>ITM</name>
+        <initializer>((<ref refid="struct_i_t_m___type" kindref="compound">ITM_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" kindref="member">ITM_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1762" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabbe5a060185e1d5afa3f85b14e10a6ce" prot="public" static="no">
+        <name>DWT</name>
+        <initializer>((<ref refid="struct_d_w_t___type" kindref="compound">DWT_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" kindref="member">DWT_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1763" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga8b4dd00016aed25a0ea54e9a9acd1239" prot="public" static="no">
+        <name>TPI</name>
+        <initializer>((<ref refid="struct_t_p_i___type" kindref="compound">TPI_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" kindref="member">TPI_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1764" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gab6e30a2b802d9021619dbb0be7f5d63d" prot="public" static="no">
+        <name>CoreDebug</name>
+        <initializer>((<ref refid="struct_core_debug___type" kindref="compound">CoreDebug_Type</ref> *)     <ref refid="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" kindref="member">CoreDebug_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="1765" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="1765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="705" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="706" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="707" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="708" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga9fe0cd2eef83a8adad94490d9ecca63f" prot="public" static="no">
+        <name>SCnSCB</name>
+        <initializer>((<ref refid="struct_s_cn_s_c_b___type" kindref="compound">SCnSCB_Type</ref>    *)     <ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System control Register not in SCB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="710" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="711" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="712" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="713" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1346" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" prot="public" static="no">
+        <name>ITM_BASE</name>
+        <initializer>(0xE0000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1347" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" prot="public" static="no">
+        <name>DWT_BASE</name>
+        <initializer>(0xE0001000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1348" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" prot="public" static="no">
+        <name>TPI_BASE</name>
+        <initializer>(0xE0040000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1349" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" prot="public" static="no">
+        <name>CoreDebug_BASE</name>
+        <initializer>(0xE000EDF0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1350" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1351" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1352" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1353" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga9fe0cd2eef83a8adad94490d9ecca63f" prot="public" static="no">
+        <name>SCnSCB</name>
+        <initializer>((<ref refid="struct_s_cn_s_c_b___type" kindref="compound">SCnSCB_Type</ref>    *)     <ref refid="group___c_m_s_i_s__core__base_1ga3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System control Register not in SCB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1355" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((<ref refid="struct_s_c_b___type" kindref="compound">SCB_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1356" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gacd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="group___c_m_s_i_s__core__base_1ga58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1357" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="group___c_m_s_i_s__core__base_1gaa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1358" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabae7cdf882def602cb787bb039ff6a43" prot="public" static="no">
+        <name>ITM</name>
+        <initializer>((<ref refid="struct_i_t_m___type" kindref="compound">ITM_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gadd76251e412a195ec0a8f47227a8359e" kindref="member">ITM_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1359" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gabbe5a060185e1d5afa3f85b14e10a6ce" prot="public" static="no">
+        <name>DWT</name>
+        <initializer>((<ref refid="struct_d_w_t___type" kindref="compound">DWT_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1gafdab534f961bf8935eb456cb7700dcd2" kindref="member">DWT_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1360" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1ga8b4dd00016aed25a0ea54e9a9acd1239" prot="public" static="no">
+        <name>TPI</name>
+        <initializer>((<ref refid="struct_t_p_i___type" kindref="compound">TPI_Type</ref>       *)     <ref refid="group___c_m_s_i_s__core__base_1ga2b1eeff850a7e418844ca847145a1a68" kindref="member">TPI_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1361" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__base_1gab6e30a2b802d9021619dbb0be7f5d63d" prot="public" static="no">
+        <name>CoreDebug</name>
+        <initializer>((<ref refid="struct_core_debug___type" kindref="compound">CoreDebug_Type</ref> *)     <ref refid="group___c_m_s_i_s__core__base_1ga680604dbcda9e9b31a1639fcffe5230b" kindref="member">CoreDebug_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1362" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for base addresses, unions, and structures. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

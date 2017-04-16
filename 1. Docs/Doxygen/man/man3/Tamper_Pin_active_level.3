@@ -1,0 +1,46 @@
+.TH "Tamper_Pin_active_level" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Tamper_Pin_active_level
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBKP_TamperPinLevel_High\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBBKP_TamperPinLevel_Low\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_BKP_TAMPER_PIN_LEVEL\fP(LEVEL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BKP_TamperPinLevel_High   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 58 of file stm32f10x_bkp\&.h\&.
+.SS "#define BKP_TamperPinLevel_Low   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 59 of file stm32f10x_bkp\&.h\&.
+.SS "#define IS_BKP_TAMPER_PIN_LEVEL(LEVEL)"
+\fBValue:\fP
+.PP
+.nf
+(((LEVEL) == BKP_TamperPinLevel_High) || \
+                                        ((LEVEL) == BKP_TamperPinLevel_Low))
+.fi
+.PP
+Definition at line 60 of file stm32f10x_bkp\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

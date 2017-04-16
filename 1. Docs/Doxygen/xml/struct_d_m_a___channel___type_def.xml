@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_d_m_a___channel___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>DMA_Channel_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DMA_Channel_TypeDef::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="800" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="800" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" compoundref="stm32f10x__dma_8c" startline="108" endline="191">DMA_DeInit</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga8e7cb6b9ae5f142e2961df879cdaba65" compoundref="stm32f10x__dma_8c" startline="294" endline="310">DMA_Cmd</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga0bb60360be9cd57f96399be2f3b5eb2b" compoundref="stm32f10x__dma_8c" startline="326" endline="342">DMA_ITConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DMA_Channel_TypeDef::CNDTR</definition>
+        <argsstring></argsstring>
+        <name>CNDTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="801" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="801" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" compoundref="stm32f10x__dma_8c" startline="108" endline="191">DMA_DeInit</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1gade5d9e532814eaa46514cb385fdff709" compoundref="stm32f10x__dma_8c" startline="353" endline="361">DMA_SetCurrDataCounter</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga511b4c402d1ff32d53f28736956cac5d" compoundref="stm32f10x__dma_8c" startline="371" endline="377">DMA_GetCurrDataCounter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1a8ce1c9c2742eaaa0e97ddbb3a06154cc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DMA_Channel_TypeDef::CPAR</definition>
+        <argsstring></argsstring>
+        <name>CPAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="802" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="802" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" compoundref="stm32f10x__dma_8c" startline="108" endline="191">DMA_DeInit</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1a7a9886b5f9e0edaf5ced3d1870b33ad7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DMA_Channel_TypeDef::CMAR</definition>
+        <argsstring></argsstring>
+        <name>CMAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="803" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="803" bodyend="-1"/>
+        <referencedby refid="group___d_m_a___private___functions_1ga21ca0d50b13e502db5ab5feb484f9ece" compoundref="stm32f10x__dma_8c" startline="108" endline="191">DMA_DeInit</referencedby>
+        <referencedby refid="group___d_m_a___private___functions_1ga7c3d1b9dc041f8e5f2cfc8d5dd858278" compoundref="stm32f10x__dma_8c" startline="202" endline="251">DMA_Init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DMA Controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="799" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="798" bodyend="804"/>
+    <listofallmembers>
+      <member refid="struct_d_m_a___channel___type_def_1aa4938d438293f76ff6d9a262715c23eb" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CCR</name></member>
+      <member refid="struct_d_m_a___channel___type_def_1a7a9886b5f9e0edaf5ced3d1870b33ad7" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CMAR</name></member>
+      <member refid="struct_d_m_a___channel___type_def_1af1c675e412fb96e38b6b4630b88c5676" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CNDTR</name></member>
+      <member refid="struct_d_m_a___channel___type_def_1a8ce1c9c2742eaaa0e97ddbb3a06154cc" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CPAR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

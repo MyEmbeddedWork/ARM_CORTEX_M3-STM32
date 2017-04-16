@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_c_e_c___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>CEC_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__cec_8h" local="no">stm32f10x_cec.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_e_c___init_type_def_1a197bc5a8957ab0b86d4ecc1347fa9e37" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CEC_InitTypeDef::CEC_BitTimingMode</definition>
+        <argsstring></argsstring>
+        <name>CEC_BitTimingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configures the CEC Bit Timing Error Mode. This parameter can be a value of <ref refid="group___c_e_c___bit_timing___mode" kindref="compound">CEC_BitTiming_Mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="52" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="group___c_e_c___private___functions_1gaf48aee745a16370372b3eaa7cf3ed22b" compoundref="stm32f10x__cec_8c" startline="135" endline="157">CEC_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_e_c___init_type_def_1a3cc27a2030d87a8bea17c6b0750dda2a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CEC_InitTypeDef::CEC_BitPeriodMode</definition>
+        <argsstring></argsstring>
+        <name>CEC_BitPeriodMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configures the CEC Bit Period Error Mode. This parameter can be a value of <ref refid="group___c_e_c___bit_period___mode" kindref="compound">CEC_BitPeriod_Mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="54" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="group___c_e_c___private___functions_1gaf48aee745a16370372b3eaa7cf3ed22b" compoundref="stm32f10x__cec_8c" startline="135" endline="157">CEC_Init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CEC Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="51" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="50" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_c_e_c___init_type_def_1a3cc27a2030d87a8bea17c6b0750dda2a" prot="public" virt="non-virtual"><scope>CEC_InitTypeDef</scope><name>CEC_BitPeriodMode</name></member>
+      <member refid="struct_c_e_c___init_type_def_1a197bc5a8957ab0b86d4ecc1347fa9e37" prot="public" virt="non-virtual"><scope>CEC_InitTypeDef</scope><name>CEC_BitTimingMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

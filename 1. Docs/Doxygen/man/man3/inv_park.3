@@ -1,0 +1,28 @@
+.TH "inv_park" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inv_park
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Inverse Park transform converts the input flux and torque components to two-coordinate vector\&.
+.PP
+The function operates on a single sample of data and each call to the function returns the processed output\&. The library provides separate functions for Q31 and floating-point data types\&. 
+.PP
+\fBAlgorithm\fP
+.RS 4
+ where \fCpIalpha\fP and \fCpIbeta\fP are the stator vector components, \fCId\fP and \fCIq\fP are rotor vector components and \fCcosVal\fP and \fCsinVal\fP are the cosine and sine values of theta (rotor flux position)\&. 
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the Q31 version of the Park transform\&. In particular, the overflow and saturation behavior of the accumulator used must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

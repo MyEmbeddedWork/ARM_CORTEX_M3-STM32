@@ -1,0 +1,46 @@
+.TH "I2S_Clock_Polarity" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2S_Clock_Polarity
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2S_CPOL_Low\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_CPOL_High\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_CPOL\fP(CPOL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2S_CPOL_High   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 331 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_CPOL_Low   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 330 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_I2S_CPOL(CPOL)"
+\fBValue:\fP
+.PP
+.nf
+(((CPOL) == I2S_CPOL_Low) || \
+                           ((CPOL) == I2S_CPOL_High))
+.fi
+.PP
+Definition at line 332 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

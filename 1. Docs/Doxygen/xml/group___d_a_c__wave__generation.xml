@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_a_c__wave__generation" kind="group">
+    <compoundname>DAC_wave_generation</compoundname>
+    <title>DAC_wave_generation</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1gaabbcd575d6106267f6b65ce988158f29" prot="public" static="no">
+        <name>DAC_WaveGeneration_None</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="113" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1ga1692990325098cae6f32182c1fa0f61e" prot="public" static="no">
+        <name>DAC_WaveGeneration_Noise</name>
+        <initializer>((uint32_t)0x00000040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="114" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1ga68f1a71011437a5ea6298ab039554714" prot="public" static="no">
+        <name>DAC_WaveGeneration_Triangle</name>
+        <initializer>((uint32_t)0x00000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="115" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1ga50fb2dd12305cd7bd0b738a1f6388d3c" prot="public" static="no">
+        <name>IS_DAC_GENERATE_WAVE</name>
+        <param><defname>WAVE</defname></param>
+        <initializer>(((WAVE) == <ref refid="group___d_a_c__wave__generation_1gaabbcd575d6106267f6b65ce988158f29" kindref="member">DAC_WaveGeneration_None</ref>) || \
+                                    ((WAVE) == <ref refid="group___d_a_c__wave__generation_1ga1692990325098cae6f32182c1fa0f61e" kindref="member">DAC_WaveGeneration_Noise</ref>) || \
+                                    ((WAVE) == <ref refid="group___d_a_c__wave__generation_1ga68f1a71011437a5ea6298ab039554714" kindref="member">DAC_WaveGeneration_Triangle</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="116" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1ga09c5ee68f8e726b1c039df1f6e195965" prot="public" static="no">
+        <name>DAC_Wave_Noise</name>
+        <initializer>((uint32_t)0x00000040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="222" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1ga95a1566e1728e1e345e8f3b50629a075" prot="public" static="no">
+        <name>DAC_Wave_Triangle</name>
+        <initializer>((uint32_t)0x00000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="223" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c__wave__generation_1ga45c25065fb713820f6dbae0009376e1c" prot="public" static="no">
+        <name>IS_DAC_WAVE</name>
+        <param><defname>WAVE</defname></param>
+        <initializer>(((WAVE) == <ref refid="group___d_a_c__wave__generation_1ga09c5ee68f8e726b1c039df1f6e195965" kindref="member">DAC_Wave_Noise</ref>) || \
+                           ((WAVE) == <ref refid="group___d_a_c__wave__generation_1ga95a1566e1728e1e345e8f3b50629a075" kindref="member">DAC_Wave_Triangle</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="224" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

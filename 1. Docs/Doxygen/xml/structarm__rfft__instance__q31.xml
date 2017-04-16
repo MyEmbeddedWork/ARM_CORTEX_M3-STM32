@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__rfft__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_rfft_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1af777b0cadd5abaf064323692c2e6693b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arm_rfft_instance_q31::fftLenReal</definition>
+        <argsstring></argsstring>
+        <name>fftLenReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the real FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2185" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1af5c2615e6cde15524df38fa57ea32d94" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_rfft_instance_q31::ifftFlagR</definition>
+        <argsstring></argsstring>
+        <name>ifftFlagR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that selects forward (ifftFlagR=0) or inverse (ifftFlagR=1) transform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2186" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1a3cb90cdc928a88b0203917dcb3dc1b71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t arm_rfft_instance_q31::bitReverseFlagR</definition>
+        <argsstring></argsstring>
+        <name>bitReverseFlagR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that enables (bitReverseFlagR=1) or disables (bitReverseFlagR=0) bit reversal of output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2187" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1a6fc90252b579f7c29e01bd279334fc43" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arm_rfft_instance_q31::twidCoefRModifier</definition>
+        <argsstring></argsstring>
+        <name>twidCoefRModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2188" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1a2a0c944e66bab92fcbe19d1c29153250" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_rfft_instance_q31::pTwiddleAReal</definition>
+        <argsstring></argsstring>
+        <name>pTwiddleAReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the real twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2189" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1ae5070be4c2e0327e618f5e1f4c5b9d80" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_rfft_instance_q31::pTwiddleBReal</definition>
+        <argsstring></argsstring>
+        <name>pTwiddleBReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the imag twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2190" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__instance__q31_1a8fe10d425b59e096c23aa4bb5caa1974" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref> *</type>
+        <definition>const arm_cfft_instance_q31* arm_rfft_instance_q31::pCfft</definition>
+        <argsstring></argsstring>
+        <name>pCfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the complex FFT instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2191" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 RFFT/RIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="141">
+        <label>arm_cfft_instance_q31</label>
+        <link refid="structarm__cfft__instance__q31"/>
+      </node>
+      <node id="140">
+        <label>arm_rfft_instance_q31</label>
+        <link refid="structarm__rfft__instance__q31"/>
+        <childnode refid="141" relation="usage">
+          <edgelabel>pCfft</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="2184" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="2183" bodyend="2192"/>
+    <listofallmembers>
+      <member refid="structarm__rfft__instance__q31_1a3cb90cdc928a88b0203917dcb3dc1b71" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>bitReverseFlagR</name></member>
+      <member refid="structarm__rfft__instance__q31_1af777b0cadd5abaf064323692c2e6693b" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>fftLenReal</name></member>
+      <member refid="structarm__rfft__instance__q31_1af5c2615e6cde15524df38fa57ea32d94" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>ifftFlagR</name></member>
+      <member refid="structarm__rfft__instance__q31_1a8fe10d425b59e096c23aa4bb5caa1974" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>pCfft</name></member>
+      <member refid="structarm__rfft__instance__q31_1a2a0c944e66bab92fcbe19d1c29153250" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>pTwiddleAReal</name></member>
+      <member refid="structarm__rfft__instance__q31_1ae5070be4c2e0327e618f5e1f4c5b9d80" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>pTwiddleBReal</name></member>
+      <member refid="structarm__rfft__instance__q31_1a6fc90252b579f7c29e01bd279334fc43" prot="public" virt="non-virtual"><scope>arm_rfft_instance_q31</scope><name>twidCoefRModifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="core__cm_func_8h" kind="file" language="C++">
+    <compoundname>core_cmFunc.h</compoundname>
+    <includedby refid="core__cm3_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h</includedby>
+    <includedby refid="core__cm0_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h</includedby>
+    <includedby refid="core__cm0plus_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h</includedby>
+    <includedby refid="core__cm4_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h</includedby>
+    <includedby refid="core__cm7_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h</includedby>
+    <includedby refid="core__sc000_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h</includedby>
+    <includedby refid="core__sc300_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h</includedby>
+    <invincdepgraph>
+      <node id="259">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h</label>
+        <link refid="stm32f10x__pwr_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h</label>
+        <link refid="_blink_led_8h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_gpio.c</label>
+        <link refid="stm32f10x__gpio_8c"/>
+      </node>
+      <node id="226">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_reset_hardware.c</label>
+        <link refid="__reset__hardware_8c"/>
+      </node>
+      <node id="232">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_adc.c</label>
+        <link refid="stm32f10x__adc_8c"/>
+      </node>
+      <node id="272">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h</label>
+        <link refid="stm32f10x__tim_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c</label>
+        <link refid="stm32f10x__dbgmcu_8c"/>
+      </node>
+      <node id="235">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_can.h</label>
+        <link refid="stm32f10x__can_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h</label>
+        <link refid="stm32f10x__exti_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_gpio.h</label>
+        <link refid="stm32f10x__gpio_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h</label>
+        <link refid="stm32f10x__fsmc_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c</label>
+        <link refid="stm32f10x__exti_8c"/>
+      </node>
+      <node id="225">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/_initialize_hardware.c</label>
+        <link refid="__initialize__hardware_8c"/>
+      </node>
+      <node id="236">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c</label>
+        <link refid="stm32f10x__can_8c"/>
+      </node>
+      <node id="279">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h</label>
+        <link refid="core__cm7_8h"/>
+      </node>
+      <node id="275">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cmsis/system_stm32f10x.c</label>
+        <link refid="system__stm32f10x_8c"/>
+      </node>
+      <node id="255">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h</label>
+        <link refid="stm32f10x__i2c_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</label>
+        <link refid="stm32f10x__conf_8h"/>
+      </node>
+      <node id="264">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_spi.c</label>
+        <link refid="stm32f10x__spi_8c"/>
+      </node>
+      <node id="220">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/BlinkLed.cpp</label>
+        <link refid="_blink_led_8cpp"/>
+      </node>
+      <node id="216">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_crc.h</label>
+        <link refid="stm32f10x__crc_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h</label>
+        <link refid="_timer_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_device.h</label>
+        <link refid="cmsis__device_8h"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_flash.h</label>
+        <link refid="stm32f10x__flash_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h</label>
+        <link refid="stm32f10x__dma_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h</label>
+        <link refid="stm32f10x__cec_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_iwdg.c</label>
+        <link refid="stm32f10x__iwdg_8c"/>
+      </node>
+      <node id="224">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/Timer.cpp</label>
+        <link refid="_timer_8cpp"/>
+      </node>
+      <node id="274">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h</label>
+        <link refid="stm32f10x__wwdg_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rtc.c</label>
+        <link refid="stm32f10x__rtc_8c"/>
+      </node>
+      <node id="276">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h</label>
+        <link refid="core__cm0_8h"/>
+      </node>
+      <node id="262">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rcc.c</label>
+        <link refid="stm32f10x__rcc_8c"/>
+      </node>
+      <node id="278">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h</label>
+        <link refid="core__cm4_8h"/>
+      </node>
+      <node id="243">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h</label>
+        <link refid="stm32f10x__dbgmcu_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_fsmc.c</label>
+        <link refid="stm32f10x__fsmc_8c"/>
+      </node>
+      <node id="257">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_iwdg.h</label>
+        <link refid="stm32f10x__iwdg_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c</label>
+        <link refid="stm32f10x__wwdg_8c"/>
+      </node>
+      <node id="230">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/misc.c</label>
+        <link refid="misc_8c"/>
+      </node>
+      <node id="256">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_i2c.c</label>
+        <link refid="stm32f10x__i2c_8c"/>
+      </node>
+      <node id="246">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c</label>
+        <link refid="stm32f10x__dma_8c"/>
+      </node>
+      <node id="231">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h</label>
+        <link refid="stm32f10x__adc_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_spi.h</label>
+        <link refid="stm32f10x__spi_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="238">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_cec.c</label>
+        <link refid="stm32f10x__cec_8c"/>
+      </node>
+      <node id="281">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h</label>
+        <link refid="core__sc300_8h"/>
+      </node>
+      <node id="241">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h</label>
+        <link refid="stm32f10x__dac_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h</label>
+        <link refid="stm32f10x__rcc_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h</label>
+        <link refid="core__cm0plus_8h"/>
+      </node>
+      <node id="270">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h</label>
+        <link refid="stm32f10x__sdio_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_tim.c</label>
+        <link refid="stm32f10x__tim_8c"/>
+      </node>
+      <node id="260">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c</label>
+        <link refid="stm32f10x__pwr_8c"/>
+      </node>
+      <node id="266">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_usart.c</label>
+        <link refid="stm32f10x__usart_8c"/>
+      </node>
+      <node id="280">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h</label>
+        <link refid="core__sc000_8h"/>
+      </node>
+      <node id="233">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h</label>
+        <link refid="stm32f10x__bkp_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_bkp.c</label>
+        <link refid="stm32f10x__bkp_8c"/>
+      </node>
+      <node id="268">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h</label>
+        <link refid="stm32f10x__rtc_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h</label>
+        <link refid="stm32f10x__usart_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c</label>
+        <link refid="stm32f10x__flash_8c"/>
+      </node>
+      <node id="240">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_crc.c</label>
+        <link refid="stm32f10x__crc_8c"/>
+      </node>
+      <node id="242">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dac.c</label>
+        <link refid="stm32f10x__dac_8c"/>
+      </node>
+      <node id="227">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/cortexm/exception_handlers.c</label>
+        <link refid="exception__handlers_8c"/>
+      </node>
+      <node id="263">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_sdio.c</label>
+        <link refid="stm32f10x__sdio_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="core__cm_func_8h_1a50c339231579f3b052ed89428a8a2453" prot="public" static="no">
+        <name>__CORE_CMFUNC_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cmFunc.h" line="42" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cmFunc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CMSIS Cortex-M Core Function Access Header File. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>V4.30 </para></simplesect>
+<simplesect kind="date"><para>20. October 2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2009<sp/>-<sp/>2015<sp/>ARM<sp/>LIMITED</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>-<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>-<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>-<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>ARM<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>BE</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/><sp/><sp/>defined<sp/>(<sp/>__ICCARM__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#pragma<sp/>system_include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>treat<sp/>file<sp/>as<sp/>system<sp/>include<sp/>file<sp/>for<sp/>MISRA<sp/>check<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&gt;=<sp/>6010050)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>clang<sp/>system_header<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>treat<sp/>file<sp/>as<sp/>system<sp/>include<sp/>file<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CORE_CMFUNC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="core__cm_func_8h_1a50c339231579f3b052ed89428a8a2453" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CORE_CMFUNC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>###########################<sp/><sp/>Core<sp/>Function<sp/>Access<sp/><sp/>###########################<sp/>*/</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">/*------------------<sp/>RealView<sp/>Compiler<sp/>-----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/><sp/><sp/>defined<sp/>(<sp/>__CC_ARM<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="cmsis__armcc_8h" kindref="compound">cmsis_armcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*------------------<sp/>ARM<sp/>Compiler<sp/>V6<sp/>-------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__ARMCC_VERSION)<sp/>&amp;&amp;<sp/>(__ARMCC_VERSION<sp/>&gt;=<sp/>6010050)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="cmsis__armcc___v6_8h" kindref="compound">cmsis_armcc_V6.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*------------------<sp/>GNU<sp/>Compiler<sp/>----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(<sp/>__GNUC__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="cmsis__gcc_8h" kindref="compound">cmsis_gcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*------------------<sp/>ICC<sp/>Compiler<sp/>----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(<sp/>__ICCARM__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;cmsis_iar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*------------------<sp/>TI<sp/>CCS<sp/>Compiler<sp/>-------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(<sp/>__TMS470__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;cmsis_ccs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*------------------<sp/>TASKING<sp/>Compiler<sp/>------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(<sp/>__TASKING__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/>*<sp/>The<sp/>CMSIS<sp/>functions<sp/>have<sp/>been<sp/>implemented<sp/>as<sp/>intrinsics<sp/>in<sp/>the<sp/>compiler.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Please<sp/>use<sp/>&quot;carm<sp/>-?i&quot;<sp/>to<sp/>get<sp/>an<sp/>up<sp/>to<sp/>date<sp/>list<sp/>of<sp/>all<sp/>intrinsics,</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Including<sp/>the<sp/>CMSIS<sp/>ones.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*------------------<sp/>COSMIC<sp/>Compiler<sp/>-------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(<sp/>__CSMC__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;cmsis_csm.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__CORE_CMFUNC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cmFunc.h"/>
+  </compounddef>
+</doxygen>

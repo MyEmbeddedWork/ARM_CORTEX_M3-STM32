@@ -1,0 +1,208 @@
+.TH "DWT_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DWT_Type \- Structure type to access the Data Watchpoint and Trace Register (DWT)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm3\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCTRL\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCYCCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCPICNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBEXCCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSLEEPCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBLSUCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFOLDCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBPCSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP0\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK0\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION0\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP1\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK1\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION1\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP2\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK2\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP3\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK3\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION3\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [981U]"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBLAR\fP"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBLSR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Data Watchpoint and Trace Register (DWT)\&. 
+.PP
+Definition at line 846 of file core_cm3\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t DWT_Type::COMP0"
+Offset: 0x020 (R/W) Comparator Register 0 
+.PP
+Definition at line 856 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::COMP1"
+Offset: 0x030 (R/W) Comparator Register 1 
+.PP
+Definition at line 860 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::COMP2"
+Offset: 0x040 (R/W) Comparator Register 2 
+.PP
+Definition at line 864 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::COMP3"
+Offset: 0x050 (R/W) Comparator Register 3 
+.PP
+Definition at line 868 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::CPICNT"
+Offset: 0x008 (R/W) CPI Count Register 
+.PP
+Definition at line 850 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::CTRL"
+Offset: 0x000 (R/W) Control Register 
+.PP
+Definition at line 848 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::CYCCNT"
+Offset: 0x004 (R/W) Cycle Count Register 
+.PP
+Definition at line 849 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::EXCCNT"
+Offset: 0x00C (R/W) Exception Overhead Count Register 
+.PP
+Definition at line 851 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::FOLDCNT"
+Offset: 0x018 (R/W) Folded-instruction Count Register 
+.PP
+Definition at line 854 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::FUNCTION0"
+Offset: 0x028 (R/W) Function Register 0 
+.PP
+Definition at line 858 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::FUNCTION1"
+Offset: 0x038 (R/W) Function Register 1 
+.PP
+Definition at line 862 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::FUNCTION2"
+Offset: 0x048 (R/W) Function Register 2 
+.PP
+Definition at line 866 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::FUNCTION3"
+Offset: 0x058 (R/W) Function Register 3 
+.PP
+Definition at line 870 of file core_cm3\&.h\&.
+.SS "\fB__OM\fP uint32_t DWT_Type::LAR"
+Offset: 0xFB0 ( W) Lock Access Register 
+.PP
+Definition at line 1135 of file core_cm7\&.h\&.
+.SS "\fB__IM\fP uint32_t DWT_Type::LSR"
+Offset: 0xFB4 (R ) Lock Status Register 
+.PP
+Definition at line 1136 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::LSUCNT"
+Offset: 0x014 (R/W) LSU Count Register 
+.PP
+Definition at line 853 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::MASK0"
+Offset: 0x024 (R/W) Mask Register 0 
+.PP
+Definition at line 857 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::MASK1"
+Offset: 0x034 (R/W) Mask Register 1 
+.PP
+Definition at line 861 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::MASK2"
+Offset: 0x044 (R/W) Mask Register 2 
+.PP
+Definition at line 865 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::MASK3"
+Offset: 0x054 (R/W) Mask Register 3 
+.PP
+Definition at line 869 of file core_cm3\&.h\&.
+.SS "\fB__IM\fP uint32_t DWT_Type::PCSR"
+Offset: 0x01C (R/ ) Program Counter Sample Register 
+.PP
+Definition at line 855 of file core_cm3\&.h\&.
+.SS "uint32_t DWT_Type::RESERVED0"
+
+.PP
+Definition at line 859 of file core_cm3\&.h\&.
+.SS "uint32_t DWT_Type::RESERVED1"
+
+.PP
+Definition at line 863 of file core_cm3\&.h\&.
+.SS "uint32_t DWT_Type::RESERVED2"
+
+.PP
+Definition at line 867 of file core_cm3\&.h\&.
+.SS "uint32_t DWT_Type::RESERVED3[981U]"
+
+.PP
+Definition at line 1134 of file core_cm7\&.h\&.
+.SS "\fB__IOM\fP uint32_t DWT_Type::SLEEPCNT"
+Offset: 0x010 (R/W) Sleep Count Register 
+.PP
+Definition at line 852 of file core_cm3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

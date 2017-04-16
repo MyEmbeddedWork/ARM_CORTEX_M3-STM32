@@ -1,0 +1,207 @@
+.TH "WWDG_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WWDG_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBWWDG_DeInit\fP (void)"
+.br
+.RI "Deinitializes the WWDG peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBWWDG_SetPrescaler\fP (uint32_t WWDG_Prescaler)"
+.br
+.RI "Sets the WWDG Prescaler\&. "
+.ti -1c
+.RI "void \fBWWDG_SetWindowValue\fP (uint8_t WindowValue)"
+.br
+.RI "Sets the WWDG window value\&. "
+.ti -1c
+.RI "void \fBWWDG_EnableIT\fP (void)"
+.br
+.RI "Enables the WWDG Early Wakeup interrupt(EWI)\&. "
+.ti -1c
+.RI "void \fBWWDG_SetCounter\fP (uint8_t Counter)"
+.br
+.RI "Sets the WWDG counter value\&. "
+.ti -1c
+.RI "void \fBWWDG_Enable\fP (uint8_t Counter)"
+.br
+.RI "Enables WWDG and load the counter value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBWWDG_GetFlagStatus\fP (void)"
+.br
+.RI "Checks whether the Early Wakeup interrupt flag is set or not\&. "
+.ti -1c
+.RI "void \fBWWDG_ClearFlag\fP (void)"
+.br
+.RI "Clears Early Wakeup interrupt flag\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void WWDG_ClearFlag (void)"
+
+.PP
+Clears Early Wakeup interrupt flag\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 207 of file stm32f10x_wwdg\&.c\&.
+.SS "void WWDG_DeInit (void)"
+
+.PP
+Deinitializes the WWDG peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 102 of file stm32f10x_wwdg\&.c\&.
+.SS "void WWDG_Enable (uint8_t Counter)"
+
+.PP
+Enables WWDG and load the counter value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICounter\fP specifies the watchdog counter value\&. This parameter must be a number between 0x40 and 0x7F\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 185 of file stm32f10x_wwdg\&.c\&.
+.SS "void WWDG_EnableIT (void)"
+
+.PP
+Enables the WWDG Early Wakeup interrupt(EWI)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 159 of file stm32f10x_wwdg\&.c\&.
+.SS "\fBFlagStatus\fP WWDG_GetFlagStatus (void)"
+
+.PP
+Checks whether the Early Wakeup interrupt flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of the Early Wakeup interrupt flag (SET or RESET) 
+.RE
+.PP
+
+.PP
+Definition at line 197 of file stm32f10x_wwdg\&.c\&.
+.SS "void WWDG_SetCounter (uint8_t Counter)"
+
+.PP
+Sets the WWDG counter value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICounter\fP specifies the watchdog counter value\&. This parameter must be a number between 0x40 and 0x7F\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 170 of file stm32f10x_wwdg\&.c\&.
+.SS "void WWDG_SetPrescaler (uint32_t WWDG_Prescaler)"
+
+.PP
+Sets the WWDG Prescaler\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIWWDG_Prescaler\fP specifies the WWDG Prescaler\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+WWDG_Prescaler_1: WWDG counter clock = (PCLK1/4096)/1 
+.IP "\(bu" 2
+WWDG_Prescaler_2: WWDG counter clock = (PCLK1/4096)/2 
+.IP "\(bu" 2
+WWDG_Prescaler_4: WWDG counter clock = (PCLK1/4096)/4 
+.IP "\(bu" 2
+WWDG_Prescaler_8: WWDG counter clock = (PCLK1/4096)/8 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 118 of file stm32f10x_wwdg\&.c\&.
+.SS "void WWDG_SetWindowValue (uint8_t WindowValue)"
+
+.PP
+Sets the WWDG window value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIWindowValue\fP specifies the window value to be compared to the downcounter\&. This parameter value must be lower than 0x80\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 137 of file stm32f10x_wwdg\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

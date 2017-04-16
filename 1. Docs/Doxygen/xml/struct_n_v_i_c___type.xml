@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_n_v_i_c___type" kind="struct" language="C++" prot="public">
+    <compoundname>NVIC_Type</compoundname>
+    <includes refid="core__cm0_8h" local="no">core_cm0.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1ab1d578f3fd82d9d7ba937488721c57a3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t NVIC_Type::ISER</definition>
+        <argsstring>[1U]</argsstring>
+        <name>ISER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 (R/W) Interrupt Set Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="372" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a55b94454a8fcf459a284ec24bc7d3057" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED0</definition>
+        <argsstring>[31U]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="373" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a42e4007004da61e226adb251ac73f586" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t NVIC_Type::ICER</definition>
+        <argsstring>[1U]</argsstring>
+        <name>ICER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x080 (R/W) Interrupt Clear Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="374" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a5c5d25b019ac644044623a188ae20c4c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RSERVED1</definition>
+        <argsstring>[31U]</argsstring>
+        <name>RSERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="375" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a78a829d7fa59290031fedbc95af35825" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t NVIC_Type::ISPR</definition>
+        <argsstring>[1U]</argsstring>
+        <name>ISPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x100 (R/W) Interrupt Set Pending Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="376" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a54f3c01b4b876ea7b3e0e8c3a9e9dfaf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED2</definition>
+        <argsstring>[31U]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="377" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1acf8209acf3f339d8eb2df9d3faaa10ae" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t NVIC_Type::ICPR</definition>
+        <argsstring>[1U]</argsstring>
+        <name>ICPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x180 (R/W) Interrupt Clear Pending Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="378" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a3a0022743541fcf7385584dab63189ce" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED3</definition>
+        <argsstring>[31U]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="379" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1af88b33dd5c8644293a71905a6d22f2f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED4</definition>
+        <argsstring>[64U]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="380" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a4eef47929a0d1317a107f1ac62e28464" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint8_t NVIC_Type::IP</definition>
+        <argsstring>[8U]</argsstring>
+        <name>IP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register</para><para>Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="381" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1ac803b714c8dd99a308ce9a0a2c611c56" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t NVIC_Type::IABR</definition>
+        <argsstring>[8U]</argsstring>
+        <name>IABR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x200 (R/W) Interrupt Active bit Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="401" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a9a4341692e45d089a113986a3d344e98" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint8_t</type>
+        <definition>__IOM uint8_t NVIC_Type::IP[240U]</definition>
+        <argsstring>[240U]</argsstring>
+        <name>IP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="403" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a22dc0f9f456717bd26de5a6451547be3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED5</definition>
+        <argsstring>[644U]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="404" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a37de89637466e007171c6b135299bc75" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t NVIC_Type::STIR</definition>
+        <argsstring></argsstring>
+        <name>STIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xE00 ( /W) Software Trigger Interrupt Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="405" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Nested Vectored Interrupt Controller (NVIC). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="371" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="370" bodyend="382"/>
+    <listofallmembers>
+      <member refid="struct_n_v_i_c___type_1ac803b714c8dd99a308ce9a0a2c611c56" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>IABR</name></member>
+      <member refid="struct_n_v_i_c___type_1a42e4007004da61e226adb251ac73f586" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ICER</name></member>
+      <member refid="struct_n_v_i_c___type_1acf8209acf3f339d8eb2df9d3faaa10ae" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ICPR</name></member>
+      <member refid="struct_n_v_i_c___type_1a4eef47929a0d1317a107f1ac62e28464" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>IP</name></member>
+      <member refid="struct_n_v_i_c___type_1a9a4341692e45d089a113986a3d344e98" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>IP</name></member>
+      <member refid="struct_n_v_i_c___type_1ab1d578f3fd82d9d7ba937488721c57a3" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ISER</name></member>
+      <member refid="struct_n_v_i_c___type_1a78a829d7fa59290031fedbc95af35825" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ISPR</name></member>
+      <member refid="struct_n_v_i_c___type_1a55b94454a8fcf459a284ec24bc7d3057" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED0</name></member>
+      <member refid="struct_n_v_i_c___type_1a54f3c01b4b876ea7b3e0e8c3a9e9dfaf" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED2</name></member>
+      <member refid="struct_n_v_i_c___type_1a3a0022743541fcf7385584dab63189ce" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED3</name></member>
+      <member refid="struct_n_v_i_c___type_1af88b33dd5c8644293a71905a6d22f2f2" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED4</name></member>
+      <member refid="struct_n_v_i_c___type_1a22dc0f9f456717bd26de5a6451547be3" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED5</name></member>
+      <member refid="struct_n_v_i_c___type_1a5c5d25b019ac644044623a188ae20c4c" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RSERVED1</name></member>
+      <member refid="struct_n_v_i_c___type_1a37de89637466e007171c6b135299bc75" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>STIR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

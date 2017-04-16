@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s___core___reg_acc_functions" kind="group">
+    <compoundname>CMSIS_Core_RegAccFunctions</compoundname>
+    <title>CMSIS Core Register Access Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga5fe64567d5bf0a81c118374e9a3a4598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_CONTROL</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_CONTROL</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Control Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the Control Register. <simplesect kind="return"><para>Control Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="57" bodyend="61"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga558df7eeb0a34765e0b54d9853d08484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_CONTROL</definition>
+        <argsstring>(uint32_t control)</argsstring>
+        <name>__set_CONTROL</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>control</declname>
+        </param>
+        <briefdescription>
+<para>Set Control Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Writes the given value to the Control Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control Register value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="69" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="69" bodyend="73"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga2c18685a915eb9b7513a907c2b866636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_IPSR</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_IPSR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get IPSR Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the IPSR Register. <simplesect kind="return"><para>IPSR Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="81" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="81" bodyend="85"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gaf082254959c727c663f2334021f1a98a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_APSR</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_APSR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get APSR Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the APSR Register. <simplesect kind="return"><para>APSR Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="93" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="93" bodyend="97"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_xPSR</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_xPSR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get xPSR Register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the content of the xPSR Register. <simplesect kind="return"><para>xPSR Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="105" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="105" bodyend="109"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga0c569cbb49336f8d638686f9103047aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_PSP</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_PSP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Process Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current value of the Process Stack Pointer (PSP). <simplesect kind="return"><para>PSP Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="117" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="117" bodyend="121"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gab145e35dbaf6868d3a17a8ad360fe379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_PSP</definition>
+        <argsstring>(uint32_t topOfProcStack)</argsstring>
+        <name>__set_PSP</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>topOfProcStack</declname>
+        </param>
+        <briefdescription>
+<para>Set Process Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Assigns the given value to the Process Stack Pointer (PSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfProcStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process Stack Pointer value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="129" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="129" bodyend="133"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gac5267c10c9b15b5349eea0a959ea014c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_MSP</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_MSP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Main Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current value of the Main Stack Pointer (MSP). <simplesect kind="return"><para>MSP Register value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="141" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="141" bodyend="145"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga1ff33c0b5ed0e687dd7967a1dd283d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_MSP</definition>
+        <argsstring>(uint32_t topOfMainStack)</argsstring>
+        <name>__set_MSP</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>topOfMainStack</declname>
+        </param>
+        <briefdescription>
+<para>Set Main Stack Pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Assigns the given value to the Main Stack Pointer (MSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfMainStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main Stack Pointer value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="153" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="153" bodyend="157"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1gac9e3a67ff722261b89c77ebe49b6f9a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __get_PRIMASK</definition>
+        <argsstring>(void)</argsstring>
+        <name>__get_PRIMASK</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Priority Mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current state of the priority mask bit from the Priority Mask Register. <simplesect kind="return"><para>Priority Mask value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="165" bodyend="169"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga42e74e3fffe1a2d93db1de04d9260929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE void</type>
+        <definition>__STATIC_INLINE void __set_PRIMASK</definition>
+        <argsstring>(uint32_t priMask)</argsstring>
+        <name>__set_PRIMASK</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>priMask</declname>
+        </param>
+        <briefdescription>
+<para>Set Priority Mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Assigns the given value to the Priority Mask Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">priMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority Mask </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" line="177" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc.h" bodystart="177" bodyend="181"/>
+        <referencedby refid="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" compoundref="cmsis__armcc___v6_8h" startline="50" endline="53">__attribute__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___reg_acc_functions_1ga671b4fa3b3ab3dbc685a5473f3fc76aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((always_inline)) __STATIC_INLINE void __enable_irq(void)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(always_inline)</type>
+        </param>
+        <briefdescription>
+<para>Enable IRQ Interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para>Set Priority Mask.</para><para>Get Priority Mask.</para><para>Set Main Stack Pointer.</para><para>Get Main Stack Pointer.</para><para>Set Process Stack Pointer.</para><para>Get Process Stack Pointer.</para><para>Get xPSR Register.</para><para>Get APSR Register.</para><para>Get IPSR Register.</para><para>Set Control Register.</para><para>Get Control Register.</para><para>Disable IRQ Interrupts.</para><para>Enables IRQ interrupts by clearing the I-bit in the CPSR. Can only be executed in Privileged modes.</para><para>Disables IRQ interrupts by setting the I-bit in the CPSR. Can only be executed in Privileged modes.</para><para>Returns the content of the Control Register. <simplesect kind="return"><para>Control Register value</para></simplesect>
+Writes the given value to the Control Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control Register value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the content of the IPSR Register. <simplesect kind="return"><para>IPSR Register value</para></simplesect>
+Returns the content of the APSR Register. <simplesect kind="return"><para>APSR Register value</para></simplesect>
+Returns the content of the xPSR Register. <simplesect kind="return"><para>xPSR Register value</para></simplesect>
+Returns the current value of the Process Stack Pointer (PSP). <simplesect kind="return"><para>PSP Register value</para></simplesect>
+Assigns the given value to the Process Stack Pointer (PSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfProcStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process Stack Pointer value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the current value of the Main Stack Pointer (MSP). <simplesect kind="return"><para>MSP Register value</para></simplesect>
+Assigns the given value to the Main Stack Pointer (MSP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">topOfMainStack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main Stack Pointer value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Returns the current state of the priority mask bit from the Priority Mask Register. <simplesect kind="return"><para>Priority Mask value</para></simplesect>
+Assigns the given value to the Priority Mask Register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">priMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority Mask </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" line="50" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/cmsis_armcc_V6.h" bodystart="50" bodyend="53"/>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga5fe64567d5bf0a81c118374e9a3a4598" compoundref="cmsis__armcc_8h" startline="57" endline="61">__get_CONTROL</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga558df7eeb0a34765e0b54d9853d08484" compoundref="cmsis__armcc_8h" startline="69" endline="73">__set_CONTROL</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga2c18685a915eb9b7513a907c2b866636" compoundref="cmsis__armcc_8h" startline="81" endline="85">__get_IPSR</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf082254959c727c663f2334021f1a98a" compoundref="cmsis__armcc_8h" startline="93" endline="97">__get_APSR</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga94c675a736d4754a5f73d8748b24aa11" compoundref="cmsis__armcc_8h" startline="105" endline="109">__get_xPSR</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga0c569cbb49336f8d638686f9103047aa" compoundref="cmsis__armcc_8h" startline="117" endline="121">__get_PSP</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1gab145e35dbaf6868d3a17a8ad360fe379" compoundref="cmsis__armcc_8h" startline="129" endline="133">__set_PSP</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1gac5267c10c9b15b5349eea0a959ea014c" compoundref="cmsis__armcc_8h" startline="141" endline="145">__get_MSP</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga1ff33c0b5ed0e687dd7967a1dd283d5f" compoundref="cmsis__armcc_8h" startline="153" endline="157">__set_MSP</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1gac9e3a67ff722261b89c77ebe49b6f9a7" compoundref="cmsis__armcc_8h" startline="165" endline="169">__get_PRIMASK</references>
+        <references refid="group___c_m_s_i_s___core___reg_acc_functions_1ga42e74e3fffe1a2d93db1de04d9260929" compoundref="cmsis__armcc_8h" startline="177" endline="181">__set_PRIMASK</references>
+        <references refid="semihosting_8h_1aacce635d68067370c70caa2381ea1040" compoundref="semihosting_8h" startline="102">value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+.TH "GPIO_Exported_Types" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Exported_Types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBGPIO_InitTypeDef\fP"
+.br
+.RI "GPIO Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_GPIO_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_SPEED\fP(SPEED)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_BIT_ACTION\fP(ACTION)   (((ACTION) == \fBBit_RESET\fP) || ((ACTION) == \fBBit_SET\fP))"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGPIOSpeed_TypeDef\fP { \fBGPIO_Speed_10MHz\fP = 1, \fBGPIO_Speed_2MHz\fP, \fBGPIO_Speed_50MHz\fP }
+.RI "Output Maximum frequency selection\&. ""
+.br
+.ti -1c
+.RI "enum \fBGPIOMode_TypeDef\fP { \fBGPIO_Mode_AIN\fP = 0x0, \fBGPIO_Mode_IN_FLOATING\fP = 0x04, \fBGPIO_Mode_IPD\fP = 0x28, \fBGPIO_Mode_IPU\fP = 0x48, \fBGPIO_Mode_Out_OD\fP = 0x14, \fBGPIO_Mode_Out_PP\fP = 0x10, \fBGPIO_Mode_AF_OD\fP = 0x1C, \fBGPIO_Mode_AF_PP\fP = 0x18 }
+.RI "Configuration Mode enumeration\&. ""
+.br
+.ti -1c
+.RI "enum \fBBitAction\fP { \fBBit_RESET\fP = 0, \fBBit_SET\fP }
+.RI "Bit_SET and Bit_RESET enumeration\&. ""
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_GPIO_ALL_PERIPH(PERIPH)"
+\fBValue:\fP
+.PP
+.nf
+(((PERIPH) == GPIOA) || \
+                                    ((PERIPH) == GPIOB) || \
+                                    ((PERIPH) == GPIOC) || \
+                                    ((PERIPH) == GPIOD) || \
+                                    ((PERIPH) == GPIOE) || \
+                                    ((PERIPH) == GPIOF) || \
+                                    ((PERIPH) == GPIOG))
+.fi
+.PP
+Definition at line 46 of file stm32f10x_gpio\&.h\&.
+.SS "#define IS_GPIO_BIT_ACTION(ACTION)   (((ACTION) == \fBBit_RESET\fP) || ((ACTION) == \fBBit_SET\fP))"
+
+.PP
+Definition at line 113 of file stm32f10x_gpio\&.h\&.
+.SS "#define IS_GPIO_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == GPIO_Mode_AIN) || ((MODE) == GPIO_Mode_IN_FLOATING) || \
+                            ((MODE) == GPIO_Mode_IPD) || ((MODE) == GPIO_Mode_IPU) || \
+                            ((MODE) == GPIO_Mode_Out_OD) || ((MODE) == GPIO_Mode_Out_PP) || \
+                            ((MODE) == GPIO_Mode_AF_OD) || ((MODE) == GPIO_Mode_AF_PP))
+.fi
+.PP
+Definition at line 82 of file stm32f10x_gpio\&.h\&.
+.SS "#define IS_GPIO_SPEED(SPEED)"
+\fBValue:\fP
+.PP
+.nf
+(((SPEED) == GPIO_Speed_10MHz) || ((SPEED) == GPIO_Speed_2MHz) || \
+                              ((SPEED) == GPIO_Speed_50MHz))
+.fi
+.PP
+Definition at line 64 of file stm32f10x_gpio\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBBitAction\fP"
+
+.PP
+Bit_SET and Bit_RESET enumeration\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBit_RESET \fP\fP
+.TP
+\fB\fIBit_SET \fP\fP
+.PP
+Definition at line 108 of file stm32f10x_gpio\&.h\&.
+.SS "enum \fBGPIOMode_TypeDef\fP"
+
+.PP
+Configuration Mode enumeration\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGPIO_Mode_AIN \fP\fP
+.TP
+\fB\fIGPIO_Mode_IN_FLOATING \fP\fP
+.TP
+\fB\fIGPIO_Mode_IPD \fP\fP
+.TP
+\fB\fIGPIO_Mode_IPU \fP\fP
+.TP
+\fB\fIGPIO_Mode_Out_OD \fP\fP
+.TP
+\fB\fIGPIO_Mode_Out_PP \fP\fP
+.TP
+\fB\fIGPIO_Mode_AF_OD \fP\fP
+.TP
+\fB\fIGPIO_Mode_AF_PP \fP\fP
+.PP
+Definition at line 71 of file stm32f10x_gpio\&.h\&.
+.SS "enum \fBGPIOSpeed_TypeDef\fP"
+
+.PP
+Output Maximum frequency selection\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGPIO_Speed_10MHz \fP\fP
+.TP
+\fB\fIGPIO_Speed_2MHz \fP\fP
+.TP
+\fB\fIGPIO_Speed_50MHz \fP\fP
+.PP
+Definition at line 58 of file stm32f10x_gpio\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

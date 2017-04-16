@@ -1,0 +1,46 @@
+.TH "SPI_data_size" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_data_size
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_DataSize_16b\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DataSize_8b\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_DATASIZE\fP(DATASIZE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SPI_DATASIZE(DATASIZE)"
+\fBValue:\fP
+.PP
+.nf
+(((DATASIZE) == SPI_DataSize_16b) || \
+                                   ((DATASIZE) == SPI_DataSize_8b))
+.fi
+.PP
+Definition at line 164 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_DataSize_16b   ((uint16_t)0x0800)"
+
+.PP
+Definition at line 162 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_DataSize_8b   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 163 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

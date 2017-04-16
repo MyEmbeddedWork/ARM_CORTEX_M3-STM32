@@ -1,0 +1,126 @@
+.TH "NVIC_Type" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NVIC_Type \- Structure type to access the Nested Vectored Interrupt Controller (NVIC)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_cm0\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBISER\fP [1U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [31U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBICER\fP [1U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRSERVED1\fP [31U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBISPR\fP [1U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [31U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBICPR\fP [1U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [31U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [64U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBIP\fP [8U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBIABR\fP [8U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint8_t \fBIP\fP [240U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [644U]"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBSTIR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Nested Vectored Interrupt Controller (NVIC)\&. 
+.PP
+Definition at line 370 of file core_cm0\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t NVIC_Type::IABR"
+Offset: 0x200 (R/W) Interrupt Active bit Register 
+.PP
+Definition at line 401 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t NVIC_Type::ICER"
+Offset: 0x080 (R/W) Interrupt Clear Enable Register 
+.PP
+Definition at line 374 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint32_t NVIC_Type::ICPR"
+Offset: 0x180 (R/W) Interrupt Clear Pending Register 
+.PP
+Definition at line 378 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint8_t NVIC_Type::IP"
+Offset: 0x300 (R/W) Interrupt Priority Register
+.PP
+Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) 
+.PP
+Definition at line 381 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint8_t NVIC_Type::IP[240U]"
+Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) 
+.PP
+Definition at line 403 of file core_cm3\&.h\&.
+.SS "\fB__IOM\fP uint32_t NVIC_Type::ISER"
+Offset: 0x000 (R/W) Interrupt Set Enable Register 
+.PP
+Definition at line 372 of file core_cm0\&.h\&.
+.SS "\fB__IOM\fP uint32_t NVIC_Type::ISPR"
+Offset: 0x100 (R/W) Interrupt Set Pending Register 
+.PP
+Definition at line 376 of file core_cm0\&.h\&.
+.SS "uint32_t NVIC_Type::RESERVED0"
+
+.PP
+Definition at line 373 of file core_cm0\&.h\&.
+.SS "uint32_t NVIC_Type::RESERVED2"
+
+.PP
+Definition at line 377 of file core_cm0\&.h\&.
+.SS "uint32_t NVIC_Type::RESERVED3"
+
+.PP
+Definition at line 379 of file core_cm0\&.h\&.
+.SS "uint32_t NVIC_Type::RESERVED4"
+
+.PP
+Definition at line 380 of file core_cm0\&.h\&.
+.SS "uint32_t NVIC_Type::RESERVED5"
+
+.PP
+Definition at line 404 of file core_cm3\&.h\&.
+.SS "uint32_t NVIC_Type::RSERVED1"
+
+.PP
+Definition at line 375 of file core_cm0\&.h\&.
+.SS "\fB__OM\fP uint32_t NVIC_Type::STIR"
+Offset: 0xE00 ( /W) Software Trigger Interrupt Register 
+.PP
+Definition at line 405 of file core_cm3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,396 @@
+.TH "CEC_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEC_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCEC_DeInit\fP (void)"
+.br
+.RI "Deinitializes the CEC peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBCEC_Init\fP (\fBCEC_InitTypeDef\fP *CEC_InitStruct)"
+.br
+.RI "Initializes the CEC peripheral according to the specified parameters in the CEC_InitStruct\&. "
+.ti -1c
+.RI "void \fBCEC_Cmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified CEC peripheral\&. "
+.ti -1c
+.RI "void \fBCEC_ITConfig\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CEC interrupt\&. "
+.ti -1c
+.RI "void \fBCEC_OwnAddressConfig\fP (uint8_t CEC_OwnAddress)"
+.br
+.RI "Defines the Own Address of the CEC device\&. "
+.ti -1c
+.RI "void \fBCEC_SetPrescaler\fP (uint16_t CEC_Prescaler)"
+.br
+.RI "Sets the CEC prescaler value\&. "
+.ti -1c
+.RI "void \fBCEC_SendDataByte\fP (uint8_t Data)"
+.br
+.RI "Transmits single data through the CEC peripheral\&. "
+.ti -1c
+.RI "uint8_t \fBCEC_ReceiveDataByte\fP (void)"
+.br
+.RI "Returns the most recent received data by the CEC peripheral\&. "
+.ti -1c
+.RI "void \fBCEC_StartOfMessage\fP (void)"
+.br
+.RI "Starts a new message\&. "
+.ti -1c
+.RI "void \fBCEC_EndOfMessageCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Transmits message with or without an EOM bit\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBCEC_GetFlagStatus\fP (uint32_t CEC_FLAG)"
+.br
+.RI "Gets the CEC flag status\&. "
+.ti -1c
+.RI "void \fBCEC_ClearFlag\fP (uint32_t CEC_FLAG)"
+.br
+.RI "Clears the CEC's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBCEC_GetITStatus\fP (uint8_t CEC_IT)"
+.br
+.RI "Checks whether the specified CEC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBCEC_ClearITPendingBit\fP (uint16_t CEC_IT)"
+.br
+.RI "Clears the CEC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void CEC_ClearFlag (uint32_t CEC_FLAG)"
+
+.PP
+Clears the CEC's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_FLAG\fP specifies the flag to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+CEC_FLAG_TERR: Tx Error 
+.IP "\(bu" 2
+CEC_FLAG_TBTRF: Tx Byte Transfer Request or Block Transfer Finished 
+.IP "\(bu" 2
+CEC_FLAG_RSOM: Rx Start Of Message 
+.IP "\(bu" 2
+CEC_FLAG_REOM: Rx End Of Message 
+.IP "\(bu" 2
+CEC_FLAG_RERR: Rx Error 
+.IP "\(bu" 2
+CEC_FLAG_RBTF: Rx Byte/Block Transfer Finished 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 350 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_ClearITPendingBit (uint16_t CEC_IT)"
+
+.PP
+Clears the CEC's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_IT\fP specifies the CEC interrupt pending bit to clear\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+CEC_IT_TERR: Tx Error 
+.IP "\(bu" 2
+CEC_IT_TBTF: Tx Block Transfer Finished 
+.IP "\(bu" 2
+CEC_IT_RERR: Rx Error 
+.IP "\(bu" 2
+CEC_IT_RBTF: Rx Block Transfer Finished 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 409 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_Cmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified CEC peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the CEC peripheral\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 165 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_DeInit (void)"
+
+.PP
+Deinitializes the CEC peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 118 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_EndOfMessageCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Transmits message with or without an EOM bit\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the CEC Tx End Of Message\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 263 of file stm32f10x_cec\&.c\&.
+.SS "\fBFlagStatus\fP CEC_GetFlagStatus (uint32_t CEC_FLAG)"
+
+.PP
+Gets the CEC flag status\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_FLAG\fP specifies the CEC flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+CEC_FLAG_BTE: Bit Timing Error 
+.IP "\(bu" 2
+CEC_FLAG_BPE: Bit Period Error 
+.IP "\(bu" 2
+CEC_FLAG_RBTFE: Rx Block Transfer Finished Error 
+.IP "\(bu" 2
+CEC_FLAG_SBE: Start Bit Error 
+.IP "\(bu" 2
+CEC_FLAG_ACKE: Block Acknowledge Error 
+.IP "\(bu" 2
+CEC_FLAG_LINE: Line Error 
+.IP "\(bu" 2
+CEC_FLAG_TBTFE: Tx Block Transfer Finished Error 
+.IP "\(bu" 2
+CEC_FLAG_TEOM: Tx End Of Message 
+.IP "\(bu" 2
+CEC_FLAG_TERR: Tx Error 
+.IP "\(bu" 2
+CEC_FLAG_TBTRF: Tx Byte Transfer Request or Block Transfer Finished 
+.IP "\(bu" 2
+CEC_FLAG_RSOM: Rx Start Of Message 
+.IP "\(bu" 2
+CEC_FLAG_REOM: Rx End Of Message 
+.IP "\(bu" 2
+CEC_FLAG_RERR: Rx Error 
+.IP "\(bu" 2
+CEC_FLAG_RBTF: Rx Byte/Block Transfer Finished 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of CEC_FLAG (SET or RESET) 
+.RE
+.PP
+
+.PP
+Definition at line 292 of file stm32f10x_cec\&.c\&.
+.SS "\fBITStatus\fP CEC_GetITStatus (uint8_t CEC_IT)"
+
+.PP
+Checks whether the specified CEC interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_IT\fP specifies the CEC interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+CEC_IT_TERR: Tx Error 
+.IP "\(bu" 2
+CEC_IT_TBTF: Tx Block Transfer Finished 
+.IP "\(bu" 2
+CEC_IT_RERR: Rx Error 
+.IP "\(bu" 2
+CEC_IT_RBTF: Rx Block Transfer Finished 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of CEC_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 373 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_Init (\fBCEC_InitTypeDef\fP * CEC_InitStruct)"
+
+.PP
+Initializes the CEC peripheral according to the specified parameters in the CEC_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_InitStruct\fP pointer to an \fBCEC_InitTypeDef\fP structure that contains the configuration information for the specified CEC peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 135 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_ITConfig (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the CEC interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the CEC interrupt\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 187 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_OwnAddressConfig (uint8_t CEC_OwnAddress)"
+
+.PP
+Defines the Own Address of the CEC device\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_OwnAddress\fP The CEC own address 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 200 of file stm32f10x_cec\&.c\&.
+.SS "uint8_t CEC_ReceiveDataByte (void)"
+
+.PP
+Returns the most recent received data by the CEC peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP received data\&. 
+.RE
+.PP
+
+.PP
+Definition at line 240 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_SendDataByte (uint8_t Data)"
+
+.PP
+Transmits single data through the CEC peripheral\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIData\fP the data to transmit\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 228 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_SetPrescaler (uint16_t CEC_Prescaler)"
+
+.PP
+Sets the CEC prescaler value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fICEC_Prescaler\fP CEC prescaler new value 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 214 of file stm32f10x_cec\&.c\&.
+.SS "void CEC_StartOfMessage (void)"
+
+.PP
+Starts a new message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 251 of file stm32f10x_cec\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

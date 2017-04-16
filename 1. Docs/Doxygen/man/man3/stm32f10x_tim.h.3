@@ -1,0 +1,1193 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h \- This file contains all the functions prototypes for the TIM firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTIM_TimeBaseInitTypeDef\fP"
+.br
+.RI "TIM Time Base Init structure definition\&. "
+.ti -1c
+.RI "struct \fBTIM_OCInitTypeDef\fP"
+.br
+.RI "TIM Output Compare Init structure definition\&. "
+.ti -1c
+.RI "struct \fBTIM_ICInitTypeDef\fP"
+.br
+.RI "TIM Input Capture Init structure definition\&. "
+.ti -1c
+.RI "struct \fBTIM_BDTRInitTypeDef\fP"
+.br
+.RI "BDTR structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_TIM_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST1_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST2_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST3_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST4_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST5_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST6_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST7_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST8_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LIST9_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Timing\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Active\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Inactive\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_Toggle\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_PWM1\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCMode_PWM2\fP   ((uint16_t)0x0070)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OC_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCM\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OPMode_Single\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OPMode_Repetitive\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OPM_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_1\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Channel_4\fP   ((uint16_t)0x000C)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_PWMI_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_COMPLEMENTARY_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CKD_DIV1\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CKD_DIV2\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CKD_DIV4\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_CKD_DIV\fP(DIV)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_Up\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_Down\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_CenterAligned1\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_CenterAligned2\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_CenterAligned3\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_COUNTER_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCPolarity_High\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCPolarity_Low\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OC_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCNPolarity_High\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCNPolarity_Low\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCN_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OutputState_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OutputState_Enable\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OUTPUT_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OutputNState_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OutputNState_Enable\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OUTPUTN_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CCx_Enable\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CCx_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_CCX\fP(CCX)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CCxN_Enable\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CCxN_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_CCXN\fP(CCXN)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Break_Enable\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_Break_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAK_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_BreakPolarity_Low\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_BreakPolarity_High\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAK_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBTIM_AutomaticOutput_Enable\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_AutomaticOutput_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_AUTOMATIC_OUTPUT_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_OFF\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_1\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_2\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBTIM_LOCKLevel_3\fP   ((uint16_t)0x0300)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_LOCK_LEVEL\fP(LEVEL)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OSSIState_Enable\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OSSIState_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OSSI_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OSSRState_Enable\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OSSRState_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OSSR_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCIdleState_Set\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCIdleState_Reset\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCIDLE_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCNIdleState_Set\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCNIdleState_Reset\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCNIDLE_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPolarity_Rising\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPolarity_Falling\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPolarity_BothEdge\fP   ((uint16_t)0x000A)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_POLARITY_LITE\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICSelection_DirectTI\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICSelection_IndirectTI\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICSelection_TRC\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_SELECTION\fP(SELECTION)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPSC_DIV1\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPSC_DIV2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPSC_DIV4\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ICPSC_DIV8\fP   ((uint16_t)0x000C)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_PRESCALER\fP(PRESCALER)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_Update\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC1\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_CC4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_COM\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_Trigger\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_IT_Break\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IT\fP(IT)   ((((IT) & (uint16_t)0xFF00) == 0x0000) && ((IT) != 0x0000))"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CR1\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CR2\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_SMCR\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_DIER\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_SR\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_EGR\fP   ((uint16_t)0x0005)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCMR1\fP   ((uint16_t)0x0006)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCMR2\fP   ((uint16_t)0x0007)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCER\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CNT\fP   ((uint16_t)0x0009)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_PSC\fP   ((uint16_t)0x000A)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_ARR\fP   ((uint16_t)0x000B)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_RCR\fP   ((uint16_t)0x000C)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCR1\fP   ((uint16_t)0x000D)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCR2\fP   ((uint16_t)0x000E)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCR3\fP   ((uint16_t)0x000F)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_CCR4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_BDTR\fP   ((uint16_t)0x0011)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABase_DCR\fP   ((uint16_t)0x0012)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_DMA_BASE\fP(BASE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_1Transfer\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_2Transfers\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_3Transfers\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_4Transfers\fP   ((uint16_t)0x0300)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_5Transfers\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_6Transfers\fP   ((uint16_t)0x0500)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_7Transfers\fP   ((uint16_t)0x0600)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_8Transfers\fP   ((uint16_t)0x0700)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_9Transfers\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_10Transfers\fP   ((uint16_t)0x0900)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_11Transfers\fP   ((uint16_t)0x0A00)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_12Transfers\fP   ((uint16_t)0x0B00)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_13Transfers\fP   ((uint16_t)0x0C00)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_14Transfers\fP   ((uint16_t)0x0D00)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_15Transfers\fP   ((uint16_t)0x0E00)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_16Transfers\fP   ((uint16_t)0x0F00)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_17Transfers\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_18Transfers\fP   ((uint16_t)0x1100)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_DMA_LENGTH\fP(LENGTH)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_Update\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_CC1\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_CC2\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_CC3\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_CC4\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_COM\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMA_Trigger\fP   ((uint16_t)0x4000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_DMA_SOURCE\fP(SOURCE)   ((((SOURCE) & (uint16_t)0x80FF) == 0x0000) && ((SOURCE) != 0x0000))"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_OFF\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_DIV2\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_DIV4\fP   ((uint16_t)0x2000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPSC_DIV8\fP   ((uint16_t)0x3000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EXT_PRESCALER\fP(PRESCALER)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_ITR0\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_ITR1\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_ITR2\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_ITR3\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_TI1F_ED\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_TI1FP1\fP   ((uint16_t)0x0050)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_TI2FP2\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TS_ETRF\fP   ((uint16_t)0x0070)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_TRIGGER_SELECTION\fP(SELECTION)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_INTERNAL_TRIGGER_SELECTION\fP(SELECTION)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TIxExternalCLK1Source_TI1\fP   ((uint16_t)0x0050)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TIxExternalCLK1Source_TI2\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TIxExternalCLK1Source_TI1ED\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_TIXCLK_SOURCE\fP(SOURCE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPolarity_Inverted\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPolarity_NonInverted\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EXT_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBTIM_PSCReloadMode_Update\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_PSCReloadMode_Immediate\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_PRESCALER_RELOAD\fP(RELOAD)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ForcedAction_Active\fP   ((uint16_t)0x0050)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ForcedAction_InActive\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_FORCED_ACTION\fP(ACTION)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EncoderMode_TI1\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EncoderMode_TI2\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EncoderMode_TI12\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_ENCODER_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_Update\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC1\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_COM\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_Trigger\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_Break\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EVENT_SOURCE\fP(SOURCE)   ((((SOURCE) & (uint16_t)0xFF00) == 0x0000) && ((SOURCE) != 0x0000))"
+.br
+.ti -1c
+.RI "#define \fBTIM_UpdateSource_Global\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_UpdateSource_Regular\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_UPDATE_SOURCE\fP(SOURCE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCPreload_Enable\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCPreload_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCPRELOAD_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCFast_Enable\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCFast_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCFAST_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCClear_Enable\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBTIM_OCClear_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_OCCLEAR_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_Reset\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_Enable\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_Update\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_OC1\fP   ((uint16_t)0x0030)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_OC1Ref\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_OC2Ref\fP   ((uint16_t)0x0050)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_OC3Ref\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGOSource_OC4Ref\fP   ((uint16_t)0x0070)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_TRGO_SOURCE\fP(SOURCE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_SlaveMode_Reset\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_SlaveMode_Gated\fP   ((uint16_t)0x0005)"
+.br
+.ti -1c
+.RI "#define \fBTIM_SlaveMode_Trigger\fP   ((uint16_t)0x0006)"
+.br
+.ti -1c
+.RI "#define \fBTIM_SlaveMode_External1\fP   ((uint16_t)0x0007)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_SLAVE_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_MasterSlaveMode_Enable\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBTIM_MasterSlaveMode_Disable\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_MSM_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_Update\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC1\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_COM\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_Trigger\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_Break\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC1OF\fP   ((uint16_t)0x0200)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC2OF\fP   ((uint16_t)0x0400)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC3OF\fP   ((uint16_t)0x0800)"
+.br
+.ti -1c
+.RI "#define \fBTIM_FLAG_CC4OF\fP   ((uint16_t)0x1000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_CLEAR_FLAG\fP(TIM_FLAG)   ((((TIM_FLAG) & (uint16_t)0xE100) == 0x0000) && ((TIM_FLAG) != 0x0000))"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_IC_FILTER\fP(ICFILTER)   ((ICFILTER) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EXT_FILTER\fP(EXTFILTER)   ((EXTFILTER) <= 0xF)"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_1Byte\fP   \fBTIM_DMABurstLength_1Transfer\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_2Bytes\fP   \fBTIM_DMABurstLength_2Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_3Bytes\fP   \fBTIM_DMABurstLength_3Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_4Bytes\fP   \fBTIM_DMABurstLength_4Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_5Bytes\fP   \fBTIM_DMABurstLength_5Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_6Bytes\fP   \fBTIM_DMABurstLength_6Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_7Bytes\fP   \fBTIM_DMABurstLength_7Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_8Bytes\fP   \fBTIM_DMABurstLength_8Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_9Bytes\fP   \fBTIM_DMABurstLength_9Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_10Bytes\fP   \fBTIM_DMABurstLength_10Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_11Bytes\fP   \fBTIM_DMABurstLength_11Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_12Bytes\fP   \fBTIM_DMABurstLength_12Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_13Bytes\fP   \fBTIM_DMABurstLength_13Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_14Bytes\fP   \fBTIM_DMABurstLength_14Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_15Bytes\fP   \fBTIM_DMABurstLength_15Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_16Bytes\fP   \fBTIM_DMABurstLength_16Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_17Bytes\fP   \fBTIM_DMABurstLength_17Transfers\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_DMABurstLength_18Bytes\fP   \fBTIM_DMABurstLength_18Transfers\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTIM_DeInit\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Deinitializes the TIMx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBTIM_TimeBaseInit\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_TimeBaseInitTypeDef\fP *TIM_TimeBaseInitStruct)"
+.br
+.RI "Initializes the TIMx Time Base Unit peripheral according to the specified parameters in the TIM_TimeBaseInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC1Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel1 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC2Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel2 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC3Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel3 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC4Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel4 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_ICInit\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Initializes the TIM peripheral according to the specified parameters in the TIM_ICInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_PWMIConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Configures the TIM peripheral according to the specified parameters in the TIM_ICInitStruct to measure an external PWM signal\&. "
+.ti -1c
+.RI "void \fBTIM_BDTRConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_BDTRInitTypeDef\fP *TIM_BDTRInitStruct)"
+.br
+.RI "Configures the: Break feature, dead time, Lock level, the OSSI, the OSSR State and the AOE(automatic output enable)\&. "
+.ti -1c
+.RI "void \fBTIM_TimeBaseStructInit\fP (\fBTIM_TimeBaseInitTypeDef\fP *TIM_TimeBaseInitStruct)"
+.br
+.RI "Fills each TIM_TimeBaseInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_OCStructInit\fP (\fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Fills each TIM_OCInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_ICStructInit\fP (\fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Fills each TIM_ICInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_BDTRStructInit\fP (\fBTIM_BDTRInitTypeDef\fP *TIM_BDTRInitStruct)"
+.br
+.RI "Fills each TIM_BDTRInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_Cmd\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified TIM peripheral\&. "
+.ti -1c
+.RI "void \fBTIM_CtrlPWMOutputs\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIM peripheral Main Outputs\&. "
+.ti -1c
+.RI "void \fBTIM_ITConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified TIM interrupts\&. "
+.ti -1c
+.RI "void \fBTIM_GenerateEvent\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_EventSource)"
+.br
+.RI "Configures the TIMx event to be generate by software\&. "
+.ti -1c
+.RI "void \fBTIM_DMAConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)"
+.br
+.RI "Configures the TIMx's DMA interface\&. "
+.ti -1c
+.RI "void \fBTIM_DMACmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_DMASource, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIMx's DMA Requests\&. "
+.ti -1c
+.RI "void \fBTIM_InternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Configures the TIMx internal Clock\&. "
+.ti -1c
+.RI "void \fBTIM_ITRxExternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_InputTriggerSource)"
+.br
+.RI "Configures the TIMx Internal Trigger as External Clock\&. "
+.ti -1c
+.RI "void \fBTIM_TIxExternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_TIxExternalCLKSource, uint16_t TIM_ICPolarity, uint16_t ICFilter)"
+.br
+.RI "Configures the TIMx Trigger as External Clock\&. "
+.ti -1c
+.RI "void \fBTIM_ETRClockMode1Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the External clock Mode1\&. "
+.ti -1c
+.RI "void \fBTIM_ETRClockMode2Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the External clock Mode2\&. "
+.ti -1c
+.RI "void \fBTIM_ETRConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the TIMx External Trigger (ETR)\&. "
+.ti -1c
+.RI "void \fBTIM_PrescalerConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)"
+.br
+.RI "Configures the TIMx Prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_CounterModeConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_CounterMode)"
+.br
+.RI "Specifies the TIMx Counter Mode to be used\&. "
+.ti -1c
+.RI "void \fBTIM_SelectInputTrigger\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_InputTriggerSource)"
+.br
+.RI "Selects the Input Trigger source\&. "
+.ti -1c
+.RI "void \fBTIM_EncoderInterfaceConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)"
+.br
+.RI "Configures the TIMx Encoder Interface\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC1Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 1 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC2Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 2 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC3Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 3 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC4Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 4 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ARRPreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables TIMx peripheral Preload register on ARR\&. "
+.ti -1c
+.RI "void \fBTIM_SelectCOM\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the TIM peripheral Commutation event\&. "
+.ti -1c
+.RI "void \fBTIM_SelectCCDMA\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the TIMx peripheral Capture Compare DMA source\&. "
+.ti -1c
+.RI "void \fBTIM_CCPreloadControl\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Sets or Resets the TIM peripheral Capture Compare Preload Control bit\&. "
+.ti -1c
+.RI "void \fBTIM_OC1PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR1\&. "
+.ti -1c
+.RI "void \fBTIM_OC2PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR2\&. "
+.ti -1c
+.RI "void \fBTIM_OC3PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR3\&. "
+.ti -1c
+.RI "void \fBTIM_OC4PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR4\&. "
+.ti -1c
+.RI "void \fBTIM_OC1FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 1 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC2FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 2 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC3FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 3 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC4FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 4 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC1Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF1 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC2Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF2 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC3Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF3 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC4Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF4 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_OC1PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 1 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC1NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 1N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC2PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 2 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC2NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 2N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC3PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 3 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC3NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 3N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC4PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 4 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_CCxCmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)"
+.br
+.RI "Enables or disables the TIM Capture Compare Channel x\&. "
+.ti -1c
+.RI "void \fBTIM_CCxNCmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)"
+.br
+.RI "Enables or disables the TIM Capture Compare Channel xN\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOCxM\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)"
+.br
+.RI "Selects the TIM Output Compare Mode\&. "
+.ti -1c
+.RI "void \fBTIM_UpdateDisableConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or Disables the TIMx Update event\&. "
+.ti -1c
+.RI "void \fBTIM_UpdateRequestConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_UpdateSource)"
+.br
+.RI "Configures the TIMx Update Request Interrupt source\&. "
+.ti -1c
+.RI "void \fBTIM_SelectHallSensor\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIMx's Hall sensor interface\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOnePulseMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OPMode)"
+.br
+.RI "Selects the TIMx's One Pulse Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOutputTrigger\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_TRGOSource)"
+.br
+.RI "Selects the TIMx Trigger Output Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectSlaveMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_SlaveMode)"
+.br
+.RI "Selects the TIMx Slave Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectMasterSlaveMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_MasterSlaveMode)"
+.br
+.RI "Sets or Resets the TIMx Master/Slave Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SetCounter\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Counter)"
+.br
+.RI "Sets the TIMx Counter Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetAutoreload\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Autoreload)"
+.br
+.RI "Sets the TIMx Autoreload Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare1\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare1)"
+.br
+.RI "Sets the TIMx Capture Compare1 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare2\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare2)"
+.br
+.RI "Sets the TIMx Capture Compare2 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare3\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare3)"
+.br
+.RI "Sets the TIMx Capture Compare3 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare4\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare4)"
+.br
+.RI "Sets the TIMx Capture Compare4 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC1Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 1 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC2Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 2 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC3Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 3 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC4Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 4 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetClockDivision\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_CKD)"
+.br
+.RI "Sets the TIMx Clock Division value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture1\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 1 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture2\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 2 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture3\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 3 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture4\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 4 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCounter\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Counter value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetPrescaler\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Prescaler value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBTIM_GetFlagStatus\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_FLAG)"
+.br
+.RI "Checks whether the specified TIM flag is set or not\&. "
+.ti -1c
+.RI "void \fBTIM_ClearFlag\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_FLAG)"
+.br
+.RI "Clears the TIMx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBTIM_GetITStatus\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT)"
+.br
+.RI "Checks whether the TIM interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBTIM_ClearITPendingBit\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT)"
+.br
+.RI "Clears the TIMx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the TIM firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_tim\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

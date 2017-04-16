@@ -1,0 +1,138 @@
+\hypertarget{_exception_handlers_8h}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/cortexm/\+Exception\+Handlers.h File Reference}
+\label{_exception_handlers_8h}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/cortexm/\+Exception\+Handlers.\+h@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/cortexm/\+Exception\+Handlers.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for Exception\+Handlers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_exception_handlers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_exception_handlers_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_exception_stack_frame}{Exception\+Stack\+Frame}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_exception_handlers_8h_ae7ee340978f5c25f52f0cad1457c6616}{Reset\+\_\+\+Handler} (void)
+\item 
+void \hyperlink{_exception_handlers_8h_a6ad7a5e3ee69cb6db6a6b9111ba898bc}{N\+M\+I\+\_\+\+Handler} (void)
+\item 
+void \hyperlink{_exception_handlers_8h_a2bffc10d5bd4106753b7c30e86903bea}{Hard\+Fault\+\_\+\+Handler} (void)
+\item 
+void \hyperlink{_exception_handlers_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce}{S\+V\+C\+\_\+\+Handler} (void)
+\item 
+void \hyperlink{_exception_handlers_8h_a6303e1f258cbdc1f970ce579cc015623}{Pend\+S\+V\+\_\+\+Handler} (void)
+\item 
+void \hyperlink{_exception_handlers_8h_ab5e09814056d617c521549e542639b7e}{Sys\+Tick\+\_\+\+Handler} (void)
+\item 
+void \hyperlink{_exception_handlers_8h_a03fbe826a26c57c9182d3d7c1c283564}{Hard\+Fault\+\_\+\+Handler\+\_\+C} (\hyperlink{struct_exception_stack_frame}{Exception\+Stack\+Frame} $\ast$frame, uint32\+\_\+t lr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_exception_handlers_8h_a2bffc10d5bd4106753b7c30e86903bea}\label{_exception_handlers_8h_a2bffc10d5bd4106753b7c30e86903bea}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!Hard\+Fault\+\_\+\+Handler@{Hard\+Fault\+\_\+\+Handler}}
+\index{Hard\+Fault\+\_\+\+Handler@{Hard\+Fault\+\_\+\+Handler}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{Hard\+Fault\+\_\+\+Handler()}{HardFault\_Handler()}}
+{\footnotesize\ttfamily void Hard\+Fault\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{_exception_handlers_8h_a2bffc10d5bd4106753b7c30e86903bea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_exception_handlers_8h_a03fbe826a26c57c9182d3d7c1c283564}\label{_exception_handlers_8h_a03fbe826a26c57c9182d3d7c1c283564}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!Hard\+Fault\+\_\+\+Handler\+\_\+C@{Hard\+Fault\+\_\+\+Handler\+\_\+C}}
+\index{Hard\+Fault\+\_\+\+Handler\+\_\+C@{Hard\+Fault\+\_\+\+Handler\+\_\+C}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{Hard\+Fault\+\_\+\+Handler\+\_\+\+C()}{HardFault\_Handler\_C()}}
+{\footnotesize\ttfamily void Hard\+Fault\+\_\+\+Handler\+\_\+C (\begin{DoxyParamCaption}\item[{\hyperlink{struct_exception_stack_frame}{Exception\+Stack\+Frame} $\ast$}]{frame,  }\item[{uint32\+\_\+t}]{lr }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{_exception_handlers_8h_a03fbe826a26c57c9182d3d7c1c283564_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_exception_handlers_8h_a6ad7a5e3ee69cb6db6a6b9111ba898bc}\label{_exception_handlers_8h_a6ad7a5e3ee69cb6db6a6b9111ba898bc}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!N\+M\+I\+\_\+\+Handler@{N\+M\+I\+\_\+\+Handler}}
+\index{N\+M\+I\+\_\+\+Handler@{N\+M\+I\+\_\+\+Handler}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+I\+\_\+\+Handler()}{NMI\_Handler()}}
+{\footnotesize\ttfamily void N\+M\+I\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_exception_handlers_8h_a6303e1f258cbdc1f970ce579cc015623}\label{_exception_handlers_8h_a6303e1f258cbdc1f970ce579cc015623}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!Pend\+S\+V\+\_\+\+Handler@{Pend\+S\+V\+\_\+\+Handler}}
+\index{Pend\+S\+V\+\_\+\+Handler@{Pend\+S\+V\+\_\+\+Handler}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{Pend\+S\+V\+\_\+\+Handler()}{PendSV\_Handler()}}
+{\footnotesize\ttfamily void Pend\+S\+V\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{_exception_handlers_8h_a6303e1f258cbdc1f970ce579cc015623_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_exception_handlers_8h_ae7ee340978f5c25f52f0cad1457c6616}\label{_exception_handlers_8h_ae7ee340978f5c25f52f0cad1457c6616}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!Reset\+\_\+\+Handler@{Reset\+\_\+\+Handler}}
+\index{Reset\+\_\+\+Handler@{Reset\+\_\+\+Handler}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{Reset\+\_\+\+Handler()}{Reset\_Handler()}}
+{\footnotesize\ttfamily void Reset\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_exception_handlers_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce}\label{_exception_handlers_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!S\+V\+C\+\_\+\+Handler@{S\+V\+C\+\_\+\+Handler}}
+\index{S\+V\+C\+\_\+\+Handler@{S\+V\+C\+\_\+\+Handler}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{S\+V\+C\+\_\+\+Handler()}{SVC\_Handler()}}
+{\footnotesize\ttfamily void S\+V\+C\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{_exception_handlers_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_exception_handlers_8h_ab5e09814056d617c521549e542639b7e}\label{_exception_handlers_8h_ab5e09814056d617c521549e542639b7e}} 
+\index{Exception\+Handlers.\+h@{Exception\+Handlers.\+h}!Sys\+Tick\+\_\+\+Handler@{Sys\+Tick\+\_\+\+Handler}}
+\index{Sys\+Tick\+\_\+\+Handler@{Sys\+Tick\+\_\+\+Handler}!Exception\+Handlers.\+h@{Exception\+Handlers.\+h}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+Handler()}{SysTick\_Handler()}}
+{\footnotesize\ttfamily void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Timer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_exception_handlers_8h_ab5e09814056d617c521549e542639b7e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{_exception_handlers_8h_ab5e09814056d617c521549e542639b7e_icgraph}
+\end{center}
+\end{figure}

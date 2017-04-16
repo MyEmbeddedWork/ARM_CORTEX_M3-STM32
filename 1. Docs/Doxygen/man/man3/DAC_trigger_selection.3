@@ -1,0 +1,116 @@
+.TH "DAC_trigger_selection" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DAC_trigger_selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDAC_Trigger_None\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T6_TRGO\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T8_TRGO\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T3_TRGO\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T7_TRGO\fP   ((uint32_t)0x00000014)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T5_TRGO\fP   ((uint32_t)0x0000001C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T15_TRGO\fP   ((uint32_t)0x0000001C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T2_TRGO\fP   ((uint32_t)0x00000024)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_T4_TRGO\fP   ((uint32_t)0x0000002C)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_Ext_IT9\fP   ((uint32_t)0x00000034)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Trigger_Software\fP   ((uint32_t)0x0000003C)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_TRIGGER\fP(TRIGGER)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DAC_Trigger_Ext_IT9   ((uint32_t)0x00000034)"
+EXTI Line9 event selected as external conversion trigger for DAC channel 
+.PP
+Definition at line 96 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_None   ((uint32_t)0x00000000)"
+Conversion is automatic once the DAC1_DHRxxxx register has been loaded, and not by external trigger 
+.PP
+Definition at line 79 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_Software   ((uint32_t)0x0000003C)"
+Conversion started by software trigger for DAC channel 
+.PP
+Definition at line 97 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T15_TRGO   ((uint32_t)0x0000001C)"
+TIM15 TRGO selected as external conversion trigger for DAC channel only in Medium-density and Low-density Value Line devices 
+.PP
+Definition at line 91 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T2_TRGO   ((uint32_t)0x00000024)"
+TIM2 TRGO selected as external conversion trigger for DAC channel 
+.PP
+Definition at line 94 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T3_TRGO   ((uint32_t)0x0000000C)"
+TIM8 TRGO selected as external conversion trigger for DAC channel only in Connectivity line, Medium-density and Low-density Value Line devices 
+.PP
+Definition at line 86 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T4_TRGO   ((uint32_t)0x0000002C)"
+TIM4 TRGO selected as external conversion trigger for DAC channel 
+.PP
+Definition at line 95 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T5_TRGO   ((uint32_t)0x0000001C)"
+TIM5 TRGO selected as external conversion trigger for DAC channel 
+.PP
+Definition at line 90 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T6_TRGO   ((uint32_t)0x00000004)"
+TIM6 TRGO selected as external conversion trigger for DAC channel 
+.PP
+Definition at line 82 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T7_TRGO   ((uint32_t)0x00000014)"
+TIM7 TRGO selected as external conversion trigger for DAC channel 
+.PP
+Definition at line 89 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Trigger_T8_TRGO   ((uint32_t)0x0000000C)"
+TIM8 TRGO selected as external conversion trigger for DAC channel only in High-density devices 
+.PP
+Definition at line 83 of file stm32f10x_dac\&.h\&.
+.SS "#define IS_DAC_TRIGGER(TRIGGER)"
+\fBValue:\fP
+.PP
+.nf
+(((TRIGGER) == DAC_Trigger_None) || \
+                                 ((TRIGGER) == DAC_Trigger_T6_TRGO) || \
+                                 ((TRIGGER) == DAC_Trigger_T8_TRGO) || \
+                                 ((TRIGGER) == DAC_Trigger_T7_TRGO) || \
+                                 ((TRIGGER) == DAC_Trigger_T5_TRGO) || \
+                                 ((TRIGGER) == DAC_Trigger_T2_TRGO) || \
+                                 ((TRIGGER) == DAC_Trigger_T4_TRGO) || \
+                                 ((TRIGGER) == DAC_Trigger_Ext_IT9) || \
+                                 ((TRIGGER) == DAC_Trigger_Software))
+.fi
+.PP
+Definition at line 99 of file stm32f10x_dac\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,416 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_tim.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_tim.c \- This file provides all the TIM firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_tim\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMCR_ETR_Mask\fP   ((uint16_t)0x00FF)"
+.br
+.ti -1c
+.RI "#define \fBCCMR_Offset\fP   ((uint16_t)0x0018)"
+.br
+.ti -1c
+.RI "#define \fBCCER_CCE_Set\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBCCER_CCNE_Set\fP   ((uint16_t)0x0004)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTIM_DeInit\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Deinitializes the TIMx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBTIM_TimeBaseInit\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_TimeBaseInitTypeDef\fP *TIM_TimeBaseInitStruct)"
+.br
+.RI "Initializes the TIMx Time Base Unit peripheral according to the specified parameters in the TIM_TimeBaseInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC1Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel1 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC2Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel2 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC3Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel3 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_OC4Init\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Initializes the TIMx Channel4 according to the specified parameters in the TIM_OCInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_ICInit\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Initializes the TIM peripheral according to the specified parameters in the TIM_ICInitStruct\&. "
+.ti -1c
+.RI "void \fBTIM_PWMIConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Configures the TIM peripheral according to the specified parameters in the TIM_ICInitStruct to measure an external PWM signal\&. "
+.ti -1c
+.RI "void \fBTIM_BDTRConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBTIM_BDTRInitTypeDef\fP *TIM_BDTRInitStruct)"
+.br
+.RI "Configures the: Break feature, dead time, Lock level, the OSSI, the OSSR State and the AOE(automatic output enable)\&. "
+.ti -1c
+.RI "void \fBTIM_TimeBaseStructInit\fP (\fBTIM_TimeBaseInitTypeDef\fP *TIM_TimeBaseInitStruct)"
+.br
+.RI "Fills each TIM_TimeBaseInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_OCStructInit\fP (\fBTIM_OCInitTypeDef\fP *TIM_OCInitStruct)"
+.br
+.RI "Fills each TIM_OCInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_ICStructInit\fP (\fBTIM_ICInitTypeDef\fP *TIM_ICInitStruct)"
+.br
+.RI "Fills each TIM_ICInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_BDTRStructInit\fP (\fBTIM_BDTRInitTypeDef\fP *TIM_BDTRInitStruct)"
+.br
+.RI "Fills each TIM_BDTRInitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBTIM_Cmd\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified TIM peripheral\&. "
+.ti -1c
+.RI "void \fBTIM_CtrlPWMOutputs\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIM peripheral Main Outputs\&. "
+.ti -1c
+.RI "void \fBTIM_ITConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified TIM interrupts\&. "
+.ti -1c
+.RI "void \fBTIM_GenerateEvent\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_EventSource)"
+.br
+.RI "Configures the TIMx event to be generate by software\&. "
+.ti -1c
+.RI "void \fBTIM_DMAConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)"
+.br
+.RI "Configures the TIMx's DMA interface\&. "
+.ti -1c
+.RI "void \fBTIM_DMACmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_DMASource, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIMx's DMA Requests\&. "
+.ti -1c
+.RI "void \fBTIM_InternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Configures the TIMx internal Clock\&. "
+.ti -1c
+.RI "void \fBTIM_ITRxExternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_InputTriggerSource)"
+.br
+.RI "Configures the TIMx Internal Trigger as External Clock\&. "
+.ti -1c
+.RI "void \fBTIM_TIxExternalClockConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_TIxExternalCLKSource, uint16_t TIM_ICPolarity, uint16_t ICFilter)"
+.br
+.RI "Configures the TIMx Trigger as External Clock\&. "
+.ti -1c
+.RI "void \fBTIM_ETRClockMode1Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the External clock Mode1\&. "
+.ti -1c
+.RI "void \fBTIM_ETRClockMode2Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the External clock Mode2\&. "
+.ti -1c
+.RI "void \fBTIM_ETRConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)"
+.br
+.RI "Configures the TIMx External Trigger (ETR)\&. "
+.ti -1c
+.RI "void \fBTIM_PrescalerConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)"
+.br
+.RI "Configures the TIMx Prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_CounterModeConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_CounterMode)"
+.br
+.RI "Specifies the TIMx Counter Mode to be used\&. "
+.ti -1c
+.RI "void \fBTIM_SelectInputTrigger\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_InputTriggerSource)"
+.br
+.RI "Selects the Input Trigger source\&. "
+.ti -1c
+.RI "void \fBTIM_EncoderInterfaceConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)"
+.br
+.RI "Configures the TIMx Encoder Interface\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC1Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 1 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC2Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 2 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC3Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 3 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ForcedOC4Config\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ForcedAction)"
+.br
+.RI "Forces the TIMx output 4 waveform to active or inactive level\&. "
+.ti -1c
+.RI "void \fBTIM_ARRPreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables TIMx peripheral Preload register on ARR\&. "
+.ti -1c
+.RI "void \fBTIM_SelectCOM\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the TIM peripheral Commutation event\&. "
+.ti -1c
+.RI "void \fBTIM_SelectCCDMA\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the TIMx peripheral Capture Compare DMA source\&. "
+.ti -1c
+.RI "void \fBTIM_CCPreloadControl\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Sets or Resets the TIM peripheral Capture Compare Preload Control bit\&. "
+.ti -1c
+.RI "void \fBTIM_OC1PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR1\&. "
+.ti -1c
+.RI "void \fBTIM_OC2PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR2\&. "
+.ti -1c
+.RI "void \fBTIM_OC3PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR3\&. "
+.ti -1c
+.RI "void \fBTIM_OC4PreloadConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPreload)"
+.br
+.RI "Enables or disables the TIMx peripheral Preload register on CCR4\&. "
+.ti -1c
+.RI "void \fBTIM_OC1FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 1 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC2FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 2 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC3FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 3 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_OC4FastConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCFast)"
+.br
+.RI "Configures the TIMx Output Compare 4 Fast feature\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC1Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF1 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC2Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF2 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC3Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF3 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_ClearOC4Ref\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCClear)"
+.br
+.RI "Clears or safeguards the OCREF4 signal on an external event\&. "
+.ti -1c
+.RI "void \fBTIM_OC1PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 1 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC1NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 1N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC2PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 2 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC2NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 2N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC3PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 3 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC3NPolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCNPolarity)"
+.br
+.RI "Configures the TIMx Channel 3N polarity\&. "
+.ti -1c
+.RI "void \fBTIM_OC4PolarityConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OCPolarity)"
+.br
+.RI "Configures the TIMx channel 4 polarity\&. "
+.ti -1c
+.RI "void \fBTIM_CCxCmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)"
+.br
+.RI "Enables or disables the TIM Capture Compare Channel x\&. "
+.ti -1c
+.RI "void \fBTIM_CCxNCmd\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)"
+.br
+.RI "Enables or disables the TIM Capture Compare Channel xN\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOCxM\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)"
+.br
+.RI "Selects the TIM Output Compare Mode\&. "
+.ti -1c
+.RI "void \fBTIM_UpdateDisableConfig\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or Disables the TIMx Update event\&. "
+.ti -1c
+.RI "void \fBTIM_UpdateRequestConfig\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_UpdateSource)"
+.br
+.RI "Configures the TIMx Update Request Interrupt source\&. "
+.ti -1c
+.RI "void \fBTIM_SelectHallSensor\fP (\fBTIM_TypeDef\fP *TIMx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the TIMx's Hall sensor interface\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOnePulseMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_OPMode)"
+.br
+.RI "Selects the TIMx's One Pulse Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectOutputTrigger\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_TRGOSource)"
+.br
+.RI "Selects the TIMx Trigger Output Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectSlaveMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_SlaveMode)"
+.br
+.RI "Selects the TIMx Slave Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SelectMasterSlaveMode\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_MasterSlaveMode)"
+.br
+.RI "Sets or Resets the TIMx Master/Slave Mode\&. "
+.ti -1c
+.RI "void \fBTIM_SetCounter\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Counter)"
+.br
+.RI "Sets the TIMx Counter Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetAutoreload\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Autoreload)"
+.br
+.RI "Sets the TIMx Autoreload Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare1\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare1)"
+.br
+.RI "Sets the TIMx Capture Compare1 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare2\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare2)"
+.br
+.RI "Sets the TIMx Capture Compare2 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare3\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare3)"
+.br
+.RI "Sets the TIMx Capture Compare3 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetCompare4\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t Compare4)"
+.br
+.RI "Sets the TIMx Capture Compare4 Register value\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC1Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 1 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC2Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 2 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC3Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 3 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetIC4Prescaler\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_ICPSC)"
+.br
+.RI "Sets the TIMx Input Capture 4 prescaler\&. "
+.ti -1c
+.RI "void \fBTIM_SetClockDivision\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_CKD)"
+.br
+.RI "Sets the TIMx Clock Division value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture1\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 1 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture2\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 2 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture3\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 3 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCapture4\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Input Capture 4 value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetCounter\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Counter value\&. "
+.ti -1c
+.RI "uint16_t \fBTIM_GetPrescaler\fP (\fBTIM_TypeDef\fP *TIMx)"
+.br
+.RI "Gets the TIMx Prescaler value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBTIM_GetFlagStatus\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_FLAG)"
+.br
+.RI "Checks whether the specified TIM flag is set or not\&. "
+.ti -1c
+.RI "void \fBTIM_ClearFlag\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_FLAG)"
+.br
+.RI "Clears the TIMx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBTIM_GetITStatus\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT)"
+.br
+.RI "Checks whether the TIM interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBTIM_ClearITPendingBit\fP (\fBTIM_TypeDef\fP *TIMx, uint16_t TIM_IT)"
+.br
+.RI "Clears the TIMx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the TIM firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_tim\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

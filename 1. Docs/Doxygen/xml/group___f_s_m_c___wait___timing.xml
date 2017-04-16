@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___wait___timing" kind="group">
+    <compoundname>FSMC_Wait_Timing</compoundname>
+    <title>FSMC_Wait_Timing</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___wait___timing_1ga62c6855a7cc65b20024085f09cdc65e8" prot="public" static="no">
+        <name>FSMC_WaitSignalActive_BeforeWaitState</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="389" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___wait___timing_1gae905fc59e5d99091d132d7c221c8b6d4" prot="public" static="no">
+        <name>FSMC_WaitSignalActive_DuringWaitState</name>
+        <initializer>((uint32_t)0x00000800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="390" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___wait___timing_1ga3edb40c756afa8bb78550b7e22ded093" prot="public" static="no">
+        <name>IS_FSMC_WAIT_SIGNAL_ACTIVE</name>
+        <param><defname>ACTIVE</defname></param>
+        <initializer>(((ACTIVE) == <ref refid="group___f_s_m_c___wait___timing_1ga62c6855a7cc65b20024085f09cdc65e8" kindref="member">FSMC_WaitSignalActive_BeforeWaitState</ref>) || \
+                                            ((ACTIVE) == <ref refid="group___f_s_m_c___wait___timing_1gae905fc59e5d99091d132d7c221c8b6d4" kindref="member">FSMC_WaitSignalActive_DuringWaitState</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="391" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

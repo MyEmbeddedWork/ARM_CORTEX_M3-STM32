@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___tamper___pin__active__level" kind="group">
+    <compoundname>Tamper_Pin_active_level</compoundname>
+    <title>Tamper_Pin_active_level</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___tamper___pin__active__level_1gae7203c3c0202cd68d201278c8be2b967" prot="public" static="no">
+        <name>BKP_TamperPinLevel_High</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___tamper___pin__active__level_1gade9fc51f494eddcc4d88679c80fe39ce" prot="public" static="no">
+        <name>BKP_TamperPinLevel_Low</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___tamper___pin__active__level_1gae7cd3bd314605f7752062c814b850c23" prot="public" static="no">
+        <name>IS_BKP_TAMPER_PIN_LEVEL</name>
+        <param><defname>LEVEL</defname></param>
+        <initializer>(((LEVEL) == <ref refid="group___tamper___pin__active__level_1gae7203c3c0202cd68d201278c8be2b967" kindref="member">BKP_TamperPinLevel_High</ref>) || \
+                                        ((LEVEL) == <ref refid="group___tamper___pin__active__level_1gade9fc51f494eddcc4d88679c80fe39ce" kindref="member">BKP_TamperPinLevel_Low</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_bkp.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

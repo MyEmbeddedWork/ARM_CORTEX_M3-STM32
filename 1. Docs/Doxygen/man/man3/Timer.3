@@ -1,0 +1,81 @@
+.TH "Timer" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Timer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Timer\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef uint32_t \fBticks_t\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTimer\fP ()=default"
+.br
+.ti -1c
+.RI "void \fBstart\fP (void)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBsleep\fP (\fBticks_t\fP ticks)"
+.br
+.ti -1c
+.RI "static void \fBtick\fP (void)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static constexpr \fBticks_t\fP \fBFREQUENCY_HZ\fP = 1000u"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file Timer\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef uint32_t \fBTimer::ticks_t\fP"
+
+.PP
+Definition at line 16 of file Timer\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Timer::Timer ()\fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Timer::sleep (\fBticks_t\fP ticks)\fC [static]\fP"
+
+.PP
+Definition at line 22 of file Timer\&.cpp\&.
+.SS "void Timer::start (void)\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file Timer\&.h\&.
+.SS "static void Timer::tick (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 37 of file Timer\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "constexpr \fBticks_t\fP Timer::FREQUENCY_HZ = 1000u\fC [static]\fP"
+
+.PP
+Definition at line 17 of file Timer\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="union_c_o_n_t_r_o_l___type" kind="union" language="C++" prot="public">
+    <compoundname>CONTROL_Type</compoundname>
+    <includes refid="core__cm0_8h" local="no">core_cm0.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1af8c314273a1e4970a5671bd7f8184f50" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONTROL_Type::_reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Reserved</para><para>bit: 3..31 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="346" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1a8cc085fea1c50a8bd9adea63931ee8e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONTROL_Type::SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack to be used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="347" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1aa7a5662079a447f801034d108f80ce49" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONTROL_Type::_reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="348" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1adc6a38ab2980d0e9577b5a871da14eb9" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@3</type>
+        <definition>struct CONTROL_Type::@3  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1a6b642cca3d96da660b1198c133ca2a1f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONTROL_Type::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type used for word access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="350" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1a35c1732cf153b7b5c4bd321cf1de9605" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONTROL_Type::nPRIV</definition>
+        <argsstring></argsstring>
+        <name>nPRIV</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Execution privilege in Thread mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="357" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1ae3b4861e899b1f68818b60033a3914d9" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@7</type>
+        <definition>struct CONTROL_Type::@7  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0plus.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1afa110d4f7b263a9b5c34fb737ccb7fed" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@11</type>
+        <definition>struct CONTROL_Type::@11  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1ac62cfff08e6f055e0101785bad7094cd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONTROL_Type::FPCA</definition>
+        <argsstring></argsstring>
+        <name>FPCA</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2 FP extension active flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="430" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1acd7a110a4bf4ced749284df57ce2600c" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@16</type>
+        <definition>struct CONTROL_Type::@16  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="432" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1aad12faf31357e2fe9f4a1dc51fa1bbcb" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@21</type>
+        <definition>struct CONTROL_Type::@21  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1a1da8f5ea1357734dd2b206723e3ed023" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@26</type>
+        <definition>struct CONTROL_Type::@26  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_c_o_n_t_r_o_l___type_1acacca329e6d291cb2b725f59923cdf27" prot="public" static="no" mutable="no">
+        <type>struct CONTROL_Type::@30</type>
+        <definition>struct CONTROL_Type::@30  CONTROL_Type::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="359" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union type to access the Control Registers (CONTROL). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="343" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="342" bodyend="351"/>
+    <listofallmembers>
+      <member refid="union_c_o_n_t_r_o_l___type_1af8c314273a1e4970a5671bd7f8184f50" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>_reserved0</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1aa7a5662079a447f801034d108f80ce49" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>_reserved1</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1adc6a38ab2980d0e9577b5a871da14eb9" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1ae3b4861e899b1f68818b60033a3914d9" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1afa110d4f7b263a9b5c34fb737ccb7fed" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1acd7a110a4bf4ced749284df57ce2600c" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1aad12faf31357e2fe9f4a1dc51fa1bbcb" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1a1da8f5ea1357734dd2b206723e3ed023" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1acacca329e6d291cb2b725f59923cdf27" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>b</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1ac62cfff08e6f055e0101785bad7094cd" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>FPCA</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1a35c1732cf153b7b5c4bd321cf1de9605" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>nPRIV</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1a8cc085fea1c50a8bd9adea63931ee8e2" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>SPSEL</name></member>
+      <member refid="union_c_o_n_t_r_o_l___type_1a6b642cca3d96da660b1198c133ca2a1f" prot="public" virt="non-virtual"><scope>CONTROL_Type</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

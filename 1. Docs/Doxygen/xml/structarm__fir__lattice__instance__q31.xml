@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structarm__fir__lattice__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_lattice_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__lattice__instance__q31_1a9f3773bbb76bc5a8a5ee9d37786bf478" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t arm_fir_lattice_instance_q31::numStages</definition>
+        <argsstring></argsstring>
+        <name>numStages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of filter stages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3735" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__lattice__instance__q31_1a08fe9494ab7cd336b791e9657adadcf6" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_fir_lattice_instance_q31::pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3736" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__lattice__instance__q31_1a66c3364bf5863cd45e05f1652c3dc522" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* arm_fir_lattice_instance_q31::pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3737" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3737" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 FIR lattice filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" line="3734" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/arm_math.h" bodystart="3733" bodyend="3738"/>
+    <listofallmembers>
+      <member refid="structarm__fir__lattice__instance__q31_1a9f3773bbb76bc5a8a5ee9d37786bf478" prot="public" virt="non-virtual"><scope>arm_fir_lattice_instance_q31</scope><name>numStages</name></member>
+      <member refid="structarm__fir__lattice__instance__q31_1a66c3364bf5863cd45e05f1652c3dc522" prot="public" virt="non-virtual"><scope>arm_fir_lattice_instance_q31</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__lattice__instance__q31_1a08fe9494ab7cd336b791e9657adadcf6" prot="public" virt="non-virtual"><scope>arm_fir_lattice_instance_q31</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

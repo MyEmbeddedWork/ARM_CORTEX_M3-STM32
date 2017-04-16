@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___r_t_c__interrupts__flags" kind="group">
+    <compoundname>RTC_interrupts_flags</compoundname>
+    <title>RTC_interrupts_flags</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga203dcbb991497e4d0e6722815f6db942" prot="public" static="no">
+        <name>RTC_FLAG_RTOFF</name>
+        <initializer>((uint16_t)0x0020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC Operation OFF flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga78c4245996bef8d5f39226b6e37ed9c0" prot="public" static="no">
+        <name>RTC_FLAG_RSF</name>
+        <initializer>((uint16_t)0x0008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers Synchronized flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga4e321e359b914d7ed10eed985f8b4811" prot="public" static="no">
+        <name>RTC_FLAG_OW</name>
+        <initializer>((uint16_t)0x0004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overflow flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1gaed4375a7ea5a147f83c6cf4bfa805caf" prot="public" static="no">
+        <name>RTC_FLAG_ALR</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alarm flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="75" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga8babb2c823c2097bf4a4ef0c20ef7367" prot="public" static="no">
+        <name>RTC_FLAG_SEC</name>
+        <initializer>((uint16_t)0x0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Second flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="76" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga5f8a9327a258f16f29703fa3e3cc8af7" prot="public" static="no">
+        <name>IS_RTC_CLEAR_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>((((FLAG) &amp; (uint16_t)0xFFF0) == 0x00) &amp;&amp; ((FLAG) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="77" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga2126725a0d48f1c40f42566e249620ef" prot="public" static="no">
+        <name>IS_RTC_GET_FLAG</name>
+        <param><defname>FLAG</defname></param>
+        <initializer>(((FLAG) == <ref refid="group___r_t_c__interrupts__flags_1ga203dcbb991497e4d0e6722815f6db942" kindref="member">RTC_FLAG_RTOFF</ref>) || ((FLAG) == <ref refid="group___r_t_c__interrupts__flags_1ga78c4245996bef8d5f39226b6e37ed9c0" kindref="member">RTC_FLAG_RSF</ref>) || \
+                               ((FLAG) == <ref refid="group___r_t_c__interrupts__flags_1ga4e321e359b914d7ed10eed985f8b4811" kindref="member">RTC_FLAG_OW</ref>) || ((FLAG) == <ref refid="group___r_t_c__interrupts__flags_1gaed4375a7ea5a147f83c6cf4bfa805caf" kindref="member">RTC_FLAG_ALR</ref>) || \
+                               ((FLAG) == <ref refid="group___r_t_c__interrupts__flags_1ga8babb2c823c2097bf4a4ef0c20ef7367" kindref="member">RTC_FLAG_SEC</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="78" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c__interrupts__flags_1ga483b9ec67246cbfb2874c5a85f0cb4d8" prot="public" static="no">
+        <name>IS_RTC_PRESCALER</name>
+        <param><defname>PRESCALER</defname></param>
+        <initializer>((PRESCALER) &lt;= 0xFFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rtc.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

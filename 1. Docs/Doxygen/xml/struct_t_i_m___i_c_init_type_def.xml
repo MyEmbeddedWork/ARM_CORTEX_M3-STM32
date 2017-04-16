@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_t_i_m___i_c_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_ICInitTypeDef</compoundname>
+    <includes refid="stm32f10x__tim_8h" local="no">stm32f10x_tim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___i_c_init_type_def_1ab9404ee3d95aaa7a478ed99562c736d2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_ICInitTypeDef::TIM_Channel</definition>
+        <argsstring></argsstring>
+        <name>TIM_Channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM channel. This parameter can be a value of <ref refid="group___t_i_m___channel" kindref="compound">TIM_Channel</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="124" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga9e6a153dd6552e4e1188eba227316f7f" compoundref="stm32f10x__tim_8c" startline="587" endline="644">TIM_ICInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaa71f9296556310f85628d6c748a06475" compoundref="stm32f10x__tim_8c" startline="654" endline="702">TIM_PWMIConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga5005dac8e4e8a4c7fc2a0ef05b77cc50" compoundref="stm32f10x__tim_8c" startline="771" endline="779">TIM_ICStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c_init_type_def_1a234c284efc36c0cc15a2ed0fb4435557" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_ICInitTypeDef::TIM_ICPolarity</definition>
+        <argsstring></argsstring>
+        <name>TIM_ICPolarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the active edge of the input signal. This parameter can be a value of <ref refid="group___t_i_m___input___capture___polarity" kindref="compound">TIM_Input_Capture_Polarity</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="127" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga9e6a153dd6552e4e1188eba227316f7f" compoundref="stm32f10x__tim_8c" startline="587" endline="644">TIM_ICInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaa71f9296556310f85628d6c748a06475" compoundref="stm32f10x__tim_8c" startline="654" endline="702">TIM_PWMIConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga5005dac8e4e8a4c7fc2a0ef05b77cc50" compoundref="stm32f10x__tim_8c" startline="771" endline="779">TIM_ICStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c_init_type_def_1a00b9a72e895a43dc18c69c96a149f080" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_ICInitTypeDef::TIM_ICSelection</definition>
+        <argsstring></argsstring>
+        <name>TIM_ICSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input. This parameter can be a value of <ref refid="group___t_i_m___input___capture___selection" kindref="compound">TIM_Input_Capture_Selection</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="130" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga9e6a153dd6552e4e1188eba227316f7f" compoundref="stm32f10x__tim_8c" startline="587" endline="644">TIM_ICInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaa71f9296556310f85628d6c748a06475" compoundref="stm32f10x__tim_8c" startline="654" endline="702">TIM_PWMIConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga5005dac8e4e8a4c7fc2a0ef05b77cc50" compoundref="stm32f10x__tim_8c" startline="771" endline="779">TIM_ICStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c_init_type_def_1ac61c7fc999ace295ac81b304cabd61e0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_ICInitTypeDef::TIM_ICPrescaler</definition>
+        <argsstring></argsstring>
+        <name>TIM_ICPrescaler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Input Capture Prescaler. This parameter can be a value of <ref refid="group___t_i_m___input___capture___prescaler" kindref="compound">TIM_Input_Capture_Prescaler</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="133" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga9e6a153dd6552e4e1188eba227316f7f" compoundref="stm32f10x__tim_8c" startline="587" endline="644">TIM_ICInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga5005dac8e4e8a4c7fc2a0ef05b77cc50" compoundref="stm32f10x__tim_8c" startline="771" endline="779">TIM_ICStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c_init_type_def_1a72539caa6e965e4fa89e3b21b188cf26" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_ICInitTypeDef::TIM_ICFilter</definition>
+        <argsstring></argsstring>
+        <name>TIM_ICFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input capture filter. This parameter can be a number between 0x0 and 0xF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="136" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga9e6a153dd6552e4e1188eba227316f7f" compoundref="stm32f10x__tim_8c" startline="587" endline="644">TIM_ICInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga5005dac8e4e8a4c7fc2a0ef05b77cc50" compoundref="stm32f10x__tim_8c" startline="771" endline="779">TIM_ICStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TIM Input Capture Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="122" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="121" bodyend="138"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___i_c_init_type_def_1ab9404ee3d95aaa7a478ed99562c736d2" prot="public" virt="non-virtual"><scope>TIM_ICInitTypeDef</scope><name>TIM_Channel</name></member>
+      <member refid="struct_t_i_m___i_c_init_type_def_1a72539caa6e965e4fa89e3b21b188cf26" prot="public" virt="non-virtual"><scope>TIM_ICInitTypeDef</scope><name>TIM_ICFilter</name></member>
+      <member refid="struct_t_i_m___i_c_init_type_def_1a234c284efc36c0cc15a2ed0fb4435557" prot="public" virt="non-virtual"><scope>TIM_ICInitTypeDef</scope><name>TIM_ICPolarity</name></member>
+      <member refid="struct_t_i_m___i_c_init_type_def_1ac61c7fc999ace295ac81b304cabd61e0" prot="public" virt="non-virtual"><scope>TIM_ICInitTypeDef</scope><name>TIM_ICPrescaler</name></member>
+      <member refid="struct_t_i_m___i_c_init_type_def_1a00b9a72e895a43dc18c69c96a149f080" prot="public" virt="non-virtual"><scope>TIM_ICInitTypeDef</scope><name>TIM_ICSelection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

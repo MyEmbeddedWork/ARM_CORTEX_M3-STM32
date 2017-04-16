@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_s_d_i_o___data_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>SDIO_DataInitTypeDef</compoundname>
+    <includes refid="stm32f10x__sdio_8h" local="no">stm32f10x_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_d_i_o___data_init_type_def_1a6877ec1042a273e228114e5362b93aa1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DataInitTypeDef::SDIO_DataTimeOut</definition>
+        <argsstring></argsstring>
+        <name>SDIO_DataTimeOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the data timeout period in card bus clock periods. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="98" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" compoundref="stm32f10x__sdio_8c" startline="431" endline="464">SDIO_DataConfig</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" compoundref="stm32f10x__sdio_8c" startline="472" endline="481">SDIO_DataStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___data_init_type_def_1ac325889a6dd582130a752aafc3ec9ee9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DataInitTypeDef::SDIO_DataLength</definition>
+        <argsstring></argsstring>
+        <name>SDIO_DataLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of data bytes to be transferred. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="100" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" compoundref="stm32f10x__sdio_8c" startline="431" endline="464">SDIO_DataConfig</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" compoundref="stm32f10x__sdio_8c" startline="472" endline="481">SDIO_DataStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___data_init_type_def_1a2252d17c4b3182830eb9f400489cb10f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DataInitTypeDef::SDIO_DataBlockSize</definition>
+        <argsstring></argsstring>
+        <name>SDIO_DataBlockSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the data block size for block transfer. This parameter can be a value of <ref refid="group___s_d_i_o___data___block___size" kindref="compound">SDIO_Data_Block_Size</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="102" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" compoundref="stm32f10x__sdio_8c" startline="431" endline="464">SDIO_DataConfig</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" compoundref="stm32f10x__sdio_8c" startline="472" endline="481">SDIO_DataStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___data_init_type_def_1a4838fffdb3f87850569dff12f15485db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DataInitTypeDef::SDIO_TransferDir</definition>
+        <argsstring></argsstring>
+        <name>SDIO_TransferDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the data transfer direction, whether the transfer is a read or write. This parameter can be a value of <ref refid="group___s_d_i_o___transfer___direction" kindref="compound">SDIO_Transfer_Direction</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="105" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" compoundref="stm32f10x__sdio_8c" startline="431" endline="464">SDIO_DataConfig</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" compoundref="stm32f10x__sdio_8c" startline="472" endline="481">SDIO_DataStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___data_init_type_def_1a58ac19aaaceb2791d4bbcd30f334dd21" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DataInitTypeDef::SDIO_TransferMode</definition>
+        <argsstring></argsstring>
+        <name>SDIO_TransferMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether data transfer is in stream or block mode. This parameter can be a value of <ref refid="group___s_d_i_o___transfer___type" kindref="compound">SDIO_Transfer_Type</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="109" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" compoundref="stm32f10x__sdio_8c" startline="431" endline="464">SDIO_DataConfig</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" compoundref="stm32f10x__sdio_8c" startline="472" endline="481">SDIO_DataStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_i_o___data_init_type_def_1ad5eb5f3c6fd9e5d4a6664c5cf57d6b03" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DataInitTypeDef::SDIO_DPSM</definition>
+        <argsstring></argsstring>
+        <name>SDIO_DPSM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether SDIO Data path state machine (DPSM) is enabled or disabled. This parameter can be a value of <ref refid="group___s_d_i_o___d_p_s_m___state" kindref="compound">SDIO_DPSM_State</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="112" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="group___s_d_i_o___private___functions_1gad65d896ae919683585bda44a1e2afae4" compoundref="stm32f10x__sdio_8c" startline="431" endline="464">SDIO_DataConfig</referencedby>
+        <referencedby refid="group___s_d_i_o___private___functions_1gaa83209c09e921521aca2587fb5b22ea2" compoundref="stm32f10x__sdio_8c" startline="472" endline="481">SDIO_DataStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="97" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="96" bodyend="115"/>
+    <listofallmembers>
+      <member refid="struct_s_d_i_o___data_init_type_def_1a2252d17c4b3182830eb9f400489cb10f" prot="public" virt="non-virtual"><scope>SDIO_DataInitTypeDef</scope><name>SDIO_DataBlockSize</name></member>
+      <member refid="struct_s_d_i_o___data_init_type_def_1ac325889a6dd582130a752aafc3ec9ee9" prot="public" virt="non-virtual"><scope>SDIO_DataInitTypeDef</scope><name>SDIO_DataLength</name></member>
+      <member refid="struct_s_d_i_o___data_init_type_def_1a6877ec1042a273e228114e5362b93aa1" prot="public" virt="non-virtual"><scope>SDIO_DataInitTypeDef</scope><name>SDIO_DataTimeOut</name></member>
+      <member refid="struct_s_d_i_o___data_init_type_def_1ad5eb5f3c6fd9e5d4a6664c5cf57d6b03" prot="public" virt="non-virtual"><scope>SDIO_DataInitTypeDef</scope><name>SDIO_DPSM</name></member>
+      <member refid="struct_s_d_i_o___data_init_type_def_1a4838fffdb3f87850569dff12f15485db" prot="public" virt="non-virtual"><scope>SDIO_DataInitTypeDef</scope><name>SDIO_TransferDir</name></member>
+      <member refid="struct_s_d_i_o___data_init_type_def_1a58ac19aaaceb2791d4bbcd30f334dd21" prot="public" virt="non-virtual"><scope>SDIO_DataInitTypeDef</scope><name>SDIO_TransferMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

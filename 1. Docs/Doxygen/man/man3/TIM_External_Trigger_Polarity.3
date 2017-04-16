@@ -1,0 +1,46 @@
+.TH "TIM_External_Trigger_Polarity" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_External_Trigger_Polarity
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPolarity_Inverted\fP   ((uint16_t)0x8000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_ExtTRGPolarity_NonInverted\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EXT_POLARITY\fP(POLARITY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_EXT_POLARITY(POLARITY)"
+\fBValue:\fP
+.PP
+.nf
+(((POLARITY) == TIM_ExtTRGPolarity_Inverted) || \
+                                       ((POLARITY) == TIM_ExtTRGPolarity_NonInverted))
+.fi
+.PP
+Definition at line 801 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ExtTRGPolarity_Inverted   ((uint16_t)0x8000)"
+
+.PP
+Definition at line 799 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_ExtTRGPolarity_NonInverted   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 800 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

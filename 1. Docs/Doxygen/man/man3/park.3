@@ -1,0 +1,26 @@
+.TH "park" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+park
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Forward Park transform converts the input two-coordinate vector to flux and torque components\&. The Park transform can be used to realize the transformation of the \fCIalpha\fP and the \fCIbeta\fP currents from the stationary to the moving reference frame and control the spatial relationship between the stator vector current and rotor flux vector\&. If we consider the d axis aligned with the rotor flux, the diagram below shows the current vector and the relationship from the two reference frames: Stator current space vector and its component in (a,b) and in the d,q rotating reference frame The function operates on a single sample of data and each call to the function returns the processed output\&. The library provides separate functions for Q31 and floating-point data types\&. 
+.PP
+\fBAlgorithm\fP
+.RS 4
+ where \fCIalpha\fP and \fCIbeta\fP are the stator vector components, \fCpId\fP and \fCpIq\fP are rotor vector components and \fCcosVal\fP and \fCsinVal\fP are the cosine and sine values of theta (rotor flux position)\&. 
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the Q31 version of the Park transform\&. In particular, the overflow and saturation behavior of the accumulator used must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

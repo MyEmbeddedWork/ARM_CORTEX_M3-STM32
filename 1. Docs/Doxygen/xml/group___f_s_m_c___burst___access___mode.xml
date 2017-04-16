@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___burst___access___mode" kind="group">
+    <compoundname>FSMC_Burst_Access_Mode</compoundname>
+    <title>FSMC_Burst_Access_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___burst___access___mode_1ga26fc544945415e350563a9b00684850c" prot="public" static="no">
+        <name>FSMC_BurstAccessMode_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="339" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___burst___access___mode_1ga841831dfacfdd8889dafe26cc594bf02" prot="public" static="no">
+        <name>FSMC_BurstAccessMode_Enable</name>
+        <initializer>((uint32_t)0x00000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="340" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___burst___access___mode_1gaf8736659c5064c3c03753d7874401e71" prot="public" static="no">
+        <name>IS_FSMC_BURSTMODE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___f_s_m_c___burst___access___mode_1ga26fc544945415e350563a9b00684850c" kindref="member">FSMC_BurstAccessMode_Disable</ref>) || \
+                                  ((STATE) == <ref refid="group___f_s_m_c___burst___access___mode_1ga841831dfacfdd8889dafe26cc594bf02" kindref="member">FSMC_BurstAccessMode_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="341" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

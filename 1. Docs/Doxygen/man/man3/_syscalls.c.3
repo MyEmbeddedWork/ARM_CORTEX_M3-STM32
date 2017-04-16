@@ -1,0 +1,78 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_syscalls.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/newlib/_syscalls.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <_ansi\&.h>\fP
+.br
+\fC#include <_syslist\&.h>\fP
+.br
+\fC#include <errno\&.h>\fP
+.br
+\fC#include <sys/stat\&.h>\fP
+.br
+\fC#include <sys/time\&.h>\fP
+.br
+\fC#include <sys/times\&.h>\fP
+.br
+\fC#include <limits\&.h>\fP
+.br
+\fC#include <signal\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void *__dso_handle \fB__attribute__\fP ((weak))"
+.br
+.ti -1c
+.RI "void \fB__initialize_args\fP (int *p_argc, char ***p_argv)"
+.br
+.ti -1c
+.RI "int \fBraise\fP (int sig \fB__attribute__\fP((unused)))"
+.br
+.ti -1c
+.RI "int \fBkill\fP (pid_t pid, int sig)"
+.br
+.ti -1c
+.RI "int \fBkill\fP (pid_t pid \fB__attribute__\fP((unused)), int sig \fB__attribute__\fP((unused)))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBerrno\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void* __dso_handle __attribute__ ((weak))"
+
+.PP
+Definition at line 35 of file _syscalls\&.c\&.
+.SS "void __initialize_args (int * p_argc, char *** p_argv)"
+
+.SS "int kill (pid_t pid, int sig)"
+
+.SS "int kill (pid_t pid  __attribute__(unused), int sig  __attribute__(unused))"
+
+.PP
+Definition at line 75 of file _syscalls\&.c\&.
+.SS "int raise (int sig  __attribute__(unused))"
+
+.PP
+Definition at line 65 of file _syscalls\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int errno"
+
+.PP
+Definition at line 9 of file _syscalls\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

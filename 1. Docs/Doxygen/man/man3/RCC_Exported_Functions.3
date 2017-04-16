@@ -1,0 +1,1180 @@
+.TH "RCC_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRCC_DeInit\fP (void)"
+.br
+.RI "Resets the RCC clock configuration to the default reset state\&. "
+.ti -1c
+.RI "void \fBRCC_HSEConfig\fP (uint32_t RCC_HSE)"
+.br
+.RI "Configures the External High Speed oscillator (HSE)\&. "
+.ti -1c
+.RI "\fBErrorStatus\fP \fBRCC_WaitForHSEStartUp\fP (void)"
+.br
+.RI "Waits for HSE start-up\&. "
+.ti -1c
+.RI "void \fBRCC_AdjustHSICalibrationValue\fP (uint8_t HSICalibrationValue)"
+.br
+.RI "Adjusts the Internal High Speed oscillator (HSI) calibration value\&. "
+.ti -1c
+.RI "void \fBRCC_HSICmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Internal High Speed oscillator (HSI)\&. "
+.ti -1c
+.RI "void \fBRCC_PLLConfig\fP (uint32_t RCC_PLLSource, uint32_t RCC_PLLMul)"
+.br
+.RI "Configures the PLL clock source and multiplication factor\&. "
+.ti -1c
+.RI "void \fBRCC_PLLCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the PLL\&. "
+.ti -1c
+.RI "void \fBRCC_SYSCLKConfig\fP (uint32_t RCC_SYSCLKSource)"
+.br
+.RI "Configures the system clock (SYSCLK)\&. "
+.ti -1c
+.RI "uint8_t \fBRCC_GetSYSCLKSource\fP (void)"
+.br
+.RI "Returns the clock source used as system clock\&. "
+.ti -1c
+.RI "void \fBRCC_HCLKConfig\fP (uint32_t RCC_SYSCLK)"
+.br
+.RI "Configures the AHB clock (HCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_PCLK1Config\fP (uint32_t RCC_HCLK)"
+.br
+.RI "Configures the Low Speed APB clock (PCLK1)\&. "
+.ti -1c
+.RI "void \fBRCC_PCLK2Config\fP (uint32_t RCC_HCLK)"
+.br
+.RI "Configures the High Speed APB clock (PCLK2)\&. "
+.ti -1c
+.RI "void \fBRCC_ITConfig\fP (uint8_t RCC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified RCC interrupts\&. "
+.ti -1c
+.RI "void \fBRCC_USBCLKConfig\fP (uint32_t RCC_USBCLKSource)"
+.br
+.RI "Configures the USB clock (USBCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_ADCCLKConfig\fP (uint32_t RCC_PCLK2)"
+.br
+.RI "Configures the ADC clock (ADCCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_LSEConfig\fP (uint8_t RCC_LSE)"
+.br
+.RI "Configures the External Low Speed oscillator (LSE)\&. "
+.ti -1c
+.RI "void \fBRCC_LSICmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Internal Low Speed oscillator (LSI)\&. "
+.ti -1c
+.RI "void \fBRCC_RTCCLKConfig\fP (uint32_t RCC_RTCCLKSource)"
+.br
+.RI "Configures the RTC clock (RTCCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_RTCCLKCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the RTC clock\&. "
+.ti -1c
+.RI "void \fBRCC_GetClocksFreq\fP (\fBRCC_ClocksTypeDef\fP *RCC_Clocks)"
+.br
+.RI "Returns the frequencies of different on chip clocks\&. "
+.ti -1c
+.RI "void \fBRCC_AHBPeriphClockCmd\fP (uint32_t RCC_AHBPeriph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the AHB peripheral clock\&. "
+.ti -1c
+.RI "void \fBRCC_APB2PeriphClockCmd\fP (uint32_t RCC_APB2Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the High Speed APB (APB2) peripheral clock\&. "
+.ti -1c
+.RI "void \fBRCC_APB1PeriphClockCmd\fP (uint32_t RCC_APB1Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Low Speed APB (APB1) peripheral clock\&. "
+.ti -1c
+.RI "void \fBRCC_APB2PeriphResetCmd\fP (uint32_t RCC_APB2Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Forces or releases High Speed APB (APB2) peripheral reset\&. "
+.ti -1c
+.RI "void \fBRCC_APB1PeriphResetCmd\fP (uint32_t RCC_APB1Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Forces or releases Low Speed APB (APB1) peripheral reset\&. "
+.ti -1c
+.RI "void \fBRCC_BackupResetCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Forces or releases the Backup domain reset\&. "
+.ti -1c
+.RI "void \fBRCC_ClockSecuritySystemCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Clock Security System\&. "
+.ti -1c
+.RI "void \fBRCC_MCOConfig\fP (uint8_t RCC_MCO)"
+.br
+.RI "Selects the clock source to output on MCO pin\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBRCC_GetFlagStatus\fP (uint8_t RCC_FLAG)"
+.br
+.RI "Checks whether the specified RCC flag is set or not\&. "
+.ti -1c
+.RI "void \fBRCC_ClearFlag\fP (void)"
+.br
+.RI "Clears the RCC reset flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBRCC_GetITStatus\fP (uint8_t RCC_IT)"
+.br
+.RI "Checks whether the specified RCC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBRCC_ClearITPendingBit\fP (uint8_t RCC_IT)"
+.br
+.RI "Clears the RCC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void RCC_ADCCLKConfig (uint32_t RCC_PCLK2)"
+
+.PP
+Configures the ADC clock (ADCCLK)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_PCLK2\fP defines the ADC clock divider\&. This clock is derived from the APB2 clock (PCLK2)\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_PCLK2_Div2: ADC clock = PCLK2/2 
+.IP "\(bu" 2
+RCC_PCLK2_Div4: ADC clock = PCLK2/4 
+.IP "\(bu" 2
+RCC_PCLK2_Div6: ADC clock = PCLK2/6 
+.IP "\(bu" 2
+RCC_PCLK2_Div8: ADC clock = PCLK2/8 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 766 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_AdjustHSICalibrationValue (uint8_t HSICalibrationValue)"
+
+.PP
+Adjusts the Internal High Speed oscillator (HSI) calibration value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIHSICalibrationValue\fP specifies the calibration trimming value\&. This parameter must be a number between 0 and 0x1F\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 334 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_AHBPeriphClockCmd (uint32_t RCC_AHBPeriph, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the AHB peripheral clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_AHBPeriph\fP specifies the AHB peripheral to gates its clock\&.
+.RE
+.PP
+For \fBSTM32_Connectivity_line_devices\fP, this parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_AHBPeriph_DMA1 
+.IP "\(bu" 2
+RCC_AHBPeriph_DMA2 
+.IP "\(bu" 2
+RCC_AHBPeriph_SRAM 
+.IP "\(bu" 2
+RCC_AHBPeriph_FLITF 
+.IP "\(bu" 2
+RCC_AHBPeriph_CRC 
+.IP "\(bu" 2
+RCC_AHBPeriph_OTG_FS 
+.IP "\(bu" 2
+RCC_AHBPeriph_ETH_MAC 
+.IP "\(bu" 2
+RCC_AHBPeriph_ETH_MAC_Tx 
+.IP "\(bu" 2
+RCC_AHBPeriph_ETH_MAC_Rx
+.PP
+For \fBother_STM32_devices\fP, this parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_AHBPeriph_DMA1 
+.IP "\(bu" 2
+RCC_AHBPeriph_DMA2 
+.IP "\(bu" 2
+RCC_AHBPeriph_SRAM 
+.IP "\(bu" 2
+RCC_AHBPeriph_FLITF 
+.IP "\(bu" 2
+RCC_AHBPeriph_CRC 
+.IP "\(bu" 2
+RCC_AHBPeriph_FSMC 
+.IP "\(bu" 2
+RCC_AHBPeriph_SDIO
+.PP
+\fBNote:\fP
+.RS 4
+SRAM and FLITF clock can be disabled only during sleep mode\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the specified peripheral clock\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1064 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_APB1PeriphClockCmd (uint32_t RCC_APB1Periph, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Low Speed APB (APB1) peripheral clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_APB1Periph\fP specifies the APB1 peripheral to gates its clock\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_APB1Periph_TIM2, RCC_APB1Periph_TIM3, RCC_APB1Periph_TIM4, RCC_APB1Periph_TIM5, RCC_APB1Periph_TIM6, RCC_APB1Periph_TIM7, RCC_APB1Periph_WWDG, RCC_APB1Periph_SPI2, RCC_APB1Periph_SPI3, RCC_APB1Periph_USART2, RCC_APB1Periph_USART3, RCC_APB1Periph_USART4, RCC_APB1Periph_USART5, RCC_APB1Periph_I2C1, RCC_APB1Periph_I2C2, RCC_APB1Periph_USB, RCC_APB1Periph_CAN1, RCC_APB1Periph_BKP, RCC_APB1Periph_PWR, RCC_APB1Periph_DAC, RCC_APB1Periph_CEC, RCC_APB1Periph_TIM12, RCC_APB1Periph_TIM13, RCC_APB1Periph_TIM14 
+.PP
+.br
+\fINewState\fP new state of the specified peripheral clock\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1126 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_APB1PeriphResetCmd (uint32_t RCC_APB1Periph, \fBFunctionalState\fP NewState)"
+
+.PP
+Forces or releases Low Speed APB (APB1) peripheral reset\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_APB1Periph\fP specifies the APB1 peripheral to reset\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_APB1Periph_TIM2, RCC_APB1Periph_TIM3, RCC_APB1Periph_TIM4, RCC_APB1Periph_TIM5, RCC_APB1Periph_TIM6, RCC_APB1Periph_TIM7, RCC_APB1Periph_WWDG, RCC_APB1Periph_SPI2, RCC_APB1Periph_SPI3, RCC_APB1Periph_USART2, RCC_APB1Periph_USART3, RCC_APB1Periph_USART4, RCC_APB1Periph_USART5, RCC_APB1Periph_I2C1, RCC_APB1Periph_I2C2, RCC_APB1Periph_USB, RCC_APB1Periph_CAN1, RCC_APB1Periph_BKP, RCC_APB1Periph_PWR, RCC_APB1Periph_DAC, RCC_APB1Periph_CEC, RCC_APB1Periph_TIM12, RCC_APB1Periph_TIM13, RCC_APB1Periph_TIM14 
+.PP
+.br
+\fINewState\fP new state of the specified peripheral clock\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1216 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_APB2PeriphClockCmd (uint32_t RCC_APB2Periph, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the High Speed APB (APB2) peripheral clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_APB2Periph\fP specifies the APB2 peripheral to gates its clock\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_APB2Periph_AFIO, RCC_APB2Periph_GPIOA, RCC_APB2Periph_GPIOB, RCC_APB2Periph_GPIOC, RCC_APB2Periph_GPIOD, RCC_APB2Periph_GPIOE, RCC_APB2Periph_GPIOF, RCC_APB2Periph_GPIOG, RCC_APB2Periph_ADC1, RCC_APB2Periph_ADC2, RCC_APB2Periph_TIM1, RCC_APB2Periph_SPI1, RCC_APB2Periph_TIM8, RCC_APB2Periph_USART1, RCC_APB2Periph_ADC3, RCC_APB2Periph_TIM15, RCC_APB2Periph_TIM16, RCC_APB2Periph_TIM17, RCC_APB2Periph_TIM9, RCC_APB2Periph_TIM10, RCC_APB2Periph_TIM11 
+.PP
+.br
+\fINewState\fP new state of the specified peripheral clock\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1095 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_APB2PeriphResetCmd (uint32_t RCC_APB2Periph, \fBFunctionalState\fP NewState)"
+
+.PP
+Forces or releases High Speed APB (APB2) peripheral reset\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_APB2Periph\fP specifies the APB2 peripheral to reset\&. This parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_APB2Periph_AFIO, RCC_APB2Periph_GPIOA, RCC_APB2Periph_GPIOB, RCC_APB2Periph_GPIOC, RCC_APB2Periph_GPIOD, RCC_APB2Periph_GPIOE, RCC_APB2Periph_GPIOF, RCC_APB2Periph_GPIOG, RCC_APB2Periph_ADC1, RCC_APB2Periph_ADC2, RCC_APB2Periph_TIM1, RCC_APB2Periph_SPI1, RCC_APB2Periph_TIM8, RCC_APB2Periph_USART1, RCC_APB2Periph_ADC3, RCC_APB2Periph_TIM15, RCC_APB2Periph_TIM16, RCC_APB2Periph_TIM17, RCC_APB2Periph_TIM9, RCC_APB2Periph_TIM10, RCC_APB2Periph_TIM11 
+.PP
+.br
+\fINewState\fP new state of the specified peripheral reset\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1185 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_BackupResetCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Forces or releases the Backup domain reset\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Backup domain reset\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1237 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_ClearFlag (void)"
+
+.PP
+Clears the RCC reset flags\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The reset flags are: RCC_FLAG_PINRST, RCC_FLAG_PORRST, RCC_FLAG_SFTRST, RCC_FLAG_IWDGRST, RCC_FLAG_WWDGRST, RCC_FLAG_LPWRRST 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1371 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_ClearITPendingBit (uint8_t RCC_IT)"
+
+.PP
+Clears the RCC's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_IT\fP specifies the interrupt pending bit to clear\&.
+.RE
+.PP
+For \fBSTM32_Connectivity_line_devices\fP, this parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_IT_LSIRDY: LSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_LSERDY: LSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSIRDY: HSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSERDY: HSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLLRDY: PLL ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLL2RDY: PLL2 ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLL3RDY: PLL3 ready interrupt 
+.IP "\(bu" 2
+RCC_IT_CSS: Clock Security System interrupt
+.PP
+For \fBother_STM32_devices\fP, this parameter can be any combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_IT_LSIRDY: LSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_LSERDY: LSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSIRDY: HSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSERDY: HSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLLRDY: PLL ready interrupt
+.PP
+.PD 0
+.IP "\(bu" 2
+RCC_IT_CSS: Clock Security System interrupt 
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Definition at line 1448 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_ClockSecuritySystemCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Clock Security System\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Clock Security System\&.\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1250 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_DeInit (void)"
+
+.PP
+Resets the RCC clock configuration to the default reset state\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 217 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_GetClocksFreq (\fBRCC_ClocksTypeDef\fP * RCC_Clocks)"
+
+.PP
+Returns the frequencies of different on chip clocks\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_Clocks\fP pointer to a \fBRCC_ClocksTypeDef\fP structure which will hold the clocks frequencies\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The result of this function could be not correct when using fractional value for HSE crystal\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 908 of file stm32f10x_rcc\&.c\&.
+.SS "\fBFlagStatus\fP RCC_GetFlagStatus (uint8_t RCC_FLAG)"
+
+.PP
+Checks whether the specified RCC flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_FLAG\fP specifies the flag to check\&.
+.RE
+.PP
+For \fBSTM32_Connectivity_line_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_FLAG_HSIRDY: HSI oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_HSERDY: HSE oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_PLLRDY: PLL clock ready 
+.IP "\(bu" 2
+RCC_FLAG_PLL2RDY: PLL2 clock ready 
+.IP "\(bu" 2
+RCC_FLAG_PLL3RDY: PLL3 clock ready 
+.IP "\(bu" 2
+RCC_FLAG_LSERDY: LSE oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_LSIRDY: LSI oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_PINRST: Pin reset 
+.IP "\(bu" 2
+RCC_FLAG_PORRST: POR/PDR reset 
+.IP "\(bu" 2
+RCC_FLAG_SFTRST: Software reset 
+.IP "\(bu" 2
+RCC_FLAG_IWDGRST: Independent Watchdog reset 
+.IP "\(bu" 2
+RCC_FLAG_WWDGRST: Window Watchdog reset 
+.IP "\(bu" 2
+RCC_FLAG_LPWRRST: Low Power reset
+.PP
+For \fBother_STM32_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_FLAG_HSIRDY: HSI oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_HSERDY: HSE oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_PLLRDY: PLL clock ready 
+.IP "\(bu" 2
+RCC_FLAG_LSERDY: LSE oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_LSIRDY: LSI oscillator clock ready 
+.IP "\(bu" 2
+RCC_FLAG_PINRST: Pin reset 
+.IP "\(bu" 2
+RCC_FLAG_PORRST: POR/PDR reset 
+.IP "\(bu" 2
+RCC_FLAG_SFTRST: Software reset 
+.IP "\(bu" 2
+RCC_FLAG_IWDGRST: Independent Watchdog reset 
+.IP "\(bu" 2
+RCC_FLAG_WWDGRST: Window Watchdog reset 
+.IP "\(bu" 2
+RCC_FLAG_LPWRRST: Low Power reset
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of RCC_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1326 of file stm32f10x_rcc\&.c\&.
+.SS "\fBITStatus\fP RCC_GetITStatus (uint8_t RCC_IT)"
+
+.PP
+Checks whether the specified RCC interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_IT\fP specifies the RCC interrupt source to check\&.
+.RE
+.PP
+For \fBSTM32_Connectivity_line_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_IT_LSIRDY: LSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_LSERDY: LSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSIRDY: HSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSERDY: HSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLLRDY: PLL ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLL2RDY: PLL2 ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLL3RDY: PLL3 ready interrupt 
+.IP "\(bu" 2
+RCC_IT_CSS: Clock Security System interrupt
+.PP
+For \fBother_STM32_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_IT_LSIRDY: LSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_LSERDY: LSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSIRDY: HSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSERDY: HSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLLRDY: PLL ready interrupt 
+.IP "\(bu" 2
+RCC_IT_CSS: Clock Security System interrupt
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of RCC_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1402 of file stm32f10x_rcc\&.c\&.
+.SS "uint8_t RCC_GetSYSCLKSource (void)"
+
+.PP
+Returns the clock source used as system clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP clock source used as system clock\&. The returned value can be one of the following:
+.IP "\(bu" 2
+0x00: HSI used as system clock
+.IP "\(bu" 2
+0x04: HSE used as system clock
+.IP "\(bu" 2
+0x08: PLL used as system clock 
+.PP
+.RE
+.PP
+
+.PP
+Definition at line 587 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_HCLKConfig (uint32_t RCC_SYSCLK)"
+
+.PP
+Configures the AHB clock (HCLK)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_SYSCLK\fP defines the AHB clock divider\&. This clock is derived from the system clock (SYSCLK)\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_SYSCLK_Div1: AHB clock = SYSCLK 
+.IP "\(bu" 2
+RCC_SYSCLK_Div2: AHB clock = SYSCLK/2 
+.IP "\(bu" 2
+RCC_SYSCLK_Div4: AHB clock = SYSCLK/4 
+.IP "\(bu" 2
+RCC_SYSCLK_Div8: AHB clock = SYSCLK/8 
+.IP "\(bu" 2
+RCC_SYSCLK_Div16: AHB clock = SYSCLK/16 
+.IP "\(bu" 2
+RCC_SYSCLK_Div64: AHB clock = SYSCLK/64 
+.IP "\(bu" 2
+RCC_SYSCLK_Div128: AHB clock = SYSCLK/128 
+.IP "\(bu" 2
+RCC_SYSCLK_Div256: AHB clock = SYSCLK/256 
+.IP "\(bu" 2
+RCC_SYSCLK_Div512: AHB clock = SYSCLK/512 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 608 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_HSEConfig (uint32_t RCC_HSE)"
+
+.PP
+Configures the External High Speed oscillator (HSE)\&. 
+.PP
+\fBNote:\fP
+.RS 4
+HSE can not be stopped if it is used directly or through the PLL as system clock\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_HSE\fP specifies the new state of the HSE\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_HSE_OFF: HSE oscillator OFF 
+.IP "\(bu" 2
+RCC_HSE_ON: HSE oscillator ON 
+.IP "\(bu" 2
+RCC_HSE_Bypass: HSE oscillator bypassed with external clock 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 270 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_HSICmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Internal High Speed oscillator (HSI)\&. 
+.PP
+\fBNote:\fP
+.RS 4
+HSI can not be stopped if it is used directly or through the PLL as system clock\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the HSI\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 354 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_ITConfig (uint8_t RCC_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the specified RCC interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_IT\fP specifies the RCC interrupt sources to be enabled or disabled\&.
+.RE
+.PP
+For \fBSTM32_Connectivity_line_devices\fP, this parameter can be any combination of the following values 
+.PD 0
+
+.IP "\(bu" 2
+RCC_IT_LSIRDY: LSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_LSERDY: LSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSIRDY: HSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSERDY: HSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLLRDY: PLL ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLL2RDY: PLL2 ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLL3RDY: PLL3 ready interrupt
+.PP
+For \fBother_STM32_devices\fP, this parameter can be any combination of the following values 
+.PD 0
+
+.IP "\(bu" 2
+RCC_IT_LSIRDY: LSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_LSERDY: LSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSIRDY: HSI ready interrupt 
+.IP "\(bu" 2
+RCC_IT_HSERDY: HSE ready interrupt 
+.IP "\(bu" 2
+RCC_IT_PLLRDY: PLL ready interrupt
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the specified RCC interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 700 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_LSEConfig (uint8_t RCC_LSE)"
+
+.PP
+Configures the External Low Speed oscillator (LSE)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_LSE\fP specifies the new state of the LSE\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_LSE_OFF: LSE oscillator OFF 
+.IP "\(bu" 2
+RCC_LSE_ON: LSE oscillator ON 
+.IP "\(bu" 2
+RCC_LSE_Bypass: LSE oscillator bypassed with external clock 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 829 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_LSICmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Internal Low Speed oscillator (LSI)\&. 
+.PP
+\fBNote:\fP
+.RS 4
+LSI can not be disabled if the IWDG is running\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the LSI\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 862 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_MCOConfig (uint8_t RCC_MCO)"
+
+.PP
+Selects the clock source to output on MCO pin\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_MCO\fP specifies the clock source to output\&.
+.RE
+.PP
+For \fBSTM32_Connectivity_line_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_MCO_NoClock: No clock selected 
+.IP "\(bu" 2
+RCC_MCO_SYSCLK: System clock selected 
+.IP "\(bu" 2
+RCC_MCO_HSI: HSI oscillator clock selected 
+.IP "\(bu" 2
+RCC_MCO_HSE: HSE oscillator clock selected 
+.IP "\(bu" 2
+RCC_MCO_PLLCLK_Div2: PLL clock divided by 2 selected 
+.IP "\(bu" 2
+RCC_MCO_PLL2CLK: PLL2 clock selected 
+.IP "\(bu" 2
+RCC_MCO_PLL3CLK_Div2: PLL3 clock divided by 2 selected 
+.IP "\(bu" 2
+RCC_MCO_XT1: External 3-25 MHz oscillator clock selected 
+.IP "\(bu" 2
+RCC_MCO_PLL3CLK: PLL3 clock selected
+.PP
+For \fBother_STM32_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_MCO_NoClock: No clock selected 
+.IP "\(bu" 2
+RCC_MCO_SYSCLK: System clock selected 
+.IP "\(bu" 2
+RCC_MCO_HSI: HSI oscillator clock selected 
+.IP "\(bu" 2
+RCC_MCO_HSE: HSE oscillator clock selected 
+.IP "\(bu" 2
+RCC_MCO_PLLCLK_Div2: PLL clock divided by 2 selected
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 1282 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_PCLK1Config (uint32_t RCC_HCLK)"
+
+.PP
+Configures the Low Speed APB clock (PCLK1)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_HCLK\fP defines the APB1 clock divider\&. This clock is derived from the AHB clock (HCLK)\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_HCLK_Div1: APB1 clock = HCLK 
+.IP "\(bu" 2
+RCC_HCLK_Div2: APB1 clock = HCLK/2 
+.IP "\(bu" 2
+RCC_HCLK_Div4: APB1 clock = HCLK/4 
+.IP "\(bu" 2
+RCC_HCLK_Div8: APB1 clock = HCLK/8 
+.IP "\(bu" 2
+RCC_HCLK_Div16: APB1 clock = HCLK/16 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 634 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_PCLK2Config (uint32_t RCC_HCLK)"
+
+.PP
+Configures the High Speed APB clock (PCLK2)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_HCLK\fP defines the APB2 clock divider\&. This clock is derived from the AHB clock (HCLK)\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_HCLK_Div1: APB2 clock = HCLK 
+.IP "\(bu" 2
+RCC_HCLK_Div2: APB2 clock = HCLK/2 
+.IP "\(bu" 2
+RCC_HCLK_Div4: APB2 clock = HCLK/4 
+.IP "\(bu" 2
+RCC_HCLK_Div8: APB2 clock = HCLK/8 
+.IP "\(bu" 2
+RCC_HCLK_Div16: APB2 clock = HCLK/16 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 660 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_PLLCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the PLL\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The PLL can not be disabled if it is used as system clock\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the PLL\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 401 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_PLLConfig (uint32_t RCC_PLLSource, uint32_t RCC_PLLMul)"
+
+.PP
+Configures the PLL clock source and multiplication factor\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function must be used only when the PLL is disabled\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_PLLSource\fP specifies the PLL entry clock source\&. For \fBSTM32_Connectivity_line_devices\fP or \fBSTM32_Value_line_devices\fP, this parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_PLLSource_HSI_Div2: HSI oscillator clock divided by 2 selected as PLL clock entry 
+.IP "\(bu" 2
+RCC_PLLSource_PREDIV1: PREDIV1 clock selected as PLL clock entry For \fBother_STM32_devices\fP, this parameter can be one of the following values: 
+.IP "\(bu" 2
+RCC_PLLSource_HSI_Div2: HSI oscillator clock divided by 2 selected as PLL clock entry 
+.IP "\(bu" 2
+RCC_PLLSource_HSE_Div1: HSE oscillator clock selected as PLL clock entry 
+.IP "\(bu" 2
+RCC_PLLSource_HSE_Div2: HSE oscillator clock divided by 2 selected as PLL clock entry 
+.PP
+.br
+\fIRCC_PLLMul\fP specifies the PLL multiplication factor\&. For \fBSTM32_Connectivity_line_devices\fP, this parameter can be RCC_PLLMul_x where x:{[4,9], 6_5} For \fBother_STM32_devices\fP, this parameter can be RCC_PLLMul_x where x:[2,16] 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 378 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_RTCCLKCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the RTC clock\&. 
+.PP
+\fBNote:\fP
+.RS 4
+This function must be used only after the RTC clock was selected using the RCC_RTCCLKConfig function\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the RTC clock\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 893 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_RTCCLKConfig (uint32_t RCC_RTCCLKSource)"
+
+.PP
+Configures the RTC clock (RTCCLK)\&. 
+.PP
+\fBNote:\fP
+.RS 4
+Once the RTC clock is selected it can't be changed unless the Backup domain is reset\&. 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_RTCCLKSource\fP specifies the RTC clock source\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_RTCCLKSource_LSE: LSE selected as RTC clock 
+.IP "\(bu" 2
+RCC_RTCCLKSource_LSI: LSI selected as RTC clock 
+.IP "\(bu" 2
+RCC_RTCCLKSource_HSE_Div128: HSE clock divided by 128 selected as RTC clock 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 879 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_SYSCLKConfig (uint32_t RCC_SYSCLKSource)"
+
+.PP
+Configures the system clock (SYSCLK)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_SYSCLKSource\fP specifies the clock source used as system clock\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_SYSCLKSource_HSI: HSI selected as system clock 
+.IP "\(bu" 2
+RCC_SYSCLKSource_HSE: HSE selected as system clock 
+.IP "\(bu" 2
+RCC_SYSCLKSource_PLLCLK: PLL selected as system clock 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 564 of file stm32f10x_rcc\&.c\&.
+.SS "void RCC_USBCLKConfig (uint32_t RCC_USBCLKSource)"
+
+.PP
+Configures the USB clock (USBCLK)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRCC_USBCLKSource\fP specifies the USB clock source\&. This clock is derived from the PLL output\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+RCC_USBCLKSource_PLLCLK_1Div5: PLL clock divided by 1,5 selected as USB clock source 
+.IP "\(bu" 2
+RCC_USBCLKSource_PLLCLK_Div1: PLL clock selected as USB clock source 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 728 of file stm32f10x_rcc\&.c\&.
+.SS "\fBErrorStatus\fP RCC_WaitForHSEStartUp (void)"
+
+.PP
+Waits for HSE start-up\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIAn\fP ErrorStatus enumuration value:
+.IP "\(bu" 2
+SUCCESS: HSE oscillator is stable and ready to use
+.IP "\(bu" 2
+ERROR: HSE oscillator not yet ready 
+.PP
+.RE
+.PP
+
+.PP
+Definition at line 304 of file stm32f10x_rcc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

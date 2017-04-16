@@ -1,0 +1,64 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/diag/Trace.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <unistd\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtrace_initialize\fP (void)"
+.br
+.ti -1c
+.RI "ssize_t \fBtrace_write\fP (const char *buf, size_t nbyte)"
+.br
+.ti -1c
+.RI "int \fBtrace_printf\fP (const char *format,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "int \fBtrace_puts\fP (const char *s)"
+.br
+.ti -1c
+.RI "int \fBtrace_putchar\fP (int c)"
+.br
+.ti -1c
+.RI "void \fBtrace_dump_args\fP (int argc, char *argv[])"
+.br
+.ti -1c
+.RI "void \fB__attribute__\fP ((always_inline)) \fBtrace_initialize\fP(void)"
+.br
+.ti -1c
+.RI "ssize_t size_t nbyte \fB__attribute__\fP ((unused)))"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void __attribute__ ((always_inline))\fC [inline]\fP"
+
+.PP
+Definition at line 100 of file Trace\&.h\&.
+.SS "ssize_t size_t nbyte __attribute__ ((unused))"
+
+.PP
+Definition at line 109 of file Trace\&.h\&.
+.SS "void trace_dump_args (int argc, char * argv[])\fC [inline]\fP"
+
+.SS "void trace_initialize (void)\fC [inline]\fP"
+
+.SS "int trace_printf (const char * format,  \&.\&.\&.)\fC [inline]\fP"
+
+.SS "int trace_putchar (int c)\fC [inline]\fP"
+
+.SS "int trace_puts (const char * s)\fC [inline]\fP"
+
+.SS "ssize_t trace_write (const char * buf, size_t nbyte)\fC [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

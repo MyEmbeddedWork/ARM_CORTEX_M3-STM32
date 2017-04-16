@@ -1,0 +1,527 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_adc.h \- This file contains all the functions prototypes for the ADC firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBADC_InitTypeDef\fP"
+.br
+.RI "ADC Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_ADC_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_DMA_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_Independent\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_RegInjecSimult\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_RegSimult_AlterTrig\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_InjecSimult_FastInterl\fP   ((uint32_t)0x00030000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_InjecSimult_SlowInterl\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_InjecSimult\fP   ((uint32_t)0x00050000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_RegSimult\fP   ((uint32_t)0x00060000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_FastInterl\fP   ((uint32_t)0x00070000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_SlowInterl\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBADC_Mode_AlterTrig\fP   ((uint32_t)0x00090000)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T1_CC1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T1_CC2\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T2_CC2\fP   ((uint32_t)0x00060000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T3_TRGO\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T4_CC4\fP   ((uint32_t)0x000A0000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_Ext_IT11_TIM8_TRGO\fP   ((uint32_t)0x000C0000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T1_CC3\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_None\fP   ((uint32_t)0x000E0000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T3_CC1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T2_CC3\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T8_CC1\fP   ((uint32_t)0x00060000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T8_TRGO\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T5_CC1\fP   ((uint32_t)0x000A0000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigConv_T5_CC3\fP   ((uint32_t)0x000C0000)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_EXT_TRIG\fP(REGTRIG)"
+.br
+.ti -1c
+.RI "#define \fBADC_DataAlign_Right\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_DataAlign_Left\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_DATA_ALIGN\fP(ALIGN)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_0\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_1\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_2\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_3\fP   ((uint8_t)0x03)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_4\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_5\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_6\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_7\fP   ((uint8_t)0x07)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_8\fP   ((uint8_t)0x08)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_9\fP   ((uint8_t)0x09)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_10\fP   ((uint8_t)0x0A)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_11\fP   ((uint8_t)0x0B)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_12\fP   ((uint8_t)0x0C)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_13\fP   ((uint8_t)0x0D)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_14\fP   ((uint8_t)0x0E)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_15\fP   ((uint8_t)0x0F)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_16\fP   ((uint8_t)0x10)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_17\fP   ((uint8_t)0x11)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_TempSensor\fP   ((uint8_t)\fBADC_Channel_16\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC_Channel_Vrefint\fP   ((uint8_t)\fBADC_Channel_17\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_1Cycles5\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_7Cycles5\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_13Cycles5\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_28Cycles5\fP   ((uint8_t)0x03)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_41Cycles5\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_55Cycles5\fP   ((uint8_t)0x05)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_71Cycles5\fP   ((uint8_t)0x06)"
+.br
+.ti -1c
+.RI "#define \fBADC_SampleTime_239Cycles5\fP   ((uint8_t)0x07)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_SAMPLE_TIME\fP(TIME)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T2_TRGO\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T2_CC1\fP   ((uint32_t)0x00003000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T3_CC4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T4_TRGO\fP   ((uint32_t)0x00005000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_Ext_IT15_TIM8_CC4\fP   ((uint32_t)0x00006000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T1_TRGO\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T1_CC4\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_None\fP   ((uint32_t)0x00007000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T4_CC3\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T8_CC2\fP   ((uint32_t)0x00003000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T8_CC4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T5_TRGO\fP   ((uint32_t)0x00005000)"
+.br
+.ti -1c
+.RI "#define \fBADC_ExternalTrigInjecConv_T5_CC4\fP   ((uint32_t)0x00006000)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_EXT_INJEC_TRIG\fP(INJTRIG)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_1\fP   ((uint8_t)0x14)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_2\fP   ((uint8_t)0x18)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_3\fP   ((uint8_t)0x1C)"
+.br
+.ti -1c
+.RI "#define \fBADC_InjectedChannel_4\fP   ((uint8_t)0x20)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_INJECTED_CHANNEL\fP(CHANNEL)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_SingleRegEnable\fP   ((uint32_t)0x00800200)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_SingleInjecEnable\fP   ((uint32_t)0x00400200)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_SingleRegOrInjecEnable\fP   ((uint32_t)0x00C00200)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_AllRegEnable\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_AllInjecEnable\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_AllRegAllInjecEnable\fP   ((uint32_t)0x00C00000)"
+.br
+.ti -1c
+.RI "#define \fBADC_AnalogWatchdog_None\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_ANALOG_WATCHDOG\fP(WATCHDOG)"
+.br
+.ti -1c
+.RI "#define \fBADC_IT_EOC\fP   ((uint16_t)0x0220)"
+.br
+.ti -1c
+.RI "#define \fBADC_IT_AWD\fP   ((uint16_t)0x0140)"
+.br
+.ti -1c
+.RI "#define \fBADC_IT_JEOC\fP   ((uint16_t)0x0480)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_IT\fP(IT)   ((((IT) & (uint16_t)0xF81F) == 0x00) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_AWD\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_EOC\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_JEOC\fP   ((uint8_t)0x04)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_JSTRT\fP   ((uint8_t)0x08)"
+.br
+.ti -1c
+.RI "#define \fBADC_FLAG_STRT\fP   ((uint8_t)0x10)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint8_t)0xE0) == 0x00) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_THRESHOLD\fP(THRESHOLD)   ((THRESHOLD) <= 0xFFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_OFFSET\fP(OFFSET)   ((OFFSET) <= 0xFFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_INJECTED_LENGTH\fP(LENGTH)   (((LENGTH) >= 0x1) && ((LENGTH) <= 0x4))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_INJECTED_RANK\fP(RANK)   (((RANK) >= 0x1) && ((RANK) <= 0x4))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_REGULAR_LENGTH\fP(LENGTH)   (((LENGTH) >= 0x1) && ((LENGTH) <= 0x10))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_REGULAR_RANK\fP(RANK)   (((RANK) >= 0x1) && ((RANK) <= 0x10))"
+.br
+.ti -1c
+.RI "#define \fBIS_ADC_REGULAR_DISC_NUMBER\fP(NUMBER)   (((NUMBER) >= 0x1) && ((NUMBER) <= 0x8))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBADC_DeInit\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Deinitializes the ADCx peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBADC_Init\fP (\fBADC_TypeDef\fP *ADCx, \fBADC_InitTypeDef\fP *ADC_InitStruct)"
+.br
+.RI "Initializes the ADCx peripheral according to the specified parameters in the ADC_InitStruct\&. "
+.ti -1c
+.RI "void \fBADC_StructInit\fP (\fBADC_InitTypeDef\fP *ADC_InitStruct)"
+.br
+.RI "Fills each ADC_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBADC_Cmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified ADC peripheral\&. "
+.ti -1c
+.RI "void \fBADC_DMACmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified ADC DMA request\&. "
+.ti -1c
+.RI "void \fBADC_ITConfig\fP (\fBADC_TypeDef\fP *ADCx, uint16_t ADC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified ADC interrupts\&. "
+.ti -1c
+.RI "void \fBADC_ResetCalibration\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Resets the selected ADC calibration registers\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBADC_GetResetCalibrationStatus\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Gets the selected ADC reset calibration registers status\&. "
+.ti -1c
+.RI "void \fBADC_StartCalibration\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Starts the selected ADC calibration process\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBADC_GetCalibrationStatus\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Gets the selected ADC calibration status\&. "
+.ti -1c
+.RI "void \fBADC_SoftwareStartConvCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected ADC software start conversion \&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBADC_GetSoftwareStartConvStatus\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Gets the selected ADC Software start conversion Status\&. "
+.ti -1c
+.RI "void \fBADC_DiscModeChannelCountConfig\fP (\fBADC_TypeDef\fP *ADCx, uint8_t Number)"
+.br
+.RI "Configures the discontinuous mode for the selected ADC regular group channel\&. "
+.ti -1c
+.RI "void \fBADC_DiscModeCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the discontinuous mode on regular group channel for the specified ADC\&. "
+.ti -1c
+.RI "void \fBADC_RegularChannelConfig\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)"
+.br
+.RI "Configures for the selected ADC regular channel its corresponding rank in the sequencer and its sample time\&. "
+.ti -1c
+.RI "void \fBADC_ExternalTrigConvCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the ADCx conversion through external trigger\&. "
+.ti -1c
+.RI "uint16_t \fBADC_GetConversionValue\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Returns the last ADCx conversion result data for regular channel\&. "
+.ti -1c
+.RI "uint32_t \fBADC_GetDualModeConversionValue\fP (void)"
+.br
+.RI "Returns the last ADC1 and ADC2 conversion result data in dual mode\&. "
+.ti -1c
+.RI "void \fBADC_AutoInjectedConvCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected ADC automatic injected group conversion after regular one\&. "
+.ti -1c
+.RI "void \fBADC_InjectedDiscModeCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the discontinuous mode for injected group channel for the specified ADC\&. "
+.ti -1c
+.RI "void \fBADC_ExternalTrigInjectedConvConfig\fP (\fBADC_TypeDef\fP *ADCx, uint32_t ADC_ExternalTrigInjecConv)"
+.br
+.RI "Configures the ADCx external trigger for injected channels conversion\&. "
+.ti -1c
+.RI "void \fBADC_ExternalTrigInjectedConvCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the ADCx injected channels conversion through external trigger\&. "
+.ti -1c
+.RI "void \fBADC_SoftwareStartInjectedConvCmd\fP (\fBADC_TypeDef\fP *ADCx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the selected ADC start of the injected channels conversion\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBADC_GetSoftwareStartInjectedConvCmdStatus\fP (\fBADC_TypeDef\fP *ADCx)"
+.br
+.RI "Gets the selected ADC Software start injected conversion Status\&. "
+.ti -1c
+.RI "void \fBADC_InjectedChannelConfig\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)"
+.br
+.RI "Configures for the selected ADC injected channel its corresponding rank in the sequencer and its sample time\&. "
+.ti -1c
+.RI "void \fBADC_InjectedSequencerLengthConfig\fP (\fBADC_TypeDef\fP *ADCx, uint8_t Length)"
+.br
+.RI "Configures the sequencer length for injected channels\&. "
+.ti -1c
+.RI "void \fBADC_SetInjectedOffset\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_InjectedChannel, uint16_t Offset)"
+.br
+.RI "Set the injected channels conversion value offset\&. "
+.ti -1c
+.RI "uint16_t \fBADC_GetInjectedConversionValue\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_InjectedChannel)"
+.br
+.RI "Returns the ADC injected channel conversion result\&. "
+.ti -1c
+.RI "void \fBADC_AnalogWatchdogCmd\fP (\fBADC_TypeDef\fP *ADCx, uint32_t ADC_AnalogWatchdog)"
+.br
+.RI "Enables or disables the analog watchdog on single/all regular or injected channels\&. "
+.ti -1c
+.RI "void \fBADC_AnalogWatchdogThresholdsConfig\fP (\fBADC_TypeDef\fP *ADCx, uint16_t HighThreshold, uint16_t LowThreshold)"
+.br
+.RI "Configures the high and low thresholds of the analog watchdog\&. "
+.ti -1c
+.RI "void \fBADC_AnalogWatchdogSingleChannelConfig\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_Channel)"
+.br
+.RI "Configures the analog watchdog guarded single channel\&. "
+.ti -1c
+.RI "void \fBADC_TempSensorVrefintCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the temperature sensor and Vrefint channel\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBADC_GetFlagStatus\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_FLAG)"
+.br
+.RI "Checks whether the specified ADC flag is set or not\&. "
+.ti -1c
+.RI "void \fBADC_ClearFlag\fP (\fBADC_TypeDef\fP *ADCx, uint8_t ADC_FLAG)"
+.br
+.RI "Clears the ADCx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBADC_GetITStatus\fP (\fBADC_TypeDef\fP *ADCx, uint16_t ADC_IT)"
+.br
+.RI "Checks whether the specified ADC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBADC_ClearITPendingBit\fP (\fBADC_TypeDef\fP *ADCx, uint16_t ADC_IT)"
+.br
+.RI "Clears the ADCx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the ADC firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_adc\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,54 @@
+.TH "DAC_data_alignment" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DAC_data_alignment
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDAC_Align_12b_R\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Align_12b_L\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDAC_Align_8b_R\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBIS_DAC_ALIGN\fP(ALIGN)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DAC_Align_12b_L   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 213 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Align_12b_R   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 212 of file stm32f10x_dac\&.h\&.
+.SS "#define DAC_Align_8b_R   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 214 of file stm32f10x_dac\&.h\&.
+.SS "#define IS_DAC_ALIGN(ALIGN)"
+\fBValue:\fP
+.PP
+.nf
+(((ALIGN) == DAC_Align_12b_R) || \
+                             ((ALIGN) == DAC_Align_12b_L) || \
+                             ((ALIGN) == DAC_Align_8b_R))
+.fi
+.PP
+Definition at line 215 of file stm32f10x_dac\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

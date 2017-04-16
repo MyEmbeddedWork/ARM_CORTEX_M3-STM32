@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c__acknowledged__address" kind="group">
+    <compoundname>I2C_acknowledged_address</compoundname>
+    <title>I2C_acknowledged_address</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c__acknowledged__address_1ga5e5ad2148f9da14457c7b59357acee97" prot="public" static="no">
+        <name>I2C_AcknowledgedAddress_7bit</name>
+        <initializer>((uint16_t)0x4000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="142" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__acknowledged__address_1gaf0bb8f71795f046ad9f6c1fc7fe0fc53" prot="public" static="no">
+        <name>I2C_AcknowledgedAddress_10bit</name>
+        <initializer>((uint16_t)0xC000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="143" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__acknowledged__address_1ga26a3af0a468f7226ed72fde27528c0ba" prot="public" static="no">
+        <name>IS_I2C_ACKNOWLEDGE_ADDRESS</name>
+        <param><defname>ADDRESS</defname></param>
+        <initializer>(((ADDRESS) == <ref refid="group___i2_c__acknowledged__address_1ga5e5ad2148f9da14457c7b59357acee97" kindref="member">I2C_AcknowledgedAddress_7bit</ref>) || \
+                                             ((ADDRESS) == <ref refid="group___i2_c__acknowledged__address_1gaf0bb8f71795f046ad9f6c1fc7fe0fc53" kindref="member">I2C_AcknowledgedAddress_10bit</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="144" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

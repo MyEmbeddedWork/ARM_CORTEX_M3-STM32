@@ -1,0 +1,142 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dma.c \- This file provides all the DMA firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_dma\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDMA1_Channel1_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF1\fP | \fBDMA_ISR_TCIF1\fP | \fBDMA_ISR_HTIF1\fP | \fBDMA_ISR_TEIF1\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel2_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF2\fP | \fBDMA_ISR_TCIF2\fP | \fBDMA_ISR_HTIF2\fP | \fBDMA_ISR_TEIF2\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel3_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF3\fP | \fBDMA_ISR_TCIF3\fP | \fBDMA_ISR_HTIF3\fP | \fBDMA_ISR_TEIF3\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel4_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF4\fP | \fBDMA_ISR_TCIF4\fP | \fBDMA_ISR_HTIF4\fP | \fBDMA_ISR_TEIF4\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel5_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF5\fP | \fBDMA_ISR_TCIF5\fP | \fBDMA_ISR_HTIF5\fP | \fBDMA_ISR_TEIF5\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel6_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF6\fP | \fBDMA_ISR_TCIF6\fP | \fBDMA_ISR_HTIF6\fP | \fBDMA_ISR_TEIF6\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel7_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF7\fP | \fBDMA_ISR_TCIF7\fP | \fBDMA_ISR_HTIF7\fP | \fBDMA_ISR_TEIF7\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel1_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF1\fP | \fBDMA_ISR_TCIF1\fP | \fBDMA_ISR_HTIF1\fP | \fBDMA_ISR_TEIF1\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel2_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF2\fP | \fBDMA_ISR_TCIF2\fP | \fBDMA_ISR_HTIF2\fP | \fBDMA_ISR_TEIF2\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel3_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF3\fP | \fBDMA_ISR_TCIF3\fP | \fBDMA_ISR_HTIF3\fP | \fBDMA_ISR_TEIF3\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel4_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF4\fP | \fBDMA_ISR_TCIF4\fP | \fBDMA_ISR_HTIF4\fP | \fBDMA_ISR_TEIF4\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel5_IT_Mask\fP   ((uint32_t)(\fBDMA_ISR_GIF5\fP | \fBDMA_ISR_TCIF5\fP | \fBDMA_ISR_HTIF5\fP | \fBDMA_ISR_TEIF5\fP))"
+.br
+.ti -1c
+.RI "#define \fBFLAG_Mask\fP   ((uint32_t)0x10000000)"
+.br
+.ti -1c
+.RI "#define \fBCCR_CLEAR_Mask\fP   ((uint32_t)0xFFFF800F)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDMA_DeInit\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx)"
+.br
+.RI "Deinitializes the DMAy Channelx registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBDMA_Init\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, \fBDMA_InitTypeDef\fP *DMA_InitStruct)"
+.br
+.RI "Initializes the DMAy Channelx according to the specified parameters in the DMA_InitStruct\&. "
+.ti -1c
+.RI "void \fBDMA_StructInit\fP (\fBDMA_InitTypeDef\fP *DMA_InitStruct)"
+.br
+.RI "Fills each DMA_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBDMA_Cmd\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DMAy Channelx\&. "
+.ti -1c
+.RI "void \fBDMA_ITConfig\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, uint32_t DMA_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DMAy Channelx interrupts\&. "
+.ti -1c
+.RI "void \fBDMA_SetCurrDataCounter\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, uint16_t DataNumber)"
+.br
+.RI "Sets the number of data units in the current DMAy Channelx transfer\&. "
+.ti -1c
+.RI "uint16_t \fBDMA_GetCurrDataCounter\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx)"
+.br
+.RI "Returns the number of remaining data units in the current DMAy Channelx transfer\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBDMA_GetFlagStatus\fP (uint32_t DMAy_FLAG)"
+.br
+.RI "Checks whether the specified DMAy Channelx flag is set or not\&. "
+.ti -1c
+.RI "void \fBDMA_ClearFlag\fP (uint32_t DMAy_FLAG)"
+.br
+.RI "Clears the DMAy Channelx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBDMA_GetITStatus\fP (uint32_t DMAy_IT)"
+.br
+.RI "Checks whether the specified DMAy Channelx interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBDMA_ClearITPendingBit\fP (uint32_t DMAy_IT)"
+.br
+.RI "Clears the DMAy Channelx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the DMA firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_dma\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

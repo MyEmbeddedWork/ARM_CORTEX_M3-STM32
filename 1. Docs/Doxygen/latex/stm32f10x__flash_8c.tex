@@ -1,0 +1,154 @@
+\hypertarget{stm32f10x__flash_8c}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+flash.c File Reference}
+\label{stm32f10x__flash_8c}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+flash.\+c@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/src/stm32f1-\/stdperiph/stm32f10x\+\_\+flash.\+c}}
+
+
+This file provides all the F\+L\+A\+SH firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+flash.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+flash.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__flash_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga5f1112c5731f01b063fdf2461efbedf7}{A\+C\+R\+\_\+\+L\+A\+T\+E\+N\+C\+Y\+\_\+\+Mask}~((uint32\+\_\+t)0x00000038)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga6b6f73163f3a90f5072b6b7dc9fb63b7}{A\+C\+R\+\_\+\+H\+L\+F\+C\+Y\+A\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F\+F7)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gaf95fa450690ce94c4f4357e4dd72791a}{A\+C\+R\+\_\+\+P\+R\+F\+T\+B\+E\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F\+F\+F\+F\+F\+E\+F)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga257768fe5d61ac49f43b6b90ba413102}{A\+C\+R\+\_\+\+P\+R\+F\+T\+B\+S\+\_\+\+Mask}~((uint32\+\_\+t)0x00000020)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gaf4fdb45c4a4d30dcddc389ec920f720f}{C\+R\+\_\+\+P\+G\+\_\+\+Set}~((uint32\+\_\+t)0x00000001)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gadda1a996e1867e911aaa7b0f30eb6834}{C\+R\+\_\+\+P\+G\+\_\+\+Reset}~((uint32\+\_\+t)0x00001\+F\+F\+E)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga6e5e45c62f559102546b40de50c700bd}{C\+R\+\_\+\+P\+E\+R\+\_\+\+Set}~((uint32\+\_\+t)0x00000002)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gad564767c401a1a9c36b71342448fd256}{C\+R\+\_\+\+P\+E\+R\+\_\+\+Reset}~((uint32\+\_\+t)0x00001\+F\+F\+D)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga7e5cf18b31b5ed960cd05a816cadf973}{C\+R\+\_\+\+M\+E\+R\+\_\+\+Set}~((uint32\+\_\+t)0x00000004)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gabed855f33ff965c530c2b09a49a987f5}{C\+R\+\_\+\+M\+E\+R\+\_\+\+Reset}~((uint32\+\_\+t)0x00001\+F\+F\+B)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga84ec77ffaa2a83edeef385e3a36171f8}{C\+R\+\_\+\+O\+P\+T\+P\+G\+\_\+\+Set}~((uint32\+\_\+t)0x00000010)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga9dd2ca46f4e8edfa098e1481699c08b7}{C\+R\+\_\+\+O\+P\+T\+P\+G\+\_\+\+Reset}~((uint32\+\_\+t)0x00001\+F\+E\+F)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gac5707368555a5b7400eea1e306b62b16}{C\+R\+\_\+\+O\+P\+T\+E\+R\+\_\+\+Set}~((uint32\+\_\+t)0x00000020)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga0245cfe194895f1ad98ba66f8eda3e47}{C\+R\+\_\+\+O\+P\+T\+E\+R\+\_\+\+Reset}~((uint32\+\_\+t)0x00001\+F\+D\+F)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga0e6349818d8602ffffc56e5e04d9ab13}{C\+R\+\_\+\+S\+T\+R\+T\+\_\+\+Set}~((uint32\+\_\+t)0x00000040)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gaee27a8100366266daa8d3a69c589e4b9}{C\+R\+\_\+\+L\+O\+C\+K\+\_\+\+Set}~((uint32\+\_\+t)0x00000080)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gaa624b669116384b971b838ae201cad9f}{R\+D\+P\+R\+T\+\_\+\+Mask}~((uint32\+\_\+t)0x00000002)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga79707964cbd409601e1ddf6064cf1c5c}{W\+R\+P0\+\_\+\+Mask}~((uint32\+\_\+t)0x000000\+F\+F)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gaa2b2535ba91736dd2d6baa92068686e0}{W\+R\+P1\+\_\+\+Mask}~((uint32\+\_\+t)0x0000\+F\+F00)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga4676f67c7be97a09eb1c6a5753ce0523}{W\+R\+P2\+\_\+\+Mask}~((uint32\+\_\+t)0x00\+F\+F0000)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga649ce8b78520ca192b41aabe2daef035}{W\+R\+P3\+\_\+\+Mask}~((uint32\+\_\+t)0x\+F\+F000000)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga5098bd938dadebbbdf9e628c84b2dcf0}{O\+B\+\_\+\+U\+S\+E\+R\+\_\+\+B\+F\+B2}~((uint16\+\_\+t)0x0008)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga34ec82060edcc9a18bf804b07dec5881}{R\+D\+P\+\_\+\+Key}~((uint16\+\_\+t)0x00\+A5)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gafd77e7bf91765d891ce63e2f0084b019}{F\+L\+A\+S\+H\+\_\+\+K\+E\+Y1}~((uint32\+\_\+t)0x45670123)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_gaee83d0f557e158da52f4a205db6b60a7}{F\+L\+A\+S\+H\+\_\+\+K\+E\+Y2}~((uint32\+\_\+t)0x\+C\+D\+E\+F89\+A\+B)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga54cf78f1be63ba209709bf8f781ccd01}{F\+L\+A\+S\+H\+\_\+\+B\+A\+N\+K1\+\_\+\+E\+N\+D\+\_\+\+A\+D\+D\+R\+E\+SS}~((uint32\+\_\+t)0x807\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga62b5515e9a29a487adcc30a88d082244}{Erase\+Timeout}~((uint32\+\_\+t)0x000\+B0000)
+\item 
+\#define \hyperlink{group___f_l_a_s_h___private___defines_ga0794a43966b6084d28d13c651c739385}{Program\+Timeout}~((uint32\+\_\+t)0x00002000)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga54bcb96270215c752c3479c8c9e438c0}{F\+L\+A\+S\+H\+\_\+\+Set\+Latency} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+Latency)
+\begin{DoxyCompactList}\small\item\em Sets the code latency value. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga978103a57b37920ac01128e999f9ece6}{F\+L\+A\+S\+H\+\_\+\+Half\+Cycle\+Access\+Cmd} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+Half\+Cycle\+Access)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Half cycle flash access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga6b93faaf0f560bf8d662b2cefe2f70e8}{F\+L\+A\+S\+H\+\_\+\+Prefetch\+Buffer\+Cmd} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+Prefetch\+Buffer)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Prefetch Buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga4084d0184bab463a1579271bf474aaef}{F\+L\+A\+S\+H\+\_\+\+Unlock} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the F\+L\+A\+SH Program Erase Controller. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga358c4b7e0ef20693ca62cc9d20c94a5a}{F\+L\+A\+S\+H\+\_\+\+Unlock\+Bank1} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the F\+L\+A\+SH Bank1 Program Erase Controller. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga46899557353c4312ddbe3f25e65df1d8}{F\+L\+A\+S\+H\+\_\+\+Lock} (void)
+\begin{DoxyCompactList}\small\item\em Locks the F\+L\+A\+SH Program Erase Controller. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_gafe4188ab9eb12c046970660f65a3faf9}{F\+L\+A\+S\+H\+\_\+\+Lock\+Bank1} (void)
+\begin{DoxyCompactList}\small\item\em Locks the F\+L\+A\+SH Bank1 Program Erase Controller. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga13a2ca18bfb3d5fb827a2751799f8451}{F\+L\+A\+S\+H\+\_\+\+Erase\+Page} (uint32\+\_\+t Page\+\_\+\+Address)
+\begin{DoxyCompactList}\small\item\em Erases a specified F\+L\+A\+SH page. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_gab2e6dea62c72b3e47c17512579d37498}{F\+L\+A\+S\+H\+\_\+\+Erase\+All\+Pages} (void)
+\begin{DoxyCompactList}\small\item\em Erases all F\+L\+A\+SH pages. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga2036728450ee18e789b25fe3fd9c80ee}{F\+L\+A\+S\+H\+\_\+\+Erase\+All\+Bank1\+Pages} (void)
+\begin{DoxyCompactList}\small\item\em Erases all Bank1 F\+L\+A\+SH pages. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga152768609e85d74a9d8474be8dc2874b}{F\+L\+A\+S\+H\+\_\+\+Erase\+Option\+Bytes} (void)
+\begin{DoxyCompactList}\small\item\em Erases the F\+L\+A\+SH option bytes. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_gaac9a2f400b92537bd42a6bd7cc237b11}{F\+L\+A\+S\+H\+\_\+\+Program\+Word} (uint32\+\_\+t Address, uint32\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Programs a word at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga5c1336f667950a8765887228f1d0d501}{F\+L\+A\+S\+H\+\_\+\+Program\+Half\+Word} (uint32\+\_\+t Address, uint16\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Programs a half word at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga1382ff9d4ded8a5c076fde4fff529d21}{F\+L\+A\+S\+H\+\_\+\+Program\+Option\+Byte\+Data} (uint32\+\_\+t Address, uint8\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Programs a half word at a specified Option Byte Data address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_gabad10c15e2d1ff1cb9e1083d08a9e763}{F\+L\+A\+S\+H\+\_\+\+Enable\+Write\+Protection} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+Pages)
+\begin{DoxyCompactList}\small\item\em Write protects the desired pages. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga0b8d1a8277950c890bbc247bbeafb40f}{F\+L\+A\+S\+H\+\_\+\+Read\+Out\+Protection} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the read out protection. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_gaae1c493bb06c930ceb84dedfdb7325f6}{F\+L\+A\+S\+H\+\_\+\+User\+Option\+Byte\+Config} (uint16\+\_\+t O\+B\+\_\+\+I\+W\+DG, uint16\+\_\+t O\+B\+\_\+\+S\+T\+OP, uint16\+\_\+t O\+B\+\_\+\+S\+T\+D\+BY)
+\begin{DoxyCompactList}\small\item\em Programs the F\+L\+A\+SH User Option Byte\+: I\+W\+D\+G\+\_\+\+SW / R\+S\+T\+\_\+\+S\+T\+OP / R\+S\+T\+\_\+\+S\+T\+D\+BY. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___f_l_a_s_h___private___functions_ga31441647fac5fbb38369613076737943}{F\+L\+A\+S\+H\+\_\+\+Get\+User\+Option\+Byte} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\+L\+A\+SH User Option Bytes values. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___f_l_a_s_h___private___functions_gac009e061562c7d36d7d2d00bb1c8aafa}{F\+L\+A\+S\+H\+\_\+\+Get\+Write\+Protection\+Option\+Byte} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\+L\+A\+SH Write Protection Option Bytes Register value. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga57fe56770ff25b358f3e36bd70632e37}{F\+L\+A\+S\+H\+\_\+\+Get\+Read\+Out\+Protection\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the F\+L\+A\+SH Read Out Protection Status is set or not. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga289bffe7f078d6a130222f03c59bc235}{F\+L\+A\+S\+H\+\_\+\+Get\+Prefetch\+Buffer\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Checks whether the F\+L\+A\+SH Prefetch Buffer status is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_ga94c1e51a9c3bf8d48eb6eb4a4d054861}{F\+L\+A\+S\+H\+\_\+\+I\+T\+Config} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified F\+L\+A\+SH interrupts. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___f_l_a_s_h___private___functions_gae3fb545e32f21501ca27d4380e0f2088}{F\+L\+A\+S\+H\+\_\+\+Get\+Flag\+Status} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\+L\+A\+SH flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___private___functions_gac4be1d486483fa5cd70ec77d44ca8f87}{F\+L\+A\+S\+H\+\_\+\+Clear\+Flag} (uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the F\+L\+A\+SH\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_gac265b8d1e7ea11e44ceee28797c3debb}{F\+L\+A\+S\+H\+\_\+\+Get\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\+L\+A\+SH Status. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga9d5b76b75ef4c578cc45dc836a1929b6}{F\+L\+A\+S\+H\+\_\+\+Get\+Bank1\+Status} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\+L\+A\+SH Bank1 Status. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga2ad803999ae93ec03700983c59cae264}{F\+L\+A\+S\+H\+\_\+\+Wait\+For\+Last\+Operation} (uint32\+\_\+t Timeout)
+\begin{DoxyCompactList}\small\item\em Waits for a Flash operation to complete or a T\+I\+M\+E\+O\+UT to occur. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h___exported___types_gadc63a6f3404ff1f71229a66915e9cdc0}{F\+L\+A\+S\+H\+\_\+\+Status} \hyperlink{group___f_l_a_s_h___private___functions_ga470d345c2ea4304f899aa988bdd23824}{F\+L\+A\+S\+H\+\_\+\+Wait\+For\+Last\+Bank1\+Operation} (uint32\+\_\+t Timeout)
+\begin{DoxyCompactList}\small\item\em Waits for a Flash operation on Bank1 to complete or a T\+I\+M\+E\+O\+UT to occur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the F\+L\+A\+SH firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

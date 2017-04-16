@@ -1,0 +1,103 @@
+.TH "I2S_Audio_Frequency" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2S_Audio_Frequency
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_192k\fP   ((uint32_t)192000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_96k\fP   ((uint32_t)96000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_48k\fP   ((uint32_t)48000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_44k\fP   ((uint32_t)44100)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_32k\fP   ((uint32_t)32000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_22k\fP   ((uint32_t)22050)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_16k\fP   ((uint32_t)16000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_11k\fP   ((uint32_t)11025)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_8k\fP   ((uint32_t)8000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_AudioFreq_Default\fP   ((uint32_t)2)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_AUDIO_FREQ\fP(FREQ)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2S_AudioFreq_11k   ((uint32_t)11025)"
+
+.PP
+Definition at line 315 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_16k   ((uint32_t)16000)"
+
+.PP
+Definition at line 314 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_192k   ((uint32_t)192000)"
+
+.PP
+Definition at line 308 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_22k   ((uint32_t)22050)"
+
+.PP
+Definition at line 313 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_32k   ((uint32_t)32000)"
+
+.PP
+Definition at line 312 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_44k   ((uint32_t)44100)"
+
+.PP
+Definition at line 311 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_48k   ((uint32_t)48000)"
+
+.PP
+Definition at line 310 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_8k   ((uint32_t)8000)"
+
+.PP
+Definition at line 316 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_96k   ((uint32_t)96000)"
+
+.PP
+Definition at line 309 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_AudioFreq_Default   ((uint32_t)2)"
+
+.PP
+Definition at line 317 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_I2S_AUDIO_FREQ(FREQ)"
+\fBValue:\fP
+.PP
+.nf
+((((FREQ) >= I2S_AudioFreq_8k) && \
+                                  ((FREQ) <= I2S_AudioFreq_192k)) || \
+                                 ((FREQ) == I2S_AudioFreq_Default))
+.fi
+.PP
+Definition at line 319 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___vector___table___base" kind="group">
+    <compoundname>Vector_Table_Base</compoundname>
+    <title>Vector_Table_Base</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___vector___table___base_1ga8be8181cc3e5d42f6204af306ab50f80" prot="public" static="no">
+        <name>NVIC_VectTab_RAM</name>
+        <initializer>((uint32_t)0x20000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="115" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___vector___table___base_1gafbf92fd28a1090b2aa49732ebd5704b5" prot="public" static="no">
+        <name>NVIC_VectTab_FLASH</name>
+        <initializer>((uint32_t)0x08000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="116" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___vector___table___base_1ga26b9d493ccb98fcce9a27303078940c8" prot="public" static="no">
+        <name>IS_NVIC_VECTTAB</name>
+        <param><defname>VECTTAB</defname></param>
+        <initializer>(((VECTTAB) == <ref refid="group___vector___table___base_1ga8be8181cc3e5d42f6204af306ab50f80" kindref="member">NVIC_VectTab_RAM</ref>) || \
+                                  ((VECTTAB) == <ref refid="group___vector___table___base_1gafbf92fd28a1090b2aa49732ebd5704b5" kindref="member">NVIC_VectTab_FLASH</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="117" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

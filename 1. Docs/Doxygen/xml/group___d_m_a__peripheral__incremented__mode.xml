@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_m_a__peripheral__incremented__mode" kind="group">
+    <compoundname>DMA_peripheral_incremented_mode</compoundname>
+    <title>DMA_peripheral_incremented_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a__peripheral__incremented__mode_1gaf7921ea423fb60701a091c508cd0f33a" prot="public" static="no">
+        <name>DMA_PeripheralInc_Enable</name>
+        <initializer>((uint32_t)0x00000040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="124" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__peripheral__incremented__mode_1ga0fe3ff9c67bec802dd239fd17c3dbd31" prot="public" static="no">
+        <name>DMA_PeripheralInc_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="125" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__peripheral__incremented__mode_1ga28762105b3f567c16ba79a47e68ff0fa" prot="public" static="no">
+        <name>IS_DMA_PERIPHERAL_INC_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___d_m_a__peripheral__incremented__mode_1gaf7921ea423fb60701a091c508cd0f33a" kindref="member">DMA_PeripheralInc_Enable</ref>) || \
+                                            ((STATE) == <ref refid="group___d_m_a__peripheral__incremented__mode_1ga0fe3ff9c67bec802dd239fd17c3dbd31" kindref="member">DMA_PeripheralInc_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" line="126" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___s_d_i_o___clock___bypass" kind="group">
+    <compoundname>SDIO_Clock_Bypass</compoundname>
+    <title>SDIO_Clock_Bypass</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_d_i_o___clock___bypass_1gacc168d55136a0c6575e5afd7a6550343" prot="public" static="no">
+        <name>SDIO_ClockBypass_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="141" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___clock___bypass_1ga5e1e9f7e05ea62dd2315eb556bc10e5c" prot="public" static="no">
+        <name>SDIO_ClockBypass_Enable</name>
+        <initializer>((uint32_t)0x00000400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="142" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_d_i_o___clock___bypass_1ga5d5a2fcdd3150e4a89c5aa1efd738dec" prot="public" static="no">
+        <name>IS_SDIO_CLOCK_BYPASS</name>
+        <param><defname>BYPASS</defname></param>
+        <initializer>(((BYPASS) == <ref refid="group___s_d_i_o___clock___bypass_1gacc168d55136a0c6575e5afd7a6550343" kindref="member">SDIO_ClockBypass_Disable</ref>) || \
+                                     ((BYPASS) == <ref refid="group___s_d_i_o___clock___bypass_1ga5e1e9f7e05ea62dd2315eb556bc10e5c" kindref="member">SDIO_ClockBypass_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" line="143" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_sdio.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

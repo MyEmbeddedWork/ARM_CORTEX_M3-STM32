@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_t_i_m___o_c_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_OCInitTypeDef</compoundname>
+    <includes refid="stm32f10x__tim_8h" local="no">stm32f10x_tim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1ad4338ed2415b0d6d19589bf72b7ba3b0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OCMode</definition>
+        <argsstring></argsstring>
+        <name>TIM_OCMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM mode. This parameter can be a value of <ref refid="group___t_i_m___output___compare__and___p_w_m__modes" kindref="compound">TIM_Output_Compare_and_PWM_modes</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="88" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a2baca9c02d214d3125635a74e8d9aee4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OutputState</definition>
+        <argsstring></argsstring>
+        <name>TIM_OutputState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM Output Compare state. This parameter can be a value of <ref refid="group___t_i_m___output___compare__state" kindref="compound">TIM_Output_Compare_state</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="91" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a933904d2f892d0b945a908b9257fe869" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OutputNState</definition>
+        <argsstring></argsstring>
+        <name>TIM_OutputNState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM complementary Output Compare state. This parameter can be a value of <ref refid="group___t_i_m___output___compare___n__state" kindref="compound">TIM_Output_Compare_N_state</ref> <simplesect kind="note"><para>This parameter is valid only for TIM1 and TIM8. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="94" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a186a3729af4e52f73f96590d805412a3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_Pulse</definition>
+        <argsstring></argsstring>
+        <name>TIM_Pulse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the pulse value to be loaded into the Capture Compare Register. This parameter can be a number between 0x0000 and 0xFFFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="98" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a9ed3e2de4700d008729a916d8ba78486" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OCPolarity</definition>
+        <argsstring></argsstring>
+        <name>TIM_OCPolarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the output polarity. This parameter can be a value of <ref refid="group___t_i_m___output___compare___polarity" kindref="compound">TIM_Output_Compare_Polarity</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="101" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a3e47e672810747302c9d0626ae2ccb17" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OCNPolarity</definition>
+        <argsstring></argsstring>
+        <name>TIM_OCNPolarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the complementary output polarity. This parameter can be a value of <ref refid="group___t_i_m___output___compare___n___polarity" kindref="compound">TIM_Output_Compare_N_Polarity</ref> <simplesect kind="note"><para>This parameter is valid only for TIM1 and TIM8. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="104" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a2a28f2d62339e06caef12816e04a8f55" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OCIdleState</definition>
+        <argsstring></argsstring>
+        <name>TIM_OCIdleState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM Output Compare pin state during Idle state. This parameter can be a value of <ref refid="group___t_i_m___output___compare___idle___state" kindref="compound">TIM_Output_Compare_Idle_State</ref> <simplesect kind="note"><para>This parameter is valid only for TIM1 and TIM8. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="108" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___o_c_init_type_def_1a6cbbe6eb87c2ab49e4d68fa9703ce949" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_OCInitTypeDef::TIM_OCNIdleState</definition>
+        <argsstring></argsstring>
+        <name>TIM_OCNIdleState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TIM Output Compare pin state during Idle state. This parameter can be a value of <ref refid="group___t_i_m___output___compare___n___idle___state" kindref="compound">TIM_Output_Compare_N_Idle_State</ref> <simplesect kind="note"><para>This parameter is valid only for TIM1 and TIM8. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="112" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga394683c78ae02837882e36014e11643e" compoundref="stm32f10x__tim_8c" startline="752" endline="763">TIM_OCStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TIM Output Compare Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="87" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="86" bodyend="115"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a2a28f2d62339e06caef12816e04a8f55" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OCIdleState</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1ad4338ed2415b0d6d19589bf72b7ba3b0" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OCMode</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a6cbbe6eb87c2ab49e4d68fa9703ce949" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OCNIdleState</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a3e47e672810747302c9d0626ae2ccb17" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OCNPolarity</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a9ed3e2de4700d008729a916d8ba78486" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OCPolarity</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a933904d2f892d0b945a908b9257fe869" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OutputNState</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a2baca9c02d214d3125635a74e8d9aee4" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_OutputState</name></member>
+      <member refid="struct_t_i_m___o_c_init_type_def_1a186a3729af4e52f73f96590d805412a3" prot="public" virt="non-virtual"><scope>TIM_OCInitTypeDef</scope><name>TIM_Pulse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+\hypertarget{stm32f10x__rtc_8h}{}\section{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+rtc.h File Reference}
+\label{stm32f10x__rtc_8h}\index{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+rtc.\+h@{C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/stm32f10x\+\_\+rtc.\+h}}
+
+
+This file contains all the functions prototypes for the R\+TC firmware library.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+Include dependency graph for stm32f10x\+\_\+rtc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{stm32f10x__rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f10x__rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_gabcfefb2f22cb8ca65113c2c13d0e0640}{R\+T\+C\+\_\+\+I\+T\+\_\+\+OW}~((uint16\+\_\+t)0x0004)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga92f0316a3c69aefc2b20c3392843d3da}{R\+T\+C\+\_\+\+I\+T\+\_\+\+A\+LR}~((uint16\+\_\+t)0x0002)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga960bccbc10da872549cf52c03dd342f1}{R\+T\+C\+\_\+\+I\+T\+\_\+\+S\+EC}~((uint16\+\_\+t)0x0001)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga5c941995b804ce4c7ef62e28e0133a83}{I\+S\+\_\+\+R\+T\+C\+\_\+\+IT}(IT)~((((IT) \& (uint16\+\_\+t)0x\+F\+F\+F8) == 0x00) \&\& ((\+I\+T) != 0x00))
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__define_ga2e10d8ccb2aa398ac14bde526f98dbc9}{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga203dcbb991497e4d0e6722815f6db942}{R\+T\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+T\+O\+FF}~((uint16\+\_\+t)0x0020)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga78c4245996bef8d5f39226b6e37ed9c0}{R\+T\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+SF}~((uint16\+\_\+t)0x0008)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga4e321e359b914d7ed10eed985f8b4811}{R\+T\+C\+\_\+\+F\+L\+A\+G\+\_\+\+OW}~((uint16\+\_\+t)0x0004)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_gaed4375a7ea5a147f83c6cf4bfa805caf}{R\+T\+C\+\_\+\+F\+L\+A\+G\+\_\+\+A\+LR}~((uint16\+\_\+t)0x0002)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga8babb2c823c2097bf4a4ef0c20ef7367}{R\+T\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+EC}~((uint16\+\_\+t)0x0001)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga5f8a9327a258f16f29703fa3e3cc8af7}{I\+S\+\_\+\+R\+T\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(F\+L\+AG)~((((F\+L\+AG) \& (uint16\+\_\+t)0x\+F\+F\+F0) == 0x00) \&\& ((\+F\+L\+A\+G) != 0x00))
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga2126725a0d48f1c40f42566e249620ef}{I\+S\+\_\+\+R\+T\+C\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(F\+L\+AG)
+\item 
+\#define \hyperlink{group___r_t_c__interrupts__flags_ga483b9ec67246cbfb2874c5a85f0cb4d8}{I\+S\+\_\+\+R\+T\+C\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}(P\+R\+E\+S\+C\+A\+L\+ER)~((P\+R\+E\+S\+C\+A\+L\+ER) $<$= 0x\+F\+F\+F\+F\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___r_t_c___exported___functions_ga175dfe88866234730c1ec40d2221c4f4}{R\+T\+C\+\_\+\+I\+T\+Config} (uint16\+\_\+t R\+T\+C\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified R\+TC interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_ga23612d9da2fe057a0cd72c684e5b438a}{R\+T\+C\+\_\+\+Enter\+Config\+Mode} (void)
+\begin{DoxyCompactList}\small\item\em Enters the R\+TC configuration mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_ga7585aa6e2dbb497173b2fd03bac0d304}{R\+T\+C\+\_\+\+Exit\+Config\+Mode} (void)
+\begin{DoxyCompactList}\small\item\em Exits from the R\+TC configuration mode. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___r_t_c___exported___functions_ga6edb19a0ad8414a40610341121c5ea6c}{R\+T\+C\+\_\+\+Get\+Counter} (void)
+\begin{DoxyCompactList}\small\item\em Gets the R\+TC counter value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_gafa81ec17158de1d1a7740eca81b9fb65}{R\+T\+C\+\_\+\+Set\+Counter} (uint32\+\_\+t Counter\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the R\+TC counter value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_gaf76be6071d1ba65b009e0791069e602c}{R\+T\+C\+\_\+\+Set\+Prescaler} (uint32\+\_\+t Prescaler\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the R\+TC prescaler value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_gaec644c636a30ab5e287ba60ffc77132c}{R\+T\+C\+\_\+\+Set\+Alarm} (uint32\+\_\+t Alarm\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the R\+TC alarm value. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___r_t_c___exported___functions_gaa4f00e0469fedcf6cbf23760e6d801ed}{R\+T\+C\+\_\+\+Get\+Divider} (void)
+\begin{DoxyCompactList}\small\item\em Gets the R\+TC divider value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_gaa0a406ef860d5231748c5f0d82673036}{R\+T\+C\+\_\+\+Wait\+For\+Last\+Task} (void)
+\begin{DoxyCompactList}\small\item\em Waits until last write operation on R\+TC registers has finished. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_gaca4346e0dc15dccc15179786b28450db}{R\+T\+C\+\_\+\+Wait\+For\+Synchro} (void)
+\begin{DoxyCompactList}\small\item\em Waits until the R\+TC registers (R\+T\+C\+\_\+\+C\+NT, R\+T\+C\+\_\+\+A\+LR and R\+T\+C\+\_\+\+P\+RL) are synchronized with R\+TC A\+PB clock. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___r_t_c___exported___functions_ga21a85e5f846cb4552d5e76420779f3f6}{R\+T\+C\+\_\+\+Get\+Flag\+Status} (uint16\+\_\+t R\+T\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\+TC flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_gacefb05730a77ffaa273c1ac3ade1a22f}{R\+T\+C\+\_\+\+Clear\+Flag} (uint16\+\_\+t R\+T\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the R\+TC\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___r_t_c___exported___functions_ga23274ad8aa28e86d5b0d58eee295db21}{R\+T\+C\+\_\+\+Get\+I\+T\+Status} (uint16\+\_\+t R\+T\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\+TC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c___exported___functions_ga62b9a04d89a11f28db7dcfd50d9ee768}{R\+T\+C\+\_\+\+Clear\+I\+T\+Pending\+Bit} (uint16\+\_\+t R\+T\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the R\+TC\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains all the functions prototypes for the R\+TC firmware library. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+5.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+March-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\+HE P\+R\+E\+S\+E\+NT F\+I\+R\+M\+W\+A\+RE W\+H\+I\+CH IS F\+OR G\+U\+I\+D\+A\+N\+CE O\+N\+LY A\+I\+MS AT P\+R\+O\+V\+I\+D\+I\+NG C\+U\+S\+T\+O\+M\+E\+RS W\+I\+TH C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON R\+E\+G\+A\+R\+D\+I\+NG T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS IN O\+R\+D\+ER F\+OR T\+H\+EM TO S\+A\+VE T\+I\+ME. AS A R\+E\+S\+U\+LT, S\+T\+M\+I\+C\+R\+O\+E\+L\+E\+C\+T\+R\+O\+N\+I\+CS S\+H\+A\+LL N\+OT BE H\+E\+LD L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES W\+I\+TH R\+E\+S\+P\+E\+CT TO A\+NY C\+L\+A\+I\+MS A\+R\+I\+S\+I\+NG F\+R\+OM T\+HE C\+O\+N\+T\+E\+NT OF S\+U\+CH F\+I\+R\+M\+W\+A\+RE A\+N\+D/\+OR T\+HE U\+SE M\+A\+DE BY C\+U\+S\+T\+O\+M\+E\+RS OF T\+HE C\+O\+D\+I\+NG I\+N\+F\+O\+R\+M\+A\+T\+I\+ON C\+O\+N\+T\+A\+I\+N\+ED H\+E\+R\+E\+IN IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+H\+E\+IR P\+R\+O\+D\+U\+C\+TS.
+
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2011 S\+T\+Microelectronics\end{center} }

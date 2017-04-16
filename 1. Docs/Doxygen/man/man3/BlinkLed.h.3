@@ -1,0 +1,69 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/include/BlinkLed.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBlinkLed\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBLINK_PORT_NUMBER\fP   (2)"
+.br
+.ti -1c
+.RI "#define \fBBLINK_PIN_NUMBER\fP   (12)"
+.br
+.ti -1c
+.RI "#define \fBBLINK_ACTIVE_LOW\fP   (1)"
+.br
+.ti -1c
+.RI "#define \fBBLINK_GPIOx\fP(_N)   ((\fBGPIO_TypeDef\fP *)(\fBGPIOA_BASE\fP + (\fBGPIOB_BASE\fP\-\fBGPIOA_BASE\fP)*(_N)))"
+.br
+.ti -1c
+.RI "#define \fBBLINK_PIN_MASK\fP(_N)   (1 << (_N))"
+.br
+.ti -1c
+.RI "#define \fBBLINK_RCC_MASKx\fP(_N)   (\fBRCC_APB2Periph_GPIOA\fP << (_N))"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BLINK_ACTIVE_LOW   (1)"
+
+.PP
+Definition at line 21 of file BlinkLed\&.h\&.
+.SS "#define BLINK_GPIOx(_N)   ((\fBGPIO_TypeDef\fP *)(\fBGPIOA_BASE\fP + (\fBGPIOB_BASE\fP\-\fBGPIOA_BASE\fP)*(_N)))"
+
+.PP
+Definition at line 23 of file BlinkLed\&.h\&.
+.SS "#define BLINK_PIN_MASK(_N)   (1 << (_N))"
+
+.PP
+Definition at line 24 of file BlinkLed\&.h\&.
+.SS "#define BLINK_PIN_NUMBER   (12)"
+
+.PP
+Definition at line 20 of file BlinkLed\&.h\&.
+.SS "#define BLINK_PORT_NUMBER   (2)"
+
+.PP
+Definition at line 19 of file BlinkLed\&.h\&.
+.SS "#define BLINK_RCC_MASKx(_N)   (\fBRCC_APB2Periph_GPIOA\fP << (_N))"
+
+.PP
+Definition at line 25 of file BlinkLed\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

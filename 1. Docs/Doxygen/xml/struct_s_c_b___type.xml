@@ -1,0 +1,842 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_s_c_b___type" kind="struct" language="C++" prot="public">
+    <compoundname>SCB_Type</compoundname>
+    <includes refid="core__cm0_8h" local="no">core_cm0.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_c_b___type_1a21e08d546d8b641bee298a459ea73e46" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::CPUID</definition>
+        <argsstring></argsstring>
+        <name>CPUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 (R/ ) CPUID Base Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="399" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a0ca18ef984d132c6bf4d9b61cd00f05a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::ICSR</definition>
+        <argsstring></argsstring>
+        <name>ICSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x004 (R/W) Interrupt Control and State Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="400" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a10960cdc703f661c83a237d9c69db23c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="401" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ad3e5b8934c647eb1b7383c1894f01380" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::AIRCR</definition>
+        <argsstring></argsstring>
+        <name>AIRCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x00C (R/W) Application Interrupt and Reset Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="402" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a3a4840c6fa4d1ee75544f4032c88ec34" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::SCR</definition>
+        <argsstring></argsstring>
+        <name>SCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x010 (R/W) System Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="403" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a2d6653b0b70faac936046a02809b577f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x014 (R/W) Configuration Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="404" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1adddd65958c1c4c0301f62ede0a9bf12e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="405" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a5c40d124f95a3f7f431a3d5409d6ad28" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint8_t SCB_Type::SHP</definition>
+        <argsstring>[2U]</argsstring>
+        <name>SHP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x01C (R/W) System Handlers Priority Registers. [0] is RESERVED</para><para>Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="406" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a7b5ae9741a99808043394c4743b635c4" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::SHCSR</definition>
+        <argsstring></argsstring>
+        <name>SHCSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x024 (R/W) System Handler Control and State Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="407" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a187a4578e920544ed967f98020fb8170" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::VTOR</definition>
+        <argsstring></argsstring>
+        <name>VTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x008 (R/W) Vector Table Offset Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="429" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a9b05f74580fc93daa7fe2f0e1c9c5663" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint8_t</type>
+        <definition>__IOM uint8_t SCB_Type::SHP[12U]</definition>
+        <argsstring>[12U]</argsstring>
+        <name>SHP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="433" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a0cda9e061b42373383418663092ad19a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::CFSR</definition>
+        <argsstring></argsstring>
+        <name>CFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x028 (R/W) Configurable Fault Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="435" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a14ad254659362b9752c69afe3fd80934" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::HFSR</definition>
+        <argsstring></argsstring>
+        <name>HFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x02C (R/W) HardFault Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="436" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a191579bde0d21ff51d30a714fd887033" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::DFSR</definition>
+        <argsstring></argsstring>
+        <name>DFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x030 (R/W) Debug Fault Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="437" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a2d03d0b7cec2254f39eb1c46c7445e80" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::MMFAR</definition>
+        <argsstring></argsstring>
+        <name>MMFAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x034 (R/W) MemManage Fault Address Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="438" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a3f8e7e58be4e41c88dfa78f54589271c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::BFAR</definition>
+        <argsstring></argsstring>
+        <name>BFAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x038 (R/W) BusFault Address Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="439" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ab65372404ce64b0f0b35e2709429404e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::AFSR</definition>
+        <argsstring></argsstring>
+        <name>AFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x03C (R/W) Auxiliary Fault Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="440" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a40745bb0af880c45827a653222d54117" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::PFR</definition>
+        <argsstring>[2U]</argsstring>
+        <name>PFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x040 (R/ ) Processor Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="441" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a85dd6fe77aab17e7ea89a52c59da6004" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::DFR</definition>
+        <argsstring></argsstring>
+        <name>DFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x048 (R/ ) Debug Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="442" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1af084e1b2dad004a88668efea1dfe7fa1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ADR</definition>
+        <argsstring></argsstring>
+        <name>ADR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x04C (R/ ) Auxiliary Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="443" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a4f353f207bb27a1cea7861aa9eb00dbb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::MMFR</definition>
+        <argsstring>[4U]</argsstring>
+        <name>MMFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x050 (R/ ) Memory Model Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="444" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a00e93446b3433a807f1574fa2f1fce54" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ISAR</definition>
+        <argsstring>[5U]</argsstring>
+        <name>ISAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x060 (R/ ) Instruction Set Attributes Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="445" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ac6a860c1b8d8154a1f00d99d23b67764" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::CPACR</definition>
+        <argsstring></argsstring>
+        <name>CPACR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x088 (R/W) Coprocessor Access Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="447" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1afdab23abd301033bb318c7b188b377db" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint8_t</type>
+        <definition>__IOM uint8_t SCB_Type::SHPR[12U]</definition>
+        <argsstring>[12U]</argsstring>
+        <name>SHPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="516" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ab35c6b650d3bb2d11259c0a0285d0d00" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ID_PFR[2U]</definition>
+        <argsstring>[2U]</argsstring>
+        <name>ID_PFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x040 (R/ ) Processor Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="524" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ada1d3119c020983fdc949c2ccd406caa" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ID_DFR</definition>
+        <argsstring></argsstring>
+        <name>ID_DFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x048 (R/ ) Debug Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="525" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a9c9a1d805f8e99b9fd3ab4f455b6333a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ID_AFR</definition>
+        <argsstring></argsstring>
+        <name>ID_AFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x04C (R/ ) Auxiliary Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="526" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a781ef24d88610a432e7d5b179d78de47" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ID_MFR[4U]</definition>
+        <argsstring>[4U]</argsstring>
+        <name>ID_MFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x050 (R/ ) Memory Model Feature Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="527" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ac729a357cdd968020fdb5c35bdfc4916" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::ID_ISAR[5U]</definition>
+        <argsstring>[5U]</argsstring>
+        <name>ID_ISAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x060 (R/ ) Instruction Set Attributes Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="528" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ad9899f5775251cf5ef0cb0845527afc2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::CLIDR</definition>
+        <argsstring></argsstring>
+        <name>CLIDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x078 (R/ ) Cache Level ID register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="530" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1af3fe705fef8762763b6d61dbdf0ccc3d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::CTR</definition>
+        <argsstring></argsstring>
+        <name>CTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x07C (R/ ) Cache Type register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="531" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1afd063c9297a1a3b67e6d1d5e179e6a0e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::CCSIDR</definition>
+        <argsstring></argsstring>
+        <name>CCSIDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x080 (R/ ) Cache Size ID Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="532" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ad3884e8b6504ec63c1eaa8742e94df3d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::CSSELR</definition>
+        <argsstring></argsstring>
+        <name>CSSELR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x084 (R/W) Cache Size Selection Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="533" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1aa55deef9278aed6826d5e1ae199a0d23" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED3[93U]</definition>
+        <argsstring>[93U]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="535" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ad70825dd0869b7ccd07fb2b8680fcdb6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::STIR</definition>
+        <argsstring></argsstring>
+        <name>STIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x200 ( /W) Software Triggered Interrupt Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="536" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a4819f7ad316c10a458cd3a7ac86cbbee" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED4[15U]</definition>
+        <argsstring>[15U]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="537" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a7a1ba0f875c0e97c1673882b1106e66b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::MVFR0</definition>
+        <argsstring></argsstring>
+        <name>MVFR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x240 (R/ ) Media and VFP Feature Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="538" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a75d6299150fdcbbcb765e22ff27c432e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::MVFR1</definition>
+        <argsstring></argsstring>
+        <name>MVFR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x244 (R/ ) Media and VFP Feature Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="539" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a280ef961518ecee3ed43a86404853c3d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t SCB_Type::MVFR2</definition>
+        <argsstring></argsstring>
+        <name>MVFR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x248 (R/ ) Media and VFP Feature Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="540" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a82b68e5bbea29a5b307c22bca9332a0f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED5[1U]</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="541" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a573260e7836dbc43707df97dd475a0c8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::ICIALLU</definition>
+        <argsstring></argsstring>
+        <name>ICIALLU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x250 ( /W) I-Cache Invalidate All to PoU </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="542" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1af417a59ef8e9e182f5b9d53e0c8e3211" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED6[1U]</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="543" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a5eca5a3e5aedd89a9655df8f5798e2b0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::ICIMVAU</definition>
+        <argsstring></argsstring>
+        <name>ICIMVAU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x258 ( /W) I-Cache Invalidate by MVA to PoU </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="544" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a4be79491ab1ed14f3b0237ba7e69063c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCIMVAC</definition>
+        <argsstring></argsstring>
+        <name>DCIMVAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x25C ( /W) D-Cache Invalidate by MVA to PoC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="545" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a22bcfd7e1bffebdbe98cdbc8d77a2f42" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCISW</definition>
+        <argsstring></argsstring>
+        <name>DCISW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x260 ( /W) D-Cache Invalidate by Set-way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="546" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1aae3caeea159ab54859ea11397f942cfa" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCCMVAU</definition>
+        <argsstring></argsstring>
+        <name>DCCMVAU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x264 ( /W) D-Cache Clean by MVA to PoU </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="547" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a042e3622c98de4e908cfda4f70d1f097" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCCMVAC</definition>
+        <argsstring></argsstring>
+        <name>DCCMVAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x268 ( /W) D-Cache Clean by MVA to PoC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="548" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ab95cc818be9fa7d25ae516f3fe6b7788" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCCSW</definition>
+        <argsstring></argsstring>
+        <name>DCCSW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x26C ( /W) D-Cache Clean by Set-way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="549" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a4f59813582b53feb5f1afbbad3db2022" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCCIMVAC</definition>
+        <argsstring></argsstring>
+        <name>DCCIMVAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x270 ( /W) D-Cache Clean and Invalidate by MVA to PoC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="550" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1af50f7a0a9574fe0e24a68bb4eca75140" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t SCB_Type::DCCISW</definition>
+        <argsstring></argsstring>
+        <name>DCCISW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x274 ( /W) D-Cache Clean and Invalidate by Set-way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="551" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1ab635d5f2d9c200c239ccf08e445c2ee0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED7[6U]</definition>
+        <argsstring>[6U]</argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="552" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1aba8abbd3db06a07b50f56547501983f9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::ITCMCR</definition>
+        <argsstring></argsstring>
+        <name>ITCMCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x290 (R/W) Instruction Tightly-Coupled Memory Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="553" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a2836e932734240076ce91cf4484cdf43" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::DTCMCR</definition>
+        <argsstring></argsstring>
+        <name>DTCMCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x294 (R/W) Data Tightly-Coupled Memory Control Registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="554" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a0d53bcea294422b5b4ecfdcd9cdc1773" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::AHBPCR</definition>
+        <argsstring></argsstring>
+        <name>AHBPCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x298 (R/W) AHBP Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="555" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a51f9bd107a4e1d46ba647384e5c825b5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::CACR</definition>
+        <argsstring></argsstring>
+        <name>CACR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x29C (R/W) L1 Cache Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="556" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a8c9d9eac30594dd061d34cfaacd5e4bb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::AHBSCR</definition>
+        <argsstring></argsstring>
+        <name>AHBSCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x2A0 (R/W) AHB Slave Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="557" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a3e9bfd304a14f0f575d6aa39af43a8b7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SCB_Type::RESERVED8[1U]</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="558" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a35a95c9a21f43a569a7ac212acb4cee7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::ABFSR</definition>
+        <argsstring></argsstring>
+        <name>ABFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x2A8 (R/W) Auxiliary Bus Fault Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="559" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_1a82273352d2e8c7a28a7b7cbdfc3d6a75" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SCB_Type::SFCR</definition>
+        <argsstring></argsstring>
+        <name>SFCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x290 (R/W) Security Features Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" line="407" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc000.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Control Block (SCB). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" line="398" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm0.h" bodystart="397" bodyend="408"/>
+    <listofallmembers>
+      <member refid="struct_s_c_b___type_1a35a95c9a21f43a569a7ac212acb4cee7" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ABFSR</name></member>
+      <member refid="struct_s_c_b___type_1af084e1b2dad004a88668efea1dfe7fa1" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ADR</name></member>
+      <member refid="struct_s_c_b___type_1ab65372404ce64b0f0b35e2709429404e" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>AFSR</name></member>
+      <member refid="struct_s_c_b___type_1a0d53bcea294422b5b4ecfdcd9cdc1773" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>AHBPCR</name></member>
+      <member refid="struct_s_c_b___type_1a8c9d9eac30594dd061d34cfaacd5e4bb" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>AHBSCR</name></member>
+      <member refid="struct_s_c_b___type_1ad3e5b8934c647eb1b7383c1894f01380" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>AIRCR</name></member>
+      <member refid="struct_s_c_b___type_1a3f8e7e58be4e41c88dfa78f54589271c" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>BFAR</name></member>
+      <member refid="struct_s_c_b___type_1a51f9bd107a4e1d46ba647384e5c825b5" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CACR</name></member>
+      <member refid="struct_s_c_b___type_1a2d6653b0b70faac936046a02809b577f" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CCR</name></member>
+      <member refid="struct_s_c_b___type_1afd063c9297a1a3b67e6d1d5e179e6a0e" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CCSIDR</name></member>
+      <member refid="struct_s_c_b___type_1a0cda9e061b42373383418663092ad19a" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CFSR</name></member>
+      <member refid="struct_s_c_b___type_1ad9899f5775251cf5ef0cb0845527afc2" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CLIDR</name></member>
+      <member refid="struct_s_c_b___type_1ac6a860c1b8d8154a1f00d99d23b67764" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CPACR</name></member>
+      <member refid="struct_s_c_b___type_1a21e08d546d8b641bee298a459ea73e46" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CPUID</name></member>
+      <member refid="struct_s_c_b___type_1ad3884e8b6504ec63c1eaa8742e94df3d" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CSSELR</name></member>
+      <member refid="struct_s_c_b___type_1af3fe705fef8762763b6d61dbdf0ccc3d" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>CTR</name></member>
+      <member refid="struct_s_c_b___type_1a4f59813582b53feb5f1afbbad3db2022" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCCIMVAC</name></member>
+      <member refid="struct_s_c_b___type_1af50f7a0a9574fe0e24a68bb4eca75140" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCCISW</name></member>
+      <member refid="struct_s_c_b___type_1a042e3622c98de4e908cfda4f70d1f097" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCCMVAC</name></member>
+      <member refid="struct_s_c_b___type_1aae3caeea159ab54859ea11397f942cfa" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCCMVAU</name></member>
+      <member refid="struct_s_c_b___type_1ab95cc818be9fa7d25ae516f3fe6b7788" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCCSW</name></member>
+      <member refid="struct_s_c_b___type_1a4be79491ab1ed14f3b0237ba7e69063c" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCIMVAC</name></member>
+      <member refid="struct_s_c_b___type_1a22bcfd7e1bffebdbe98cdbc8d77a2f42" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DCISW</name></member>
+      <member refid="struct_s_c_b___type_1a85dd6fe77aab17e7ea89a52c59da6004" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DFR</name></member>
+      <member refid="struct_s_c_b___type_1a191579bde0d21ff51d30a714fd887033" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DFSR</name></member>
+      <member refid="struct_s_c_b___type_1a2836e932734240076ce91cf4484cdf43" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>DTCMCR</name></member>
+      <member refid="struct_s_c_b___type_1a14ad254659362b9752c69afe3fd80934" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>HFSR</name></member>
+      <member refid="struct_s_c_b___type_1a573260e7836dbc43707df97dd475a0c8" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ICIALLU</name></member>
+      <member refid="struct_s_c_b___type_1a5eca5a3e5aedd89a9655df8f5798e2b0" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ICIMVAU</name></member>
+      <member refid="struct_s_c_b___type_1a0ca18ef984d132c6bf4d9b61cd00f05a" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ICSR</name></member>
+      <member refid="struct_s_c_b___type_1a9c9a1d805f8e99b9fd3ab4f455b6333a" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ID_AFR</name></member>
+      <member refid="struct_s_c_b___type_1ada1d3119c020983fdc949c2ccd406caa" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ID_DFR</name></member>
+      <member refid="struct_s_c_b___type_1ac729a357cdd968020fdb5c35bdfc4916" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ID_ISAR</name></member>
+      <member refid="struct_s_c_b___type_1a781ef24d88610a432e7d5b179d78de47" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ID_MFR</name></member>
+      <member refid="struct_s_c_b___type_1ab35c6b650d3bb2d11259c0a0285d0d00" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ID_PFR</name></member>
+      <member refid="struct_s_c_b___type_1a00e93446b3433a807f1574fa2f1fce54" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ISAR</name></member>
+      <member refid="struct_s_c_b___type_1aba8abbd3db06a07b50f56547501983f9" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>ITCMCR</name></member>
+      <member refid="struct_s_c_b___type_1a2d03d0b7cec2254f39eb1c46c7445e80" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>MMFAR</name></member>
+      <member refid="struct_s_c_b___type_1a4f353f207bb27a1cea7861aa9eb00dbb" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>MMFR</name></member>
+      <member refid="struct_s_c_b___type_1a7a1ba0f875c0e97c1673882b1106e66b" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>MVFR0</name></member>
+      <member refid="struct_s_c_b___type_1a75d6299150fdcbbcb765e22ff27c432e" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>MVFR1</name></member>
+      <member refid="struct_s_c_b___type_1a280ef961518ecee3ed43a86404853c3d" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>MVFR2</name></member>
+      <member refid="struct_s_c_b___type_1a40745bb0af880c45827a653222d54117" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>PFR</name></member>
+      <member refid="struct_s_c_b___type_1a10960cdc703f661c83a237d9c69db23c" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED0</name></member>
+      <member refid="struct_s_c_b___type_1adddd65958c1c4c0301f62ede0a9bf12e" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED1</name></member>
+      <member refid="struct_s_c_b___type_1aa55deef9278aed6826d5e1ae199a0d23" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED3</name></member>
+      <member refid="struct_s_c_b___type_1a4819f7ad316c10a458cd3a7ac86cbbee" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED4</name></member>
+      <member refid="struct_s_c_b___type_1a82b68e5bbea29a5b307c22bca9332a0f" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED5</name></member>
+      <member refid="struct_s_c_b___type_1af417a59ef8e9e182f5b9d53e0c8e3211" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED6</name></member>
+      <member refid="struct_s_c_b___type_1ab635d5f2d9c200c239ccf08e445c2ee0" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED7</name></member>
+      <member refid="struct_s_c_b___type_1a3e9bfd304a14f0f575d6aa39af43a8b7" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>RESERVED8</name></member>
+      <member refid="struct_s_c_b___type_1a3a4840c6fa4d1ee75544f4032c88ec34" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>SCR</name></member>
+      <member refid="struct_s_c_b___type_1a82273352d2e8c7a28a7b7cbdfc3d6a75" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>SFCR</name></member>
+      <member refid="struct_s_c_b___type_1a7b5ae9741a99808043394c4743b635c4" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>SHCSR</name></member>
+      <member refid="struct_s_c_b___type_1a5c40d124f95a3f7f431a3d5409d6ad28" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>SHP</name></member>
+      <member refid="struct_s_c_b___type_1a9b05f74580fc93daa7fe2f0e1c9c5663" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>SHP</name></member>
+      <member refid="struct_s_c_b___type_1afdab23abd301033bb318c7b188b377db" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>SHPR</name></member>
+      <member refid="struct_s_c_b___type_1ad70825dd0869b7ccd07fb2b8680fcdb6" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>STIR</name></member>
+      <member refid="struct_s_c_b___type_1a187a4578e920544ed967f98020fb8170" prot="public" virt="non-virtual"><scope>SCB_Type</scope><name>VTOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

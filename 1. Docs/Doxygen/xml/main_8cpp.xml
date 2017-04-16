@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="_trace_8h" local="yes">diag/Trace.h</includes>
+    <includes refid="_timer_8h" local="yes">Timer.h</includes>
+    <includes refid="_blink_led_8h" local="yes">BlinkLed.h</includes>
+    <incdepgraph>
+      <node id="75">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="76">
+        <label>BlinkLed.h</label>
+        <link refid="_blink_led_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>stdint.h</label>
+      </node>
+      <node id="65">
+        <label>stdlib.h</label>
+      </node>
+      <node id="71">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>diag/Trace.h</label>
+        <link refid="_trace_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="68">
+        <label>Timer.h</label>
+        <link refid="_timer_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>cmsis_device.h</label>
+        <link refid="cmsis__device_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>unistd.h</label>
+      </node>
+      <node id="63">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="70">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp" line="64" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp" bodystart="64" bodyend="98"/>
+        <references refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974">trace_puts</references>
+        <references refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37">trace_printf</references>
+        <references refid="group___s_t_m32_f10x___system___exported__types_1gaa3cd3e43291e81e795d642b79b6088e6" compoundref="system__stm32f10x_8c" startline="163">SystemCoreClock</references>
+        <references refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" compoundref="_timer_8h" startline="27" endline="31">Timer::start</references>
+        <references refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" compoundref="_blink_led_8cpp" startline="11" endline="26">BlinkLed::powerUp</references>
+        <references refid="class_timer_1ad946179cf9404a33927ec3d33ed270d7" compoundref="_timer_8cpp" startline="22" endline="29">Timer::sleep</references>
+        <references refid="class_timer_1afb0566d18137755123193fc239593daa" compoundref="_timer_8h" startline="17">Timer::FREQUENCY_HZ</references>
+        <referencedby refid="__startup_8c_1adc4b6e73e00d1d61b37d4e2cabdd7971" compoundref="__startup_8c" startline="222" endline="325">__attribute__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>GNU<sp/>ARM<sp/>Eclipse<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Liviu<sp/>Ionescu.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_trace_8h" kindref="compound">diag/Trace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_timer_8h" kindref="compound">Timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blink_led_8h" kindref="compound">BlinkLed.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Standalone<sp/>STM32F1<sp/>led<sp/>blink<sp/>sample<sp/>(trace<sp/>via<sp/>DEBUG).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>In<sp/>debug<sp/>configurations,<sp/>demonstrate<sp/>how<sp/>to<sp/>print<sp/>a<sp/>greeting<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>on<sp/>the<sp/>trace<sp/>device.<sp/>In<sp/>release<sp/>configurations<sp/>the<sp/>message<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>simply<sp/>discarded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Then<sp/>demonstrates<sp/>how<sp/>to<sp/>blink<sp/>a<sp/>led<sp/>with<sp/>1<sp/>Hz,<sp/>using<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>continuous<sp/>loop<sp/>and<sp/>SysTick<sp/>delays.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Trace<sp/>support<sp/>is<sp/>enabled<sp/>by<sp/>adding<sp/>the<sp/>TRACE<sp/>macro<sp/>definition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>By<sp/>default<sp/>the<sp/>trace<sp/>messages<sp/>are<sp/>forwarded<sp/>to<sp/>the<sp/>DEBUG<sp/>output,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>can<sp/>be<sp/>rerouted<sp/>to<sp/>any<sp/>device<sp/>or<sp/>completely<sp/>suppressed,<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>changing<sp/>the<sp/>definitions<sp/>required<sp/>in<sp/>system/src/diag/trace_impl.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(currently<sp/>OS_USE_TRACE_SEMIHOSTING_DEBUG/_STDOUT).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>external<sp/>clock<sp/>frequency<sp/>is<sp/>specified<sp/>as<sp/>a<sp/>preprocessor<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>passed<sp/>to<sp/>the<sp/>compiler<sp/>via<sp/>a<sp/>command<sp/>line<sp/>option<sp/>(see<sp/>the<sp/>&apos;C/C++<sp/>General&apos;<sp/>-&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&apos;Paths<sp/>and<sp/>Symbols&apos;<sp/>-&gt;<sp/>the<sp/>&apos;Symbols&apos;<sp/>tab,<sp/>if<sp/>you<sp/>want<sp/>to<sp/>change<sp/>it).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>value<sp/>selected<sp/>during<sp/>project<sp/>creation<sp/>was<sp/>HSE_VALUE=7200000.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Note:<sp/>The<sp/>default<sp/>clock<sp/>settings<sp/>take<sp/>the<sp/>user<sp/>defined<sp/>HSE_VALUE<sp/>and<sp/>try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>reach<sp/>the<sp/>maximum<sp/>possible<sp/>system<sp/>clock.<sp/>For<sp/>the<sp/>default<sp/>8<sp/>MHz<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>result<sp/>is<sp/>guaranteed,<sp/>but<sp/>for<sp/>other<sp/>values<sp/>it<sp/>might<sp/>not<sp/>be<sp/>possible,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>so<sp/>please<sp/>adjust<sp/>the<sp/>PLL<sp/>settings<sp/>in<sp/>system/src/cmsis/system_stm32f10x.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Definitions<sp/>visible<sp/>only<sp/>within<sp/>this<sp/>translation<sp/>unit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----<sp/>Timing<sp/>definitions<sp/>-------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Keep<sp/>the<sp/>LED<sp/>on<sp/>for<sp/>2/3<sp/>of<sp/>a<sp/>second.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="class_timer_1af064c6652d9c7424aa2a69091077371d" kindref="member">Timer::ticks_t</ref><sp/>BLINK_ON_TICKS<sp/>=<sp/><ref refid="class_timer_1afb0566d18137755123193fc239593daa" kindref="member">Timer::FREQUENCY_HZ</ref><sp/>*<sp/>3<sp/>/<sp/>4;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="class_timer_1af064c6652d9c7424aa2a69091077371d" kindref="member">Timer::ticks_t</ref><sp/>BLINK_OFF_TICKS<sp/>=<sp/><ref refid="class_timer_1afb0566d18137755123193fc239593daa" kindref="member">Timer::FREQUENCY_HZ</ref></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>BLINK_ON_TICKS;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----<sp/>main()<sp/>---------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sample<sp/>pragmas<sp/>to<sp/>cope<sp/>with<sp/>warnings.<sp/>Please<sp/>note<sp/>the<sp/>related<sp/>line<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>end<sp/>of<sp/>this<sp/>function,<sp/>used<sp/>to<sp/>pop<sp/>the<sp/>compiler<sp/>diagnostics<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wunused-parameter&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wmissing-declarations&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wreturn-type&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>a<sp/>greeting<sp/>to<sp/>the<sp/>trace<sp/>device<sp/>(skipped<sp/>on<sp/>Release).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1af690ad866f65f64c9ca11ba6722d7974" kindref="member">trace_puts</ref>(</highlight><highlight class="stringliteral">&quot;Hello<sp/>ARM<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>At<sp/>this<sp/>stage<sp/>the<sp/>system<sp/>clock<sp/>should<sp/>have<sp/>already<sp/>been<sp/>configured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>at<sp/>high<sp/>speed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref>(</highlight><highlight class="stringliteral">&quot;System<sp/>clock:<sp/>%u<sp/>Hz\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="group___s_t_m32_f10x___system___exported__types_1gaa3cd3e43291e81e795d642b79b6088e6" kindref="member">SystemCoreClock</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="class_timer" kindref="compound">Timer</ref><sp/>timer;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>timer.<ref refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="class_blink_led" kindref="compound">BlinkLed</ref><sp/>blinkLed;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>all<sp/>necessary<sp/>initialisations<sp/>for<sp/>the<sp/>LED.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>blinkLed.<ref refid="class_blink_led_1a38fcbc34c6ff8a1083b64bbbb309a54c" kindref="member">powerUp</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>uint32_t<sp/>seconds<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Infinite<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>blinkLed.turnOn();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>timer.<ref refid="class_timer_1ad946179cf9404a33927ec3d33ed270d7" kindref="member">sleep</ref>(seconds==<sp/>0<sp/>?<sp/><ref refid="class_timer_1afb0566d18137755123193fc239593daa" kindref="member">Timer::FREQUENCY_HZ</ref><sp/>:<sp/>BLINK_ON_TICKS);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>blinkLed.turnOff();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>timer.<ref refid="class_timer_1ad946179cf9404a33927ec3d33ed270d7" kindref="member">sleep</ref>(BLINK_OFF_TICKS);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++seconds;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Count<sp/>seconds<sp/>on<sp/>the<sp/>trace<sp/>device.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_trace_8h_1a6a6492d4a967fc866e4825f6146cec37" kindref="member">trace_printf</ref>(</highlight><highlight class="stringliteral">&quot;Second<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>seconds);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Infinite<sp/>loop,<sp/>never<sp/>return.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/src/main.cpp"/>
+  </compounddef>
+</doxygen>

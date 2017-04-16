@@ -1,0 +1,273 @@
+\hypertarget{group___p_w_r___private___functions}{}\section{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}
+\label{group___p_w_r___private___functions}\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+Collaboration diagram for P\+W\+R\+\_\+\+Private\+\_\+\+Functions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{group___p_w_r___private___functions}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___p_w_r___private___functions_gad03a0aac7bc3bc3a9fd012f3769a6990}{P\+W\+R\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the P\+WR peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_ga0741aea35572b1a75f82b74de12df800}{P\+W\+R\+\_\+\+Backup\+Access\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables access to the R\+TC and backup registers. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_ga42cad476b816e0a33594a933b3ed1acd}{P\+W\+R\+\_\+\+P\+V\+D\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Power Voltage Detector(\+P\+V\+D). \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_ga237c143ef6aa55abb8049fa7bf24ab8f}{P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config} (uint32\+\_\+t P\+W\+R\+\_\+\+P\+V\+D\+Level)
+\begin{DoxyCompactList}\small\item\em Configures the voltage threshold detected by the Power Voltage Detector(\+P\+V\+D). \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_gae5fd6f9336ef8c60d5483651cb0d1a00}{P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Wake\+Up Pin functionality. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_ga694676ac06a9baf50eae45adae0118ab}{P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode} (uint32\+\_\+t P\+W\+R\+\_\+\+Regulator, uint8\+\_\+t P\+W\+R\+\_\+\+S\+T\+O\+P\+Entry)
+\begin{DoxyCompactList}\small\item\em Enters S\+T\+OP mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_ga00ddae00a9c327b81b24d2597b0052f3}{P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode} (void)
+\begin{DoxyCompactList}\small\item\em Enters S\+T\+A\+N\+D\+BY mode. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___p_w_r___private___functions_gaa980163a4d83304280ee34942464b4ec}{P\+W\+R\+\_\+\+Get\+Flag\+Status} (uint32\+\_\+t P\+W\+R\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified P\+WR flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___private___functions_ga01c4b2fbd16514b993324e101c3ddf7c}{P\+W\+R\+\_\+\+Clear\+Flag} (uint32\+\_\+t P\+W\+R\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the P\+WR\textquotesingle{}s pending flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___p_w_r___private___functions_ga0741aea35572b1a75f82b74de12df800}\label{group___p_w_r___private___functions_ga0741aea35572b1a75f82b74de12df800}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+Backup\+Access\+Cmd@{P\+W\+R\+\_\+\+Backup\+Access\+Cmd}}
+\index{P\+W\+R\+\_\+\+Backup\+Access\+Cmd@{P\+W\+R\+\_\+\+Backup\+Access\+Cmd}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+Backup\+Access\+Cmd()}{PWR\_BackupAccessCmd()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+Backup\+Access\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables access to the R\+TC and backup registers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the access to the R\+TC and backup registers. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 124 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_ga01c4b2fbd16514b993324e101c3ddf7c}\label{group___p_w_r___private___functions_ga01c4b2fbd16514b993324e101c3ddf7c}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+Clear\+Flag@{P\+W\+R\+\_\+\+Clear\+Flag}}
+\index{P\+W\+R\+\_\+\+Clear\+Flag@{P\+W\+R\+\_\+\+Clear\+Flag}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+Clear\+Flag()}{PWR\_ClearFlag()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{P\+W\+R\+\_\+\+F\+L\+AG }\end{DoxyParamCaption})}
+
+
+
+Clears the P\+WR\textquotesingle{}s pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+W\+R\+\_\+\+F\+L\+AG} & specifies the flag to clear. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+WU\+: Wake Up flag \item P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+SB\+: Stand\+By flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 287 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_gad03a0aac7bc3bc3a9fd012f3769a6990}\label{group___p_w_r___private___functions_gad03a0aac7bc3bc3a9fd012f3769a6990}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+De\+Init@{P\+W\+R\+\_\+\+De\+Init}}
+\index{P\+W\+R\+\_\+\+De\+Init@{P\+W\+R\+\_\+\+De\+Init}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+De\+Init()}{PWR\_DeInit()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the P\+WR peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 112 of file stm32f10x\+\_\+pwr.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{group___p_w_r___private___functions_gad03a0aac7bc3bc3a9fd012f3769a6990_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___p_w_r___private___functions_ga00ddae00a9c327b81b24d2597b0052f3}\label{group___p_w_r___private___functions_ga00ddae00a9c327b81b24d2597b0052f3}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode@{P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode}}
+\index{P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode@{P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode()}{PWR\_EnterSTANDBYMode()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+Enter\+S\+T\+A\+N\+D\+B\+Y\+Mode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enters S\+T\+A\+N\+D\+BY mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 236 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_ga694676ac06a9baf50eae45adae0118ab}\label{group___p_w_r___private___functions_ga694676ac06a9baf50eae45adae0118ab}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode@{P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode}}
+\index{P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode@{P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode()}{PWR\_EnterSTOPMode()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+Enter\+S\+T\+O\+P\+Mode (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{P\+W\+R\+\_\+\+Regulator,  }\item[{uint8\+\_\+t}]{P\+W\+R\+\_\+\+S\+T\+O\+P\+Entry }\end{DoxyParamCaption})}
+
+
+
+Enters S\+T\+OP mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+W\+R\+\_\+\+Regulator} & specifies the regulator state in S\+T\+OP mode. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item P\+W\+R\+\_\+\+Regulator\+\_\+\+ON\+: S\+T\+OP mode with regulator ON \item P\+W\+R\+\_\+\+Regulator\+\_\+\+Low\+Power\+: S\+T\+OP mode with regulator in low power mode \end{DoxyItemize}
+\\
+\hline
+{\em P\+W\+R\+\_\+\+S\+T\+O\+P\+Entry} & specifies if S\+T\+OP mode in entered with W\+FI or W\+FE instruction. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item P\+W\+R\+\_\+\+S\+T\+O\+P\+Entry\+\_\+\+W\+FI\+: enter S\+T\+OP mode with W\+FI instruction \item P\+W\+R\+\_\+\+S\+T\+O\+P\+Entry\+\_\+\+W\+FE\+: enter S\+T\+OP mode with W\+FE instruction \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 197 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_gaa980163a4d83304280ee34942464b4ec}\label{group___p_w_r___private___functions_gaa980163a4d83304280ee34942464b4ec}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+Get\+Flag\+Status@{P\+W\+R\+\_\+\+Get\+Flag\+Status}}
+\index{P\+W\+R\+\_\+\+Get\+Flag\+Status@{P\+W\+R\+\_\+\+Get\+Flag\+Status}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+Get\+Flag\+Status()}{PWR\_GetFlagStatus()}}
+{\footnotesize\ttfamily \hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} P\+W\+R\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{P\+W\+R\+\_\+\+F\+L\+AG }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified P\+WR flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+W\+R\+\_\+\+F\+L\+AG} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+WU\+: Wake Up flag \item P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+SB\+: Stand\+By flag \item P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+P\+V\+DO\+: P\+VD Output \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of P\+W\+R\+\_\+\+F\+L\+AG (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 261 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_ga42cad476b816e0a33594a933b3ed1acd}\label{group___p_w_r___private___functions_ga42cad476b816e0a33594a933b3ed1acd}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+P\+V\+D\+Cmd@{P\+W\+R\+\_\+\+P\+V\+D\+Cmd}}
+\index{P\+W\+R\+\_\+\+P\+V\+D\+Cmd@{P\+W\+R\+\_\+\+P\+V\+D\+Cmd}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+P\+V\+D\+Cmd()}{PWR\_PVDCmd()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+P\+V\+D\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the Power Voltage Detector(\+P\+V\+D). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the P\+VD. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 137 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_ga237c143ef6aa55abb8049fa7bf24ab8f}\label{group___p_w_r___private___functions_ga237c143ef6aa55abb8049fa7bf24ab8f}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config@{P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config}}
+\index{P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config@{P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config()}{PWR\_PVDLevelConfig()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+P\+V\+D\+Level\+Config (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{P\+W\+R\+\_\+\+P\+V\+D\+Level }\end{DoxyParamCaption})}
+
+
+
+Configures the voltage threshold detected by the Power Voltage Detector(\+P\+V\+D). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+W\+R\+\_\+\+P\+V\+D\+Level} & specifies the P\+VD detection level This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V2\+: P\+VD detection level set to 2.\+2V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V3\+: P\+VD detection level set to 2.\+3V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V4\+: P\+VD detection level set to 2.\+4V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V5\+: P\+VD detection level set to 2.\+5V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V6\+: P\+VD detection level set to 2.\+6V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V7\+: P\+VD detection level set to 2.\+7V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V8\+: P\+VD detection level set to 2.\+8V \item P\+W\+R\+\_\+\+P\+V\+D\+Level\+\_\+2\+V9\+: P\+VD detection level set to 2.\+9V \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 158 of file stm32f10x\+\_\+pwr.\+c.
+
+\mbox{\Hypertarget{group___p_w_r___private___functions_gae5fd6f9336ef8c60d5483651cb0d1a00}\label{group___p_w_r___private___functions_gae5fd6f9336ef8c60d5483651cb0d1a00}} 
+\index{P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}!P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd@{P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd}}
+\index{P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd@{P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd}!P\+W\+R\+\_\+\+Private\+\_\+\+Functions@{P\+W\+R\+\_\+\+Private\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd()}{PWR\_WakeUpPinCmd()}}
+{\footnotesize\ttfamily void P\+W\+R\+\_\+\+Wake\+Up\+Pin\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the Wake\+Up Pin functionality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the Wake\+Up Pin functionality. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 178 of file stm32f10x\+\_\+pwr.\+c.
+

@@ -1,0 +1,91 @@
+.TH "FSMC_Exported_Constants" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_Exported_Constants
+.SH SYNOPSIS
+.br
+.PP
+.SS "Modules"
+
+.in +1c
+.ti -1c
+.RI "\fBFSMC_NORSRAM_Bank\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_NAND_Bank\fP"
+.br
+.ti -1c
+.RI "\fBFSMC_PCCARD_Bank\fP"
+.br
+.ti -1c
+.RI "\fBNOR_SRAM_Controller\fP"
+.br
+.ti -1c
+.RI "\fBNAND_PCCARD_Controller\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_FSMC_NORSRAM_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_NAND_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_GETFLAG_BANK\fP(BANK)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_IT_BANK\fP(BANK)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_FSMC_GETFLAG_BANK(BANK)"
+\fBValue:\fP
+.PP
+.nf
+(((BANK) == FSMC_Bank2_NAND) || \
+                                    ((BANK) == FSMC_Bank3_NAND) || \
+                                    ((BANK) == FSMC_Bank4_PCCARD))
+.fi
+.PP
+Definition at line 282 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_IT_BANK(BANK)"
+\fBValue:\fP
+.PP
+.nf
+(((BANK) == FSMC_Bank2_NAND) || \
+                               ((BANK) == FSMC_Bank3_NAND) || \
+                               ((BANK) == FSMC_Bank4_PCCARD))
+.fi
+.PP
+Definition at line 286 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_NAND_BANK(BANK)"
+\fBValue:\fP
+.PP
+.nf
+(((BANK) == FSMC_Bank2_NAND) || \
+                                 ((BANK) == FSMC_Bank3_NAND))
+.fi
+.PP
+Definition at line 279 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_NORSRAM_BANK(BANK)"
+\fBValue:\fP
+.PP
+.nf
+(((BANK) == FSMC_Bank1_NORSRAM1) || \
+                                    ((BANK) == FSMC_Bank1_NORSRAM2) || \
+                                    ((BANK) == FSMC_Bank1_NORSRAM3) || \
+                                    ((BANK) == FSMC_Bank1_NORSRAM4))
+.fi
+.PP
+Definition at line 274 of file stm32f10x_fsmc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

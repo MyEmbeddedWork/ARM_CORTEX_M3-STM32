@@ -1,0 +1,822 @@
+\hypertarget{group___s_d_i_o___exported___functions}{}\section{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}
+\label{group___s_d_i_o___exported___functions}\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+Collaboration diagram for S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group___s_d_i_o___exported___functions}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}{S\+D\+I\+O\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the S\+D\+IO peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}{S\+D\+I\+O\+\_\+\+Init} (\hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+IO peripheral according to the specified parameters in the S\+D\+I\+O\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}{S\+D\+I\+O\+\_\+\+Struct\+Init} (\hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+D\+I\+O\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga7243b857d6b323748ff3a493b265bedc}{S\+D\+I\+O\+\_\+\+Clock\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+D\+IO Clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga36ecca32b904de74218fbe65cd5f5270}{S\+D\+I\+O\+\_\+\+Set\+Power\+State} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+Power\+State)
+\begin{DoxyCompactList}\small\item\em Sets the power status of the controller. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___exported___functions_ga3a19de2c7cd51645702213f64a1758ed}{S\+D\+I\+O\+\_\+\+Get\+Power\+State} (void)
+\begin{DoxyCompactList}\small\item\em Gets the power status of the controller. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga208f51237ef43288735829dbaed37f00}{S\+D\+I\+O\+\_\+\+I\+T\+Config} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+IT, \hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+D\+IO interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gad36fde5ec0ce0c2089b9d971c2271e6e}{S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\+D\+IO D\+MA request. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga7117d2f702703f6c0a66bc07707cab23}{S\+D\+I\+O\+\_\+\+Send\+Command} (\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+IO Command according to the specified parameters in the S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct and send the command. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}{S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init} (\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group___s_d_i_o___exported___functions_ga9badf271c818e09da301d715c4ad0e5b}{S\+D\+I\+O\+\_\+\+Get\+Command\+Response} (void)
+\begin{DoxyCompactList}\small\item\em Returns command index of last command for which response received. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___exported___functions_ga5c1e859511840e8cca6a9a768bce220b}{S\+D\+I\+O\+\_\+\+Get\+Response} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+R\+E\+SP)
+\begin{DoxyCompactList}\small\item\em Returns response received from the card for the last command. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gad65d896ae919683585bda44a1e2afae4}{S\+D\+I\+O\+\_\+\+Data\+Config} (\hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Data\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+D\+IO data path according to the specified parameters in the S\+D\+I\+O\+\_\+\+Data\+Init\+Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}{S\+D\+I\+O\+\_\+\+Data\+Struct\+Init} (\hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} $\ast$S\+D\+I\+O\+\_\+\+Data\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\+D\+I\+O\+\_\+\+Data\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___exported___functions_ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a}{S\+D\+I\+O\+\_\+\+Get\+Data\+Counter} (void)
+\begin{DoxyCompactList}\small\item\em Returns number of remaining data bytes to be transferred. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___exported___functions_ga4e8ac755ef3c31ecd4ed2708df19187e}{S\+D\+I\+O\+\_\+\+Read\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from Rx F\+I\+FO. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga361008b5252aa33b5f2b5823ee3d7240}{S\+D\+I\+O\+\_\+\+Write\+Data} (uint32\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Write one data word to Tx F\+I\+FO. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group___s_d_i_o___exported___functions_ga9a3343983a2d68b5164a1c89797d2dd6}{S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count} (void)
+\begin{DoxyCompactList}\small\item\em Returns the number of words left to be written to or read from F\+I\+FO. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gac88f914d9a68a83abc2265ec8a7b79fc}{S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Starts the SD I/O Read Wait operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gaca6b25eb2debb73ac827c66f0ebcf837}{S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Stops the SD I/O Read Wait operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga2baac4ea1bb6c2d94345d2712604338a}{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+Read\+Wait\+Mode)
+\begin{DoxyCompactList}\small\item\em Sets one of the two options of inserting read wait interval. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga24e210c185d5a7855cbaff4472a8f8d1}{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SD I/O Mode Operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga9264137a01a1ab81d03bc80a3b3120fc}{S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the SD I/O Mode suspend command sending. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga1bbe98c629812bc62121d9c8b2c5e21b}{S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the command completion signal. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_gab44b8cbc21be000a291563076159503b}{S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\+E-\/\+A\+TA interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga8dc7f17804bdb745b42f6647c8487b4c}{S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd} (\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State} New\+State)
+\begin{DoxyCompactList}\small\item\em Sends C\+E-\/\+A\+TA command (C\+M\+D61). \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} \hyperlink{group___s_d_i_o___exported___functions_ga644514b4b3c95c5c4326d99cd166f6f9}{S\+D\+I\+O\+\_\+\+Get\+Flag\+Status} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+D\+IO flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga7aff4efdeb528229135f9f285e53518a}{S\+D\+I\+O\+\_\+\+Clear\+Flag} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the S\+D\+IO\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} \hyperlink{group___s_d_i_o___exported___functions_ga2d64af1f3df0f99cb518f9a89bbd02ac}{S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\+D\+IO interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___exported___functions_ga048e07fd86321cd01b2a22c071c3149b}{S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit} (uint32\+\_\+t S\+D\+I\+O\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the S\+D\+IO\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gab44b8cbc21be000a291563076159503b}\label{group___s_d_i_o___exported___functions_gab44b8cbc21be000a291563076159503b}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd@{S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd}}
+\index{S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd@{S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd()}{SDIO\_CEATAITCmd()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+C\+E\+A\+T\+A\+I\+T\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the C\+E-\/\+A\+TA interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of C\+E-\/\+A\+TA interrupt. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 614 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga7aff4efdeb528229135f9f285e53518a}\label{group___s_d_i_o___exported___functions_ga7aff4efdeb528229135f9f285e53518a}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Clear\+Flag@{S\+D\+I\+O\+\_\+\+Clear\+Flag}}
+\index{S\+D\+I\+O\+\_\+\+Clear\+Flag@{S\+D\+I\+O\+\_\+\+Clear\+Flag}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Clear\+Flag()}{SDIO\_ClearFlag()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+F\+L\+AG }\end{DoxyParamCaption})}
+
+
+
+Clears the S\+D\+IO\textquotesingle{}s pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+F\+L\+AG} & specifies the flag to clear. This parameter can be one or a combination of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+C\+R\+C\+F\+A\+IL\+: Command response received (C\+RC check failed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+C\+R\+C\+F\+A\+IL\+: Data block sent/received (C\+RC check failed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+T\+I\+M\+E\+O\+UT\+: Command response timeout \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+T\+I\+M\+E\+O\+UT\+: Data timeout \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+U\+N\+D\+E\+RR\+: Transmit F\+I\+FO underrun error \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+O\+V\+E\+RR\+: Received F\+I\+FO overrun error \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+M\+D\+R\+E\+ND\+: Command response received (C\+RC check passed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+M\+D\+S\+E\+NT\+: Command sent (no response required) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+A\+T\+A\+E\+ND\+: Data end (data counter, S\+D\+I\+D\+C\+O\+U\+NT, is zero) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+B\+I\+T\+E\+RR\+: Start bit not detected on all data signals in wide bus mode \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+B\+C\+K\+E\+ND\+: Data block sent/received (C\+RC check passed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+S\+D\+I\+O\+IT\+: SD I/O interrupt received \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+E\+A\+T\+A\+E\+ND\+: C\+E-\/\+A\+TA command completion signal received for C\+M\+D61 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 704 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga048e07fd86321cd01b2a22c071c3149b}\label{group___s_d_i_o___exported___functions_ga048e07fd86321cd01b2a22c071c3149b}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit@{S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit}}
+\index{S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit@{S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit()}{SDIO\_ClearITPendingBit()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Clear\+I\+T\+Pending\+Bit (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+IT }\end{DoxyParamCaption})}
+
+
+
+Clears the S\+D\+IO\textquotesingle{}s interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+IT} & specifies the interrupt pending bit to clear. This parameter can be one or a combination of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+C\+R\+C\+F\+A\+IL\+: Command response received (C\+RC check failed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+C\+R\+C\+F\+A\+IL\+: Data block sent/received (C\+RC check failed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+T\+I\+M\+E\+O\+UT\+: Command response timeout interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+T\+I\+M\+E\+O\+UT\+: Data timeout interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+U\+N\+D\+E\+RR\+: Transmit F\+I\+FO underrun error interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+O\+V\+E\+RR\+: Received F\+I\+FO overrun error interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+R\+E\+ND\+: Command response received (C\+RC check passed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+S\+E\+NT\+: Command sent (no response required) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+A\+T\+A\+E\+ND\+: Data end (data counter, S\+D\+I\+D\+C\+O\+U\+NT, is zero) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+S\+T\+B\+I\+T\+E\+RR\+: Start bit not detected on all data signals in wide bus mode interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+S\+D\+I\+O\+IT\+: SD I/O interrupt received interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+E\+A\+T\+A\+E\+ND\+: C\+E-\/\+A\+TA command completion signal received for C\+M\+D61 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 779 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga7243b857d6b323748ff3a493b265bedc}\label{group___s_d_i_o___exported___functions_ga7243b857d6b323748ff3a493b265bedc}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Clock\+Cmd@{S\+D\+I\+O\+\_\+\+Clock\+Cmd}}
+\index{S\+D\+I\+O\+\_\+\+Clock\+Cmd@{S\+D\+I\+O\+\_\+\+Clock\+Cmd}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Clock\+Cmd()}{SDIO\_ClockCmd()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Clock\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the S\+D\+IO Clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the S\+D\+IO Clock. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 235 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}\label{group___s_d_i_o___exported___functions_ga09d9e89f49c87c82aec79c97b7068e24}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init@{S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init}}
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init@{S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init()}{SDIO\_CmdStructInit()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Cmd\+Struct\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} $\ast$}]{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct} & pointer to an \hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 382 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga1bbe98c629812bc62121d9c8b2c5e21b}\label{group___s_d_i_o___exported___functions_ga1bbe98c629812bc62121d9c8b2c5e21b}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd@{S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd}}
+\index{S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd@{S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd()}{SDIO\_CommandCompletionCmd()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Command\+Completion\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the command completion signal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of command completion signal. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 601 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gad65d896ae919683585bda44a1e2afae4}\label{group___s_d_i_o___exported___functions_gad65d896ae919683585bda44a1e2afae4}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Data\+Config@{S\+D\+I\+O\+\_\+\+Data\+Config}}
+\index{S\+D\+I\+O\+\_\+\+Data\+Config@{S\+D\+I\+O\+\_\+\+Data\+Config}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Data\+Config()}{SDIO\_DataConfig()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Data\+Config (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} $\ast$}]{S\+D\+I\+O\+\_\+\+Data\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+D\+IO data path according to the specified parameters in the S\+D\+I\+O\+\_\+\+Data\+Init\+Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Data\+Init\+Struct} & \+: pointer to a \hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} structure that contains the configuration information for the S\+D\+IO command. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 431 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}\label{group___s_d_i_o___exported___functions_gaa83209c09e921521aca2587fb5b22ea2}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Data\+Struct\+Init@{S\+D\+I\+O\+\_\+\+Data\+Struct\+Init}}
+\index{S\+D\+I\+O\+\_\+\+Data\+Struct\+Init@{S\+D\+I\+O\+\_\+\+Data\+Struct\+Init}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Data\+Struct\+Init()}{SDIO\_DataStructInit()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Data\+Struct\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} $\ast$}]{S\+D\+I\+O\+\_\+\+Data\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each S\+D\+I\+O\+\_\+\+Data\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Data\+Init\+Struct} & pointer to an \hyperlink{struct_s_d_i_o___data_init_type_def}{S\+D\+I\+O\+\_\+\+Data\+Init\+Type\+Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 472 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}\label{group___s_d_i_o___exported___functions_gac359d2c6c67a2590f8f9b720c0e4ff1b}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+De\+Init@{S\+D\+I\+O\+\_\+\+De\+Init}}
+\index{S\+D\+I\+O\+\_\+\+De\+Init@{S\+D\+I\+O\+\_\+\+De\+Init}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+De\+Init()}{SDIO\_DeInit()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the S\+D\+IO peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 161 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gad36fde5ec0ce0c2089b9d971c2271e6e}\label{group___s_d_i_o___exported___functions_gad36fde5ec0ce0c2089b9d971c2271e6e}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd@{S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd}}
+\index{S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd@{S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd()}{SDIO\_DMACmd()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+D\+M\+A\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the S\+D\+IO D\+MA request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the selected S\+D\+IO D\+MA request. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 331 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga9badf271c818e09da301d715c4ad0e5b}\label{group___s_d_i_o___exported___functions_ga9badf271c818e09da301d715c4ad0e5b}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+Command\+Response@{S\+D\+I\+O\+\_\+\+Get\+Command\+Response}}
+\index{S\+D\+I\+O\+\_\+\+Get\+Command\+Response@{S\+D\+I\+O\+\_\+\+Get\+Command\+Response}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+Command\+Response()}{SDIO\_GetCommandResponse()}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+D\+I\+O\+\_\+\+Get\+Command\+Response (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns command index of last command for which response received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Returns} & the command index of the last command response received. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 397 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a}\label{group___s_d_i_o___exported___functions_ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+Data\+Counter@{S\+D\+I\+O\+\_\+\+Get\+Data\+Counter}}
+\index{S\+D\+I\+O\+\_\+\+Get\+Data\+Counter@{S\+D\+I\+O\+\_\+\+Get\+Data\+Counter}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+Data\+Counter()}{SDIO\_GetDataCounter()}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Get\+Data\+Counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns number of remaining data bytes to be transferred. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Number} & of remaining data bytes to be transferred \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 488 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga9a3343983a2d68b5164a1c89797d2dd6}\label{group___s_d_i_o___exported___functions_ga9a3343983a2d68b5164a1c89797d2dd6}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count@{S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count}}
+\index{S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count@{S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count()}{SDIO\_GetFIFOCount()}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Get\+F\+I\+F\+O\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of words left to be written to or read from F\+I\+FO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Remaining} & number of words. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 518 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga644514b4b3c95c5c4326d99cd166f6f9}\label{group___s_d_i_o___exported___functions_ga644514b4b3c95c5c4326d99cd166f6f9}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+Flag\+Status@{S\+D\+I\+O\+\_\+\+Get\+Flag\+Status}}
+\index{S\+D\+I\+O\+\_\+\+Get\+Flag\+Status@{S\+D\+I\+O\+\_\+\+Get\+Flag\+Status}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+Flag\+Status()}{SDIO\_GetFlagStatus()}}
+{\footnotesize\ttfamily \hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status} S\+D\+I\+O\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+F\+L\+AG }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified S\+D\+IO flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+F\+L\+AG} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+C\+R\+C\+F\+A\+IL\+: Command response received (C\+RC check failed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+C\+R\+C\+F\+A\+IL\+: Data block sent/received (C\+RC check failed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+T\+I\+M\+E\+O\+UT\+: Command response timeout \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+T\+I\+M\+E\+O\+UT\+: Data timeout \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+U\+N\+D\+E\+RR\+: Transmit F\+I\+FO underrun error \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+O\+V\+E\+RR\+: Received F\+I\+FO overrun error \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+M\+D\+R\+E\+ND\+: Command response received (C\+RC check passed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+M\+D\+S\+E\+NT\+: Command sent (no response required) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+A\+T\+A\+E\+ND\+: Data end (data counter, S\+D\+I\+D\+C\+O\+U\+NT, is zero) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+B\+I\+T\+E\+RR\+: Start bit not detected on all data signals in wide bus mode. \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+D\+B\+C\+K\+E\+ND\+: Data block sent/received (C\+RC check passed) \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+M\+D\+A\+CT\+: Command transfer in progress \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+A\+CT\+: Data transmit in progress \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+A\+CT\+: Data receive in progress \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+F\+I\+F\+O\+HE\+: Transmit F\+I\+FO Half Empty \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+F\+I\+F\+O\+HF\+: Receive F\+I\+FO Half Full \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+F\+I\+F\+OF\+: Transmit F\+I\+FO full \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+F\+I\+F\+OF\+: Receive F\+I\+FO full \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+F\+I\+F\+OE\+: Transmit F\+I\+FO empty \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+F\+I\+F\+OE\+: Receive F\+I\+FO empty \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+D\+A\+VL\+: Data available in transmit F\+I\+FO \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+D\+A\+VL\+: Data available in receive F\+I\+FO \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+S\+D\+I\+O\+IT\+: SD I/O interrupt received \item S\+D\+I\+O\+\_\+\+F\+L\+A\+G\+\_\+\+C\+E\+A\+T\+A\+E\+ND\+: C\+E-\/\+A\+TA command completion signal received for C\+M\+D61 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of S\+D\+I\+O\+\_\+\+F\+L\+AG (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 666 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga2d64af1f3df0f99cb518f9a89bbd02ac}\label{group___s_d_i_o___exported___functions_ga2d64af1f3df0f99cb518f9a89bbd02ac}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status@{S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status}}
+\index{S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status@{S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status()}{SDIO\_GetITStatus()}}
+{\footnotesize\ttfamily \hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status} S\+D\+I\+O\+\_\+\+Get\+I\+T\+Status (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+IT }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified S\+D\+IO interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+IT} & specifies the S\+D\+IO interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+C\+R\+C\+F\+A\+IL\+: Command response received (C\+RC check failed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+C\+R\+C\+F\+A\+IL\+: Data block sent/received (C\+RC check failed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+T\+I\+M\+E\+O\+UT\+: Command response timeout interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+T\+I\+M\+E\+O\+UT\+: Data timeout interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+U\+N\+D\+E\+RR\+: Transmit F\+I\+FO underrun error interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+O\+V\+E\+RR\+: Received F\+I\+FO overrun error interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+R\+E\+ND\+: Command response received (C\+RC check passed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+S\+E\+NT\+: Command sent (no response required) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+A\+T\+A\+E\+ND\+: Data end (data counter, S\+D\+I\+D\+C\+O\+U\+NT, is zero) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+S\+T\+B\+I\+T\+E\+RR\+: Start bit not detected on all data signals in wide bus mode interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+B\+C\+K\+E\+ND\+: Data block sent/received (C\+RC check passed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+A\+CT\+: Command transfer in progress interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+A\+CT\+: Data transmit in progress interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+A\+CT\+: Data receive in progress interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+F\+I\+F\+O\+HE\+: Transmit F\+I\+FO Half Empty interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+F\+I\+F\+O\+HF\+: Receive F\+I\+FO Half Full interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+F\+I\+F\+OF\+: Transmit F\+I\+FO full interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+F\+I\+F\+OF\+: Receive F\+I\+FO full interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+F\+I\+F\+OE\+: Transmit F\+I\+FO empty interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+F\+I\+F\+OE\+: Receive F\+I\+FO empty interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+D\+A\+VL\+: Data available in transmit F\+I\+FO interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+D\+A\+VL\+: Data available in receive F\+I\+FO interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+S\+D\+I\+O\+IT\+: SD I/O interrupt received interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+E\+A\+T\+A\+E\+ND\+: C\+E-\/\+A\+TA command completion signal received for C\+M\+D61 interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of S\+D\+I\+O\+\_\+\+IT (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 743 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga3a19de2c7cd51645702213f64a1758ed}\label{group___s_d_i_o___exported___functions_ga3a19de2c7cd51645702213f64a1758ed}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+Power\+State@{S\+D\+I\+O\+\_\+\+Get\+Power\+State}}
+\index{S\+D\+I\+O\+\_\+\+Get\+Power\+State@{S\+D\+I\+O\+\_\+\+Get\+Power\+State}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+Power\+State()}{SDIO\_GetPowerState()}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Get\+Power\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the power status of the controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Power} & status of the controller. The returned value can be one of the following\+:
+\begin{DoxyItemize}
+\item 0x00\+: Power O\+FF
+\item 0x02\+: Power UP
+\item 0x03\+: Power ON 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 269 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga5c1e859511840e8cca6a9a768bce220b}\label{group___s_d_i_o___exported___functions_ga5c1e859511840e8cca6a9a768bce220b}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Get\+Response@{S\+D\+I\+O\+\_\+\+Get\+Response}}
+\index{S\+D\+I\+O\+\_\+\+Get\+Response@{S\+D\+I\+O\+\_\+\+Get\+Response}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Get\+Response()}{SDIO\_GetResponse()}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Get\+Response (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+R\+E\+SP }\end{DoxyParamCaption})}
+
+
+
+Returns response received from the card for the last command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+R\+E\+SP} & Specifies the S\+D\+IO response register. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+R\+E\+S\+P1\+: Response Register 1 \item S\+D\+I\+O\+\_\+\+R\+E\+S\+P2\+: Response Register 2 \item S\+D\+I\+O\+\_\+\+R\+E\+S\+P3\+: Response Register 3 \item S\+D\+I\+O\+\_\+\+R\+E\+S\+P4\+: Response Register 4 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & Corresponding response register value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 412 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}\label{group___s_d_i_o___exported___functions_gad40764a8e37c0ed5c9141ae338ff0203}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Init@{S\+D\+I\+O\+\_\+\+Init}}
+\index{S\+D\+I\+O\+\_\+\+Init@{S\+D\+I\+O\+\_\+\+Init}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Init()}{SDIO\_Init()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} $\ast$}]{S\+D\+I\+O\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+D\+IO peripheral according to the specified parameters in the S\+D\+I\+O\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Init\+Struct} & \+: pointer to a \hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} structure that contains the configuration information for the S\+D\+IO peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 181 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga208f51237ef43288735829dbaed37f00}\label{group___s_d_i_o___exported___functions_ga208f51237ef43288735829dbaed37f00}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+I\+T\+Config@{S\+D\+I\+O\+\_\+\+I\+T\+Config}}
+\index{S\+D\+I\+O\+\_\+\+I\+T\+Config@{S\+D\+I\+O\+\_\+\+I\+T\+Config}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+I\+T\+Config()}{SDIO\_ITConfig()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+I\+T\+Config (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+IT,  }\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the S\+D\+IO interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+IT} & specifies the S\+D\+IO interrupt sources to be enabled or disabled. This parameter can be one or a combination of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+C\+R\+C\+F\+A\+IL\+: Command response received (C\+RC check failed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+C\+R\+C\+F\+A\+IL\+: Data block sent/received (C\+RC check failed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+T\+I\+M\+E\+O\+UT\+: Command response timeout interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+T\+I\+M\+E\+O\+UT\+: Data timeout interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+U\+N\+D\+E\+RR\+: Transmit F\+I\+FO underrun error interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+O\+V\+E\+RR\+: Received F\+I\+FO overrun error interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+R\+E\+ND\+: Command response received (C\+RC check passed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+S\+E\+NT\+: Command sent (no response required) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+A\+T\+A\+E\+ND\+: Data end (data counter, S\+D\+I\+D\+C\+O\+U\+NT, is zero) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+S\+T\+B\+I\+T\+E\+RR\+: Start bit not detected on all data signals in wide bus mode interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+D\+B\+C\+K\+E\+ND\+: Data block sent/received (C\+RC check passed) interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+M\+D\+A\+CT\+: Command transfer in progress interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+A\+CT\+: Data transmit in progress interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+A\+CT\+: Data receive in progress interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+F\+I\+F\+O\+HE\+: Transmit F\+I\+FO Half Empty interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+F\+I\+F\+O\+HF\+: Receive F\+I\+FO Half Full interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+F\+I\+F\+OF\+: Transmit F\+I\+FO full interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+F\+I\+F\+OF\+: Receive F\+I\+FO full interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+F\+I\+F\+OE\+: Transmit F\+I\+FO empty interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+F\+I\+F\+OE\+: Receive F\+I\+FO empty interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+T\+X\+D\+A\+VL\+: Data available in transmit F\+I\+FO interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+R\+X\+D\+A\+VL\+: Data available in receive F\+I\+FO interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+S\+D\+I\+O\+IT\+: SD I/O interrupt received interrupt \item S\+D\+I\+O\+\_\+\+I\+T\+\_\+\+C\+E\+A\+T\+A\+E\+ND\+: C\+E-\/\+A\+TA command completion signal received for C\+M\+D61 interrupt \end{DoxyItemize}
+\\
+\hline
+{\em New\+State} & new state of the specified S\+D\+IO interrupts. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 307 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga4e8ac755ef3c31ecd4ed2708df19187e}\label{group___s_d_i_o___exported___functions_ga4e8ac755ef3c31ecd4ed2708df19187e}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Read\+Data@{S\+D\+I\+O\+\_\+\+Read\+Data}}
+\index{S\+D\+I\+O\+\_\+\+Read\+Data@{S\+D\+I\+O\+\_\+\+Read\+Data}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Read\+Data()}{SDIO\_ReadData()}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Read\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Read one data word from Rx F\+I\+FO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Data} & received \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 498 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga8dc7f17804bdb745b42f6647c8487b4c}\label{group___s_d_i_o___exported___functions_ga8dc7f17804bdb745b42f6647c8487b4c}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd@{S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd}}
+\index{S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd@{S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd()}{SDIO\_SendCEATACmd()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Send\+C\+E\+A\+T\+A\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Sends C\+E-\/\+A\+TA command (C\+M\+D61). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of C\+E-\/\+A\+TA command. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 627 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga7117d2f702703f6c0a66bc07707cab23}\label{group___s_d_i_o___exported___functions_ga7117d2f702703f6c0a66bc07707cab23}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Send\+Command@{S\+D\+I\+O\+\_\+\+Send\+Command}}
+\index{S\+D\+I\+O\+\_\+\+Send\+Command@{S\+D\+I\+O\+\_\+\+Send\+Command}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Send\+Command()}{SDIO\_SendCommand()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Send\+Command (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} $\ast$}]{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+D\+IO Command according to the specified parameters in the S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct and send the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Cmd\+Init\+Struct} & \+: pointer to a \hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def} structure that contains the configuration information for the S\+D\+IO command. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 346 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga9264137a01a1ab81d03bc80a3b3120fc}\label{group___s_d_i_o___exported___functions_ga9264137a01a1ab81d03bc80a3b3120fc}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd@{S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd}}
+\index{S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd@{S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd()}{SDIO\_SendSDIOSuspendCmd()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Send\+S\+D\+I\+O\+Suspend\+Cmd (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SD I/O Mode suspend command sending. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the SD I/O Mode suspend command. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 587 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga36ecca32b904de74218fbe65cd5f5270}\label{group___s_d_i_o___exported___functions_ga36ecca32b904de74218fbe65cd5f5270}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Set\+Power\+State@{S\+D\+I\+O\+\_\+\+Set\+Power\+State}}
+\index{S\+D\+I\+O\+\_\+\+Set\+Power\+State@{S\+D\+I\+O\+\_\+\+Set\+Power\+State}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Set\+Power\+State()}{SDIO\_SetPowerState()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Set\+Power\+State (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+Power\+State }\end{DoxyParamCaption})}
+
+
+
+Sets the power status of the controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Power\+State} & new state of the Power state. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+Power\+State\+\_\+\+O\+FF \item S\+D\+I\+O\+\_\+\+Power\+State\+\_\+\+ON \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 251 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga24e210c185d5a7855cbaff4472a8f8d1}\label{group___s_d_i_o___exported___functions_ga24e210c185d5a7855cbaff4472a8f8d1}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation@{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation}}
+\index{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation@{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation()}{SDIO\_SetSDIOOperation()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Operation (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the SD I/O Mode Operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of S\+D\+IO specific operation. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 573 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga2baac4ea1bb6c2d94345d2712604338a}\label{group___s_d_i_o___exported___functions_ga2baac4ea1bb6c2d94345d2712604338a}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode@{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode}}
+\index{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode@{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode()}{SDIO\_SetSDIOReadWaitMode()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Set\+S\+D\+I\+O\+Read\+Wait\+Mode (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{S\+D\+I\+O\+\_\+\+Read\+Wait\+Mode }\end{DoxyParamCaption})}
+
+
+
+Sets one of the two options of inserting read wait interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Read\+Wait\+Mode} & SD I/O Read Wait operation mode. This parameter can be\+: \begin{DoxyItemize}
+\item S\+D\+I\+O\+\_\+\+Read\+Wait\+Mode\+\_\+\+C\+LK\+: Read Wait control by stopping S\+D\+I\+O\+C\+LK \item S\+D\+I\+O\+\_\+\+Read\+Wait\+Mode\+\_\+\+D\+A\+T\+A2\+: Read Wait control using S\+D\+I\+O\+\_\+\+D\+A\+T\+A2 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 559 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gac88f914d9a68a83abc2265ec8a7b79fc}\label{group___s_d_i_o___exported___functions_gac88f914d9a68a83abc2265ec8a7b79fc}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait@{S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait}}
+\index{S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait@{S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait()}{SDIO\_StartSDIOReadWait()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Start\+S\+D\+I\+O\+Read\+Wait (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Starts the SD I/O Read Wait operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the Start S\+D\+IO Read Wait operation. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 529 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_gaca6b25eb2debb73ac827c66f0ebcf837}\label{group___s_d_i_o___exported___functions_gaca6b25eb2debb73ac827c66f0ebcf837}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait@{S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait}}
+\index{S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait@{S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait()}{SDIO\_StopSDIOReadWait()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Stop\+S\+D\+I\+O\+Read\+Wait (\begin{DoxyParamCaption}\item[{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}}]{New\+State }\end{DoxyParamCaption})}
+
+
+
+Stops the SD I/O Read Wait operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+State} & new state of the Stop S\+D\+IO Read Wait operation. This parameter can be\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 543 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}\label{group___s_d_i_o___exported___functions_ga778d338c29df4fae9ef69432e6df32ad}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Struct\+Init@{S\+D\+I\+O\+\_\+\+Struct\+Init}}
+\index{S\+D\+I\+O\+\_\+\+Struct\+Init@{S\+D\+I\+O\+\_\+\+Struct\+Init}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Struct\+Init()}{SDIO\_StructInit()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} $\ast$}]{S\+D\+I\+O\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each S\+D\+I\+O\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+I\+O\+\_\+\+Init\+Struct} & pointer to an \hyperlink{struct_s_d_i_o___init_type_def}{S\+D\+I\+O\+\_\+\+Init\+Type\+Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 219 of file stm32f10x\+\_\+sdio.\+c.
+
+\mbox{\Hypertarget{group___s_d_i_o___exported___functions_ga361008b5252aa33b5f2b5823ee3d7240}\label{group___s_d_i_o___exported___functions_ga361008b5252aa33b5f2b5823ee3d7240}} 
+\index{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}!S\+D\+I\+O\+\_\+\+Write\+Data@{S\+D\+I\+O\+\_\+\+Write\+Data}}
+\index{S\+D\+I\+O\+\_\+\+Write\+Data@{S\+D\+I\+O\+\_\+\+Write\+Data}!S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions@{S\+D\+I\+O\+\_\+\+Exported\+\_\+\+Functions}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Write\+Data()}{SDIO\_WriteData()}}
+{\footnotesize\ttfamily void S\+D\+I\+O\+\_\+\+Write\+Data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Data }\end{DoxyParamCaption})}
+
+
+
+Write one data word to Tx F\+I\+FO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data} & 32-\/bit data word to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 508 of file stm32f10x\+\_\+sdio.\+c.
+

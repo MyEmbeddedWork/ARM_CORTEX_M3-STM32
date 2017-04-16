@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c__interrupts__definition" kind="group">
+    <compoundname>I2C_interrupts_definition</compoundname>
+    <title>I2C_interrupts_definition</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gad3ff3f405b882aa4d2f91310aa1cc0df" prot="public" static="no">
+        <name>I2C_IT_BUF</name>
+        <initializer>((uint16_t)0x0400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="216" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gadd59efa313e1598a084a1e5ec3905b02" prot="public" static="no">
+        <name>I2C_IT_EVT</name>
+        <initializer>((uint16_t)0x0200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="217" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gadba3667b439cbf4ba1e6e9aec961ab03" prot="public" static="no">
+        <name>I2C_IT_ERR</name>
+        <initializer>((uint16_t)0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="218" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gae2695a081871336881f9105d6c847c4f" prot="public" static="no">
+        <name>IS_I2C_CONFIG_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint16_t)0xF8FF) == 0x00) &amp;&amp; ((IT) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="219" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gab6049d4dd856a085127752e01ebb8120" prot="public" static="no">
+        <name>I2C_IT_SMBALERT</name>
+        <initializer>((uint32_t)0x01008000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="228" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga45ce34b163b456a5fb3833f1264d93b4" prot="public" static="no">
+        <name>I2C_IT_TIMEOUT</name>
+        <initializer>((uint32_t)0x01004000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="229" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga23069e7787c4f052f34887c02bc44100" prot="public" static="no">
+        <name>I2C_IT_PECERR</name>
+        <initializer>((uint32_t)0x01001000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="230" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga8e1e9e73d9057ccfce3493b5cf672833" prot="public" static="no">
+        <name>I2C_IT_OVR</name>
+        <initializer>((uint32_t)0x01000800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="231" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gabfb721ac5783336e6d2334f635e2e91b" prot="public" static="no">
+        <name>I2C_IT_AF</name>
+        <initializer>((uint32_t)0x01000400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="232" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga2439154bee2a45a4147921cec18177d1" prot="public" static="no">
+        <name>I2C_IT_ARLO</name>
+        <initializer>((uint32_t)0x01000200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="233" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gad9aec016c98df6dbb95a5c10b180c202" prot="public" static="no">
+        <name>I2C_IT_BERR</name>
+        <initializer>((uint32_t)0x01000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="234" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gacb41229da2cd9460c3272cfb13aa29d3" prot="public" static="no">
+        <name>I2C_IT_TXE</name>
+        <initializer>((uint32_t)0x06000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="235" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gac95135720c0de2fd01c44c3f7b6c81d4" prot="public" static="no">
+        <name>I2C_IT_RXNE</name>
+        <initializer>((uint32_t)0x06000040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="236" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga741e098abb485b327c7668518117e415" prot="public" static="no">
+        <name>I2C_IT_STOPF</name>
+        <initializer>((uint32_t)0x02000010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="237" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga8a9bc5a1dee3bbd41347b19cf117c0f3" prot="public" static="no">
+        <name>I2C_IT_ADD10</name>
+        <initializer>((uint32_t)0x02000008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="238" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gaef469fef934f655614b7cffd00b87ceb" prot="public" static="no">
+        <name>I2C_IT_BTF</name>
+        <initializer>((uint32_t)0x02000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="239" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gaf68f1eda33dcb13626597f477d044025" prot="public" static="no">
+        <name>I2C_IT_ADDR</name>
+        <initializer>((uint32_t)0x02000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="240" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gaec2fb9bbd0e1b128b4450b2a7b312896" prot="public" static="no">
+        <name>I2C_IT_SB</name>
+        <initializer>((uint32_t)0x02000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="241" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1ga368c05fc9aadd7bb4d23280791b5a751" prot="public" static="no">
+        <name>IS_I2C_CLEAR_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>((((IT) &amp; (uint16_t)0x20FF) == 0x00) &amp;&amp; ((IT) != (uint16_t)0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="243" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__interrupts__definition_1gab3d113f3d6b6e6f7896c5d7a8d8c2d01" prot="public" static="no">
+        <name>IS_I2C_GET_IT</name>
+        <param><defname>IT</defname></param>
+        <initializer>(((IT) == <ref refid="group___i2_c__interrupts__definition_1gab6049d4dd856a085127752e01ebb8120" kindref="member">I2C_IT_SMBALERT</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1ga45ce34b163b456a5fb3833f1264d93b4" kindref="member">I2C_IT_TIMEOUT</ref>) || \
+                           ((IT) == <ref refid="group___i2_c__interrupts__definition_1ga23069e7787c4f052f34887c02bc44100" kindref="member">I2C_IT_PECERR</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1ga8e1e9e73d9057ccfce3493b5cf672833" kindref="member">I2C_IT_OVR</ref>) || \
+                           ((IT) == <ref refid="group___i2_c__interrupts__definition_1gabfb721ac5783336e6d2334f635e2e91b" kindref="member">I2C_IT_AF</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1ga2439154bee2a45a4147921cec18177d1" kindref="member">I2C_IT_ARLO</ref>) || \
+                           ((IT) == <ref refid="group___i2_c__interrupts__definition_1gad9aec016c98df6dbb95a5c10b180c202" kindref="member">I2C_IT_BERR</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1gacb41229da2cd9460c3272cfb13aa29d3" kindref="member">I2C_IT_TXE</ref>) || \
+                           ((IT) == <ref refid="group___i2_c__interrupts__definition_1gac95135720c0de2fd01c44c3f7b6c81d4" kindref="member">I2C_IT_RXNE</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1ga741e098abb485b327c7668518117e415" kindref="member">I2C_IT_STOPF</ref>) || \
+                           ((IT) == <ref refid="group___i2_c__interrupts__definition_1ga8a9bc5a1dee3bbd41347b19cf117c0f3" kindref="member">I2C_IT_ADD10</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1gaef469fef934f655614b7cffd00b87ceb" kindref="member">I2C_IT_BTF</ref>) || \
+                           ((IT) == <ref refid="group___i2_c__interrupts__definition_1gaf68f1eda33dcb13626597f477d044025" kindref="member">I2C_IT_ADDR</ref>) || ((IT) == <ref refid="group___i2_c__interrupts__definition_1gaec2fb9bbd0e1b128b4450b2a7b312896" kindref="member">I2C_IT_SB</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="245" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

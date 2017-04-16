@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___output___compare___clear___state" kind="group">
+    <compoundname>TIM_Output_Compare_Clear_State</compoundname>
+    <title>TIM_Output_Compare_Clear_State</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___output___compare___clear___state_1ga1b7bce48b3e1478aad98c95fbbe7a6e0" prot="public" static="no">
+        <name>TIM_OCClear_Enable</name>
+        <initializer>((uint16_t)0x0080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="905" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare___clear___state_1gadb09946cb5dded7520baf4b19173204d" prot="public" static="no">
+        <name>TIM_OCClear_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="906" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare___clear___state_1ga5297586b42da9263ac4f767c83202fed" prot="public" static="no">
+        <name>IS_TIM_OCCLEAR_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___t_i_m___output___compare___clear___state_1ga1b7bce48b3e1478aad98c95fbbe7a6e0" kindref="member">TIM_OCClear_Enable</ref>) || \
+                                     ((STATE) == <ref refid="group___t_i_m___output___compare___clear___state_1gadb09946cb5dded7520baf4b19173204d" kindref="member">TIM_OCClear_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="907" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

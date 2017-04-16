@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_u_s_a_r_t___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>USART_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a3f1fd9f0c004d3087caeba4815faa41c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1236" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1236" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga144630722defc9e312f0ad280b68e9da" compoundref="stm32f10x__usart_8c" startline="898" endline="919">USART_GetFlagStatus</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gad962e148fc466ae1b45b288f6c91d966" compoundref="stm32f10x__usart_8c" startline="947" endline="959">USART_ClearFlag</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga93d8f031241bcdbe938d091a85295445" compoundref="stm32f10x__usart_8c" startline="980" endline="1025">USART_GetITStatus</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga1fc25d0338695063be5e50156955d9bc" compoundref="stm32f10x__usart_8c" startline="1054" endline="1080">USART_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a84ccd64c74c8dbc78b94172ce759de10" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1237" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1accee34aaec89aad4aeef512bba173ae5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1238" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1238" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga0b43d42da9540f446d494bf69823c6fb" compoundref="stm32f10x__usart_8c" startline="604" endline="612">USART_SendData</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gac67a91845b0b1d54d31bdfb1c5e9867c" compoundref="stm32f10x__usart_8c" startline="621" endline="628">USART_ReceiveData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a6d78680272a465db0ee43eba4e9c54f3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1239" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a2044eb2a0a8a731400d309741bceb2f7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::BRR</definition>
+        <argsstring></argsstring>
+        <name>BRR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1240" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1240" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1af2b7924854e56d0ebd3e8699dfd0e369" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1241" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a5de50313b1437f7f926093f00902d37a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1242" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1242" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga45e51626739c5f22a6567c8a85d1d85e" compoundref="stm32f10x__usart_8c" startline="351" endline="367">USART_Cmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga4965417c2412c36e462fcad50a8d5393" compoundref="stm32f10x__usart_8c" startline="511" endline="519">USART_WakeUpConfig</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gac27b78ce445a16fe33851d2f87781c02" compoundref="stm32f10x__usart_8c" startline="530" endline="546">USART_ReceiverWakeUpCmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga39a3d33e23ee28529fa8f7259ce6811e" compoundref="stm32f10x__usart_8c" startline="637" endline="644">USART_SendBreak</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga3897bab07491d9239f8a238a9a7cddea" compoundref="stm32f10x__usart_8c" startline="786" endline="802">USART_OverSampling8Cmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga93d8f031241bcdbe938d091a85295445" compoundref="stm32f10x__usart_8c" startline="980" endline="1025">USART_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a158066c974911c14efd7ea492ea31137" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1243" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a2a494156d185762e4596696796c393bc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1244" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1244" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gadb50c7a2175c91acd3728f8eefd0c63d" compoundref="stm32f10x__usart_8c" startline="302" endline="325">USART_ClockInit</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga65ec9928817f3f031dd9a4dfc95d6666" compoundref="stm32f10x__usart_8c" startline="476" endline="498">USART_SetAddress</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga7bc2d291831cbc5e53e73337308029b5" compoundref="stm32f10x__usart_8c" startline="559" endline="567">USART_LINBreakDetectLengthConfig</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga9fdd6296f4ca4acdfcbd58bf56bd4185" compoundref="stm32f10x__usart_8c" startline="578" endline="594">USART_LINCmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga93d8f031241bcdbe938d091a85295445" compoundref="stm32f10x__usart_8c" startline="980" endline="1025">USART_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a6ac527c7428ad8807a7740c1f33f0351" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1245" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a2b9d1df38cb1d745305c8190a8707a0f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::CR3</definition>
+        <argsstring></argsstring>
+        <name>CR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1246" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1246" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga902857f199ebfba21c63d725354af66f" compoundref="stm32f10x__usart_8c" startline="448" endline="466">USART_DMACmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gabd1347e244c623447151ba3a5e986c5f" compoundref="stm32f10x__usart_8c" startline="704" endline="719">USART_SmartCardCmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga62e22f47e38aa53f2edce8771f7a5dfa" compoundref="stm32f10x__usart_8c" startline="729" endline="744">USART_SmartCardNACKCmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gaaa23b05fe0e1896bad90da7f82750831" compoundref="stm32f10x__usart_8c" startline="755" endline="771">USART_HalfDuplexCmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga3ed89ea8765d851510cfe90f7d90cbbb" compoundref="stm32f10x__usart_8c" startline="813" endline="829">USART_OneBitMethodCmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga81a0cd36199040bf6d266b57babd678e" compoundref="stm32f10x__usart_8c" startline="842" endline="850">USART_IrDAConfig</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gabff56ebb494fdfadcc6ef4fe9ac8dd24" compoundref="stm32f10x__usart_8c" startline="861" endline="877">USART_IrDACmd</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga93d8f031241bcdbe938d091a85295445" compoundref="stm32f10x__usart_8c" startline="980" endline="1025">USART_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1aa893512291681dfbecc5baa899cfafbf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED5</definition>
+        <argsstring></argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1247" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1abe51502097b1fd281d0a2a1b157d769e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t USART_TypeDef::GTPR</definition>
+        <argsstring></argsstring>
+        <name>GTPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1248" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1248" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gac4a35c6acd71ae7e0d67c1f03f0a8777" compoundref="stm32f10x__usart_8c" startline="653" endline="662">USART_SetGuardTime</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1gaf5da8f2eee8245425584d85d4f62cc33" compoundref="stm32f10x__usart_8c" startline="673" endline="694">USART_SetPrescaler</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1acd89bb1cba0381c2be8a551e6d14e9f7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_TypeDef::RESERVED6</definition>
+        <argsstring></argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1249" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Universal Synchronous Asynchronous Receiver Transmitter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1235" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1234" bodyend="1250"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___type_def_1a2044eb2a0a8a731400d309741bceb2f7" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>BRR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a5de50313b1437f7f926093f00902d37a" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a2a494156d185762e4596696796c393bc" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a2b9d1df38cb1d745305c8190a8707a0f" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>CR3</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1accee34aaec89aad4aeef512bba173ae5" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>DR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1abe51502097b1fd281d0a2a1b157d769e" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>GTPR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a84ccd64c74c8dbc78b94172ce759de10" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a6d78680272a465db0ee43eba4e9c54f3" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1af2b7924854e56d0ebd3e8699dfd0e369" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a158066c974911c14efd7ea492ea31137" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a6ac527c7428ad8807a7740c1f33f0351" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1aa893512291681dfbecc5baa899cfafbf" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED5</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1acd89bb1cba0381c2be8a551e6d14e9f7" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RESERVED6</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a3f1fd9f0c004d3087caeba4815faa41c" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

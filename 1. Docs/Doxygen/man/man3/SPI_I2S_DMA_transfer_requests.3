@@ -1,0 +1,41 @@
+.TH "SPI_I2S_DMA_transfer_requests" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_I2S_DMA_transfer_requests
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_I2S_DMAReq_Tx\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_DMAReq_Rx\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_DMAREQ\fP(DMAREQ)   ((((DMAREQ) & (uint16_t)0xFFFC) == 0x00) && ((DMAREQ) != 0x00))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SPI_I2S_DMAREQ(DMAREQ)   ((((DMAREQ) & (uint16_t)0xFFFC) == 0x00) && ((DMAREQ) != 0x00))"
+
+.PP
+Definition at line 344 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_I2S_DMAReq_Rx   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 343 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_I2S_DMAReq_Tx   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 342 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

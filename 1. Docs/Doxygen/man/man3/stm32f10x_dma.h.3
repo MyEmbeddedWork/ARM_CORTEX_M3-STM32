@@ -1,0 +1,508 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dma.h \- This file contains all the functions prototypes for the DMA firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDMA_InitTypeDef\fP"
+.br
+.RI "DMA Init structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_DMA_ALL_PERIPH\fP(PERIPH)"
+.br
+.ti -1c
+.RI "#define \fBDMA_DIR_PeripheralDST\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA_DIR_PeripheralSRC\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_DIR\fP(DIR)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralInc_Enable\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralInc_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PERIPHERAL_INC_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBDMA_MemoryInc_Enable\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA_MemoryInc_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_MEMORY_INC_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralDataSize_Byte\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralDataSize_HalfWord\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralDataSize_Word\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PERIPHERAL_DATA_SIZE\fP(SIZE)"
+.br
+.ti -1c
+.RI "#define \fBDMA_MemoryDataSize_Byte\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_MemoryDataSize_HalfWord\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA_MemoryDataSize_Word\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_MEMORY_DATA_SIZE\fP(SIZE)"
+.br
+.ti -1c
+.RI "#define \fBDMA_Mode_Circular\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA_Mode_Normal\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_MODE\fP(MODE)   (((MODE) == \fBDMA_Mode_Circular\fP) || ((MODE) == \fBDMA_Mode_Normal\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA_Priority_VeryHigh\fP   ((uint32_t)0x00003000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_Priority_High\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_Priority_Medium\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_Priority_Low\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PRIORITY\fP(PRIORITY)"
+.br
+.ti -1c
+.RI "#define \fBDMA_M2M_Enable\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_M2M_Disable\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_M2M_STATE\fP(STATE)   (((STATE) == \fBDMA_M2M_Enable\fP) || ((STATE) == \fBDMA_M2M_Disable\fP))"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_TC\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_HT\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_TE\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_CONFIG_IT\fP(IT)   ((((IT) & 0xFFFFFFF1) == 0x00) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL1\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC1\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT1\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE1\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL2\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC2\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT2\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE2\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL3\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC3\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT3\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE3\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL4\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC4\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE4\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL5\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC5\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT5\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE5\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL6\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC6\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT6\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE6\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_GL7\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TC7\fP   ((uint32_t)0x02000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_HT7\fP   ((uint32_t)0x04000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_IT_TE7\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_GL1\fP   ((uint32_t)0x10000001)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TC1\fP   ((uint32_t)0x10000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_HT1\fP   ((uint32_t)0x10000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TE1\fP   ((uint32_t)0x10000008)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_GL2\fP   ((uint32_t)0x10000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TC2\fP   ((uint32_t)0x10000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_HT2\fP   ((uint32_t)0x10000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TE2\fP   ((uint32_t)0x10000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_GL3\fP   ((uint32_t)0x10000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TC3\fP   ((uint32_t)0x10000200)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_HT3\fP   ((uint32_t)0x10000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TE3\fP   ((uint32_t)0x10000800)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_GL4\fP   ((uint32_t)0x10001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TC4\fP   ((uint32_t)0x10002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_HT4\fP   ((uint32_t)0x10004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TE4\fP   ((uint32_t)0x10008000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_GL5\fP   ((uint32_t)0x10010000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TC5\fP   ((uint32_t)0x10020000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_HT5\fP   ((uint32_t)0x10040000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_IT_TE5\fP   ((uint32_t)0x10080000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_CLEAR_IT\fP(IT)   (((((IT) & 0xF0000000) == 0x00) || (((IT) & 0xEFF00000) == 0x00)) && ((IT) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_GET_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL1\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC1\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT1\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE1\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL2\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC2\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT2\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE2\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL3\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC3\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT3\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE3\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL4\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC4\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT4\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE4\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL5\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC5\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT5\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE5\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL6\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC6\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT6\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE6\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_GL7\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TC7\fP   ((uint32_t)0x02000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_HT7\fP   ((uint32_t)0x04000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_FLAG_TE7\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL1\fP   ((uint32_t)0x10000001)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC1\fP   ((uint32_t)0x10000002)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT1\fP   ((uint32_t)0x10000004)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE1\fP   ((uint32_t)0x10000008)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL2\fP   ((uint32_t)0x10000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC2\fP   ((uint32_t)0x10000020)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT2\fP   ((uint32_t)0x10000040)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE2\fP   ((uint32_t)0x10000080)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL3\fP   ((uint32_t)0x10000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC3\fP   ((uint32_t)0x10000200)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT3\fP   ((uint32_t)0x10000400)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE3\fP   ((uint32_t)0x10000800)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL4\fP   ((uint32_t)0x10001000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC4\fP   ((uint32_t)0x10002000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT4\fP   ((uint32_t)0x10004000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE4\fP   ((uint32_t)0x10008000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_GL5\fP   ((uint32_t)0x10010000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TC5\fP   ((uint32_t)0x10020000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_HT5\fP   ((uint32_t)0x10040000)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_FLAG_TE5\fP   ((uint32_t)0x10080000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_CLEAR_FLAG\fP(FLAG)   (((((FLAG) & 0xF0000000) == 0x00) || (((FLAG) & 0xEFF00000) == 0x00)) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_GET_FLAG\fP(FLAG)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_BUFFER_SIZE\fP(SIZE)   (((SIZE) >= 0x1) && ((SIZE) < 0x10000))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDMA_DeInit\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx)"
+.br
+.RI "Deinitializes the DMAy Channelx registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBDMA_Init\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, \fBDMA_InitTypeDef\fP *DMA_InitStruct)"
+.br
+.RI "Initializes the DMAy Channelx according to the specified parameters in the DMA_InitStruct\&. "
+.ti -1c
+.RI "void \fBDMA_StructInit\fP (\fBDMA_InitTypeDef\fP *DMA_InitStruct)"
+.br
+.RI "Fills each DMA_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBDMA_Cmd\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DMAy Channelx\&. "
+.ti -1c
+.RI "void \fBDMA_ITConfig\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, uint32_t DMA_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified DMAy Channelx interrupts\&. "
+.ti -1c
+.RI "void \fBDMA_SetCurrDataCounter\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx, uint16_t DataNumber)"
+.br
+.RI "Sets the number of data units in the current DMAy Channelx transfer\&. "
+.ti -1c
+.RI "uint16_t \fBDMA_GetCurrDataCounter\fP (\fBDMA_Channel_TypeDef\fP *DMAy_Channelx)"
+.br
+.RI "Returns the number of remaining data units in the current DMAy Channelx transfer\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBDMA_GetFlagStatus\fP (uint32_t DMAy_FLAG)"
+.br
+.RI "Checks whether the specified DMAy Channelx flag is set or not\&. "
+.ti -1c
+.RI "void \fBDMA_ClearFlag\fP (uint32_t DMAy_FLAG)"
+.br
+.RI "Clears the DMAy Channelx's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBDMA_GetITStatus\fP (uint32_t DMAy_IT)"
+.br
+.RI "Checks whether the specified DMAy Channelx interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBDMA_ClearITPendingBit\fP (uint32_t DMAy_IT)"
+.br
+.RI "Clears the DMAy Channelx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the DMA firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_dma\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

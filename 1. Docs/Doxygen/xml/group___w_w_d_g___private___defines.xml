@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___w_w_d_g___private___defines" kind="group">
+    <compoundname>WWDG_Private_Defines</compoundname>
+    <title>WWDG_Private_Defines</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1gab6dcdf2385dd7317ec775e146cff40ca" prot="public" static="no">
+        <name>WWDG_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1ga9a5bf4728ab93dea5b569f5b972cbe62" kindref="member">WWDG_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1ga3e0f9d9f7f69a6d133bba721e25aca4a" prot="public" static="no">
+        <name>CFR_OFFSET</name>
+        <initializer>(<ref refid="group___w_w_d_g___private___defines_1gab6dcdf2385dd7317ec775e146cff40ca" kindref="member">WWDG_OFFSET</ref> + 0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="51" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1ga97c9005823520f5aaefe211923b48215" prot="public" static="no">
+        <name>EWI_BitNumber</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="52" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1gaa48804210cea547f0e0f4ca49c44fc94" prot="public" static="no">
+        <name>CFR_EWI_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___w_w_d_g___private___defines_1ga3e0f9d9f7f69a6d133bba721e25aca4a" kindref="member">CFR_OFFSET</ref> * 32) + (<ref refid="group___w_w_d_g___private___defines_1ga97c9005823520f5aaefe211923b48215" kindref="member">EWI_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1ga4c66a66daa0e09782e8b2248db9b35f6" prot="public" static="no">
+        <name>CR_WDGA_Set</name>
+        <initializer>((uint32_t)0x00000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1ga2b74f53d33f15b272b2d1ef78a78a2cc" prot="public" static="no">
+        <name>CFR_WDGTB_Mask</name>
+        <initializer>((uint32_t)0xFFFFFE7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1gac00816db9fe6715f702b4f7d6085ce30" prot="public" static="no">
+        <name>CFR_W_Mask</name>
+        <initializer>((uint32_t)0xFFFFFF80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___private___defines_1ga01a4e07e98e933af78671f65a49bd836" prot="public" static="no">
+        <name>BIT_Mask</name>
+        <initializer>((uint8_t)0x7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" line="63" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

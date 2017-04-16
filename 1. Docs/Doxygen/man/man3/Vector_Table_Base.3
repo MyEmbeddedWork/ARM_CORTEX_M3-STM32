@@ -1,0 +1,46 @@
+.TH "Vector_Table_Base" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Vector_Table_Base
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBNVIC_VectTab_RAM\fP   ((uint32_t)0x20000000)"
+.br
+.ti -1c
+.RI "#define \fBNVIC_VectTab_FLASH\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_VECTTAB\fP(VECTTAB)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_NVIC_VECTTAB(VECTTAB)"
+\fBValue:\fP
+.PP
+.nf
+(((VECTTAB) == NVIC_VectTab_RAM) || \
+                                  ((VECTTAB) == NVIC_VectTab_FLASH))
+.fi
+.PP
+Definition at line 117 of file misc\&.h\&.
+.SS "#define NVIC_VectTab_FLASH   ((uint32_t)0x08000000)"
+
+.PP
+Definition at line 116 of file misc\&.h\&.
+.SS "#define NVIC_VectTab_RAM   ((uint32_t)0x20000000)"
+
+.PP
+Definition at line 115 of file misc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

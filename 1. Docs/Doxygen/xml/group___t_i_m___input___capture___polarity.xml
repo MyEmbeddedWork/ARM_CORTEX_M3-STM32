@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___input___capture___polarity" kind="group">
+    <compoundname>TIM_Input_Capture_Polarity</compoundname>
+    <title>TIM_Input_Capture_Polarity</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___input___capture___polarity_1gabe598596b7dbcac446a4918105fa95a6" prot="public" static="no">
+        <name>TIM_ICPolarity_Rising</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="559" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___polarity_1ga70c6f5ed30a236bac4c690928e742243" prot="public" static="no">
+        <name>TIM_ICPolarity_Falling</name>
+        <initializer>((uint16_t)0x0002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="560" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___polarity_1ga4632a6425d407c0d28b610b2d31cccc8" prot="public" static="no">
+        <name>TIM_ICPolarity_BothEdge</name>
+        <initializer>((uint16_t)0x000A)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="561" column="10" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___polarity_1ga6aff2fe442fd9662a0bb8731134cda89" prot="public" static="no">
+        <name>IS_TIM_IC_POLARITY</name>
+        <param><defname>POLARITY</defname></param>
+        <initializer>(((POLARITY) == <ref refid="group___t_i_m___input___capture___polarity_1gabe598596b7dbcac446a4918105fa95a6" kindref="member">TIM_ICPolarity_Rising</ref>) || \
+                                      ((POLARITY) == <ref refid="group___t_i_m___input___capture___polarity_1ga70c6f5ed30a236bac4c690928e742243" kindref="member">TIM_ICPolarity_Falling</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="562" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___input___capture___polarity_1gaaae722dd6c33a224df267c703824b94c" prot="public" static="no">
+        <name>IS_TIM_IC_POLARITY_LITE</name>
+        <param><defname>POLARITY</defname></param>
+        <initializer>(((POLARITY) == <ref refid="group___t_i_m___input___capture___polarity_1gabe598596b7dbcac446a4918105fa95a6" kindref="member">TIM_ICPolarity_Rising</ref>) || \
+                                           ((POLARITY) == <ref refid="group___t_i_m___input___capture___polarity_1ga70c6f5ed30a236bac4c690928e742243" kindref="member">TIM_ICPolarity_Falling</ref>)|| \
+                                           ((POLARITY) == <ref refid="group___t_i_m___input___capture___polarity_1ga4632a6425d407c0d28b610b2d31cccc8" kindref="member">TIM_ICPolarity_BothEdge</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="564" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

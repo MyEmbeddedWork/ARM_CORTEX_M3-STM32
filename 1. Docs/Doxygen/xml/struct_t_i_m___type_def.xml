@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_t_i_m___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a410988826004fdd21d55071215144ba9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1188" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1188" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2bdc275bcbd2ce9d1ba632e6c89896b7" compoundref="stm32f10x__tim_8c" startline="806" endline="822">TIM_Cmd</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga93941c1db20bf3794f377307df90a67b" compoundref="stm32f10x__tim_8c" startline="1199" endline="1212">TIM_CounterModeConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga42b44b9fc2b0798d733720dd6bac1ac0" compoundref="stm32f10x__tim_8c" startline="1409" endline="1424">TIM_ARRPreloadConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gace2384dd33e849a054f61b8e1fc7e7c3" compoundref="stm32f10x__tim_8c" startline="2103" endline="2118">TIM_UpdateDisableConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1d7a8f952e209de142499e67a653fc1f" compoundref="stm32f10x__tim_8c" startline="2131" endline="2146">TIM_UpdateRequestConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gadd2cca5fac6c1291dc4339098d5c9562" compoundref="stm32f10x__tim_8c" startline="2181" endline="2190">TIM_SelectOnePulseMode</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga20ef804dc32c723662d11ee7da3baab2" compoundref="stm32f10x__tim_8c" startline="2452" endline="2461">TIM_SetClockDivision</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a88caad1e82960cc6df99d935ece26c1b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1189" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a954eb69fd4e2e6b43ba6c80986f691d8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1190" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1190" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaff2e7f9959b1b36e830df028c14accc8" compoundref="stm32f10x__tim_8c" startline="1433" endline="1448">TIM_SelectCOM</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga5273cb65acb885fe7982827b1c6b7d75" compoundref="stm32f10x__tim_8c" startline="1458" endline="1473">TIM_SelectCCDMA</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0a935254e44312b1d78e8684a58db3c1" compoundref="stm32f10x__tim_8c" startline="1483" endline="1498">TIM_CCPreloadControl</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga42c2d1025a3937c9d9f38631af86ffa4" compoundref="stm32f10x__tim_8c" startline="2155" endline="2170">TIM_SelectHallSensor</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga28745aaa549e2067e42c19569209e6c6" compoundref="stm32f10x__tim_8c" startline="2213" endline="2222">TIM_SelectOutputTrigger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a59c46ac3a56c6966a7f8f379a2fd1e3e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1191" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a476012f1b4567ffc21ded0b5fd50985e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::SMCR</definition>
+        <argsstring></argsstring>
+        <name>SMCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1192" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1192" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga2394f0221709c0659874f9a4184cf86e" compoundref="stm32f10x__tim_8c" startline="989" endline="995">TIM_InternalClockConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gabef227d21d9e121e6a4ec5ab6223f5a9" compoundref="stm32f10x__tim_8c" startline="1008" endline="1017">TIM_ITRxExternalClockConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga47c05638b93aabcd641dbc8859e1b2df" compoundref="stm32f10x__tim_8c" startline="1075" endline="1098">TIM_ETRClockMode1Config</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0a9cbcbab32326cbbdaf4c111f59ec20" compoundref="stm32f10x__tim_8c" startline="1117" endline="1129">TIM_ETRClockMode2Config</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga8bdde400b7a30f3e747fe8e4962c0abe" compoundref="stm32f10x__tim_8c" startline="1148" endline="1164">TIM_ETRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga4252583c6ae8a73d6fc66f7e951dbc35" compoundref="stm32f10x__tim_8c" startline="1229" endline="1243">TIM_SelectInputTrigger</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0fc7e76c47a3bd1ba1ebc71427832b51" compoundref="stm32f10x__tim_8c" startline="1264" endline="1304">TIM_EncoderInterfaceConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2f19ce1d90990691cf037e419ba08003" compoundref="stm32f10x__tim_8c" startline="2236" endline="2245">TIM_SelectSlaveMode</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga4dcc3d11b670c381d0ff9cb7e9fd01e2" compoundref="stm32f10x__tim_8c" startline="2257" endline="2267">TIM_SelectMasterSlaveMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1af62f86f55f2a387518f3de10d916eb7c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1193" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a25b145e57a694bb384eee08fcd107c3a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::DIER</definition>
+        <argsstring></argsstring>
+        <name>DIER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1194" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1194" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga70e3d6c09d55ee69002e154c85cd40e4" compoundref="stm32f10x__tim_8c" startline="872" endline="889">TIM_ITConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga24700389cfa3ea9b42234933b23f1399" compoundref="stm32f10x__tim_8c" startline="964" endline="981">TIM_DMACmd</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0827a0b411707304f76d33050727c24d" compoundref="stm32f10x__tim_8c" startline="2643" endline="2663">TIM_GetITStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a8f952613a22049f3ea2b50b7e0d10472" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1195" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1af686e22c1792dc59dfeffe451d47cf13" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1196" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1196" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga0adcbbd5e838ec8642e7a9b80075f41f" compoundref="stm32f10x__tim_8c" startline="2567" endline="2583">TIM_GetFlagStatus</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga46568c7b254941dc53e785342d60baf3" compoundref="stm32f10x__tim_8c" startline="2611" endline="2619">TIM_ClearFlag</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0827a0b411707304f76d33050727c24d" compoundref="stm32f10x__tim_8c" startline="2643" endline="2663">TIM_GetITStatus</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga9eb1e95af71ed380f51a2c6d585cc5d6" compoundref="stm32f10x__tim_8c" startline="2687" endline="2694">TIM_ClearITPendingBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a36afe894c9b0878347d0c038c80e4c22" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1197" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a724fd21b7131fb9ac78c1b661dee3a8d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::EGR</definition>
+        <argsstring></argsstring>
+        <name>EGR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1198" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1198" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga38bd4ffda920dd4f7655a0a2c6100a6e" compoundref="stm32f10x__tim_8c" startline="909" endline="917">TIM_GenerateEvent</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga45c6fd9041baf7f64c121e0172f305c7" compoundref="stm32f10x__tim_8c" startline="1176" endline="1185">TIM_PrescalerConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a15944db86d7a7a69db35512f68eca15c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED5</definition>
+        <argsstring></argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1199" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a9094f9bb312461d2fc1499f5f8d91c64" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCMR1</definition>
+        <argsstring></argsstring>
+        <name>CCMR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1200" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1200" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0fc7e76c47a3bd1ba1ebc71427832b51" compoundref="stm32f10x__tim_8c" startline="1264" endline="1304">TIM_EncoderInterfaceConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga4f58c12e6493a0d8b9555c9097b831d6" compoundref="stm32f10x__tim_8c" startline="1315" endline="1328">TIM_ForcedOC1Config</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga3d2902b6fbab8dd55cd531055ffcc63d" compoundref="stm32f10x__tim_8c" startline="1339" endline="1352">TIM_ForcedOC2Config</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga60e6c29ad8f919bef616cf8e3306dd64" compoundref="stm32f10x__tim_8c" startline="1509" endline="1522">TIM_OC1PreloadConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga75b4614c6dd2cd52f2c5becdb6590c10" compoundref="stm32f10x__tim_8c" startline="1534" endline="1547">TIM_OC2PreloadConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaec82031ca62f31f5483195c09752a83a" compoundref="stm32f10x__tim_8c" startline="1606" endline="1620">TIM_OC1FastConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga413359c87f46c69f1ffe2dc8fb3a65e7" compoundref="stm32f10x__tim_8c" startline="1632" endline="1646">TIM_OC2FastConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga34e926cd8a99cfcc7480b2d6de5118b6" compoundref="stm32f10x__tim_8c" startline="1707" endline="1722">TIM_ClearOC1Ref</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gac474ebc815d24c8a589969e0c68b27b0" compoundref="stm32f10x__tim_8c" startline="1733" endline="1746">TIM_ClearOC2Ref</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaf0f684dea88e222de9689d8ed0ca8805" compoundref="stm32f10x__tim_8c" startline="2364" endline="2373">TIM_SetIC1Prescaler</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga3cc4869b5fe73271808512c89322a325" compoundref="stm32f10x__tim_8c" startline="2386" endline="2395">TIM_SetIC2Prescaler</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a7fd09a4911f813464a454b507832a0b9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED6</definition>
+        <argsstring></argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1201" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a22bb9f39aae46365d3ec3c5973f90039" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCMR2</definition>
+        <argsstring></argsstring>
+        <name>CCMR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1202" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1202" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga920b0fb4ca44fceffd1c3e441feebd8f" compoundref="stm32f10x__tim_8c" startline="1363" endline="1376">TIM_ForcedOC3Config</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaf0a0bbe74251e56d4b835d20b0a3aa63" compoundref="stm32f10x__tim_8c" startline="1387" endline="1400">TIM_ForcedOC4Config</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga8b2391685a519e60e596b7d596f86f09" compoundref="stm32f10x__tim_8c" startline="1558" endline="1571">TIM_OC3PreloadConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga8bf4dfb35ff0c7b494dd96579f50b1ec" compoundref="stm32f10x__tim_8c" startline="1582" endline="1595">TIM_OC4PreloadConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gab2f3698e6e56bd9b0a4be7056ba789e1" compoundref="stm32f10x__tim_8c" startline="1657" endline="1671">TIM_OC3FastConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga58279a04e8ea5333f1079d3cce8dde12" compoundref="stm32f10x__tim_8c" startline="1682" endline="1696">TIM_OC4FastConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0bd9476a14bd346c319945ec4fa2bc67" compoundref="stm32f10x__tim_8c" startline="1757" endline="1770">TIM_ClearOC3Ref</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaeee5fa66b26e7c6f71850272dc3028f3" compoundref="stm32f10x__tim_8c" startline="1781" endline="1794">TIM_ClearOC4Ref</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga76f906383b8132ebe00dffadb70cf7f9" compoundref="stm32f10x__tim_8c" startline="2408" endline="2417">TIM_SetIC3Prescaler</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0f2c784271356d6b64b8c0da64dbdbc2" compoundref="stm32f10x__tim_8c" startline="2430" endline="2439">TIM_SetIC4Prescaler</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a4157fa8f6e188281292f019ea24f5599" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED7</definition>
+        <argsstring></argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1203" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a2a7ebf9d3041dc20da591668d916f5bc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCER</definition>
+        <argsstring></argsstring>
+        <name>CCER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1204" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1204" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0fc7e76c47a3bd1ba1ebc71427832b51" compoundref="stm32f10x__tim_8c" startline="1264" endline="1304">TIM_EncoderInterfaceConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga03878f78163485c8a3508cff2111c297" compoundref="stm32f10x__tim_8c" startline="1805" endline="1817">TIM_OC1PolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga3cb91578e7dd34ea7d09862482960445" compoundref="stm32f10x__tim_8c" startline="1828" endline="1841">TIM_OC1NPolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga6831cacaac1ef50291af94db94450797" compoundref="stm32f10x__tim_8c" startline="1852" endline="1864">TIM_OC2PolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga2fa6ea3a89f446b52b4e699272b70cad" compoundref="stm32f10x__tim_8c" startline="1875" endline="1888">TIM_OC2NPolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga1ef43b03fe666495e80aac9741ae7ab0" compoundref="stm32f10x__tim_8c" startline="1899" endline="1911">TIM_OC3PolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gac710acc5b682e892584fc6f089f61dc2" compoundref="stm32f10x__tim_8c" startline="1922" endline="1936">TIM_OC3NPolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gad678410f7c7244f83daad93ce9d1056e" compoundref="stm32f10x__tim_8c" startline="1947" endline="1959">TIM_OC4PolarityConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga3ecc4647d9ede261beb5e0535cf29ebb" compoundref="stm32f10x__tim_8c" startline="1980" endline="1996">TIM_CCxCmd</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga304ff7c8a1615498da749bf2507e9f2b" compoundref="stm32f10x__tim_8c" startline="2010" endline="2026">TIM_CCxNCmd</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga83ea0af5a7c1af521236ce5e4d2c42b0" compoundref="stm32f10x__tim_8c" startline="2051" endline="2089">TIM_SelectOCxM</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ac708e4f0f142ac14d7e1c46778ed6f96" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED8</definition>
+        <argsstring></argsstring>
+        <name>RESERVED8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1205" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ad6920b90862a061dd50b13760cb07e68" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CNT</definition>
+        <argsstring></argsstring>
+        <name>CNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1206" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1206" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gaad2c31dc9c551b48f08b96ba49c4aa44" compoundref="stm32f10x__tim_8c" startline="2275" endline="2281">TIM_SetCounter</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gab6826b144ae70e206f51ae8af5318a93" compoundref="stm32f10x__tim_8c" startline="2520" endline="2526">TIM_GetCounter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a6754dd714ff0885e8e511977d2f393ce" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED9</definition>
+        <argsstring></argsstring>
+        <name>RESERVED9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1207" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ad58e05db30d309608402a69d87c36505" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::PSC</definition>
+        <argsstring></argsstring>
+        <name>PSC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1208" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1208" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga45c6fd9041baf7f64c121e0172f305c7" compoundref="stm32f10x__tim_8c" startline="1176" endline="1185">TIM_PrescalerConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga427eb6e533480e02a27cd0ca876183d6" compoundref="stm32f10x__tim_8c" startline="2533" endline="2539">TIM_GetPrescaler</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ab0e228ff39a37b472aa48ba3afd18333" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED10</definition>
+        <argsstring></argsstring>
+        <name>RESERVED10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1209" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a32ceda49b331ef9f61567ef9ffdf045e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::ARR</definition>
+        <argsstring></argsstring>
+        <name>ARR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1210" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1210" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga7880e4c00002d6421f9059a2ed841d5c" compoundref="stm32f10x__tim_8c" startline="2289" endline="2295">TIM_SetAutoreload</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a7a96436f300141eb48768ffa90ee6e71" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED11</definition>
+        <argsstring></argsstring>
+        <name>RESERVED11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1211" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1aa6957ece6ee709031ab5241d6019fcce" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::RCR</definition>
+        <argsstring></argsstring>
+        <name>RCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1212" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1212" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga83fd58c9416802d9638bbe1715c98932" compoundref="stm32f10x__tim_8c" startline="226" endline="269">TIM_TimeBaseInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a994061b8b26ae9b2e8ddb981cb3eec11" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED12</definition>
+        <argsstring></argsstring>
+        <name>RESERVED12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1213" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a537cdfa9f0229951c2d624be6de74977" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCR1</definition>
+        <argsstring></argsstring>
+        <name>CCR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1214" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1214" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gafcdb6ff00158862aef7fed5e7a554a3e" compoundref="stm32f10x__tim_8c" startline="279" endline="351">TIM_OC1Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gab3a6031f187cb8af62eb09a67b4fd2ad" compoundref="stm32f10x__tim_8c" startline="2303" endline="2309">TIM_SetCompare1</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga29eb9f7151ceea94c3988539a5ee91cf" compoundref="stm32f10x__tim_8c" startline="2468" endline="2474">TIM_GetCapture1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a5a831b0a42a5428fbbfd550b7a9c8108" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED13</definition>
+        <argsstring></argsstring>
+        <name>RESERVED13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1215" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ae72bdd579eec96a3b863fb1720195f50" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCR2</definition>
+        <argsstring></argsstring>
+        <name>CCR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1216" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1216" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga2017455121d910d6ff63ac6f219842c5" compoundref="stm32f10x__tim_8c" startline="362" endline="434">TIM_OC2Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga0175ef4fabade443909002a63d4e9758" compoundref="stm32f10x__tim_8c" startline="2317" endline="2323">TIM_SetCompare2</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga437fcf00ee9d0a9df9150cc120efc5ad" compoundref="stm32f10x__tim_8c" startline="2481" endline="2487">TIM_GetCapture2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a548510ebbe395a3947dbbc49fcccec0d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED14</definition>
+        <argsstring></argsstring>
+        <name>RESERVED14</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1217" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ad8c1bcb20bf3080af8440994a247cc9c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCR3</definition>
+        <argsstring></argsstring>
+        <name>CCR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1218" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1218" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30" compoundref="stm32f10x__tim_8c" startline="444" endline="513">TIM_OC3Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga416df50f4223351e366ae40a4ec163ae" compoundref="stm32f10x__tim_8c" startline="2331" endline="2337">TIM_SetCompare3</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gab71d1d3d8a15f3be9e74dca51fcca5fa" compoundref="stm32f10x__tim_8c" startline="2494" endline="2500">TIM_GetCapture3</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1af3eef319e095eadf480919b02c899dbd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED15</definition>
+        <argsstring></argsstring>
+        <name>RESERVED15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1219" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a858fde116b024a952326715731650bc2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::CCR4</definition>
+        <argsstring></argsstring>
+        <name>CCR4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1220" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1220" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga64571ebbb58cac39a9e760050175f11c" compoundref="stm32f10x__tim_8c" startline="523" endline="577">TIM_OC4Init</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1gaf428edf474804691d6f587e78c97a082" compoundref="stm32f10x__tim_8c" startline="2345" endline="2351">TIM_SetCompare4</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga09049af04c8345849c6f82ccfae242a6" compoundref="stm32f10x__tim_8c" startline="2507" endline="2513">TIM_GetCapture4</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ada594311432f31830545027e195980ed" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED16</definition>
+        <argsstring></argsstring>
+        <name>RESERVED16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1221" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a32bbedb8b418359c6873375ec949cf8b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::BDTR</definition>
+        <argsstring></argsstring>
+        <name>BDTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1222" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1222" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1ga3df4ba3f0727f63ce621e2b2e6035d4f" compoundref="stm32f10x__tim_8c" startline="712" endline="728">TIM_BDTRConfig</referencedby>
+        <referencedby refid="group___t_i_m___private___functions_1ga3e59ebced2ab8e0b817c460f1670e97d" compoundref="stm32f10x__tim_8c" startline="831" endline="846">TIM_CtrlPWMOutputs</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1aad6f1eb74535c7cda84b8ad8cb76d65e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED17</definition>
+        <argsstring></argsstring>
+        <name>RESERVED17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1223" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ad3186a43824621f049e7eff37c88ad4e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::DCR</definition>
+        <argsstring></argsstring>
+        <name>DCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1224" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1224" bodyend="-1"/>
+        <referencedby refid="group___t_i_m___private___functions_1gad7156f84c436c8ac92cd789611826d09" compoundref="stm32f10x__tim_8c" startline="937" endline="945">TIM_DMAConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a5f03da5369c7b0bf10fd480011b12718" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED18</definition>
+        <argsstring></argsstring>
+        <name>RESERVED18</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1225" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a4e0fbb52e6dd4bdabcb3f3b2f4bae40c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TIM_TypeDef::DMAR</definition>
+        <argsstring></argsstring>
+        <name>DMAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1226" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a58477bdaaf8fcbcd9c8411729daaf535" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TIM_TypeDef::RESERVED19</definition>
+        <argsstring></argsstring>
+        <name>RESERVED19</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1227" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TIM. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1187" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1186" bodyend="1228"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___type_def_1a32ceda49b331ef9f61567ef9ffdf045e" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>ARR</name></member>
+      <member refid="struct_t_i_m___type_def_1a32bbedb8b418359c6873375ec949cf8b" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>BDTR</name></member>
+      <member refid="struct_t_i_m___type_def_1a2a7ebf9d3041dc20da591668d916f5bc" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCER</name></member>
+      <member refid="struct_t_i_m___type_def_1a9094f9bb312461d2fc1499f5f8d91c64" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCMR1</name></member>
+      <member refid="struct_t_i_m___type_def_1a22bb9f39aae46365d3ec3c5973f90039" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCMR2</name></member>
+      <member refid="struct_t_i_m___type_def_1a537cdfa9f0229951c2d624be6de74977" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR1</name></member>
+      <member refid="struct_t_i_m___type_def_1ae72bdd579eec96a3b863fb1720195f50" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR2</name></member>
+      <member refid="struct_t_i_m___type_def_1ad8c1bcb20bf3080af8440994a247cc9c" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR3</name></member>
+      <member refid="struct_t_i_m___type_def_1a858fde116b024a952326715731650bc2" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR4</name></member>
+      <member refid="struct_t_i_m___type_def_1ad6920b90862a061dd50b13760cb07e68" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CNT</name></member>
+      <member refid="struct_t_i_m___type_def_1a410988826004fdd21d55071215144ba9" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_t_i_m___type_def_1a954eb69fd4e2e6b43ba6c80986f691d8" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_t_i_m___type_def_1ad3186a43824621f049e7eff37c88ad4e" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>DCR</name></member>
+      <member refid="struct_t_i_m___type_def_1a25b145e57a694bb384eee08fcd107c3a" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>DIER</name></member>
+      <member refid="struct_t_i_m___type_def_1a4e0fbb52e6dd4bdabcb3f3b2f4bae40c" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>DMAR</name></member>
+      <member refid="struct_t_i_m___type_def_1a724fd21b7131fb9ac78c1b661dee3a8d" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>EGR</name></member>
+      <member refid="struct_t_i_m___type_def_1ad58e05db30d309608402a69d87c36505" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>PSC</name></member>
+      <member refid="struct_t_i_m___type_def_1aa6957ece6ee709031ab5241d6019fcce" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RCR</name></member>
+      <member refid="struct_t_i_m___type_def_1a88caad1e82960cc6df99d935ece26c1b" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_t_i_m___type_def_1a59c46ac3a56c6966a7f8f379a2fd1e3e" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_t_i_m___type_def_1ab0e228ff39a37b472aa48ba3afd18333" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED10</name></member>
+      <member refid="struct_t_i_m___type_def_1a7a96436f300141eb48768ffa90ee6e71" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED11</name></member>
+      <member refid="struct_t_i_m___type_def_1a994061b8b26ae9b2e8ddb981cb3eec11" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED12</name></member>
+      <member refid="struct_t_i_m___type_def_1a5a831b0a42a5428fbbfd550b7a9c8108" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED13</name></member>
+      <member refid="struct_t_i_m___type_def_1a548510ebbe395a3947dbbc49fcccec0d" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED14</name></member>
+      <member refid="struct_t_i_m___type_def_1af3eef319e095eadf480919b02c899dbd" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED15</name></member>
+      <member refid="struct_t_i_m___type_def_1ada594311432f31830545027e195980ed" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED16</name></member>
+      <member refid="struct_t_i_m___type_def_1aad6f1eb74535c7cda84b8ad8cb76d65e" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED17</name></member>
+      <member refid="struct_t_i_m___type_def_1a5f03da5369c7b0bf10fd480011b12718" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED18</name></member>
+      <member refid="struct_t_i_m___type_def_1a58477bdaaf8fcbcd9c8411729daaf535" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED19</name></member>
+      <member refid="struct_t_i_m___type_def_1af62f86f55f2a387518f3de10d916eb7c" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_t_i_m___type_def_1a8f952613a22049f3ea2b50b7e0d10472" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_t_i_m___type_def_1a36afe894c9b0878347d0c038c80e4c22" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_t_i_m___type_def_1a15944db86d7a7a69db35512f68eca15c" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED5</name></member>
+      <member refid="struct_t_i_m___type_def_1a7fd09a4911f813464a454b507832a0b9" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED6</name></member>
+      <member refid="struct_t_i_m___type_def_1a4157fa8f6e188281292f019ea24f5599" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED7</name></member>
+      <member refid="struct_t_i_m___type_def_1ac708e4f0f142ac14d7e1c46778ed6f96" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED8</name></member>
+      <member refid="struct_t_i_m___type_def_1a6754dd714ff0885e8e511977d2f393ce" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RESERVED9</name></member>
+      <member refid="struct_t_i_m___type_def_1a476012f1b4567ffc21ded0b5fd50985e" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>SMCR</name></member>
+      <member refid="struct_t_i_m___type_def_1af686e22c1792dc59dfeffe451d47cf13" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

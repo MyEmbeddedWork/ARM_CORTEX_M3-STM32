@@ -1,0 +1,62 @@
+.TH "I2S_Data_Format" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2S_Data_Format
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2S_DataFormat_16b\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_16bextended\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_24b\fP   ((uint16_t)0x0003)"
+.br
+.ti -1c
+.RI "#define \fBI2S_DataFormat_32b\fP   ((uint16_t)0x0005)"
+.br
+.ti -1c
+.RI "#define \fBIS_I2S_DATA_FORMAT\fP(FORMAT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2S_DataFormat_16b   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 280 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_DataFormat_16bextended   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 281 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_DataFormat_24b   ((uint16_t)0x0003)"
+
+.PP
+Definition at line 282 of file stm32f10x_spi\&.h\&.
+.SS "#define I2S_DataFormat_32b   ((uint16_t)0x0005)"
+
+.PP
+Definition at line 283 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_I2S_DATA_FORMAT(FORMAT)"
+\fBValue:\fP
+.PP
+.nf
+(((FORMAT) == I2S_DataFormat_16b) || \
+                                    ((FORMAT) == I2S_DataFormat_16bextended) || \
+                                    ((FORMAT) == I2S_DataFormat_24b) || \
+                                    ((FORMAT) == I2S_DataFormat_32b))
+.fi
+.PP
+Definition at line 284 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

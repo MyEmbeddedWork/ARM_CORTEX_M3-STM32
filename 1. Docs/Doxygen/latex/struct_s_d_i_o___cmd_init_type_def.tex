@@ -1,0 +1,84 @@
+\hypertarget{struct_s_d_i_o___cmd_init_type_def}{}\section{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def Struct Reference}
+\label{struct_s_d_i_o___cmd_init_type_def}\index{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}}
+
+
+{\ttfamily \#include $<$stm32f10x\+\_\+sdio.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_d_i_o___cmd_init_type_def_a37dfc4d7191ec10cffdb05ecf58d4807}{S\+D\+I\+O\+\_\+\+Argument}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_d_i_o___cmd_init_type_def_ab5e1df1f0e8d48a308edfb59a6f80fb4}{S\+D\+I\+O\+\_\+\+Cmd\+Index}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_d_i_o___cmd_init_type_def_aecb203e21321126d5f05c34787cacfd2}{S\+D\+I\+O\+\_\+\+Response}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_d_i_o___cmd_init_type_def_a582258554233ff8550bd04d2d790c67c}{S\+D\+I\+O\+\_\+\+Wait}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_d_i_o___cmd_init_type_def_ab0e869ae285cc132478dd743c28cd8e2}{S\+D\+I\+O\+\_\+\+C\+P\+SM}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 76 of file stm32f10x\+\_\+sdio.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_a37dfc4d7191ec10cffdb05ecf58d4807}\label{struct_s_d_i_o___cmd_init_type_def_a37dfc4d7191ec10cffdb05ecf58d4807}} 
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}!S\+D\+I\+O\+\_\+\+Argument@{S\+D\+I\+O\+\_\+\+Argument}}
+\index{S\+D\+I\+O\+\_\+\+Argument@{S\+D\+I\+O\+\_\+\+Argument}!S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Argument}{SDIO\_Argument}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def\+::\+S\+D\+I\+O\+\_\+\+Argument}
+
+Specifies the S\+D\+IO command argument which is sent to a card as part of a command message. If a command contains an argument, it must be loaded into this register before writing the command to the command register 
+
+Definition at line 78 of file stm32f10x\+\_\+sdio.\+h.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_ab5e1df1f0e8d48a308edfb59a6f80fb4}\label{struct_s_d_i_o___cmd_init_type_def_ab5e1df1f0e8d48a308edfb59a6f80fb4}} 
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}!S\+D\+I\+O\+\_\+\+Cmd\+Index@{S\+D\+I\+O\+\_\+\+Cmd\+Index}}
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Index@{S\+D\+I\+O\+\_\+\+Cmd\+Index}!S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Cmd\+Index}{SDIO\_CmdIndex}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def\+::\+S\+D\+I\+O\+\_\+\+Cmd\+Index}
+
+Specifies the S\+D\+IO command index. It must be lower than 0x40. 
+
+Definition at line 83 of file stm32f10x\+\_\+sdio.\+h.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_ab0e869ae285cc132478dd743c28cd8e2}\label{struct_s_d_i_o___cmd_init_type_def_ab0e869ae285cc132478dd743c28cd8e2}} 
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}!S\+D\+I\+O\+\_\+\+C\+P\+SM@{S\+D\+I\+O\+\_\+\+C\+P\+SM}}
+\index{S\+D\+I\+O\+\_\+\+C\+P\+SM@{S\+D\+I\+O\+\_\+\+C\+P\+SM}!S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+C\+P\+SM}{SDIO\_CPSM}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def\+::\+S\+D\+I\+O\+\_\+\+C\+P\+SM}
+
+Specifies whether S\+D\+IO Command path state machine (C\+P\+SM) is enabled or disabled. This parameter can be a value of \hyperlink{group___s_d_i_o___c_p_s_m___state}{S\+D\+I\+O\+\_\+\+C\+P\+S\+M\+\_\+\+State} 
+
+Definition at line 91 of file stm32f10x\+\_\+sdio.\+h.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_aecb203e21321126d5f05c34787cacfd2}\label{struct_s_d_i_o___cmd_init_type_def_aecb203e21321126d5f05c34787cacfd2}} 
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}!S\+D\+I\+O\+\_\+\+Response@{S\+D\+I\+O\+\_\+\+Response}}
+\index{S\+D\+I\+O\+\_\+\+Response@{S\+D\+I\+O\+\_\+\+Response}!S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Response}{SDIO\_Response}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def\+::\+S\+D\+I\+O\+\_\+\+Response}
+
+Specifies the S\+D\+IO response type. This parameter can be a value of \hyperlink{group___s_d_i_o___response___type}{S\+D\+I\+O\+\_\+\+Response\+\_\+\+Type} 
+
+Definition at line 85 of file stm32f10x\+\_\+sdio.\+h.
+
+\mbox{\Hypertarget{struct_s_d_i_o___cmd_init_type_def_a582258554233ff8550bd04d2d790c67c}\label{struct_s_d_i_o___cmd_init_type_def_a582258554233ff8550bd04d2d790c67c}} 
+\index{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}!S\+D\+I\+O\+\_\+\+Wait@{S\+D\+I\+O\+\_\+\+Wait}}
+\index{S\+D\+I\+O\+\_\+\+Wait@{S\+D\+I\+O\+\_\+\+Wait}!S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def@{S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def}}
+\subsubsection{\texorpdfstring{S\+D\+I\+O\+\_\+\+Wait}{SDIO\_Wait}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Cmd\+Init\+Type\+Def\+::\+S\+D\+I\+O\+\_\+\+Wait}
+
+Specifies whether S\+D\+IO wait-\/for-\/interrupt request is enabled or disabled. This parameter can be a value of \hyperlink{group___s_d_i_o___wait___interrupt___state}{S\+D\+I\+O\+\_\+\+Wait\+\_\+\+Interrupt\+\_\+\+State} 
+
+Definition at line 88 of file stm32f10x\+\_\+sdio.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/anilj/\+Desktop/cmsis/sorc/system/include/stm32f1-\/stdperiph/\hyperlink{stm32f10x__sdio_8h}{stm32f10x\+\_\+sdio.\+h}\end{DoxyCompactItemize}

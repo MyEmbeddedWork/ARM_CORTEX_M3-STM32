@@ -1,0 +1,47 @@
+.TH "arm_biquad_cascade_stereo_df2T_instance_f32" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_biquad_cascade_stereo_df2T_instance_f32 \- Instance structure for the floating-point transposed direct form II Biquad cascade filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBnumStages\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpCoeffs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the floating-point transposed direct form II Biquad cascade filter\&. 
+.PP
+Definition at line 3618 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t arm_biquad_cascade_stereo_df2T_instance_f32::numStages"
+number of 2nd order stages in the filter\&. Overall order is 2*numStages\&. 
+.PP
+Definition at line 3620 of file arm_math\&.h\&.
+.SS "\fBfloat32_t\fP* arm_biquad_cascade_stereo_df2T_instance_f32::pCoeffs"
+points to the array of coefficients\&. The array is of length 5*numStages\&. 
+.PP
+Definition at line 3622 of file arm_math\&.h\&.
+.SS "\fBfloat32_t\fP* arm_biquad_cascade_stereo_df2T_instance_f32::pState"
+points to the array of state coefficients\&. The array is of length 4*numStages\&. 
+.PP
+Definition at line 3621 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

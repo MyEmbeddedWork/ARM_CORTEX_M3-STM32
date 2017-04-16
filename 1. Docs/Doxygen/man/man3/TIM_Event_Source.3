@@ -1,0 +1,83 @@
+.TH "TIM_Event_Source" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Event_Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_EventSource_Update\fP   ((uint16_t)0x0001)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC1\fP   ((uint16_t)0x0002)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC2\fP   ((uint16_t)0x0004)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC3\fP   ((uint16_t)0x0008)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_CC4\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_COM\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_Trigger\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_EventSource_Break\fP   ((uint16_t)0x0080)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_EVENT_SOURCE\fP(SOURCE)   ((((SOURCE) & (uint16_t)0xFF00) == 0x0000) && ((SOURCE) != 0x0000))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_EVENT_SOURCE(SOURCE)   ((((SOURCE) & (uint16_t)0xFF00) == 0x0000) && ((SOURCE) != 0x0000))"
+
+.PP
+Definition at line 858 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_Break   ((uint16_t)0x0080)"
+
+.PP
+Definition at line 857 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_CC1   ((uint16_t)0x0002)"
+
+.PP
+Definition at line 851 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_CC2   ((uint16_t)0x0004)"
+
+.PP
+Definition at line 852 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_CC3   ((uint16_t)0x0008)"
+
+.PP
+Definition at line 853 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_CC4   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 854 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_COM   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 855 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_Trigger   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 856 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_EventSource_Update   ((uint16_t)0x0001)"
+
+.PP
+Definition at line 850 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

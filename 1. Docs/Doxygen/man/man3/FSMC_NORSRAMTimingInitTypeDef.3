@@ -1,0 +1,118 @@
+.TH "FSMC_NORSRAMTimingInitTypeDef" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_NORSRAMTimingInitTypeDef \- Timing parameters For NOR/SRAM Banks\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32f10x_fsmc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBFSMC_AddressSetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_AddressHoldTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_DataSetupTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_BusTurnAroundDuration\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_CLKDivision\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_DataLatency\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFSMC_AccessMode\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Timing parameters For NOR/SRAM Banks\&. 
+.PP
+Definition at line 50 of file stm32f10x_fsmc\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_AccessMode"
+Specifies the asynchronous access mode\&. This parameter can be a value of \fBFSMC_Access_Mode\fP 
+.PP
+Definition at line 84 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_AddressHoldTime"
+Defines the number of HCLK cycles to configure the duration of the address hold time\&. This parameter can be a value between 0 and 0xF\&. 
+.PP
+\fBNote:\fP
+.RS 4
+: It is not used with synchronous NOR Flash memories\&. 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_AddressSetupTime"
+Defines the number of HCLK cycles to configure the duration of the address setup time\&. This parameter can be a value between 0 and 0xF\&. 
+.PP
+\fBNote:\fP
+.RS 4
+: It is not used with synchronous NOR Flash memories\&. 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_BusTurnAroundDuration"
+Defines the number of HCLK cycles to configure the duration of the bus turnaround\&. This parameter can be a value between 0 and 0xF\&. 
+.PP
+\fBNote:\fP
+.RS 4
+: It is only used for multiplexed NOR Flash memories\&. 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_CLKDivision"
+Defines the period of CLK clock output signal, expressed in number of HCLK cycles\&. This parameter can be a value between 1 and 0xF\&. 
+.PP
+\fBNote:\fP
+.RS 4
+: This parameter is not used for asynchronous NOR Flash, SRAM or ROM accesses\&. 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_DataLatency"
+Defines the number of memory clock cycles to issue to the memory before getting the first data\&. The value of this parameter depends on the memory type as shown below:
+.IP "\(bu" 2
+It must be set to 0 in case of a CRAM
+.IP "\(bu" 2
+It is don't care in asynchronous NOR, SRAM or ROM accesses
+.IP "\(bu" 2
+It may assume a value between 0 and 0xF in NOR Flash memories with synchronous burst mode enable 
+.PP
+
+.PP
+Definition at line 76 of file stm32f10x_fsmc\&.h\&.
+.SS "uint32_t FSMC_NORSRAMTimingInitTypeDef::FSMC_DataSetupTime"
+Defines the number of HCLK cycles to configure the duration of the data setup time\&. This parameter can be a value between 0 and 0xFF\&. 
+.PP
+\fBNote:\fP
+.RS 4
+: It is used for SRAMs, ROMs and asynchronous multiplexed NOR Flash memories\&. 
+.RE
+.PP
+
+.PP
+Definition at line 62 of file stm32f10x_fsmc\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

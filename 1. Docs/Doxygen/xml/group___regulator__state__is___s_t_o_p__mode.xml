@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___regulator__state__is___s_t_o_p__mode" kind="group">
+    <compoundname>Regulator_state_is_STOP_mode</compoundname>
+    <title>Regulator_state_is_STOP_mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___regulator__state__is___s_t_o_p__mode_1gabf58b999bff6b4bf0fb5b97d74a75683" prot="public" static="no">
+        <name>PWR_Regulator_ON</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="78" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___regulator__state__is___s_t_o_p__mode_1ga13745136d094661358d373b67ebf1ac7" prot="public" static="no">
+        <name>PWR_Regulator_LowPower</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="79" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___regulator__state__is___s_t_o_p__mode_1ga03c105070272141c0bab5f2b74469072" prot="public" static="no">
+        <name>IS_PWR_REGULATOR</name>
+        <param><defname>REGULATOR</defname></param>
+        <initializer>(((REGULATOR) == <ref refid="group___regulator__state__is___s_t_o_p__mode_1gabf58b999bff6b4bf0fb5b97d74a75683" kindref="member">PWR_Regulator_ON</ref>) || \
+                                     ((REGULATOR) == <ref refid="group___regulator__state__is___s_t_o_p__mode_1ga13745136d094661358d373b67ebf1ac7" kindref="member">PWR_Regulator_LowPower</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="80" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

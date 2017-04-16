@@ -1,0 +1,54 @@
+.TH "CAN_Operating_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CAN_Operating_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAN_OperatingMode_Initialization\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCAN_OperatingMode_Normal\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBCAN_OperatingMode_Sleep\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBIS_CAN_OPERATING_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAN_OperatingMode_Initialization   ((uint8_t)0x00)"
+Initialization mode 
+.PP
+Definition at line 247 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_OperatingMode_Normal   ((uint8_t)0x01)"
+Normal mode 
+.PP
+Definition at line 248 of file stm32f10x_can\&.h\&.
+.SS "#define CAN_OperatingMode_Sleep   ((uint8_t)0x02)"
+sleep mode 
+.PP
+Definition at line 249 of file stm32f10x_can\&.h\&.
+.SS "#define IS_CAN_OPERATING_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == CAN_OperatingMode_Initialization) ||\
+                                    ((MODE) == CAN_OperatingMode_Normal)|| \
+                                                                        ((MODE) == CAN_OperatingMode_Sleep))
+.fi
+.PP
+Definition at line 252 of file stm32f10x_can\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

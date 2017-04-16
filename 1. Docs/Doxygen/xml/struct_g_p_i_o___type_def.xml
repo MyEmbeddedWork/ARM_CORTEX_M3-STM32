@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_g_p_i_o___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>GPIO_TypeDef</compoundname>
+    <includes refid="stm32f10x_8h" local="no">stm32f10x.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a218d21e9ca712cec4ca8f00406b2ec29" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::CRL</definition>
+        <argsstring></argsstring>
+        <name>CRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1003" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1003" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1afe53502a3dbf9e7dcf9ac83f67ac481d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::CRH</definition>
+        <argsstring></argsstring>
+        <name>CRH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1004" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1004" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1acf11156409414ad8841bb0b62959ee96" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::IDR</definition>
+        <argsstring></argsstring>
+        <name>IDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1005" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1005" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga98772ef6b639b3fa06c8ae5ba28d3aaa" compoundref="stm32f10x__gpio_8c" startline="281" endline="298">GPIO_ReadInputDataBit</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga139a33adc8409288e9f193bbebb5a0f7" compoundref="stm32f10x__gpio_8c" startline="305" endline="311">GPIO_ReadInputData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a6fb78f4a978a36032cdeac93ac3c9c8b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::ODR</definition>
+        <argsstring></argsstring>
+        <name>ODR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1006" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1006" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga138270f8695b105b7c6ed405792919c1" compoundref="stm32f10x__gpio_8c" startline="320" endline="336">GPIO_ReadOutputDataBit</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1gaf8938a34280b7dc3e39872a7c17bb323" compoundref="stm32f10x__gpio_8c" startline="343" endline="349">GPIO_ReadOutputData</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1gaa925f19c8547a00c7a0c269a84873bf9" compoundref="stm32f10x__gpio_8c" startline="417" endline="423">GPIO_Write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1acd6f21e08912b484c030ca8b18e11cd6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::BSRR</definition>
+        <argsstring></argsstring>
+        <name>BSRR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1007" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1007" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga9e1352eed7c6620e18af2d86f6b6ff8e" compoundref="stm32f10x__gpio_8c" startline="358" endline="365">GPIO_SetBits</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga8f7b237fd744d9f7456fbe0da47a9b80" compoundref="stm32f10x__gpio_8c" startline="394" endline="409">GPIO_WriteBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1aab918bfbfae459789db1fd0b220c7f21" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::BRR</definition>
+        <argsstring></argsstring>
+        <name>BRR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1008" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1008" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga71abf9404261370d03cca449b88d3a65" compoundref="stm32f10x__gpio_8c" startline="173" endline="258">GPIO_Init</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga6fcd35b207a66608dd2c9d7de9247dc8" compoundref="stm32f10x__gpio_8c" startline="374" endline="381">GPIO_ResetBits</referencedby>
+        <referencedby refid="group___g_p_i_o___private___functions_1ga8f7b237fd744d9f7456fbe0da47a9b80" compoundref="stm32f10x__gpio_8c" startline="394" endline="409">GPIO_WriteBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a95a59d4b1d52be521f3246028be32f3e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__sc300_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GPIO_TypeDef::LCKR</definition>
+        <argsstring></argsstring>
+        <name>LCKR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1009" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1009" bodyend="-1"/>
+        <referencedby refid="group___g_p_i_o___private___functions_1gad2f2e615928c69fd0d8c641a7cedaafc" compoundref="stm32f10x__gpio_8c" startline="432" endline="451">GPIO_PinLockConfig</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>General Purpose I/O. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" line="1002" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/stm32f10x.h" bodystart="1001" bodyend="1010"/>
+    <listofallmembers>
+      <member refid="struct_g_p_i_o___type_def_1aab918bfbfae459789db1fd0b220c7f21" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>BRR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1acd6f21e08912b484c030ca8b18e11cd6" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>BSRR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1afe53502a3dbf9e7dcf9ac83f67ac481d" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>CRH</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a218d21e9ca712cec4ca8f00406b2ec29" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>CRL</name></member>
+      <member refid="struct_g_p_i_o___type_def_1acf11156409414ad8841bb0b62959ee96" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>IDR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a95a59d4b1d52be521f3246028be32f3e" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>LCKR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a6fb78f4a978a36032cdeac93ac3c9c8b" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>ODR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

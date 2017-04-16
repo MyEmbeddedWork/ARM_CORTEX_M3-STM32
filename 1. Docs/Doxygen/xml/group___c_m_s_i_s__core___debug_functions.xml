@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_m_s_i_s__core___debug_functions" kind="group">
+    <compoundname>CMSIS_core_DebugFunctions</compoundname>
+    <title>ITM Functions</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>volatile int32_t ITM_RxBuffer</definition>
+        <argsstring></argsstring>
+        <name>ITM_RxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External variable to receive characters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1694" column="1"/>
+        <referencedby refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3387607fd8a1a32cccd77d2ac672dd96" compoundref="core__cm3_8h" startline="1606" endline="1617">NVIC_DecodePriority</referencedby>
+        <referencedby refid="group___c_m_s_i_s__core___debug_functions_1gac3ee2c30a1ac4ed34c8a866a17decd53" compoundref="core__cm3_8h" startline="1727" endline="1738">ITM_ReceiveChar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>volatile int32_t ITM_RxBuffer</definition>
+        <argsstring></argsstring>
+        <name>ITM_RxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External variable to receive characters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1868" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>volatile int32_t ITM_RxBuffer</definition>
+        <argsstring></argsstring>
+        <name>ITM_RxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External variable to receive characters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="2443" column="1"/>
+        <referencedby refid="group___c_m_s_i_s___core___cache_functions_1ga630131b2572eaa16b569ed364dfc895e" compoundref="core__cm7_8h" startline="2367" endline="2385">SCB_CleanInvalidateDCache_by_Addr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>volatile int32_t ITM_RxBuffer</definition>
+        <argsstring></argsstring>
+        <name>ITM_RxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External variable to receive characters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1668" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s__core___debug_functions_1gac90a497bd64286b84552c2c553d3419e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t ITM_SendChar</definition>
+        <argsstring>(uint32_t ch)</argsstring>
+        <name>ITM_SendChar</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>ITM Send Character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Transmits a character via the ITM channel 0, and <itemizedlist>
+<listitem><para>Just returns when no debugger is connected that has booked the output. </para></listitem>
+<listitem><para>Is blocking when a debugger is connected, but the previous character sent has not been transmitted. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Character to transmit. </para></simplesect>
+</para></listitem>
+</itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1706" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1706" bodyend="1718"/>
+        <references refid="group___c_m_s_i_s__core__base_1gabae7cdf882def602cb787bb039ff6a43" compoundref="core__cm3_8h" startline="1385">ITM</references>
+        <references refid="group___c_m_s_i_s___i_t_m_1ga7dd53e3bff24ac09d94e61cb595cb2d9" compoundref="core__cm3_8h" startline="809">ITM_TCR_ITMENA_Msk</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gabd585ddc865fb9b7f2493af1eee1a572" compoundref="cmsis__armcc_8h" startline="313">__NOP</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s__core___debug_functions_1gac3ee2c30a1ac4ed34c8a866a17decd53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE int32_t</type>
+        <definition>__STATIC_INLINE int32_t ITM_ReceiveChar</definition>
+        <argsstring>(void)</argsstring>
+        <name>ITM_ReceiveChar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>ITM Receive Character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Inputs a character via the external variable <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref>. <simplesect kind="return"><para>Received character. </para></simplesect>
+<simplesect kind="return"><para>-1 No character pending. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1727" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1727" bodyend="1738"/>
+        <references refid="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" compoundref="core__cm3_8h" startline="1695">ITM_RXBUFFER_EMPTY</references>
+        <references refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8">ITM_RxBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s__core___debug_functions_1gae61ce9ca5917735325cd93b0fb21dd29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__STATIC_INLINE int32_t</type>
+        <definition>__STATIC_INLINE int32_t ITM_CheckChar</definition>
+        <argsstring>(void)</argsstring>
+        <name>ITM_CheckChar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>ITM Check Character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks whether a character is pending for reading in the variable <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref>. <simplesect kind="return"><para>0 No character available. </para></simplesect>
+<simplesect kind="return"><para>1 Character available. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1747" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1747" bodyend="1758"/>
+        <references refid="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" compoundref="core__cm3_8h" startline="1695">ITM_RXBUFFER_EMPTY</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" prot="public" static="no">
+        <name>ITM_RXBUFFER_EMPTY</name>
+        <initializer>0x5AA55AA5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value identifying <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref> is ready for next character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" line="1695" column="25" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm3.h" bodystart="1695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" prot="public" static="no">
+        <name>ITM_RXBUFFER_EMPTY</name>
+        <initializer>0x5AA55AA5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value identifying <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref> is ready for next character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" line="1869" column="25" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm4.h" bodystart="1869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" prot="public" static="no">
+        <name>ITM_RXBUFFER_EMPTY</name>
+        <initializer>0x5AA55AA5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value identifying <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref> is ready for next character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" line="2444" column="25" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_cm7.h" bodystart="2444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" prot="public" static="no">
+        <name>ITM_RXBUFFER_EMPTY</name>
+        <initializer>0x5AA55AA5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value identifying <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref> is ready for next character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" line="1669" column="25" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/cmsis/core_sc300.h" bodystart="1669" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions that access the ITM debug interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

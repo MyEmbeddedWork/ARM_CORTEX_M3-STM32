@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c___s_m_bus__alert__pin__level" kind="group">
+    <compoundname>I2C_SMBus_alert_pin_level</compoundname>
+    <title>I2C_SMBus_alert_pin_level</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c___s_m_bus__alert__pin__level_1ga6f923166107afb8aad1d7d1a87048d6e" prot="public" static="no">
+        <name>I2C_SMBusAlert_Low</name>
+        <initializer>((uint16_t)0x2000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="180" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___s_m_bus__alert__pin__level_1gac3ab64f43ef90f0f83f9c88981aaa862" prot="public" static="no">
+        <name>I2C_SMBusAlert_High</name>
+        <initializer>((uint16_t)0xDFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="181" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c___s_m_bus__alert__pin__level_1ga61b0c91563eb4bd598329241fe7d3bb4" prot="public" static="no">
+        <name>IS_I2C_SMBUS_ALERT</name>
+        <param><defname>ALERT</defname></param>
+        <initializer>(((ALERT) == <ref refid="group___i2_c___s_m_bus__alert__pin__level_1ga6f923166107afb8aad1d7d1a87048d6e" kindref="member">I2C_SMBusAlert_Low</ref>) || \
+                                   ((ALERT) == <ref refid="group___i2_c___s_m_bus__alert__pin__level_1gac3ab64f43ef90f0f83f9c88981aaa862" kindref="member">I2C_SMBusAlert_High</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="182" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

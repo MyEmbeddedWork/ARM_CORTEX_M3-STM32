@@ -1,0 +1,151 @@
+.TH "CMSIS_core_DebugFunctions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_core_DebugFunctions \- Functions that access the ITM debug interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBITM_RXBUFFER_EMPTY\fP   0x5AA55AA5U"
+.br
+.ti -1c
+.RI "#define \fBITM_RXBUFFER_EMPTY\fP   0x5AA55AA5U"
+.br
+.ti -1c
+.RI "#define \fBITM_RXBUFFER_EMPTY\fP   0x5AA55AA5U"
+.br
+.ti -1c
+.RI "#define \fBITM_RXBUFFER_EMPTY\fP   0x5AA55AA5U"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "__STATIC_INLINE uint32_t \fBITM_SendChar\fP (uint32_t ch)"
+.br
+.RI "ITM Send Character\&. "
+.ti -1c
+.RI "__STATIC_INLINE int32_t \fBITM_ReceiveChar\fP (void)"
+.br
+.RI "ITM Receive Character\&. "
+.ti -1c
+.RI "__STATIC_INLINE int32_t \fBITM_CheckChar\fP (void)"
+.br
+.RI "ITM Check Character\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBvolatile\fP int32_t \fBITM_RxBuffer\fP"
+.br
+.ti -1c
+.RI "\fBvolatile\fP int32_t \fBITM_RxBuffer\fP"
+.br
+.ti -1c
+.RI "\fBvolatile\fP int32_t \fBITM_RxBuffer\fP"
+.br
+.ti -1c
+.RI "\fBvolatile\fP int32_t \fBITM_RxBuffer\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Functions that access the ITM debug interface\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ITM_RXBUFFER_EMPTY   0x5AA55AA5U"
+Value identifying \fBITM_RxBuffer\fP is ready for next character\&. 
+.PP
+Definition at line 1669 of file core_sc300\&.h\&.
+.SS "#define ITM_RXBUFFER_EMPTY   0x5AA55AA5U"
+Value identifying \fBITM_RxBuffer\fP is ready for next character\&. 
+.PP
+Definition at line 1695 of file core_cm3\&.h\&.
+.SS "#define ITM_RXBUFFER_EMPTY   0x5AA55AA5U"
+Value identifying \fBITM_RxBuffer\fP is ready for next character\&. 
+.PP
+Definition at line 1869 of file core_cm4\&.h\&.
+.SS "#define ITM_RXBUFFER_EMPTY   0x5AA55AA5U"
+Value identifying \fBITM_RxBuffer\fP is ready for next character\&. 
+.PP
+Definition at line 2444 of file core_cm7\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "__STATIC_INLINE int32_t ITM_CheckChar (void)"
+
+.PP
+ITM Check Character\&. Checks whether a character is pending for reading in the variable \fBITM_RxBuffer\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+0 No character available\&. 
+.PP
+1 Character available\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1747 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE int32_t ITM_ReceiveChar (void)"
+
+.PP
+ITM Receive Character\&. Inputs a character via the external variable \fBITM_RxBuffer\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Received character\&. 
+.PP
+-1 No character pending\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1727 of file core_cm3\&.h\&.
+.SS "__STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)"
+
+.PP
+ITM Send Character\&. Transmits a character via the ITM channel 0, and 
+.PD 0
+
+.IP "\(bu" 2
+Just returns when no debugger is connected that has booked the output\&. 
+.IP "\(bu" 2
+Is blocking when a debugger is connected, but the previous character sent has not been transmitted\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP Character to transmit\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Character to transmit\&. 
+.RE
+.PP
+
+.PP
+
+.PP
+Definition at line 1706 of file core_cm3\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBvolatile\fP int32_t ITM_RxBuffer"
+External variable to receive characters\&. 
+.SS "\fBvolatile\fP int32_t ITM_RxBuffer"
+External variable to receive characters\&. 
+.SS "\fBvolatile\fP int32_t ITM_RxBuffer"
+External variable to receive characters\&. 
+.SS "\fBvolatile\fP int32_t ITM_RxBuffer"
+External variable to receive characters\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

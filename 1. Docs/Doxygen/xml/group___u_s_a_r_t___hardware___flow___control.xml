@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___u_s_a_r_t___hardware___flow___control" kind="group">
+    <compoundname>USART_Hardware_Flow_Control</compoundname>
+    <title>USART_Hardware_Flow_Control</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_a_r_t___hardware___flow___control_1gaf3deaf4429b88db7753ee203f4797bd3" prot="public" static="no">
+        <name>USART_HardwareFlowControl_None</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="184" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___hardware___flow___control_1ga22d4339693e3356d992abca259b0418e" prot="public" static="no">
+        <name>USART_HardwareFlowControl_RTS</name>
+        <initializer>((uint16_t)0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="185" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___hardware___flow___control_1ga4d989f112f94009c0849fe4dbe829d81" prot="public" static="no">
+        <name>USART_HardwareFlowControl_CTS</name>
+        <initializer>((uint16_t)0x0200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="186" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___hardware___flow___control_1ga2986aed8c6cba414ac8afe0180ab553e" prot="public" static="no">
+        <name>USART_HardwareFlowControl_RTS_CTS</name>
+        <initializer>((uint16_t)0x0300)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="187" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_a_r_t___hardware___flow___control_1ga9b905eb465780173a2e98bc8b602c030" prot="public" static="no">
+        <name>IS_USART_HARDWARE_FLOW_CONTROL</name>
+        <param><defname>CONTROL</defname></param>
+        <initializer>(((CONTROL) == <ref refid="group___u_s_a_r_t___hardware___flow___control_1gaf3deaf4429b88db7753ee203f4797bd3" kindref="member">USART_HardwareFlowControl_None</ref>) || \
+                               ((CONTROL) == <ref refid="group___u_s_a_r_t___hardware___flow___control_1ga22d4339693e3356d992abca259b0418e" kindref="member">USART_HardwareFlowControl_RTS</ref>) || \
+                               ((CONTROL) == <ref refid="group___u_s_a_r_t___hardware___flow___control_1ga4d989f112f94009c0849fe4dbe829d81" kindref="member">USART_HardwareFlowControl_CTS</ref>) || \
+                               ((CONTROL) == <ref refid="group___u_s_a_r_t___hardware___flow___control_1ga2986aed8c6cba414ac8afe0180ab553e" kindref="member">USART_HardwareFlowControl_RTS_CTS</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="188" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

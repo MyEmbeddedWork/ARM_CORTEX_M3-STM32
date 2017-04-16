@@ -1,0 +1,148 @@
+.TH "CEC_flags_definition" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEC_flags_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCEC_FLAG_BTE\fP   ((uint32_t)0x10010000)"
+.br
+.RI "ESR register flags\&. "
+.ti -1c
+.RI "#define \fBCEC_FLAG_BPE\fP   ((uint32_t)0x10020000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RBTFE\fP   ((uint32_t)0x10040000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_SBE\fP   ((uint32_t)0x10080000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_ACKE\fP   ((uint32_t)0x10100000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_LINE\fP   ((uint32_t)0x10200000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_TBTFE\fP   ((uint32_t)0x10400000)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_TEOM\fP   ((uint32_t)0x00000002)"
+.br
+.RI "CSR register flags\&. "
+.ti -1c
+.RI "#define \fBCEC_FLAG_TERR\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_TBTRF\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RSOM\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_REOM\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RERR\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBCEC_FLAG_RBTF\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_CLEAR_FLAG\fP(FLAG)   ((((FLAG) & (uint32_t)0xFFFFFF03) == 0x00) && ((FLAG) != 0x00))"
+.br
+.ti -1c
+.RI "#define \fBIS_CEC_GET_FLAG\fP(FLAG)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CEC_FLAG_ACKE   ((uint32_t)0x10100000)"
+
+.PP
+Definition at line 133 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_BPE   ((uint32_t)0x10020000)"
+
+.PP
+Definition at line 130 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_BTE   ((uint32_t)0x10010000)"
+
+.PP
+ESR register flags\&. 
+.PP
+Definition at line 129 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_LINE   ((uint32_t)0x10200000)"
+
+.PP
+Definition at line 134 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_RBTF   ((uint32_t)0x00000080)"
+
+.PP
+Definition at line 146 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_RBTFE   ((uint32_t)0x10040000)"
+
+.PP
+Definition at line 131 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_REOM   ((uint32_t)0x00000020)"
+
+.PP
+Definition at line 144 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_RERR   ((uint32_t)0x00000040)"
+
+.PP
+Definition at line 145 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_RSOM   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 143 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_SBE   ((uint32_t)0x10080000)"
+
+.PP
+Definition at line 132 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_TBTFE   ((uint32_t)0x10400000)"
+
+.PP
+Definition at line 135 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_TBTRF   ((uint32_t)0x00000008)"
+
+.PP
+Definition at line 142 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_TEOM   ((uint32_t)0x00000002)"
+
+.PP
+CSR register flags\&. 
+.PP
+Definition at line 140 of file stm32f10x_cec\&.h\&.
+.SS "#define CEC_FLAG_TERR   ((uint32_t)0x00000004)"
+
+.PP
+Definition at line 141 of file stm32f10x_cec\&.h\&.
+.SS "#define IS_CEC_CLEAR_FLAG(FLAG)   ((((FLAG) & (uint32_t)0xFFFFFF03) == 0x00) && ((FLAG) != 0x00))"
+
+.PP
+Definition at line 148 of file stm32f10x_cec\&.h\&.
+.SS "#define IS_CEC_GET_FLAG(FLAG)"
+\fBValue:\fP
+.PP
+.nf
+(((FLAG) == CEC_FLAG_BTE) || ((FLAG) == CEC_FLAG_BPE) || \
+                               ((FLAG) == CEC_FLAG_RBTFE) || ((FLAG)== CEC_FLAG_SBE) || \
+                               ((FLAG) == CEC_FLAG_ACKE) || ((FLAG) == CEC_FLAG_LINE) || \
+                               ((FLAG) == CEC_FLAG_TBTFE) || ((FLAG) == CEC_FLAG_TEOM) || \
+                               ((FLAG) == CEC_FLAG_TERR) || ((FLAG) == CEC_FLAG_TBTRF) || \
+                               ((FLAG) == CEC_FLAG_RSOM) || ((FLAG) == CEC_FLAG_REOM) || \
+                               ((FLAG) == CEC_FLAG_RERR) || ((FLAG) == CEC_FLAG_RBTF))
+.fi
+.PP
+Definition at line 150 of file stm32f10x_cec\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

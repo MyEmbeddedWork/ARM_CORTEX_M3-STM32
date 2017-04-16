@@ -1,0 +1,1418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_l_a_s_h___private___functions" kind="group">
+    <compoundname>FLASH_Private_Functions</compoundname>
+    <title>FLASH_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga54bcb96270215c752c3479c8c9e438c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_SetLatency</definition>
+        <argsstring>(uint32_t FLASH_Latency)</argsstring>
+        <name>FLASH_SetLatency</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_Latency</declname>
+        </param>
+        <briefdescription>
+<para>Sets the code latency value. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">This<sp/>driver<sp/>provides<sp/>functions<sp/>to<sp/>configure<sp/>and<sp/>program<sp/>the<sp/>Flash<sp/>memory<sp/>of<sp/>all<sp/>STM32F10x<sp/>devices,</highlight></codeline>
+<codeline><highlight class="normal">including<sp/>the<sp/>latest<sp/>STM32F10x_XL<sp/>density<sp/>devices.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">STM32F10x_XL<sp/>devices<sp/>feature<sp/>up<sp/>to<sp/>1<sp/>Mbyte<sp/>with<sp/>dual<sp/>bank<sp/>architecture<sp/>for<sp/>read-while-write<sp/>(RWW)<sp/>capability:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>bank1:<sp/>fixed<sp/>size<sp/>of<sp/>512<sp/>Kbytes<sp/>(256<sp/>pages<sp/>of<sp/>2Kbytes<sp/>each)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>bank2:<sp/>up<sp/>to<sp/>512<sp/>Kbytes<sp/>(up<sp/>to<sp/>256<sp/>pages<sp/>of<sp/>2Kbytes<sp/>each)</highlight></codeline>
+<codeline><highlight class="normal">While<sp/>other<sp/>STM32F10x<sp/>devices<sp/>features<sp/>only<sp/>one<sp/>bank<sp/>with<sp/>memory<sp/>up<sp/>to<sp/>512<sp/>Kbytes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>version<sp/>V3.3.0,<sp/>some<sp/>functions<sp/>were<sp/>updated<sp/>and<sp/>new<sp/>ones<sp/>were<sp/>added<sp/>to<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">STM32F10x_XL<sp/>devices.<sp/>Thus<sp/>some<sp/>functions<sp/>manages<sp/>all<sp/>devices,<sp/>while<sp/>other<sp/>are<sp/></highlight></codeline>
+<codeline><highlight class="normal">dedicated<sp/>for<sp/>XL<sp/>devices<sp/>only.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>table<sp/>below<sp/>presents<sp/>the<sp/>list<sp/>of<sp/>available<sp/>functions<sp/>depending<sp/>on<sp/>the<sp/>used<sp/>STM32F10x<sp/>devices.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Legacy<sp/>functions<sp/>used<sp/>for<sp/>all<sp/>STM32F10x<sp/>devices<sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>+----------------------------------------------------------------------------------------------------------------------------------+</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Functions<sp/>prototypes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|STM32F10x_XL|Other<sp/>STM32F10x|<sp/><sp/><sp/><sp/>Comments<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>devices<sp/><sp/>|<sp/><sp/>devices<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_SetLatency<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_HalfCycleAccessCmd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_PrefetchBufferCmd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_Unlock<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10X_XL<sp/>devices:<sp/>unlock<sp/>Bank1<sp/>and<sp/>Bank2.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>unlock<sp/>Bank1<sp/>and<sp/>it<sp/>is<sp/>equivalent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>to<sp/>FLASH_UnlockBank1<sp/>function.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_Lock<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10X_XL<sp/>devices:<sp/>lock<sp/>Bank1<sp/>and<sp/>Bank2.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>lock<sp/>Bank1<sp/>and<sp/>it<sp/>is<sp/>equivalent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>to<sp/>FLASH_LockBank1<sp/>function.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ErasePage<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10x_XL<sp/>devices:<sp/>erase<sp/>a<sp/>page<sp/>in<sp/>Bank1<sp/>and<sp/>Bank2<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>erase<sp/>a<sp/>page<sp/>in<sp/>Bank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_EraseAllPages<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10x_XL<sp/>devices:<sp/>erase<sp/>all<sp/>pages<sp/>in<sp/>Bank1<sp/>and<sp/>Bank2<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>erase<sp/>all<sp/>pages<sp/>in<sp/>Bank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_EraseOptionBytes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ProgramWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Updated<sp/>to<sp/>program<sp/>up<sp/>to<sp/>1MByte<sp/>(depending<sp/>on<sp/>the<sp/>used<sp/>device)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ProgramHalfWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Updated<sp/>to<sp/>program<sp/>up<sp/>to<sp/>1MByte<sp/>(depending<sp/>on<sp/>the<sp/>used<sp/>device)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ProgramOptionByteData<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_EnableWriteProtection<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ReadOutProtection<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_UserOptionByteConfig<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_GetUserOptionByte<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_GetWriteProtectionOptionByte<sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_GetReadOutProtectionStatus<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_GetPrefetchBufferStatus<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>No<sp/>change<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ITConfig<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10x_XL<sp/>devices:<sp/>enable<sp/>Bank1<sp/>and<sp/>Bank2&apos;s<sp/>interrupts|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>enable<sp/>Bank1&apos;s<sp/>interrupts<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_GetFlagStatus<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10x_XL<sp/>devices:<sp/>return<sp/>Bank1<sp/>and<sp/>Bank2&apos;s<sp/>flag<sp/>status|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>return<sp/>Bank1&apos;s<sp/>flag<sp/>status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_ClearFlag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>STM32F10x_XL<sp/>devices:<sp/>clear<sp/>Bank1<sp/>and<sp/>Bank2&apos;s<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>For<sp/>other<sp/>devices:<sp/>clear<sp/>Bank1&apos;s<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_GetStatus<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Return<sp/>the<sp/>status<sp/>of<sp/>Bank1<sp/>(for<sp/>all<sp/>devices)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>equivalent<sp/>to<sp/>FLASH_GetBank1Status<sp/>function<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_WaitForLastOperation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Wait<sp/>for<sp/>Bank1<sp/>last<sp/>operation<sp/>(for<sp/>all<sp/>devices)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>equivalent<sp/>to:<sp/>FLASH_WaitForLastBank1Operation<sp/>function<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>+----------------------------------------------------------------------------------------------------------------------------------+</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>New<sp/>functions<sp/>used<sp/>for<sp/>all<sp/>STM32F10x<sp/>devices<sp/>to<sp/>manage<sp/>Bank1:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>These<sp/>functions<sp/>are<sp/>mainly<sp/>useful<sp/>for<sp/>STM32F10x_XL<sp/>density<sp/>devices,<sp/>to<sp/>have<sp/>separate<sp/>control<sp/>for<sp/>Bank1<sp/>and<sp/>bank2<sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>For<sp/>other<sp/>devices,<sp/>these<sp/>functions<sp/>are<sp/>optional<sp/>(covered<sp/>by<sp/>functions<sp/>listed<sp/>above)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>+----------------------------------------------------------------------------------------------------------------------------------+</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Functions<sp/>prototypes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|STM32F10x_XL|Other<sp/>STM32F10x|<sp/><sp/><sp/><sp/>Comments<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>devices<sp/><sp/>|<sp/><sp/>devices<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_UnlockBank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Unlock<sp/>Bank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_LockBank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Lock<sp/>Bank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_EraseAllBank1Pages<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Erase<sp/>all<sp/>pages<sp/>in<sp/>Bank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_GetBank1Status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Return<sp/>the<sp/>status<sp/>of<sp/>Bank1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_WaitForLastBank1Operation<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Wait<sp/>for<sp/>Bank1<sp/>last<sp/>operation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>+----------------------------------------------------------------------------------------------------------------------------------+</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>New<sp/>Functions<sp/>used<sp/>only<sp/>with<sp/>STM32F10x_XL<sp/>density<sp/>devices<sp/>to<sp/>manage<sp/>Bank2<sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>+----------------------------------------------------------------------------------------------------------------------------------+</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Functions<sp/>prototypes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|STM32F10x_XL|Other<sp/>STM32F10x|<sp/><sp/><sp/><sp/>Comments<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>devices<sp/><sp/>|<sp/><sp/>devices<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_UnlockBank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Unlock<sp/>Bank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|FLASH_LockBank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Lock<sp/>Bank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_EraseAllBank2Pages<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Erase<sp/>all<sp/>pages<sp/>in<sp/>Bank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_GetBank2Status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Return<sp/>the<sp/>status<sp/>of<sp/>Bank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_WaitForLastBank2Operation<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Wait<sp/>for<sp/>Bank2<sp/>last<sp/>operation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|----------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>|<sp/>FLASH_BootConfig<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Yes<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>-<sp/>Configure<sp/>to<sp/>boot<sp/>from<sp/>Bank1<sp/>or<sp/>Bank2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>+----------------------------------------------------------------------------------------------------------------------------------+</highlight></codeline>
+</programlisting> <simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_Latency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH Latency value. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FLASH_Latency_0: FLASH Zero Latency cycle </para></listitem>
+<listitem><para>FLASH_Latency_1: FLASH One Latency cycle </para></listitem>
+<listitem><para>FLASH_Latency_2: FLASH Two Latency cycles </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="254" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="254" bodyend="270"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___flash___latency_1gafcbd098d482318a622a58bf168547389" compoundref="stm32f10x__flash_8h" startline="74">IS_FLASH_LATENCY</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga5f1112c5731f01b063fdf2461efbedf7" compoundref="stm32f10x__flash_8c" startline="47">ACR_LATENCY_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga978103a57b37920ac01128e999f9ece6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_HalfCycleAccessCmd</definition>
+        <argsstring>(uint32_t FLASH_HalfCycleAccess)</argsstring>
+        <name>FLASH_HalfCycleAccessCmd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_HalfCycleAccess</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the Half cycle flash access. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_HalfCycleAccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH Half cycle Access mode. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FLASH_HalfCycleAccess_Enable: FLASH Half Cycle Enable </para></listitem>
+<listitem><para>FLASH_HalfCycleAccess_Disable: FLASH Half Cycle Disable </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="281" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="281" bodyend="289"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___half___cycle___enable___disable_1gad1b9e84a20436dcfe1a1ade4c26dc028" compoundref="stm32f10x__flash_8h" startline="87">IS_FLASH_HALFCYCLEACCESS_STATE</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga6b6f73163f3a90f5072b6b7dc9fb63b7" compoundref="stm32f10x__flash_8c" startline="48">ACR_HLFCYA_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga6b93faaf0f560bf8d662b2cefe2f70e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_PrefetchBufferCmd</definition>
+        <argsstring>(uint32_t FLASH_PrefetchBuffer)</argsstring>
+        <name>FLASH_PrefetchBufferCmd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_PrefetchBuffer</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the Prefetch Buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_PrefetchBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the Prefetch buffer status. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FLASH_PrefetchBuffer_Enable: FLASH Prefetch Buffer Enable </para></listitem>
+<listitem><para>FLASH_PrefetchBuffer_Disable: FLASH Prefetch Buffer Disable </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="300" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="300" bodyend="308"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___prefetch___buffer___enable___disable_1ga5fd6932c4f4e157a1d6e73d433df092f" compoundref="stm32f10x__flash_8h" startline="99">IS_FLASH_PREFETCHBUFFER_STATE</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaf95fa450690ce94c4f4357e4dd72791a" compoundref="stm32f10x__flash_8c" startline="49">ACR_PRFTBE_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga4084d0184bab463a1579271bf474aaef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_Unlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_Unlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unlocks the FLASH Program Erase Controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices this function unlocks Bank1 and Bank2.</para></listitem><listitem><para>For all other devices it unlocks Bank1 and it is equivalent to FLASH_UnlockBank1 function.. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="319" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="319" bodyend="330"/>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga358c4b7e0ef20693ca62cc9d20c94a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_UnlockBank1</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_UnlockBank1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unlocks the FLASH Bank1 Program Erase Controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices this function unlocks Bank1.</para></listitem><listitem><para>For all other devices it unlocks Bank1 and it is equivalent to FLASH_Unlock function. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="340" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="340" bodyend="345"/>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga46899557353c4312ddbe3f25e65df1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_Lock</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_Lock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Locks the FLASH Program Erase Controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices this function Locks Bank1 and Bank2.</para></listitem><listitem><para>For all other devices it Locks Bank1 and it is equivalent to FLASH_LockBank1 function. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="372" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="372" bodyend="381"/>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee27a8100366266daa8d3a69c589e4b9" compoundref="stm32f10x__flash_8c" startline="66">CR_LOCK_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gafe4188ab9eb12c046970660f65a3faf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_LockBank1</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_LockBank1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Locks the FLASH Bank1 Program Erase Controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>this function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices this function Locks Bank1.</para></listitem><listitem><para>For all other devices it Locks Bank1 and it is equivalent to FLASH_Lock function. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="392" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="392" bodyend="396"/>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee27a8100366266daa8d3a69c589e4b9" compoundref="stm32f10x__flash_8c" startline="66">CR_LOCK_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga13a2ca18bfb3d5fb827a2751799f8451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_ErasePage</definition>
+        <argsstring>(uint32_t Page_Address)</argsstring>
+        <name>FLASH_ErasePage</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Page_Address</declname>
+        </param>
+        <briefdescription>
+<para>Erases a specified FLASH page. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Page_Address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The page address to be erased. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="419" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="419" bodyend="483"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___option___bytes___write___protection_1gad0c8166ba15a0b8d458412a8bb74e2f0" compoundref="stm32f10x__flash_8h" startline="247">IS_FLASH_ADDRESS</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga54cf78f1be63ba209709bf8f781ccd01" compoundref="stm32f10x__flash_8c" startline="82">FLASH_BANK1_END_ADDRESS</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" compoundref="stm32f10x__flash_8c" startline="1645" endline="1663">FLASH_WaitForLastBank1Operation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga62b5515e9a29a487adcc30a88d082244" compoundref="stm32f10x__flash_8c" startline="85">EraseTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga6e5e45c62f559102546b40de50c700bd" compoundref="stm32f10x__flash_8c" startline="57">CR_PER_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0e6349818d8602ffffc56e5e04d9ab13" compoundref="stm32f10x__flash_8c" startline="65">CR_STRT_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gad564767c401a1a9c36b71342448fd256" compoundref="stm32f10x__flash_8c" startline="58">CR_PER_Reset</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gab2e6dea62c72b3e47c17512579d37498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_EraseAllPages</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_EraseAllPages</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Erases all FLASH pages. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="492" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="492" bodyend="543"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" compoundref="stm32f10x__flash_8c" startline="1645" endline="1663">FLASH_WaitForLastBank1Operation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga62b5515e9a29a487adcc30a88d082244" compoundref="stm32f10x__flash_8c" startline="85">EraseTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga7e5cf18b31b5ed960cd05a816cadf973" compoundref="stm32f10x__flash_8c" startline="59">CR_MER_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0e6349818d8602ffffc56e5e04d9ab13" compoundref="stm32f10x__flash_8c" startline="65">CR_STRT_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gabed855f33ff965c530c2b09a49a987f5" compoundref="stm32f10x__flash_8c" startline="60">CR_MER_Reset</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga2036728450ee18e789b25fe3fd9c80ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_EraseAllBank1Pages</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_EraseAllBank1Pages</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Erases all Bank1 FLASH pages. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices this function erases all Bank1 pages.</para></listitem><listitem><para>For all other devices it erases all Bank1 pages and it is equivalent to FLASH_EraseAllPages function. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="555" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="555" bodyend="575"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" compoundref="stm32f10x__flash_8c" startline="1645" endline="1663">FLASH_WaitForLastBank1Operation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga62b5515e9a29a487adcc30a88d082244" compoundref="stm32f10x__flash_8c" startline="85">EraseTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga7e5cf18b31b5ed960cd05a816cadf973" compoundref="stm32f10x__flash_8c" startline="59">CR_MER_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0e6349818d8602ffffc56e5e04d9ab13" compoundref="stm32f10x__flash_8c" startline="65">CR_STRT_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gabed855f33ff965c530c2b09a49a987f5" compoundref="stm32f10x__flash_8c" startline="60">CR_MER_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga152768609e85d74a9d8474be8dc2874b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_EraseOptionBytes</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_EraseOptionBytes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Erases the FLASH option bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This functions erases all option bytes except the Read protection (RDP). </para></simplesect>
+<simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="616" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="616" bodyend="671"/>
+        <references refid="group___f_l_a_s_h___private___defines_1ga34ec82060edcc9a18bf804b07dec5881" compoundref="stm32f10x__flash_8c" startline="77">RDP_Key</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga57fe56770ff25b358f3e36bd70632e37" compoundref="stm32f10x__flash_8c" startline="1262" endline="1274">FLASH_GetReadOutProtectionStatus</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga62b5515e9a29a487adcc30a88d082244" compoundref="stm32f10x__flash_8c" startline="85">EraseTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gac5707368555a5b7400eea1e306b62b16" compoundref="stm32f10x__flash_8c" startline="63">CR_OPTER_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0e6349818d8602ffffc56e5e04d9ab13" compoundref="stm32f10x__flash_8c" startline="65">CR_STRT_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0245cfe194895f1ad98ba66f8eda3e47" compoundref="stm32f10x__flash_8c" startline="64">CR_OPTER_Reset</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga84ec77ffaa2a83edeef385e3a36171f8" compoundref="stm32f10x__flash_8c" startline="61">CR_OPTPG_Set</references>
+        <references refid="group___peripheral__declaration_1gad2d5f875cdc6d696735f20fa23a895c3" compoundref="stm32f10x_8h" startline="1446">OB</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0794a43966b6084d28d13c651c739385" compoundref="stm32f10x__flash_8c" startline="86">ProgramTimeout</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga9dd2ca46f4e8edfa098e1481699c08b7" compoundref="stm32f10x__flash_8c" startline="62">CR_OPTPG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gaac9a2f400b92537bd42a6bd7cc237b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_ProgramWord</definition>
+        <argsstring>(uint32_t Address, uint32_t Data)</argsstring>
+        <name>FLASH_ProgramWord</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Address</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Programs a word at a specified address. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the address to be programmed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the data to be programmed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="687" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="687" bodyend="865"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___option___bytes___write___protection_1gad0c8166ba15a0b8d458412a8bb74e2f0" compoundref="stm32f10x__flash_8h" startline="247">IS_FLASH_ADDRESS</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga54cf78f1be63ba209709bf8f781ccd01" compoundref="stm32f10x__flash_8c" startline="82">FLASH_BANK1_END_ADDRESS</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" compoundref="stm32f10x__flash_8c" startline="1645" endline="1663">FLASH_WaitForLastBank1Operation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0794a43966b6084d28d13c651c739385" compoundref="stm32f10x__flash_8c" startline="86">ProgramTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaf4fdb45c4a4d30dcddc389ec920f720f" compoundref="stm32f10x__flash_8c" startline="55">CR_PG_Set</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gadda1a996e1867e911aaa7b0f30eb6834" compoundref="stm32f10x__flash_8c" startline="56">CR_PG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga5c1336f667950a8765887228f1d0d501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_ProgramHalfWord</definition>
+        <argsstring>(uint32_t Address, uint16_t Data)</argsstring>
+        <name>FLASH_ProgramHalfWord</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Programs a half word at a specified address. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the address to be programmed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the data to be programmed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="880" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="880" bodyend="940"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___option___bytes___write___protection_1gad0c8166ba15a0b8d458412a8bb74e2f0" compoundref="stm32f10x__flash_8h" startline="247">IS_FLASH_ADDRESS</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0794a43966b6084d28d13c651c739385" compoundref="stm32f10x__flash_8c" startline="86">ProgramTimeout</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga54cf78f1be63ba209709bf8f781ccd01" compoundref="stm32f10x__flash_8c" startline="82">FLASH_BANK1_END_ADDRESS</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaf4fdb45c4a4d30dcddc389ec920f720f" compoundref="stm32f10x__flash_8c" startline="55">CR_PG_Set</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" compoundref="stm32f10x__flash_8c" startline="1645" endline="1663">FLASH_WaitForLastBank1Operation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gadda1a996e1867e911aaa7b0f30eb6834" compoundref="stm32f10x__flash_8c" startline="56">CR_PG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga1382ff9d4ded8a5c076fde4fff529d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_ProgramOptionByteData</definition>
+        <argsstring>(uint32_t Address, uint8_t Data)</argsstring>
+        <name>FLASH_ProgramOptionByteData</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+<para>Programs a half word at a specified Option Byte Data address. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the address to be programmed. This parameter can be 0x1FFFF804 or 0x1FFFF806. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the data to be programmed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="951" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="951" bodyend="977"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___option___bytes___write___protection_1ga73fcac8d5f301a5c98518374ae926633" compoundref="stm32f10x__flash_8h" startline="249">IS_OB_DATA_ADDRESS</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0794a43966b6084d28d13c651c739385" compoundref="stm32f10x__flash_8c" startline="86">ProgramTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga84ec77ffaa2a83edeef385e3a36171f8" compoundref="stm32f10x__flash_8c" startline="61">CR_OPTPG_Set</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga9dd2ca46f4e8edfa098e1481699c08b7" compoundref="stm32f10x__flash_8c" startline="62">CR_OPTPG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gabad10c15e2d1ff1cb9e1083d08a9e763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_EnableWriteProtection</definition>
+        <argsstring>(uint32_t FLASH_Pages)</argsstring>
+        <name>FLASH_EnableWriteProtection</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_Pages</declname>
+        </param>
+        <briefdescription>
+<para>Write protects the desired pages. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_Pages</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the address of the pages to be write protected. This parameter can be: <itemizedlist>
+<listitem><para>For <bold>STM32_Low-density_devices</bold>: value between FLASH_WRProt_Pages0to3 and FLASH_WRProt_Pages28to31 </para></listitem>
+<listitem><para>For <bold>STM32_Medium-density_devices</bold>: value between FLASH_WRProt_Pages0to3 and FLASH_WRProt_Pages124to127 </para></listitem>
+<listitem><para>For <bold>STM32_High-density_devices</bold>: value between FLASH_WRProt_Pages0to1 and FLASH_WRProt_Pages60to61 or FLASH_WRProt_Pages62to255 </para></listitem>
+<listitem><para>For <bold>STM32_Connectivity_line_devices:</bold> value between FLASH_WRProt_Pages0to1 and FLASH_WRProt_Pages60to61 or FLASH_WRProt_Pages62to127 </para></listitem>
+<listitem><para>For <bold>STM32_XL-density_devices</bold>: value between FLASH_WRProt_Pages0to1 and FLASH_WRProt_Pages60to61 or FLASH_WRProt_Pages62to511 </para></listitem>
+<listitem><para>FLASH_WRProt_AllPages </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="997" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="997" bodyend="1059"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___option___bytes___write___protection_1gafe68b93dfb1ebf68d74f871850ab373b" compoundref="stm32f10x__flash_8h" startline="245">IS_FLASH_WRPROT_PAGE</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga79707964cbd409601e1ddf6064cf1c5c" compoundref="stm32f10x__flash_8c" startline="70">WRP0_Mask</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaa2b2535ba91736dd2d6baa92068686e0" compoundref="stm32f10x__flash_8c" startline="71">WRP1_Mask</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga4676f67c7be97a09eb1c6a5753ce0523" compoundref="stm32f10x__flash_8c" startline="72">WRP2_Mask</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga649ce8b78520ca192b41aabe2daef035" compoundref="stm32f10x__flash_8c" startline="73">WRP3_Mask</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0794a43966b6084d28d13c651c739385" compoundref="stm32f10x__flash_8c" startline="86">ProgramTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga84ec77ffaa2a83edeef385e3a36171f8" compoundref="stm32f10x__flash_8c" startline="61">CR_OPTPG_Set</references>
+        <references refid="group___peripheral__declaration_1gad2d5f875cdc6d696735f20fa23a895c3" compoundref="stm32f10x_8h" startline="1446">OB</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga9dd2ca46f4e8edfa098e1481699c08b7" compoundref="stm32f10x__flash_8c" startline="62">CR_OPTPG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga0b8d1a8277950c890bbc247bbeafb40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_ReadOutProtection</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>FLASH_ReadOutProtection</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the read out protection. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If the user has already programmed the other option bytes before calling this function, he must re-program them since this function erases all option bytes. </para></simplesect>
+<simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Newstate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the ReadOut Protection. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1071" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1071" bodyend="1120"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga62b5515e9a29a487adcc30a88d082244" compoundref="stm32f10x__flash_8c" startline="85">EraseTimeout</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gac5707368555a5b7400eea1e306b62b16" compoundref="stm32f10x__flash_8c" startline="63">CR_OPTER_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0e6349818d8602ffffc56e5e04d9ab13" compoundref="stm32f10x__flash_8c" startline="65">CR_STRT_Set</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0245cfe194895f1ad98ba66f8eda3e47" compoundref="stm32f10x__flash_8c" startline="64">CR_OPTER_Reset</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga84ec77ffaa2a83edeef385e3a36171f8" compoundref="stm32f10x__flash_8c" startline="61">CR_OPTPG_Set</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1gad2d5f875cdc6d696735f20fa23a895c3" compoundref="stm32f10x_8h" startline="1446">OB</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga34ec82060edcc9a18bf804b07dec5881" compoundref="stm32f10x__flash_8c" startline="77">RDP_Key</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga9dd2ca46f4e8edfa098e1481699c08b7" compoundref="stm32f10x__flash_8c" startline="62">CR_OPTPG_Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gaae1c493bb06c930ceb84dedfdb7325f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_UserOptionByteConfig</definition>
+        <argsstring>(uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY)</argsstring>
+        <name>FLASH_UserOptionByteConfig</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>OB_IWDG</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>OB_STOP</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>OB_STDBY</declname>
+        </param>
+        <briefdescription>
+<para>Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OB_IWDG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selects the IWDG mode This parameter can be one of the following values: <itemizedlist>
+<listitem><para>OB_IWDG_SW: Software IWDG selected </para></listitem>
+<listitem><para>OB_IWDG_HW: Hardware IWDG selected </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OB_STOP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reset event when entering STOP mode. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>OB_STOP_NoRST: No reset generated when entering in STOP </para></listitem>
+<listitem><para>OB_STOP_RST: Reset generated when entering in STOP </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OB_STDBY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reset event when entering Standby mode. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>OB_STDBY_NoRST: No reset generated when entering in STANDBY </para></listitem>
+<listitem><para>OB_STDBY_RST: Reset generated when entering in STANDBY </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1140" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1140" bodyend="1173"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___option___bytes___i_watchdog_1gaf2871652c08e76499d9449be6556f12c" compoundref="stm32f10x__flash_8h" startline="261">IS_OB_IWDG_SOURCE</references>
+        <references refid="group___option___bytes__n_r_s_t___s_t_o_p_1ga131ae3434f300c8317dd6b3b349c7cab" compoundref="stm32f10x__flash_8h" startline="273">IS_OB_STOP_SOURCE</references>
+        <references refid="group___option___bytes__n_r_s_t___s_t_d_b_y_1ga8a05393df3a5e89551b4e2e1e8c5b884" compoundref="stm32f10x__flash_8h" startline="285">IS_OB_STDBY_SOURCE</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gafd77e7bf91765d891ce63e2f0084b019" compoundref="stm32f10x__flash_8c" startline="78">FLASH_KEY1</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaee83d0f557e158da52f4a205db6b60a7" compoundref="stm32f10x__flash_8c" startline="79">FLASH_KEY2</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga0794a43966b6084d28d13c651c739385" compoundref="stm32f10x__flash_8c" startline="86">ProgramTimeout</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga84ec77ffaa2a83edeef385e3a36171f8" compoundref="stm32f10x__flash_8c" startline="61">CR_OPTPG_Set</references>
+        <references refid="group___peripheral__declaration_1gad2d5f875cdc6d696735f20fa23a895c3" compoundref="stm32f10x_8h" startline="1446">OB</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga9dd2ca46f4e8edfa098e1481699c08b7" compoundref="stm32f10x__flash_8c" startline="62">CR_OPTPG_Reset</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga5098bd938dadebbbdf9e628c84b2dcf0" compoundref="stm32f10x__flash_8c" startline="74">OB_USER_BFB2</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga31441647fac5fbb38369613076737943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t FLASH_GetUserOptionByte</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_GetUserOptionByte</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the FLASH User Option Bytes values. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FLASH User Option Bytes values:IWDG_SW(Bit0), RST_STOP(Bit1) and RST_STDBY(Bit2). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1238" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1238" bodyend="1242"/>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gac009e061562c7d36d7d2d00bb1c8aafa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t FLASH_GetWriteProtectionOptionByte</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_GetWriteProtectionOptionByte</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the FLASH Write Protection Option Bytes Register value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FLASH Write Protection Option Bytes Register value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1250" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1250" bodyend="1254"/>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga57fe56770ff25b358f3e36bd70632e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus FLASH_GetReadOutProtectionStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_GetReadOutProtectionStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks whether the FLASH Read Out Protection Status is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ReadOut Protection Status(SET or RESET) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1262" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1262" bodyend="1274"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1gaa624b669116384b971b838ae201cad9f" compoundref="stm32f10x__flash_8c" startline="69">RDPRT_Mask</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga152768609e85d74a9d8474be8dc2874b" compoundref="stm32f10x__flash_8c" startline="616" endline="671">FLASH_EraseOptionBytes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga289bffe7f078d6a130222f03c59bc235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus FLASH_GetPrefetchBufferStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_GetPrefetchBufferStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks whether the FLASH Prefetch Buffer status is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefetch Buffer Status (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1282" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1282" bodyend="1296"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___private___defines_1ga257768fe5d61ac49f43b6b90ba413102" compoundref="stm32f10x__flash_8c" startline="52">ACR_PRFTBS_Mask</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga94c1e51a9c3bf8d48eb6eb4a4d054861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_ITConfig</definition>
+        <argsstring>(uint32_t FLASH_IT, FunctionalState NewState)</argsstring>
+        <name>FLASH_ITConfig</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_IT</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified FLASH interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices, enables or disables the specified FLASH interrupts for Bank1 and Bank2.</para></listitem><listitem><para>For other devices it enables or disables the specified FLASH interrupts for Bank1. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_IT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>FLASH_IT_ERROR: FLASH Error Interrupt </para></listitem>
+<listitem><para>FLASH_IT_EOP: FLASH end of operation Interrupt </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified Flash interrupts. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1312" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1312" bodyend="1361"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_l_a_s_h___interrupts_1ga46ee77d0be1f3e0a14ded0651163ae11" compoundref="stm32f10x__flash_8h" startline="323">IS_FLASH_IT</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gae3fb545e32f21501ca27d4380e0f2088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus FLASH_GetFlagStatus</definition>
+        <argsstring>(uint32_t FLASH_FLAG)</argsstring>
+        <name>FLASH_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified FLASH flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices, this function checks whether the specified Bank1 or Bank2 flag is set or not.</para></listitem><listitem><para>For other devices, it checks whether the specified Bank1 flag is set or not. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>FLASH_FLAG_BSY: FLASH Busy flag </para></listitem>
+<listitem><para>FLASH_FLAG_PGERR: FLASH Program error flag </para></listitem>
+<listitem><para>FLASH_FLAG_WRPRTERR: FLASH Write protected error flag </para></listitem>
+<listitem><para>FLASH_FLAG_EOP: FLASH End of Operation flag </para></listitem>
+<listitem><para>FLASH_FLAG_OPTERR: FLASH Option Byte error flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of FLASH_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1379" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1379" bodyend="1451"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_l_a_s_h___flags_1ga61b60325cd94e1608e34afc7aff20ee4" compoundref="stm32f10x__flash_8h" startline="371">IS_FLASH_GET_FLAG</references>
+        <references refid="group___f_l_a_s_h___flags_1gac36b0605df97c9414933369a32251e4a" compoundref="stm32f10x__flash_8h" startline="363">FLASH_FLAG_OPTERR</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gac4be1d486483fa5cd70ec77d44ca8f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_ClearFlag</definition>
+        <argsstring>(uint32_t FLASH_FLAG)</argsstring>
+        <name>FLASH_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FLASH_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the FLASH&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices, this function clears Bank1 or Bank2�s pending flags</para></listitem><listitem><para>For other devices, it clears Bank1�s pending flags. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH flags to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>FLASH_FLAG_PGERR: FLASH Program error flag </para></listitem>
+<listitem><para>FLASH_FLAG_WRPRTERR: FLASH Write protected error flag </para></listitem>
+<listitem><para>FLASH_FLAG_EOP: FLASH End of Operation flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1465" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1465" bodyend="1489"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___f_l_a_s_h___flags_1ga82f8c6104c348d6aa47c7658ed3b6b36" compoundref="stm32f10x__flash_8h" startline="370">IS_FLASH_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1gac265b8d1e7ea11e44ceee28797c3debb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_GetStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_GetStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the FLASH Status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices, it is equivalent to FLASH_GetBank1Status function. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG, FLASH_ERROR_WRP or FLASH_COMPLETE </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1499" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1499" bodyend="1527"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" compoundref="stm32f10x__flash_8h" startline="359">FLASH_FLAG_BSY</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099" compoundref="stm32f10x__flash_8h" startline="52">FLASH_BUSY</references>
+        <references refid="group___f_l_a_s_h___flags_1gae2ef62dee0a5ca01e6226746039b6f20" compoundref="stm32f10x__flash_8h" startline="361">FLASH_FLAG_PGERR</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0adcb0c5002fc757739886a2601a3981da" compoundref="stm32f10x__flash_8h" startline="53">FLASH_ERROR_PG</references>
+        <references refid="group___f_l_a_s_h___flags_1ga5c59a7f07507cac38091275964d3d35d" compoundref="stm32f10x__flash_8h" startline="362">FLASH_FLAG_WRPRTERR</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8" compoundref="stm32f10x__flash_8h" startline="54">FLASH_ERROR_WRP</references>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga9d5b76b75ef4c578cc45dc836a1929b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_GetBank1Status</definition>
+        <argsstring>(void)</argsstring>
+        <name>FLASH_GetBank1Status</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the FLASH Bank1 Status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices, it is equivalent to FLASH_GetStatus function. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG, FLASH_ERROR_WRP or FLASH_COMPLETE </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1537" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1537" bodyend="1565"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" compoundref="stm32f10x_8h" startline="1445">FLASH</references>
+        <references refid="group___f_l_a_s_h___flags_1ga1f85e6d511503886e9fbe7d0228c97a4" compoundref="stm32f10x__flash_8h" startline="365">FLASH_FLAG_BANK1_BSY</references>
+        <references refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" compoundref="stm32f10x__flash_8h" startline="359">FLASH_FLAG_BSY</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099" compoundref="stm32f10x__flash_8h" startline="52">FLASH_BUSY</references>
+        <references refid="group___f_l_a_s_h___flags_1gaa1056ffdd1c434a2967d5ed7c0d263be" compoundref="stm32f10x__flash_8h" startline="367">FLASH_FLAG_BANK1_PGERR</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0adcb0c5002fc757739886a2601a3981da" compoundref="stm32f10x__flash_8h" startline="53">FLASH_ERROR_PG</references>
+        <references refid="group___f_l_a_s_h___flags_1ga1646345adbcda773ef25785b1bdc4c43" compoundref="stm32f10x__flash_8h" startline="368">FLASH_FLAG_BANK1_WRPRTERR</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8" compoundref="stm32f10x__flash_8h" startline="54">FLASH_ERROR_WRP</references>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" compoundref="stm32f10x__flash_8c" startline="1617" endline="1635">FLASH_WaitForLastOperation</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" compoundref="stm32f10x__flash_8c" startline="1645" endline="1663">FLASH_WaitForLastBank1Operation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga2ad803999ae93ec03700983c59cae264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_WaitForLastOperation</definition>
+        <argsstring>(uint32_t Timeout)</argsstring>
+        <name>FLASH_WaitForLastOperation</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Timeout</declname>
+        </param>
+        <briefdescription>
+<para>Waits for a Flash operation to complete or a TIMEOUT to occur. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices, it is equivalent to FLASH_WaitForLastBank1Operation.<itemizedlist>
+<listitem><para>For STM32F10X_XL devices this function waits for a Bank1 Flash operation to complete or a TIMEOUT to occur.</para></listitem><listitem><para>For all other devices it waits for a Flash operation to complete or a TIMEOUT to occur. </para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FLASH programming Timeout </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1617" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1617" bodyend="1635"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga9d5b76b75ef4c578cc45dc836a1929b6" compoundref="stm32f10x__flash_8c" startline="1537" endline="1565">FLASH_GetBank1Status</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099" compoundref="stm32f10x__flash_8h" startline="52">FLASH_BUSY</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga13a2ca18bfb3d5fb827a2751799f8451" compoundref="stm32f10x__flash_8c" startline="419" endline="483">FLASH_ErasePage</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1gab2e6dea62c72b3e47c17512579d37498" compoundref="stm32f10x__flash_8c" startline="492" endline="543">FLASH_EraseAllPages</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga152768609e85d74a9d8474be8dc2874b" compoundref="stm32f10x__flash_8c" startline="616" endline="671">FLASH_EraseOptionBytes</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1gaac9a2f400b92537bd42a6bd7cc237b11" compoundref="stm32f10x__flash_8c" startline="687" endline="865">FLASH_ProgramWord</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga5c1336f667950a8765887228f1d0d501" compoundref="stm32f10x__flash_8c" startline="880" endline="940">FLASH_ProgramHalfWord</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga1382ff9d4ded8a5c076fde4fff529d21" compoundref="stm32f10x__flash_8c" startline="951" endline="977">FLASH_ProgramOptionByteData</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1gabad10c15e2d1ff1cb9e1083d08a9e763" compoundref="stm32f10x__flash_8c" startline="997" endline="1059">FLASH_EnableWriteProtection</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga0b8d1a8277950c890bbc247bbeafb40f" compoundref="stm32f10x__flash_8c" startline="1071" endline="1120">FLASH_ReadOutProtection</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1gaae1c493bb06c930ceb84dedfdb7325f6" compoundref="stm32f10x__flash_8c" startline="1140" endline="1173">FLASH_UserOptionByteConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___private___functions_1ga470d345c2ea4304f899aa988bdd23824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___f_l_a_s_h___exported___types_1gadc63a6f3404ff1f71229a66915e9cdc0" kindref="member">FLASH_Status</ref></type>
+        <definition>FLASH_Status FLASH_WaitForLastBank1Operation</definition>
+        <argsstring>(uint32_t Timeout)</argsstring>
+        <name>FLASH_WaitForLastBank1Operation</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Timeout</declname>
+        </param>
+        <briefdescription>
+<para>Waits for a Flash operation on Bank1 to complete or a TIMEOUT to occur. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function can be used for all STM32F10x devices, it is equivalent to FLASH_WaitForLastOperation. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FLASH programming Timeout </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status: The returned value can be: FLASH_ERROR_PG, FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" line="1645" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_flash.c" bodystart="1645" bodyend="1663"/>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf" compoundref="stm32f10x__flash_8h" startline="55">FLASH_COMPLETE</references>
+        <references refid="group___f_l_a_s_h___private___functions_1ga9d5b76b75ef4c578cc45dc836a1929b6" compoundref="stm32f10x__flash_8c" startline="1537" endline="1565">FLASH_GetBank1Status</references>
+        <references refid="group___f_l_a_s_h___flags_1ga1f85e6d511503886e9fbe7d0228c97a4" compoundref="stm32f10x__flash_8h" startline="365">FLASH_FLAG_BANK1_BSY</references>
+        <references refid="group___f_l_a_s_h___exported___types_1ggadc63a6f3404ff1f71229a66915e9cdc0a90c514b6a619e3a4e6c2eec3154323f8" compoundref="stm32f10x__flash_8h" startline="56">FLASH_TIMEOUT</references>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga13a2ca18bfb3d5fb827a2751799f8451" compoundref="stm32f10x__flash_8c" startline="419" endline="483">FLASH_ErasePage</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1gab2e6dea62c72b3e47c17512579d37498" compoundref="stm32f10x__flash_8c" startline="492" endline="543">FLASH_EraseAllPages</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga2036728450ee18e789b25fe3fd9c80ee" compoundref="stm32f10x__flash_8c" startline="555" endline="575">FLASH_EraseAllBank1Pages</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1gaac9a2f400b92537bd42a6bd7cc237b11" compoundref="stm32f10x__flash_8c" startline="687" endline="865">FLASH_ProgramWord</referencedby>
+        <referencedby refid="group___f_l_a_s_h___private___functions_1ga5c1336f667950a8765887228f1d0d501" compoundref="stm32f10x__flash_8c" startline="880" endline="940">FLASH_ProgramHalfWord</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

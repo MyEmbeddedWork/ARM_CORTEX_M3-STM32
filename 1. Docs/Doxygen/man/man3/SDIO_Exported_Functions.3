@@ -1,0 +1,923 @@
+.TH "SDIO_Exported_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDIO_Exported_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSDIO_DeInit\fP (void)"
+.br
+.RI "Deinitializes the SDIO peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBSDIO_Init\fP (\fBSDIO_InitTypeDef\fP *SDIO_InitStruct)"
+.br
+.RI "Initializes the SDIO peripheral according to the specified parameters in the SDIO_InitStruct\&. "
+.ti -1c
+.RI "void \fBSDIO_StructInit\fP (\fBSDIO_InitTypeDef\fP *SDIO_InitStruct)"
+.br
+.RI "Fills each SDIO_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBSDIO_ClockCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO Clock\&. "
+.ti -1c
+.RI "void \fBSDIO_SetPowerState\fP (uint32_t SDIO_PowerState)"
+.br
+.RI "Sets the power status of the controller\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetPowerState\fP (void)"
+.br
+.RI "Gets the power status of the controller\&. "
+.ti -1c
+.RI "void \fBSDIO_ITConfig\fP (uint32_t SDIO_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO interrupts\&. "
+.ti -1c
+.RI "void \fBSDIO_DMACmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SDIO DMA request\&. "
+.ti -1c
+.RI "void \fBSDIO_SendCommand\fP (\fBSDIO_CmdInitTypeDef\fP *SDIO_CmdInitStruct)"
+.br
+.RI "Initializes the SDIO Command according to the specified parameters in the SDIO_CmdInitStruct and send the command\&. "
+.ti -1c
+.RI "void \fBSDIO_CmdStructInit\fP (\fBSDIO_CmdInitTypeDef\fP *SDIO_CmdInitStruct)"
+.br
+.RI "Fills each SDIO_CmdInitStruct member with its default value\&. "
+.ti -1c
+.RI "uint8_t \fBSDIO_GetCommandResponse\fP (void)"
+.br
+.RI "Returns command index of last command for which response received\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetResponse\fP (uint32_t SDIO_RESP)"
+.br
+.RI "Returns response received from the card for the last command\&. "
+.ti -1c
+.RI "void \fBSDIO_DataConfig\fP (\fBSDIO_DataInitTypeDef\fP *SDIO_DataInitStruct)"
+.br
+.RI "Initializes the SDIO data path according to the specified parameters in the SDIO_DataInitStruct\&. "
+.ti -1c
+.RI "void \fBSDIO_DataStructInit\fP (\fBSDIO_DataInitTypeDef\fP *SDIO_DataInitStruct)"
+.br
+.RI "Fills each SDIO_DataInitStruct member with its default value\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetDataCounter\fP (void)"
+.br
+.RI "Returns number of remaining data bytes to be transferred\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_ReadData\fP (void)"
+.br
+.RI "Read one data word from Rx FIFO\&. "
+.ti -1c
+.RI "void \fBSDIO_WriteData\fP (uint32_t Data)"
+.br
+.RI "Write one data word to Tx FIFO\&. "
+.ti -1c
+.RI "uint32_t \fBSDIO_GetFIFOCount\fP (void)"
+.br
+.RI "Returns the number of words left to be written to or read from FIFO\&. "
+.ti -1c
+.RI "void \fBSDIO_StartSDIOReadWait\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Starts the SD I/O Read Wait operation\&. "
+.ti -1c
+.RI "void \fBSDIO_StopSDIOReadWait\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Stops the SD I/O Read Wait operation\&. "
+.ti -1c
+.RI "void \fBSDIO_SetSDIOReadWaitMode\fP (uint32_t SDIO_ReadWaitMode)"
+.br
+.RI "Sets one of the two options of inserting read wait interval\&. "
+.ti -1c
+.RI "void \fBSDIO_SetSDIOOperation\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SD I/O Mode Operation\&. "
+.ti -1c
+.RI "void \fBSDIO_SendSDIOSuspendCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the SD I/O Mode suspend command sending\&. "
+.ti -1c
+.RI "void \fBSDIO_CommandCompletionCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the command completion signal\&. "
+.ti -1c
+.RI "void \fBSDIO_CEATAITCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the CE-ATA interrupt\&. "
+.ti -1c
+.RI "void \fBSDIO_SendCEATACmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Sends CE-ATA command (CMD61)\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBSDIO_GetFlagStatus\fP (uint32_t SDIO_FLAG)"
+.br
+.RI "Checks whether the specified SDIO flag is set or not\&. "
+.ti -1c
+.RI "void \fBSDIO_ClearFlag\fP (uint32_t SDIO_FLAG)"
+.br
+.RI "Clears the SDIO's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBSDIO_GetITStatus\fP (uint32_t SDIO_IT)"
+.br
+.RI "Checks whether the specified SDIO interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBSDIO_ClearITPendingBit\fP (uint32_t SDIO_IT)"
+.br
+.RI "Clears the SDIO's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void SDIO_CEATAITCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the CE-ATA interrupt\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of CE-ATA interrupt\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 614 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_ClearFlag (uint32_t SDIO_FLAG)"
+
+.PP
+Clears the SDIO's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_FLAG\fP specifies the flag to clear\&. This parameter can be one or a combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_FLAG_CCRCFAIL: Command response received (CRC check failed) 
+.IP "\(bu" 2
+SDIO_FLAG_DCRCFAIL: Data block sent/received (CRC check failed) 
+.IP "\(bu" 2
+SDIO_FLAG_CTIMEOUT: Command response timeout 
+.IP "\(bu" 2
+SDIO_FLAG_DTIMEOUT: Data timeout 
+.IP "\(bu" 2
+SDIO_FLAG_TXUNDERR: Transmit FIFO underrun error 
+.IP "\(bu" 2
+SDIO_FLAG_RXOVERR: Received FIFO overrun error 
+.IP "\(bu" 2
+SDIO_FLAG_CMDREND: Command response received (CRC check passed) 
+.IP "\(bu" 2
+SDIO_FLAG_CMDSENT: Command sent (no response required) 
+.IP "\(bu" 2
+SDIO_FLAG_DATAEND: Data end (data counter, SDIDCOUNT, is zero) 
+.IP "\(bu" 2
+SDIO_FLAG_STBITERR: Start bit not detected on all data signals in wide bus mode 
+.IP "\(bu" 2
+SDIO_FLAG_DBCKEND: Data block sent/received (CRC check passed) 
+.IP "\(bu" 2
+SDIO_FLAG_SDIOIT: SD I/O interrupt received 
+.IP "\(bu" 2
+SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 704 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_ClearITPendingBit (uint32_t SDIO_IT)"
+
+.PP
+Clears the SDIO's interrupt pending bits\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_IT\fP specifies the interrupt pending bit to clear\&. This parameter can be one or a combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CTIMEOUT: Command response timeout interrupt 
+.IP "\(bu" 2
+SDIO_IT_DTIMEOUT: Data timeout interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXOVERR: Received FIFO overrun error interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDSENT: Command sent (no response required) interrupt 
+.IP "\(bu" 2
+SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt 
+.IP "\(bu" 2
+SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt 
+.IP "\(bu" 2
+SDIO_IT_SDIOIT: SD I/O interrupt received interrupt 
+.IP "\(bu" 2
+SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 779 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_ClockCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SDIO Clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the SDIO Clock\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 235 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_CmdStructInit (\fBSDIO_CmdInitTypeDef\fP * SDIO_CmdInitStruct)"
+
+.PP
+Fills each SDIO_CmdInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_CmdInitStruct\fP pointer to an \fBSDIO_CmdInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 382 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_CommandCompletionCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the command completion signal\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of command completion signal\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 601 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_DataConfig (\fBSDIO_DataInitTypeDef\fP * SDIO_DataInitStruct)"
+
+.PP
+Initializes the SDIO data path according to the specified parameters in the SDIO_DataInitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_DataInitStruct\fP : pointer to a \fBSDIO_DataInitTypeDef\fP structure that contains the configuration information for the SDIO command\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 431 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_DataStructInit (\fBSDIO_DataInitTypeDef\fP * SDIO_DataInitStruct)"
+
+.PP
+Fills each SDIO_DataInitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_DataInitStruct\fP pointer to an \fBSDIO_DataInitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 472 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_DeInit (void)"
+
+.PP
+Deinitializes the SDIO peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 161 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_DMACmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SDIO DMA request\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the selected SDIO DMA request\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 331 of file stm32f10x_sdio\&.c\&.
+.SS "uint8_t SDIO_GetCommandResponse (void)"
+
+.PP
+Returns command index of last command for which response received\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIReturns\fP the command index of the last command response received\&. 
+.RE
+.PP
+
+.PP
+Definition at line 397 of file stm32f10x_sdio\&.c\&.
+.SS "uint32_t SDIO_GetDataCounter (void)"
+
+.PP
+Returns number of remaining data bytes to be transferred\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINumber\fP of remaining data bytes to be transferred 
+.RE
+.PP
+
+.PP
+Definition at line 488 of file stm32f10x_sdio\&.c\&.
+.SS "uint32_t SDIO_GetFIFOCount (void)"
+
+.PP
+Returns the number of words left to be written to or read from FIFO\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIRemaining\fP number of words\&. 
+.RE
+.PP
+
+.PP
+Definition at line 518 of file stm32f10x_sdio\&.c\&.
+.SS "\fBFlagStatus\fP SDIO_GetFlagStatus (uint32_t SDIO_FLAG)"
+
+.PP
+Checks whether the specified SDIO flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_FLAG\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_FLAG_CCRCFAIL: Command response received (CRC check failed) 
+.IP "\(bu" 2
+SDIO_FLAG_DCRCFAIL: Data block sent/received (CRC check failed) 
+.IP "\(bu" 2
+SDIO_FLAG_CTIMEOUT: Command response timeout 
+.IP "\(bu" 2
+SDIO_FLAG_DTIMEOUT: Data timeout 
+.IP "\(bu" 2
+SDIO_FLAG_TXUNDERR: Transmit FIFO underrun error 
+.IP "\(bu" 2
+SDIO_FLAG_RXOVERR: Received FIFO overrun error 
+.IP "\(bu" 2
+SDIO_FLAG_CMDREND: Command response received (CRC check passed) 
+.IP "\(bu" 2
+SDIO_FLAG_CMDSENT: Command sent (no response required) 
+.IP "\(bu" 2
+SDIO_FLAG_DATAEND: Data end (data counter, SDIDCOUNT, is zero) 
+.IP "\(bu" 2
+SDIO_FLAG_STBITERR: Start bit not detected on all data signals in wide bus mode\&. 
+.IP "\(bu" 2
+SDIO_FLAG_DBCKEND: Data block sent/received (CRC check passed) 
+.IP "\(bu" 2
+SDIO_FLAG_CMDACT: Command transfer in progress 
+.IP "\(bu" 2
+SDIO_FLAG_TXACT: Data transmit in progress 
+.IP "\(bu" 2
+SDIO_FLAG_RXACT: Data receive in progress 
+.IP "\(bu" 2
+SDIO_FLAG_TXFIFOHE: Transmit FIFO Half Empty 
+.IP "\(bu" 2
+SDIO_FLAG_RXFIFOHF: Receive FIFO Half Full 
+.IP "\(bu" 2
+SDIO_FLAG_TXFIFOF: Transmit FIFO full 
+.IP "\(bu" 2
+SDIO_FLAG_RXFIFOF: Receive FIFO full 
+.IP "\(bu" 2
+SDIO_FLAG_TXFIFOE: Transmit FIFO empty 
+.IP "\(bu" 2
+SDIO_FLAG_RXFIFOE: Receive FIFO empty 
+.IP "\(bu" 2
+SDIO_FLAG_TXDAVL: Data available in transmit FIFO 
+.IP "\(bu" 2
+SDIO_FLAG_RXDAVL: Data available in receive FIFO 
+.IP "\(bu" 2
+SDIO_FLAG_SDIOIT: SD I/O interrupt received 
+.IP "\(bu" 2
+SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of SDIO_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 666 of file stm32f10x_sdio\&.c\&.
+.SS "\fBITStatus\fP SDIO_GetITStatus (uint32_t SDIO_IT)"
+
+.PP
+Checks whether the specified SDIO interrupt has occurred or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_IT\fP specifies the SDIO interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CTIMEOUT: Command response timeout interrupt 
+.IP "\(bu" 2
+SDIO_IT_DTIMEOUT: Data timeout interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXOVERR: Received FIFO overrun error interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDSENT: Command sent (no response required) interrupt 
+.IP "\(bu" 2
+SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt 
+.IP "\(bu" 2
+SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt 
+.IP "\(bu" 2
+SDIO_IT_DBCKEND: Data block sent/received (CRC check passed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDACT: Command transfer in progress interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXACT: Data transmit in progress interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXACT: Data receive in progress interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXFIFOHE: Transmit FIFO Half Empty interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXFIFOHF: Receive FIFO Half Full interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXFIFOF: Transmit FIFO full interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXFIFOF: Receive FIFO full interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXFIFOE: Transmit FIFO empty interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXFIFOE: Receive FIFO empty interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXDAVL: Data available in transmit FIFO interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXDAVL: Data available in receive FIFO interrupt 
+.IP "\(bu" 2
+SDIO_IT_SDIOIT: SD I/O interrupt received interrupt 
+.IP "\(bu" 2
+SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of SDIO_IT (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 743 of file stm32f10x_sdio\&.c\&.
+.SS "uint32_t SDIO_GetPowerState (void)"
+
+.PP
+Gets the power status of the controller\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIPower\fP status of the controller\&. The returned value can be one of the following:
+.IP "\(bu" 2
+0x00: Power OFF
+.IP "\(bu" 2
+0x02: Power UP
+.IP "\(bu" 2
+0x03: Power ON 
+.PP
+.RE
+.PP
+
+.PP
+Definition at line 269 of file stm32f10x_sdio\&.c\&.
+.SS "uint32_t SDIO_GetResponse (uint32_t SDIO_RESP)"
+
+.PP
+Returns response received from the card for the last command\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_RESP\fP Specifies the SDIO response register\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_RESP1: Response Register 1 
+.IP "\(bu" 2
+SDIO_RESP2: Response Register 2 
+.IP "\(bu" 2
+SDIO_RESP3: Response Register 3 
+.IP "\(bu" 2
+SDIO_RESP4: Response Register 4 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP Corresponding response register value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 412 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_Init (\fBSDIO_InitTypeDef\fP * SDIO_InitStruct)"
+
+.PP
+Initializes the SDIO peripheral according to the specified parameters in the SDIO_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_InitStruct\fP : pointer to a \fBSDIO_InitTypeDef\fP structure that contains the configuration information for the SDIO peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 181 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_ITConfig (uint32_t SDIO_IT, \fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SDIO interrupts\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_IT\fP specifies the SDIO interrupt sources to be enabled or disabled\&. This parameter can be one or a combination of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CTIMEOUT: Command response timeout interrupt 
+.IP "\(bu" 2
+SDIO_IT_DTIMEOUT: Data timeout interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXOVERR: Received FIFO overrun error interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDSENT: Command sent (no response required) interrupt 
+.IP "\(bu" 2
+SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt 
+.IP "\(bu" 2
+SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt 
+.IP "\(bu" 2
+SDIO_IT_DBCKEND: Data block sent/received (CRC check passed) interrupt 
+.IP "\(bu" 2
+SDIO_IT_CMDACT: Command transfer in progress interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXACT: Data transmit in progress interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXACT: Data receive in progress interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXFIFOHE: Transmit FIFO Half Empty interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXFIFOHF: Receive FIFO Half Full interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXFIFOF: Transmit FIFO full interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXFIFOF: Receive FIFO full interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXFIFOE: Transmit FIFO empty interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXFIFOE: Receive FIFO empty interrupt 
+.IP "\(bu" 2
+SDIO_IT_TXDAVL: Data available in transmit FIFO interrupt 
+.IP "\(bu" 2
+SDIO_IT_RXDAVL: Data available in receive FIFO interrupt 
+.IP "\(bu" 2
+SDIO_IT_SDIOIT: SD I/O interrupt received interrupt 
+.IP "\(bu" 2
+SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt 
+.PP
+.br
+\fINewState\fP new state of the specified SDIO interrupts\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 307 of file stm32f10x_sdio\&.c\&.
+.SS "uint32_t SDIO_ReadData (void)"
+
+.PP
+Read one data word from Rx FIFO\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIData\fP received 
+.RE
+.PP
+
+.PP
+Definition at line 498 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_SendCEATACmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Sends CE-ATA command (CMD61)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of CE-ATA command\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 627 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_SendCommand (\fBSDIO_CmdInitTypeDef\fP * SDIO_CmdInitStruct)"
+
+.PP
+Initializes the SDIO Command according to the specified parameters in the SDIO_CmdInitStruct and send the command\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_CmdInitStruct\fP : pointer to a \fBSDIO_CmdInitTypeDef\fP structure that contains the configuration information for the SDIO command\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 346 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_SendSDIOSuspendCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SD I/O Mode suspend command sending\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the SD I/O Mode suspend command\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 587 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_SetPowerState (uint32_t SDIO_PowerState)"
+
+.PP
+Sets the power status of the controller\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_PowerState\fP new state of the Power state\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_PowerState_OFF 
+.IP "\(bu" 2
+SDIO_PowerState_ON 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 251 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_SetSDIOOperation (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the SD I/O Mode Operation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of SDIO specific operation\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 573 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_SetSDIOReadWaitMode (uint32_t SDIO_ReadWaitMode)"
+
+.PP
+Sets one of the two options of inserting read wait interval\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_ReadWaitMode\fP SD I/O Read Wait operation mode\&. This parameter can be: 
+.PD 0
+
+.IP "\(bu" 2
+SDIO_ReadWaitMode_CLK: Read Wait control by stopping SDIOCLK 
+.IP "\(bu" 2
+SDIO_ReadWaitMode_DATA2: Read Wait control using SDIO_DATA2 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 559 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_StartSDIOReadWait (\fBFunctionalState\fP NewState)"
+
+.PP
+Starts the SD I/O Read Wait operation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Start SDIO Read Wait operation\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 529 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_StopSDIOReadWait (\fBFunctionalState\fP NewState)"
+
+.PP
+Stops the SD I/O Read Wait operation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the Stop SDIO Read Wait operation\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 543 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_StructInit (\fBSDIO_InitTypeDef\fP * SDIO_InitStruct)"
+
+.PP
+Fills each SDIO_InitStruct member with its default value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISDIO_InitStruct\fP pointer to an \fBSDIO_InitTypeDef\fP structure which will be initialized\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 219 of file stm32f10x_sdio\&.c\&.
+.SS "void SDIO_WriteData (uint32_t Data)"
+
+.PP
+Write one data word to Tx FIFO\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIData\fP 32-bit data word to write\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 508 of file stm32f10x_sdio\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

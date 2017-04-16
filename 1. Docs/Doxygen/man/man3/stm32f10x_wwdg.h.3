@@ -1,0 +1,107 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h \- This file contains all the functions prototypes for the WWDG firmware library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_1\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_2\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_4\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_Prescaler_8\fP   ((uint32_t)0x00000180)"
+.br
+.ti -1c
+.RI "#define \fBIS_WWDG_PRESCALER\fP(PRESCALER)"
+.br
+.ti -1c
+.RI "#define \fBIS_WWDG_WINDOW_VALUE\fP(VALUE)   ((VALUE) <= 0x7F)"
+.br
+.ti -1c
+.RI "#define \fBIS_WWDG_COUNTER\fP(COUNTER)   (((COUNTER) >= 0x40) && ((COUNTER) <= 0x7F))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBWWDG_DeInit\fP (void)"
+.br
+.RI "Deinitializes the WWDG peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBWWDG_SetPrescaler\fP (uint32_t WWDG_Prescaler)"
+.br
+.RI "Sets the WWDG Prescaler\&. "
+.ti -1c
+.RI "void \fBWWDG_SetWindowValue\fP (uint8_t WindowValue)"
+.br
+.RI "Sets the WWDG window value\&. "
+.ti -1c
+.RI "void \fBWWDG_EnableIT\fP (void)"
+.br
+.RI "Enables the WWDG Early Wakeup interrupt(EWI)\&. "
+.ti -1c
+.RI "void \fBWWDG_SetCounter\fP (uint8_t Counter)"
+.br
+.RI "Sets the WWDG counter value\&. "
+.ti -1c
+.RI "void \fBWWDG_Enable\fP (uint8_t Counter)"
+.br
+.RI "Enables WWDG and load the counter value\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBWWDG_GetFlagStatus\fP (void)"
+.br
+.RI "Checks whether the Early Wakeup interrupt flag is set or not\&. "
+.ti -1c
+.RI "void \fBWWDG_ClearFlag\fP (void)"
+.br
+.RI "Clears Early Wakeup interrupt flag\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all the functions prototypes for the WWDG firmware library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_wwdg\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

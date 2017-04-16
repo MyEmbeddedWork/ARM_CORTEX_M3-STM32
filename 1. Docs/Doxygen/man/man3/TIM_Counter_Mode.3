@@ -1,0 +1,70 @@
+.TH "TIM_Counter_Mode" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Counter_Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_CounterMode_Up\fP   ((uint16_t)0x0000)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_Down\fP   ((uint16_t)0x0010)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_CenterAligned1\fP   ((uint16_t)0x0020)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_CenterAligned2\fP   ((uint16_t)0x0040)"
+.br
+.ti -1c
+.RI "#define \fBTIM_CounterMode_CenterAligned3\fP   ((uint16_t)0x0060)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_COUNTER_MODE\fP(MODE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_COUNTER_MODE(MODE)"
+\fBValue:\fP
+.PP
+.nf
+(((MODE) == TIM_CounterMode_Up) ||  \
+                                   ((MODE) == TIM_CounterMode_Down) || \
+                                   ((MODE) == TIM_CounterMode_CenterAligned1) || \
+                                   ((MODE) == TIM_CounterMode_CenterAligned2) || \
+                                   ((MODE) == TIM_CounterMode_CenterAligned3))
+.fi
+.PP
+Definition at line 374 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_CounterMode_CenterAligned1   ((uint16_t)0x0020)"
+
+.PP
+Definition at line 371 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_CounterMode_CenterAligned2   ((uint16_t)0x0040)"
+
+.PP
+Definition at line 372 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_CounterMode_CenterAligned3   ((uint16_t)0x0060)"
+
+.PP
+Definition at line 373 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_CounterMode_Down   ((uint16_t)0x0010)"
+
+.PP
+Definition at line 370 of file stm32f10x_tim\&.h\&.
+.SS "#define TIM_CounterMode_Up   ((uint16_t)0x0000)"
+
+.PP
+Definition at line 369 of file stm32f10x_tim\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

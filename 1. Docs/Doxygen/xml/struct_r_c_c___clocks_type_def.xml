@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_r_c_c___clocks_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_ClocksTypeDef</compoundname>
+    <includes refid="stm32f10x__rcc_8h" local="no">stm32f10x_rcc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___clocks_type_def_1a2ba325067f3d464ad7955358932563d8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_ClocksTypeDef::SYSCLK_Frequency</definition>
+        <argsstring></argsstring>
+        <name>SYSCLK_Frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns SYSCLK clock frequency expressed in Hz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="48" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="group___r_c_c___private___functions_1ga3e9944fd1ed734275222bbb3e3f29993" compoundref="stm32f10x__rcc_8c" startline="908" endline="1031">RCC_GetClocksFreq</referencedby>
+        <referencedby refid="group___s_p_i___private___functions_1ga53661884ae4a9640df7cbc59187782f7" compoundref="stm32f10x__spi_8c" startline="219" endline="372">I2S_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clocks_type_def_1a41b9859d33954117daf7fab42f804b92" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_ClocksTypeDef::HCLK_Frequency</definition>
+        <argsstring></argsstring>
+        <name>HCLK_Frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns HCLK clock frequency expressed in Hz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="49" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clocks_type_def_1add4cfc63c35178d187107edc764e0b8f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_ClocksTypeDef::PCLK1_Frequency</definition>
+        <argsstring></argsstring>
+        <name>PCLK1_Frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns PCLK1 clock frequency expressed in Hz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="50" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="group___i2_c___private___functions_1gaac29465bca70fbc91c2f922ab67bb88e" compoundref="stm32f10x__i2c_8c" startline="191" endline="304">I2C_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clocks_type_def_1ad854f0b70a6c4cf6de6dbbdcbc99b856" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_ClocksTypeDef::PCLK2_Frequency</definition>
+        <argsstring></argsstring>
+        <name>PCLK2_Frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns PCLK2 clock frequency expressed in Hz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="51" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clocks_type_def_1aa3dad8af3bb364b6232cf5446d478e7d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_ClocksTypeDef::ADCCLK_Frequency</definition>
+        <argsstring></argsstring>
+        <name>ADCCLK_Frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns ADCCLK clock frequency expressed in Hz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="52" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" line="47" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_rcc.h" bodystart="46" bodyend="53"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___clocks_type_def_1aa3dad8af3bb364b6232cf5446d478e7d" prot="public" virt="non-virtual"><scope>RCC_ClocksTypeDef</scope><name>ADCCLK_Frequency</name></member>
+      <member refid="struct_r_c_c___clocks_type_def_1a41b9859d33954117daf7fab42f804b92" prot="public" virt="non-virtual"><scope>RCC_ClocksTypeDef</scope><name>HCLK_Frequency</name></member>
+      <member refid="struct_r_c_c___clocks_type_def_1add4cfc63c35178d187107edc764e0b8f" prot="public" virt="non-virtual"><scope>RCC_ClocksTypeDef</scope><name>PCLK1_Frequency</name></member>
+      <member refid="struct_r_c_c___clocks_type_def_1ad854f0b70a6c4cf6de6dbbdcbc99b856" prot="public" virt="non-virtual"><scope>RCC_ClocksTypeDef</scope><name>PCLK2_Frequency</name></member>
+      <member refid="struct_r_c_c___clocks_type_def_1a2ba325067f3d464ad7955358932563d8" prot="public" virt="non-virtual"><scope>RCC_ClocksTypeDef</scope><name>SYSCLK_Frequency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

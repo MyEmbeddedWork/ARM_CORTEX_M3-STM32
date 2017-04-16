@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___w_w_d_g___prescaler" kind="group">
+    <compoundname>WWDG_Prescaler</compoundname>
+    <title>WWDG_Prescaler</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5" prot="public" static="no">
+        <name>WWDG_Prescaler_1</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08" prot="public" static="no">
+        <name>WWDG_Prescaler_2</name>
+        <initializer>((uint32_t)0x00000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb" prot="public" static="no">
+        <name>WWDG_Prescaler_4</name>
+        <initializer>((uint32_t)0x00000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02" prot="public" static="no">
+        <name>WWDG_Prescaler_8</name>
+        <initializer>((uint32_t)0x00000180)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga39070de0722a70f99a6fcfe8720b2dfd" prot="public" static="no">
+        <name>IS_WWDG_PRESCALER</name>
+        <param><defname>PRESCALER</defname></param>
+        <initializer>(((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5" kindref="member">WWDG_Prescaler_1</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08" kindref="member">WWDG_Prescaler_2</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb" kindref="member">WWDG_Prescaler_4</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02" kindref="member">WWDG_Prescaler_8</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1gab6ea714a2380b7d6547ba97363887868" prot="public" static="no">
+        <name>IS_WWDG_WINDOW_VALUE</name>
+        <param><defname>VALUE</defname></param>
+        <initializer>((VALUE) &lt;= 0x7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e" prot="public" static="no">
+        <name>IS_WWDG_COUNTER</name>
+        <param><defname>COUNTER</defname></param>
+        <initializer>(((COUNTER) &gt;= 0x40) &amp;&amp; ((COUNTER) &lt;= 0x7F))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

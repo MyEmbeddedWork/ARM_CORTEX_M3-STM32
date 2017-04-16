@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__dbgmcu_8h" kind="file" language="C++">
+    <compoundname>stm32f10x_dbgmcu.h</compoundname>
+    <includes refid="stm32f10x_8h" local="yes">stm32f10x.h</includes>
+    <includedby refid="stm32f10x__conf_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</includedby>
+    <includedby refid="stm32f10x__dbgmcu_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c</includedby>
+    <incdepgraph>
+      <node id="577">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="574">
+        <label>stdint.h</label>
+      </node>
+      <node id="573">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="571">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h</label>
+        <link refid="stm32f10x__dbgmcu_8h"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+      </node>
+      <node id="575">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="572">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="580">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c</label>
+        <link refid="stm32f10x__dbgmcu_8c"/>
+      </node>
+      <node id="579">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</label>
+        <link refid="stm32f10x__conf_8h"/>
+      </node>
+      <node id="578">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h</label>
+        <link refid="stm32f10x__dbgmcu_8h"/>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga1c457289646b9d9814b93fbb994c9930" prot="public" static="no">
+        <name>DBGMCU_SLEEP</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga4a71bcfa6868672674b5410d2fd372f4" prot="public" static="no">
+        <name>DBGMCU_STOP</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga6eb848845f9207ffdccd0590da192002" prot="public" static="no">
+        <name>DBGMCU_STANDBY</name>
+        <initializer>((uint32_t)0x00000004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="56" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga5b8b38b5589a2e26a57325553b5dfe23" prot="public" static="no">
+        <name>DBGMCU_IWDG_STOP</name>
+        <initializer>((uint32_t)0x00000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="57" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga9ecfb95a943e2ad165395fff4fa12770" prot="public" static="no">
+        <name>DBGMCU_WWDG_STOP</name>
+        <initializer>((uint32_t)0x00000200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga017fb3101a3569426e82b066cb2f8848" prot="public" static="no">
+        <name>DBGMCU_TIM1_STOP</name>
+        <initializer>((uint32_t)0x00000400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga8ba3a77260f748793c903468a4608bd1" prot="public" static="no">
+        <name>DBGMCU_TIM2_STOP</name>
+        <initializer>((uint32_t)0x00000800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga28c01c2c30bed78e51d997007986fac9" prot="public" static="no">
+        <name>DBGMCU_TIM3_STOP</name>
+        <initializer>((uint32_t)0x00001000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gac87363a4018e2b23a907cfaf836494f1" prot="public" static="no">
+        <name>DBGMCU_TIM4_STOP</name>
+        <initializer>((uint32_t)0x00002000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga5ef70e050d1a95f350b6585336a55ca8" prot="public" static="no">
+        <name>DBGMCU_CAN1_STOP</name>
+        <initializer>((uint32_t)0x00004000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="63" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga1c0566af96833376cf1af98449cc914b" prot="public" static="no">
+        <name>DBGMCU_I2C1_SMBUS_TIMEOUT</name>
+        <initializer>((uint32_t)0x00008000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="64" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga316f8eba36b7a796dd3c6b7d6640b4bf" prot="public" static="no">
+        <name>DBGMCU_I2C2_SMBUS_TIMEOUT</name>
+        <initializer>((uint32_t)0x00010000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gaa66feea7d5f2c253fe3f431f9dd4bd1e" prot="public" static="no">
+        <name>DBGMCU_TIM8_STOP</name>
+        <initializer>((uint32_t)0x00020000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gaf97e21534b3aa9482af496497a37ff4b" prot="public" static="no">
+        <name>DBGMCU_TIM5_STOP</name>
+        <initializer>((uint32_t)0x00040000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga076cf7d18c7019e99f5f15962ab317eb" prot="public" static="no">
+        <name>DBGMCU_TIM6_STOP</name>
+        <initializer>((uint32_t)0x00080000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="68" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gaf593ca16ee6d3f1fabc549878f3f87f0" prot="public" static="no">
+        <name>DBGMCU_TIM7_STOP</name>
+        <initializer>((uint32_t)0x00100000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="69" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gace53677f1b7b9a52b592cf2b0f3f7178" prot="public" static="no">
+        <name>DBGMCU_CAN2_STOP</name>
+        <initializer>((uint32_t)0x00200000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="70" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga68f2b4e7feb0a1f1e4b437a104c30f03" prot="public" static="no">
+        <name>DBGMCU_TIM15_STOP</name>
+        <initializer>((uint32_t)0x00400000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga8a0698403a9c76115bc607ee0149193f" prot="public" static="no">
+        <name>DBGMCU_TIM16_STOP</name>
+        <initializer>((uint32_t)0x00800000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gabf3a93a60431c892bdf36ff02081badc" prot="public" static="no">
+        <name>DBGMCU_TIM17_STOP</name>
+        <initializer>((uint32_t)0x01000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="73" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga4814287cef24f57e795b0f5b0174b49c" prot="public" static="no">
+        <name>DBGMCU_TIM12_STOP</name>
+        <initializer>((uint32_t)0x02000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="74" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gae0dd8a28977b261b013fa1ecda79b289" prot="public" static="no">
+        <name>DBGMCU_TIM13_STOP</name>
+        <initializer>((uint32_t)0x04000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="75" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga731f63d66045abee68dbc634070df051" prot="public" static="no">
+        <name>DBGMCU_TIM14_STOP</name>
+        <initializer>((uint32_t)0x08000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="76" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga560c557a0d0839dba04f7f2b47851109" prot="public" static="no">
+        <name>DBGMCU_TIM9_STOP</name>
+        <initializer>((uint32_t)0x10000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="77" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga1f0ae2f78e1f9d7eb819bf49b13b5327" prot="public" static="no">
+        <name>DBGMCU_TIM10_STOP</name>
+        <initializer>((uint32_t)0x20000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="78" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1gade03e5368c3bf8a2f43fc046f1d87f30" prot="public" static="no">
+        <name>DBGMCU_TIM11_STOP</name>
+        <initializer>((uint32_t)0x40000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="79" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_b_g_m_c_u___exported___constants_1ga96d44dc7861b6a3f364942704f323a45" prot="public" static="no">
+        <name>IS_DBGMCU_PERIPH</name>
+        <param><defname>PERIPH</defname></param>
+        <initializer>((((PERIPH) &amp; 0x800000F8) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_b_g_m_c_u___exported___functions_1ga47419e9ca75ab7be4c70feb82faa0511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t DBGMCU_GetREVID</definition>
+        <argsstring>(void)</argsstring>
+        <name>DBGMCU_GetREVID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the device revision identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>revision identifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="98" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" bodystart="84" bodyend="87"/>
+        <references refid="group___peripheral__declaration_1ga92ec6d9ec2251fda7d4ce09748cd74b4" compoundref="stm32f10x_8h" startline="1453">DBGMCU</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_b_g_m_c_u___exported___functions_1gac34193c34dbce759bf424957a31b3266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t DBGMCU_GetDEVID</definition>
+        <argsstring>(void)</argsstring>
+        <name>DBGMCU_GetDEVID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the device identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="99" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" bodystart="94" bodyend="97"/>
+        <references refid="group___peripheral__declaration_1ga92ec6d9ec2251fda7d4ce09748cd74b4" compoundref="stm32f10x_8h" startline="1453">DBGMCU</references>
+        <references refid="group___d_b_g_m_c_u___private___defines_1gaeeece10cca80f3c632d3d77c3f2917b6" compoundref="stm32f10x__dbgmcu_8c" startline="46">IDCODE_DEVID_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_b_g_m_c_u___exported___functions_1gadf2f267f855ac1e4c03905c5dcfbd28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DBGMCU_Config</definition>
+        <argsstring>(uint32_t DBGMCU_Periph, FunctionalState NewState)</argsstring>
+        <name>DBGMCU_Config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>DBGMCU_Periph</declname>
+        </param>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Configures the specified peripheral and low power mode behavior when the MCU under Debug mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DBGMCU_Periph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the peripheral and low power mode. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para>DBGMCU_SLEEP: Keep debugger connection during SLEEP mode </para></listitem>
+<listitem><para>DBGMCU_STOP: Keep debugger connection during STOP mode </para></listitem>
+<listitem><para>DBGMCU_STANDBY: Keep debugger connection during STANDBY mode </para></listitem>
+<listitem><para>DBGMCU_IWDG_STOP: Debug IWDG stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_WWDG_STOP: Debug WWDG stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM1_STOP: TIM1 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM2_STOP: TIM2 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM3_STOP: TIM3 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM4_STOP: TIM4 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_CAN1_STOP: Debug CAN2 stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_I2C1_SMBUS_TIMEOUT: I2C1 SMBUS timeout mode stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_I2C2_SMBUS_TIMEOUT: I2C2 SMBUS timeout mode stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM5_STOP: TIM5 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM6_STOP: TIM6 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM7_STOP: TIM7 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM8_STOP: TIM8 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_CAN2_STOP: Debug CAN2 stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM15_STOP: TIM15 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM16_STOP: TIM16 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM17_STOP: TIM17 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM9_STOP: TIM9 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM10_STOP: TIM10 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM11_STOP: TIM11 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM12_STOP: TIM12 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM13_STOP: TIM13 counter stopped when Core is halted </para></listitem>
+<listitem><para>DBGMCU_TIM14_STOP: TIM14 counter stopped when Core is halted </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the specified peripheral in Debug mode. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h" line="100" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_dbgmcu.c" bodystart="134" bodyend="148"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___d_b_g_m_c_u___exported___constants_1ga96d44dc7861b6a3f364942704f323a45" compoundref="stm32f10x__dbgmcu_8h" startline="81">IS_DBGMCU_PERIPH</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga92ec6d9ec2251fda7d4ce09748cd74b4" compoundref="stm32f10x_8h" startline="1453">DBGMCU</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all the functions prototypes for the DBGMCU firmware library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="23"><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__STM32F10x_DBGMCU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__STM32F10x_DBGMCU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x_8h" kindref="compound">stm32f10x.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="group___d_b_g_m_c_u___exported___constants_1ga1c457289646b9d9814b93fbb994c9930" refkind="member"><highlight class="preprocessor">#define<sp/>DBGMCU_SLEEP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000001)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group___d_b_g_m_c_u___exported___constants_1ga4a71bcfa6868672674b5410d2fd372f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000002)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="group___d_b_g_m_c_u___exported___constants_1ga6eb848845f9207ffdccd0590da192002" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_STANDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000004)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group___d_b_g_m_c_u___exported___constants_1ga5b8b38b5589a2e26a57325553b5dfe23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___d_b_g_m_c_u___exported___constants_1ga9ecfb95a943e2ad165395fff4fa12770" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_WWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___d_b_g_m_c_u___exported___constants_1ga017fb3101a3569426e82b066cb2f8848" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM1_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group___d_b_g_m_c_u___exported___constants_1ga8ba3a77260f748793c903468a4608bd1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM2_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="group___d_b_g_m_c_u___exported___constants_1ga28c01c2c30bed78e51d997007986fac9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM3_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00001000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group___d_b_g_m_c_u___exported___constants_1gac87363a4018e2b23a907cfaf836494f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM4_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00002000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="group___d_b_g_m_c_u___exported___constants_1ga5ef70e050d1a95f350b6585336a55ca8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_CAN1_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00004000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="group___d_b_g_m_c_u___exported___constants_1ga1c0566af96833376cf1af98449cc914b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_I2C1_SMBUS_TIMEOUT<sp/><sp/><sp/><sp/>((uint32_t)0x00008000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group___d_b_g_m_c_u___exported___constants_1ga316f8eba36b7a796dd3c6b7d6640b4bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_I2C2_SMBUS_TIMEOUT<sp/><sp/><sp/><sp/>((uint32_t)0x00010000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="group___d_b_g_m_c_u___exported___constants_1gaa66feea7d5f2c253fe3f431f9dd4bd1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM8_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00020000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___d_b_g_m_c_u___exported___constants_1gaf97e21534b3aa9482af496497a37ff4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM5_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00040000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group___d_b_g_m_c_u___exported___constants_1ga076cf7d18c7019e99f5f15962ab317eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM6_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00080000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="group___d_b_g_m_c_u___exported___constants_1gaf593ca16ee6d3f1fabc549878f3f87f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM7_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00100000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="group___d_b_g_m_c_u___exported___constants_1gace53677f1b7b9a52b592cf2b0f3f7178" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_CAN2_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00200000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___d_b_g_m_c_u___exported___constants_1ga68f2b4e7feb0a1f1e4b437a104c30f03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM15_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00400000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="group___d_b_g_m_c_u___exported___constants_1ga8a0698403a9c76115bc607ee0149193f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM16_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00800000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group___d_b_g_m_c_u___exported___constants_1gabf3a93a60431c892bdf36ff02081badc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM17_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x01000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="group___d_b_g_m_c_u___exported___constants_1ga4814287cef24f57e795b0f5b0174b49c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM12_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x02000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group___d_b_g_m_c_u___exported___constants_1gae0dd8a28977b261b013fa1ecda79b289" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM13_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x04000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="group___d_b_g_m_c_u___exported___constants_1ga731f63d66045abee68dbc634070df051" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM14_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x08000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="group___d_b_g_m_c_u___exported___constants_1ga560c557a0d0839dba04f7f2b47851109" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM9_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x10000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group___d_b_g_m_c_u___exported___constants_1ga1f0ae2f78e1f9d7eb819bf49b13b5327" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM10_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x20000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="group___d_b_g_m_c_u___exported___constants_1gade03e5368c3bf8a2f43fc046f1d87f30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBGMCU_TIM11_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x40000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="group___d_b_g_m_c_u___exported___constants_1ga96d44dc7861b6a3f364942704f323a45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DBGMCU_PERIPH(PERIPH)<sp/>((((PERIPH)<sp/>&amp;<sp/>0x800000F8)<sp/>==<sp/>0x00)<sp/>&amp;&amp;<sp/>((PERIPH)<sp/>!=<sp/>0x00))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">uint32_t<sp/><ref refid="group___d_b_g_m_c_u___exported___functions_1ga47419e9ca75ab7be4c70feb82faa0511" kindref="member">DBGMCU_GetREVID</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">uint32_t<sp/><ref refid="group___d_b_g_m_c_u___exported___functions_1gac34193c34dbce759bf424957a31b3266" kindref="member">DBGMCU_GetDEVID</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_b_g_m_c_u___exported___functions_1gadf2f267f855ac1e4c03905c5dcfbd28b" kindref="member">DBGMCU_Config</ref>(uint32_t<sp/>DBGMCU_Periph,<sp/><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__STM32F10x_DBGMCU_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dbgmcu.h"/>
+  </compounddef>
+</doxygen>

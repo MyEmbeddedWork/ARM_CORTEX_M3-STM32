@@ -1,0 +1,77 @@
+.TH "PID" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PID
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+A Proportional Integral Derivative (PID) controller is a generic feedback control loop mechanism widely used in industrial control systems\&. A PID controller is the most commonly used type of feedback controller\&.
+.PP
+This set of functions implements (PID) controllers for Q15, Q31, and floating-point data types\&. The functions operate on a single sample of data and each call to the function returns a single processed value\&. \fCS\fP points to an instance of the PID control data structure\&. \fCin\fP is the input sample value\&. The functions return the output value\&.
+.PP
+\fBAlgorithm:\fP
+.RS 4
+
+.PP
+.nf
+
+   y[n] = y[n-1] + A0 * x[n] + A1 * x[n-1] + A2 * x[n-2]
+   A0 = Kp + Ki + Kd
+   A1 = (-Kp ) - (2 * Kd )
+   A2 = Kd  
+.fi
+.PP
+.RE
+.PP
+\fB\fP
+.RS 4
+where \fCKp\fP is proportional constant, \fCKi\fP is Integral constant and \fCKd\fP is Derivative constant
+.RE
+.PP
+\fB\fP
+.RS 4
+Proportional Integral Derivative Controller 
+.RE
+.PP
+\fB\fP
+.RS 4
+The PID controller calculates an 'error' value as the difference between the measured output and the reference input\&. The controller attempts to minimize the error by adjusting the process control inputs\&. The proportional value determines the reaction to the current error, the integral value determines the reaction based on the sum of recent errors, and the derivative value determines the reaction based on the rate at which the error has been changing\&.
+.RE
+.PP
+\fBInstance Structure\fP
+.RS 4
+The Gains A0, A1, A2 and state variables for a PID controller are stored together in an instance data structure\&. A separate instance structure must be defined for each PID Controller\&. There are separate instance structure declarations for each of the 3 supported data types\&.
+.RE
+.PP
+\fBReset Functions\fP
+.RS 4
+There is also an associated reset function for each data type which clears the state array\&.
+.RE
+.PP
+\fBInitialization Functions\fP
+.RS 4
+There is also an associated initialization function for each data type\&. The initialization function performs the following operations:
+.IP "\(bu" 2
+Initializes the Gains A0, A1, A2 from Kp,Ki, Kd gains\&.
+.IP "\(bu" 2
+Zeros out the values in the state buffer\&.
+.PP
+.RE
+.PP
+\fB\fP
+.RS 4
+Instance structure cannot be placed into a const data section and it is recommended to use the initialization function\&.
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the fixed-point versions of the PID Controller functions\&. In particular, the overflow and saturation behavior of the accumulator used in each function must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,46 @@
+.TH "FSMC_Wait_Signal_Polarity" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSMC_Wait_Signal_Polarity
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalPolarity_Low\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_WaitSignalPolarity_High\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBIS_FSMC_WAIT_POLARITY\fP(POLARITY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FSMC_WaitSignalPolarity_High   ((uint32_t)0x00000200)"
+
+.PP
+Definition at line 364 of file stm32f10x_fsmc\&.h\&.
+.SS "#define FSMC_WaitSignalPolarity_Low   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 363 of file stm32f10x_fsmc\&.h\&.
+.SS "#define IS_FSMC_WAIT_POLARITY(POLARITY)"
+\fBValue:\fP
+.PP
+.nf
+(((POLARITY) == FSMC_WaitSignalPolarity_Low) || \
+                                         ((POLARITY) == FSMC_WaitSignalPolarity_High))
+.fi
+.PP
+Definition at line 365 of file stm32f10x_fsmc\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

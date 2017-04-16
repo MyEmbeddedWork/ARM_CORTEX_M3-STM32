@@ -1,0 +1,510 @@
+.TH "Option_Bytes_Write_Protection" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Option_Bytes_Write_Protection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages0to3\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages4to7\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages8to11\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages12to15\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages16to19\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages20to23\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages24to27\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages28to31\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages32to35\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages36to39\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages40to43\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages44to47\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages48to51\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages52to55\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages56to59\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages60to63\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages64to67\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages68to71\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages72to75\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages76to79\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages80to83\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages84to87\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages88to91\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages92to95\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages96to99\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages100to103\fP   ((uint32_t)0x02000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages104to107\fP   ((uint32_t)0x04000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages108to111\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages112to115\fP   ((uint32_t)0x10000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages116to119\fP   ((uint32_t)0x20000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages120to123\fP   ((uint32_t)0x40000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages124to127\fP   ((uint32_t)0x80000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages0to1\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages2to3\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages4to5\fP   ((uint32_t)0x00000004)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages6to7\fP   ((uint32_t)0x00000008)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages8to9\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages10to11\fP   ((uint32_t)0x00000020)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages12to13\fP   ((uint32_t)0x00000040)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages14to15\fP   ((uint32_t)0x00000080)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages16to17\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages18to19\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages20to21\fP   ((uint32_t)0x00000400)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages22to23\fP   ((uint32_t)0x00000800)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages24to25\fP   ((uint32_t)0x00001000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages26to27\fP   ((uint32_t)0x00002000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages28to29\fP   ((uint32_t)0x00004000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages30to31\fP   ((uint32_t)0x00008000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages32to33\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages34to35\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages36to37\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages38to39\fP   ((uint32_t)0x00080000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages40to41\fP   ((uint32_t)0x00100000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages42to43\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages44to45\fP   ((uint32_t)0x00400000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages46to47\fP   ((uint32_t)0x00800000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages48to49\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages50to51\fP   ((uint32_t)0x02000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages52to53\fP   ((uint32_t)0x04000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages54to55\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages56to57\fP   ((uint32_t)0x10000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages58to59\fP   ((uint32_t)0x20000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages60to61\fP   ((uint32_t)0x40000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages62to127\fP   ((uint32_t)0x80000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages62to255\fP   ((uint32_t)0x80000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_Pages62to511\fP   ((uint32_t)0x80000000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_WRProt_AllPages\fP   ((uint32_t)0xFFFFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_WRPROT_PAGE\fP(PAGE)   (((PAGE) != 0x00000000))"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_ADDRESS\fP(ADDRESS)   (((ADDRESS) >= 0x08000000) && ((ADDRESS) < 0x080FFFFF))"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_DATA_ADDRESS\fP(ADDRESS)   (((ADDRESS) == 0x1FFFF804) || ((ADDRESS) == 0x1FFFF806))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_WRProt_AllPages   ((uint32_t)0xFFFFFFFF)"
+Write protection of all Pages 
+.PP
+Definition at line 243 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages0to1   ((uint32_t)0x00000001)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 0 to 1 
+.PP
+Definition at line 146 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages0to3   ((uint32_t)0x00000001)"
+STM32 Low and Medium density devices: Write protection of page 0 to 3 
+.PP
+Definition at line 110 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages100to103   ((uint32_t)0x02000000)"
+STM32 Medium-density devices: Write protection of page 100 to 103 
+.PP
+Definition at line 137 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages104to107   ((uint32_t)0x04000000)"
+STM32 Medium-density devices: Write protection of page 104 to 107 
+.PP
+Definition at line 138 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages108to111   ((uint32_t)0x08000000)"
+STM32 Medium-density devices: Write protection of page 108 to 111 
+.PP
+Definition at line 139 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages10to11   ((uint32_t)0x00000020)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 10 to 11 
+.PP
+Definition at line 161 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages112to115   ((uint32_t)0x10000000)"
+STM32 Medium-density devices: Write protection of page 112 to 115 
+.PP
+Definition at line 140 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages116to119   ((uint32_t)0x20000000)"
+STM32 Medium-density devices: Write protection of page 115 to 119 
+.PP
+Definition at line 141 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages120to123   ((uint32_t)0x40000000)"
+STM32 Medium-density devices: Write protection of page 120 to 123 
+.PP
+Definition at line 142 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages124to127   ((uint32_t)0x80000000)"
+STM32 Medium-density devices: Write protection of page 124 to 127 
+.PP
+Definition at line 143 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages12to13   ((uint32_t)0x00000040)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 12 to 13 
+.PP
+Definition at line 164 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages12to15   ((uint32_t)0x00000008)"
+STM32 Low and Medium density devices: Write protection of page 12 to 15 
+.PP
+Definition at line 113 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages14to15   ((uint32_t)0x00000080)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 14 to 15 
+.PP
+Definition at line 167 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages16to17   ((uint32_t)0x00000100)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 16 to 17 
+.PP
+Definition at line 170 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages16to19   ((uint32_t)0x00000010)"
+STM32 Low and Medium density devices: Write protection of page 16 to 19 
+.PP
+Definition at line 114 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages18to19   ((uint32_t)0x00000200)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 18 to 19 
+.PP
+Definition at line 173 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages20to21   ((uint32_t)0x00000400)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 20 to 21 
+.PP
+Definition at line 176 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages20to23   ((uint32_t)0x00000020)"
+STM32 Low and Medium density devices: Write protection of page 20 to 23 
+.PP
+Definition at line 115 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages22to23   ((uint32_t)0x00000800)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 22 to 23 
+.PP
+Definition at line 179 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages24to25   ((uint32_t)0x00001000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 24 to 25 
+.PP
+Definition at line 182 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages24to27   ((uint32_t)0x00000040)"
+STM32 Low and Medium density devices: Write protection of page 24 to 27 
+.PP
+Definition at line 116 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages26to27   ((uint32_t)0x00002000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 26 to 27 
+.PP
+Definition at line 185 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages28to29   ((uint32_t)0x00004000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 28 to 29 
+.PP
+Definition at line 188 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages28to31   ((uint32_t)0x00000080)"
+STM32 Low and Medium density devices: Write protection of page 28 to 31 
+.PP
+Definition at line 117 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages2to3   ((uint32_t)0x00000002)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 2 to 3 
+.PP
+Definition at line 149 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages30to31   ((uint32_t)0x00008000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 30 to 31 
+.PP
+Definition at line 191 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages32to33   ((uint32_t)0x00010000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 32 to 33 
+.PP
+Definition at line 194 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages32to35   ((uint32_t)0x00000100)"
+STM32 Medium-density devices: Write protection of page 32 to 35 
+.PP
+Definition at line 120 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages34to35   ((uint32_t)0x00020000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 34 to 35 
+.PP
+Definition at line 197 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages36to37   ((uint32_t)0x00040000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 36 to 37 
+.PP
+Definition at line 200 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages36to39   ((uint32_t)0x00000200)"
+STM32 Medium-density devices: Write protection of page 36 to 39 
+.PP
+Definition at line 121 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages38to39   ((uint32_t)0x00080000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 38 to 39 
+.PP
+Definition at line 203 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages40to41   ((uint32_t)0x00100000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 40 to 41 
+.PP
+Definition at line 206 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages40to43   ((uint32_t)0x00000400)"
+STM32 Medium-density devices: Write protection of page 40 to 43 
+.PP
+Definition at line 122 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages42to43   ((uint32_t)0x00200000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 42 to 43 
+.PP
+Definition at line 209 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages44to45   ((uint32_t)0x00400000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 44 to 45 
+.PP
+Definition at line 212 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages44to47   ((uint32_t)0x00000800)"
+STM32 Medium-density devices: Write protection of page 44 to 47 
+.PP
+Definition at line 123 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages46to47   ((uint32_t)0x00800000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 46 to 47 
+.PP
+Definition at line 215 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages48to49   ((uint32_t)0x01000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 48 to 49 
+.PP
+Definition at line 218 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages48to51   ((uint32_t)0x00001000)"
+STM32 Medium-density devices: Write protection of page 48 to 51 
+.PP
+Definition at line 124 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages4to5   ((uint32_t)0x00000004)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 4 to 5 
+.PP
+Definition at line 152 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages4to7   ((uint32_t)0x00000002)"
+STM32 Low and Medium density devices: Write protection of page 4 to 7 
+.PP
+Definition at line 111 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages50to51   ((uint32_t)0x02000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 50 to 51 
+.PP
+Definition at line 221 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages52to53   ((uint32_t)0x04000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 52 to 53 
+.PP
+Definition at line 224 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages52to55   ((uint32_t)0x00002000)"
+STM32 Medium-density devices: Write protection of page 52 to 55 
+.PP
+Definition at line 125 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages54to55   ((uint32_t)0x08000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 54 to 55 
+.PP
+Definition at line 227 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages56to57   ((uint32_t)0x10000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 56 to 57 
+.PP
+Definition at line 230 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages56to59   ((uint32_t)0x00004000)"
+STM32 Medium-density devices: Write protection of page 56 to 59 
+.PP
+Definition at line 126 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages58to59   ((uint32_t)0x20000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 58 to 59 
+.PP
+Definition at line 233 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages60to61   ((uint32_t)0x40000000)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 60 to 61 
+.PP
+Definition at line 236 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages60to63   ((uint32_t)0x00008000)"
+STM32 Medium-density devices: Write protection of page 60 to 63 
+.PP
+Definition at line 127 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages62to127   ((uint32_t)0x80000000)"
+STM32 Connectivity line devices: Write protection of page 62 to 127 
+.PP
+Definition at line 239 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages62to255   ((uint32_t)0x80000000)"
+STM32 Medium-density devices: Write protection of page 62 to 255 
+.PP
+Definition at line 240 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages62to511   ((uint32_t)0x80000000)"
+STM32 XL-density devices: Write protection of page 62 to 511 
+.PP
+Definition at line 241 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages64to67   ((uint32_t)0x00010000)"
+STM32 Medium-density devices: Write protection of page 64 to 67 
+.PP
+Definition at line 128 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages68to71   ((uint32_t)0x00020000)"
+STM32 Medium-density devices: Write protection of page 68 to 71 
+.PP
+Definition at line 129 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages6to7   ((uint32_t)0x00000008)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 6 to 7 
+.PP
+Definition at line 155 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages72to75   ((uint32_t)0x00040000)"
+STM32 Medium-density devices: Write protection of page 72 to 75 
+.PP
+Definition at line 130 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages76to79   ((uint32_t)0x00080000)"
+STM32 Medium-density devices: Write protection of page 76 to 79 
+.PP
+Definition at line 131 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages80to83   ((uint32_t)0x00100000)"
+STM32 Medium-density devices: Write protection of page 80 to 83 
+.PP
+Definition at line 132 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages84to87   ((uint32_t)0x00200000)"
+STM32 Medium-density devices: Write protection of page 84 to 87 
+.PP
+Definition at line 133 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages88to91   ((uint32_t)0x00400000)"
+STM32 Medium-density devices: Write protection of page 88 to 91 
+.PP
+Definition at line 134 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages8to11   ((uint32_t)0x00000004)"
+STM32 Low and Medium density devices: Write protection of page 8 to 11 
+.PP
+Definition at line 112 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages8to9   ((uint32_t)0x00000010)"
+STM32 High-density, XL-density and Connectivity line devices: Write protection of page 8 to 9 
+.PP
+Definition at line 158 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages92to95   ((uint32_t)0x00800000)"
+STM32 Medium-density devices: Write protection of page 92 to 95 
+.PP
+Definition at line 135 of file stm32f10x_flash\&.h\&.
+.SS "#define FLASH_WRProt_Pages96to99   ((uint32_t)0x01000000)"
+STM32 Medium-density devices: Write protection of page 96 to 99 
+.PP
+Definition at line 136 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_FLASH_ADDRESS(ADDRESS)   (((ADDRESS) >= 0x08000000) && ((ADDRESS) < 0x080FFFFF))"
+
+.PP
+Definition at line 247 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_FLASH_WRPROT_PAGE(PAGE)   (((PAGE) != 0x00000000))"
+
+.PP
+Definition at line 245 of file stm32f10x_flash\&.h\&.
+.SS "#define IS_OB_DATA_ADDRESS(ADDRESS)   (((ADDRESS) == 0x1FFFF804) || ((ADDRESS) == 0x1FFFF806))"
+
+.PP
+Definition at line 249 of file stm32f10x_flash\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

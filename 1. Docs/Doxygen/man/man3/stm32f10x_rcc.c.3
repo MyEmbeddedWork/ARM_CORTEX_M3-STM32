@@ -1,0 +1,314 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rcc.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_rcc.c \- This file provides all the RCC firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_OFFSET\fP   (\fBRCC_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x00)"
+.br
+.ti -1c
+.RI "#define \fBHSION_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCR_HSION_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBHSION_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBPLLON_BitNumber\fP   0x18"
+.br
+.ti -1c
+.RI "#define \fBCR_PLLON_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBPLLON_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSSON_BitNumber\fP   0x13"
+.br
+.ti -1c
+.RI "#define \fBCR_CSSON_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCR_OFFSET\fP * 32) + (\fBCSSON_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCFGR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x04)"
+.br
+.ti -1c
+.RI "#define \fBUSBPRE_BitNumber\fP   0x16"
+.br
+.ti -1c
+.RI "#define \fBCFGR_USBPRE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCFGR_OFFSET\fP * 32) + (\fBUSBPRE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBBDCR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x20)"
+.br
+.ti -1c
+.RI "#define \fBRTCEN_BitNumber\fP   0x0F"
+.br
+.ti -1c
+.RI "#define \fBBDCR_RTCEN_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBBDCR_OFFSET\fP * 32) + (\fBRTCEN_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBBDRST_BitNumber\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBBDCR_BDRST_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBBDCR_OFFSET\fP * 32) + (\fBBDRST_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCSR_OFFSET\fP   (\fBRCC_OFFSET\fP + 0x24)"
+.br
+.ti -1c
+.RI "#define \fBLSION_BitNumber\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCSR_LSION_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBCSR_OFFSET\fP * 32) + (\fBLSION_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEBYP_Reset\fP   ((uint32_t)0xFFFBFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEBYP_Set\fP   ((uint32_t)0x00040000)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEON_Reset\fP   ((uint32_t)0xFFFEFFFF)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSEON_Set\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBCR_HSITRIM_Mask\fP   ((uint32_t)0xFFFFFF07)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLL_Mask\fP   ((uint32_t)0xFFC0FFFF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLLMull_Mask\fP   ((uint32_t)0x003C0000)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLLSRC_Mask\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PLLXTPRE_Mask\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_SWS_Mask\fP   ((uint32_t)0x0000000C)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_SW_Mask\fP   ((uint32_t)0xFFFFFFFC)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_HPRE_Reset_Mask\fP   ((uint32_t)0xFFFFFF0F)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_HPRE_Set_Mask\fP   ((uint32_t)0x000000F0)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE1_Reset_Mask\fP   ((uint32_t)0xFFFFF8FF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE1_Set_Mask\fP   ((uint32_t)0x00000700)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE2_Reset_Mask\fP   ((uint32_t)0xFFFFC7FF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_PPRE2_Set_Mask\fP   ((uint32_t)0x00003800)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_ADCPRE_Reset_Mask\fP   ((uint32_t)0xFFFF3FFF)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_ADCPRE_Set_Mask\fP   ((uint32_t)0x0000C000)"
+.br
+.ti -1c
+.RI "#define \fBCSR_RMVF_Set\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBFLAG_Mask\fP   ((uint8_t)0x1F)"
+.br
+.ti -1c
+.RI "#define \fBCIR_BYTE2_ADDRESS\fP   ((uint32_t)0x40021009)"
+.br
+.ti -1c
+.RI "#define \fBCIR_BYTE3_ADDRESS\fP   ((uint32_t)0x4002100A)"
+.br
+.ti -1c
+.RI "#define \fBCFGR_BYTE4_ADDRESS\fP   ((uint32_t)0x40021007)"
+.br
+.ti -1c
+.RI "#define \fBBDCR_ADDRESS\fP   (\fBPERIPH_BASE\fP + \fBBDCR_OFFSET\fP)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRCC_DeInit\fP (void)"
+.br
+.RI "Resets the RCC clock configuration to the default reset state\&. "
+.ti -1c
+.RI "void \fBRCC_HSEConfig\fP (uint32_t RCC_HSE)"
+.br
+.RI "Configures the External High Speed oscillator (HSE)\&. "
+.ti -1c
+.RI "\fBErrorStatus\fP \fBRCC_WaitForHSEStartUp\fP (void)"
+.br
+.RI "Waits for HSE start-up\&. "
+.ti -1c
+.RI "void \fBRCC_AdjustHSICalibrationValue\fP (uint8_t HSICalibrationValue)"
+.br
+.RI "Adjusts the Internal High Speed oscillator (HSI) calibration value\&. "
+.ti -1c
+.RI "void \fBRCC_HSICmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Internal High Speed oscillator (HSI)\&. "
+.ti -1c
+.RI "void \fBRCC_PLLConfig\fP (uint32_t RCC_PLLSource, uint32_t RCC_PLLMul)"
+.br
+.RI "Configures the PLL clock source and multiplication factor\&. "
+.ti -1c
+.RI "void \fBRCC_PLLCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the PLL\&. "
+.ti -1c
+.RI "void \fBRCC_SYSCLKConfig\fP (uint32_t RCC_SYSCLKSource)"
+.br
+.RI "Configures the system clock (SYSCLK)\&. "
+.ti -1c
+.RI "uint8_t \fBRCC_GetSYSCLKSource\fP (void)"
+.br
+.RI "Returns the clock source used as system clock\&. "
+.ti -1c
+.RI "void \fBRCC_HCLKConfig\fP (uint32_t RCC_SYSCLK)"
+.br
+.RI "Configures the AHB clock (HCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_PCLK1Config\fP (uint32_t RCC_HCLK)"
+.br
+.RI "Configures the Low Speed APB clock (PCLK1)\&. "
+.ti -1c
+.RI "void \fBRCC_PCLK2Config\fP (uint32_t RCC_HCLK)"
+.br
+.RI "Configures the High Speed APB clock (PCLK2)\&. "
+.ti -1c
+.RI "void \fBRCC_ITConfig\fP (uint8_t RCC_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified RCC interrupts\&. "
+.ti -1c
+.RI "void \fBRCC_USBCLKConfig\fP (uint32_t RCC_USBCLKSource)"
+.br
+.RI "Configures the USB clock (USBCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_ADCCLKConfig\fP (uint32_t RCC_PCLK2)"
+.br
+.RI "Configures the ADC clock (ADCCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_LSEConfig\fP (uint8_t RCC_LSE)"
+.br
+.RI "Configures the External Low Speed oscillator (LSE)\&. "
+.ti -1c
+.RI "void \fBRCC_LSICmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Internal Low Speed oscillator (LSI)\&. "
+.ti -1c
+.RI "void \fBRCC_RTCCLKConfig\fP (uint32_t RCC_RTCCLKSource)"
+.br
+.RI "Configures the RTC clock (RTCCLK)\&. "
+.ti -1c
+.RI "void \fBRCC_RTCCLKCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the RTC clock\&. "
+.ti -1c
+.RI "void \fBRCC_GetClocksFreq\fP (\fBRCC_ClocksTypeDef\fP *RCC_Clocks)"
+.br
+.RI "Returns the frequencies of different on chip clocks\&. "
+.ti -1c
+.RI "void \fBRCC_AHBPeriphClockCmd\fP (uint32_t RCC_AHBPeriph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the AHB peripheral clock\&. "
+.ti -1c
+.RI "void \fBRCC_APB2PeriphClockCmd\fP (uint32_t RCC_APB2Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the High Speed APB (APB2) peripheral clock\&. "
+.ti -1c
+.RI "void \fBRCC_APB1PeriphClockCmd\fP (uint32_t RCC_APB1Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Low Speed APB (APB1) peripheral clock\&. "
+.ti -1c
+.RI "void \fBRCC_APB2PeriphResetCmd\fP (uint32_t RCC_APB2Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Forces or releases High Speed APB (APB2) peripheral reset\&. "
+.ti -1c
+.RI "void \fBRCC_APB1PeriphResetCmd\fP (uint32_t RCC_APB1Periph, \fBFunctionalState\fP NewState)"
+.br
+.RI "Forces or releases Low Speed APB (APB1) peripheral reset\&. "
+.ti -1c
+.RI "void \fBRCC_BackupResetCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Forces or releases the Backup domain reset\&. "
+.ti -1c
+.RI "void \fBRCC_ClockSecuritySystemCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Clock Security System\&. "
+.ti -1c
+.RI "void \fBRCC_MCOConfig\fP (uint8_t RCC_MCO)"
+.br
+.RI "Selects the clock source to output on MCO pin\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBRCC_GetFlagStatus\fP (uint8_t RCC_FLAG)"
+.br
+.RI "Checks whether the specified RCC flag is set or not\&. "
+.ti -1c
+.RI "void \fBRCC_ClearFlag\fP (void)"
+.br
+.RI "Clears the RCC reset flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBRCC_GetITStatus\fP (uint8_t RCC_IT)"
+.br
+.RI "Checks whether the specified RCC interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBRCC_ClearITPendingBit\fP (uint8_t RCC_IT)"
+.br
+.RI "Clears the RCC's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the RCC firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_rcc\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

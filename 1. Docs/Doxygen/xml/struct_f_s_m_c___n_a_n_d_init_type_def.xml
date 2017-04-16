@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_f_s_m_c___n_a_n_d_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FSMC_NANDInitTypeDef</compoundname>
+    <includes refid="stm32f10x__fsmc_8h" local="no">stm32f10x_fsmc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a60d3ead2188e1dbdf06810e952b3ce0f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_Bank</definition>
+        <argsstring></argsstring>
+        <name>FSMC_Bank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the NAND memory bank that will be used. This parameter can be a value of <ref refid="group___f_s_m_c___n_a_n_d___bank" kindref="compound">FSMC_NAND_Bank</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="185" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1ab350e15014c4a9f4b2c2f2848f11eeca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_Waitfeature</definition>
+        <argsstring></argsstring>
+        <name>FSMC_Waitfeature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables or disables the Wait feature for the NAND Memory Bank. This parameter can be any value of <ref refid="group___f_s_m_c___wait__feature" kindref="compound">FSMC_Wait_feature</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="188" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="188" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1ab4a4f56aab3150d8fb02aaf092db0235" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_MemoryDataWidth</definition>
+        <argsstring></argsstring>
+        <name>FSMC_MemoryDataWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the external memory device width. This parameter can be any value of <ref refid="group___f_s_m_c___data___width" kindref="compound">FSMC_Data_Width</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="191" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="191" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a58d0510c0ce0ae3d1e3863bf8f571377" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_ECC</definition>
+        <argsstring></argsstring>
+        <name>FSMC_ECC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables or disables the ECC computation. This parameter can be any value of <ref refid="group___f_s_m_c___e_c_c" kindref="compound">FSMC_ECC</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="194" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="194" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ed6a25710ba724a7a8f90af60130cf6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_ECCPageSize</definition>
+        <argsstring></argsstring>
+        <name>FSMC_ECCPageSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the page size for the extended ECC. This parameter can be any value of <ref refid="group___f_s_m_c___e_c_c___page___size" kindref="compound">FSMC_ECC_Page_Size</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="197" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="197" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a633c7be46a1d281916b9f2e34fa3d36a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_TCLRSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_TCLRSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK cycles to configure the delay between CLE low and RE low. This parameter can be a value between 0 and 0xFF. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="200" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="200" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a014c1b8977b454ac15654d93dbb7dff9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FSMC_NANDInitTypeDef::FSMC_TARSetupTime</definition>
+        <argsstring></argsstring>
+        <name>FSMC_TARSetupTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the number of HCLK cycles to configure the delay between ALE low and RE low. This parameter can be a number between 0x0 and 0xFF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="204" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="204" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ab117a15e780c02fcad5d844e71c425" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def" kindref="compound">FSMC_NAND_PCCARDTimingInitTypeDef</ref> *</type>
+        <definition>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_NANDInitTypeDef::FSMC_CommonSpaceTimingStruct</definition>
+        <argsstring></argsstring>
+        <name>FSMC_CommonSpaceTimingStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FSMC Common Space Timing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="208" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="208" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_m_c___n_a_n_d_init_type_def_1a2a33bd855240dba37e507f223dbca062" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def" kindref="compound">FSMC_NAND_PCCARDTimingInitTypeDef</ref> *</type>
+        <definition>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_NANDInitTypeDef::FSMC_AttributeSpaceTimingStruct</definition>
+        <argsstring></argsstring>
+        <name>FSMC_AttributeSpaceTimingStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FSMC Attribute Space Timing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="210" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="210" bodyend="-1"/>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga9f81ccc4e126c11f1eb33077b1a68e6f" compoundref="stm32f10x__fsmc_8c" startline="262" endline="318">FSMC_NANDInit</referencedby>
+        <referencedby refid="group___f_s_m_c___private___functions_1ga8283ad94ad8e83d49d5b77d1c7e17862" compoundref="stm32f10x__fsmc_8c" startline="418" endline="436">FSMC_NANDStructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FSMC NAND Init structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="213">
+        <label>FSMC_NAND_PCCARDTimingInitTypeDef</label>
+        <link refid="struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def"/>
+      </node>
+      <node id="212">
+        <label>FSMC_NANDInitTypeDef</label>
+        <link refid="struct_f_s_m_c___n_a_n_d_init_type_def"/>
+        <childnode refid="213" relation="usage">
+          <edgelabel>FSMC_AttributeSpaceTimingStruct</edgelabel>
+          <edgelabel>FSMC_CommonSpaceTimingStruct</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="184" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="183" bodyend="211"/>
+    <listofallmembers>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a2a33bd855240dba37e507f223dbca062" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_AttributeSpaceTimingStruct</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a60d3ead2188e1dbdf06810e952b3ce0f" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_Bank</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ab117a15e780c02fcad5d844e71c425" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_CommonSpaceTimingStruct</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a58d0510c0ce0ae3d1e3863bf8f571377" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_ECC</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a7ed6a25710ba724a7a8f90af60130cf6" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_ECCPageSize</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1ab4a4f56aab3150d8fb02aaf092db0235" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_MemoryDataWidth</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a014c1b8977b454ac15654d93dbb7dff9" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_TARSetupTime</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1a633c7be46a1d281916b9f2e34fa3d36a" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_TCLRSetupTime</name></member>
+      <member refid="struct_f_s_m_c___n_a_n_d_init_type_def_1ab350e15014c4a9f4b2c2f2848f11eeca" prot="public" virt="non-virtual"><scope>FSMC_NANDInitTypeDef</scope><name>FSMC_Waitfeature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

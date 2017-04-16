@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___output___compare__and___p_w_m__modes" kind="group">
+    <compoundname>TIM_Output_Compare_and_PWM_modes</compoundname>
+    <title>TIM_Output_Compare_and_PWM_modes</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1ga54d5745fade3b2f8ea1325e7447ca760" prot="public" static="no">
+        <name>TIM_OCMode_Timing</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="294" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1ga76bac57d41dc67218772f9c745c77102" prot="public" static="no">
+        <name>TIM_OCMode_Active</name>
+        <initializer>((uint16_t)0x0010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="295" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1gae0c350d7adaea14a37cabc2ab762695f" prot="public" static="no">
+        <name>TIM_OCMode_Inactive</name>
+        <initializer>((uint16_t)0x0020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="296" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1ga8b8adb6e81fe88bd14d44430f7f97021" prot="public" static="no">
+        <name>TIM_OCMode_Toggle</name>
+        <initializer>((uint16_t)0x0030)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="297" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1gaefbe32dddc9630fbcc48b302b50d15fc" prot="public" static="no">
+        <name>TIM_OCMode_PWM1</name>
+        <initializer>((uint16_t)0x0060)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="298" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1ga722d8f33a795ef82ed7ae76dfbb7613d" prot="public" static="no">
+        <name>TIM_OCMode_PWM2</name>
+        <initializer>((uint16_t)0x0070)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="299" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1ga93d898976e236c135bfd02a0c213c8ec" prot="public" static="no">
+        <name>IS_TIM_OC_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga54d5745fade3b2f8ea1325e7447ca760" kindref="member">TIM_OCMode_Timing</ref>) || \
+                              ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga76bac57d41dc67218772f9c745c77102" kindref="member">TIM_OCMode_Active</ref>) || \
+                              ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1gae0c350d7adaea14a37cabc2ab762695f" kindref="member">TIM_OCMode_Inactive</ref>) || \
+                              ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga8b8adb6e81fe88bd14d44430f7f97021" kindref="member">TIM_OCMode_Toggle</ref>)|| \
+                              ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1gaefbe32dddc9630fbcc48b302b50d15fc" kindref="member">TIM_OCMode_PWM1</ref>) || \
+                              ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga722d8f33a795ef82ed7ae76dfbb7613d" kindref="member">TIM_OCMode_PWM2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="300" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___output___compare__and___p_w_m__modes_1ga45f530dd241d3b0787b5c2d62cd1b98f" prot="public" static="no">
+        <name>IS_TIM_OCM</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga54d5745fade3b2f8ea1325e7447ca760" kindref="member">TIM_OCMode_Timing</ref>) || \
+                          ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga76bac57d41dc67218772f9c745c77102" kindref="member">TIM_OCMode_Active</ref>) || \
+                          ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1gae0c350d7adaea14a37cabc2ab762695f" kindref="member">TIM_OCMode_Inactive</ref>) || \
+                          ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga8b8adb6e81fe88bd14d44430f7f97021" kindref="member">TIM_OCMode_Toggle</ref>)|| \
+                          ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1gaefbe32dddc9630fbcc48b302b50d15fc" kindref="member">TIM_OCMode_PWM1</ref>) || \
+                          ((MODE) == <ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga722d8f33a795ef82ed7ae76dfbb7613d" kindref="member">TIM_OCMode_PWM2</ref>) ||	\
+                          ((MODE) == <ref refid="group___t_i_m___forced___action_1ga19d3769825f1dfdbdbde3edb60310b99" kindref="member">TIM_ForcedAction_Active</ref>) || \
+                          ((MODE) == <ref refid="group___t_i_m___forced___action_1ga79656f2193ec5e12a15d0ae5b025d273" kindref="member">TIM_ForcedAction_InActive</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="306" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

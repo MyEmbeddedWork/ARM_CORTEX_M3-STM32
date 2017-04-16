@@ -1,0 +1,46 @@
+.TH "SPI_NSS_internal_software_management" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_NSS_internal_software_management
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_NSSInternalSoft_Set\fP   ((uint16_t)0x0100)"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSSInternalSoft_Reset\fP   ((uint16_t)0xFEFF)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_NSS_INTERNAL\fP(INTERNAL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SPI_NSS_INTERNAL(INTERNAL)"
+\fBValue:\fP
+.PP
+.nf
+(((INTERNAL) == SPI_NSSInternalSoft_Set) || \
+                                       ((INTERNAL) == SPI_NSSInternalSoft_Reset))
+.fi
+.PP
+Definition at line 355 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_NSSInternalSoft_Reset   ((uint16_t)0xFEFF)"
+
+.PP
+Definition at line 354 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_NSSInternalSoft_Set   ((uint16_t)0x0100)"
+
+.PP
+Definition at line 353 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

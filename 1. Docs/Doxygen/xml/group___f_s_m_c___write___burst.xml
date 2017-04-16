@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___f_s_m_c___write___burst" kind="group">
+    <compoundname>FSMC_Write_Burst</compoundname>
+    <title>FSMC_Write_Burst</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_s_m_c___write___burst_1ga65a49ecd05b3a128e8908c6a625adae7" prot="public" static="no">
+        <name>FSMC_WriteBurst_Disable</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="441" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___write___burst_1ga1b2b66a0eb42778c2cc9a05003cf7655" prot="public" static="no">
+        <name>FSMC_WriteBurst_Enable</name>
+        <initializer>((uint32_t)0x00080000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="442" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_s_m_c___write___burst_1gab7b03a33fab765827832abbf07d01a10" prot="public" static="no">
+        <name>IS_FSMC_WRITE_BURST</name>
+        <param><defname>BURST</defname></param>
+        <initializer>(((BURST) == <ref refid="group___f_s_m_c___write___burst_1ga65a49ecd05b3a128e8908c6a625adae7" kindref="member">FSMC_WriteBurst_Disable</ref>) || \
+                                    ((BURST) == <ref refid="group___f_s_m_c___write___burst_1ga1b2b66a0eb42778c2cc9a05003cf7655" kindref="member">FSMC_WriteBurst_Enable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" line="443" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_fsmc.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

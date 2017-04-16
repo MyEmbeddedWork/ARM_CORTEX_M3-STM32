@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_timer" kind="class" language="C++" prot="public">
+    <compoundname>Timer</compoundname>
+    <includes refid="_timer_8h" local="no">Timer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_timer_1af064c6652d9c7424aa2a69091077371d" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t Timer::ticks_t</definition>
+        <argsstring></argsstring>
+        <name>ticks_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="16" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_timer_1afb0566d18137755123193fc239593daa" prot="public" static="yes" mutable="no">
+        <type>constexpr <ref refid="class_timer_1af064c6652d9c7424aa2a69091077371d" kindref="member">ticks_t</ref></type>
+        <definition>constexpr ticks_t Timer::FREQUENCY_HZ</definition>
+        <argsstring></argsstring>
+        <name>FREQUENCY_HZ</name>
+        <initializer>= 1000u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="17" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_timer_1a945ca1182ea396e130bf8286f47756ef" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_timer_1af064c6652d9c7424aa2a69091077371d" kindref="member">ticks_t</ref></type>
+        <definition>volatile Timer::ticks_t Timer::ms_delayCount</definition>
+        <argsstring></argsstring>
+        <name>ms_delayCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="20" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_timer_1a8ed3c5e074223900c0c9a74376471209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Timer::Timer</definition>
+        <argsstring>()=default</argsstring>
+        <name>Timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::start</definition>
+        <argsstring>(void)</argsstring>
+        <name>start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="27" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" bodystart="27" bodyend="31"/>
+        <references refid="group___c_m_s_i_s___core___sys_tick_functions_1gae4e8f0238527c69f522029b93c8e5b78" compoundref="core__cm0_8h" startline="777" endline="791">SysTick_Config</references>
+        <references refid="group___s_t_m32_f10x___system___exported__types_1gaa3cd3e43291e81e795d642b79b6088e6" compoundref="system__stm32f10x_8c" startline="163">SystemCoreClock</references>
+        <references refid="class_timer_1ad946179cf9404a33927ec3d33ed270d7" compoundref="_timer_8cpp" startline="22" endline="29">sleep</references>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_timer_1ad946179cf9404a33927ec3d33ed270d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::sleep</definition>
+        <argsstring>(ticks_t ticks)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type><ref refid="class_timer_1af064c6652d9c7424aa2a69091077371d" kindref="member">ticks_t</ref></type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="34" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/src/Timer.cpp" bodystart="22" bodyend="29"/>
+        <referencedby refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" compoundref="_timer_8h" startline="27" endline="31">start</referencedby>
+        <referencedby refid="__startup_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="64" endline="98">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1afba5678215b6aa1983edf2c08241c99b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Timer::tick</definition>
+        <argsstring>(void)</argsstring>
+        <name>tick</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="37" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" bodystart="37" bodyend="44"/>
+        <referencedby refid="_exception_handlers_8h_1ab5e09814056d617c521549e542639b7e" compoundref="_timer_8cpp" startline="34" endline="40">SysTick_Handler</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" line="14" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/include/Timer.h" bodystart="13" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_timer_1afb0566d18137755123193fc239593daa" prot="public" virt="non-virtual"><scope>Timer</scope><name>FREQUENCY_HZ</name></member>
+      <member refid="class_timer_1a945ca1182ea396e130bf8286f47756ef" prot="private" virt="non-virtual"><scope>Timer</scope><name>ms_delayCount</name></member>
+      <member refid="class_timer_1ad946179cf9404a33927ec3d33ed270d7" prot="public" virt="non-virtual"><scope>Timer</scope><name>sleep</name></member>
+      <member refid="class_timer_1abb13e798f6d89b09fdc9182d64c7558b" prot="public" virt="non-virtual"><scope>Timer</scope><name>start</name></member>
+      <member refid="class_timer_1afba5678215b6aa1983edf2c08241c99b" prot="public" virt="non-virtual"><scope>Timer</scope><name>tick</name></member>
+      <member refid="class_timer_1af064c6652d9c7424aa2a69091077371d" prot="public" virt="non-virtual"><scope>Timer</scope><name>ticks_t</name></member>
+      <member refid="class_timer_1a8ed3c5e074223900c0c9a74376471209" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

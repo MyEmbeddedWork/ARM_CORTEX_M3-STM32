@@ -1,0 +1,154 @@
+.TH "CRC_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CRC_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCRC_ResetDR\fP (void)"
+.br
+.RI "Resets the CRC Data register (DR)\&. "
+.ti -1c
+.RI "uint32_t \fBCRC_CalcCRC\fP (uint32_t Data)"
+.br
+.RI "Computes the 32-bit CRC of a given data word(32-bit)\&. "
+.ti -1c
+.RI "uint32_t \fBCRC_CalcBlockCRC\fP (uint32_t pBuffer[], uint32_t BufferLength)"
+.br
+.RI "Computes the 32-bit CRC of a given buffer of data word(32-bit)\&. "
+.ti -1c
+.RI "uint32_t \fBCRC_GetCRC\fP (void)"
+.br
+.RI "Returns the current CRC value\&. "
+.ti -1c
+.RI "void \fBCRC_SetIDRegister\fP (uint8_t IDValue)"
+.br
+.RI "Stores a 8-bit data in the Independent Data(ID) register\&. "
+.ti -1c
+.RI "uint8_t \fBCRC_GetIDRegister\fP (void)"
+.br
+.RI "Returns the 8-bit data stored in the Independent Data(ID) register\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "uint32_t CRC_CalcBlockCRC (uint32_t pBuffer[], uint32_t BufferLength)"
+
+.PP
+Computes the 32-bit CRC of a given buffer of data word(32-bit)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpBuffer\fP pointer to the buffer containing the data to be computed 
+.br
+\fIBufferLength\fP length of the buffer to be computed 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI32-bit\fP CRC 
+.RE
+.PP
+
+.PP
+Definition at line 107 of file stm32f10x_crc\&.c\&.
+.SS "uint32_t CRC_CalcCRC (uint32_t Data)"
+
+.PP
+Computes the 32-bit CRC of a given data word(32-bit)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIData\fP data word(32-bit) to compute its CRC 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI32-bit\fP CRC 
+.RE
+.PP
+
+.PP
+Definition at line 94 of file stm32f10x_crc\&.c\&.
+.SS "uint32_t CRC_GetCRC (void)"
+
+.PP
+Returns the current CRC value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI32-bit\fP CRC 
+.RE
+.PP
+
+.PP
+Definition at line 123 of file stm32f10x_crc\&.c\&.
+.SS "uint8_t CRC_GetIDRegister (void)"
+
+.PP
+Returns the 8-bit data stored in the Independent Data(ID) register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fI8-bit\fP value of the ID register 
+.RE
+.PP
+
+.PP
+Definition at line 143 of file stm32f10x_crc\&.c\&.
+.SS "void CRC_ResetDR (void)"
+
+.PP
+Resets the CRC Data register (DR)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file stm32f10x_crc\&.c\&.
+.SS "void CRC_SetIDRegister (uint8_t IDValue)"
+
+.PP
+Stores a 8-bit data in the Independent Data(ID) register\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIDValue\fP 8-bit value to be stored in the ID register 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file stm32f10x_crc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

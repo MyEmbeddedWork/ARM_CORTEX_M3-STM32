@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_a_c___channel__selection" kind="group">
+    <compoundname>DAC_Channel_selection</compoundname>
+    <title>DAC_Channel_selection</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_a_c___channel__selection_1gacf6585474ed2a302b69a3725daa91555" prot="public" static="no">
+        <name>DAC_Channel_1</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="196" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c___channel__selection_1ga0e9b0096866bb06e8a82b3e4e66943bb" prot="public" static="no">
+        <name>DAC_Channel_2</name>
+        <initializer>((uint32_t)0x00000010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="197" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_a_c___channel__selection_1gafb2b9bdaccb3a5e3396925d7cba02cc3" prot="public" static="no">
+        <name>IS_DAC_CHANNEL</name>
+        <param><defname>CHANNEL</defname></param>
+        <initializer>(((CHANNEL) == <ref refid="group___d_a_c___channel__selection_1gacf6585474ed2a302b69a3725daa91555" kindref="member">DAC_Channel_1</ref>) || \
+                                 ((CHANNEL) == <ref refid="group___d_a_c___channel__selection_1ga0e9b0096866bb06e8a82b3e4e66943bb" kindref="member">DAC_Channel_2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" line="198" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_dac.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

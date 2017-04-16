@@ -1,0 +1,730 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__pwr_8c" kind="file" language="C++">
+    <compoundname>stm32f10x_pwr.c</compoundname>
+    <includes refid="stm32f10x__pwr_8h" local="yes">stm32f10x_pwr.h</includes>
+    <includes refid="stm32f10x__rcc_8h" local="yes">stm32f10x_rcc.h</includes>
+    <incdepgraph>
+      <node id="981">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="975">
+        <label>stm32f10x_pwr.h</label>
+        <link refid="stm32f10x__pwr_8h"/>
+        <childnode refid="976" relation="include">
+        </childnode>
+      </node>
+      <node id="978">
+        <label>stdint.h</label>
+      </node>
+      <node id="977">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+      </node>
+      <node id="980">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="982">
+        <label>stm32f10x_rcc.h</label>
+        <link refid="stm32f10x__rcc_8h"/>
+        <childnode refid="976" relation="include">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="976">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="977" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="978" relation="include">
+        </childnode>
+      </node>
+      <node id="974">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c</label>
+        <link refid="stm32f10x__pwr_8c"/>
+        <childnode refid="975" relation="include">
+        </childnode>
+        <childnode refid="982" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga7f88bce73931300319824f22578f90de" prot="public" static="no">
+        <name>PWR_OFFSET</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gac691ec23dace8b7a649a25acb110217a" kindref="member">PWR_BASE</ref> - <ref refid="group___peripheral__memory__map_1ga9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="48" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" prot="public" static="no">
+        <name>CR_OFFSET</name>
+        <initializer>(<ref refid="group___p_w_r___private___defines_1ga7f88bce73931300319824f22578f90de" kindref="member">PWR_OFFSET</ref> + 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="53" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga36ff45d972bf94f31f172fd53cf44d23" prot="public" static="no">
+        <name>DBP_BitNumber</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="54" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga799ab60bdbcfc1076cf2d7f206d09b0c" prot="public" static="no">
+        <name>CR_DBP_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" kindref="member">CR_OFFSET</ref> * 32) + (<ref refid="group___p_w_r___private___defines_1ga36ff45d972bf94f31f172fd53cf44d23" kindref="member">DBP_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="55" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga17d618eb800c401ef9c6789c9374eaf8" prot="public" static="no">
+        <name>PVDE_BitNumber</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga49f51ef8285a6be76fd204d49a00709c" prot="public" static="no">
+        <name>CR_PVDE_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" kindref="member">CR_OFFSET</ref> * 32) + (<ref refid="group___p_w_r___private___defines_1ga17d618eb800c401ef9c6789c9374eaf8" kindref="member">PVDE_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga984cbe73312b6d3d355c5053763d499a" prot="public" static="no">
+        <name>CSR_OFFSET</name>
+        <initializer>(<ref refid="group___p_w_r___private___defines_1ga7f88bce73931300319824f22578f90de" kindref="member">PWR_OFFSET</ref> + 0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="64" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga94fe0520e8f9b71fa2b99c0565ec70ea" prot="public" static="no">
+        <name>EWUP_BitNumber</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="65" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1gaaff864595f697850b19173b0bca991b0" prot="public" static="no">
+        <name>CSR_EWUP_BB</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gaed7efc100877000845c236ccdc9e144a" kindref="member">PERIPH_BB_BASE</ref> + (<ref refid="group___r_c_c___private___defines_1ga984cbe73312b6d3d355c5053763d499a" kindref="member">CSR_OFFSET</ref> * 32) + (<ref refid="group___p_w_r___private___defines_1ga94fe0520e8f9b71fa2b99c0565ec70ea" kindref="member">EWUP_BitNumber</ref> * 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1ga8ee6bf9218f3c476629dd9ee70deef21" prot="public" static="no">
+        <name>CR_DS_MASK</name>
+        <initializer>((uint32_t)0xFFFFFFFC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="71" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___defines_1gac4a30eebdd1d292331a578b189962e77" prot="public" static="no">
+        <name>CR_PLS_MASK</name>
+        <initializer>((uint32_t)0xFFFFFF1F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="72" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_w_r___private___functions_1gad03a0aac7bc3bc3a9fd012f3769a6990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>PWR_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the PWR peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="112" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="112" bodyend="116"/>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1ga59ae4e17d5b35a934b1614f8ee883834" compoundref="stm32f10x__rcc_8h" startline="550">RCC_APB1Periph_PWR</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1ga0741aea35572b1a75f82b74de12df800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_BackupAccessCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>PWR_BackupAccessCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables access to the RTC and backup registers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the access to the RTC and backup registers. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="124" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="124" bodyend="129"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___p_w_r___private___defines_1ga799ab60bdbcfc1076cf2d7f206d09b0c" compoundref="stm32f10x__pwr_8c" startline="55">CR_DBP_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1ga42cad476b816e0a33594a933b3ed1acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_PVDCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>PWR_PVDCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the Power Voltage Detector(PVD). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the PVD. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="137" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="137" bodyend="142"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___p_w_r___private___defines_1ga49f51ef8285a6be76fd204d49a00709c" compoundref="stm32f10x__pwr_8c" startline="59">CR_PVDE_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1ga237c143ef6aa55abb8049fa7bf24ab8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_PVDLevelConfig</definition>
+        <argsstring>(uint32_t PWR_PVDLevel)</argsstring>
+        <name>PWR_PVDLevelConfig</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_PVDLevel</declname>
+        </param>
+        <briefdescription>
+<para>Configures the voltage threshold detected by the Power Voltage Detector(PVD). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_PVDLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the PVD detection level This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_PVDLevel_2V2: PVD detection level set to 2.2V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V3: PVD detection level set to 2.3V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V4: PVD detection level set to 2.4V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V5: PVD detection level set to 2.5V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V6: PVD detection level set to 2.6V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V7: PVD detection level set to 2.7V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V8: PVD detection level set to 2.8V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V9: PVD detection level set to 2.9V </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="158" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="158" bodyend="170"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___p_v_d__detection__level_1gabac4485a57abc97aad91eaa0b65ae927" compoundref="stm32f10x__pwr_8h" startline="66">IS_PWR_PVD_LEVEL</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___p_w_r___private___defines_1gac4a30eebdd1d292331a578b189962e77" compoundref="stm32f10x__pwr_8c" startline="72">CR_PLS_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1gae5fd6f9336ef8c60d5483651cb0d1a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_WakeUpPinCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>PWR_WakeUpPinCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the WakeUp Pin functionality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the WakeUp Pin functionality. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="178" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="178" bodyend="183"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___p_w_r___private___defines_1gaaff864595f697850b19173b0bca991b0" compoundref="stm32f10x__pwr_8c" startline="66">CSR_EWUP_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1ga694676ac06a9baf50eae45adae0118ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_EnterSTOPMode</definition>
+        <argsstring>(uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)</argsstring>
+        <name>PWR_EnterSTOPMode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_Regulator</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PWR_STOPEntry</declname>
+        </param>
+        <briefdescription>
+<para>Enters STOP mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_Regulator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the regulator state in STOP mode. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_Regulator_ON: STOP mode with regulator ON </para></listitem>
+<listitem><para>PWR_Regulator_LowPower: STOP mode with regulator in low power mode </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PWR_STOPEntry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies if STOP mode in entered with WFI or WFE instruction. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_STOPEntry_WFI: enter STOP mode with WFI instruction </para></listitem>
+<listitem><para>PWR_STOPEntry_WFE: enter STOP mode with WFE instruction </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="197" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="197" bodyend="229"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___regulator__state__is___s_t_o_p__mode_1ga03c105070272141c0bab5f2b74469072" compoundref="stm32f10x__pwr_8h" startline="80">IS_PWR_REGULATOR</references>
+        <references refid="group___s_t_o_p__mode__entry_1ga4a94eb1f400dec6e486fbc229cbea8a0" compoundref="stm32f10x__pwr_8h" startline="92">IS_PWR_STOP_ENTRY</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___p_w_r___private___defines_1ga8ee6bf9218f3c476629dd9ee70deef21" compoundref="stm32f10x__pwr_8c" startline="71">CR_DS_MASK</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" compoundref="stm32f10x_8h" startline="3182">SCB_SCR_SLEEPDEEP</references>
+        <references refid="group___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4" compoundref="stm32f10x__pwr_8h" startline="90">PWR_STOPEntry_WFI</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" compoundref="cmsis__armcc_8h" startline="320">__WFI</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" compoundref="cmsis__armcc_8h" startline="328">__WFE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1ga00ddae00a9c327b81b24d2597b0052f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_EnterSTANDBYMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>PWR_EnterSTANDBYMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enters STANDBY mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="236" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="236" bodyend="250"/>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga3928de64f633b84770b1cfecea702fa7" compoundref="stm32f10x_8h" startline="1497">PWR_CR_CWUF</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga8c8075e98772470804c9e3fe74984115" compoundref="stm32f10x_8h" startline="1496">PWR_CR_PDDS</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" compoundref="stm32f10x_8h" startline="3182">SCB_SCR_SLEEPDEEP</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" compoundref="cmsis__armcc_8h" startline="320">__WFI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1gaa980163a4d83304280ee34942464b4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus PWR_GetFlagStatus</definition>
+        <argsstring>(uint32_t PWR_FLAG)</argsstring>
+        <name>PWR_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified PWR flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_FLAG_WU: Wake Up flag </para></listitem>
+<listitem><para>PWR_FLAG_SB: StandBy flag </para></listitem>
+<listitem><para>PWR_FLAG_PVDO: PVD Output </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of PWR_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="261" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="261" bodyend="277"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___p_w_r___flag_1gadc822638d0dd52d2f920808dd96c00a1" compoundref="stm32f10x__pwr_8h" startline="105">IS_PWR_GET_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___private___functions_1ga01c4b2fbd16514b993324e101c3ddf7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_ClearFlag</definition>
+        <argsstring>(uint32_t PWR_FLAG)</argsstring>
+        <name>PWR_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the PWR&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_FLAG_WU: Wake Up flag </para></listitem>
+<listitem><para>PWR_FLAG_SB: StandBy flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" line="287" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="287" bodyend="293"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___p_w_r___flag_1ga36d35a770e683e4a0baf3aac350fcb5a" compoundref="stm32f10x__pwr_8h" startline="108">IS_PWR_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file provides all the PWR firmware functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__pwr_8h" kindref="compound">stm32f10x_pwr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x__rcc_8h" kindref="compound">stm32f10x_rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment">/*<sp/>---------<sp/>PWR<sp/>registers<sp/>bit<sp/>address<sp/>in<sp/>the<sp/>alias<sp/>region<sp/>----------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="group___p_w_r___private___defines_1ga7f88bce73931300319824f22578f90de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PWR_BASE<sp/>-<sp/>PERIPH_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>---<sp/>CR<sp/>Register<sp/>---*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>DBP<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="group___p_w_r___private___defines_1gafa1d3d0ea72132df651c76fc1bdffffc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CR_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PWR_OFFSET<sp/>+<sp/>0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="group___p_w_r___private___defines_1ga36ff45d972bf94f31f172fd53cf44d23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBP_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group___p_w_r___private___defines_1ga799ab60bdbcfc1076cf2d7f206d09b0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CR_DBP_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(DBP_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>PVDE<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___p_w_r___private___defines_1ga17d618eb800c401ef9c6789c9374eaf8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PVDE_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___p_w_r___private___defines_1ga49f51ef8285a6be76fd204d49a00709c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CR_PVDE_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(PVDE_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>---<sp/>CSR<sp/>Register<sp/>---*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alias<sp/>word<sp/>address<sp/>of<sp/>EWUP<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="group___p_w_r___private___defines_1ga984cbe73312b6d3d355c5053763d499a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSR_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PWR_OFFSET<sp/>+<sp/>0x04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group___p_w_r___private___defines_1ga94fe0520e8f9b71fa2b99c0565ec70ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EWUP_BitNumber<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="group___p_w_r___private___defines_1gaaff864595f697850b19173b0bca991b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSR_EWUP_BB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BB_BASE<sp/>+<sp/>(CSR_OFFSET<sp/>*<sp/>32)<sp/>+<sp/>(EWUP_BitNumber<sp/>*<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------<sp/>PWR<sp/>registers<sp/>bit<sp/>mask<sp/>------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>CR<sp/>register<sp/>bit<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___p_w_r___private___defines_1ga8ee6bf9218f3c476629dd9ee70deef21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CR_DS_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0xFFFFFFFC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="group___p_w_r___private___defines_1gac4a30eebdd1d292331a578b189962e77" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CR_PLS_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0xFFFFFF1F)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="group___p_w_r___private___functions_1gad03a0aac7bc3bc3a9fd012f3769a6990" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1gad03a0aac7bc3bc3a9fd012f3769a6990" kindref="member">PWR_DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" kindref="member">RCC_APB1PeriphResetCmd</ref>(<ref refid="group___a_p_b1__peripheral_1ga59ae4e17d5b35a934b1614f8ee883834" kindref="member">RCC_APB1Periph_PWR</ref>,<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" kindref="member">ENABLE</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" kindref="member">RCC_APB1PeriphResetCmd</ref>(<ref refid="group___a_p_b1__peripheral_1ga59ae4e17d5b35a934b1614f8ee883834" kindref="member">RCC_APB1Periph_PWR</ref>,<sp/><ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" kindref="member">DISABLE</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="group___p_w_r___private___functions_1ga0741aea35572b1a75f82b74de12df800" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1ga0741aea35572b1a75f82b74de12df800" kindref="member">PWR_BackupAccessCmd</ref>(<ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___p_w_r___private___defines_1ga799ab60bdbcfc1076cf2d7f206d09b0c" kindref="member">CR_DBP_BB</ref><sp/>=<sp/>(uint32_t)NewState;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group___p_w_r___private___functions_1ga42cad476b816e0a33594a933b3ed1acd" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1ga42cad476b816e0a33594a933b3ed1acd" kindref="member">PWR_PVDCmd</ref>(<ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___p_w_r___private___defines_1ga49f51ef8285a6be76fd204d49a00709c" kindref="member">CR_PVDE_BB</ref><sp/>=<sp/>(uint32_t)NewState;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group___p_w_r___private___functions_1ga237c143ef6aa55abb8049fa7bf24ab8f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1ga237c143ef6aa55abb8049fa7bf24ab8f" kindref="member">PWR_PVDLevelConfig</ref>(uint32_t<sp/>PWR_PVDLevel)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmpreg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___p_v_d__detection__level_1gabac4485a57abc97aad91eaa0b65ae927" kindref="member">IS_PWR_PVD_LEVEL</ref>(PWR_PVDLevel));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>PLS[7:5]<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>tmpreg<sp/>&amp;=<sp/><ref refid="group___p_w_r___private___defines_1gac4a30eebdd1d292331a578b189962e77" kindref="member">CR_PLS_MASK</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PLS[7:5]<sp/>bits<sp/>according<sp/>to<sp/>PWR_PVDLevel<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>tmpreg<sp/>|=<sp/>PWR_PVDLevel;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Store<sp/>the<sp/>new<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR<sp/>=<sp/>tmpreg;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="group___p_w_r___private___functions_1gae5fd6f9336ef8c60d5483651cb0d1a00" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1gae5fd6f9336ef8c60d5483651cb0d1a00" kindref="member">PWR_WakeUpPinCmd</ref>(<ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/>NewState)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" kindref="member">IS_FUNCTIONAL_STATE</ref>(NewState));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>*(<ref refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>*)<sp/><ref refid="group___p_w_r___private___defines_1gaaff864595f697850b19173b0bca991b0" kindref="member">CSR_EWUP_BB</ref><sp/>=<sp/>(uint32_t)NewState;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="group___p_w_r___private___functions_1ga694676ac06a9baf50eae45adae0118ab" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1ga694676ac06a9baf50eae45adae0118ab" kindref="member">PWR_EnterSTOPMode</ref>(uint32_t<sp/>PWR_Regulator,<sp/>uint8_t<sp/>PWR_STOPEntry)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmpreg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___regulator__state__is___s_t_o_p__mode_1ga03c105070272141c0bab5f2b74469072" kindref="member">IS_PWR_REGULATOR</ref>(PWR_Regulator));</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_t_o_p__mode__entry_1ga4a94eb1f400dec6e486fbc229cbea8a0" kindref="member">IS_PWR_STOP_ENTRY</ref>(PWR_STOPEntry));</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Select<sp/>the<sp/>regulator<sp/>state<sp/>in<sp/>STOP<sp/>mode<sp/>---------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>tmpreg<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>PDDS<sp/>and<sp/>LPDS<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>tmpreg<sp/>&amp;=<sp/><ref refid="group___p_w_r___private___defines_1ga8ee6bf9218f3c476629dd9ee70deef21" kindref="member">CR_DS_MASK</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>LPDS<sp/>bit<sp/>according<sp/>to<sp/>PWR_Regulator<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>tmpreg<sp/>|=<sp/>PWR_Regulator;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Store<sp/>the<sp/>new<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR<sp/>=<sp/>tmpreg;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>SLEEPDEEP<sp/>bit<sp/>of<sp/>Cortex<sp/>System<sp/>Control<sp/>Register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;SCR<sp/>|=<sp/><ref refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" kindref="member">SCB_SCR_SLEEPDEEP</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Select<sp/>STOP<sp/>mode<sp/>entry<sp/>--------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(PWR_STOPEntry<sp/>==<sp/><ref refid="group___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4" kindref="member">PWR_STOPEntry_WFI</ref>)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Request<sp/>Wait<sp/>For<sp/>Interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" kindref="member">__WFI</ref>();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Request<sp/>Wait<sp/>For<sp/>Event<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" kindref="member">__WFE</ref>();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>SLEEPDEEP<sp/>bit<sp/>of<sp/>Cortex<sp/>System<sp/>Control<sp/>Register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;SCR<sp/>&amp;=<sp/>(uint32_t)~((uint32_t)<ref refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" kindref="member">SCB_SCR_SLEEPDEEP</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="group___p_w_r___private___functions_1ga00ddae00a9c327b81b24d2597b0052f3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1ga00ddae00a9c327b81b24d2597b0052f3" kindref="member">PWR_EnterSTANDBYMode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>Wake-up<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR<sp/>|=<sp/><ref refid="group___peripheral___registers___bits___definition_1ga3928de64f633b84770b1cfecea702fa7" kindref="member">PWR_CR_CWUF</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Select<sp/>STANDBY<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR<sp/>|=<sp/><ref refid="group___peripheral___registers___bits___definition_1ga8c8075e98772470804c9e3fe74984115" kindref="member">PWR_CR_PDDS</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>SLEEPDEEP<sp/>bit<sp/>of<sp/>Cortex<sp/>System<sp/>Control<sp/>Register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;SCR<sp/>|=<sp/><ref refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" kindref="member">SCB_SCR_SLEEPDEEP</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>option<sp/>is<sp/>used<sp/>to<sp/>ensure<sp/>that<sp/>store<sp/>operations<sp/>are<sp/>completed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(<sp/>__CC_ARM<sp/><sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>__force_stores();</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Request<sp/>Wait<sp/>For<sp/>Interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" kindref="member">__WFI</ref>();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="group___p_w_r___private___functions_1gaa980163a4d83304280ee34942464b4ec" refkind="member"><highlight class="normal"><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/><ref refid="group___p_w_r___private___functions_1gaa980163a4d83304280ee34942464b4ec" kindref="member">PWR_GetFlagStatus</ref>(uint32_t<sp/>PWR_FLAG)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___p_w_r___flag_1gadc822638d0dd52d2f920808dd96c00a1" kindref="member">IS_PWR_GET_FLAG</ref>(PWR_FLAG));</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CSR<sp/>&amp;<sp/>PWR_FLAG)<sp/>!=<sp/>(uint32_t)<ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" kindref="member">SET</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>flag<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="group___p_w_r___private___functions_1ga01c4b2fbd16514b993324e101c3ddf7c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_r___private___functions_1ga01c4b2fbd16514b993324e101c3ddf7c" kindref="member">PWR_ClearFlag</ref>(uint32_t<sp/>PWR_FLAG)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><ref refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___p_w_r___flag_1ga36d35a770e683e4a0baf3aac350fcb5a" kindref="member">IS_PWR_CLEAR_FLAG</ref>(PWR_FLAG));</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" kindref="member">PWR</ref>-&gt;CR<sp/>|=<sp/><sp/>PWR_FLAG<sp/>&lt;&lt;<sp/>2;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c"/>
+  </compounddef>
+</doxygen>

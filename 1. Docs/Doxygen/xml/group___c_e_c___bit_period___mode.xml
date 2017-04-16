@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___c_e_c___bit_period___mode" kind="group">
+    <compoundname>CEC_BitPeriod_Mode</compoundname>
+    <title>CEC_BitPeriod_Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_e_c___bit_period___mode_1ga746ce0a831dfd76a47add310662c7f07" prot="public" static="no">
+        <name>CEC_BitPeriodStdMode</name>
+        <initializer>((uint16_t)0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit period error Standard Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="81" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___bit_period___mode_1ga5bf4c1b257b837770d4d59c93cca6902" prot="public" static="no">
+        <name>CEC_BitPeriodFlexibleMode</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga48c747693ec4dac8e4288ae4c0949def" kindref="member">CEC_CFGR_BPEM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit period error Flexible Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="82" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_c___bit_period___mode_1ga3414347854a83bf70748624ec5b8dd49" prot="public" static="no">
+        <name>IS_CEC_BIT_PERIOD_ERROR_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___c_e_c___bit_period___mode_1ga746ce0a831dfd76a47add310662c7f07" kindref="member">CEC_BitPeriodStdMode</ref>) || \
+                                            ((MODE) == <ref refid="group___c_e_c___bit_period___mode_1ga5bf4c1b257b837770d4d59c93cca6902" kindref="member">CEC_BitPeriodFlexibleMode</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" line="84" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_cec.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

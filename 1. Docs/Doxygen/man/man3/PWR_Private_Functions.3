@@ -1,0 +1,269 @@
+.TH "PWR_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBPWR_DeInit\fP (void)"
+.br
+.RI "Deinitializes the PWR peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "void \fBPWR_BackupAccessCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables access to the RTC and backup registers\&. "
+.ti -1c
+.RI "void \fBPWR_PVDCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the Power Voltage Detector(PVD)\&. "
+.ti -1c
+.RI "void \fBPWR_PVDLevelConfig\fP (uint32_t PWR_PVDLevel)"
+.br
+.RI "Configures the voltage threshold detected by the Power Voltage Detector(PVD)\&. "
+.ti -1c
+.RI "void \fBPWR_WakeUpPinCmd\fP (\fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the WakeUp Pin functionality\&. "
+.ti -1c
+.RI "void \fBPWR_EnterSTOPMode\fP (uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)"
+.br
+.RI "Enters STOP mode\&. "
+.ti -1c
+.RI "void \fBPWR_EnterSTANDBYMode\fP (void)"
+.br
+.RI "Enters STANDBY mode\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBPWR_GetFlagStatus\fP (uint32_t PWR_FLAG)"
+.br
+.RI "Checks whether the specified PWR flag is set or not\&. "
+.ti -1c
+.RI "void \fBPWR_ClearFlag\fP (uint32_t PWR_FLAG)"
+.br
+.RI "Clears the PWR's pending flags\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void PWR_BackupAccessCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables access to the RTC and backup registers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the access to the RTC and backup registers\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 124 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_ClearFlag (uint32_t PWR_FLAG)"
+
+.PP
+Clears the PWR's pending flags\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPWR_FLAG\fP specifies the flag to clear\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+PWR_FLAG_WU: Wake Up flag 
+.IP "\(bu" 2
+PWR_FLAG_SB: StandBy flag 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 287 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_DeInit (void)"
+
+.PP
+Deinitializes the PWR peripheral registers to their default reset values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_EnterSTANDBYMode (void)"
+
+.PP
+Enters STANDBY mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 236 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_EnterSTOPMode (uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)"
+
+.PP
+Enters STOP mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPWR_Regulator\fP specifies the regulator state in STOP mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+PWR_Regulator_ON: STOP mode with regulator ON 
+.IP "\(bu" 2
+PWR_Regulator_LowPower: STOP mode with regulator in low power mode 
+.PP
+.br
+\fIPWR_STOPEntry\fP specifies if STOP mode in entered with WFI or WFE instruction\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+PWR_STOPEntry_WFI: enter STOP mode with WFI instruction 
+.IP "\(bu" 2
+PWR_STOPEntry_WFE: enter STOP mode with WFE instruction 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 197 of file stm32f10x_pwr\&.c\&.
+.SS "\fBFlagStatus\fP PWR_GetFlagStatus (uint32_t PWR_FLAG)"
+
+.PP
+Checks whether the specified PWR flag is set or not\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPWR_FLAG\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+PWR_FLAG_WU: Wake Up flag 
+.IP "\(bu" 2
+PWR_FLAG_SB: StandBy flag 
+.IP "\(bu" 2
+PWR_FLAG_PVDO: PVD Output 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fIThe\fP new state of PWR_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.PP
+Definition at line 261 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_PVDCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the Power Voltage Detector(PVD)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the PVD\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 137 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_PVDLevelConfig (uint32_t PWR_PVDLevel)"
+
+.PP
+Configures the voltage threshold detected by the Power Voltage Detector(PVD)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPWR_PVDLevel\fP specifies the PVD detection level This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+PWR_PVDLevel_2V2: PVD detection level set to 2\&.2V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V3: PVD detection level set to 2\&.3V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V4: PVD detection level set to 2\&.4V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V5: PVD detection level set to 2\&.5V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V6: PVD detection level set to 2\&.6V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V7: PVD detection level set to 2\&.7V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V8: PVD detection level set to 2\&.8V 
+.IP "\(bu" 2
+PWR_PVDLevel_2V9: PVD detection level set to 2\&.9V 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file stm32f10x_pwr\&.c\&.
+.SS "void PWR_WakeUpPinCmd (\fBFunctionalState\fP NewState)"
+
+.PP
+Enables or disables the WakeUp Pin functionality\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINewState\fP new state of the WakeUp Pin functionality\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 178 of file stm32f10x_pwr\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

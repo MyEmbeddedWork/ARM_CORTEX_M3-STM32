@@ -1,0 +1,54 @@
+.TH "DMA_peripheral_data_size" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_peripheral_data_size
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDMA_PeripheralDataSize_Byte\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralDataSize_HalfWord\fP   ((uint32_t)0x00000100)"
+.br
+.ti -1c
+.RI "#define \fBDMA_PeripheralDataSize_Word\fP   ((uint32_t)0x00000200)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PERIPHERAL_DATA_SIZE\fP(SIZE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DMA_PeripheralDataSize_Byte   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 148 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA_PeripheralDataSize_HalfWord   ((uint32_t)0x00000100)"
+
+.PP
+Definition at line 149 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA_PeripheralDataSize_Word   ((uint32_t)0x00000200)"
+
+.PP
+Definition at line 150 of file stm32f10x_dma\&.h\&.
+.SS "#define IS_DMA_PERIPHERAL_DATA_SIZE(SIZE)"
+\fBValue:\fP
+.PP
+.nf
+(((SIZE) == DMA_PeripheralDataSize_Byte) || \
+                                           ((SIZE) == DMA_PeripheralDataSize_HalfWord) || \
+                                           ((SIZE) == DMA_PeripheralDataSize_Word))
+.fi
+.PP
+Definition at line 151 of file stm32f10x_dma\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

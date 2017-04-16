@@ -1,0 +1,194 @@
+.TH "C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_can.c \- This file provides all the CAN firmware functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32f10x_can\&.h'\fP
+.br
+\fC#include 'stm32f10x_rcc\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCR_DBF\fP   ((uint32_t)0x00010000) /* software master reset */"
+.br
+.ti -1c
+.RI "#define \fBTMIDxR_TXRQ\fP   ((uint32_t)0x00000001) /* Transmit mailbox request */"
+.br
+.ti -1c
+.RI "#define \fBFMR_FINIT\fP   ((uint32_t)0x00000001) /* Filter init mode */"
+.br
+.ti -1c
+.RI "#define \fBINAK_TIMEOUT\fP   ((uint32_t)0x0000FFFF)"
+.br
+.ti -1c
+.RI "#define \fBSLAK_TIMEOUT\fP   ((uint32_t)0x0000FFFF)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAGS_TSR\fP   ((uint32_t)0x08000000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAGS_RF1R\fP   ((uint32_t)0x04000000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAGS_RF0R\fP   ((uint32_t)0x02000000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAGS_MSR\fP   ((uint32_t)0x01000000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_FLAGS_ESR\fP   ((uint32_t)0x00F00000)"
+.br
+.ti -1c
+.RI "#define \fBCAN_TXMAILBOX_0\fP   ((uint8_t)0x00)"
+.br
+.ti -1c
+.RI "#define \fBCAN_TXMAILBOX_1\fP   ((uint8_t)0x01)"
+.br
+.ti -1c
+.RI "#define \fBCAN_TXMAILBOX_2\fP   ((uint8_t)0x02)"
+.br
+.ti -1c
+.RI "#define \fBCAN_MODE_MASK\fP   ((uint32_t) 0x00000003)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCAN_DeInit\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Deinitializes the CAN peripheral registers to their default reset values\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_Init\fP (\fBCAN_TypeDef\fP *CANx, \fBCAN_InitTypeDef\fP *CAN_InitStruct)"
+.br
+.RI "Initializes the CAN peripheral according to the specified parameters in the CAN_InitStruct\&. "
+.ti -1c
+.RI "void \fBCAN_FilterInit\fP (\fBCAN_FilterInitTypeDef\fP *CAN_FilterInitStruct)"
+.br
+.RI "Initializes the CAN peripheral according to the specified parameters in the CAN_FilterInitStruct\&. "
+.ti -1c
+.RI "void \fBCAN_StructInit\fP (\fBCAN_InitTypeDef\fP *CAN_InitStruct)"
+.br
+.RI "Fills each CAN_InitStruct member with its default value\&. "
+.ti -1c
+.RI "void \fBCAN_SlaveStartBank\fP (uint8_t CAN_BankNumber)"
+.br
+.RI "Select the start bank filter for slave CAN\&. "
+.ti -1c
+.RI "void \fBCAN_DBGFreeze\fP (\fBCAN_TypeDef\fP *CANx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the DBG Freeze for CAN\&. "
+.ti -1c
+.RI "void \fBCAN_TTComModeCmd\fP (\fBCAN_TypeDef\fP *CANx, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disabes the CAN Time TriggerOperation communication mode\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_Transmit\fP (\fBCAN_TypeDef\fP *CANx, \fBCanTxMsg\fP *TxMessage)"
+.br
+.RI "Initiates the transmission of a message\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_TransmitStatus\fP (\fBCAN_TypeDef\fP *CANx, uint8_t TransmitMailbox)"
+.br
+.RI "Checks the transmission of a message\&. "
+.ti -1c
+.RI "void \fBCAN_CancelTransmit\fP (\fBCAN_TypeDef\fP *CANx, uint8_t Mailbox)"
+.br
+.RI "Cancels a transmit request\&. "
+.ti -1c
+.RI "void \fBCAN_Receive\fP (\fBCAN_TypeDef\fP *CANx, uint8_t FIFONumber, \fBCanRxMsg\fP *RxMessage)"
+.br
+.RI "Receives a message\&. "
+.ti -1c
+.RI "void \fBCAN_FIFORelease\fP (\fBCAN_TypeDef\fP *CANx, uint8_t FIFONumber)"
+.br
+.RI "Releases the specified FIFO\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_MessagePending\fP (\fBCAN_TypeDef\fP *CANx, uint8_t FIFONumber)"
+.br
+.RI "Returns the number of pending messages\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_OperatingModeRequest\fP (\fBCAN_TypeDef\fP *CANx, uint8_t CAN_OperatingMode)"
+.br
+.RI "Select the CAN Operation mode\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_Sleep\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Enters the low power mode\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_WakeUp\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Wakes the CAN up\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_GetLastErrorCode\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Returns the CANx's last error code (LEC)\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_GetReceiveErrorCounter\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Returns the CANx Receive Error Counter (REC)\&. "
+.ti -1c
+.RI "uint8_t \fBCAN_GetLSBTransmitErrorCounter\fP (\fBCAN_TypeDef\fP *CANx)"
+.br
+.RI "Returns the LSB of the 9-bit CANx Transmit Error Counter(TEC)\&. "
+.ti -1c
+.RI "void \fBCAN_ITConfig\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_IT, \fBFunctionalState\fP NewState)"
+.br
+.RI "Enables or disables the specified CANx interrupts\&. "
+.ti -1c
+.RI "\fBFlagStatus\fP \fBCAN_GetFlagStatus\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_FLAG)"
+.br
+.RI "Checks whether the specified CAN flag is set or not\&. "
+.ti -1c
+.RI "void \fBCAN_ClearFlag\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_FLAG)"
+.br
+.RI "Clears the CAN's pending flags\&. "
+.ti -1c
+.RI "\fBITStatus\fP \fBCAN_GetITStatus\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_IT)"
+.br
+.RI "Checks whether the specified CANx interrupt has occurred or not\&. "
+.ti -1c
+.RI "void \fBCAN_ClearITPendingBit\fP (\fBCAN_TypeDef\fP *CANx, uint32_t CAN_IT)"
+.br
+.RI "Clears the CANx's interrupt pending bits\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides all the CAN firmware functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+V3\&.5\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+11-March-2011 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+.RE
+.PP
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME\&. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS\&.
+.PP
+.SS "(C) COPYRIGHT 2011 STMicroelectronics"
+
+.PP
+Definition in file \fBstm32f10x_can\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_n_v_i_c___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>NVIC_InitTypeDef</compoundname>
+    <includes refid="misc_8h" local="no">misc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1afa04cf6e559bb690bdd9fcb7e3d93dcf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t NVIC_InitTypeDef::NVIC_IRQChannel</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the IRQ channel to be enabled or disabled. This parameter can be a value of <ref refid="group___configuration__section__for___c_m_s_i_s_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref> (For the complete STM32 Devices IRQ Channels list, please refer to <ref refid="stm32f10x_8h" kindref="compound">stm32f10x.h</ref> file) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="52" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41" compoundref="misc_8c" startline="112" endline="155">NVIC_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1aa3fe262c30188404a6e31f922c5ae513" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t NVIC_InitTypeDef::NVIC_IRQChannelPreemptionPriority</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannelPreemptionPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the pre-emption priority for the IRQ channel specified in NVIC_IRQChannel. This parameter can be a value between 0 and 15 as described in the table <ref refid="group___n_v_i_c___priority___table" kindref="compound">NVIC_Priority_Table</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41" compoundref="misc_8c" startline="112" endline="155">NVIC_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1aecc22a002244e3f1f9448dbe46c1db4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t NVIC_InitTypeDef::NVIC_IRQChannelSubPriority</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannelSubPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the subpriority level for the IRQ channel specified in NVIC_IRQChannel. This parameter can be a value between 0 and 15 as described in the table <ref refid="group___n_v_i_c___priority___table" kindref="compound">NVIC_Priority_Table</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="61" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41" compoundref="misc_8c" startline="112" endline="155">NVIC_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1acb23fabb995fa4980c768825f12f5815" prot="public" static="no" mutable="no">
+        <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+        <definition>FunctionalState NVIC_InitTypeDef::NVIC_IRQChannelCmd</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannelCmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the IRQ channel defined in NVIC_IRQChannel will be enabled or disabled. This parameter can be set either to ENABLE or DISABLE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="65" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41" compoundref="misc_8c" startline="112" endline="155">NVIC_Init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>NVIC Init Structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" line="51" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/misc.h" bodystart="50" bodyend="68"/>
+    <listofallmembers>
+      <member refid="struct_n_v_i_c___init_type_def_1afa04cf6e559bb690bdd9fcb7e3d93dcf" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannel</name></member>
+      <member refid="struct_n_v_i_c___init_type_def_1acb23fabb995fa4980c768825f12f5815" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannelCmd</name></member>
+      <member refid="struct_n_v_i_c___init_type_def_1aa3fe262c30188404a6e31f922c5ae513" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannelPreemptionPriority</name></member>
+      <member refid="struct_n_v_i_c___init_type_def_1aecc22a002244e3f1f9448dbe46c1db4b" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannelSubPriority</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

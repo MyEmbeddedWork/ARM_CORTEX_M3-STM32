@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__wwdg_8h" kind="file" language="C++">
+    <compoundname>stm32f10x_wwdg.h</compoundname>
+    <includes refid="stm32f10x_8h" local="yes">stm32f10x.h</includes>
+    <includedby refid="stm32f10x__conf_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</includedby>
+    <includedby refid="stm32f10x__wwdg_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c</includedby>
+    <incdepgraph>
+      <node id="742">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="739">
+        <label>stdint.h</label>
+      </node>
+      <node id="738">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="736">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h</label>
+        <link refid="stm32f10x__wwdg_8h"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="737">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="744">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</label>
+        <link refid="stm32f10x__conf_8h"/>
+      </node>
+      <node id="743">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h</label>
+        <link refid="stm32f10x__wwdg_8h"/>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c</label>
+        <link refid="stm32f10x__wwdg_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5" prot="public" static="no">
+        <name>WWDG_Prescaler_1</name>
+        <initializer>((uint32_t)0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="58" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08" prot="public" static="no">
+        <name>WWDG_Prescaler_2</name>
+        <initializer>((uint32_t)0x00000080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="59" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb" prot="public" static="no">
+        <name>WWDG_Prescaler_4</name>
+        <initializer>((uint32_t)0x00000100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="60" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02" prot="public" static="no">
+        <name>WWDG_Prescaler_8</name>
+        <initializer>((uint32_t)0x00000180)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="61" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga39070de0722a70f99a6fcfe8720b2dfd" prot="public" static="no">
+        <name>IS_WWDG_PRESCALER</name>
+        <param><defname>PRESCALER</defname></param>
+        <initializer>(((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5" kindref="member">WWDG_Prescaler_1</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08" kindref="member">WWDG_Prescaler_2</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb" kindref="member">WWDG_Prescaler_4</ref>) || \
+                                      ((PRESCALER) == <ref refid="group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02" kindref="member">WWDG_Prescaler_8</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1gab6ea714a2380b7d6547ba97363887868" prot="public" static="no">
+        <name>IS_WWDG_WINDOW_VALUE</name>
+        <param><defname>VALUE</defname></param>
+        <initializer>((VALUE) &lt;= 0x7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="66" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e" prot="public" static="no">
+        <name>IS_WWDG_COUNTER</name>
+        <param><defname>COUNTER</defname></param>
+        <initializer>(((COUNTER) &gt;= 0x40) &amp;&amp; ((COUNTER) &lt;= 0x7F))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="67" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1ga7130f4dc861b9234b62e73f9f57f89a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>WWDG_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the WWDG peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="88" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="102" bodyend="106"/>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1gad84e40be78ddc40b8eae1c2b0898f6b1" compoundref="stm32f10x__rcc_8h" startline="537">RCC_APB1Periph_WWDG</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1gafeaa2b52c31ba7baca7eb61d2d42e07b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_SetPrescaler</definition>
+        <argsstring>(uint32_t WWDG_Prescaler)</argsstring>
+        <name>WWDG_SetPrescaler</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>WWDG_Prescaler</declname>
+        </param>
+        <briefdescription>
+<para>Sets the WWDG Prescaler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WWDG_Prescaler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the WWDG Prescaler. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>WWDG_Prescaler_1: WWDG counter clock = (PCLK1/4096)/1 </para></listitem>
+<listitem><para>WWDG_Prescaler_2: WWDG counter clock = (PCLK1/4096)/2 </para></listitem>
+<listitem><para>WWDG_Prescaler_4: WWDG counter clock = (PCLK1/4096)/4 </para></listitem>
+<listitem><para>WWDG_Prescaler_8: WWDG counter clock = (PCLK1/4096)/8 </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="89" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="118" bodyend="129"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___w_w_d_g___prescaler_1ga39070de0722a70f99a6fcfe8720b2dfd" compoundref="stm32f10x__wwdg_8h" startline="62">IS_WWDG_PRESCALER</references>
+        <references refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" compoundref="stm32f10x_8h" startline="1390">WWDG</references>
+        <references refid="group___w_w_d_g___private___defines_1ga2b74f53d33f15b272b2d1ef78a78a2cc" compoundref="stm32f10x__wwdg_8c" startline="61">CFR_WDGTB_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1gaf44a7bf8bf6b11b41cd89ff521fdd5a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_SetWindowValue</definition>
+        <argsstring>(uint8_t WindowValue)</argsstring>
+        <name>WWDG_SetWindowValue</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>WindowValue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the WWDG window value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WindowValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the window value to be compared to the downcounter. This parameter value must be lower than 0x80. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="90" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="137" bodyend="152"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___w_w_d_g___prescaler_1gab6ea714a2380b7d6547ba97363887868" compoundref="stm32f10x__wwdg_8h" startline="66">IS_WWDG_WINDOW_VALUE</references>
+        <references refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" compoundref="stm32f10x_8h" startline="1390">WWDG</references>
+        <references refid="group___w_w_d_g___private___defines_1gac00816db9fe6715f702b4f7d6085ce30" compoundref="stm32f10x__wwdg_8c" startline="62">CFR_W_Mask</references>
+        <references refid="group___w_w_d_g___private___defines_1ga01a4e07e98e933af78671f65a49bd836" compoundref="stm32f10x__wwdg_8c" startline="63">BIT_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1gac8af66ea5254d3d78b60b9b7c7f29521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_EnableIT</definition>
+        <argsstring>(void)</argsstring>
+        <name>WWDG_EnableIT</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enables the WWDG Early Wakeup interrupt(EWI). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="91" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="159" bodyend="162"/>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___w_w_d_g___private___defines_1gaa48804210cea547f0e0f4ca49c44fc94" compoundref="stm32f10x__wwdg_8c" startline="53">CFR_EWI_BB</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1ga6e44cc35f133b28b9ad861f459bf8d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_SetCounter</definition>
+        <argsstring>(uint8_t Counter)</argsstring>
+        <name>WWDG_SetCounter</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Counter</declname>
+        </param>
+        <briefdescription>
+<para>Sets the WWDG counter value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="92" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="170" bodyend="177"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e" compoundref="stm32f10x__wwdg_8h" startline="67">IS_WWDG_COUNTER</references>
+        <references refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" compoundref="stm32f10x_8h" startline="1390">WWDG</references>
+        <references refid="group___w_w_d_g___private___defines_1ga01a4e07e98e933af78671f65a49bd836" compoundref="stm32f10x__wwdg_8c" startline="63">BIT_Mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1ga10dc2554d0b504b5472e3ecf0f02a9e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_Enable</definition>
+        <argsstring>(uint8_t Counter)</argsstring>
+        <name>WWDG_Enable</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Counter</declname>
+        </param>
+        <briefdescription>
+<para>Enables WWDG and load the counter value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="93" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="185" bodyend="190"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e" compoundref="stm32f10x__wwdg_8h" startline="67">IS_WWDG_COUNTER</references>
+        <references refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" compoundref="stm32f10x_8h" startline="1390">WWDG</references>
+        <references refid="group___w_w_d_g___private___defines_1ga4c66a66daa0e09782e8b2248db9b35f6" compoundref="stm32f10x__wwdg_8c" startline="58">CR_WDGA_Set</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1ga7df4882d45918b9b8249dfca1e44fabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus WWDG_GetFlagStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>WWDG_GetFlagStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks whether the Early Wakeup interrupt flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the Early Wakeup interrupt flag (SET or RESET) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="94" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="197" bodyend="200"/>
+        <references refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" compoundref="stm32f10x_8h" startline="1390">WWDG</references>
+      </memberdef>
+      <memberdef kind="function" id="group___w_w_d_g___exported___functions_1gabd2b5a6317c2e1a3ab0795838ce59dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WWDG_ClearFlag</definition>
+        <argsstring>(void)</argsstring>
+        <name>WWDG_ClearFlag</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clears Early Wakeup interrupt flag. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h" line="95" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_wwdg.c" bodystart="207" bodyend="210"/>
+        <references refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" compoundref="stm32f10x_8h" startline="1390">WWDG</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all the functions prototypes for the WWDG firmware library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="23"><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__STM32F10x_WWDG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__STM32F10x_WWDG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x_8h" kindref="compound">stm32f10x.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5" refkind="member"><highlight class="preprocessor">#define<sp/>WWDG_Prescaler_1<sp/><sp/><sp/><sp/>((uint32_t)0x00000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WWDG_Prescaler_2<sp/><sp/><sp/><sp/>((uint32_t)0x00000080)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WWDG_Prescaler_4<sp/><sp/><sp/><sp/>((uint32_t)0x00000100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WWDG_Prescaler_8<sp/><sp/><sp/><sp/>((uint32_t)0x00000180)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group___w_w_d_g___prescaler_1ga39070de0722a70f99a6fcfe8720b2dfd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_WWDG_PRESCALER(PRESCALER)<sp/>(((PRESCALER)<sp/>==<sp/>WWDG_Prescaler_1)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>WWDG_Prescaler_2)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>WWDG_Prescaler_4)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PRESCALER)<sp/>==<sp/>WWDG_Prescaler_8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="group___w_w_d_g___prescaler_1gab6ea714a2380b7d6547ba97363887868" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_WWDG_WINDOW_VALUE(VALUE)<sp/>((VALUE)<sp/>&lt;=<sp/>0x7F)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_WWDG_COUNTER(COUNTER)<sp/>(((COUNTER)<sp/>&gt;=<sp/>0x40)<sp/>&amp;&amp;<sp/>((COUNTER)<sp/>&lt;=<sp/>0x7F))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1ga7130f4dc861b9234b62e73f9f57f89a1" kindref="member">WWDG_DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1gafeaa2b52c31ba7baca7eb61d2d42e07b" kindref="member">WWDG_SetPrescaler</ref>(uint32_t<sp/>WWDG_Prescaler);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1gaf44a7bf8bf6b11b41cd89ff521fdd5a5" kindref="member">WWDG_SetWindowValue</ref>(uint8_t<sp/>WindowValue);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1gac8af66ea5254d3d78b60b9b7c7f29521" kindref="member">WWDG_EnableIT</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1ga6e44cc35f133b28b9ad861f459bf8d76" kindref="member">WWDG_SetCounter</ref>(uint8_t<sp/>Counter);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1ga10dc2554d0b504b5472e3ecf0f02a9e6" kindref="member">WWDG_Enable</ref>(uint8_t<sp/>Counter);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/><ref refid="group___w_w_d_g___exported___functions_1ga7df4882d45918b9b8249dfca1e44fabc" kindref="member">WWDG_GetFlagStatus</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_w_d_g___exported___functions_1gabd2b5a6317c2e1a3ab0795838ce59dd2" kindref="member">WWDG_ClearFlag</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__STM32F10x_WWDG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_wwdg.h"/>
+  </compounddef>
+</doxygen>

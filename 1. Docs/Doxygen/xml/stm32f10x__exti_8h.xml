@@ -1,0 +1,838 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f10x__exti_8h" kind="file" language="C++">
+    <compoundname>stm32f10x_exti.h</compoundname>
+    <includes refid="stm32f10x_8h" local="yes">stm32f10x.h</includes>
+    <includedby refid="stm32f10x__conf_8h" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</includedby>
+    <includedby refid="stm32f10x__exti_8c" local="yes">C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c</includedby>
+    <incdepgraph>
+      <node id="597">
+        <label>system_stm32f10x.h</label>
+        <link refid="system__stm32f10x_8h"/>
+      </node>
+      <node id="594">
+        <label>stdint.h</label>
+      </node>
+      <node id="591">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h</label>
+        <link refid="stm32f10x__exti_8h"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>core_cm3.h</label>
+        <link refid="core__cm3_8h"/>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>core_cmFunc.h</label>
+        <link refid="core__cm_func_8h"/>
+      </node>
+      <node id="595">
+        <label>core_cmInstr.h</label>
+        <link refid="core__cm_instr_8h"/>
+      </node>
+      <node id="592">
+        <label>stm32f10x.h</label>
+        <link refid="stm32f10x_8h"/>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="598">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h</label>
+        <link refid="stm32f10x__exti_8h"/>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c</label>
+        <link refid="stm32f10x__exti_8c"/>
+      </node>
+      <node id="599">
+        <label>C:/Users/anilj/Desktop/cmsis/sorc/include/stm32f10x_conf.h</label>
+        <link refid="stm32f10x__conf_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_e_x_t_i___init_type_def" prot="public">EXTI_InitTypeDef</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___e_x_t_i___exported___types_1ga8429170f3320b90227f9f5b252c1c5eb" prot="public" static="no">
+        <name>IS_EXTI_MODE</name>
+        <param><defname>MODE</defname></param>
+        <initializer>(((MODE) == <ref refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42" kindref="member">EXTI_Mode_Interrupt</ref>) || ((MODE) == <ref refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929aa38ef186929ec74786df79877ea124a7" kindref="member">EXTI_Mode_Event</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="62" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___exported___types_1gaee95ec6288944a6245696896604e509e" prot="public" static="no">
+        <name>IS_EXTI_TRIGGER</name>
+        <param><defname>TRIGGER</defname></param>
+        <initializer>(((TRIGGER) == <ref refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9baaa73605adf491dbe97994612e228af5e" kindref="member">EXTI_Trigger_Rising</ref>) || \
+                                  ((TRIGGER) == <ref refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5" kindref="member">EXTI_Trigger_Falling</ref>) || \
+                                  ((TRIGGER) == <ref refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb" kindref="member">EXTI_Trigger_Rising_Falling</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="75" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gac2a65680200dd5f4f7eab29cd4091a75" prot="public" static="no">
+        <name>EXTI_Line0</name>
+        <initializer>((uint32_t)0x00001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="109" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gae7c6ab2a0880ce3810641ee0585104cd" prot="public" static="no">
+        <name>EXTI_Line1</name>
+        <initializer>((uint32_t)0x00002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="110" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gaec4189bb2709c8c15a0339d1b0b9865a" prot="public" static="no">
+        <name>EXTI_Line2</name>
+        <initializer>((uint32_t)0x00004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="111" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gadea3ef6ab7e8bacc686689de8711b98c" prot="public" static="no">
+        <name>EXTI_Line3</name>
+        <initializer>((uint32_t)0x00008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="112" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gab33b1fe19306e9e60f8f8d0928b800be" prot="public" static="no">
+        <name>EXTI_Line4</name>
+        <initializer>((uint32_t)0x00010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="113" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga6b4c6292e3abd521cab2bf99d37a15c6" prot="public" static="no">
+        <name>EXTI_Line5</name>
+        <initializer>((uint32_t)0x00020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 5 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="114" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga97a5145d1d2612dd53bdd9db3d366873" prot="public" static="no">
+        <name>EXTI_Line6</name>
+        <initializer>((uint32_t)0x00040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="115" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga3b7155d54a4a98394b599718901ccbe5" prot="public" static="no">
+        <name>EXTI_Line7</name>
+        <initializer>((uint32_t)0x00080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="116" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gacd51e087a088c3315049394cddf79e88" prot="public" static="no">
+        <name>EXTI_Line8</name>
+        <initializer>((uint32_t)0x00100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="117" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga340ca6bb77b7a2d7747c78e7d3370360" prot="public" static="no">
+        <name>EXTI_Line9</name>
+        <initializer>((uint32_t)0x00200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 9 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="118" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gaefb90b266f5fc1571ed4606bbff1f1d7" prot="public" static="no">
+        <name>EXTI_Line10</name>
+        <initializer>((uint32_t)0x00400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 10 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="119" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga6157b34c53e9b5cb8ee0d7ac3f5ba292" prot="public" static="no">
+        <name>EXTI_Line11</name>
+        <initializer>((uint32_t)0x00800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 11 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="120" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gab73a0a31f1814118955099b9dd3bdfef" prot="public" static="no">
+        <name>EXTI_Line12</name>
+        <initializer>((uint32_t)0x01000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 12 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="121" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gae382388ac34b78917a7bd06562e35c42" prot="public" static="no">
+        <name>EXTI_Line13</name>
+        <initializer>((uint32_t)0x02000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 13 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="122" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga7b3821ad1b7a00b49c27075688f48101" prot="public" static="no">
+        <name>EXTI_Line14</name>
+        <initializer>((uint32_t)0x04000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 14 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="123" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gafc5ea85d1fc095a855fde8977a338c4c" prot="public" static="no">
+        <name>EXTI_Line15</name>
+        <initializer>((uint32_t)0x08000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 15 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="124" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga21326db7db8ca614c746b7f52dc45ead" prot="public" static="no">
+        <name>EXTI_Line16</name>
+        <initializer>((uint32_t)0x10000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 16 Connected to the PVD Output </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="125" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga3e0fc18bc0722adc09605e3093b24c6a" prot="public" static="no">
+        <name>EXTI_Line17</name>
+        <initializer>((uint32_t)0x20000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 17 Connected to the RTC Alarm event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="126" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga6cdf346a3e7a3c8dbb036aca6741207c" prot="public" static="no">
+        <name>EXTI_Line18</name>
+        <initializer>((uint32_t)0x40000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 18 Connected to the USB Device/USB OTG FS Wakeup from suspend event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="128" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga49ac0744621f88d432d85838483ad1de" prot="public" static="no">
+        <name>EXTI_Line19</name>
+        <initializer>((uint32_t)0x80000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External interrupt line 19 Connected to the Ethernet Wakeup event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="129" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" prot="public" static="no">
+        <name>IS_EXTI_LINE</name>
+        <param><defname>LINE</defname></param>
+        <initializer>((((LINE) &amp; (uint32_t)0xFFF00000) == 0x00) &amp;&amp; ((LINE) != (uint16_t)0x00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="131" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda" prot="public" static="no">
+        <name>IS_GET_EXTI_LINE</name>
+        <param><defname>LINE</defname></param>
+        <initializer>(((LINE) == <ref refid="group___e_x_t_i___lines_1gac2a65680200dd5f4f7eab29cd4091a75" kindref="member">EXTI_Line0</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1gae7c6ab2a0880ce3810641ee0585104cd" kindref="member">EXTI_Line1</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1gaec4189bb2709c8c15a0339d1b0b9865a" kindref="member">EXTI_Line2</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1gadea3ef6ab7e8bacc686689de8711b98c" kindref="member">EXTI_Line3</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1gab33b1fe19306e9e60f8f8d0928b800be" kindref="member">EXTI_Line4</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1ga6b4c6292e3abd521cab2bf99d37a15c6" kindref="member">EXTI_Line5</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1ga97a5145d1d2612dd53bdd9db3d366873" kindref="member">EXTI_Line6</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1ga3b7155d54a4a98394b599718901ccbe5" kindref="member">EXTI_Line7</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1gacd51e087a088c3315049394cddf79e88" kindref="member">EXTI_Line8</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1ga340ca6bb77b7a2d7747c78e7d3370360" kindref="member">EXTI_Line9</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1gaefb90b266f5fc1571ed4606bbff1f1d7" kindref="member">EXTI_Line10</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1ga6157b34c53e9b5cb8ee0d7ac3f5ba292" kindref="member">EXTI_Line11</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1gab73a0a31f1814118955099b9dd3bdfef" kindref="member">EXTI_Line12</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1gae382388ac34b78917a7bd06562e35c42" kindref="member">EXTI_Line13</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1ga7b3821ad1b7a00b49c27075688f48101" kindref="member">EXTI_Line14</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1gafc5ea85d1fc095a855fde8977a338c4c" kindref="member">EXTI_Line15</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1ga21326db7db8ca614c746b7f52dc45ead" kindref="member">EXTI_Line16</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1ga3e0fc18bc0722adc09605e3093b24c6a" kindref="member">EXTI_Line17</ref>) || \
+                            ((LINE) == <ref refid="group___e_x_t_i___lines_1ga6cdf346a3e7a3c8dbb036aca6741207c" kindref="member">EXTI_Line18</ref>) || ((LINE) == <ref refid="group___e_x_t_i___lines_1ga49ac0744621f88d432d85838483ad1de" kindref="member">EXTI_Line19</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="132" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" prot="public" static="no">
+        <name>EXTIMode_TypeDef</name>
+        <enumvalue id="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42" prot="public">
+          <name>EXTI_Mode_Interrupt</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929aa38ef186929ec74786df79877ea124a7" prot="public">
+          <name>EXTI_Mode_Event</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>EXTI mode enumeration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___e_x_t_i___exported___types_1ga9da190f5425d1b421a06bced8cc48e9b" prot="public" static="no">
+        <name>EXTITrigger_TypeDef</name>
+        <enumvalue id="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9baaa73605adf491dbe97994612e228af5e" prot="public">
+          <name>EXTI_Trigger_Rising</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5" prot="public">
+          <name>EXTI_Trigger_Falling</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb" prot="public">
+          <name>EXTI_Trigger_Rising_Falling</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>EXTI Trigger enumeration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="69" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" bodystart="68" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga07072e339cb9ecb9cd9d4b94afc9f317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>EXTI_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the EXTI peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="165" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="85" bodyend="92"/>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_Init</definition>
+        <argsstring>(EXTI_InitTypeDef *EXTI_InitStruct)</argsstring>
+        <name>EXTI_Init</name>
+        <param>
+          <type><ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> *</type>
+          <declname>EXTI_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the EXTI peripheral according to the specified parameters in the EXTI_InitStruct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> structure that contains the configuration information for the EXTI peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="166" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="101" bodyend="149"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___exported___types_1ga8429170f3320b90227f9f5b252c1c5eb" compoundref="stm32f10x__exti_8h" startline="62">IS_EXTI_MODE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" compoundref="stm32f10x__exti_8h" startline="87">EXTI_InitTypeDef::EXTI_Mode</references>
+        <references refid="group___e_x_t_i___exported___types_1gaee95ec6288944a6245696896604e509e" compoundref="stm32f10x__exti_8h" startline="75">IS_EXTI_TRIGGER</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" compoundref="stm32f10x__exti_8h" startline="90">EXTI_InitTypeDef::EXTI_Trigger</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" compoundref="stm32f10x__exti_8h" startline="84">EXTI_InitTypeDef::EXTI_Line</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" compoundref="stm32f10x__exti_8h" startline="93">EXTI_InitTypeDef::EXTI_LineCmd</references>
+        <references refid="group___peripheral__memory__map_1ga87371508b3bcdcd98cd1ec629be29061" compoundref="stm32f10x_8h" startline="1314">EXTI_BASE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb" compoundref="stm32f10x__exti_8h" startline="72">EXTI_Trigger_Rising_Falling</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_StructInit</definition>
+        <argsstring>(EXTI_InitTypeDef *EXTI_InitStruct)</argsstring>
+        <name>EXTI_StructInit</name>
+        <param>
+          <type><ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> *</type>
+          <declname>EXTI_InitStruct</declname>
+        </param>
+        <briefdescription>
+<para>Fills each EXTI_InitStruct member with its reset value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_InitStruct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref> structure which will be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="167" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="157" bodyend="163"/>
+        <references refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" compoundref="stm32f10x__exti_8h" startline="84">EXTI_InitTypeDef::EXTI_Line</references>
+        <references refid="group___e_x_t_i___private___defines_1ga4451b67e337fc341394ee695273798af" compoundref="stm32f10x__exti_8c" startline="46">EXTI_LINENONE</references>
+        <references refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" compoundref="stm32f10x__exti_8h" startline="87">EXTI_InitTypeDef::EXTI_Mode</references>
+        <references refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42" compoundref="stm32f10x__exti_8h" startline="58">EXTI_Mode_Interrupt</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" compoundref="stm32f10x__exti_8h" startline="90">EXTI_InitTypeDef::EXTI_Trigger</references>
+        <references refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5" compoundref="stm32f10x__exti_8h" startline="71">EXTI_Trigger_Falling</references>
+        <references refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" compoundref="stm32f10x__exti_8h" startline="93">EXTI_InitTypeDef::EXTI_LineCmd</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga897e8ea59f40a19e047fb9994876fc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_GenerateSWInterrupt</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_GenerateSWInterrupt</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Generates a Software interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI lines to be enabled or disabled. This parameter can be any combination of EXTI_Linex where x can be (0..19). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="168" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="171" bodyend="177"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga0ce06e6b312592df149800d63218cffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus EXTI_GetFlagStatus</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified EXTI line flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI line flag to check. This parameter can be: <itemizedlist>
+<listitem><para>EXTI_Linex: External interrupt line x where x(0..19) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of EXTI_Line (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="169" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="186" bodyend="201"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda" compoundref="stm32f10x__exti_8h" startline="133">IS_GET_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga8e07aaaa286dea4803605d5968850a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_ClearFlag</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Clears the EXTI&apos;s line pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI lines flags to clear. This parameter can be any combination of EXTI_Linex where x can be (0..19). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="170" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="209" bodyend="215"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1gaf7b51519062ae42fd27ee689cab364aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref></type>
+        <definition>ITStatus EXTI_GetITStatus</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_GetITStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified EXTI line is asserted or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI line to check. This parameter can be: <itemizedlist>
+<listitem><para>EXTI_Linex: External interrupt line x where x(0..19) </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of EXTI_Line (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="171" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="224" bodyend="241"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda" compoundref="stm32f10x__exti_8h" startline="133">IS_GET_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___e_x_t_i___exported___functions_1ga3652a7e682728b310c124e7e974d1468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI_ClearITPendingBit</definition>
+        <argsstring>(uint32_t EXTI_Line)</argsstring>
+        <name>EXTI_ClearITPendingBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>EXTI_Line</declname>
+        </param>
+        <briefdescription>
+<para>Clears the EXTI&apos;s line pending bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EXTI_Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the EXTI lines to clear. This parameter can be any combination of EXTI_Linex where x can be (0..19). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h" line="172" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_exti.c" bodystart="249" bodyend="255"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" compoundref="stm32f10x__exti_8h" startline="132">IS_EXTI_LINE</references>
+        <references refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" compoundref="stm32f10x_8h" startline="1407">EXTI</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all the functions prototypes for the EXTI firmware library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V3.5.0 </para></simplesect>
+<simplesect kind="date"><para>11-March-2011 </para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para><para><heading level="2"><center><copy/> COPYRIGHT 2011 STMicroelectronics</center></heading>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="23"><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__STM32F10x_EXTI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__STM32F10x_EXTI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[ILG]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(<sp/>__GNUC__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wpadded&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f10x_8h" kindref="compound">stm32f10x.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58" refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929a8c6ccdd7b1bc4872731306537e8c3b42" kindref="member">EXTI_Mode_Interrupt</ref><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="59" refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929aa38ef186929ec74786df79877ea124a7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1ggad5e69af98dc0dfdf64417adc1cf57929aa38ef186929ec74786df79877ea124a7" kindref="member">EXTI_Mode_Event</ref><sp/>=<sp/>0x04</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<ref refid="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" kindref="member">EXTIMode_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group___e_x_t_i___exported___types_1ga8429170f3320b90227f9f5b252c1c5eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_MODE(MODE)<sp/>(((MODE)<sp/>==<sp/>EXTI_Mode_Interrupt)<sp/>||<sp/>((MODE)<sp/>==<sp/>EXTI_Mode_Event))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group___e_x_t_i___exported___types_1ga9da190f5425d1b421a06bced8cc48e9b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70" refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9baaa73605adf491dbe97994612e228af5e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9baaa73605adf491dbe97994612e228af5e" kindref="member">EXTI_Trigger_Rising</ref><sp/>=<sp/>0x08,</highlight></codeline>
+<codeline lineno="71" refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bac4a21d397aa4648b8f8cf961f71f3ac5" kindref="member">EXTI_Trigger_Falling</ref><sp/>=<sp/>0x0C,<sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gga9da190f5425d1b421a06bced8cc48e9bab09db55a2e9118e86d03d69698434ebb" kindref="member">EXTI_Trigger_Rising_Falling</ref><sp/>=<sp/>0x10</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<ref refid="group___e_x_t_i___exported___types_1ga9da190f5425d1b421a06bced8cc48e9b" kindref="member">EXTITrigger_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group___e_x_t_i___exported___types_1gaee95ec6288944a6245696896604e509e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_TRIGGER(TRIGGER)<sp/>(((TRIGGER)<sp/>==<sp/>EXTI_Trigger_Rising)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TRIGGER)<sp/>==<sp/>EXTI_Trigger_Falling)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TRIGGER)<sp/>==<sp/>EXTI_Trigger_Rising_Falling))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="struct_e_x_t_i___init_type_def" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84" refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_e_x_t_i___init_type_def_1a1b5bb38e1df331f764b830a1e8ec171f" kindref="member">EXTI_Line</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gad5e69af98dc0dfdf64417adc1cf57929" kindref="member">EXTIMode_TypeDef</ref><sp/><ref refid="struct_e_x_t_i___init_type_def_1a741816862b9cd43cc80781dc89150e7e" kindref="member">EXTI_Mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1ga9da190f5425d1b421a06bced8cc48e9b" kindref="member">EXTITrigger_TypeDef</ref><sp/><ref refid="struct_e_x_t_i___init_type_def_1ab0bd8417e78fe2b43eed79e44064510c" kindref="member">EXTI_Trigger</ref>;<sp/></highlight></codeline>
+<codeline lineno="93" refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/><ref refid="struct_e_x_t_i___init_type_def_1ac1769bc5badaef4cffbcf105e3fe1c27" kindref="member">EXTI_LineCmd</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="group___e_x_t_i___lines_1gac2a65680200dd5f4f7eab29cd4091a75" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00001)<sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="group___e_x_t_i___lines_1gae7c6ab2a0880ce3810641ee0585104cd" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00002)<sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="group___e_x_t_i___lines_1gaec4189bb2709c8c15a0339d1b0b9865a" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00004)<sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="group___e_x_t_i___lines_1gadea3ef6ab7e8bacc686689de8711b98c" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line3<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00008)<sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="group___e_x_t_i___lines_1gab33b1fe19306e9e60f8f8d0928b800be" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line4<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00010)<sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="group___e_x_t_i___lines_1ga6b4c6292e3abd521cab2bf99d37a15c6" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line5<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00020)<sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="group___e_x_t_i___lines_1ga97a5145d1d2612dd53bdd9db3d366873" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line6<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00040)<sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="group___e_x_t_i___lines_1ga3b7155d54a4a98394b599718901ccbe5" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line7<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00080)<sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="group___e_x_t_i___lines_1gacd51e087a088c3315049394cddf79e88" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line8<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00100)<sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="group___e_x_t_i___lines_1ga340ca6bb77b7a2d7747c78e7d3370360" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line9<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00200)<sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="group___e_x_t_i___lines_1gaefb90b266f5fc1571ed4606bbff1f1d7" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line10<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00400)<sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="group___e_x_t_i___lines_1ga6157b34c53e9b5cb8ee0d7ac3f5ba292" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line11<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00800)<sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="group___e_x_t_i___lines_1gab73a0a31f1814118955099b9dd3bdfef" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line12<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x01000)<sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="group___e_x_t_i___lines_1gae382388ac34b78917a7bd06562e35c42" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line13<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x02000)<sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="group___e_x_t_i___lines_1ga7b3821ad1b7a00b49c27075688f48101" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line14<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x04000)<sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="group___e_x_t_i___lines_1gafc5ea85d1fc095a855fde8977a338c4c" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line15<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x08000)<sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="group___e_x_t_i___lines_1ga21326db7db8ca614c746b7f52dc45ead" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line16<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x10000)<sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="group___e_x_t_i___lines_1ga3e0fc18bc0722adc09605e3093b24c6a" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line17<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x20000)<sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="group___e_x_t_i___lines_1ga6cdf346a3e7a3c8dbb036aca6741207c" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_Line18<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x40000)<sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor">#define<sp/>EXTI_Line19<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x80000)<sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor">#define<sp/>IS_EXTI_LINE(LINE)<sp/>((((LINE)<sp/>&amp;<sp/>(uint32_t)0xFFF00000)<sp/>==<sp/>0x00)<sp/>&amp;&amp;<sp/>((LINE)<sp/>!=<sp/>(uint16_t)0x00))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_GET_EXTI_LINE(LINE)<sp/>(((LINE)<sp/>==<sp/>EXTI_Line0)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line1)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="133" refid="group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line2)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line3)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line4)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line5)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line6)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line7)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line8)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line9)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line10)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line11)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line12)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line13)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line14)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line15)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line16)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line17)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LINE)<sp/>==<sp/>EXTI_Line18)<sp/>||<sp/>((LINE)<sp/>==<sp/>EXTI_Line19))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___e_x_t_i___exported___functions_1ga07072e339cb9ecb9cd9d4b94afc9f317" kindref="member">EXTI_DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___e_x_t_i___exported___functions_1ga8c9ce6352a3a2dfc8fc9287cb24c6501" kindref="member">EXTI_Init</ref>(<ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref>*<sp/>EXTI_InitStruct);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___e_x_t_i___exported___functions_1ga86b9e662d18a2f829999cfb26aa7ca20" kindref="member">EXTI_StructInit</ref>(<ref refid="struct_e_x_t_i___init_type_def" kindref="compound">EXTI_InitTypeDef</ref>*<sp/>EXTI_InitStruct);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___e_x_t_i___exported___functions_1ga897e8ea59f40a19e047fb9994876fc9b" kindref="member">EXTI_GenerateSWInterrupt</ref>(uint32_t<sp/>EXTI_Line);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref><sp/><ref refid="group___e_x_t_i___exported___functions_1ga0ce06e6b312592df149800d63218cffa" kindref="member">EXTI_GetFlagStatus</ref>(uint32_t<sp/>EXTI_Line);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___e_x_t_i___exported___functions_1ga8e07aaaa286dea4803605d5968850a92" kindref="member">EXTI_ClearFlag</ref>(uint32_t<sp/>EXTI_Line);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><ref refid="group___exported__types_1gaacbd7ed539db0aacd973a0f6eca34074" kindref="member">ITStatus</ref><sp/><ref refid="group___e_x_t_i___exported___functions_1gaf7b51519062ae42fd27ee689cab364aa" kindref="member">EXTI_GetITStatus</ref>(uint32_t<sp/>EXTI_Line);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___e_x_t_i___exported___functions_1ga3652a7e682728b310c124e7e974d1468" kindref="member">EXTI_ClearITPendingBit</ref>(uint32_t<sp/>EXTI_Line);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[ILG]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(<sp/>__GNUC__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__STM32F10x_EXTI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2011<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_exti.h"/>
+  </compounddef>
+</doxygen>

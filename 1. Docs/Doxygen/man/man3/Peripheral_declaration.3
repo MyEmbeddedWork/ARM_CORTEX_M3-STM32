@@ -1,0 +1,538 @@
+.TH "Peripheral_declaration" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral_declaration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM2\fP   ((\fBTIM_TypeDef\fP *) \fBTIM2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM3\fP   ((\fBTIM_TypeDef\fP *) \fBTIM3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM4\fP   ((\fBTIM_TypeDef\fP *) \fBTIM4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM5\fP   ((\fBTIM_TypeDef\fP *) \fBTIM5_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM6\fP   ((\fBTIM_TypeDef\fP *) \fBTIM6_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM7\fP   ((\fBTIM_TypeDef\fP *) \fBTIM7_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM12\fP   ((\fBTIM_TypeDef\fP *) \fBTIM12_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM13\fP   ((\fBTIM_TypeDef\fP *) \fBTIM13_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM14\fP   ((\fBTIM_TypeDef\fP *) \fBTIM14_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBRTC\fP   ((\fBRTC_TypeDef\fP *) \fBRTC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBWWDG\fP   ((\fBWWDG_TypeDef\fP *) \fBWWDG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBIWDG\fP   ((\fBIWDG_TypeDef\fP *) \fBIWDG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI2\fP   ((\fBSPI_TypeDef\fP *) \fBSPI2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI3\fP   ((\fBSPI_TypeDef\fP *) \fBSPI3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUSART2\fP   ((\fBUSART_TypeDef\fP *) \fBUSART2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUSART3\fP   ((\fBUSART_TypeDef\fP *) \fBUSART3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART4\fP   ((\fBUSART_TypeDef\fP *) \fBUART4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART5\fP   ((\fBUSART_TypeDef\fP *) \fBUART5_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C1\fP   ((\fBI2C_TypeDef\fP *) \fBI2C1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C2\fP   ((\fBI2C_TypeDef\fP *) \fBI2C2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCAN1\fP   ((\fBCAN_TypeDef\fP *) \fBCAN1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCAN2\fP   ((\fBCAN_TypeDef\fP *) \fBCAN2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBBKP\fP   ((\fBBKP_TypeDef\fP *) \fBBKP_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR\fP   ((\fBPWR_TypeDef\fP *) \fBPWR_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDAC\fP   ((\fBDAC_TypeDef\fP *) \fBDAC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCEC\fP   ((\fBCEC_TypeDef\fP *) \fBCEC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBAFIO\fP   ((\fBAFIO_TypeDef\fP *) \fBAFIO_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI\fP   ((\fBEXTI_TypeDef\fP *) \fBEXTI_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOA\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOA_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOB_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOD_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOE\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOE_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOF\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOF_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOG\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC1\fP   ((\fBADC_TypeDef\fP *) \fBADC1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC2\fP   ((\fBADC_TypeDef\fP *) \fBADC2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM1\fP   ((\fBTIM_TypeDef\fP *) \fBTIM1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI1\fP   ((\fBSPI_TypeDef\fP *) \fBSPI1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM8\fP   ((\fBTIM_TypeDef\fP *) \fBTIM8_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUSART1\fP   ((\fBUSART_TypeDef\fP *) \fBUSART1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC3\fP   ((\fBADC_TypeDef\fP *) \fBADC3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM15\fP   ((\fBTIM_TypeDef\fP *) \fBTIM15_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM16\fP   ((\fBTIM_TypeDef\fP *) \fBTIM16_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM17\fP   ((\fBTIM_TypeDef\fP *) \fBTIM17_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM9\fP   ((\fBTIM_TypeDef\fP *) \fBTIM9_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM10\fP   ((\fBTIM_TypeDef\fP *) \fBTIM10_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM11\fP   ((\fBTIM_TypeDef\fP *) \fBTIM11_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSDIO\fP   ((\fBSDIO_TypeDef\fP *) \fBSDIO_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1\fP   ((\fBDMA_TypeDef\fP *) \fBDMA1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA2\fP   ((\fBDMA_TypeDef\fP *) \fBDMA2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel1\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel2\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel3\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel4\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel5\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel5_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel6\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel6_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel7\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel7_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel1\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel2\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel3\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel4\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA2_Channel5\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel5_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC\fP   ((\fBRCC_TypeDef\fP *) \fBRCC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCRC\fP   ((\fBCRC_TypeDef\fP *) \fBCRC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH\fP   ((\fBFLASH_TypeDef\fP *) \fBFLASH_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBOB\fP   ((\fBOB_TypeDef\fP *) \fBOB_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBETH\fP   ((\fBETH_TypeDef\fP *) \fBETH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1\fP   ((\fBFSMC_Bank1_TypeDef\fP *) \fBFSMC_Bank1_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank1E\fP   ((\fBFSMC_Bank1E_TypeDef\fP *) \fBFSMC_Bank1E_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank2\fP   ((\fBFSMC_Bank2_TypeDef\fP *) \fBFSMC_Bank2_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank3\fP   ((\fBFSMC_Bank3_TypeDef\fP *) \fBFSMC_Bank3_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFSMC_Bank4\fP   ((\fBFSMC_Bank4_TypeDef\fP *) \fBFSMC_Bank4_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDBGMCU\fP   ((\fBDBGMCU_TypeDef\fP *) \fBDBGMCU_BASE\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC1   ((\fBADC_TypeDef\fP *) \fBADC1_BASE\fP)"
+
+.PP
+Definition at line 1415 of file stm32f10x\&.h\&.
+.SS "#define ADC2   ((\fBADC_TypeDef\fP *) \fBADC2_BASE\fP)"
+
+.PP
+Definition at line 1416 of file stm32f10x\&.h\&.
+.SS "#define ADC3   ((\fBADC_TypeDef\fP *) \fBADC3_BASE\fP)"
+
+.PP
+Definition at line 1421 of file stm32f10x\&.h\&.
+.SS "#define AFIO   ((\fBAFIO_TypeDef\fP *) \fBAFIO_BASE\fP)"
+
+.PP
+Definition at line 1406 of file stm32f10x\&.h\&.
+.SS "#define BKP   ((\fBBKP_TypeDef\fP *) \fBBKP_BASE\fP)"
+
+.PP
+Definition at line 1402 of file stm32f10x\&.h\&.
+.SS "#define CAN1   ((\fBCAN_TypeDef\fP *) \fBCAN1_BASE\fP)"
+
+.PP
+Definition at line 1400 of file stm32f10x\&.h\&.
+.SS "#define CAN2   ((\fBCAN_TypeDef\fP *) \fBCAN2_BASE\fP)"
+
+.PP
+Definition at line 1401 of file stm32f10x\&.h\&.
+.SS "#define CEC   ((\fBCEC_TypeDef\fP *) \fBCEC_BASE\fP)"
+
+.PP
+Definition at line 1405 of file stm32f10x\&.h\&.
+.SS "#define CRC   ((\fBCRC_TypeDef\fP *) \fBCRC_BASE\fP)"
+
+.PP
+Definition at line 1444 of file stm32f10x\&.h\&.
+.SS "#define DAC   ((\fBDAC_TypeDef\fP *) \fBDAC_BASE\fP)"
+
+.PP
+Definition at line 1404 of file stm32f10x\&.h\&.
+.SS "#define DBGMCU   ((\fBDBGMCU_TypeDef\fP *) \fBDBGMCU_BASE\fP)"
+
+.PP
+Definition at line 1453 of file stm32f10x\&.h\&.
+.SS "#define DMA1   ((\fBDMA_TypeDef\fP *) \fBDMA1_BASE\fP)"
+
+.PP
+Definition at line 1429 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel1   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel1_BASE\fP)"
+
+.PP
+Definition at line 1431 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel2   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel2_BASE\fP)"
+
+.PP
+Definition at line 1432 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel3   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel3_BASE\fP)"
+
+.PP
+Definition at line 1433 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel4   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel4_BASE\fP)"
+
+.PP
+Definition at line 1434 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel5   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel5_BASE\fP)"
+
+.PP
+Definition at line 1435 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel6   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel6_BASE\fP)"
+
+.PP
+Definition at line 1436 of file stm32f10x\&.h\&.
+.SS "#define DMA1_Channel7   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel7_BASE\fP)"
+
+.PP
+Definition at line 1437 of file stm32f10x\&.h\&.
+.SS "#define DMA2   ((\fBDMA_TypeDef\fP *) \fBDMA2_BASE\fP)"
+
+.PP
+Definition at line 1430 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel1   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel1_BASE\fP)"
+
+.PP
+Definition at line 1438 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel2   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel2_BASE\fP)"
+
+.PP
+Definition at line 1439 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel3   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel3_BASE\fP)"
+
+.PP
+Definition at line 1440 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel4   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel4_BASE\fP)"
+
+.PP
+Definition at line 1441 of file stm32f10x\&.h\&.
+.SS "#define DMA2_Channel5   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA2_Channel5_BASE\fP)"
+
+.PP
+Definition at line 1442 of file stm32f10x\&.h\&.
+.SS "#define ETH   ((\fBETH_TypeDef\fP *) \fBETH_BASE\fP)"
+
+.PP
+Definition at line 1447 of file stm32f10x\&.h\&.
+.SS "#define EXTI   ((\fBEXTI_TypeDef\fP *) \fBEXTI_BASE\fP)"
+
+.PP
+Definition at line 1407 of file stm32f10x\&.h\&.
+.SS "#define FLASH   ((\fBFLASH_TypeDef\fP *) \fBFLASH_R_BASE\fP)"
+
+.PP
+Definition at line 1445 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank1   ((\fBFSMC_Bank1_TypeDef\fP *) \fBFSMC_Bank1_R_BASE\fP)"
+
+.PP
+Definition at line 1448 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank1E   ((\fBFSMC_Bank1E_TypeDef\fP *) \fBFSMC_Bank1E_R_BASE\fP)"
+
+.PP
+Definition at line 1449 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank2   ((\fBFSMC_Bank2_TypeDef\fP *) \fBFSMC_Bank2_R_BASE\fP)"
+
+.PP
+Definition at line 1450 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank3   ((\fBFSMC_Bank3_TypeDef\fP *) \fBFSMC_Bank3_R_BASE\fP)"
+
+.PP
+Definition at line 1451 of file stm32f10x\&.h\&.
+.SS "#define FSMC_Bank4   ((\fBFSMC_Bank4_TypeDef\fP *) \fBFSMC_Bank4_R_BASE\fP)"
+
+.PP
+Definition at line 1452 of file stm32f10x\&.h\&.
+.SS "#define GPIOA   ((\fBGPIO_TypeDef\fP *) \fBGPIOA_BASE\fP)"
+
+.PP
+Definition at line 1408 of file stm32f10x\&.h\&.
+.SS "#define GPIOB   ((\fBGPIO_TypeDef\fP *) \fBGPIOB_BASE\fP)"
+
+.PP
+Definition at line 1409 of file stm32f10x\&.h\&.
+.SS "#define GPIOC   ((\fBGPIO_TypeDef\fP *) \fBGPIOC_BASE\fP)"
+
+.PP
+Definition at line 1410 of file stm32f10x\&.h\&.
+.SS "#define GPIOD   ((\fBGPIO_TypeDef\fP *) \fBGPIOD_BASE\fP)"
+
+.PP
+Definition at line 1411 of file stm32f10x\&.h\&.
+.SS "#define GPIOE   ((\fBGPIO_TypeDef\fP *) \fBGPIOE_BASE\fP)"
+
+.PP
+Definition at line 1412 of file stm32f10x\&.h\&.
+.SS "#define GPIOF   ((\fBGPIO_TypeDef\fP *) \fBGPIOF_BASE\fP)"
+
+.PP
+Definition at line 1413 of file stm32f10x\&.h\&.
+.SS "#define GPIOG   ((\fBGPIO_TypeDef\fP *) \fBGPIOG_BASE\fP)"
+
+.PP
+Definition at line 1414 of file stm32f10x\&.h\&.
+.SS "#define I2C1   ((\fBI2C_TypeDef\fP *) \fBI2C1_BASE\fP)"
+
+.PP
+Definition at line 1398 of file stm32f10x\&.h\&.
+.SS "#define I2C2   ((\fBI2C_TypeDef\fP *) \fBI2C2_BASE\fP)"
+
+.PP
+Definition at line 1399 of file stm32f10x\&.h\&.
+.SS "#define IWDG   ((\fBIWDG_TypeDef\fP *) \fBIWDG_BASE\fP)"
+
+.PP
+Definition at line 1391 of file stm32f10x\&.h\&.
+.SS "#define OB   ((\fBOB_TypeDef\fP *) \fBOB_BASE\fP)"
+
+.PP
+Definition at line 1446 of file stm32f10x\&.h\&.
+.SS "#define PWR   ((\fBPWR_TypeDef\fP *) \fBPWR_BASE\fP)"
+
+.PP
+Definition at line 1403 of file stm32f10x\&.h\&.
+.SS "#define RCC   ((\fBRCC_TypeDef\fP *) \fBRCC_BASE\fP)"
+
+.PP
+Definition at line 1443 of file stm32f10x\&.h\&.
+.SS "#define RTC   ((\fBRTC_TypeDef\fP *) \fBRTC_BASE\fP)"
+
+.PP
+Definition at line 1389 of file stm32f10x\&.h\&.
+.SS "#define SDIO   ((\fBSDIO_TypeDef\fP *) \fBSDIO_BASE\fP)"
+
+.PP
+Definition at line 1428 of file stm32f10x\&.h\&.
+.SS "#define SPI1   ((\fBSPI_TypeDef\fP *) \fBSPI1_BASE\fP)"
+
+.PP
+Definition at line 1418 of file stm32f10x\&.h\&.
+.SS "#define SPI2   ((\fBSPI_TypeDef\fP *) \fBSPI2_BASE\fP)"
+
+.PP
+Definition at line 1392 of file stm32f10x\&.h\&.
+.SS "#define SPI3   ((\fBSPI_TypeDef\fP *) \fBSPI3_BASE\fP)"
+
+.PP
+Definition at line 1393 of file stm32f10x\&.h\&.
+.SS "#define TIM1   ((\fBTIM_TypeDef\fP *) \fBTIM1_BASE\fP)"
+
+.PP
+Definition at line 1417 of file stm32f10x\&.h\&.
+.SS "#define TIM10   ((\fBTIM_TypeDef\fP *) \fBTIM10_BASE\fP)"
+
+.PP
+Definition at line 1426 of file stm32f10x\&.h\&.
+.SS "#define TIM11   ((\fBTIM_TypeDef\fP *) \fBTIM11_BASE\fP)"
+
+.PP
+Definition at line 1427 of file stm32f10x\&.h\&.
+.SS "#define TIM12   ((\fBTIM_TypeDef\fP *) \fBTIM12_BASE\fP)"
+
+.PP
+Definition at line 1386 of file stm32f10x\&.h\&.
+.SS "#define TIM13   ((\fBTIM_TypeDef\fP *) \fBTIM13_BASE\fP)"
+
+.PP
+Definition at line 1387 of file stm32f10x\&.h\&.
+.SS "#define TIM14   ((\fBTIM_TypeDef\fP *) \fBTIM14_BASE\fP)"
+
+.PP
+Definition at line 1388 of file stm32f10x\&.h\&.
+.SS "#define TIM15   ((\fBTIM_TypeDef\fP *) \fBTIM15_BASE\fP)"
+
+.PP
+Definition at line 1422 of file stm32f10x\&.h\&.
+.SS "#define TIM16   ((\fBTIM_TypeDef\fP *) \fBTIM16_BASE\fP)"
+
+.PP
+Definition at line 1423 of file stm32f10x\&.h\&.
+.SS "#define TIM17   ((\fBTIM_TypeDef\fP *) \fBTIM17_BASE\fP)"
+
+.PP
+Definition at line 1424 of file stm32f10x\&.h\&.
+.SS "#define TIM2   ((\fBTIM_TypeDef\fP *) \fBTIM2_BASE\fP)"
+
+.PP
+Definition at line 1380 of file stm32f10x\&.h\&.
+.SS "#define TIM3   ((\fBTIM_TypeDef\fP *) \fBTIM3_BASE\fP)"
+
+.PP
+Definition at line 1381 of file stm32f10x\&.h\&.
+.SS "#define TIM4   ((\fBTIM_TypeDef\fP *) \fBTIM4_BASE\fP)"
+
+.PP
+Definition at line 1382 of file stm32f10x\&.h\&.
+.SS "#define TIM5   ((\fBTIM_TypeDef\fP *) \fBTIM5_BASE\fP)"
+
+.PP
+Definition at line 1383 of file stm32f10x\&.h\&.
+.SS "#define TIM6   ((\fBTIM_TypeDef\fP *) \fBTIM6_BASE\fP)"
+
+.PP
+Definition at line 1384 of file stm32f10x\&.h\&.
+.SS "#define TIM7   ((\fBTIM_TypeDef\fP *) \fBTIM7_BASE\fP)"
+
+.PP
+Definition at line 1385 of file stm32f10x\&.h\&.
+.SS "#define TIM8   ((\fBTIM_TypeDef\fP *) \fBTIM8_BASE\fP)"
+
+.PP
+Definition at line 1419 of file stm32f10x\&.h\&.
+.SS "#define TIM9   ((\fBTIM_TypeDef\fP *) \fBTIM9_BASE\fP)"
+
+.PP
+Definition at line 1425 of file stm32f10x\&.h\&.
+.SS "#define UART4   ((\fBUSART_TypeDef\fP *) \fBUART4_BASE\fP)"
+
+.PP
+Definition at line 1396 of file stm32f10x\&.h\&.
+.SS "#define UART5   ((\fBUSART_TypeDef\fP *) \fBUART5_BASE\fP)"
+
+.PP
+Definition at line 1397 of file stm32f10x\&.h\&.
+.SS "#define USART1   ((\fBUSART_TypeDef\fP *) \fBUSART1_BASE\fP)"
+
+.PP
+Definition at line 1420 of file stm32f10x\&.h\&.
+.SS "#define USART2   ((\fBUSART_TypeDef\fP *) \fBUSART2_BASE\fP)"
+
+.PP
+Definition at line 1394 of file stm32f10x\&.h\&.
+.SS "#define USART3   ((\fBUSART_TypeDef\fP *) \fBUSART3_BASE\fP)"
+
+.PP
+Definition at line 1395 of file stm32f10x\&.h\&.
+.SS "#define WWDG   ((\fBWWDG_TypeDef\fP *) \fBWWDG_BASE\fP)"
+
+.PP
+Definition at line 1390 of file stm32f10x\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___p_w_r___exported___functions" kind="group">
+    <compoundname>PWR_Exported_Functions</compoundname>
+    <title>PWR_Exported_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1gad03a0aac7bc3bc3a9fd012f3769a6990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>PWR_DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deinitializes the PWR peripheral registers to their default reset values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="129" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="112" bodyend="116"/>
+        <references refid="group___r_c_c___exported___functions_1gab197ae4369c10b92640a733b40ed2801" compoundref="stm32f10x__rcc_8c" startline="1216" endline="1229">RCC_APB1PeriphResetCmd</references>
+        <references refid="group___a_p_b1__peripheral_1ga59ae4e17d5b35a934b1614f8ee883834" compoundref="stm32f10x__rcc_8h" startline="550">RCC_APB1Periph_PWR</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" compoundref="stm32f10x_8h" startline="521">ENABLE</references>
+        <references refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d" compoundref="stm32f10x_8h" startline="521">DISABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1ga0741aea35572b1a75f82b74de12df800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_BackupAccessCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>PWR_BackupAccessCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables access to the RTC and backup registers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the access to the RTC and backup registers. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="130" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="124" bodyend="129"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___p_w_r___private___defines_1ga799ab60bdbcfc1076cf2d7f206d09b0c" compoundref="stm32f10x__pwr_8c" startline="55">CR_DBP_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1ga42cad476b816e0a33594a933b3ed1acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_PVDCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>PWR_PVDCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the Power Voltage Detector(PVD). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the PVD. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="131" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="137" bodyend="142"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___p_w_r___private___defines_1ga49f51ef8285a6be76fd204d49a00709c" compoundref="stm32f10x__pwr_8c" startline="59">CR_PVDE_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1ga237c143ef6aa55abb8049fa7bf24ab8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_PVDLevelConfig</definition>
+        <argsstring>(uint32_t PWR_PVDLevel)</argsstring>
+        <name>PWR_PVDLevelConfig</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_PVDLevel</declname>
+        </param>
+        <briefdescription>
+<para>Configures the voltage threshold detected by the Power Voltage Detector(PVD). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_PVDLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the PVD detection level This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_PVDLevel_2V2: PVD detection level set to 2.2V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V3: PVD detection level set to 2.3V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V4: PVD detection level set to 2.4V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V5: PVD detection level set to 2.5V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V6: PVD detection level set to 2.6V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V7: PVD detection level set to 2.7V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V8: PVD detection level set to 2.8V </para></listitem>
+<listitem><para>PWR_PVDLevel_2V9: PVD detection level set to 2.9V </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="132" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="158" bodyend="170"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___p_v_d__detection__level_1gabac4485a57abc97aad91eaa0b65ae927" compoundref="stm32f10x__pwr_8h" startline="66">IS_PWR_PVD_LEVEL</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___p_w_r___private___defines_1gac4a30eebdd1d292331a578b189962e77" compoundref="stm32f10x__pwr_8c" startline="72">CR_PLS_MASK</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1gae5fd6f9336ef8c60d5483651cb0d1a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_WakeUpPinCmd</definition>
+        <argsstring>(FunctionalState NewState)</argsstring>
+        <name>PWR_WakeUpPinCmd</name>
+        <param>
+          <type><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref></type>
+          <declname>NewState</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the WakeUp Pin functionality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of the WakeUp Pin functionality. This parameter can be: ENABLE or DISABLE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="133" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="178" bodyend="183"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___exported__types_1gaffaf7c3f537d7a3370b1bbdda67a2bf6" compoundref="stm32f10x_8h" startline="522">IS_FUNCTIONAL_STATE</references>
+        <references refid="core__cm0_8h_1aec43007d9998a0a0e01faede4133d6be" compoundref="core__cm0_8h" startline="221">__IO</references>
+        <references refid="group___p_w_r___private___defines_1gaaff864595f697850b19173b0bca991b0" compoundref="stm32f10x__pwr_8c" startline="66">CSR_EWUP_BB</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1ga694676ac06a9baf50eae45adae0118ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_EnterSTOPMode</definition>
+        <argsstring>(uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)</argsstring>
+        <name>PWR_EnterSTOPMode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_Regulator</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PWR_STOPEntry</declname>
+        </param>
+        <briefdescription>
+<para>Enters STOP mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_Regulator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the regulator state in STOP mode. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_Regulator_ON: STOP mode with regulator ON </para></listitem>
+<listitem><para>PWR_Regulator_LowPower: STOP mode with regulator in low power mode </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PWR_STOPEntry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies if STOP mode in entered with WFI or WFE instruction. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_STOPEntry_WFI: enter STOP mode with WFI instruction </para></listitem>
+<listitem><para>PWR_STOPEntry_WFE: enter STOP mode with WFE instruction </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="134" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="197" bodyend="229"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___regulator__state__is___s_t_o_p__mode_1ga03c105070272141c0bab5f2b74469072" compoundref="stm32f10x__pwr_8h" startline="80">IS_PWR_REGULATOR</references>
+        <references refid="group___s_t_o_p__mode__entry_1ga4a94eb1f400dec6e486fbc229cbea8a0" compoundref="stm32f10x__pwr_8h" startline="92">IS_PWR_STOP_ENTRY</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___p_w_r___private___defines_1ga8ee6bf9218f3c476629dd9ee70deef21" compoundref="stm32f10x__pwr_8c" startline="71">CR_DS_MASK</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" compoundref="stm32f10x_8h" startline="3182">SCB_SCR_SLEEPDEEP</references>
+        <references refid="group___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4" compoundref="stm32f10x__pwr_8h" startline="90">PWR_STOPEntry_WFI</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" compoundref="cmsis__armcc_8h" startline="320">__WFI</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gaac6cc7dd4325d9cb40d3290fa5244b3d" compoundref="cmsis__armcc_8h" startline="328">__WFE</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1ga00ddae00a9c327b81b24d2597b0052f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_EnterSTANDBYMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>PWR_EnterSTANDBYMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enters STANDBY mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="135" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="236" bodyend="250"/>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga3928de64f633b84770b1cfecea702fa7" compoundref="stm32f10x_8h" startline="1497">PWR_CR_CWUF</references>
+        <references refid="group___peripheral___registers___bits___definition_1ga8c8075e98772470804c9e3fe74984115" compoundref="stm32f10x_8h" startline="1496">PWR_CR_PDDS</references>
+        <references refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" compoundref="core__cm0_8h" startline="595">SCB</references>
+        <references refid="group___peripheral___registers___bits___definition_1gac4f4f02bfc91aef800b88fa58329cb92" compoundref="stm32f10x_8h" startline="3182">SCB_SCR_SLEEPDEEP</references>
+        <references refid="group___c_m_s_i_s___core___instruction_interface_1gad23bf2b78a9a4524157c9de0d30b7448" compoundref="cmsis__armcc_8h" startline="320">__WFI</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1gaa980163a4d83304280ee34942464b4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___exported__types_1ga89136caac2e14c55151f527ac02daaff" kindref="member">FlagStatus</ref></type>
+        <definition>FlagStatus PWR_GetFlagStatus</definition>
+        <argsstring>(uint32_t PWR_FLAG)</argsstring>
+        <name>PWR_GetFlagStatus</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the specified PWR flag is set or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_FLAG_WU: Wake Up flag </para></listitem>
+<listitem><para>PWR_FLAG_SB: StandBy flag </para></listitem>
+<listitem><para>PWR_FLAG_PVDO: PVD Output </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of PWR_FLAG (SET or RESET). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="136" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="261" bodyend="277"/>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" compoundref="stm32f10x_8h" startline="519">RESET</references>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___p_w_r___flag_1gadc822638d0dd52d2f920808dd96c00a1" compoundref="stm32f10x__pwr_8h" startline="105">IS_PWR_GET_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+        <references refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" compoundref="stm32f10x_8h" startline="519">SET</references>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions_1ga01c4b2fbd16514b993324e101c3ddf7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWR_ClearFlag</definition>
+        <argsstring>(uint32_t PWR_FLAG)</argsstring>
+        <name>PWR_ClearFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PWR_FLAG</declname>
+        </param>
+        <briefdescription>
+<para>Clears the PWR&apos;s pending flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PWR_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem><para>PWR_FLAG_WU: Wake Up flag </para></listitem>
+<listitem><para>PWR_FLAG_SB: StandBy flag </para></listitem>
+</itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_pwr.h" line="137" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/src/stm32f1-stdperiph/stm32f10x_pwr.c" bodystart="287" bodyend="293"/>
+        <references refid="stm32f10x__conf_8h_1a631dea7b230e600555f979c62af1de21" compoundref="stm32f10x__conf_8h" startline="72">assert_param</references>
+        <references refid="group___p_w_r___flag_1ga36d35a770e683e4a0baf3aac350fcb5a" compoundref="stm32f10x__pwr_8h" startline="108">IS_PWR_CLEAR_FLAG</references>
+        <references refid="group___peripheral__declaration_1ga04651c526497822a859942b928e57f8e" compoundref="stm32f10x_8h" startline="1403">PWR</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,111 @@
+.TH "GPIO_Private_Defines" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Private_Defines
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAFIO_OFFSET\fP   (\fBAFIO_BASE\fP \- \fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBEVCR_OFFSET\fP   (\fBAFIO_OFFSET\fP + 0x00)"
+.br
+.ti -1c
+.RI "#define \fBEVOE_BitNumber\fP   ((uint8_t)0x07)"
+.br
+.ti -1c
+.RI "#define \fBEVCR_EVOE_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBEVCR_OFFSET\fP * 32) + (\fBEVOE_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBMAPR_OFFSET\fP   (\fBAFIO_OFFSET\fP + 0x04)"
+.br
+.ti -1c
+.RI "#define \fBMII_RMII_SEL_BitNumber\fP   ((\fBu8\fP)0x17)"
+.br
+.ti -1c
+.RI "#define \fBMAPR_MII_RMII_SEL_BB\fP   (\fBPERIPH_BB_BASE\fP + (\fBMAPR_OFFSET\fP * 32) + (\fBMII_RMII_SEL_BitNumber\fP * 4))"
+.br
+.ti -1c
+.RI "#define \fBEVCR_PORTPINCONFIG_MASK\fP   ((uint16_t)0xFF80)"
+.br
+.ti -1c
+.RI "#define \fBLSB_MASK\fP   ((uint16_t)0xFFFF)"
+.br
+.ti -1c
+.RI "#define \fBDBGAFR_POSITION_MASK\fP   ((uint32_t)0x000F0000)"
+.br
+.ti -1c
+.RI "#define \fBDBGAFR_SWJCFG_MASK\fP   ((uint32_t)0xF0FFFFFF)"
+.br
+.ti -1c
+.RI "#define \fBDBGAFR_LOCATION_MASK\fP   ((uint32_t)0x00200000)"
+.br
+.ti -1c
+.RI "#define \fBDBGAFR_NUMBITS_MASK\fP   ((uint32_t)0x00100000)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define AFIO_OFFSET   (\fBAFIO_BASE\fP \- \fBPERIPH_BASE\fP)"
+
+.PP
+Definition at line 48 of file stm32f10x_gpio\&.c\&.
+.SS "#define DBGAFR_LOCATION_MASK   ((uint32_t)0x00200000)"
+
+.PP
+Definition at line 69 of file stm32f10x_gpio\&.c\&.
+.SS "#define DBGAFR_NUMBITS_MASK   ((uint32_t)0x00100000)"
+
+.PP
+Definition at line 70 of file stm32f10x_gpio\&.c\&.
+.SS "#define DBGAFR_POSITION_MASK   ((uint32_t)0x000F0000)"
+
+.PP
+Definition at line 67 of file stm32f10x_gpio\&.c\&.
+.SS "#define DBGAFR_SWJCFG_MASK   ((uint32_t)0xF0FFFFFF)"
+
+.PP
+Definition at line 68 of file stm32f10x_gpio\&.c\&.
+.SS "#define EVCR_EVOE_BB   (\fBPERIPH_BB_BASE\fP + (\fBEVCR_OFFSET\fP * 32) + (\fBEVOE_BitNumber\fP * 4))"
+
+.PP
+Definition at line 55 of file stm32f10x_gpio\&.c\&.
+.SS "#define EVCR_OFFSET   (\fBAFIO_OFFSET\fP + 0x00)"
+
+.PP
+Definition at line 53 of file stm32f10x_gpio\&.c\&.
+.SS "#define EVCR_PORTPINCONFIG_MASK   ((uint16_t)0xFF80)"
+
+.PP
+Definition at line 65 of file stm32f10x_gpio\&.c\&.
+.SS "#define EVOE_BitNumber   ((uint8_t)0x07)"
+
+.PP
+Definition at line 54 of file stm32f10x_gpio\&.c\&.
+.SS "#define LSB_MASK   ((uint16_t)0xFFFF)"
+
+.PP
+Definition at line 66 of file stm32f10x_gpio\&.c\&.
+.SS "#define MAPR_MII_RMII_SEL_BB   (\fBPERIPH_BB_BASE\fP + (\fBMAPR_OFFSET\fP * 32) + (\fBMII_RMII_SEL_BitNumber\fP * 4))"
+
+.PP
+Definition at line 62 of file stm32f10x_gpio\&.c\&.
+.SS "#define MAPR_OFFSET   (\fBAFIO_OFFSET\fP + 0x04)"
+
+.PP
+Definition at line 60 of file stm32f10x_gpio\&.c\&.
+.SS "#define MII_RMII_SEL_BitNumber   ((\fBu8\fP)0x17)"
+
+.PP
+Definition at line 61 of file stm32f10x_gpio\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

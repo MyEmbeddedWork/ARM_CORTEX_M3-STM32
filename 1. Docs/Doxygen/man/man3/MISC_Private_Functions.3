@@ -1,0 +1,170 @@
+.TH "MISC_Private_Functions" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MISC_Private_Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBNVIC_PriorityGroupConfig\fP (uint32_t NVIC_PriorityGroup)"
+.br
+.RI "Configures the priority grouping: pre-emption priority and subpriority\&. "
+.ti -1c
+.RI "void \fBNVIC_Init\fP (\fBNVIC_InitTypeDef\fP *NVIC_InitStruct)"
+.br
+.RI "Initializes the NVIC peripheral according to the specified parameters in the NVIC_InitStruct\&. "
+.ti -1c
+.RI "void \fBNVIC_SetVectorTable\fP (uint32_t NVIC_VectTab, uint32_t Offset)"
+.br
+.RI "Sets the vector table location and Offset\&. "
+.ti -1c
+.RI "void \fBNVIC_SystemLPConfig\fP (uint8_t LowPowerMode, \fBFunctionalState\fP NewState)"
+.br
+.RI "Selects the condition for the system to enter low power mode\&. "
+.ti -1c
+.RI "void \fBSysTick_CLKSourceConfig\fP (uint32_t SysTick_CLKSource)"
+.br
+.RI "Configures the SysTick clock source\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void NVIC_Init (\fBNVIC_InitTypeDef\fP * NVIC_InitStruct)"
+
+.PP
+Initializes the NVIC peripheral according to the specified parameters in the NVIC_InitStruct\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINVIC_InitStruct\fP pointer to a \fBNVIC_InitTypeDef\fP structure that contains the configuration information for the specified NVIC peripheral\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file misc\&.c\&.
+.SS "void NVIC_PriorityGroupConfig (uint32_t NVIC_PriorityGroup)"
+
+.PP
+Configures the priority grouping: pre-emption priority and subpriority\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINVIC_PriorityGroup\fP specifies the priority grouping bits length\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+NVIC_PriorityGroup_0: 0 bits for pre-emption priority 4 bits for subpriority 
+.IP "\(bu" 2
+NVIC_PriorityGroup_1: 1 bits for pre-emption priority 3 bits for subpriority 
+.IP "\(bu" 2
+NVIC_PriorityGroup_2: 2 bits for pre-emption priority 2 bits for subpriority 
+.IP "\(bu" 2
+NVIC_PriorityGroup_3: 3 bits for pre-emption priority 1 bits for subpriority 
+.IP "\(bu" 2
+NVIC_PriorityGroup_4: 4 bits for pre-emption priority 0 bits for subpriority 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 96 of file misc\&.c\&.
+.SS "void NVIC_SetVectorTable (uint32_t NVIC_VectTab, uint32_t Offset)"
+
+.PP
+Sets the vector table location and Offset\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINVIC_VectTab\fP specifies if the vector table is in RAM or FLASH memory\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+NVIC_VectTab_RAM 
+.IP "\(bu" 2
+NVIC_VectTab_FLASH 
+.PP
+.br
+\fIOffset\fP Vector Table base offset field\&. This value must be a multiple of 0x200\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 167 of file misc\&.c\&.
+.SS "void NVIC_SystemLPConfig (uint8_t LowPowerMode, \fBFunctionalState\fP NewState)"
+
+.PP
+Selects the condition for the system to enter low power mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fILowPowerMode\fP Specifies the new mode for the system to enter low power mode\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+NVIC_LP_SEVONPEND 
+.IP "\(bu" 2
+NVIC_LP_SLEEPDEEP 
+.IP "\(bu" 2
+NVIC_LP_SLEEPONEXIT 
+.PP
+.br
+\fINewState\fP new state of LP condition\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 186 of file misc\&.c\&.
+.SS "void SysTick_CLKSourceConfig (uint32_t SysTick_CLKSource)"
+
+.PP
+Configures the SysTick clock source\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fISysTick_CLKSource\fP specifies the SysTick clock source\&. This parameter can be one of the following values: 
+.PD 0
+
+.IP "\(bu" 2
+SysTick_CLKSource_HCLK_Div8: AHB clock divided by 8 selected as SysTick clock source\&. 
+.IP "\(bu" 2
+SysTick_CLKSource_HCLK: AHB clock selected as SysTick clock source\&. 
+.PP
+.RE
+.PP
+\fBReturn values:\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.PP
+Definition at line 210 of file misc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

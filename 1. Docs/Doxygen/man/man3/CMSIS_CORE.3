@@ -1,0 +1,1541 @@
+.TH "CMSIS_CORE" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_CORE \- Core Register type definitions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "union \fBAPSR_Type\fP"
+.br
+.RI "Union type to access the Application Program Status Register (APSR)\&. "
+.ti -1c
+.RI "union \fBIPSR_Type\fP"
+.br
+.RI "Union type to access the Interrupt Program Status Register (IPSR)\&. "
+.ti -1c
+.RI "union \fBxPSR_Type\fP"
+.br
+.RI "Union type to access the Special-Purpose Program Status Registers (xPSR)\&. "
+.ti -1c
+.RI "union \fBCONTROL_Type\fP"
+.br
+.RI "Union type to access the Control Registers (CONTROL)\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Msk\fP   (1UL << APSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Msk\fP   (1UL << xPSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Msk\fP   (3UL << xPSR_IT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Msk\fP   (1UL << APSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Msk\fP   (0xFUL << APSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Msk\fP   (1UL << xPSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Msk\fP   (3UL << xPSR_IT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Msk\fP   (0xFUL << xPSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Msk\fP   (1UL << CONTROL_FPCA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Msk\fP   (1UL << APSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Msk\fP   (0xFUL << APSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Msk\fP   (1UL << xPSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Msk\fP   (3UL << xPSR_IT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Msk\fP   (0xFUL << xPSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Msk\fP   (1UL << CONTROL_FPCA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Msk\fP   (1UL << APSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Msk\fP   (1UL << xPSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Msk\fP   (3UL << xPSR_IT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Core Register type definitions\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 274 of file core_sc000\&.h\&.
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 276 of file core_cm0\&.h\&.
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 276 of file core_sc300\&.h\&.
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 284 of file core_cm3\&.h\&.
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 287 of file core_cm0plus\&.h\&.
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 340 of file core_cm4\&.h\&.
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.PP
+Definition at line 355 of file core_cm7\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 273 of file core_sc000\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 275 of file core_sc300\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 275 of file core_cm0\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 283 of file core_cm3\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 286 of file core_cm0plus\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 339 of file core_cm4\&.h\&.
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.PP
+Definition at line 354 of file core_cm7\&.h\&.
+.SS "#define APSR_GE_Msk   (0xFUL << APSR_GE_Pos)"
+APSR: GE Mask 
+.PP
+Definition at line 349 of file core_cm4\&.h\&.
+.SS "#define APSR_GE_Msk   (0xFUL << APSR_GE_Pos)"
+APSR: GE Mask 
+.PP
+Definition at line 364 of file core_cm7\&.h\&.
+.SS "#define APSR_GE_Pos   16U"
+APSR: GE Position 
+.PP
+Definition at line 348 of file core_cm4\&.h\&.
+.SS "#define APSR_GE_Pos   16U"
+APSR: GE Position 
+.PP
+Definition at line 363 of file core_cm7\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 268 of file core_sc000\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 270 of file core_sc300\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 270 of file core_cm0\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 278 of file core_cm3\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 281 of file core_cm0plus\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 334 of file core_cm4\&.h\&.
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.PP
+Definition at line 349 of file core_cm7\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 267 of file core_sc000\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 269 of file core_cm0\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 269 of file core_sc300\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 277 of file core_cm3\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 280 of file core_cm0plus\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 333 of file core_cm4\&.h\&.
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.PP
+Definition at line 348 of file core_cm7\&.h\&.
+.SS "#define APSR_Q_Msk   (1UL << APSR_Q_Pos)"
+APSR: Q Mask 
+.PP
+Definition at line 282 of file core_sc300\&.h\&.
+.SS "#define APSR_Q_Msk   (1UL << APSR_Q_Pos)"
+APSR: Q Mask 
+.PP
+Definition at line 290 of file core_cm3\&.h\&.
+.SS "#define APSR_Q_Msk   (1UL << APSR_Q_Pos)"
+APSR: Q Mask 
+.PP
+Definition at line 346 of file core_cm4\&.h\&.
+.SS "#define APSR_Q_Msk   (1UL << APSR_Q_Pos)"
+APSR: Q Mask 
+.PP
+Definition at line 361 of file core_cm7\&.h\&.
+.SS "#define APSR_Q_Pos   27U"
+APSR: Q Position 
+.PP
+Definition at line 281 of file core_sc300\&.h\&.
+.SS "#define APSR_Q_Pos   27U"
+APSR: Q Position 
+.PP
+Definition at line 289 of file core_cm3\&.h\&.
+.SS "#define APSR_Q_Pos   27U"
+APSR: Q Position 
+.PP
+Definition at line 345 of file core_cm4\&.h\&.
+.SS "#define APSR_Q_Pos   27U"
+APSR: Q Position 
+.PP
+Definition at line 360 of file core_cm7\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 277 of file core_sc000\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 279 of file core_cm0\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 279 of file core_sc300\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 287 of file core_cm3\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 290 of file core_cm0plus\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 343 of file core_cm4\&.h\&.
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.PP
+Definition at line 358 of file core_cm7\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 276 of file core_sc000\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 278 of file core_sc300\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 278 of file core_cm0\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 286 of file core_cm3\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 289 of file core_cm0plus\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 342 of file core_cm4\&.h\&.
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.PP
+Definition at line 357 of file core_cm7\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 271 of file core_sc000\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 273 of file core_cm0\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 273 of file core_sc300\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 281 of file core_cm3\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 284 of file core_cm0plus\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 337 of file core_cm4\&.h\&.
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.PP
+Definition at line 352 of file core_cm7\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 270 of file core_sc000\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 272 of file core_sc300\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 272 of file core_cm0\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 280 of file core_cm3\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 283 of file core_cm0plus\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 336 of file core_cm4\&.h\&.
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.PP
+Definition at line 351 of file core_cm7\&.h\&.
+.SS "#define CONTROL_FPCA_Msk   (1UL << CONTROL_FPCA_Pos)"
+CONTROL: FPCA Mask 
+.PP
+Definition at line 438 of file core_cm4\&.h\&.
+.SS "#define CONTROL_FPCA_Msk   (1UL << CONTROL_FPCA_Pos)"
+CONTROL: FPCA Mask 
+.PP
+Definition at line 453 of file core_cm7\&.h\&.
+.SS "#define CONTROL_FPCA_Pos   2U"
+CONTROL: FPCA Position 
+.PP
+Definition at line 437 of file core_cm4\&.h\&.
+.SS "#define CONTROL_FPCA_Pos   2U"
+CONTROL: FPCA Position 
+.PP
+Definition at line 452 of file core_cm7\&.h\&.
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.PP
+Definition at line 368 of file core_sc300\&.h\&.
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.PP
+Definition at line 369 of file core_cm0plus\&.h\&.
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.PP
+Definition at line 376 of file core_cm3\&.h\&.
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.PP
+Definition at line 444 of file core_cm4\&.h\&.
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.PP
+Definition at line 459 of file core_cm7\&.h\&.
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.PP
+Definition at line 367 of file core_sc300\&.h\&.
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.PP
+Definition at line 368 of file core_cm0plus\&.h\&.
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.PP
+Definition at line 375 of file core_cm3\&.h\&.
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.PP
+Definition at line 443 of file core_cm4\&.h\&.
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.PP
+Definition at line 458 of file core_cm7\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 353 of file core_sc000\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 355 of file core_cm0\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 365 of file core_sc300\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 366 of file core_cm0plus\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 373 of file core_cm3\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 441 of file core_cm4\&.h\&.
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.PP
+Definition at line 456 of file core_cm7\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 352 of file core_sc000\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 354 of file core_cm0\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 364 of file core_sc300\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 365 of file core_cm0plus\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 372 of file core_cm3\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 440 of file core_cm4\&.h\&.
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.PP
+Definition at line 455 of file core_cm7\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 295 of file core_sc000\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 297 of file core_cm0\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 300 of file core_sc300\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 308 of file core_cm0plus\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 308 of file core_cm3\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 367 of file core_cm4\&.h\&.
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.PP
+Definition at line 382 of file core_cm7\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 294 of file core_sc000\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 296 of file core_cm0\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 299 of file core_sc300\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 307 of file core_cm0plus\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 307 of file core_cm3\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 366 of file core_cm4\&.h\&.
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.PP
+Definition at line 381 of file core_cm7\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 325 of file core_sc000\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 327 of file core_cm0\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 331 of file core_sc300\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 338 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 339 of file core_cm3\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 400 of file core_cm4\&.h\&.
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.PP
+Definition at line 415 of file core_cm7\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 324 of file core_sc000\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 326 of file core_cm0\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 330 of file core_sc300\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 337 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 338 of file core_cm3\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 399 of file core_cm4\&.h\&.
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.PP
+Definition at line 414 of file core_cm7\&.h\&.
+.SS "#define xPSR_GE_Msk   (0xFUL << xPSR_GE_Pos)"
+xPSR: GE Mask 
+.PP
+Definition at line 415 of file core_cm4\&.h\&.
+.SS "#define xPSR_GE_Msk   (0xFUL << xPSR_GE_Pos)"
+xPSR: GE Mask 
+.PP
+Definition at line 430 of file core_cm7\&.h\&.
+.SS "#define xPSR_GE_Pos   16U"
+xPSR: GE Position 
+.PP
+Definition at line 414 of file core_cm4\&.h\&.
+.SS "#define xPSR_GE_Pos   16U"
+xPSR: GE Position 
+.PP
+Definition at line 429 of file core_cm7\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 334 of file core_sc000\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 336 of file core_cm0\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 346 of file core_sc300\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 347 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 354 of file core_cm3\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 418 of file core_cm4\&.h\&.
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.PP
+Definition at line 433 of file core_cm7\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 333 of file core_sc000\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 335 of file core_cm0\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 345 of file core_sc300\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 346 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 353 of file core_cm3\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 417 of file core_cm4\&.h\&.
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.PP
+Definition at line 432 of file core_cm7\&.h\&.
+.SS "#define xPSR_IT_Msk   (3UL << xPSR_IT_Pos)"
+xPSR: IT Mask 
+.PP
+Definition at line 340 of file core_sc300\&.h\&.
+.SS "#define xPSR_IT_Msk   (3UL << xPSR_IT_Pos)"
+xPSR: IT Mask 
+.PP
+Definition at line 348 of file core_cm3\&.h\&.
+.SS "#define xPSR_IT_Msk   (3UL << xPSR_IT_Pos)"
+xPSR: IT Mask 
+.PP
+Definition at line 409 of file core_cm4\&.h\&.
+.SS "#define xPSR_IT_Msk   (3UL << xPSR_IT_Pos)"
+xPSR: IT Mask 
+.PP
+Definition at line 424 of file core_cm7\&.h\&.
+.SS "#define xPSR_IT_Pos   25U"
+xPSR: IT Position 
+.PP
+Definition at line 339 of file core_sc300\&.h\&.
+.SS "#define xPSR_IT_Pos   25U"
+xPSR: IT Position 
+.PP
+Definition at line 347 of file core_cm3\&.h\&.
+.SS "#define xPSR_IT_Pos   25U"
+xPSR: IT Position 
+.PP
+Definition at line 408 of file core_cm4\&.h\&.
+.SS "#define xPSR_IT_Pos   25U"
+xPSR: IT Position 
+.PP
+Definition at line 423 of file core_cm7\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 319 of file core_sc000\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 321 of file core_cm0\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 325 of file core_sc300\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 332 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 333 of file core_cm3\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 394 of file core_cm4\&.h\&.
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.PP
+Definition at line 409 of file core_cm7\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 318 of file core_sc000\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 320 of file core_cm0\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 324 of file core_sc300\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 331 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 332 of file core_cm3\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 393 of file core_cm4\&.h\&.
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.PP
+Definition at line 408 of file core_cm7\&.h\&.
+.SS "#define xPSR_Q_Msk   (1UL << xPSR_Q_Pos)"
+xPSR: Q Mask 
+.PP
+Definition at line 337 of file core_sc300\&.h\&.
+.SS "#define xPSR_Q_Msk   (1UL << xPSR_Q_Pos)"
+xPSR: Q Mask 
+.PP
+Definition at line 345 of file core_cm3\&.h\&.
+.SS "#define xPSR_Q_Msk   (1UL << xPSR_Q_Pos)"
+xPSR: Q Mask 
+.PP
+Definition at line 406 of file core_cm4\&.h\&.
+.SS "#define xPSR_Q_Msk   (1UL << xPSR_Q_Pos)"
+xPSR: Q Mask 
+.PP
+Definition at line 421 of file core_cm7\&.h\&.
+.SS "#define xPSR_Q_Pos   27U"
+xPSR: Q Position 
+.PP
+Definition at line 336 of file core_sc300\&.h\&.
+.SS "#define xPSR_Q_Pos   27U"
+xPSR: Q Position 
+.PP
+Definition at line 344 of file core_cm3\&.h\&.
+.SS "#define xPSR_Q_Pos   27U"
+xPSR: Q Position 
+.PP
+Definition at line 405 of file core_cm4\&.h\&.
+.SS "#define xPSR_Q_Pos   27U"
+xPSR: Q Position 
+.PP
+Definition at line 420 of file core_cm7\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 331 of file core_sc000\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 333 of file core_cm0\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 343 of file core_sc300\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 344 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 351 of file core_cm3\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 412 of file core_cm4\&.h\&.
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.PP
+Definition at line 427 of file core_cm7\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 330 of file core_sc000\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 332 of file core_cm0\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 342 of file core_sc300\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 343 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 350 of file core_cm3\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 411 of file core_cm4\&.h\&.
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.PP
+Definition at line 426 of file core_cm7\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 328 of file core_sc000\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 330 of file core_cm0\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 334 of file core_sc300\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 341 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 342 of file core_cm3\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 403 of file core_cm4\&.h\&.
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.PP
+Definition at line 418 of file core_cm7\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 327 of file core_sc000\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 329 of file core_cm0\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 333 of file core_sc300\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 340 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 341 of file core_cm3\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 402 of file core_cm4\&.h\&.
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.PP
+Definition at line 417 of file core_cm7\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 322 of file core_sc000\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 324 of file core_cm0\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 328 of file core_sc300\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 335 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 336 of file core_cm3\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 397 of file core_cm4\&.h\&.
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.PP
+Definition at line 412 of file core_cm7\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 321 of file core_sc000\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 323 of file core_cm0\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 327 of file core_sc300\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 334 of file core_cm0plus\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 335 of file core_cm3\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 396 of file core_cm4\&.h\&.
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.PP
+Definition at line 411 of file core_cm7\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

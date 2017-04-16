@@ -1,0 +1,102 @@
+.TH "SPI_I2S_interrupts_definition" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_I2S_interrupts_definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_TXE\fP   ((uint8_t)0x71)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_RXNE\fP   ((uint8_t)0x60)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_ERR\fP   ((uint8_t)0x50)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_CONFIG_IT\fP(IT)"
+.br
+.ti -1c
+.RI "#define \fBSPI_I2S_IT_OVR\fP   ((uint8_t)0x56)"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_MODF\fP   ((uint8_t)0x55)"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_CRCERR\fP   ((uint8_t)0x54)"
+.br
+.ti -1c
+.RI "#define \fBI2S_IT_UDR\fP   ((uint8_t)0x53)"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_CLEAR_IT\fP(IT)   (((IT) == \fBSPI_IT_CRCERR\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_SPI_I2S_GET_IT\fP(IT)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2S_IT_UDR   ((uint8_t)0x53)"
+
+.PP
+Definition at line 397 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_SPI_I2S_CLEAR_IT(IT)   (((IT) == \fBSPI_IT_CRCERR\fP))"
+
+.PP
+Definition at line 398 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_SPI_I2S_CONFIG_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == SPI_I2S_IT_TXE) || \
+                                 ((IT) == SPI_I2S_IT_RXNE) || \
+                                 ((IT) == SPI_I2S_IT_ERR))
+.fi
+.PP
+Definition at line 391 of file stm32f10x_spi\&.h\&.
+.SS "#define IS_SPI_I2S_GET_IT(IT)"
+\fBValue:\fP
+.PP
+.nf
+(((IT) == SPI_I2S_IT_RXNE) || ((IT) == SPI_I2S_IT_TXE) || \
+                               ((IT) == I2S_IT_UDR) || ((IT) == SPI_IT_CRCERR) || \
+                               ((IT) == SPI_IT_MODF) || ((IT) == SPI_I2S_IT_OVR))
+.fi
+.PP
+Definition at line 399 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_I2S_IT_ERR   ((uint8_t)0x50)"
+
+.PP
+Definition at line 390 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_I2S_IT_OVR   ((uint8_t)0x56)"
+
+.PP
+Definition at line 394 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_I2S_IT_RXNE   ((uint8_t)0x60)"
+
+.PP
+Definition at line 389 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_I2S_IT_TXE   ((uint8_t)0x71)"
+
+.PP
+Definition at line 388 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_IT_CRCERR   ((uint8_t)0x54)"
+
+.PP
+Definition at line 396 of file stm32f10x_spi\&.h\&.
+.SS "#define SPI_IT_MODF   ((uint8_t)0x55)"
+
+.PP
+Definition at line 395 of file stm32f10x_spi\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

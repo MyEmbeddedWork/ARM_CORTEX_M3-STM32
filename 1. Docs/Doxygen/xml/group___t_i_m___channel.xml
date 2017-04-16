@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___t_i_m___channel" kind="group">
+    <compoundname>TIM_Channel</compoundname>
+    <title>TIM_Channel</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___channel_1ga69ea7f558f02c63dd1082d784d2449bd" prot="public" static="no">
+        <name>TIM_Channel_1</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="334" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___channel_1ga03d7da8269a87a560f68985b4bd80931" prot="public" static="no">
+        <name>TIM_Channel_2</name>
+        <initializer>((uint16_t)0x0004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="335" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___channel_1ga012711b19e8c91f6f352801a3dc0bcc9" prot="public" static="no">
+        <name>TIM_Channel_3</name>
+        <initializer>((uint16_t)0x0008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="336" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___channel_1ga7414888c40d066af235bc1f80b99bd9d" prot="public" static="no">
+        <name>TIM_Channel_4</name>
+        <initializer>((uint16_t)0x000C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="337" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___channel_1gae9721e3731e5fd983c83a9c1d32ef03d" prot="public" static="no">
+        <name>IS_TIM_CHANNEL</name>
+        <param><defname>CHANNEL</defname></param>
+        <initializer>(((CHANNEL) == <ref refid="group___t_i_m___channel_1ga69ea7f558f02c63dd1082d784d2449bd" kindref="member">TIM_Channel_1</ref>) || \
+                                 ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga03d7da8269a87a560f68985b4bd80931" kindref="member">TIM_Channel_2</ref>) || \
+                                 ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga012711b19e8c91f6f352801a3dc0bcc9" kindref="member">TIM_Channel_3</ref>) || \
+                                 ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga7414888c40d066af235bc1f80b99bd9d" kindref="member">TIM_Channel_4</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="338" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___channel_1gacbf272b7a14f63b38bdbf18577835dce" prot="public" static="no">
+        <name>IS_TIM_PWMI_CHANNEL</name>
+        <param><defname>CHANNEL</defname></param>
+        <initializer>(((CHANNEL) == <ref refid="group___t_i_m___channel_1ga69ea7f558f02c63dd1082d784d2449bd" kindref="member">TIM_Channel_1</ref>) || \
+                                      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga03d7da8269a87a560f68985b4bd80931" kindref="member">TIM_Channel_2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="342" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___channel_1ga6f44459b7dfc4138bbc2c3795311c48c" prot="public" static="no">
+        <name>IS_TIM_COMPLEMENTARY_CHANNEL</name>
+        <param><defname>CHANNEL</defname></param>
+        <initializer>(((CHANNEL) == <ref refid="group___t_i_m___channel_1ga69ea7f558f02c63dd1082d784d2449bd" kindref="member">TIM_Channel_1</ref>) || \
+                                               ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga03d7da8269a87a560f68985b4bd80931" kindref="member">TIM_Channel_2</ref>) || \
+                                               ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga012711b19e8c91f6f352801a3dc0bcc9" kindref="member">TIM_Channel_3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" line="344" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_tim.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

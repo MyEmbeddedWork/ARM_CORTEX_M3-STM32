@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_u_s_a_r_t___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>USART_InitTypeDef</compoundname>
+    <includes refid="stm32f10x__usart_8h" local="no">stm32f10x_usart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___init_type_def_1a6f763cb0e6044f838ee764ce437997b2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t USART_InitTypeDef::USART_BaudRate</definition>
+        <argsstring></argsstring>
+        <name>USART_BaudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This member configures the USART communication baud rate. The baud rate is computed using the following formula:<itemizedlist>
+<listitem><para>IntegerDivider = ((PCLKx) / (16 * (USART_InitStruct-&gt;USART_BaudRate)))</para></listitem><listitem><para>FractionalDivider = ((IntegerDivider - ((u32) IntegerDivider)) * 16) + 0.5 </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="58" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga34e1faa2f312496c16cfd05155f4c8b1" compoundref="stm32f10x__usart_8c" startline="281" endline="290">USART_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___init_type_def_1a16d1fb7ccc2b51964f1bcfcbfba6d89d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_InitTypeDef::USART_WordLength</definition>
+        <argsstring></argsstring>
+        <name>USART_WordLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of data bits transmitted or received in a frame. This parameter can be a value of <ref refid="group___u_s_a_r_t___word___length" kindref="compound">USART_Word_Length</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="63" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga34e1faa2f312496c16cfd05155f4c8b1" compoundref="stm32f10x__usart_8c" startline="281" endline="290">USART_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___init_type_def_1ac745bceb79a6c4c2640fd8e8ce6639d6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_InitTypeDef::USART_StopBits</definition>
+        <argsstring></argsstring>
+        <name>USART_StopBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of stop bits transmitted. This parameter can be a value of <ref refid="group___u_s_a_r_t___stop___bits" kindref="compound">USART_Stop_Bits</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="66" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga34e1faa2f312496c16cfd05155f4c8b1" compoundref="stm32f10x__usart_8c" startline="281" endline="290">USART_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___init_type_def_1a5ae66aba755bac37c5cf0dfbf529e2ed" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_InitTypeDef::USART_Parity</definition>
+        <argsstring></argsstring>
+        <name>USART_Parity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the parity mode. This parameter can be a value of <ref refid="group___u_s_a_r_t___parity" kindref="compound">USART_Parity</ref> <simplesect kind="note"><para>When parity is enabled, the computed parity is inserted at the MSB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="69" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga34e1faa2f312496c16cfd05155f4c8b1" compoundref="stm32f10x__usart_8c" startline="281" endline="290">USART_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___init_type_def_1a7d944d35d7d1fc79a63f249615148584" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_InitTypeDef::USART_Mode</definition>
+        <argsstring></argsstring>
+        <name>USART_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies wether the Receive or Transmit mode is enabled or disabled. This parameter can be a value of <ref refid="group___u_s_a_r_t___mode" kindref="compound">USART_Mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="76" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga34e1faa2f312496c16cfd05155f4c8b1" compoundref="stm32f10x__usart_8c" startline="281" endline="290">USART_StructInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___init_type_def_1a9996edf3bfd90c36f03b4075969703f5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t USART_InitTypeDef::USART_HardwareFlowControl</definition>
+        <argsstring></argsstring>
+        <name>USART_HardwareFlowControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies wether the hardware flow control mode is enabled or disabled. This parameter can be a value of <ref refid="group___u_s_a_r_t___hardware___flow___control" kindref="compound">USART_Hardware_Flow_Control</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="79" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga98da340ea0324002ba1b4263e91ab2ff" compoundref="stm32f10x__usart_8c" startline="176" endline="273">USART_Init</referencedby>
+        <referencedby refid="group___u_s_a_r_t___private___functions_1ga34e1faa2f312496c16cfd05155f4c8b1" compoundref="stm32f10x__usart_8c" startline="281" endline="290">USART_StructInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>USART Init Structure definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" line="57" column="1" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_usart.h" bodystart="56" bodyend="82"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___init_type_def_1a6f763cb0e6044f838ee764ce437997b2" prot="public" virt="non-virtual"><scope>USART_InitTypeDef</scope><name>USART_BaudRate</name></member>
+      <member refid="struct_u_s_a_r_t___init_type_def_1a9996edf3bfd90c36f03b4075969703f5" prot="public" virt="non-virtual"><scope>USART_InitTypeDef</scope><name>USART_HardwareFlowControl</name></member>
+      <member refid="struct_u_s_a_r_t___init_type_def_1a7d944d35d7d1fc79a63f249615148584" prot="public" virt="non-virtual"><scope>USART_InitTypeDef</scope><name>USART_Mode</name></member>
+      <member refid="struct_u_s_a_r_t___init_type_def_1a5ae66aba755bac37c5cf0dfbf529e2ed" prot="public" virt="non-virtual"><scope>USART_InitTypeDef</scope><name>USART_Parity</name></member>
+      <member refid="struct_u_s_a_r_t___init_type_def_1ac745bceb79a6c4c2640fd8e8ce6639d6" prot="public" virt="non-virtual"><scope>USART_InitTypeDef</scope><name>USART_StopBits</name></member>
+      <member refid="struct_u_s_a_r_t___init_type_def_1a16d1fb7ccc2b51964f1bcfcbfba6d89d" prot="public" virt="non-virtual"><scope>USART_InitTypeDef</scope><name>USART_WordLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

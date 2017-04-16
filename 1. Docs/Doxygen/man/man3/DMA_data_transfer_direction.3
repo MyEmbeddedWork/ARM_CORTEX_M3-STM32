@@ -1,0 +1,46 @@
+.TH "DMA_data_transfer_direction" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_data_transfer_direction
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDMA_DIR_PeripheralDST\fP   ((uint32_t)0x00000010)"
+.br
+.ti -1c
+.RI "#define \fBDMA_DIR_PeripheralSRC\fP   ((uint32_t)0x00000000)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_DIR\fP(DIR)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DMA_DIR_PeripheralDST   ((uint32_t)0x00000010)"
+
+.PP
+Definition at line 112 of file stm32f10x_dma\&.h\&.
+.SS "#define DMA_DIR_PeripheralSRC   ((uint32_t)0x00000000)"
+
+.PP
+Definition at line 113 of file stm32f10x_dma\&.h\&.
+.SS "#define IS_DMA_DIR(DIR)"
+\fBValue:\fP
+.PP
+.nf
+(((DIR) == DMA_DIR_PeripheralDST) || \
+                         ((DIR) == DMA_DIR_PeripheralSRC))
+.fi
+.PP
+Definition at line 114 of file stm32f10x_dma\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

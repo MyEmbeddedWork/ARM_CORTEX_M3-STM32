@@ -1,0 +1,75 @@
+.TH "arm_dct4_instance_q15" 3 "Sun Apr 16 2017" "STM32_CMSIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_dct4_instance_q15 \- Instance structure for the Q15 DCT4/IDCT4 function\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBN\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBNby2\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP \fBnormalize\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpTwiddle\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpCosFactor\fP"
+.br
+.ti -1c
+.RI "\fBarm_rfft_instance_q15\fP * \fBpRfft\fP"
+.br
+.ti -1c
+.RI "\fBarm_cfft_radix4_instance_q15\fP * \fBpCfft\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q15 DCT4/IDCT4 function\&. 
+.PP
+Definition at line 2346 of file arm_math\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t arm_dct4_instance_q15::N"
+length of the DCT4\&. 
+.PP
+Definition at line 2348 of file arm_math\&.h\&.
+.SS "uint16_t arm_dct4_instance_q15::Nby2"
+half of the length of the DCT4\&. 
+.PP
+Definition at line 2349 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP arm_dct4_instance_q15::normalize"
+normalizing factor\&. 
+.PP
+Definition at line 2350 of file arm_math\&.h\&.
+.SS "\fBarm_cfft_radix4_instance_q15\fP* arm_dct4_instance_q15::pCfft"
+points to the complex FFT instance\&. 
+.PP
+Definition at line 2354 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_dct4_instance_q15::pCosFactor"
+points to the cosFactor table\&. 
+.PP
+Definition at line 2352 of file arm_math\&.h\&.
+.SS "\fBarm_rfft_instance_q15\fP* arm_dct4_instance_q15::pRfft"
+points to the real FFT instance\&. 
+.PP
+Definition at line 2353 of file arm_math\&.h\&.
+.SS "\fBq15_t\fP* arm_dct4_instance_q15::pTwiddle"
+points to the twiddle factor table\&. 
+.PP
+Definition at line 2351 of file arm_math\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32_CMSIS from the source code\&.

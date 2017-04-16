@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___i2_c__acknowledgement" kind="group">
+    <compoundname>I2C_acknowledgement</compoundname>
+    <title>I2C_acknowledgement</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c__acknowledgement_1ga616466f8ef5a47237cdbf7ac578ec507" prot="public" static="no">
+        <name>I2C_Ack_Enable</name>
+        <initializer>((uint16_t)0x0400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="118" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__acknowledgement_1gadb5f47c052ac6bae1aa58c724e339e36" prot="public" static="no">
+        <name>I2C_Ack_Disable</name>
+        <initializer>((uint16_t)0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="119" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_c__acknowledgement_1ga6401bedc842e784a2bb78b3aa21af19d" prot="public" static="no">
+        <name>IS_I2C_ACK_STATE</name>
+        <param><defname>STATE</defname></param>
+        <initializer>(((STATE) == <ref refid="group___i2_c__acknowledgement_1ga616466f8ef5a47237cdbf7ac578ec507" kindref="member">I2C_Ack_Enable</ref>) || \
+                                 ((STATE) == <ref refid="group___i2_c__acknowledgement_1gadb5f47c052ac6bae1aa58c724e339e36" kindref="member">I2C_Ack_Disable</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" line="120" column="9" bodyfile="C:/Users/anilj/Desktop/cmsis/sorc/system/include/stm32f1-stdperiph/stm32f10x_i2c.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
